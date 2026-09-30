@@ -1,0 +1,614 @@
+{
+  "schemaVersion": "2.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "rhetorical-adjudication",
+  "debateNumber": "280",
+  "debateId": "turek-normark-god-existence-2014",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/workflow/rhetorical-adjudication/reader.txt",
+      "sha256": "5d221326715ae3cbe45daa5e9c46ce416b153189419ae12eadffce910ac9ba13",
+      "bytes": 424098
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/contract.md",
+      "sha256": "c9a716e27946cf12fbdb32c3fd990a1d99bc15abc3e74279fe68f587faf501b4",
+      "bytes": 4690
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "72c5ad5c6589920b1f0933967c94dedad205aaaec583358a0ad5df019c704e44",
+      "bytes": 18972
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "29fa3f5a424fcf889f7e11e7c7a933b5a97163bc4327f223f13e92ce2ed1c46e",
+      "bytes": 166827
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    {
+      "path": ".assessment-cache/captions/t-p2eSkmyIQ/indexed-transcript.txt",
+      "sha256": "d59cac36e243e107cf0cf79e31e086b90a37de694693673f6f081361a7d58839",
+      "bytes": 221304
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/source/assessment-source-notes.md",
+      "sha256": "ba05f9a2cf82814ca2852fe075f823223de08f173e28aa08b9be61a38b2c45a5",
+      "bytes": 4817
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/source/source-lock.json",
+      "sha256": "affc4fc4712c350223f9d6f53e0bbf70bee0fcefeab06935144ca95a3551da0e",
+      "bytes": 6620
+    }
+  ],
+  "toolInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/check-review.mjs",
+      "sha256": "e4f2013da4cfa8f8f690b324f00567584c67759b68e2c45ed8455008da8005de",
+      "bytes": 4109
+    },
+    {
+      "path": "scripts/standalone-workflow.mjs",
+      "sha256": "f9bebb3157c0227e20f396240411af838138b4520c7a48bec411725896f841cc",
+      "bytes": 5880
+    },
+    {
+      "path": "scripts/lib/standalone-workflow.mjs",
+      "sha256": "bd13373d22b4a2d74b1d6788c6b25613611be653a212aeaf31ca4bfcadcde333",
+      "bytes": 18686
+    },
+    {
+      "path": "scripts/lib/standalone-handoff.mjs",
+      "sha256": "939461c747837553ff5d65a83d9af0ad51c576c314959d2c59e6773bf236b42f",
+      "bytes": 6020
+    },
+    {
+      "path": "scripts/authenticate-standalone-worker.py",
+      "sha256": "98c8186c703818d1eaf5270d26adbfaaf7f7284180cf3482d3ec7a64e5e9219e",
+      "bytes": 6247
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "2b73185bfb3db4b2d8fbd14e8b1d1b7781fcb5a8c2f771851659faa8f39aa494",
+      "bytes": 76896
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "1228cea50d2242ca264e2b59d399b68f196053eae683daead83345859af6aadb",
+      "bytes": 13377
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+      "bytes": 13417
+    },
+    {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "45bb5c6ca356eb66c4339507c0bcdb7af0888b2c6b5ae146f4d9a60ff0de89a3",
+      "bytes": 91388
+    },
+    {
+      "path": "package.json",
+      "sha256": "8ba54eb2409856430fe56731ade8196310cdb8526936543060cac72950e92186",
+      "bytes": 65081
+    },
+    {
+      "path": "scripts/lib/assessment-production-score-stability-policy-active.mjs",
+      "sha256": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+      "bytes": 1331
+    },
+    {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    },
+    {
+      "path": "scripts/lib/assessment-editor-scoped-source.mjs",
+      "sha256": "a97ee74f7afc04da1a943494d53a2aadb958618d0ab6296584603fdc5d4f7395",
+      "bytes": 6789
+    },
+    {
+      "path": "scripts/test-assessment-editor-moderator-context.mjs",
+      "sha256": "fe8e752507215c3ef7941871176367caeaf214b100ed21717670f757b3c42f6c",
+      "bytes": 4085
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "72c5ad5c6589920b1f0933967c94dedad205aaaec583358a0ad5df019c704e44",
+      "bytes": 18972
+    }
+  ],
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-280/workflow/rhetorical-adjudication/packet.json",
+    "sha256": "5b87fd57673c4dd29fb869cca8a6c536ec2dcf732f81be607b91e9268164352b",
+    "bytes": 439370
+  },
+  "fullReadRequiredForAllAllowedInputs": true,
+  "toolSourceReadRequired": false,
+  "validationParameters": {
+    "mode": "anonymous-adjudication",
+    "debateNumber": "280",
+    "debateId": "turek-normark-god-existence-2014",
+    "sourcePacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "29fa3f5a424fcf889f7e11e7c7a933b5a97163bc4327f223f13e92ce2ed1c46e",
+      "bytes": 166827
+    },
+    "catalogSnapshot": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    "candidates": [
+      {
+        "moveId": "p-beginner",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Turek names several scientists, but he also states observational and philosophical reasoning; their status is not presented as the sole basis that settles the beginner inference."
+          }
+        ]
+      },
+      {
+        "moveId": "p-beginner",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Turek supplies cosmological observations and a causal inference rather than treating God as true solely because alternatives are unproved; his false narrowing is not this definition."
+          }
+        ]
+      },
+      {
+        "moveId": "p-design",
+        "type": "bias",
+        "label": "Ambiguity effect",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Although design is presented as clearer than unknown physical mechanisms, the move explicitly offers a comparative inference; the evidence does not establish preference merely because uncertainty is uncomfortable."
+          }
+        ]
+      },
+      {
+        "moveId": "p-design",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Necessity is dismissed, chance is denied causal status, and design is declared the remaining explanation.",
+            "rationale": "Turek treats design as established after rejecting necessity and chance without positive evidence excluding unknown impersonal mechanisms, so absence of an accepted alternative carries the conclusion."
+          },
+          {
+            "decision": "accepted",
+            "rationale": "Turek treats design as established after briefly rejecting other options, without positive comparative evidence or excluding observer selection and unknown physical constraints.",
+            "context": "After dismissing necessity and chance, Turek says design is the remaining and best explanation."
+          }
+        ]
+      },
+      {
+        "moveId": "p-timeless-cause",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The exemption is tied to the stated principle that things beginning require causes and God is proposed as unbegun, providing a principled difference even if unsupported independently."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "The exception is tied to a stated principled difference—only things that begin require originating causes—although Turek still owes support for an actually timeless personal being."
+          }
+        ]
+      },
+      {
+        "moveId": "c-cosmic-uncertainty",
+        "type": "bias",
+        "label": "Authority bias",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The same reliance on unnamed experts is fully captured by appeal to authority; accepting authority bias too would duplicate one source-level defect without a distinct second failure."
+          }
+        ]
+      },
+      {
+        "moveId": "c-cosmic-uncertainty",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "He trusts unspecified physicists to have experimentally grounded reasons although he cannot identify the account.",
+            "rationale": "Nørmark relies on scientists’ expert status as assurance that a natural explanation exists while supplying no relevant model, evidence, or demonstrated consensus for the cosmic-origin issue."
+          },
+          {
+            "decision": "accepted",
+            "rationale": "Nørmark relies on scientists’ presumed tested expertise to sustain a natural explanation while presenting no specific cosmological account, evidence, or consensus bearing on Turek’s boundary inference.",
+            "context": "Nørmark trusts unspecified physicists despite offering no relevant origin model or evidence of his own."
+          }
+        ]
+      },
+      {
+        "moveId": "p-resurrection-case",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Despite inadequate comparison of error, legend, and visionary alternatives, Turek offers affirmative considerations including early testimony, embarrassing details, sincerity, outside notices, and movement growth."
+          },
+          {
+            "decision": "accepted",
+            "rationale": "The cumulative evidence may challenge deliberate fraud, but Turek treats uneliminated resurrection as true without seriously comparing error, visions, legend, or social transmission.",
+            "context": "Turek says there is no other way to explain Christianity’s emergence and disciple commitment."
+          }
+        ]
+      },
+      {
+        "moveId": "c-demonstrable-miracle",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The unclaimed reward supports continued withholding and a demand for evidence; Nørmark expressly refuses to infer that miracles are categorically false merely because proof is absent."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Nørmark explicitly leaves miracles possible and withholds belief pending convincing evidence; he does not conclude they are false merely because a public prize remains unclaimed."
+          }
+        ]
+      },
+      {
+        "moveId": "p-case-by-case",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Turek states the creator premise conditionally to establish miracle possibility and then calls for evidence-based case review, rather than using the condition alone to prove an actual miracle."
+          }
+        ]
+      },
+      {
+        "moveId": "p-case-by-case",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "The reply turns comparative miracle probability into a dispute over whether miracles are logically possible.",
+            "rationale": "Turek answers a stronger categorical ban that Nørmark ultimately disclaims, diverting from the relevant claim that familiar cognitive mechanisms make these reports less probable."
+          }
+        ]
+      },
+      {
+        "moveId": "p-history-method",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The Titanic comparison suppresses evidential differences but remains directly relevant to whether testimony and physical remains can establish past events, so it does not divert from historical method."
+          }
+        ]
+      },
+      {
+        "moveId": "c-myth-history",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Nørmark’s vague parallels do not demonstrate borrowing, yet he presents mythic development as an alternative possibility rather than declaring it true because historical authenticity remains unproved."
+          }
+        ]
+      },
+      {
+        "moveId": "p-objective-good",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Turek inadequately supports the exclusive premise that objective value requires a personal divine standard, but the source does not clearly repeat the final existence conclusion as a premise."
+          },
+          {
+            "decision": "accepted",
+            "rationale": "The argument assumes the disputed proposition that objective norms require a personal divine standard, without establishing why non-theistic moral realism cannot ground categorical moral truth.",
+            "context": "Turek defines objective good as requiring God’s unchanging authoritative nature beyond human opinion."
+          }
+        ]
+      },
+      {
+        "moveId": "c-evolved-morality",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "An evolutionary account of cooperative behavior replaces the disputed question of objective moral truth.",
+            "rationale": "Nørmark explains how social restraint and moral dispositions could evolve, a related behavioral genealogy that leaves Turek’s original ontological grounding challenge insufficiently answered."
+          },
+          {
+            "decision": "accepted",
+            "rationale": "An evolutionary genealogy can explain dispositions and enforcement, but it diverts from the ontological question and leaves the asserted objective truth and authority of moral propositions unanswered.",
+            "context": "Nørmark explains evolved cooperation and exclusion while Turek asks what grounds objective moral truth."
+          }
+        ]
+      },
+      {
+        "moveId": "c-empathy",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Empathy, pain, and childhood intuitions address moral recognition while objective grounding remains unanswered.",
+            "rationale": "Nørmark’s examples explain cognition and motivation, but they divert from the issue Turek expressly distinguishes: what makes a moral proposition objectively true and categorically authoritative."
+          },
+          {
+            "decision": "accepted",
+            "rationale": "These examples illuminate moral cognition and motivation, but they shift attention away from what makes moral obligations objectively true and leave Turek’s explicit grounding challenge insufficiently answered.",
+            "context": "Nørmark answers moral grounding with children’s intuitions, felt pain, empathy, and group enforcement."
+          }
+        ]
+      },
+      {
+        "moveId": "p-moral-author",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "The book analogy presupposes that goodness, like a written object, must have a personal author.",
+            "rationale": "By building authorship into the analogy, Turek assumes the disputed personal-source requirement and then uses it to conclude that objective goodness requires a divine author."
+          },
+          {
+            "decision": "accepted",
+            "rationale": "The analogy builds personal authorship into moral reality and then infers God, smuggling the contested claim that normative truths require an author into the argument’s premise.",
+            "context": "Turek compares moral truth to a book that cannot exist without a personal author."
+          }
+        ]
+      },
+      {
+        "moveId": "p-abuse-versus-outworking",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "rationale": "The Hitler claim diverts attention from whether Christian doctrines contributed to violence and applies a new guilt-by-outworking assertion without answering the original attribution problem consistently.",
+            "context": "Turek redirects a question about Christian violence toward Hitler’s alleged atheistic evolutionary rationale."
+          }
+        ]
+      },
+      {
+        "moveId": "p-abuse-versus-outworking",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Christian violence is called misuse while Hitler’s contingent racial program is assigned directly to atheism.",
+            "rationale": "Turek applies a doctrine-sensitive charitable standard to Christianity but a guilt-by-association standard to atheism, without deriving Hitler’s policies from premises necessary to atheism."
+          }
+        ]
+      },
+      {
+        "moveId": "c-science-tests",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Public testing and correction bear on epistemic reliability, so the science contrast is relevant; its inability to settle metaphysics and singular history is an incompleteness rather than diversion."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Although Nørmark’s contrast with dream-based medicine underaddresses historical and metaphysical evidence, public testing and correction remain directly relevant to his standard for reliable reality claims."
+          }
+        ]
+      },
+      {
+        "moveId": "p-materialism-reason",
+        "type": "fallacy",
+        "label": "Equivocation",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Atheism, naturalism, materialism, evolution, and determinism are treated as interchangeable throughout the self-defeat argument.",
+            "rationale": "Turek shifts among distinct theses as though each entailed every other, making conclusions about determinism and unreliable reasoning appear to follow from atheism itself."
+          },
+          {
+            "decision": "accepted",
+            "rationale": "Those positions are not identical, yet Turek shifts between them without argument, allowing determinism’s alleged consequences to stand in for conclusions about atheism and naturalism generally.",
+            "context": "Turek moves among atheism, naturalism, materialism, evolution, and determinism as equivalent positions."
+          }
+        ]
+      },
+      {
+        "moveId": "p-free-will",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "The argument assumes determined physical reasoning cannot be free, then infers that a soul is necessary.",
+            "rationale": "Turek presupposes the disputed incompatibility between physical causation and reasons-responsive freedom, which is the central premise needed to establish his nonphysical-soul conclusion."
+          },
+          {
+            "decision": "accepted",
+            "rationale": "The conclusion depends on the disputed premises that rational justification needs libertarian freedom and that only a soul can supply it, neither independently established in the exchange.",
+            "context": "Turek assumes free rational choice requires a nonphysical mind or soul beyond determined matter."
+          }
+        ]
+      },
+      {
+        "moveId": "p-redemption",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The theology does not independently prove God, but it directly answers the moderator’s question about what Jesus achieved, so it does not divert from that immediate issue."
+          }
+        ]
+      },
+      {
+        "moveId": "c-human-responsibility",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "rationale": "The existential appeal shows how secular meaning may feel and function, but it redirects from the evidential motion and supplies no reason that divine reality is improbable.",
+            "context": "Nørmark emphasizes the beauty of chosen human responsibility in an indifferent, godless universe."
+          }
+        ]
+      },
+      {
+        "moveId": "p-closing",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "rationale": "Jesus’s influence does not eliminate ordinary historical development, and Turek uses his inability to see an alternative as affirmative evidence that the resurrection occurred.",
+            "context": "Turek says he cannot see how Jesus became supremely influential without an actual resurrection."
+          }
+        ]
+      },
+      {
+        "moveId": "p-closing",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Jesus’s unmatched historical influence is presented as support that the resurrection actually occurred.",
+            "rationale": "Influence concerns later cultural impact rather than whether the source evidence discriminates resurrection from natural explanations, diverting the close from the unresolved historical inference."
+          }
+        ]
+      },
+      {
+        "moveId": "c-closing-love",
+        "type": "bias",
+        "label": "Subjective validation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Nørmark uses personally meaningful love as an example of secular meaning, but he does not treat its resonance as proof that his claims about God’s nonexistence are accurate."
+          }
+        ]
+      },
+      {
+        "moveId": "c-closing-love",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Present love for his child replaces engagement with the cumulative evidence offered for God’s existence.",
+            "rationale": "Nørmark establishes that secular human relationships can supply meaning, but this related existential point does not answer the cosmological, moral, and historical case on the motion."
+          },
+          {
+            "decision": "accepted",
+            "rationale": "The personal relationship supports the possibility of secular meaning, but it diverts from whether God exists and leaves Turek’s cosmological, moral, and historical arguments substantially untouched.",
+            "context": "Nørmark closes with his observable love for his child as secular meaning without God."
+          }
+        ]
+      }
+    ],
+    "expectedCandidateCount": 28,
+    "outputSchemaBounds": {
+      "decisions": {
+        "minItems": 28,
+        "maxItems": 28
+      }
+    }
+  },
+  "outputPath": "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/adjudication/output.json"
+  ],
+  "checker": [
+    "/opt/homebrew/Cellar/node/25.9.0_3/bin/node",
+    "docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/check-review.mjs",
+    "--debate",
+    "280",
+    "--packet",
+    "docs/assessment-production/standalone-debates-v1/debate-280/publication/rhetorical-tag-review-1/adjudication/packet.json"
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Read this plan and the entire reader.txt including shared blocks. Never open peer outputs. Run the pinned checker without rereading its implementation. Authenticate reading before authoring. Keep candidates in memory; handoff holds approved candidate bytes in memory until the controller supplies authenticated source/editorial release. Only that release writes the first submission. A saved failure consumes its attempt. No autonomous retry.",
+  "isolation": "Fresh fork-none subscription context; protocol isolation, not an operating-system sandbox.",
+  "packetMetrics": {
+    "originalBytes": 427585,
+    "readerBytes": 424098,
+    "sharedBlocks": 1,
+    "completeDocuments": 7,
+    "losslessRoundTrip": true
+  }
+}

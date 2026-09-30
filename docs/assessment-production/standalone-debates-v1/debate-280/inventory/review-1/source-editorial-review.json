@@ -1,0 +1,34 @@
+{
+  "status": "failed-source-editorial-review-before-first-submission",
+  "candidateSha256": "96a1e1baea4b81b1053eba3990d5ce04c460899368ea46b2034272283ba205e6",
+  "candidateBytes": 61303,
+  "reviewedAllCharacters": 61131,
+  "submissionOutputAbsent": true,
+  "sameContextUnsavedContinuationAuthorized": true,
+  "independentContextOrSubmissionRetryAuthorized": false,
+  "findings": [
+    {
+      "category": "source-specific-reasoning",
+      "details": "All move warrant, inference, importance, burden and response explanations repeat placeholder statements rather than identify premises and inferential connections."
+    },
+    {
+      "category": "speaker-ownership",
+      "moveIds": [
+        "c-brain-probability",
+        "p-timeless-cause",
+        "c-humans-as-end",
+        "p-moral-author"
+      ],
+      "details": "Selected source intervals contain another speaker or require the omitted moderator-prompt record. Revise to actual contiguous own-speaker evidence."
+    },
+    {
+      "category": "balanced-coverage",
+      "details": "Morality selection omits distinct pro abuse-versus-tenet and atheist-regime arguments while including con response. Review paired exchange and give substantive inclusion or omission rationale."
+    },
+    {
+      "category": "source-specific-capacity",
+      "details": "Fourth-row and section-weight rationales repeat generic language and do not establish distinct evidential roles."
+    }
+  ],
+  "requiredDisposition": "Retain exact bytes and original handoff metadata; retire only this held runtime, then permit corrected in-memory candidate from the same worker and unchanged authorized source inputs. No candidate submission has been made."
+}

@@ -13335,5 +13335,52 @@ export const debateSummaries = [
         "title": "Suffering and prayer"
       }
     ]
+  },
+  {
+    "id": "turek-normark-god-existence-2014",
+    "number": "280",
+    "title": "Frank Turek vs Dennis Nørmark — Does God Exist?",
+    "year": 2014,
+    "label": "God, History, and Humanism",
+    "date": "2026-09-30",
+    "duration": "2 hr 4 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=t-p2eSkmyIQ",
+    "motion": "Does God exist?",
+    "summary": "Turek’s cumulative theistic case narrowly loses to Nørmark’s calibrated natural explanations, stronger concessions, and more consistent evidential burden.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God exists",
+        "speaker": "Frank Turek",
+        "color": "teal"
+      },
+      "con": {
+        "name": "God probably does not exist",
+        "speaker": "Dennis Nørmark",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 74,
+      "con": 76,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Cosmological origins and fine-tuning"
+      },
+      {
+        "title": "Miracles, resurrection, and historical evidence"
+      },
+      {
+        "title": "Morality, humanism, and violence"
+      },
+      {
+        "title": "Reason, mind, and scientific method"
+      },
+      {
+        "title": "Meaning, redemption, and closing cases"
+      }
+    ]
   }
 ];

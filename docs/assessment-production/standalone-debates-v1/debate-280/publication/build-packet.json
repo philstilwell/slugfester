@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "280",
+  "debateId": "turek-normark-god-existence-2014",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/inventory/inventory.json",
+      "sha256": "3ab45454f8ed3b8d3b2cf57aebfaa535f7cc6c3443453fa08f9bb1721494f65b",
+      "bytes": 157168
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/score-pass/output.json",
+      "sha256": "dd180e8797ad436606cc2beacaf3977c22f9e0cdc397c2473d1094dcb4cec546",
+      "bytes": 15978
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/skeleton.json",
+      "sha256": "affaf27cc28c76200fe75281ff8d03116923d5939270b7694dc15fc9c29460ce",
+      "bytes": 11880
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/reference-metrics.json",
+      "sha256": "949a6ad5b560a4639ca80c87ebe7ce66de0955aa35330e0444e10e255fc5e5d5",
+      "bytes": 54640
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

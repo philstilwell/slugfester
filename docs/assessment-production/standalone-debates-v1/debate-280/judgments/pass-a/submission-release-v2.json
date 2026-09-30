@@ -1,0 +1,44 @@
+{
+  "status": "approved-first-submission",
+  "candidateSha256": "9e042814c699aa80448ebed62b6776fdcd25e5b90ce8097e019ad6cbcb278783",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-280/judgments/pass-a/execution-plan.json",
+    "sha256": "c6a84b2cb3d70e942f99283a8e7bb0bf1d2a39a71a2fba5ef4660ee53f295e67",
+    "bytes": 7965
+  },
+  "readingEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-280/judgments/pass-a/reading-release.json",
+    "sha256": "c12577800de851174cb8324648da0cd5eda3592187e894e7228353273e8e05e1",
+    "bytes": 14502
+  },
+  "sourceEditorialReview": {
+    "status": "passed",
+    "notes": "The controller read the full repaired candidate: all 32 move judgments, 192 dimension rationales, both zero burden adjustments and eligibility objects. Exact recursive comparison with the preserved rejected candidate found precisely 192 changed rationale strings and no changed rating, confidence, burden decision, identity, ordering or other field. The same reviewer and original source packet were retained. The new reasons distinguish inferential coherence, cited support, live target, burden contribution, wording and calibration. Particular evidence includes the cosmological sources, fine-tuning probability gap, moral ontology distinction, early testimony and sincerity, empirical brain dependence, and later probability qualifications. Moderator prompts are explicitly context in redemption, historical method, abuse/outworking and humanist response. Holm’s mixed final free-will words are excluded. No unequal opportunity penalty or credit for independent moderator argument was found. Nørmark’s comparative probability and later brain-origin and miracle qualifications are retained; adopted positive naturalistic claims remain assessed. Turek is not assigned a young-earth burden or accused of denying atheist good behavior. Recognition limitations are distinguished from performance throughout. Apocalyptic excerpt truncation and corrupted historical names are explicitly excluded, not used as clarity defects. Audio checks confirm the narrowed ownership spans; incidental wording uncertainty does not supply a deduction. The source-based judgments themselves remain the reviewer’s. The controller did not prescribe numerical changes, disclose peer judgments, calculate scores or choose a winner."
+  },
+  "priorRejectedCandidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-280/judgments/pass-a/review-1/rejected-held-candidate.json",
+    "sha256": "4ae224a80cb61608cc5c3ed5cf99e1f648a282d1d4653cb56863ae0080485042",
+    "bytes": 49070
+  },
+  "sameContextRecovery": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-280/judgments/pass-a/review-1/recovery-authorization.json",
+    "sha256": "f22138dc26cccc0e605428eb3305c0afc2c61481f330b80aea13d1ed0e4e7295",
+    "bytes": 577
+  },
+  "changedLeaves": {
+    "count": 192,
+    "pattern": "judgments[*].dimensions[*].rationale",
+    "allOtherLeavesIdentical": true
+  },
+  "savedSubmissionAbsentAtRelease": true,
+  "releaseMetadataCorrection": {
+    "original": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-280/judgments/pass-a/submission-release.json",
+      "sha256": "737a80a3f6fd1c256f9d8f89517458dd5c6d229115e17436eee92e98cca23440",
+      "bytes": 3163
+    },
+    "failure": "Source-specific review notes required; 409 !== 200",
+    "cause": "The release checker requires notes as a string; controller supplied an array. Candidate was not submitted or changed.",
+    "correction": "Joined the same reviewed notes into one string. All candidate and input hashes unchanged."
+  }
+}

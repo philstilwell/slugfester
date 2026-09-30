@@ -1,0 +1,9 @@
+{
+  "status": "reading-release-withheld",
+  "reviewedAt": "2026-09-30T18:56:30.622188+00:00",
+  "session": "/Users/philstilwell/.codex/sessions/2026/09/30/rollout-2026-09-30T14-50-24-01a0f3a7-550a-79f1-aa2d-8cf86ff97879.jsonl",
+  "missingNonemptyLines": 10159,
+  "cause": "Bulk reader loop for 2101 through 14613 emitted completion summary instead of evidence; outer output truncation also affected lines around 1496.",
+  "correction": "Same worker must visibly reread 1401\u20131500 and 2101\u201314613 in bounded untruncated calls. No authorship or submission released; no saved attempt consumed.",
+  "frozenInputsChanged": false
+}

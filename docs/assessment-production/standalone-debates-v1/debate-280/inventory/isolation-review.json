@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "scope": "Read-stage tool access through authenticated reading checkpoint",
+  "agent": "/root/inventory280",
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "low",
+  "actualToolCallsInspected": 21,
+  "finding": "Calls read only the execution plan and bounded reader via the maintained runner, plus controller communication. Truncated source chunk was reread completely and authenticated. No peers, scores, history, biographies, external sources or credentials accessed.",
+  "operatingSystemSandboxClaimed": false,
+  "toolRecords": [
+    {
+      "tool": "exec",
+      "argumentSha256": "92b4329e797f8c9cc7b66cbee203795850755ca49bfb5f2c687ed81f6d9f9e3f"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "ad2a300c1f82ca929e2aecf10ec3e2bf768f1125689785e46880413b2664a680"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "0165d14388b4ff65e484e0bd4e34f248f2e005658f0b9258ea147f7d3ff72427"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "3039d86ce58323a03942b1d5b86db2840fb2d0a75324a2cb95788609b19768cf"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "03e67673c6de18ce3b324ea651e16bcc192d1e3c937fd1ef262c1ea6cd02ae1f"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "3839c79bd4d12e63079a16920a00bb21880b32d2fb3258af57d95ad66b2fb9fb"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "be0e857e244a9bccdbbe4e9785ddac96d18cb524975637ab8a218909ae31967c"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "d1ecacece1f8ad5f6b0b9a1aec18956aacd9ee970cee70b632ef895fc1c8e29c"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "2b1d7b64fb5fa0497d4b9b8fcaabe8405a2d0e90873c14672b4db32e057e69bb"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "6924c7cdc652bbd40cd0ed4ff1f1f16b0c1fdea90c847c90a0fd300851cc3712"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "baf652edfa8395149541dd563be060ca37ed580e9bf2e394c72042a68495ebc3"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "0f24f5110837e57ef4b3beae0283bd837cccf8a4abc6bd4231642455e64b7f13"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "253aad992e8e9435a8659c12252270f0cbcd019b1e04b43ef90dd185099bf04d"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "4a00866d0a61fc5c52e7e408e39c9034a6e560c98d970d2911da907c8b399d4d"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "7218b7526b63763ce458eb535a89e2e54cb6f474f11383faab308a1d84e7effa"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "a83241888563fabfcaa21e5addba6371ce24507f2012673696e3fb0766de3202"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "ae17ab0de273aeb99c9ab8dd3cd506172bf3970ee95595f562ea23ea773b529f"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "a39b0d24865fa4c42dbe7cefede71c9e91169130165570ba50f8249de8cc0699"
+    },
+    {
+      "tool": "exec",
+      "argumentSha256": "0ecaa95122cc5b342fed724737cfbddce3981910aa811636ee10ef75eb8da5e8"
+    },
+    {
+      "tool": "send_message",
+      "argumentSha256": "f364e2b7953bbd7430d215ff169d7716d8e251ddd4386d8fe5da6062d765df94"
+    },
+    {
+      "tool": "wait_agent",
+      "argumentSha256": "7d04d57c16360ab72473962796ad05822bc069874d59d5edcc66fd72a377fbfb"
+    }
+  ]
+}
