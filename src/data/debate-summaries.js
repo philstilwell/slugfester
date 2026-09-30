@@ -13282,5 +13282,58 @@ export const debateSummaries = [
         "title": "Morality, atonement and meaning"
       }
     ]
+  },
+  {
+    "id": "slick-barker-god-existence-2014",
+    "number": "279",
+    "title": "Matt Slick vs Dan Barker — Does God Exist?",
+    "year": 2014,
+    "label": "Does God Exist?",
+    "date": "2026-09-30",
+    "duration": "1 hr 43 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=oPi073maMRw",
+    "motion": "Does God exist?",
+    "summary": "Barker wins by controlling burdens, sharpening divine-coherence objections, and limiting prayer conclusions, while Slick raises serious grounding challenges without completing their Biblical bridge.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God exists",
+        "speaker": "Matt Slick",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheism defended",
+        "speaker": "Dan Barker",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 68,
+      "con": 76,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Burden and public evidence"
+      },
+      {
+        "title": "Logic and intelligibility"
+      },
+      {
+        "title": "Cosmology and causation"
+      },
+      {
+        "title": "Divine coherence"
+      },
+      {
+        "title": "Revelation and divine authority"
+      },
+      {
+        "title": "Morality and altruism"
+      },
+      {
+        "title": "Suffering and prayer"
+      }
+    ]
   }
 ];

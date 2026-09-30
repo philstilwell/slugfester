@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "commands": [
+    {
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-campaign-closure.mjs",
+        "--repository-only"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "assessment:standalone:content-parity:check"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "assessment:standalone:rhetorical-tags:check"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-v1.mjs",
+        "--audit",
+        "--debate",
+        "279"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-279/validation/historical-and-parity.txt",
+    "sha256": "b2f70e07e281cc106079642f76f43b6b0514e38b918ce7fffd2c9ef27bafc774",
+    "bytes": 21470
+  }
+}

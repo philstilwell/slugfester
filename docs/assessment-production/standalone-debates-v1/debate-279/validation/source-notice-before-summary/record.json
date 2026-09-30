@@ -1,0 +1,32 @@
+{
+  "status": "source-scope-layout-repaired-pending-browser-verification",
+  "debateNumber": "279",
+  "problem": "Source notice was below the top score summary despite the approved before-scores requirement; the earlier browser assertion checked only detailed overall scores.",
+  "change": "Move the existing generic source notice above the debate hero, so every disclosed source limitation precedes all score summaries. Strengthen the generic browser assertion to compare against .scoreboard.",
+  "before": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/validation/source-notice-before-summary/before-app.js",
+      "sha256": "bab8f7b1be08ef21f1d0a261b12ea36e5c796bbaed559151cf14f7ca7dc2528b",
+      "bytes": 175939
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/validation/source-notice-before-summary/before-browser-replay-template.js",
+      "sha256": "e900504dc7e1bec3835ccc1bf98e5a4c50fd08c04d3c38df3ab901df9bd37c43",
+      "bytes": 12169
+    }
+  ],
+  "after": [
+    {
+      "path": "src/app.js",
+      "sha256": "c756ff6309ca4cb13a46d811a433c69ab2a701dde4fde201690b5ffe003a8807",
+      "bytes": 175939
+    },
+    {
+      "path": ".assessment-cache/controllers/browser-replay-template.js",
+      "sha256": "2b5ba15226e62069ac9f393432a0642701723883ccb835cc27fa34c3947207ce",
+      "bytes": 12164
+    }
+  ],
+  "assetVersion": "Generator derives a new content hash from changed app bytes and updates dependent page and module URLs; no manual version override.",
+  "assessmentChanges": 0
+}

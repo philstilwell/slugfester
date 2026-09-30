@@ -1,0 +1,24 @@
+{
+  "status": "passed-byte-exact-transport-repair",
+  "debateNumber": "279",
+  "cause": "apply_patch added a second terminal newline to the released candidate. Worker stopped after first save.",
+  "method": "Controller removed exactly the final LF byte after proving the resulting bytes equal the pre-save released SHA-256. No JSON value changed.",
+  "before": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-279/publication/rhetorical-tag-review-1/pass-b/preserved-first-save-extra-newline.json",
+    "sha256": "56904c82fd45b0cb3cf398e908d587efb2b8d280c36e98f034762c51c3b62ddb",
+    "bytes": 29123
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-279/publication/rhetorical-tag-review-1/pass-b/output.json",
+    "sha256": "ff0b79604536a7c0f4322bc087ece8883572159662e03ede77399137ae233f3f",
+    "bytes": 29122
+  },
+  "release": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-279/publication/rhetorical-tag-review-1/pass-b/submission-release.json",
+    "sha256": "2a73e357b684a8a1b315590204661928e7c49801693ddcc768eb792cada480f1",
+    "bytes": 3752
+  },
+  "contentChanges": 0,
+  "additionalModelAttempts": 0,
+  "scoreChanges": 0
+}

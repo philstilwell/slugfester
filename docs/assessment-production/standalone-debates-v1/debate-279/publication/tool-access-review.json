@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "debateNumber": "279",
+  "execution": "docs/assessment-production/standalone-debates-v1/debate-279/publication/execution.json",
+  "readingEvidence": "docs/assessment-production/standalone-debates-v1/debate-279/publication/reading-release.json",
+  "toolCallCount": 130,
+  "review": "Reading release authenticates all allowed inputs. Root additionally inspected post-release filesystem reads, stdin checker commands, hashing transport, sole apply_patch write and final hash read. No input outside allowlist, paid call, score calculation or post-save prose mutation was observed.",
+  "transportDiagnostics": "One truncated early checker --emit print was superseded by reconstructable final full parts slices and independent full checker assembly; one unsaved JavaScript syntax error wrote nothing. Neither created a saved submission or new model context.",
+  "violations": []
+}

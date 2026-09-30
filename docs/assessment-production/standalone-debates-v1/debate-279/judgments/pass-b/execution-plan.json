@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "primary",
+  "debateNumber": "279",
+  "debateId": "slick-barker-god-existence-2014",
+  "pass": "pass-b",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/judgments/contract.md",
+      "sha256": "24a03b3bbd6f908014a793034db78dc24898c2be3f637c9b701b018fefa61381",
+      "bytes": 4219
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/judgments/judgment-packet.json",
+      "sha256": "9962df88f56799b513eb32b40fbae30101e76e7da2d145293918bf571bf7af3c",
+      "bytes": 4844
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/inventory/inventory.json",
+      "sha256": "ef52ac0b86f2e1ba6cd8ef2019eacdfa65d3fd7b6919ea074708b5f6493dc0f5",
+      "bytes": 180409
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/inventory/procedural-skill-snapshot.md",
+      "sha256": "38c2cccaa78f6afe284f3dafed19ae29650ad6336b710be48e18a8aa14139733",
+      "bytes": 5145
+    },
+    {
+      "path": ".assessment-cache/captions/oPi073maMRw/indexed-transcript.txt",
+      "sha256": "5fba7dde6b7a30dfc99b4ee7e6b174c99c83a6048e8bf24b29cad29eb99e43fa",
+      "bytes": 188544
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/source/assessment-source-notes.md",
+      "sha256": "72850efcc2c1f35e15f5891371e118f26e4e4332b16724276f0251f12465d445",
+      "bytes": 4623
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/source/source-lock.json",
+      "sha256": "d4af9b4ba40387f2520561bba879814b52c7e4eee8562e6d17bd87dca13526a1",
+      "bytes": 6313
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/judgments/validator-excerpt.txt",
+      "sha256": "9854a04a5597da0e9274eb29e2370c49dc143a07f1e0a599be1d90f1f0d1a664",
+      "bytes": 5783
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/judgments/check-judgment.mjs",
+      "sha256": "781e989b59317dfe72dd32bf52d4a69e8e6f248642f7e50bfb2c6155d4e4b4e3",
+      "bytes": 1116
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-279/judgments/pass-b/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-279/judgments/pass-b/output.json"
+  ],
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-279/judgments/pass-b/output.json",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Confirm absolute destination and fully read every allowlisted input without truncation. Send checkpoint and await authenticated reading release. Build the actual unsaved candidate in small persistent-memory chunks. Validate through the allowed stdin checker; emit the complete checked unsaved JSON for controller source/editorial review. Await separate submission release, save the approved bytes once, then stop. No candidate temporary files or other inputs.",
+  "isolation": "Fresh subscription context, fork none, protocol-restricted disjoint inputs/output; no OS sandbox claimed."
+}

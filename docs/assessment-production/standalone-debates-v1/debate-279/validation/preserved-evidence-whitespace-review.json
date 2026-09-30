@@ -1,0 +1,32 @@
+{
+  "status": "passed-with-three-exact-preservation-exceptions",
+  "debateNumber": "279",
+  "defaultCheckExit": 2,
+  "diagnostics": [
+    "docs/assessment-production/standalone-debates-v1/debate-279/adjudication/validator-excerpt.txt:55: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-279/judgments/validator-excerpt.txt:148: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-279/publication/rhetorical-tag-review-1/pass-b/preserved-first-save-extra-newline.json:452: new blank line at EOF."
+  ],
+  "records": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/adjudication/validator-excerpt.txt",
+      "sha256": "03bfc45930ab28f828cbc74d877bc47b5c2e76b7a5efba276e385587537f37a9",
+      "bytes": 2397
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/judgments/validator-excerpt.txt",
+      "sha256": "9854a04a5597da0e9274eb29e2370c49dc143a07f1e0a599be1d90f1f0d1a664",
+      "bytes": 5783
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/publication/rhetorical-tag-review-1/pass-b/preserved-first-save-extra-newline.json",
+      "sha256": "56904c82fd45b0cb3cf398e908d587efb2b8d280c36e98f034762c51c3b62ddb",
+      "bytes": 29123
+    }
+  ],
+  "reason": "Two authenticated validator-excerpt worker inputs and the explicitly preserved failed first-save file retain terminal blank lines. Normalizing them would alter frozen input or failure bytes. These are documentary artifacts, not production code or prose.",
+  "scopedDefaultCheckPassed": true,
+  "allFilesOtherWhitespaceChecksPassed": true,
+  "configurationPersisted": false,
+  "productionWhitespaceExceptions": 0
+}
