@@ -1,0 +1,18 @@
+{
+  "status": "reader-facing-rules-passed-except-adapter-dependent-locked-card-classification",
+  "debateNumber": "276",
+  "zeroBasedProductionIndex": 275,
+  "deferredIssues": [
+    "debates.275.sections.3.exchanges: must contain no more than 3 items",
+    "debates.275.sections.3.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow",
+    "debates.275.sections.4.exchanges.1.pro: must be an object",
+    "debates.275.sections.4.exchanges.2.pro: must be an object",
+    "debates.275.sections.5.exchanges.2.con: must be an object",
+    "debates.275.assessmentRubric: requires a matching JSON assessment ledger"
+  ],
+  "reason": "Production validator recognizes frozen standalone fourth rows and absent opposing cards only from the matching immutable ledger adapter, which is deliberately built after rendering gates. Frozen inventory and standalone candidate validation already accept exactly these source-required sections and omissions.",
+  "allOtherReaderFacingRulesPassed": true,
+  "corpusAndGeneratedPagesPassed": true,
+  "fullProductionValidationRequiredAfterAdapter": true,
+  "validatorChanged": false
+}

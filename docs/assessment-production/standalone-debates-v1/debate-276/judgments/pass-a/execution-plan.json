@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "primary",
+  "debateNumber": "276",
+  "debateId": "rauser-aron-ra-biblical-violence-2022",
+  "pass": "pass-a",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-276/judgments/contract.md",
+      "sha256": "c4d57ef68199be8a8997771d61e6d9fd5291bcbb40ca4199a6656171312b690c",
+      "bytes": 4014
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-276/judgments/judgment-packet.json",
+      "sha256": "8996b61f40ce896c48854e9c352bc889f483fbeea9058256dce121f4b3df8f23",
+      "bytes": 4950
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-276/inventory/inventory.json",
+      "sha256": "c7b3cb273aa45f05f885978b9711f0e9ae82f4dfd2437d883973ba9bb4e02e77",
+      "bytes": 130081
+    },
+    {
+      "path": ".assessment-cache/captions/qvT2JHyxnz8/indexed-transcript.txt",
+      "sha256": "50e6b8e849fec3f869c667ac6aafe35c521e5f52b58d4f6e3491c358a3527afd",
+      "bytes": 279468
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-276/source/assessment-source-notes.md",
+      "sha256": "e6c5e01b7b3d41555329f21de9efd15f39f3b610c7163596a61aa314085a353e",
+      "bytes": 4237
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-276/source/source-lock.json",
+      "sha256": "173b95f83834b01befec2a89fb20d8d4783df195bcf235766142e78c19947ee7",
+      "bytes": 5360
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-276/judgments/validator-excerpt.txt",
+      "sha256": "623112992e33dcf4c4d6b38c784b6b587ab2c67c05d25dfae20b836532d0eedb",
+      "bytes": 5782
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-276/judgments/check-judgment.mjs",
+      "sha256": "781e989b59317dfe72dd32bf52d4a69e8e6f248642f7e50bfb2c6155d4e4b4e3",
+      "bytes": 1116
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-276/judgments/pass-a/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-276/judgments/pass-a/output.json"
+  ],
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-276/judgments/pass-a/output.json",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Confirm absolute destination and fully read every allowlisted input without truncation. Send checkpoint and await authenticated reading release. Build the actual unsaved candidate in small persistent-memory chunks. Validate through the allowed stdin checker; emit the complete checked unsaved JSON for controller source/editorial review. Await separate submission release, save the approved bytes once, then stop. No candidate temporary files or other inputs.",
+  "isolation": "Fresh subscription context, fork none, protocol-restricted disjoint inputs/output; no OS sandbox claimed."
+}

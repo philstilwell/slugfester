@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "276",
+  "debateId": "rauser-aron-ra-biblical-violence-2022",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-276/inventory/inventory.json",
+      "sha256": "c7b3cb273aa45f05f885978b9711f0e9ae82f4dfd2437d883973ba9bb4e02e77",
+      "bytes": 130081
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-276/score-pass/output.json",
+      "sha256": "fbb3d1a0b0782fc3fad5fc5e9b90f21931d9ec7259a806f3a859c0bfc56fd7a0",
+      "bytes": 17849
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-276/publication/skeleton.json",
+      "sha256": "2a4c52099aaf96924fa4b71bcd2b0dbd5ef82bdd702552ee5a03ed870ed42b5a",
+      "bytes": 12945
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-276/publication/reference-metrics.json",
+      "sha256": "2eb56df5964c8359a8302cb33284f4a80f1e32e5b4cceb99c1ab7be95d075140",
+      "bytes": 27918
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}
