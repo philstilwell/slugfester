@@ -148,6 +148,8 @@ function fallbackHeading(seo = {}) {
 }
 
 function fallbackMarkup(seo, summary) {
+  const scopeDebate = debates.find((debate) => debatePath(debate) === seo.canonicalPath);
+  const scopeDisclosure = assessmentScopeDisclosures.get(scopeDebate?.id);
   const links = [
     { href: "/", label: "Browse debates" },
     { href: searchPath(), label: "Search scorecards" },
@@ -167,7 +169,8 @@ function fallbackMarkup(seo, summary) {
 
   return `<main class="seo-fallback" id="main-content" data-initial-path="${escapeHtml(seo.canonicalPath || "")}">
       <p class="eyebrow">${escapeHtml(SITE_NAME)}</p>
-      <h1>${escapeHtml(fallbackHeading(seo))}</h1>
+      <h1>${escapeHtml(fallbackHeading(seo))}</h1>${scopeDisclosure ? `
+      <section class="scoring-note source-context" aria-label="Source and assessment scope"><strong>Source and assessment scope</strong><span>${escapeHtml(scopeDisclosure)}</span></section>` : ""}
       <p>${escapeHtml(summary || seo.description || DEFAULT_DESCRIPTION)}</p>${seo.biography ? `\n      ${renderBiography({ name: seo.heading }, seo.biography, 2)}` : ""}
       <nav aria-label="Explore Slugfester">
         ${uniqueLinks
