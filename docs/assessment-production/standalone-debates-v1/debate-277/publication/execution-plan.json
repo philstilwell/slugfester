@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "publication",
+  "debateNumber": "277",
+  "debateId": "shermer-scrivener-good-without-god-2024",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/publication/contract.md",
+      "sha256": "8db2eb8b447daf5982e419550d7d2f47b210133070b7a36513e9e59fd3a0d3fe",
+      "bytes": 8296
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/publication/build-packet.json",
+      "sha256": "63272141c270f925440f9a903ac866e7450ef07dff898f365b307b03872fac41",
+      "bytes": 1557
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/publication/skeleton.json",
+      "sha256": "34763b6c2257d745e0b65a2bf9dec213520117ff4e01566cb3e76377cb9d8a26",
+      "bytes": 13519
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/inventory/inventory.json",
+      "sha256": "1e69f08ed0edeeac3cbd5eec2dbda9e62ef9ee65c9d784380a5f95f0f2472312",
+      "bytes": 162860
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/final-ledger/final-ledger.json",
+      "sha256": "653da0ae2a24b4b2cefd3de9c1b300e38825c10bdeecbc6b7c1df499db61e584",
+      "bytes": 293198
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/score-pass/output.json",
+      "sha256": "28dfd855eb544748b6aeb54afbdbb7387da5892330a4e00af40a7e08256fc6eb",
+      "bytes": 17850
+    },
+    {
+      "path": ".assessment-cache/captions/rQ-g33KtZZ0/indexed-transcript.txt",
+      "sha256": "d30ae1de9d04c2e8e73130cdacead0ae8b58360fef11140c6a62fe0f38f0ff82",
+      "bytes": 158576
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/source/assessment-source-notes.md",
+      "sha256": "4c3c2d73b4a999fb048c7273b0e735dd3095a42bc5f681e7cb81bed2abaa77e7",
+      "bytes": 4947
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/source/source-lock.json",
+      "sha256": "84f0188a34f6316016eeb95d6e5c4b40ffa53f0c3531135d3f685bce8f3b47df",
+      "bytes": 6852
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/publication/reference-metrics.json",
+      "sha256": "2fbb609680ae8e9100b4e56caaabf6787158456c195bc77d2e1ea57298f27642",
+      "bytes": 27892
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/publication/check-publication.mjs",
+      "sha256": "941ea7c2b11c8d9189d6251eb767537435c86d13e76166f566dc28437cdce6e4",
+      "bytes": 9218
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-277/publication/first-submission-parts.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-277/publication/first-submission-parts.json"
+  ],
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-277/publication/first-submission-parts.json",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Confirm absolute destination and fully read every allowlisted input without truncation. Send checkpoint and await authenticated reading release. Build the actual unsaved candidate in small persistent-memory chunks. Validate through the allowed stdin checker; emit the complete checked unsaved JSON for controller source/editorial review. Await separate submission release, save the approved bytes once, then stop. No candidate temporary files or other inputs.",
+  "isolation": "Fresh subscription context, fork none, protocol-restricted disjoint inputs/output; no OS sandbox claimed."
+}

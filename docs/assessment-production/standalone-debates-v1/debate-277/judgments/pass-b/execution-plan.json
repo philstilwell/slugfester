@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "primary",
+  "debateNumber": "277",
+  "debateId": "shermer-scrivener-good-without-god-2024",
+  "pass": "pass-b",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/judgments/contract.md",
+      "sha256": "2f7a25017537ae3c5bc4add570948b0b99aac39a222369da9e1fed7c019cbd13",
+      "bytes": 4464
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/judgments/judgment-packet.json",
+      "sha256": "14becb2a0d345eb0602dad05fe0319dfb23b3873b6b6238a58639a5cea01217c",
+      "bytes": 4900
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/inventory/inventory.json",
+      "sha256": "1e69f08ed0edeeac3cbd5eec2dbda9e62ef9ee65c9d784380a5f95f0f2472312",
+      "bytes": 162860
+    },
+    {
+      "path": ".assessment-cache/captions/rQ-g33KtZZ0/indexed-transcript.txt",
+      "sha256": "d30ae1de9d04c2e8e73130cdacead0ae8b58360fef11140c6a62fe0f38f0ff82",
+      "bytes": 158576
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/source/assessment-source-notes.md",
+      "sha256": "4c3c2d73b4a999fb048c7273b0e735dd3095a42bc5f681e7cb81bed2abaa77e7",
+      "bytes": 4947
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/source/source-lock.json",
+      "sha256": "84f0188a34f6316016eeb95d6e5c4b40ffa53f0c3531135d3f685bce8f3b47df",
+      "bytes": 6852
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/judgments/validator-excerpt.txt",
+      "sha256": "623112992e33dcf4c4d6b38c784b6b587ab2c67c05d25dfae20b836532d0eedb",
+      "bytes": 5782
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/judgments/check-judgment.mjs",
+      "sha256": "781e989b59317dfe72dd32bf52d4a69e8e6f248642f7e50bfb2c6155d4e4b4e3",
+      "bytes": 1116
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-277/judgments/pass-b/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-277/judgments/pass-b/output.json"
+  ],
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-277/judgments/pass-b/output.json",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Confirm absolute destination and fully read every allowlisted input without truncation. Send checkpoint and await authenticated reading release. Build the actual unsaved candidate in small persistent-memory chunks. Validate through the allowed stdin checker; emit the complete checked unsaved JSON for controller source/editorial review. Await separate submission release, save the approved bytes once, then stop. No candidate temporary files or other inputs.",
+  "isolation": "Fresh subscription context, fork none, protocol-restricted disjoint inputs/output; no OS sandbox claimed."
+}
