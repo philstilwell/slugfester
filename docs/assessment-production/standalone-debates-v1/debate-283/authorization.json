@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-01T01:20:34.505Z",
+  "userAuthorization": "User supplied this next URL under the explicitly invoked addition skill and requested avoiding common approvals. Routine isolated assessment, bounded field repairs, validation, commit/push, PR, green merge and verified live deployment are authorized. No earlier recording-specific scope exception is reused.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-283",
+    "head": "afa8f683782be13a07bd624f01828ec9805ffd88",
+    "localMain": "afa8f683782be13a07bd624f01828ec9805ffd88",
+    "originMain": "afa8f683782be13a07bd624f01828ec9805ffd88",
+    "clean": true,
+    "isolationReason": "Reused clean managed checkout after fast-forwarding the clean local main checkout; HEAD, local main and fetched origin/main matched before topic branch creation."
+  },
+  "identity": {
+    "debateNumber": "283",
+    "debateId": "dsouza-barker-god-existence-2009",
+    "videoId": "AaNbTuPz1qI",
+    "canonicalUrl": "https://www.youtube.com/watch?v=AaNbTuPz1qI",
+    "sourceTitle": "Debate |  Dan Barker vs Dinesh Dsouza  Existence of God",
+    "eventYear": 2009,
+    "title": "Dinesh D’Souza vs Dan Barker — Does God Exist? (2009)",
+    "label": "Evidence for God",
+    "topicCategory": "god-theism-atheism",
+    "motion": "Does God exist?",
+    "pro": {
+      "speaker": "Dinesh D'Souza",
+      "position": "God exists"
+    },
+    "con": {
+      "speaker": "Dan Barker",
+      "position": "Belief in God is not warranted"
+    },
+    "dyadic": true
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "knownPaidCostEstimateUsd": 0,
+    "maximumPossiblePaidCostEstimateUsd": 0,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "currentPlanEstimateUsd": 0,
+    "audioVerificationPolicy": "Freeze and report cumulative exact-input estimate before any paid transcription. One attempt per frozen clip, no paid retry; skill maximum $1 unless separately authorized. No paid call yet."
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-283",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/dsouza-barker-god-existence-2009.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/dsouza-barker-god-existence-2009.js",
+    "src/data/interlocutor-bios.js",
+    "generated site output for this addition"
+  ]
+}

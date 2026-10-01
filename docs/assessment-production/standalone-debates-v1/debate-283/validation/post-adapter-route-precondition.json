@@ -1,0 +1,9 @@
+{
+  "status": "expected-final-registry-route-precondition-pending-rendering",
+  "validatorExecution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/validation/production-record-execution.json",
+    "sha256": "27fd7c53d3f0d4999124d86c890dba3c1cce65f78072913b5c8fc2f5a07060b1",
+    "bytes": 673
+  },
+  "finding": "After adapter creation, all row and reader-facing errors cleared. The sole remaining validator error requires registry status published-and-frozen and the exact adapter hash. This final route registration will follow rendering and component evidence, without altering the adapter or relaxing checks. Full production validation will then be rerun and must pass."
+}

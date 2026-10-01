@@ -1,0 +1,60 @@
+{
+  "status": "waiting-for-one-extra-paid-attempt-authority",
+  "debateNumber": "283",
+  "debateId": "dsouza-barker-god-existence-2009",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/audio/plan.json",
+    "sha256": "3bd7ace36573d9bbc610bce1a5509b3e11ba6990a01d776c14e69edfe6c75419",
+    "bytes": 10195
+  },
+  "failedAttempt": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/audio/responses/clip-03.attempt.json",
+    "sha256": "0e80314aa5165cf4d4066ebe2dc9b0a98f4324c945ab35b2bcd7362ef5d4459b",
+    "bytes": 288
+  },
+  "failedCompletion": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/audio/responses/clip-03.completion.json",
+    "sha256": "0a3572ef82ffb5a3e0d27a10b78322bacf2f6405485a965e898e5c56e2ecb84b",
+    "bytes": 301
+  },
+  "diagnosis": "API returned HTTP429 RateLimitError with no usable transcript. No retry performed. Exception type alone does not distinguish a rolling rate limit from a quota condition; no unsupported cause is inferred.",
+  "completedChecks": [
+    {
+      "moveId": "pro-empirical-multiverse-and-certainty-challenge",
+      "clipId": "clip-01",
+      "status": "resolved",
+      "speaker": "Dinesh D'Souza",
+      "resolution": "Reference-assisted audio transcription places D'Souza's empirical-universe question at clip6.90\u201319.95s and Barker's 'Well then let me ask you' at20.60\u201321.45s, confirming event1114's handoff. Retained exact quote and challenge belong to D'Souza; Barker's interjection is not evidence for the pro move. No original caption edit and no new scored concession.",
+      "attributionResolved": true,
+      "materialMeaningResolved": true,
+      "retainedQuotationOwnershipResolved": true,
+      "directListeningPerformed": false
+    },
+    {
+      "moveId": "pro-adam-as-moral-humanity-interpretation",
+      "clipId": "clip-02",
+      "status": "resolved",
+      "speaker": "Dinesh D'Souza",
+      "resolution": "Reference-assisted transcription identifies Barker through6.55s, D'Souza from6.75\u2013101.08s, and moderator Dan Panetti from102.10s. D'Souza owns both retained Adam/original-man and fallible-interpretation quotations and the complete reconciliation argument. Event1486's foreign leading fragment and event1527's moderator handoff are context only; caption bytes unchanged.",
+      "attributionResolved": true,
+      "materialMeaningResolved": true,
+      "retainedQuotationOwnershipResolved": true,
+      "directListeningPerformed": false
+    }
+  ],
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0.052235,
+    "maximumPossibleFailedCallCostUsd": 0.1062,
+    "maximumPossibleIncurredCostUsd": 0.158435,
+    "remainingOriginalPlanningAllowanceUsd": 0.534575,
+    "proposedOneExtraAttemptAllowanceUsd": 0.1062,
+    "proposedMaximumPossibleTotalUsd": 0.79921,
+    "previouslyDisclosedAllowanceUsd": 0.81,
+    "billingDashboardConfirmed": false
+  },
+  "sourceAndAssessmentUnchanged": true,
+  "unresolvedTriggeredChecks": 8,
+  "userQuestion": "One additional attempt for clip03 after rate-limit error, with failed evidence preserved and total allowance still within$0.81.",
+  "automaticRetry": false,
+  "createdAt": "2026-10-01T02:12:43.475540+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "failed-reading-completeness-before-authoring",
+  "recordedAt": "2026-10-01T03:38:29.804043+00:00",
+  "worker": "/root/publication283",
+  "finding": "Worker claimed complete reading after commands for lines3001\u201315515 redirected output to /dev/null. Command execution does not constitute model-visible reading. Controller caught this during tool-access inspection; reading authorization was never issued and authoring has not started.",
+  "disposition": "Same-context continuation must literally read all missing lines with untruncated tool-visible output; no fresh context, saved output, or assessment attempt permitted. Reauthenticate before authoring.",
+  "peerExposureObserved": false,
+  "paidCalls": 0
+}

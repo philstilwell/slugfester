@@ -1,0 +1,59 @@
+{
+  "status": "required-audio-incomplete-external-service-block",
+  "recordedAt": "2026-10-01T03:06:48.351417+00:00",
+  "debateNumber": "283",
+  "debateId": "dsouza-barker-god-existence-2009",
+  "approvedAttemptConsumed": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/audio/clip-03-extra-attempt-authorization.json",
+    "sha256": "400ba6d6515da446bf134367d0acaee336ef5e172240f18d76f839a8f0cc3238",
+    "bytes": 633
+  },
+  "approvedPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/audio/clip-03-authorized-recovery-plan.json",
+    "sha256": "4d93ac4deadb8a73ce8bd4fd69d60297cb31d7b74be7a65c55445fa603fd2f4c",
+    "bytes": 10210
+  },
+  "extraAttempt": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/audio/responses/clip-03-authorized-extra-1.attempt.json",
+    "sha256": "beb47d6af859c6fb0b2c35435d2f4603e1a3880eda4afc32ce927c27cad92e33",
+    "bytes": 288
+  },
+  "extraCompletion": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/audio/responses/clip-03-authorized-extra-1.completion.json",
+    "sha256": "30de86fad8f669f102ee2287b6ea3c20661bf12e80cae7304ea21d07bf538cbe",
+    "bytes": 301
+  },
+  "readOnlyDiagnostics": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-283/audio/read-only-model-access-diagnostic.json",
+      "sha256": "259a3e3604bb7080a95f49b7fd488f411296cd9862b692dbd9522dc72681da7d",
+      "bytes": 158
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-283/audio/read-only-sdk-model-access-diagnostic.json",
+      "sha256": "cc38f26bd03e7fd86b567709973736355a46cf4c420d7c52a4d08a5ad2eb46bf",
+      "bytes": 437
+    }
+  ],
+  "observations": [
+    "The approved extra clip03 attempt received HTTP429 after more than47minutes since the preceding failed attempt.",
+    "Read-only SDK model metadata request succeeded; this does not establish inference quota.",
+    "Signed-in billing dashboard indicated unavailable positive API credit. Account-specific billing details are intentionally omitted from public repository evidence. The failed transcription recorder did not retain an error code/body, so its exact provider classification is unconfirmed.",
+    "No billing setting changed, credit purchased, or additional paid inference requested during diagnosis. The temporary browser tab was closed."
+  ],
+  "paidCallsAttempted": 4,
+  "successfulPaidCalls": 2,
+  "failedOrUncertainPaidCalls": 2,
+  "knownSuccessfulCallCostUsd": 0.052235,
+  "uncertainFailedMaximumUsd": 0.2124,
+  "maximumPossibleIncurredUsd": 0.264635,
+  "remainingRequiredClipIds": [
+    "clip-03",
+    "clip-04",
+    "clip-05",
+    "clip-06",
+    "clip-07"
+  ],
+  "additionalAttemptCurrentlyAuthorized": false,
+  "nextPermittedAction": "Wait for funded API access and explicit authority for one further clip03 attempt. Preserve both failures and both successes. Do not launch adjudication, calculation, publication, or another paid call until the required checks resolve."
+}

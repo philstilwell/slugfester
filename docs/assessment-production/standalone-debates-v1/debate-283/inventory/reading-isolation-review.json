@@ -1,0 +1,12 @@
+{
+  "status": "passed-controller-reading-isolation-review",
+  "reviewedAt": "2026-10-01T01:26:29.188248+00:00",
+  "agentPath": "/root/inventory283",
+  "readingEvidence": "docs/assessment-production/standalone-debates-v1/debate-283/inventory/reading-release.json",
+  "actualToolCallsInspected": 11,
+  "findings": "Actual calls contain only the declared plan and maintained full reader, checkpoint messaging to controller, and waiting. No peer/other-debate evidence, external lookup, environment or credential inspection.",
+  "outputAbsent": true,
+  "proceduralIsolationNotOsSandbox": true,
+  "approvedToAuthorWithinExistingAttempt": true,
+  "controllerCheckDiagnostic": "Initial controller allowlist omitted harmless wait_agent and stopped before writing review. Inspection found only a checkpoint wait; no reviewer attempt or frozen input changed."
+}

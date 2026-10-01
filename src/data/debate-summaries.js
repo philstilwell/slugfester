@@ -13479,5 +13479,58 @@ export const debateSummaries = [
         "title": "Critical burden, cumulative scope and religious experience"
       }
     ]
+  },
+  {
+    "id": "dsouza-barker-god-existence-2009",
+    "number": "283",
+    "title": "Dinesh D’Souza vs Dan Barker — Does God Exist?",
+    "year": 2009,
+    "label": "Evidence for God",
+    "date": "2026-09-30",
+    "duration": "1 hr 30 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=AaNbTuPz1qI",
+    "motion": "Does God exist?",
+    "summary": "Barker narrowly wins by sustaining evidential restraint and sharper rebuttals, while D’Souza offers a broad cumulative case weakened by several unsupported inferential bridges.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God exists",
+        "speaker": "Dinesh D'Souza",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Belief in God is not warranted",
+        "speaker": "Dan Barker",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 72,
+      "con": 76,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Warrant, divine definition, and suffering"
+      },
+      {
+        "title": "Cosmic beginning, infinity, and explanatory limits"
+      },
+      {
+        "title": "Fine-tuning, selection, and designer inference"
+      },
+      {
+        "title": "Resurrection testimony and early Christianity"
+      },
+      {
+        "title": "Evolution, Genesis, and interpretation"
+      },
+      {
+        "title": "Mind, death, and near-death experience"
+      },
+      {
+        "title": "Morality, human nature, and salvation"
+      }
+    ]
   }
 ];
