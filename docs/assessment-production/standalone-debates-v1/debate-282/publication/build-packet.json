@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "282",
+  "debateId": "craig-pyle-christian-god-2007",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/inventory/inventory.json",
+      "sha256": "00c4d073de74caf20c617b1d3ebf3a000d6d623ca17fa7d9470d4cc6180e76fd",
+      "bytes": 182724
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/score-pass/output.json",
+      "sha256": "18d0fb2cb831100789b4c69d166b6d5534b833228a33f354790028cbb04cfe17",
+      "bytes": 22158
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/skeleton.json",
+      "sha256": "b7a517ee49a9fca90e4c0d670822965a8962dc314103ea718901069a46a06c16",
+      "bytes": 15939
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/reference-metrics.json",
+      "sha256": "fc42a93aa0ca264c66531e7fcf7deddc5f5a01ff0cd1013aa4ea99260ab471f4",
+      "bytes": 54622
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

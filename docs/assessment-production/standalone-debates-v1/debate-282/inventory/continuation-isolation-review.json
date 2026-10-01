@@ -1,0 +1,20 @@
+{
+  "status": "passed-no-outside-evidence-returned",
+  "sameAgent": "/root/inventory282",
+  "sameContext": true,
+  "newContextCount": 0,
+  "submissionCountBeforeRelease": 0,
+  "actualModel": "gpt-5.6-sol",
+  "reasoningEffort": "low",
+  "reviewBasis": "Controller inspected actual tool-call inputs across the same worker session, not private reasoning. Source rechecks used the frozen reader; candidate blocks remained in persistent tool memory; checker and handoff used exact stdin bytes. No peer, historical assessment, biography, network or credential content was returned.",
+  "deviations": [
+    {
+      "at": "2026-09-30T22:50:24.245Z",
+      "operation": "Attempted shell-history listing while recovering an unsaved in-memory construction",
+      "result": "zsh:fc:1: no such event: 0",
+      "outsideContentReturned": false,
+      "disposition": "Failed command returned no shell history or other external content. Recorded as a protocol deviation; no evidence contamination or new context resulted. Subsequent construction used persistent in-memory blocks."
+    }
+  ],
+  "transportCorrections": "Two rejected held candidates were preserved before runtime retirement and same-context continuation; no saved submission was overwritten."
+}

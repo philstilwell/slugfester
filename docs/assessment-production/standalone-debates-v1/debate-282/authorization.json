@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-30T22:43:58.123825+00:00",
+  "userAuthorization": "User supplied this next YouTube debate under the invoked addition workflow and requested avoiding common approvals. Routine isolated assessment, bounded field repairs, validation, topic commit/push, PR, green merge and checked deployment are authorized. No prior recording-specific scope exception carries over.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-282",
+    "head": "2cc89ada64af4dc500e7643d5af34f93596f87f4",
+    "localMain": "2cc89ada64af4dc500e7643d5af34f93596f87f4",
+    "originMain": "2cc89ada64af4dc500e7643d5af34f93596f87f4",
+    "clean": true,
+    "isolationReason": "Reused clean managed checkout after fetching and fast-forwarding the clean main checkout; all three revisions matched before topic branch creation."
+  },
+  "identity": {
+    "debateNumber": "282",
+    "debateId": "craig-pyle-christian-god-2007",
+    "videoId": "wsO0ysGyjMg",
+    "canonicalUrl": "https://www.youtube.com/watch?v=wsO0ysGyjMg",
+    "sourceTitle": "William Lane Craig vs Andrew Pyle: \"Does the Christian God Exist?\" Bristol, UK; 2007",
+    "eventYear": 2007,
+    "title": "William Lane Craig vs Andrew Pyle — Does the Christian God Exist? (2007)",
+    "label": "Evidence for the Christian God",
+    "topicCategory": "god-theism-atheism",
+    "motion": "Does the Christian God exist?",
+    "pro": {
+      "speaker": "William Lane Craig",
+      "position": "The Christian God exists"
+    },
+    "con": {
+      "speaker": "Andrew Pyle",
+      "position": "The arguments do not establish the Christian God"
+    },
+    "dyadic": true
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "knownPaidCostEstimateUsd": 0,
+    "maximumPossiblePaidCostEstimateUsd": 0,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "currentPlanEstimateUsd": 0,
+    "audioVerificationPolicy": "Freeze and report the cumulative exact-input estimate before any required transcription. One paid attempt per frozen clip, no paid retry. Standing skill maximum is $1; no paid call has yet occurred."
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-282",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/craig-pyle-christian-god-2007.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/craig-pyle-christian-god-2007.js",
+    "src/data/interlocutor-bios.js",
+    "generated site output for this addition"
+  ]
+}

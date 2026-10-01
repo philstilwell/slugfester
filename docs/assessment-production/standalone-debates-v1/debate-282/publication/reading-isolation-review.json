@@ -1,0 +1,22 @@
+{
+  "status": "passed-procedural-isolation-review",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/execution-plan.json",
+    "sha256": "d29bcfbc62762c3db43a2f512da70255372f3adcc49a6d24a95f96096d6454cf",
+    "bytes": 8347
+  },
+  "authenticatedReading": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/reading-release.json",
+    "sha256": "9ab8414266585176bac8b6fefb2e5939771badb7b6aa7e2675eb2d7437fa6e25",
+    "bytes": 32519
+  },
+  "readingCompletenessRecovery": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/reading-completeness-recovery.json",
+    "sha256": "8c703b89bf44eaa45b67a08d86a4a72829d364b07dbde0b700bedd75c0d49120",
+    "bytes": 882
+  },
+  "actualToolInputsInspected": true,
+  "findings": "Only the frozen execution plan, maintained bounded reader calls, completion messages, and waits were used. An initial loop failed to expose contents and was rejected before authoring; all missing and truncated segments were then individually emitted and complete reading authenticated. No outside facts, other-debate prose, biography, peer tag output, session, environment, network or paid access occurred. All 17047 source lines, ten documents and 200 shared blocks are covered. Protocol isolation is not an operating-system sandbox.",
+  "extraInputs": [],
+  "sourceCompliance": true
+}

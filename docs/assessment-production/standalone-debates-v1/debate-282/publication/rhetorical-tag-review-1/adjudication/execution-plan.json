@@ -1,0 +1,511 @@
+{
+  "schemaVersion": "2.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "rhetorical-adjudication",
+  "debateNumber": "282",
+  "debateId": "craig-pyle-christian-god-2007",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/workflow/rhetorical-adjudication/reader.txt",
+      "sha256": "61e4bb671105868361e55d23427932d3915c8529df2a61b75cb3df995ab69d6f",
+      "bytes": 472575
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/contract.md",
+      "sha256": "bb5f6b11d126558e3b4c9e3deede48fe47c61aac2ea26080bd12df93bcfa79c9",
+      "bytes": 5184
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "dd4579a532e1f8391843a4d6b1514afa2e7ecdde03b251e1b928cbe3c57651c0",
+      "bytes": 14417
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "bcddf30f590ace357e60ee473cfe137589f85d602fed268e9c7263c1010b4bf0",
+      "bytes": 218365
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    {
+      "path": ".assessment-cache/captions/wsO0ysGyjMg/indexed-transcript.txt",
+      "sha256": "694876a5eb8566356513b9b4db417aa44c5de7824dd70b637416470246b920e0",
+      "bytes": 221956
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/source/assessment-source-notes.md",
+      "sha256": "66ce0d47f6bf061f8302ee6fca12fde48d83dae7fce44cd9d8dd94ee29f2a800",
+      "bytes": 8071
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/source/source-lock.json",
+      "sha256": "d2eecd3b53102356d7519362d006baebeebfc7ac31ffbe1a210504fece844e47",
+      "bytes": 6974
+    }
+  ],
+  "toolInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/check-review.mjs",
+      "sha256": "e4f2013da4cfa8f8f690b324f00567584c67759b68e2c45ed8455008da8005de",
+      "bytes": 4109
+    },
+    {
+      "path": "scripts/standalone-workflow.mjs",
+      "sha256": "f9bebb3157c0227e20f396240411af838138b4520c7a48bec411725896f841cc",
+      "bytes": 5880
+    },
+    {
+      "path": "scripts/lib/standalone-workflow.mjs",
+      "sha256": "bd13373d22b4a2d74b1d6788c6b25613611be653a212aeaf31ca4bfcadcde333",
+      "bytes": 18686
+    },
+    {
+      "path": "scripts/lib/standalone-handoff.mjs",
+      "sha256": "939461c747837553ff5d65a83d9af0ad51c576c314959d2c59e6773bf236b42f",
+      "bytes": 6020
+    },
+    {
+      "path": "scripts/authenticate-standalone-worker.py",
+      "sha256": "98c8186c703818d1eaf5270d26adbfaaf7f7284180cf3482d3ec7a64e5e9219e",
+      "bytes": 6247
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "2b73185bfb3db4b2d8fbd14e8b1d1b7781fcb5a8c2f771851659faa8f39aa494",
+      "bytes": 76896
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "1228cea50d2242ca264e2b59d399b68f196053eae683daead83345859af6aadb",
+      "bytes": 13377
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+      "bytes": 13417
+    },
+    {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "45bb5c6ca356eb66c4339507c0bcdb7af0888b2c6b5ae146f4d9a60ff0de89a3",
+      "bytes": 91388
+    },
+    {
+      "path": "package.json",
+      "sha256": "8ba54eb2409856430fe56731ade8196310cdb8526936543060cac72950e92186",
+      "bytes": 65081
+    },
+    {
+      "path": "scripts/lib/assessment-production-score-stability-policy-active.mjs",
+      "sha256": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+      "bytes": 1331
+    },
+    {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "dd4579a532e1f8391843a4d6b1514afa2e7ecdde03b251e1b928cbe3c57651c0",
+      "bytes": 14417
+    }
+  ],
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/workflow/rhetorical-adjudication/packet.json",
+    "sha256": "32af7e40abebf763e97bf8d2445dfc7abeb799ea0262bba5bafc4cba3759e954",
+    "bytes": 490171
+  },
+  "fullReadRequiredForAllAllowedInputs": true,
+  "toolSourceReadRequired": false,
+  "validationParameters": {
+    "mode": "anonymous-adjudication",
+    "debateNumber": "282",
+    "debateId": "craig-pyle-christian-god-2007",
+    "sourcePacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "bcddf30f590ace357e60ee473cfe137589f85d602fed268e9c7263c1010b4bf0",
+      "bytes": 218365
+    },
+    "catalogSnapshot": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    "candidates": [
+      {
+        "moveId": "actual-infinite-past-objection",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Craig’s subtraction illustration does not establish metaphysical impossibility, but it offers an asserted supporting route rather than simply restating a finite-past conclusion as its own premise."
+          }
+        ]
+      },
+      {
+        "moveId": "scientific-cosmic-beginning",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Craig cites scientific authorities, but he also states the theorem and cosmological reasoning; the defect is overstating what the result establishes, not status alone settling it."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Craig quotes scientists and a theorem while omitting assumptions, yet citation alone is not appeal to authority and he also states the result’s claimed substantive content."
+          }
+        ]
+      },
+      {
+        "moveId": "dismissal-and-kant-antithesis-reply",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Pyle has not proved an infinite past, so Craig calls his finite-past argument good.",
+            "rationale": "Craig treats Pyle’s failure to defend Kant’s antithesis or refute actual infinity as support that Craig’s own disputed finite-past argument remains a good one."
+          }
+        ]
+      },
+      {
+        "moveId": "cause-syllogism-personal-mind",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Craig’s abstract-object-or-mind dichotomy is underdefended, but he does not infer mind merely because alternatives are unknown; he offers a positive, though incomplete, conceptual classification."
+          }
+        ]
+      },
+      {
+        "moveId": "deductive-cause-reply",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Craig stresses that some cause follows deductively while Pyle disputes identifying that cause as God.",
+            "rationale": "The reply redirects Pyle’s identification challenge toward validity of the minimal causal syllogism, leaving the personal, timeless, transcendent attributes insufficiently defended."
+          }
+        ]
+      },
+      {
+        "moveId": "singularity-needs-explanation",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Craig objects to an originating singularity although Pyle presented prior physical event-dependence.",
+            "rationale": "By attacking a singularity-as-cause claim Pyle did not present, Craig diverts from Smith’s cited proposal that physical events receive explanations from prior physical events."
+          }
+        ]
+      },
+      {
+        "moveId": "fine-tuning-trilemma",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The trilemma may omit explanatory structures, yet Craig supplies probability and necessity arguments rather than declaring design true solely because competing explanations remain unproved."
+          }
+        ]
+      },
+      {
+        "moveId": "local-fly-analogy-reply",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "The fly analogy presupposes uniform random aim, a fixed local reference class, and an independently specified target.",
+            "rationale": "Those sampling assumptions are exactly what Pyle disputes about constants, so the analogy makes local improbability appear established by building the contested probability structure into its setup."
+          },
+          {
+            "decision": "accepted",
+            "context": "The fly analogy assumes the uniform sampling rule and local reference class under dispute.",
+            "rationale": "Craig’s analogy builds in uniform random aim, a defined blank neighborhood, and independent target selection, precisely the probability structure his reply needs to establish."
+          }
+        ]
+      },
+      {
+        "moveId": "multiverse-evidence-small-world-reply",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Craig mentions absent evidence for loop cosmology, but also advances a small-observer-world objection; he does not treat nonproof alone as proving the model false."
+          }
+        ]
+      },
+      {
+        "moveId": "objective-moral-values-argument",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Ruse’s quotation illustrates one evolutionary view but does not solely carry Craig’s syllogism; the principal defect is failure to exclude secular moral truth-makers."
+          }
+        ]
+      },
+      {
+        "moveId": "divine-nature-not-voluntarism",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Calling God’s nature perfectly loving risks using moral goodness inside its proposed explanation, but the excerpt does not clearly smuggle the full divine-grounding conclusion into a premise."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Calling God’s nature perfectly loving risks applying an antecedent moral standard, but the critique identifies this as an unresolved explanatory risk rather than demonstrated circular reasoning."
+          }
+        ]
+      },
+      {
+        "moveId": "three-facts-resurrection-inference",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Craig presents majority scholarly recognition and named specialists’ judgments as establishing the empty tomb, appearances, and disciple belief.",
+            "rationale": "Because the underlying sources and criteria receive little application, scholarly status is asked to settle disputed historical premises central to the resurrection inference."
+          },
+          {
+            "decision": "accepted",
+            "context": "Named scholars and claimed majority consensus substitute for underlying source analysis of the three facts.",
+            "rationale": "Craig presents scholarly status and consensus as establishing the empty tomb, appearances, and disciple belief without showing the source evidence and comparative reasoning needed here."
+          }
+        ]
+      },
+      {
+        "moveId": "historical-criteria-support-facts",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Craig cites Powell and Wright’s scholarly judgments of early eyewitness testimony and near-certain resurrection facts without showing the source analysis.",
+            "rationale": "Although he names legitimate historical criteria, he does not apply them in enough detail, so expert conclusions substitute for evidence needed to assess the disputed facts."
+          },
+          {
+            "decision": "accepted",
+            "context": "Craig cites Powell, Wright, and scholarly adherence without transparently applying the named criteria.",
+            "rationale": "The response invokes historians’ expertise and consensus as settling credibility while withholding the detailed source-by-source application needed to establish independence, embarrassment, and eyewitness basis."
+          }
+        ]
+      },
+      {
+        "moveId": "martyrdom-sincerity-not-truth",
+        "type": "bias",
+        "label": "Base-rate neglect",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Pyle overstates that martyr belief has no evidential relevance, but the critique concerns fabrication alternatives and does not establish neglect of a quantified background rate."
+          }
+        ]
+      },
+      {
+        "moveId": "ganesh-context-jewish-unexpectedness",
+        "type": "bias",
+        "label": "Ambiguity effect",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Craig speculates about unfamiliar Ganesh reports, but he expressly admits uncertainty and requests direct comparative scrutiny rather than simply preferring familiar Christianity because it is clearer."
+          }
+        ]
+      },
+      {
+        "moveId": "ganesh-context-jewish-unexpectedness",
+        "type": "bias",
+        "label": "Confirmation bias",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Craig speculates that Ganesh reports fit adherents’ expectations despite admitting unfamiliarity, but he explicitly calls for examining both cases and withholds a settled verdict."
+          }
+        ]
+      },
+      {
+        "moveId": "resurrection-uniqueness-reply",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Craig does not merely exempt resurrection from ordinary comparison; he offers Jewish unexpectedness and a distinctive evidential conjunction as a principled, though disputable, difference."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Craig’s asserted uniqueness is underproved, but Jewish messianic expectations supply a potentially principled difference rather than a wholly unsupported exception for his favored report."
+          }
+        ]
+      },
+      {
+        "moveId": "naturalist-track-record",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Pyle makes a qualified induction from explained analogous reports and leaves a residue unexplained; he does not declare each unresolved case false merely because proof is absent."
+          }
+        ]
+      },
+      {
+        "moveId": "personal-experience-immediate-warrant",
+        "type": "bias",
+        "label": "Subjective validation",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Craig treats an inward experience of God as immediate personal knowledge while providing no independent way to distinguish rival interpretations.",
+            "rationale": "The move grants special accuracy to the Christian claim because it feels experientially present and meaningful, matching subjective validation despite Craig’s personal-warrant qualification."
+          },
+          {
+            "decision": "accepted",
+            "context": "Craig treats personally felt encounter as warrant for God without an independent reliability test.",
+            "rationale": "The move gives private religious experience special evidential accuracy because it feels like immediate acquaintance, while providing no discriminator from projection or culturally conditioned interpretation."
+          }
+        ]
+      },
+      {
+        "moveId": "experience-defeater-reply",
+        "type": "bias",
+        "label": "Subjective validation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The move defends a general entitlement principle rather than adding a fresh private resonance claim; its main defect is failure to address reliability under incompatible experiences."
+          }
+        ]
+      },
+      {
+        "moveId": "experience-defeater-reply",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Craig’s absence-of-defeater rule is vulnerable to religious diversity, but the experience itself supplies claimed prima facie evidence, so truth is not inferred solely from nondisproof."
+          },
+          {
+            "decision": "accepted",
+            "context": "No atheist defeater has been supplied, so Craig treats his Christian experience as trustworthy.",
+            "rationale": "Craig shifts from absence of an overriding disproof to entitlement to the specific Christian object, rather than supplying positive reliability and identification evidence under religious diversity."
+          }
+        ]
+      },
+      {
+        "moveId": "other-religions-defeasible-entitlement",
+        "type": "bias",
+        "label": "Subjective validation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Craig’s Christian interpretation remains underdetermined after allowing genuine experiences elsewhere, but this move qualifies rather than newly grounds belief in personal resonance, so a separate tag would duplicate the defect."
+          },
+          {
+            "decision": "accepted",
+            "context": "Craig grants other genuine experiences yet privileges his personal-savior interpretation through private experience.",
+            "rationale": "Although Craig consistently allows transcendence elsewhere, he treats his personally resonant savior experience as accurate without a noncircular criterion separating experience from doctrinal interpretation."
+          }
+        ]
+      }
+    ],
+    "expectedCandidateCount": 22,
+    "outputSchemaBounds": {
+      "decisions": {
+        "minItems": 22,
+        "maxItems": 22
+      }
+    }
+  },
+  "outputPath": "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/adjudication/output.json"
+  ],
+  "checker": [
+    "/opt/homebrew/Cellar/node/25.9.0_3/bin/node",
+    "docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/check-review.mjs",
+    "--debate",
+    "282",
+    "--packet",
+    "docs/assessment-production/standalone-debates-v1/debate-282/publication/rhetorical-tag-review-1/adjudication/packet.json"
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Read this plan and the entire reader.txt including shared blocks. Never open peer outputs. Run the pinned checker without rereading its implementation. Authenticate reading before authoring. Keep candidates in memory; handoff holds approved candidate bytes in memory until the controller supplies authenticated source/editorial release. Only that release writes the first submission. A saved failure consumes its attempt. No autonomous retry.",
+  "isolation": "Fresh fork-none subscription context; protocol isolation, not an operating-system sandbox.",
+  "packetMetrics": {
+    "originalBytes": 479322,
+    "readerBytes": 472575,
+    "sharedBlocks": 1,
+    "completeDocuments": 7,
+    "losslessRoundTrip": true
+  }
+}

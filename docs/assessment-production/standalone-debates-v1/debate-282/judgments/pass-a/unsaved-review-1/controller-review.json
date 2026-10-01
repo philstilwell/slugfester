@@ -1,0 +1,30 @@
+{
+  "status": "failed-unsaved-source-editorial-review",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/judgments/pass-a/unsaved-review-1/rejected-candidate.json",
+    "sha256": "b613a248db8f14156fba396fda5d362d0675481f699c4b0b68caf47e5ca400d9",
+    "bytes": 109336
+  },
+  "completeCandidateReviewed": true,
+  "inspectionMethod": "Initial literal bounded read and subsequent lossless factoring of exact repeated dimension wrappers and per-move bodies, with exact reconstruction checked for all 264 rationales.",
+  "violations": [
+    {
+      "field": "judgments[*].dimensions[*].rationale",
+      "finding": "All six dimensions reuse the identical move-level body with interchangeable dimension wrappers. The actual dimension-specific reason and distinct consequences of repeated deductions are not explained."
+    },
+    {
+      "field": "judgments[scientific-cosmic-beginning].dimensions[*].rationale",
+      "finding": "Distinguish the source-supported inferential bridge from any assumed external scientific verdict about the theorem; do not introduce an unprovided factual premise."
+    },
+    {
+      "field": "judgments[dismissal-and-kant-antithesis-reply].dimensions[*].rationale",
+      "finding": "The blanket assertion that Craig misreads Pyle as endorsing the antithesis omits Craig's express I think not/I am sure he does not qualification. Preserve the actual reply and Pyle's subsequent methodological clarification."
+    },
+    {
+      "field": "burdenCompletionAdjustment",
+      "finding": "Generic already-captured reasoning does not explain the actual route-specific debate-wide completion question. Explain the chosen adjustment without rescoring moves."
+    }
+  ],
+  "ratingsNotPrescribed": true,
+  "peerNotDisclosed": true
+}

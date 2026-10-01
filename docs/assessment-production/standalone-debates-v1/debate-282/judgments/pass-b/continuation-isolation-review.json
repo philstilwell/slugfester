@@ -1,0 +1,19 @@
+{
+  "status": "passed-procedural-isolation-review",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/judgments/pass-b/execution-plan.json",
+    "sha256": "20a416024ee14b308294ba074d66428f8304ee3bf4d910a4ecd434fe024eed8e",
+    "bytes": 7593
+  },
+  "initialReadingReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/judgments/pass-b/reading-isolation-review.json",
+    "sha256": "a54a9d80c2a84ba60df35ef5be0c96dda6ce1a16eedd69631903484faa3b2000",
+    "bytes": 1287
+  },
+  "reviewedActualToolInputs": true,
+  "scope": "Continuation after authenticated reading through final held candidate",
+  "findings": "Controller inspected actual custom tool calls: retained in-memory authoring and inspection, pinned checker on stdin, and maintained handoff only; no peer/source expansion, network, environment, session, credential, score-total or publication reads. Three unsaved rejected holds and explicit same-context continuations preserved. No private reasoning was read. No OS sandbox is claimed.",
+  "peerJudgmentExposed": false,
+  "controllerPrescribedRatings": false,
+  "paidCalls": 0
+}
