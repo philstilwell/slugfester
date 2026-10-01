@@ -1,4 +1,4 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=e260f938e315bb14";
+import { topicCategoryDefinitions } from "./data/topics.js?v=3d83c86e8dbe586b";
 
 export const SITE_URL = "https://slugfester.com";
 export const SITE_NAME = "Slugfester";
@@ -92,11 +92,13 @@ export function debateTitleWithYear(debate) {
 
 function debateTopicTitle(debate) {
   const title = debateDisplayTitle(debate);
+  const normalizeNamePunctuation = (value) => value.replace(/[‘’]/g, "'").toLocaleLowerCase();
+  const matchingTitle = normalizeNamePunctuation(title);
   const participantIndexes = [
     ...speakerNames(debate.sides.pro.speaker),
     ...speakerNames(debate.sides.con.speaker)
   ]
-    .map((name) => title.toLocaleLowerCase().indexOf(name.toLocaleLowerCase()))
+    .map((name) => matchingTitle.indexOf(normalizeNamePunctuation(name)))
     .filter((index) => index >= 0)
     .sort((first, second) => first - second);
   const firstParticipantIndex = participantIndexes[0];

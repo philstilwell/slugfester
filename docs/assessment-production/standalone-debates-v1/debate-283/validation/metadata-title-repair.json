@@ -1,0 +1,41 @@
+{
+  "status": "passed-general-apostrophe-matching-repair",
+  "problem": "Curly apostrophe in displayed name did not match straight apostrophe in frozen speaker identity, leaving a partial name as the generated topic.",
+  "fix": "Normalize one-character apostrophe variants for name matching only; preserve displayed spelling and string positions.",
+  "changedCatalogueMetadata": [
+    {
+      "before": {
+        "number": "283",
+        "id": "dsouza-barker-god-existence-2009",
+        "title": "Dinesh D’Souza vs — D'Souza vs Barker · 2009 | Slugfester",
+        "description": "Dinesh D’Souza vs — D'Souza vs Barker · 2009. Does God exist? Read the argument scores, critiques and original sources."
+      },
+      "after": {
+        "number": "283",
+        "id": "dsouza-barker-god-existence-2009",
+        "title": "Evidence for God — D'Souza vs Barker · 2009 | Slugfester",
+        "description": "Evidence for God — D'Souza vs Barker · 2009. Does God exist? Read the argument scores, critiques and original sources."
+      }
+    }
+  ],
+  "regressionChecks": [
+    {
+      "title": "Dinesh D'Souza vs Dan Barker — Does God Exist?",
+      "metadata": "Evidence for God — D'Souza vs Barker · 2009 | Slugfester"
+    },
+    {
+      "title": "Dinesh D‘Souza vs Dan Barker — Does God Exist?",
+      "metadata": "Evidence for God — D'Souza vs Barker · 2009 | Slugfester"
+    },
+    {
+      "title": "Dinesh D’Souza vs Dan Barker — Does God Exist?",
+      "metadata": "Evidence for God — D'Souza vs Barker · 2009 | Slugfester"
+    },
+    {
+      "title": "Does God exist? — Dinesh D’Souza vs Dan Barker (2009)",
+      "metadata": "Does God exist? — D'Souza vs Barker · 2009 | Slugfester"
+    }
+  ],
+  "assessmentChanges": 0,
+  "assetVersionPolicy": "Generator hashes normalized browser sources, including src/seo.js, and regenerates all linked asset versions automatically."
+}

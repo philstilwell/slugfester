@@ -1,0 +1,23 @@
+{
+  "status": "local-preview-transport-reconfigured-before-final-replay",
+  "failedExecutions": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-283/rendering/local-browser-after-title-fix-execution.json",
+      "sha256": "2f8276de669f0e1a55f46edbe3f8525bf8532a8a5d6330a071bd633c9c56466a",
+      "bytes": 1022
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-283/rendering/local-browser-final-execution.json",
+      "sha256": "2755afaf0016b89204140ef0c11f90d6241f6259e5ad9914ae2f3024b57ed5c8",
+      "bytes": 1017
+    }
+  ],
+  "observedFailures": [
+    "ERR_CONNECTION_RESET loading interlocutors.js",
+    "ERR_CONNECTION_RESET loading glen-scrivener.webp, randal-rauser.webp and aron-ra.webp"
+  ],
+  "otherEvidence": "Independent maintained site:standalone:check passed one comprehensive test on port4181, covering all16 applicable source notices and the newest integrated debate. No JavaScript exception was reported.",
+  "diagnosis": "Local HTTP preview connection acceptance is the suspected bottleneck; no production code failure established.",
+  "repair": "Restarted only owned preview server with ThreadingHTTPServer.request_queue_size=128 and file-directed logs; fresh owned browser and sequential replay. No assertion, production resource, or test timeout changed.",
+  "requiredNextGate": "Same complete maintained replay must pass with zero resource or runtime errors."
+}

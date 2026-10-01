@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "283",
+  "debateId": "dsouza-barker-god-existence-2009",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-283/inventory/inventory.json",
+      "sha256": "36ec5a188535fd940b98c8c3a6956137957b1a28455573ad2c5af33a6847f448",
+      "bytes": 155455
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-283/score-pass/output.json",
+      "sha256": "5a2697aaab319e05e8fc2f95a3f631f71205a75d2f7a8c6f319257ba6dd7f1d5",
+      "bytes": 21673
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-283/publication/skeleton.json",
+      "sha256": "90ef6b291b2ec7ce691454acc826a5bc74806ceaee103ae1845180cefcddb25c",
+      "bytes": 15556
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-283/publication/reference-metrics.json",
+      "sha256": "00904a1589c6a5d715ad30019bd6465fd425ee3d94ce944f372149e99249fde7",
+      "bytes": 54649
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

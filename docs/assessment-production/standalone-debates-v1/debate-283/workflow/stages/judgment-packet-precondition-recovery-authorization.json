@@ -1,0 +1,26 @@
+{
+  "status": "authorized-deterministic-precondition-recovery",
+  "basis": "User authorized routine corrections and continuation. Controller mistakenly omitted --step from inventory command and invoked packet stage before checking success. Initial packet attempt failed reading missing inventory, before any packet/output or model judgment existed. Retain failed attempt and diagnostics; no assessment, score or model retry is granted.",
+  "failedAttempt": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/workflow/stages/judgment-packet-attempt.json",
+    "sha256": "b57a6e43b43ff066db6f0da61a5dabe7d85bddebcc0584b321e972037d35d55d",
+    "bytes": 292
+  },
+  "failedResult": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/workflow/stages/judgment-packet-result.json",
+    "sha256": "fe438303aa4bed49c5ec90cb193c7d74cb5dce5597f1f63869d51e99057a9f09",
+    "bytes": 528
+  },
+  "diagnostic": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/workflow/stages/judgment-packet.txt",
+    "sha256": "19dfeb98d06bfffe3fa37faa2bbd1dd03b550945d734f5031b6b01f4b309ee03",
+    "bytes": 1481
+  },
+  "fixedPrecondition": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/inventory/inventory.json",
+    "sha256": "36ec5a188535fd940b98c8c3a6956137957b1a28455573ad2c5af33a6847f448",
+    "bytes": 155455
+  },
+  "scope": "One explicit invocation of the unchanged repository packet writer now that inventory is mechanically frozen. Original attempt/result remain unchanged.",
+  "targetAbsent": true
+}

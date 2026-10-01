@@ -1,0 +1,29 @@
+{
+  "status": "passed-reader-facing-rules-before-adapter",
+  "debateNumber": "283",
+  "productionValidatorExit": 1,
+  "issues": [
+    "- debates.282.sections.0.exchanges: must contain no more than 3 items",
+    "- debates.282.sections.0.exchanges.2.pro: must be an object",
+    "- debates.282.sections.0.exchanges.3.pro: must be an object",
+    "- debates.282.sections.1.exchanges: must contain no more than 3 items",
+    "- debates.282.sections.1.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow",
+    "- debates.282.sections.2.exchanges: must contain no more than 3 items",
+    "- debates.282.sections.2.exchanges.3.con: must be an object",
+    "- debates.282.sections.3.exchanges: must contain no more than 3 items",
+    "- debates.282.sections.3.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow",
+    "- debates.282.sections.4.exchanges.1.con: must be an object",
+    "- debates.282.assessmentRubric: requires a matching JSON assessment ledger"
+  ],
+  "classification": "All 11 outstanding errors arise from the absent production ledger: authorized one-sided rows and frozen fourth-row capacities cannot yet be recognized. Current validator selects these capabilities from the authenticated ledger. Frozen inventory and maintained candidate checks verify all 42 cards, semantic sections and balanced or asymmetric fourth rows. Reader-facing prose, labels, quotes, score notes, identity, AI depth and punctuation produced no other errors. Full production validation remains mandatory immediately after adapter freeze.",
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/validation/pre-adapter-production.txt",
+    "sha256": "c8eaaa23d35a9a4672ec4d207ca14dbe83ae06f0f52d4a07e6c70efb35d07c65",
+    "bytes": 908
+  },
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/publication/output.json",
+    "sha256": "651ffd5b2ed39597e20046343c77f9be8921bba1cd6c118e088f17c09e0ce086",
+    "bytes": 81469
+  }
+}

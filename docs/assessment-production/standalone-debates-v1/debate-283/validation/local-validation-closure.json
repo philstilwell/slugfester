@@ -1,0 +1,102 @@
+{
+  "status": "passed-local-component-and-repository-validation",
+  "completedAt": "2026-10-01T04:34:02.991965+00:00",
+  "componentValidation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-283/validation-summary.json",
+    "sha256": "5d6caf1352fe6f30606d522f85e3ee3b6648dec2ce14689636134aa4677d0db9",
+    "bytes": 3819
+  },
+  "executions": [
+    {
+      "name": "production-record-final",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-283/validation/production-record-final-execution.json",
+        "sha256": "390139f8e06ec0f2528142192e91fa96cc9aaf3e1ca6cb44515f0f2c5722f355",
+        "bytes": 678
+      },
+      "elapsedSeconds": 1.534
+    },
+    {
+      "name": "corpus-transcripts",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-283/validation/corpus-transcripts-execution.json",
+        "sha256": "ac2f7189e6b7abe71da067eac30c65a951706c2e210d448a2f28966e5cd133ff",
+        "bytes": 685
+      },
+      "elapsedSeconds": 0.166
+    },
+    {
+      "name": "generated-pages-after-title-fix",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-283/validation/generated-pages-after-title-fix-execution.json",
+        "sha256": "58f2b739857f8632f817762fa1b487b159a4b29d18b480ba9d128322a261dd25",
+        "bytes": 703
+      },
+      "elapsedSeconds": 1.026
+    },
+    {
+      "name": "focused-standalone-site",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-283/validation/focused-standalone-site-execution.json",
+        "sha256": "bf4a7734bb48106096c1de48cae55e7d0031a41ae2e1d3a6dcb2877b41f38225",
+        "bytes": 685
+      },
+      "elapsedSeconds": 15.474
+    },
+    {
+      "name": "standalone-283-evidence",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-283/validation/standalone-283-evidence-execution.json",
+        "sha256": "3c0d90eea1dbbace5389a7946e11db95f692edb746c8fa707d049a553eece8cc",
+        "bytes": 771
+      },
+      "elapsedSeconds": 0.161
+    },
+    {
+      "name": "standalone-283-source-replay",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-283/validation/standalone-283-source-replay-execution.json",
+        "sha256": "9def23f583c2895cd324487e7bea058de2895dbead2b657a091cdb5c00355b8b",
+        "bytes": 751
+      },
+      "elapsedSeconds": 0.164
+    },
+    {
+      "name": "full-repository-check",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-283/validation/full-repository-check-execution.json",
+        "sha256": "4f6328cf466a738a0149049fefa65b4709a41675605c2f2b98b4b7e054e07777",
+        "bytes": 667
+      },
+      "elapsedSeconds": 34.041
+    },
+    {
+      "name": "site-preflight-initial",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-283/validation/site-preflight-initial-execution.json",
+        "sha256": "66158988b93b536fadf5392b96966c28b2da2288b7e60e97a24df05abaace237",
+        "bytes": 677
+      },
+      "elapsedSeconds": 28.807
+    }
+  ],
+  "fullCheckIncludes": [
+    "historical campaign closure repository audit",
+    "calibration promotion repository audit",
+    "every frozen standalone registry entry",
+    "content parity of all standalones",
+    "rhetorical tags of all standalones",
+    "primary-speaker scope fixtures",
+    "multi-speaker compatibility fixtures"
+  ],
+  "remainingReleaseBoundaries": [
+    "fresh immediate-precommit site check",
+    "staged evidence equality",
+    "committed-only replay",
+    "exact remote branch head",
+    "required PR check and merge",
+    "post-merge Site Quality and Pages",
+    "live verification"
+  ],
+  "liveDeploymentClaimed": false
+}

@@ -1,0 +1,11 @@
+### Result
+{"title":"Evidence for God — D'Souza vs Barker · 2009 | Slugfester","description":"Evidence for God — D'Souza vs Barker · 2009. Does God exist? Read the argument scores, critiques and original sources.","canonical":"https://slugfester.com/debate/dsouza-barker-god-existence-2009/","ogTitle":"Evidence for God — D'Souza vs Barker · 2009 | Slugfester"}
+### Ran Playwright code
+```js
+await (async (page) => { await page.goto('http://127.0.0.1:4188/debate/dsouza-barker-god-existence-2009/'); await page.waitForLoadState('networkidle'); const result = await page.evaluate(() => ({title: document.title, description: document.querySelector('meta[name=description]').content, canonical: document.querySelector('link[rel=canonical]').href, ogTitle: document.querySelector('meta[property="og:title"]').content})); if (!result.title.startsWith('Evidence for God — ') || result.canonical !== 'https://slugfester.com/debate/dsouza-barker-god-existence-2009/') throw new Error('Metadata mismatch'); return result; })(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4188/debate/dsouza-barker-god-existence-2009/
+- Page Title: Evidence for God — D'Souza vs Barker · 2009 | Slugfester
+### Events
+- New console entries: .playwright-cli/console-2026-10-01T04-22-27-608Z.log#L1
