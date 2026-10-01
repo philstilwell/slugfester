@@ -13426,5 +13426,58 @@ export const debateSummaries = [
         "title": "Theological fit and divine hiddenness"
       }
     ]
+  },
+  {
+    "id": "craig-pyle-christian-god-2007",
+    "number": "282",
+    "title": "William Lane Craig vs Andrew Pyle — Does the Christian God Exist?",
+    "year": 2007,
+    "label": "Evidence for the Christian God",
+    "date": "2026-09-30",
+    "duration": "1 hr 52 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=wsO0ysGyjMg",
+    "motion": "Does the Christian God exist?",
+    "summary": "Pyle’s burden-sensitive critiques expose decisive identification and probability gaps, while Craig presents a clear cumulative case whose resurrection bridge remains contested.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "The Christian God exists",
+        "speaker": "William Lane Craig",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The arguments do not establish the Christian God",
+        "speaker": "Andrew Pyle",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 75,
+      "con": 83,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Whether the universe began"
+      },
+      {
+        "title": "From a cosmic cause to a personal creator"
+      },
+      {
+        "title": "Fine-tuning, probability and design"
+      },
+      {
+        "title": "Moral truth and its foundation"
+      },
+      {
+        "title": "Historical resurrection and Christian identification"
+      },
+      {
+        "title": "Comparative miracles and testimonial standards"
+      },
+      {
+        "title": "Critical burden, cumulative scope and religious experience"
+      }
+    ]
   }
 ];

@@ -1,0 +1,12 @@
+{
+  "status": "passed-tool-access-review",
+  "scope": "Actual tool calls and outputs, excluding private reasoning",
+  "allowedInputs": "Frozen execution plan and full maintained bounded reader only; pinned checker inputs consumed by checker",
+  "postReadingAccess": "In-memory JSON construction and edits, pinned checker via stdin, memory handoff only",
+  "mechanicalProblems": "Initial direct stdin closed without candidate; terminal and character-versus-byte transport attempts failed mechanically. No saved submission resulted. Complete correct-byte checker and holder succeeded.",
+  "unsavedEditorialCorrections": 1,
+  "peerInputsExposed": false,
+  "scoreInputsExposed": false,
+  "externalSourceReads": false,
+  "privateReasoningInspected": false
+}

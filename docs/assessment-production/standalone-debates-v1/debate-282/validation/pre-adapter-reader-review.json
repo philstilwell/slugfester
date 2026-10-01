@@ -1,0 +1,33 @@
+{
+  "status": "passed-reader-facing-rules-before-adapter",
+  "debateNumber": "282",
+  "productionValidatorExit": 1,
+  "issues": [
+    "- debates.281.sections.0.exchanges.2.con: must be an object",
+    "- debates.281.sections.1.exchanges: must contain no more than 3 items",
+    "- debates.281.sections.1.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow",
+    "- debates.281.sections.2.exchanges: must contain no more than 3 items",
+    "- debates.281.sections.2.exchanges.2.con: must be an object",
+    "- debates.281.sections.2.exchanges.3.con: must be an object",
+    "- debates.281.sections.3.exchanges.2.con: must be an object",
+    "- debates.281.sections.4.exchanges: must contain no more than 3 items",
+    "- debates.281.sections.4.exchanges.3.con: must be an object",
+    "- debates.281.sections.5.exchanges: must contain no more than 3 items",
+    "- debates.281.sections.5.exchanges.2.pro: must be an object",
+    "- debates.281.sections.5.exchanges.3.pro: must be an object",
+    "- debates.281.sections.6.exchanges: must contain no more than 3 items",
+    "- debates.281.sections.6.exchanges.3.con: must be an object",
+    "- debates.281.assessmentRubric: requires a matching JSON assessment ledger"
+  ],
+  "classification": "All15 outstanding errors arise from the deliberately absent production ledger: authorized one-sided rows and frozen fourth-row capacities cannot yet be recognized. Frozen inventory and candidate checker already verify all44 selected cards and balanced or asymmetric fourth rows. Reader-facing prose, labels, quotations, score notes, identity, AI depth and corpus punctuation produced no other errors. Full production validation remains mandatory after adapter freeze.",
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/validation/pre-adapter-production.txt",
+    "sha256": "b655d3f2a321d63da723c36736d880caa7a43d0cf19f6f3ade1b1211bc4d065c",
+    "bytes": 1082
+  },
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/output.json",
+    "sha256": "4ee89bedc6647aac9bed80bb7b4cd1345a8b7e3938e089ecd723655e2cee9903",
+    "bytes": 84108
+  }
+}

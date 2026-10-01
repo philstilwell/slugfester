@@ -1,0 +1,30 @@
+{
+  "status": "failed-unsaved-source-editorial-review",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/judgments/pass-b/unsaved-review-1/rejected-candidate.json",
+    "sha256": "6def0a1a8ed3ea5e8371546b7b10a139d4093f6c63b01755d324dfa28853abe1",
+    "bytes": 90933
+  },
+  "completeCandidateReviewed": true,
+  "inspectionMethod": "Initial literal bounded read and lossless factoring of exact dimension prefixes and per-move bodies, verifying exact reconstruction of all 264 rationales.",
+  "violations": [
+    {
+      "field": "judgments[*].dimensions[*].rationale",
+      "finding": "All six dimensions reuse the identical move-level body with interchangeable prefixes. The actual dimension-specific reason and distinct consequences of repeated deductions are not explained."
+    },
+    {
+      "field": "judgments[scientific-cosmic-beginning].dimensions[*].rationale",
+      "finding": "Distinguish the source-supported inferential bridge from any assumed external scientific verdict about the theorem. No unprovided external factual premise may determine a judgment."
+    },
+    {
+      "field": "judgments[dismissal-and-kant-antithesis-reply].dimensions[*].rationale",
+      "finding": "The blanket claim that Craig reconstructs Pyle as endorsing the antithesis omits Craig's express I think not/I am sure he does not qualification. Preserve the actual reply and subsequent method clarification."
+    },
+    {
+      "field": "judgments[secular-moral-truth-makers].dimensions[*].rationale",
+      "finding": "The wording directly defeating the necessity claim needs an explained distinction between presenting candidate alternatives and establishing their adequacy, consistent with the stated compressed-theories limitation."
+    }
+  ],
+  "ratingsNotPrescribed": true,
+  "peerNotDisclosed": true
+}

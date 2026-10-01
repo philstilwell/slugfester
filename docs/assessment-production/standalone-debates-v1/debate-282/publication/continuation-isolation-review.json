@@ -1,0 +1,13 @@
+{
+  "status": "passed-procedural-isolation-review",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/publication/execution-plan.json",
+    "sha256": "d29bcfbc62762c3db43a2f512da70255372f3adcc49a6d24a95f96096d6454cf",
+    "bytes": 8347
+  },
+  "actualToolInputsInspected": true,
+  "findings": "Post-reading tool calls use only the frozen plan and maintained reader, persistent memory composition/correction, pinned checker via stdin, and held-memory transport. Safe base64 was used to pass retained exact UTF-8 bytes through a quoted Node heredoc. No disk draft, outside assessment facts, other-debate prose, biography, network, environment, peer tag review, paid call, or new context. The initial unavailable in-isolate btoa attempt had no tool side effect; subsequent explicit UTF-8/base64 transport passed.",
+  "savedFailures": 0,
+  "unsavedEditorialCorrections": 2,
+  "sourceCompliance": true
+}

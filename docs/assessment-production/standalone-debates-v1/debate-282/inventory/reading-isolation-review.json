@@ -1,0 +1,19 @@
+{
+  "status": "passed-reading-stage-isolation",
+  "debateNumber": "282",
+  "agentPath": "/root/inventory282",
+  "actualModels": [
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low"
+    }
+  ],
+  "reviewedToolCallsThroughReadingRelease": 16,
+  "allowedReadingToolCalls": 14,
+  "findings": "Controller inspected actual custom tool-call inputs. Reads were the execution plan and bounded maintained reader only. A combined-output truncation was repaired by rereading the affected ranges. No peer, historical assessment, biography, browser, credentials or outside-source read occurred in this stage. All literal nonempty lines authenticate.",
+  "readingEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-282/inventory/reading-release.json",
+    "sha256": "cc3399860a9fb3f19331cdd7527f8dc936a5e1a2579f884db6789f2e6b51b187",
+    "bytes": 7867
+  }
+}
