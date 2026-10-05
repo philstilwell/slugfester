@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "agentPath": "/root/inventory284",
+  "executionAuthentication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-284/inventory/execution.json",
+    "sha256": "55bcfe59056ec7021b6391b00cc3b24368335f2d7bb463329552709c9634d1ed",
+    "bytes": 15796
+  },
+  "review": "Controller inspected all continuation tool calls. Only in-memory candidate construction, the pinned checker and maintained handoff were used; no source/peer/other-debate/score/biography/session/credential reads after authenticated reading. Initial stdin/base64 transport and checker diagnostics occurred before any successful hold and canonical save. Three successful held candidates were semantically rejected and preserved before explicit runtime retirement; all corrections remained in the same context and first-submission attempt.",
+  "firstCanonicalSubmissions": 1,
+  "newContexts": 0,
+  "automaticPaidCalls": 0,
+  "operatingSystemSandboxClaimed": false
+}

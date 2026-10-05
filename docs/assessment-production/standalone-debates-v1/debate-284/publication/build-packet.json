@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "284",
+  "debateId": "craig-kappel-god-existence-2012",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-284/inventory/inventory.json",
+      "sha256": "8f2097cbcfda40c29fe2d85837f3562bde2d08543ae9c1b442ee51dea51fa995",
+      "bytes": 158012
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-284/score-pass/output.json",
+      "sha256": "5467fda52aec2fd64ce4b7852cfe40787d674c2e1520d8570dce93d73186dd0f",
+      "bytes": 21205
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-284/publication/skeleton.json",
+      "sha256": "8aecd23d90b8b63c047f82d324a0dabd3bf6a7814a65410e98c0478c0d5c18b5",
+      "bytes": 15357
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-284/publication/reference-metrics.json",
+      "sha256": "cb13d92a4e23206d32c83b5364670d081693d6f0a2323a7d2fa3dcd776d735cc",
+      "bytes": 54679
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

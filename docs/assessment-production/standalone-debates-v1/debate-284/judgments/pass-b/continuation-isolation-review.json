@@ -1,0 +1,17 @@
+{
+  "status": "passed-continuation-isolation-review",
+  "agentPath": "/root/judge284b",
+  "readingReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-284/judgments/pass-b/reading-isolation-review.json",
+    "sha256": "d84f34bca7e2d3499e550dab947c6f45ac89ec9ce6a8fd6ebe2c0f802a76c4a8",
+    "bytes": 950
+  },
+  "reviewedAccess": "Controller inspected continuation tool calls: candidate construction in functions memory, pinned checker invocations and stdin transport, protected handoff, own checker-session cleanup, and controller messages/waits. No peer, source outside the reader, other-debate, scores, biography, credentials, environment or session content read. No disk candidate draft.",
+  "transportDiagnostics": "Initial PTY EOF and non-PTY stdin attempts failed before a holder or saved output; no new judgment context or paid call. Exact in-memory JSON was then passed through a Python subprocess wrapper. Abandoned checker sessions7271 and31631 were closed with Ctrl-C and reported exit1.",
+  "mutuallyBlind": true,
+  "peerDisclosure": false,
+  "paidInferenceCalls": 0,
+  "independentNumericValuesPreservedExceptDocumentedOneValueCorrection": true,
+  "firstSubmissionCount": 1,
+  "operatingSystemIsolationClaimed": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed-reading-isolation-review",
+  "agentPath": "/root/adjudicator284",
+  "readingAuthentication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-284/adjudication/reading-release.json",
+    "sha256": "fccba707be2a003cd2a165222869b049dc53c6d34e375694ea1ce7f63d12aa96",
+    "bytes": 14026
+  },
+  "reviewedToolAccess": "Full maintained reader in bounded sequential chunks and direct complete own execution-plan read only; controller communication/waits. No peer primary outputs, other debate, totals, winner, biography, publication, credentials, environment or session access.",
+  "initialReadingGateDiagnostic": "Initial authentication correctly failed because the reviewer had read the complete reader but not its own plan file. No candidate was authored or release issued. The same reviewer then read the complete unchanged plan, confirmed the actual output.json destination and passed authentication. No inference attempt was restarted.",
+  "contaminationDetected": false,
+  "candidateAuthoredBeforeRelease": false,
+  "operatingSystemIsolationClaimed": false
+}

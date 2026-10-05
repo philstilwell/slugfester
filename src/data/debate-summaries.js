@@ -13532,5 +13532,58 @@ export const debateSummaries = [
         "title": "Morality, human nature, and salvation"
       }
     ]
+  },
+  {
+    "id": "craig-kappel-god-existence-2012",
+    "number": "284",
+    "title": "William Lane Craig vs Klemens Kappel — Does God Exist?",
+    "year": 2012,
+    "label": "Evidence and Atheistic Knowledge",
+    "date": "2026-10-04",
+    "duration": "2 hr 23 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=tXJDSw88YVI",
+    "motion": "Does God exist?",
+    "summary": "Craig’s cumulative theistic arguments face Kappel’s qualified atheism, comparative naturalism, and challenges concerning explanation, morality, testimony, and disagreement.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God exists",
+        "speaker": "William Lane Craig",
+        "color": "teal"
+      },
+      "con": {
+        "name": "God does not exist",
+        "speaker": "Klemens Kappel",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 78,
+      "con": 84,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Warrant, proof, and disagreement"
+      },
+      {
+        "title": "Contingency, cosmic beginning, and personal explanation"
+      },
+      {
+        "title": "Fine-tuning, science, and disputed premises"
+      },
+      {
+        "title": "God's definition, consciousness, and mental causation"
+      },
+      {
+        "title": "Moral grounding, meaning, and importance"
+      },
+      {
+        "title": "Resurrection and personal testimony"
+      },
+      {
+        "title": "Religious diversity, historical scope, and expertise"
+      }
+    ]
   }
 ];
