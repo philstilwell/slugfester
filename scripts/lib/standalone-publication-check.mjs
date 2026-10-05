@@ -4,6 +4,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { REGISTRY, inside, json, readJson, writeOnce } from './standalone-workflow.mjs';
 import { replayPublication } from './standalone-browser-replay.mjs';
+import { reviewedFeaturedQuoteCandidate } from './featured-quote-correction.mjs';
 
 export function distribution(values) {
   assert(values.length && values.every(v=>Number.isFinite(v)&&v>=0&&v<=100));
@@ -44,7 +45,8 @@ export async function scopeCases(run) {
 export async function browserConfig(run,{origin,prefix=`debate-${run.entry.debateNumber}`,screenshots=true,screenshotDirectory='output/playwright'}={}) {
   assert(/^https?:\/\//.test(origin));assert(/^[a-z0-9-]+$/.test(prefix));
   assert.notEqual(run.entry.validationProfile,'team-approximation-v1','Use the team-specific interaction replay');
-  const candidate=readJson(inside(run.root,`${run.base}/publication/output.json`)).candidate;
+  const frozenCandidate=readJson(inside(run.root,`${run.base}/publication/output.json`)).candidate;
+  const candidate=reviewedFeaturedQuoteCandidate(run.root,run.entry,frozenCandidate);
   assert.equal(candidate.id,run.entry.debateId);assert.equal(candidate.number,run.entry.debateNumber);
   assert.equal(new URL(candidate.youtubeUrl).searchParams.get('v'),run.entry.videoId);
   const raw=(await import(pathToFileURL(inside(run.root,'src/data/debates.js')).href)).debates;

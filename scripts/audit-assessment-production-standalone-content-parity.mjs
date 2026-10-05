@@ -5,6 +5,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 
 import { debates } from "../src/data/debates.js";
+import { readVerifiedQuoteRecord } from "./lib/featured-quote-correction.mjs";
 
 const ROOT = process.cwd();
 const REGISTRY_PATH =
@@ -349,7 +350,9 @@ for (const record of selectedRecords) {
     record.root,
     "publication/content-parity-audit.json"
   );
-  const stored = JSON.parse(readFileSync(auditPath, "utf8"));
+  const stored = record.featuredQuoteCorrection
+    ? readVerifiedQuoteRecord(ROOT, record.featuredQuoteCorrection.contentParityAudit)
+    : JSON.parse(readFileSync(auditPath, "utf8"));
   assert.equal(stored.schemaVersion, template.schemaVersion);
   assert.equal(stored.status, template.status);
   assert.equal(stored.debateNumber, template.debateNumber);

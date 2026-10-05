@@ -8,6 +8,7 @@ import path from "node:path";
 import { debates } from "../src/data/debates.js";
 import { openTeamRun } from "./lib/assessment-standalone-team-pipeline-v1.mjs";
 import { validateEditorScopedSource } from "./lib/assessment-editor-scoped-source.mjs";
+import { reviewedFeaturedQuoteCandidate } from "./lib/featured-quote-correction.mjs";
 import {
   STANDALONE_PROTOCOL_ID,
   STANDALONE_ROOT,
@@ -130,6 +131,18 @@ const absolute = (relative) => path.join(ROOT, relative);
 const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
 const VERSIONED_CONTROL_SNAPSHOTS = new Map([
+  [
+    "scripts/lib/standalone-publication-check.mjs\u0000fc8b776d3003d8a67a4c791b74fc3161dd055483bb884d645fecbe8995c997e3",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/fc8b776d3003d8a67a4c791b74fc3161dd055483bb884d645fecbe8995c997e3/standalone-publication-check.mjs"
+  ],
+  [
+    "scripts/audit-assessment-production-standalone-content-parity.mjs\u00001228cea50d2242ca264e2b59d399b68f196053eae683daead83345859af6aadb",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/1228cea50d2242ca264e2b59d399b68f196053eae683daead83345859af6aadb/audit-assessment-production-standalone-content-parity.mjs"
+  ],
+  [
+    "scripts/audit-assessment-production-standalone-v1.mjs\u00002b73185bfb3db4b2d8fbd14e8b1d1b7781fcb5a8c2f771851659faa8f39aa494",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/2b73185bfb3db4b2d8fbd14e8b1d1b7781fcb5a8c2f771851659faa8f39aa494/audit-assessment-production-standalone-v1.mjs"
+  ],
   [
     "package.json\u0000e00ee3448d9270163877b335dad430f3840c06613990e857c6f5df9fda747a82",
     "docs/assessment-production/standalone-debates-v1/control-snapshots/e00ee3448d9270163877b335dad430f3840c06613990e857c6f5df9fda747a82/package.json"
@@ -1669,8 +1682,8 @@ function audit({ repositoryOnly = false } = {}) {
   assert.equal(production.motion, authorization.identity.motion);
   assert.deepEqual(
     publicationComparable(production),
-    publicationComparable(publication.candidate),
-    "production debate differs from frozen publication candidate outside reader-facing note cleanup"
+    publicationComparable(reviewedFeaturedQuoteCandidate(ROOT, selectedRegistryRecord, publication.candidate)),
+    "production debate differs from its frozen candidate and authenticated reader-facing corrections"
   );
   const adapter = json(paths.productionLedger);
   assert.equal(adapter.debateNumber, DEBATE_NUMBER);

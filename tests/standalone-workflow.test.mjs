@@ -1,3 +1,4 @@
+import "./featured-quote-correction.test.mjs";
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -134,7 +135,7 @@ function mechanicalFixture(t, number='900') {
   const f=fixture(t);
   const copy=p=>f.put(p,fs.readFileSync(path.join(repository,p),'utf8'));
   for(const p of [
-    'scripts/lib/standalone-publication-check.mjs','scripts/lib/standalone-browser-replay.mjs',
+    'scripts/lib/standalone-publication-check.mjs','scripts/lib/featured-quote-correction.mjs','scripts/lib/standalone-browser-replay.mjs',
     'scripts/lib/assessment-production-standalone-debate-v1.mjs','scripts/lib/reassessment-scoring.mjs',
     'scripts/lib/assessment-editor-scoped-source.mjs','scripts/standalone/review-resolved-ledger.mjs',
     'scripts/standalone/prepare-publication.mjs','scripts/standalone/apply-rhetorical.mjs'

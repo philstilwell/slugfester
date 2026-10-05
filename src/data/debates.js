@@ -128007,12 +128007,12 @@ export const debates = [
     "summary": "Craig’s cumulative theistic arguments face Kappel’s qualified atheism, comparative naturalism, and challenges concerning explanation, morality, testimony, and disagreement.",
     "quotes": {
       "pro": {
-        "text": "The absence of evidence for something does not prove",
-        "context": "Craig uses a multiverse analogy to argue that missing evidence alone cannot justify positive atheism rather than agnosticism."
+        "text": "The absence of evidence for something does not prove that that thing does not exist.",
+        "context": "Craig argues that lacking evidence for God does not, by itself, establish that God does not exist."
       },
       "con": {
-        "text": "the reports are there no doubt",
-        "context": "Kappel accepts the existence of miracle reports while disputing their truth and best explanation."
+        "text": "The reports are there, no doubt. Were they true?",
+        "context": "Kappel distinguishes evidence that miracle stories were told from evidence that the miracles happened."
       }
     },
     "sections": [
