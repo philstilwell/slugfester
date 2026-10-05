@@ -13585,5 +13585,58 @@ export const debateSummaries = [
         "title": "Religious diversity, historical scope, and expertise"
       }
     ]
+  },
+  {
+    "id": "butt-barker-biblical-god-2009",
+    "number": "285",
+    "title": "Kyle Butt vs Dan Barker — Does the God of the Bible Exist?",
+    "year": 2009,
+    "label": "The Biblical God",
+    "date": "2026-10-05",
+    "duration": "74 min assessed",
+    "youtubeUrl": "https://www.youtube.com/watch?v=c8DEQAjVesc",
+    "motion": "Does the God of the Bible exist?",
+    "summary": "Dan Barker narrowly wins through stronger natural alternatives and direct corrections, while Kyle Butt delivers the best single rebuttal on testimony but leaves key biblical identification bridges unsupported.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "The biblical God exists",
+        "speaker": "Kyle Butt",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The biblical God does not exist",
+        "speaker": "Dan Barker",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 75,
+      "con": 78,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Existence claim and definition"
+      },
+      {
+        "title": "Design and natural explanation"
+      },
+      {
+        "title": "Morality and human value"
+      },
+      {
+        "title": "Biblical coherence and reliability"
+      },
+      {
+        "title": "Divine agency and character"
+      },
+      {
+        "title": "History and salvation claims"
+      },
+      {
+        "title": "Situational moral cases"
+      }
+    ]
   }
 ];

@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-05T03:21:43.263691+00:00",
+  "userAuthorization": "User supplied the next video under the invoked addition skill and explicitly instructed: “Assess only the formal debates and closings.” Standing authorization includes ordinary assessment, bounded repairs, validation, commit/push, PR, green merge and verified live publication without common approvals. No recording-specific prior exception or retry authority is reused.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-285",
+    "head": "dc824e3a0cefbf007af45dac9167bbaa597fd567",
+    "localMain": "dc824e3a0cefbf007af45dac9167bbaa597fd567",
+    "originMain": "dc824e3a0cefbf007af45dac9167bbaa597fd567",
+    "clean": true,
+    "isolationReason": "Reused attached managed checkout after completed Debate 284 and quote correction. Topic branch created from origin/main for intake; clean HEAD, local main and freshly fetched origin/main were authenticated equal before the first tracked assessment write. Ignored source intake is preserved."
+  },
+  "identity": {
+    "debateNumber": "285",
+    "debateId": "butt-barker-biblical-god-2009",
+    "videoId": "c8DEQAjVesc",
+    "canonicalUrl": "https://www.youtube.com/watch?v=c8DEQAjVesc",
+    "sourceTitle": "Debate: Does the God of the Bible Exist? (Kyle Butt / Dan Barker)",
+    "eventYear": 2009,
+    "title": "Kyle Butt vs Dan Barker — Does the God of the Bible Exist? (2009)",
+    "label": "The Biblical God",
+    "topicCategory": "god-theism-atheism",
+    "motion": "Does the God of the Bible exist?",
+    "pro": {
+      "speaker": "Kyle Butt",
+      "position": "The biblical God exists"
+    },
+    "con": {
+      "speaker": "Dan Barker",
+      "position": "The biblical God does not exist"
+    },
+    "dyadic": true,
+    "originalRecordingDyadic": false,
+    "editorApprovedScope": {
+      "protocolId": "editor-approved-moderator-exclusion-v1",
+      "scopeType": "explicitly-approved-formal-rounds-and-closings-with-entire-audience-qa-excluded",
+      "explicitDebateSpecificApproval": true,
+      "videoId": "c8DEQAjVesc",
+      "userApproval": "Assess only the formal debates and closings.",
+      "originalRecordingIsStrictlyDyadic": false,
+      "automaticPrimarySpeakerExceptionClaimed": false,
+      "readerDisclosureRequired": true,
+      "requiredReaderDisclosure": "This assessment covers the formal opening statements, rebuttals, and cross-examination (approximately 5:54–1:08:57), plus both closing statements (1:46:09–1:57:06). The entire audience Q&A, including both speakers’ answers and dependent replies, is excluded at the editor’s request. Neither speaker receives credit or penalty for excluded material. These scores assess the formal rounds and closings, not the complete event.",
+      "assessedWindow": {
+        "startMs": 354440,
+        "endMs": 7026040,
+        "durationMs": 6671600
+      },
+      "retainedIntervals": [
+        {
+          "startMs": 354440,
+          "endMs": 4137440,
+          "durationMs": 3783000
+        },
+        {
+          "startMs": 6369000,
+          "endMs": 7026040,
+          "durationMs": 657040
+        }
+      ],
+      "excludedIntervals": [
+        {
+          "intervalId": "entire-audience-qa-and-dependent-answers",
+          "startMs": 4137440,
+          "endMs": 6369000,
+          "durationMs": 2231560,
+          "reason": "Explicit user-approved exclusion of the complete audience-question segment and surrounding transition, every audience intervention, and both primary speakers’ answers and dependent replies. Resume at the independently stated closing remarks; the carried-over word “wom” in event 2563 remains excluded.",
+          "dependentRepliesReviewed": true,
+          "noCreditOrPenalty": true
+        }
+      ],
+      "excludedDurationMs": 2231560,
+      "excludedShareOfAssessedWindow": 0.33448648000479647,
+      "boundaryBasis": "Canonical caption events preserve absolute video timestamps. Event 124 begins with a moderator carry-over “exist”; event 2563 begins with the Q&A carry-over “wom”. Those words remain unscored and ineligible for quotations. Event 1652 ends with moderator applause logistics. All substantive formal speech and both completed closing arguments are retained.",
+      "outsideWindowDisposition": "Introductions and logistics before the first debater turn, and applause and final thanks after the last completed closing argument, are unscored.",
+      "coherenceReview": "Formal openings establish both cases, followed by rebuttals and cross-examination. Both complete closings are retained. Butt’s closing refers to the excluded eye-design answer: assess only his independently stated closing claim, with no evidence, reply credit, missing-response penalty or burden inference imported from Q&A. All closing arguments must stand on their own or retained formal evidence."
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "knownPaidCostEstimateUsd": 0,
+    "maximumPossiblePaidCostEstimateUsd": 0,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "currentPlanEstimateUsd": 0,
+    "audioVerificationPolicy": "Public captions and the publisher’s debate-only transcript supply source checks at $0. Freeze and report exact required clip and cumulative cost estimates before any paid verification. One attempt per frozen clip, no automatic paid retry. No direct listening claimed."
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-285",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/butt-barker-biblical-god-2009.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/butt-barker-biblical-god-2009.js",
+    "generated site output for this addition"
+  ]
+}
