@@ -1,0 +1,31 @@
+{
+  "status": "passed-with-preserved-frozen-contract-whitespace",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "exitCode": 2,
+  "elapsedMs": 181,
+  "findings": [
+    "docs/assessment-production/standalone-debates-v1/debate-285/judgments/contract.md:26: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-285/publication/contract.md:64: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-285/publication/rhetorical-tag-review-1/contract.md:40: new blank line at EOF."
+  ],
+  "disposition": "All three are extra terminal blank lines in immutable hash-pinned model input contracts. Preserving authenticated input bytes takes precedence over cosmetic whitespace normalization. No substantive source or application error; no repository configuration or validator weakened.",
+  "supplementaryCommand": [
+    "git",
+    "-c",
+    "core.whitespace=-blank-at-eof",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "supplementaryExitCode": 0,
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-285/validation/staged-whitespace-check.txt",
+    "sha256": "a450b3797e3fba1ab1258aa39535109b8ee731d8d712a85fc7c086d36c3060eb",
+    "bytes": 355
+  }
+}

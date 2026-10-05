@@ -1,0 +1,21 @@
+{
+  "status": "resolved-test-tool-setup",
+  "initialFailure": "ERR_MODULE_NOT_FOUND @playwright/test. Initial npm ci probe found no lockfile; repository has no dependency declarations.",
+  "authority": ".github/workflows/site-quality.yml pins test-tool versions.",
+  "command": [
+    "npm",
+    "install",
+    "--no-save",
+    "--no-package-lock",
+    "--ignore-scripts",
+    "@playwright/test@1.62.1",
+    "@axe-core/playwright@4.13.0"
+  ],
+  "result": "7 packages installed; no project manifest or lockfile changed. Mandatory publication test then passed.",
+  "directCostUsd": 0,
+  "testExecution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-285/validation/site-standalone-after-dependency-repair-execution.json",
+    "sha256": "99f41a60fb4d3a78e700cdcea319e087d40e14038eb1a7ba81bae0ba5795449e",
+    "bytes": 494
+  }
+}

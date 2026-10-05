@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "285",
+  "debateId": "butt-barker-biblical-god-2009",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-285/inventory/inventory.json",
+      "sha256": "0ee8fbf20fd133ccc82705f3b090238579c606ec9bbcc2999bd72e9a6e638e14",
+      "bytes": 135973
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-285/score-pass/output.json",
+      "sha256": "7cf155d1e0ffd6d03d20b91955eda0d8027fc8055929f8ee3d1cc491e1f82da7",
+      "bytes": 19778
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-285/publication/skeleton.json",
+      "sha256": "bde05618990077e53ed8c55c137ede98b851f6d5d194dc5beacd8baae9e90b4f",
+      "bytes": 14754
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-285/publication/reference-metrics.json",
+      "sha256": "a46781c85b509ab313929adda1cfaa4e308039052e5544e5820a775dfd12d3b4",
+      "bytes": 54703
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

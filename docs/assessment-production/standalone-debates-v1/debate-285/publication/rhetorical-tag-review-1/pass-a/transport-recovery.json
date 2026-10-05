@@ -1,0 +1,26 @@
+{
+  "status": "recovered-unsaved-local-transport-errors",
+  "agentPath": "/root/tags285a",
+  "events": [
+    {
+      "toolCall": "call_ff40f432251b49fc8d96bff4ea3ecc34",
+      "description": "Worker initially attempted long JSON through a terminal despite instructions to use subprocess stdin; terminal checker was interrupted and closed without a submission.",
+      "sessions": [
+        61726
+      ]
+    },
+    {
+      "toolCall": "call_5b4217497b944ed69b9e2509b4b22f89",
+      "description": "Misspelled handoff-hold command was rejected before any holder or output."
+    },
+    {
+      "toolCall": "call_f5d41ad432e44c2f81606ba9ee00643c",
+      "description": "Local review socket failed under sandbox; identical candidate was then held with approved escalation."
+    }
+  ],
+  "recovery": "Worker used safely quoted Node subprocess input carrying exact existing in-memory bytes. Final held and saved hashes authenticated; no canonical output existed at any failed transport.",
+  "outsideSourceAccess": false,
+  "savedAttemptsConsumedByTransport": 0,
+  "automaticModelRetries": 0,
+  "allFailedProcessesClosed": true
+}
