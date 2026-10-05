@@ -1,0 +1,14 @@
+{
+  "status": "reviewed-packaging-repair",
+  "failedCommit": "22e6836a2559e207607b2670dcb0a1b6589e6c58",
+  "runId": 37252353442,
+  "cause": "Kappel profile HTML was present during successful local checks but omitted from explicit staging after the upstream avatar integration. The committed registry audit checks evidence and does not check generated-page presence.",
+  "repair": "Add the exact already-tested generated profile HTML, rerun immediate-precommit website checks, and expand committed-export verification to generated pages and public site validation before the second push.",
+  "addedFile": {
+    "path": "interlocutor/klemens-kappel/index.html",
+    "sha256": "5a336e196a88ac1c2440e4e921bf2cba34f6c8ffec1b706d3e6d2a978f543466",
+    "bytes": 9280
+  },
+  "frozenAssessmentModified": false,
+  "checksWeakened": false
+}
