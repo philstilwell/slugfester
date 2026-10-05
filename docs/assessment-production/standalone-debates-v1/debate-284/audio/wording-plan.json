@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0-frozen-standalone-audio-plan",
+  "status": "frozen-before-first-paid-call",
+  "purpose": "Supplemental central-wording source verification before primary judgments; independent of selected-move attribution checks, which will be frozen separately after inventory acceptance.",
+  "debateNumber": "284",
+  "debateId": "craig-kappel-god-existence-2012",
+  "videoId": "tXJDSw88YVI",
+  "sourceEvidence": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-284/source/source-lock.json",
+      "sha256": "0a980636603e71e0c93bb51e39cb5b6b98fb0f4273f04fdb5ef84a87d8a680e4",
+      "bytes": 5777
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-284/source/assessment-source-notes.md",
+      "sha256": "8db2e35f3b566b4fd84fe1b3359ecaacdd48c604722f4f6aee710efa47e7176e",
+      "bytes": 9049
+    }
+  ],
+  "acquisition": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-284/audio/acquisition-receipt.json",
+    "sha256": "991bada31505988bd77ac70899040d29f4b50081122c9872b7ca0130938cc55b",
+    "bytes": 654
+  },
+  "triggeredMoveIds": [],
+  "clips": [
+    {
+      "clipId": "wording-01",
+      "startMs": 2800000,
+      "endMs": 2858000,
+      "durationSeconds": 58.0,
+      "purpose": "Craig reporting Bertrand: verify existence/nonexistence polarity without treating caption corruption as a contradiction.",
+      "moveIds": [],
+      "path": "output/transcribe/debate284-verification-1/wording-clips/wording-01.mp3",
+      "sha256": "4aeb5722f617c9882cfb9255d64e9ed6b9424c260ab604386066728edb9af203",
+      "bytes": 465264,
+      "planningAllowanceUsd": 0.068333,
+      "attemptLimit": 1,
+      "automaticRetries": 0,
+      "responsePath": "docs/assessment-production/standalone-debates-v1/debate-284/audio/responses/wording-01.json",
+      "attemptPath": "docs/assessment-production/standalone-debates-v1/debate-284/audio/responses/wording-01.attempt.json",
+      "completionPath": "docs/assessment-production/standalone-debates-v1/debate-284/audio/responses/wording-01.completion.json"
+    },
+    {
+      "clipId": "wording-02",
+      "startMs": 3668000,
+      "endMs": 3720000,
+      "durationSeconds": 52.0,
+      "purpose": "Kappel distinguishes knowing God does not exist from dialectical propriety of claiming knowledge: verify suspect negation.",
+      "moveIds": [],
+      "path": "output/transcribe/debate284-verification-1/wording-clips/wording-02.mp3",
+      "sha256": "812ad72d3640de59275b15cc63048e8228978ed86074c830d9c9bd6cb626904d",
+      "bytes": 417168,
+      "planningAllowanceUsd": 0.063333,
+      "attemptLimit": 1,
+      "automaticRetries": 0,
+      "responsePath": "docs/assessment-production/standalone-debates-v1/debate-284/audio/responses/wording-02.json",
+      "attemptPath": "docs/assessment-production/standalone-debates-v1/debate-284/audio/responses/wording-02.attempt.json",
+      "completionPath": "docs/assessment-production/standalone-debates-v1/debate-284/audio/responses/wording-02.completion.json"
+    },
+    {
+      "clipId": "wording-03",
+      "startMs": 4310000,
+      "endMs": 4342000,
+      "durationSeconds": 32.0,
+      "purpose": "Craig explicitly rejects conclusive proof: verify whether captions omitted not before knockdown arguments.",
+      "moveIds": [],
+      "path": "output/transcribe/debate284-verification-1/wording-clips/wording-03.mp3",
+      "sha256": "d13e341e2b08d5811a193c6ce2e05db98334d8d49a29db5f81f6cdd3e6ac5daf",
+      "bytes": 257040,
+      "planningAllowanceUsd": 0.046667,
+      "attemptLimit": 1,
+      "automaticRetries": 0,
+      "responsePath": "docs/assessment-production/standalone-debates-v1/debate-284/audio/responses/wording-03.json",
+      "attemptPath": "docs/assessment-production/standalone-debates-v1/debate-284/audio/responses/wording-03.attempt.json",
+      "completionPath": "docs/assessment-production/standalone-debates-v1/debate-284/audio/responses/wording-03.completion.json"
+    }
+  ],
+  "knownSpeakers": [
+    {
+      "path": "output/transcribe/debate284-verification-1/references/pro.mp3",
+      "sha256": "59439b486161b8d8e0636b69ca6a1060fc88b9394105a82aaaff48301852c4b6",
+      "bytes": 49104,
+      "speaker": "William Lane Craig",
+      "side": "pro",
+      "startMs": 310000,
+      "endMs": 316000,
+      "durationSeconds": 6
+    },
+    {
+      "path": "output/transcribe/debate284-verification-1/references/con.mp3",
+      "sha256": "1ea073dc61e80bdd2c2887da61c8399b3300a8f7e0d471c7cf76c9eb0942baa0",
+      "bytes": 49104,
+      "speaker": "Klemens Kappel",
+      "side": "con",
+      "startMs": 1650000,
+      "endMs": 1656000,
+      "durationSeconds": 6
+    }
+  ],
+  "model": "gpt-4o-transcribe-diarize",
+  "responseFormat": "diarized_json",
+  "language": "en",
+  "chunkingStrategy": "auto",
+  "automaticRetries": 0,
+  "timeoutSeconds": 240,
+  "paidCallsMade": 0,
+  "tools": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-284/audio/run-frozen-clip.py",
+      "sha256": "028796c06ac1246380f4081e9f51bf52277ad2f923b66c02bc4098b07ae0a0ba",
+      "bytes": 3979
+    }
+  ],
+  "transcribeSkillCli": {
+    "externalLocalPath": "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py",
+    "sha256": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951",
+    "bytes": 8684
+  },
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0,
+    "uncertainCallCostUsd": 0,
+    "indicativeEstimateUsd": 0.0178,
+    "planningAllowanceUsd": 0.178333,
+    "cumulativePlanningAllowanceUsd": 0.178333,
+    "standingMaximumUsd": 1,
+    "inputTokenRatePerMillionUsd": 2.5,
+    "outputTokenRatePerMillionUsd": 10,
+    "indicativePlanningRatePerMinuteUsd": 0.006,
+    "conservativePlanningRatePerMinuteUsd": 0.05,
+    "pricingUrls": [
+      "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+      "https://developers.openai.com/api/docs/pricing"
+    ],
+    "pricingReviewedAt": "2026-10-04",
+    "calculation": "Three source-wording clips totaling 142 seconds, plus two six-second speaker references per call. Conservative allowance uses $0.05/min plus $0.01/call; it is not a provider-enforced billing ceiling. Review returned usage before every next call. All later attribution checks must keep cumulative estimated maximum within $1.00 or obtain new debate-specific authority."
+  },
+  "reviewInstructions": "Preserve exact canonical captions; record machine-audio findings as an explicit supplement. No direct listening claimed. No numerical judgment, score or source text edits. No automatic paid retries.",
+  "frozenAt": "2026-10-04T23:34:32.161104+00:00"
+}

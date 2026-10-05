@@ -1,0 +1,23 @@
+accessibility-and-performance	Run npm run site:check	﻿2026-10-05T01:41:38.0241617Z ##[group]Run npm run site:check
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.0241955Z ^[[36;1mnpm run site:check^[[0m
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.0305759Z shell: /usr/bin/bash -e {0}
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.0306031Z ##[endgroup]
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.1326292Z 
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.1327037Z > slugfester@0.1.0 site:check
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.1328128Z > node scripts/validate-topic-categories.mjs && npm run seo -- --check && node scripts/validate-public-site.mjs && npx playwright test
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.1328771Z 
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.3277547Z Validated explicit primary categories for 284 debates across 15 categories.
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.4289717Z 
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.4289997Z > slugfester@0.1.0 seo
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.4290622Z > node scripts/generate-seo-pages.mjs --check
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:38.4290981Z 
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:40.1371203Z file:///home/runner/work/slugfester/slugfester/scripts/generate-seo-pages.mjs:798
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:40.1372561Z     throw new Error(`${file} is missing`);
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:40.1373609Z           ^
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:40.1374575Z 
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:40.1375752Z Error: /home/runner/work/slugfester/slugfester/interlocutor/klemens-kappel/index.html is missing
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:40.1376843Z     at ensureMatches (file:///home/runner/work/slugfester/slugfester/scripts/generate-seo-pages.mjs:798:11)
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:40.1377840Z     at async file:///home/runner/work/slugfester/slugfester/scripts/generate-seo-pages.mjs:821:5
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:40.1378347Z 
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:40.1378476Z Node.js v22.23.3
+accessibility-and-performance	Run npm run site:check	2026-10-05T01:41:40.1727923Z ##[error]Process completed with exit code 1.

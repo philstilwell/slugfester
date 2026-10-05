@@ -1,0 +1,14 @@
+{
+  "status": "repaired-missing-profile-registration",
+  "at": "2026-10-05T01:20:37.259734+00:00",
+  "finding": "Both maintained browser checks found Kappel profile HTTP404. The biography was present, but profile discovery requires interlocutors registry membership. Earlier assumption that the registry only supplied portraits was incorrect.",
+  "change": "Registered canonical Klemens Kappel with existing /assets/icon-512.png and placeholder:true. Existing initials rendering hides the generic image; no avatar generated.",
+  "beforeSha256": "228f5e97ad3728160008ff6d3a8ab656b69a1eb1535158dee1c511800a63b8f7",
+  "afterSha256": "4aa3103e506cf309c703ca20ea099884763cb60cf40c1d3401a12c6a63a007b4",
+  "failedExecutions": [
+    "rendering/local-browser-cli.txt",
+    "validation/focused-standalone-site-execution.json"
+  ],
+  "assessmentChanges": 0,
+  "nextChecks": "Regenerate pages and asset hashes; rerun failed browser checks with preserved prior diagnostics."
+}

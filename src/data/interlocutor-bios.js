@@ -2,6 +2,7 @@
 // Each entry has a public biographical source checked on the recorded review date.
 export const biographyReviewDate = "2026-09-05";
 const entries = [
+  ["Klemens Kappel", "Klemens Kappel is a philosopher at the University of Copenhagen whose research examines how social settings shape knowledge, evidence, and disagreement. His work also addresses the role of expertise in democratic decisions, political philosophy, and bioethics.", "https://researchprofiles.ku.dk/en/persons/klemens-kappel/", "2026-10-04"],
   ["Andrew Pyle", "Andrew Pyle is a philosopher whose academic work has been associated with the University of Bristol. He writes on modern philosophy and philosophy of religion, including a study of David Hume’s Dialogues Concerning Natural Religion.", "https://www.bloomsbury.com/us/author/andrew-pyle/", "2026-09-30"],
   ["Dennis Nørmark", "Dennis Nørmark is an anthropologist, author, speaker, and consultant whose work examines culture, working life, and leadership. His books include Pseudoarbejde and Ufrihedens pris, and he co-wrote Gid min chef var høvding with anthropologist Christian Groes.", "https://www.gyldendal.dk/forfattere/dennis-normark-F101928", "2026-09-30"],
   ["Randal Rauser", "Randal Rauser is a Canadian theologian and author whose work examines Christian belief and philosophical questions about faith. He studied at Trinity Western University, Regent College, and King’s College London, and has taught philosophy and theology.", "https://randalrauser.com/about/", "2026-09-29"],
