@@ -1,0 +1,985 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: standalone-publication.spec.mjs >> checks standalone publication before deployment, including static scope and every graph bucket
+- Location: tests/site-quality/standalone-publication.spec.mjs:7:1
+
+# Error details
+
+```
+Error: desktop profile broken images: {"actual":["http://127.0.0.1:4181/assets/caricatures/erik-wielenberg.webp"],"expected":[]}
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f4e2]:
+  - link "Skip to main content" [ref=f4e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f4e4]:
+    - link "Slugfester home" [ref=f4e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f4e6]: Slugfester
+    - navigation "Primary" [ref=f4e7]:
+      - link "Debates" [ref=f4e8] [cursor=pointer]:
+        - /url: /
+      - link "Search" [ref=f4e9] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=f4e10] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=f4e11] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=f4e12] [cursor=pointer]:
+        - /url: /insights/
+      - link "Backend" [ref=f4e13] [cursor=pointer]:
+        - /url: /backend/
+      - button "External" [ref=f4e15] [cursor=pointer]:
+        - text: External
+        - generic [ref=f4e16]: ▾
+  - main [ref=f4e17]:
+    - link "Back to Rankings & Flags" [ref=f4e18] [cursor=pointer]:
+      - /url: /rankings/
+    - generic [ref=f4e19]:
+      - generic [ref=f4e20]:
+        - img "William Lane Craig" [ref=f4e21]
+        - generic [ref=f4e22]:
+          - paragraph [ref=f4e23]: Interlocutor profile
+          - heading "William Lane Craig" [level=1] [ref=f4e24]
+          - paragraph [ref=f4e25]: 29 published 1-on-1 scorecards across 10 topics. 2 team appearances are listed separately.
+          - generic "A broader scorecard sample makes the average more stable." [ref=f4e26]: Established sample
+      - generic [ref=f4e28]:
+        - generic [ref=f4e29]:
+          - term [ref=f4e30]: Average score
+          - definition [ref=f4e31]: "78.9"
+        - generic [ref=f4e32]:
+          - term [ref=f4e33]: Opponents' Avg.
+          - definition [ref=f4e34]: "82.5"
+        - generic [ref=f4e35]:
+          - term [ref=f4e36]: Fallacies
+          - definition [ref=f4e37]: 9.9 per 100
+        - generic [ref=f4e38]:
+          - term [ref=f4e39]: Biases
+          - definition [ref=f4e40]: 3.3 per 100
+    - region [ref=f4e41]:
+      - generic [ref=f4e42]:
+        - generic [ref=f4e43]:
+          - paragraph [ref=f4e44]: Score profile
+          - heading "Distribution, not a sequence" [level=2] [ref=f4e45]
+        - paragraph [ref=f4e46]: Overall scores are grouped into fixed five-point buckets so every interlocutor uses the same 50–100 scale.
+      - generic [ref=f4e47]:
+        - strong [ref=f4e48]: Moderate score spread
+        - generic [ref=f4e49]: Median 78 · Range 73–86 · 29 scorecards
+      - generic [ref=f4e50]:
+        - region "About William Lane Craig" [ref=f4e51]:
+          - paragraph [ref=f4e52]: Background
+          - heading "About William Lane Craig" [level=3] [ref=f4e53]
+          - paragraph [ref=f4e54]: William Lane Craig is a philosopher, theologian, and founder of Reasonable Faith. His academic and public work concerns arguments for God’s existence, the relationship between God and time, and the historical case for Jesus’ resurrection.
+          - paragraph [ref=f4e55]:
+            - link "Biographical source for William Lane Craig (opens in a new tab)" [ref=f4e56] [cursor=pointer]:
+              - /url: https://www.reasonablefaith.org/william-lane-craig/
+              - text: Biographical source ↗
+        - figure "Bar height shows the number of published scorecards in each range." [ref=f4e57]:
+          - generic [ref=f4e58]:
+            - generic [ref=f4e59]: Scorecards
+            - list "Overall score distribution from 50 to 100" [ref=f4e60]:
+              - 'listitem "50–54: 0 scorecards" [ref=f4e61]':
+                - generic [ref=f4e63]: 50–54
+              - 'listitem "55–59: 0 scorecards" [ref=f4e64]':
+                - generic [ref=f4e66]: 55–59
+              - 'listitem "60–64: 0 scorecards" [ref=f4e67]':
+                - generic [ref=f4e69]: 60–64
+              - 'listitem "65–69: 0 scorecards" [ref=f4e70]':
+                - generic [ref=f4e72]: 65–69
+              - 'listitem "70–74: 2 scorecards" [ref=f4e73]':
+                - strong [ref=f4e74]: "2"
+                - generic [ref=f4e77]: 70–74
+              - 'listitem "75–79: 15 scorecards" [ref=f4e78]':
+                - strong [ref=f4e79]: "15"
+                - generic [ref=f4e82]: 75–79
+              - 'listitem "80–84: 11 scorecards" [ref=f4e83]':
+                - strong [ref=f4e84]: "11"
+                - generic [ref=f4e87]: 80–84
+              - 'listitem "85–89: 1 scorecard" [ref=f4e88]':
+                - strong [ref=f4e89]: "1"
+                - generic [ref=f4e92]: 85–89
+              - 'listitem "90–94: 0 scorecards" [ref=f4e93]':
+                - generic [ref=f4e95]: 90–94
+              - 'listitem "95–100: 0 scorecards" [ref=f4e96]':
+                - generic [ref=f4e98]: 95–100
+    - generic [ref=f4e100]:
+      - region [ref=f4e101]:
+        - generic [ref=f4e103]:
+          - paragraph [ref=f4e104]: Topic record
+          - heading "Performance by topic" [level=2] [ref=f4e105]
+        - list [ref=f4e106]:
+          - listitem [ref=f4e107]:
+            - generic [ref=f4e108]:
+              - strong [ref=f4e109]: God, theism, and atheism
+              - generic [ref=f4e110]: 18 scorecards
+            - generic [ref=f4e111]: "78.1"
+          - listitem [ref=f4e112]:
+            - generic [ref=f4e113]:
+              - strong [ref=f4e114]: Logic, reason, and presuppositions
+              - generic [ref=f4e115]: 13 scorecards
+            - generic [ref=f4e116]: "80.8"
+          - listitem [ref=f4e117]:
+            - generic [ref=f4e118]:
+              - strong [ref=f4e119]: Cosmological & Contingency Arguments
+              - generic [ref=f4e120]: 5 scorecards
+            - generic [ref=f4e121]: "80.4"
+          - listitem [ref=f4e122]:
+            - generic [ref=f4e123]:
+              - strong [ref=f4e124]: Resurrection and miracles
+              - generic [ref=f4e125]: 4 scorecards
+            - generic [ref=f4e126]: "83.3"
+          - listitem [ref=f4e127]:
+            - generic [ref=f4e128]:
+              - strong [ref=f4e129]: Science and design
+              - generic [ref=f4e130]: 4 scorecards
+            - generic [ref=f4e131]: "79"
+          - listitem [ref=f4e132]:
+            - generic [ref=f4e133]:
+              - strong [ref=f4e134]: Evil, suffering, and hiddenness
+              - generic [ref=f4e135]: 4 scorecards
+            - generic [ref=f4e136]: "78.3"
+          - listitem [ref=f4e137]:
+            - generic [ref=f4e138]:
+              - strong [ref=f4e139]: Morality and ethics
+              - generic [ref=f4e140]: 3 scorecards
+            - generic [ref=f4e141]: "78.3"
+          - listitem [ref=f4e142]:
+            - generic [ref=f4e143]:
+              - strong [ref=f4e144]: Bible and historical Jesus
+              - generic [ref=f4e145]: 2 scorecards
+            - generic [ref=f4e146]: "82"
+          - listitem [ref=f4e147]:
+            - generic [ref=f4e148]:
+              - strong [ref=f4e149]: Christian belief and doctrine
+              - generic [ref=f4e150]: 2 scorecards
+            - generic [ref=f4e151]: "76.5"
+          - listitem [ref=f4e152]:
+            - generic [ref=f4e153]:
+              - strong [ref=f4e154]: Moral realism and objectivity
+              - generic [ref=f4e155]: 1 scorecard
+            - generic [ref=f4e156]: "80"
+      - region [ref=f4e157]:
+        - generic [ref=f4e158]:
+          - generic [ref=f4e159]:
+            - paragraph [ref=f4e160]: Opponents faced
+            - heading "Debate opponents" [level=2] [ref=f4e161]
+          - paragraph [ref=f4e162]: Right-hand values are matchup scores against William Lane Craig—not opponents’ overall profile averages.
+        - list [ref=f4e163]:
+          - listitem [ref=f4e164]:
+            - link "Alex Malpass Alex Malpass 2 meetings · matchup average" [ref=f4e165] [cursor=pointer]:
+              - /url: /interlocutor/alex-malpass/
+              - img "Alex Malpass" [ref=f4e166]
+              - generic [ref=f4e167]:
+                - strong [ref=f4e168]: Alex Malpass
+                - generic [ref=f4e169]: 2 meetings · matchup average
+            - generic [ref=f4e170]: "90.5"
+          - listitem [ref=f4e171]:
+            - link "Alex O'Connor Alex O'Connor 2 meetings · matchup average" [ref=f4e172] [cursor=pointer]:
+              - /url: /interlocutor/alex-o-connor/
+              - img "Alex O'Connor" [ref=f4e173]
+              - generic [ref=f4e174]:
+                - strong [ref=f4e175]: Alex O'Connor
+                - generic [ref=f4e176]: 2 meetings · matchup average
+            - generic [ref=f4e177]: "85"
+          - listitem [ref=f4e178]:
+            - link "Sean Carroll Sean Carroll 1 meeting · matchup score" [ref=f4e179] [cursor=pointer]:
+              - /url: /interlocutor/sean-carroll/
+              - img "Sean Carroll" [ref=f4e180]
+              - generic [ref=f4e181]:
+                - strong [ref=f4e182]: Sean Carroll
+                - generic [ref=f4e183]: 1 meeting · matchup score
+            - generic [ref=f4e184]: "90"
+          - listitem [ref=f4e185]:
+            - link "Scott Clifton Scott Clifton 1 meeting · matchup score" [ref=f4e186] [cursor=pointer]:
+              - /url: /interlocutor/scott-clifton/
+              - img "Scott Clifton" [ref=f4e187]
+              - generic [ref=f4e188]:
+                - strong [ref=f4e189]: Scott Clifton
+                - generic [ref=f4e190]: 1 meeting · matchup score
+            - generic [ref=f4e191]: "88"
+          - listitem [ref=f4e192]:
+            - link "Stephen Law Stephen Law 1 meeting · matchup score" [ref=f4e193] [cursor=pointer]:
+              - /url: /interlocutor/stephen-law/
+              - img "Stephen Law" [ref=f4e194]
+              - generic [ref=f4e195]:
+                - strong [ref=f4e196]: Stephen Law
+                - generic [ref=f4e197]: 1 meeting · matchup score
+            - generic [ref=f4e198]: "88"
+          - listitem [ref=f4e199]:
+            - link "Peter Millican Peter Millican 1 meeting · matchup score" [ref=f4e200] [cursor=pointer]:
+              - /url: /interlocutor/peter-millican/
+              - img "Peter Millican" [ref=f4e201]
+              - generic [ref=f4e202]:
+                - strong [ref=f4e203]: Peter Millican
+                - generic [ref=f4e204]: 1 meeting · matchup score
+            - generic [ref=f4e205]: "87"
+          - listitem [ref=f4e206]:
+            - link "AC Grayling AC Grayling 1 meeting · matchup score" [ref=f4e207] [cursor=pointer]:
+              - /url: /interlocutor/ac-grayling/
+              - img "AC Grayling" [ref=f4e208]
+              - generic [ref=f4e209]:
+                - strong [ref=f4e210]: AC Grayling
+                - generic [ref=f4e211]: 1 meeting · matchup score
+            - generic [ref=f4e212]: "86"
+          - listitem [ref=f4e213]:
+            - link "Paul Draper Paul Draper 1 meeting · matchup score" [ref=f4e214] [cursor=pointer]:
+              - /url: /interlocutor/paul-draper/
+              - img "Paul Draper" [ref=f4e215]
+              - generic [ref=f4e216]:
+                - strong [ref=f4e217]: Paul Draper
+                - generic [ref=f4e218]: 1 meeting · matchup score
+            - generic [ref=f4e219]: "85"
+          - listitem [ref=f4e220]:
+            - link "Shelly Kagan Shelly Kagan 1 meeting · matchup score" [ref=f4e221] [cursor=pointer]:
+              - /url: /interlocutor/shelly-kagan/
+              - img "Shelly Kagan" [ref=f4e222]
+              - generic [ref=f4e223]:
+                - strong [ref=f4e224]: Shelly Kagan
+                - generic [ref=f4e225]: 1 meeting · matchup score
+            - generic [ref=f4e226]: "85"
+          - listitem [ref=f4e227]:
+            - link "Erik Wielenberg Erik Wielenberg 1 meeting · matchup score" [ref=f4e228] [cursor=pointer]:
+              - /url: /interlocutor/erik-wielenberg/
+              - img "Erik Wielenberg" [ref=f4e229]
+              - generic [ref=f4e230]:
+                - strong [ref=f4e231]: Erik Wielenberg
+                - generic [ref=f4e232]: 1 meeting · matchup score
+            - generic [ref=f4e233]: "84"
+          - listitem [ref=f4e234]:
+            - link "Graham Oppy Graham Oppy 1 meeting · matchup score" [ref=f4e235] [cursor=pointer]:
+              - /url: /interlocutor/graham-oppy/
+              - img "Graham Oppy" [ref=f4e236]
+              - generic [ref=f4e237]:
+                - strong [ref=f4e238]: Graham Oppy
+                - generic [ref=f4e239]: 1 meeting · matchup score
+            - generic [ref=f4e240]: "84"
+          - listitem [ref=f4e241]:
+            - link "Klemens Kappel Klemens Kappel 1 meeting · matchup score" [ref=f4e242] [cursor=pointer]:
+              - /url: /interlocutor/klemens-kappel/
+              - img "Klemens Kappel" [ref=f4e243]
+              - generic [ref=f4e244]:
+                - strong [ref=f4e245]: Klemens Kappel
+                - generic [ref=f4e246]: 1 meeting · matchup score
+            - generic [ref=f4e247]: "84"
+          - listitem [ref=f4e248]:
+            - link "Andrew Pyle Andrew Pyle 1 meeting · matchup score" [ref=f4e249] [cursor=pointer]:
+              - /url: /interlocutor/andrew-pyle/
+              - img "Andrew Pyle" [ref=f4e250]
+              - generic [ref=f4e251]:
+                - strong [ref=f4e252]: Andrew Pyle
+                - generic [ref=f4e253]: 1 meeting · matchup score
+            - generic [ref=f4e254]: "83"
+          - listitem [ref=f4e255]:
+            - link "Bart Ehrman Bart Ehrman 1 meeting · matchup score" [ref=f4e256] [cursor=pointer]:
+              - /url: /interlocutor/bart-ehrman/
+              - img "Bart Ehrman" [ref=f4e257]
+              - generic [ref=f4e258]:
+                - strong [ref=f4e259]: Bart Ehrman
+                - generic [ref=f4e260]: 1 meeting · matchup score
+            - generic [ref=f4e261]: "83"
+          - listitem [ref=f4e262]:
+            - link "John Shook John Shook 1 meeting · matchup score" [ref=f4e263] [cursor=pointer]:
+              - /url: /interlocutor/john-shook/
+              - img "John Shook" [ref=f4e264]
+              - generic [ref=f4e265]:
+                - strong [ref=f4e266]: John Shook
+                - generic [ref=f4e267]: 1 meeting · matchup score
+            - generic [ref=f4e268]: "83"
+          - listitem [ref=f4e269]:
+            - link "Austin Dacey Austin Dacey 1 meeting · matchup score" [ref=f4e270] [cursor=pointer]:
+              - /url: /interlocutor/austin-dacey/
+              - img "Austin Dacey" [ref=f4e271]
+              - generic [ref=f4e272]:
+                - strong [ref=f4e273]: Austin Dacey
+                - generic [ref=f4e274]: 1 meeting · matchup score
+            - generic [ref=f4e275]: "82"
+          - listitem [ref=f4e276]:
+            - link "Christopher Hitchens Christopher Hitchens 1 meeting · matchup score" [ref=f4e277] [cursor=pointer]:
+              - /url: /interlocutor/christopher-hitchens/
+              - img "Christopher Hitchens" [ref=f4e278]
+              - generic [ref=f4e279]:
+                - strong [ref=f4e280]: Christopher Hitchens
+                - generic [ref=f4e281]: 1 meeting · matchup score
+            - generic [ref=f4e282]: "82"
+          - listitem [ref=f4e283]:
+            - link "Lawrence Krauss Lawrence Krauss 1 meeting · matchup score" [ref=f4e284] [cursor=pointer]:
+              - /url: /interlocutor/lawrence-krauss/
+              - img "Lawrence Krauss" [ref=f4e285]
+              - generic [ref=f4e286]:
+                - strong [ref=f4e287]: Lawrence Krauss
+                - generic [ref=f4e288]: 1 meeting · matchup score
+            - generic [ref=f4e289]: "81"
+          - listitem [ref=f4e290]:
+            - link "Michael Tooley Michael Tooley 1 meeting · matchup score" [ref=f4e291] [cursor=pointer]:
+              - /url: /interlocutor/michael-tooley/
+              - img "Michael Tooley" [ref=f4e292]
+              - generic [ref=f4e293]:
+                - strong [ref=f4e294]: Michael Tooley
+                - generic [ref=f4e295]: 1 meeting · matchup score
+            - generic [ref=f4e296]: "80"
+          - listitem [ref=f4e297]:
+            - link "Richard Carrier Richard Carrier 1 meeting · matchup score" [ref=f4e298] [cursor=pointer]:
+              - /url: /interlocutor/richard-carrier/
+              - img "Richard Carrier" [ref=f4e299]
+              - generic [ref=f4e300]:
+                - strong [ref=f4e301]: Richard Carrier
+                - generic [ref=f4e302]: 1 meeting · matchup score
+            - generic [ref=f4e303]: "80"
+          - listitem [ref=f4e304]:
+            - link "Robert Price Robert Price 1 meeting · matchup score" [ref=f4e305] [cursor=pointer]:
+              - /url: /interlocutor/robert-price/
+              - img "Robert Price" [ref=f4e306]
+              - generic [ref=f4e307]:
+                - strong [ref=f4e308]: Robert Price
+                - generic [ref=f4e309]: 1 meeting · matchup score
+            - generic [ref=f4e310]: "80"
+          - listitem [ref=f4e311]:
+            - link "Sam Harris Sam Harris 1 meeting · matchup score" [ref=f4e312] [cursor=pointer]:
+              - /url: /interlocutor/sam-harris/
+              - img "Sam Harris" [ref=f4e313]
+              - generic [ref=f4e314]:
+                - strong [ref=f4e315]: Sam Harris
+                - generic [ref=f4e316]: 1 meeting · matchup score
+            - generic [ref=f4e317]: "79"
+          - listitem [ref=f4e318]:
+            - link "Antony Flew Antony Flew 1 meeting · matchup score" [ref=f4e319] [cursor=pointer]:
+              - /url: /interlocutor/antony-flew/
+              - img "Antony Flew" [ref=f4e320]
+              - generic [ref=f4e321]:
+                - strong [ref=f4e322]: Antony Flew
+                - generic [ref=f4e323]: 1 meeting · matchup score
+            - generic [ref=f4e324]: "77"
+          - listitem [ref=f4e325]:
+            - link "Alex Rosenberg Alex Rosenberg 1 meeting · matchup score" [ref=f4e326] [cursor=pointer]:
+              - /url: /interlocutor/alex-rosenberg/
+              - img "Alex Rosenberg" [ref=f4e327]
+              - generic [ref=f4e328]:
+                - strong [ref=f4e329]: Alex Rosenberg
+                - generic [ref=f4e330]: 1 meeting · matchup score
+            - generic [ref=f4e331]: "76"
+          - listitem [ref=f4e332]:
+            - link "Peter Atkins Peter Atkins 1 meeting · matchup score" [ref=f4e333] [cursor=pointer]:
+              - /url: /interlocutor/peter-atkins/
+              - img "Peter Atkins" [ref=f4e334]
+              - generic [ref=f4e335]:
+                - strong [ref=f4e336]: Peter Atkins
+                - generic [ref=f4e337]: 1 meeting · matchup score
+            - generic [ref=f4e338]: "73"
+          - listitem [ref=f4e339]:
+            - link "Massimo Pigliucci Massimo Pigliucci 1 meeting · matchup score" [ref=f4e340] [cursor=pointer]:
+              - /url: /interlocutor/massimo-pigliucci/
+              - img "Massimo Pigliucci" [ref=f4e341]
+              - generic [ref=f4e342]:
+                - strong [ref=f4e343]: Massimo Pigliucci
+                - generic [ref=f4e344]: 1 meeting · matchup score
+            - generic [ref=f4e345]: "72"
+          - listitem [ref=f4e346]:
+            - link "Victor Stenger Victor Stenger 1 meeting · matchup score" [ref=f4e347] [cursor=pointer]:
+              - /url: /interlocutor/victor-stenger/
+              - img "Victor Stenger" [ref=f4e348]
+              - generic [ref=f4e349]:
+                - strong [ref=f4e350]: Victor Stenger
+                - generic [ref=f4e351]: 1 meeting · matchup score
+            - generic [ref=f4e352]: "69"
+    - region [ref=f4e353]:
+      - generic [ref=f4e354]:
+        - generic [ref=f4e355]:
+          - paragraph [ref=f4e356]: Linked record
+          - heading "1-on-1 debate scorecards" [level=2] [ref=f4e357]
+        - paragraph [ref=f4e358]: Open a scorecard to read the transcript-grounded assessment behind its published score.
+      - generic [ref=f4e359]:
+        - article [ref=f4e360]:
+          - paragraph [ref=f4e361]: Debate 01
+          - heading [level=3] [ref=f4e362]:
+            - 'link "Alex O''Connor vs William Lane Craig: Does God Exist? Debate year 2026" [ref=f4e363] [cursor=pointer]':
+              - /url: /debate/craig-oconnor-god-debate-2026/
+              - text: "Alex O'Connor vs William Lane Craig: Does God Exist?"
+              - generic "Debate year 2026" [ref=f4e364]: "2026"
+          - paragraph [ref=f4e365]: Christian theism and suffering
+          - generic [ref=f4e366]: Against Alex O'Connor
+          - generic [ref=f4e367]:
+            - generic [ref=f4e368]:
+              - term [ref=f4e369]: William's score
+              - definition [ref=f4e370]: "76"
+            - generic [ref=f4e371]:
+              - term [ref=f4e372]: Opponents' score
+              - definition [ref=f4e373]: "82"
+        - article [ref=f4e374]:
+          - paragraph [ref=f4e375]: Debate 02
+          - heading [level=3] [ref=f4e376]:
+            - 'link "William Lane Craig vs Christopher Hitchens: Does God Exist? Debate year 2009" [ref=f4e377] [cursor=pointer]':
+              - /url: /debate/craig-hitchens-god-existence-2009/
+              - text: "William Lane Craig vs Christopher Hitchens: Does God Exist?"
+              - generic "Debate year 2009" [ref=f4e378]: "2009"
+          - paragraph [ref=f4e379]: Christian theism and atheism
+          - generic [ref=f4e380]: Against Christopher Hitchens
+          - generic [ref=f4e381]:
+            - generic [ref=f4e382]:
+              - term [ref=f4e383]: William's score
+              - definition [ref=f4e384]: "78"
+            - generic [ref=f4e385]:
+              - term [ref=f4e386]: Opponents' score
+              - definition [ref=f4e387]: "82"
+        - article [ref=f4e388]:
+          - paragraph [ref=f4e389]: Debate 10
+          - heading [level=3] [ref=f4e390]:
+            - 'link "William Lane Craig vs Sam Harris: The God Debate II Debate year 2011" [ref=f4e391] [cursor=pointer]':
+              - /url: /debate/craig-harris-moral-foundations-2011/
+              - text: "William Lane Craig vs Sam Harris: The God Debate II"
+              - generic "Debate year 2011" [ref=f4e392]: "2011"
+          - paragraph [ref=f4e393]: Moral foundations
+          - generic [ref=f4e394]: Against Sam Harris
+          - generic [ref=f4e395]:
+            - generic [ref=f4e396]:
+              - term [ref=f4e397]: William's score
+              - definition [ref=f4e398]: "79"
+            - generic [ref=f4e399]:
+              - term [ref=f4e400]: Opponents' score
+              - definition [ref=f4e401]: "79"
+        - article [ref=f4e402]:
+          - paragraph [ref=f4e403]: Debate 31
+          - heading [level=3] [ref=f4e404]:
+            - 'link "Alex O''Connor vs William Lane Craig: Did Jesus Rise From the Dead? Debate year 2023" [ref=f4e405] [cursor=pointer]':
+              - /url: /debate/oconnor-craig-resurrection-2023/
+              - text: "Alex O'Connor vs William Lane Craig: Did Jesus Rise From the Dead?"
+              - generic "Debate year 2023" [ref=f4e406]: "2023"
+          - paragraph [ref=f4e407]: Resurrection and historical evidence
+          - generic [ref=f4e408]: Against Alex O'Connor
+          - generic [ref=f4e409]:
+            - generic [ref=f4e410]:
+              - term [ref=f4e411]: William's score
+              - definition [ref=f4e412]: "86"
+            - generic [ref=f4e413]:
+              - term [ref=f4e414]: Opponents' score
+              - definition [ref=f4e415]: "88"
+        - article [ref=f4e416]:
+          - paragraph [ref=f4e417]: Debate 33
+          - heading [level=3] [ref=f4e418]:
+            - 'link "William Lane Craig vs Sean Carroll: God and Cosmology Debate year 2014" [ref=f4e419] [cursor=pointer]':
+              - /url: /debate/craig-carroll-god-cosmology-2014/
+              - text: "William Lane Craig vs Sean Carroll: God and Cosmology"
+              - generic "Debate year 2014" [ref=f4e420]: "2014"
+          - paragraph [ref=f4e421]: God and cosmological models
+          - generic [ref=f4e422]: Against Sean Carroll
+          - generic [ref=f4e423]:
+            - generic [ref=f4e424]:
+              - term [ref=f4e425]: William's score
+              - definition [ref=f4e426]: "83"
+            - generic [ref=f4e427]:
+              - term [ref=f4e428]: Opponents' score
+              - definition [ref=f4e429]: "90"
+        - article [ref=f4e430]:
+          - paragraph [ref=f4e431]: Debate 55
+          - heading [level=3] [ref=f4e432]:
+            - 'link "William Lane Craig vs Alex Malpass: Can Something Come From Nothing? Debate year 2026" [ref=f4e433] [cursor=pointer]':
+              - /url: /debate/craig-malpass-kalam-nothing-2026/
+              - text: "William Lane Craig vs Alex Malpass: Can Something Come From Nothing?"
+              - generic "Debate year 2026" [ref=f4e434]: "2026"
+          - paragraph [ref=f4e435]: Kalam, nothing, and infinity
+          - generic [ref=f4e436]: Against Alex Malpass
+          - generic [ref=f4e437]:
+            - generic [ref=f4e438]:
+              - term [ref=f4e439]: William's score
+              - definition [ref=f4e440]: "75"
+            - generic [ref=f4e441]:
+              - term [ref=f4e442]: Opponents' score
+              - definition [ref=f4e443]: "91"
+        - article [ref=f4e444]:
+          - paragraph [ref=f4e445]: Debate 76
+          - heading [level=3] [ref=f4e446]:
+            - 'link "William Lane Craig vs Graham Oppy: Does Math Point to God? Debate year 2020" [ref=f4e447] [cursor=pointer]':
+              - /url: /debate/craig-oppy-mathematics-theism-2020/
+              - text: "William Lane Craig vs Graham Oppy: Does Math Point to God?"
+              - generic "Debate year 2020" [ref=f4e448]: "2020"
+          - paragraph [ref=f4e449]: Mathematics and theism
+          - generic [ref=f4e450]: Against Graham Oppy
+          - generic [ref=f4e451]:
+            - generic [ref=f4e452]:
+              - term [ref=f4e453]: William's score
+              - definition [ref=f4e454]: "81"
+            - generic [ref=f4e455]:
+              - term [ref=f4e456]: Opponents' score
+              - definition [ref=f4e457]: "84"
+        - article [ref=f4e458]:
+          - paragraph [ref=f4e459]: Debate 92
+          - heading [level=3] [ref=f4e460]:
+            - 'link "William Lane Craig vs Alex Malpass: Did the Universe Begin to Exist? Debate year 2020" [ref=f4e461] [cursor=pointer]':
+              - /url: /debate/craig-malpass-universe-begin-exist-2020/
+              - text: "William Lane Craig vs Alex Malpass: Did the Universe Begin to Exist?"
+              - generic "Debate year 2020" [ref=f4e462]: "2020"
+          - paragraph [ref=f4e463]: Kalam beginning and temporal infinity
+          - generic [ref=f4e464]: Against Alex Malpass
+          - generic [ref=f4e465]:
+            - generic [ref=f4e466]:
+              - term [ref=f4e467]: William's score
+              - definition [ref=f4e468]: "79"
+            - generic [ref=f4e469]:
+              - term [ref=f4e470]: Opponents' score
+              - definition [ref=f4e471]: "90"
+        - article [ref=f4e472]:
+          - paragraph [ref=f4e473]: Debate 98
+          - heading [level=3] [ref=f4e474]:
+            - 'link "William Lane Craig vs A. C. Grayling: Is Belief in God Reasonable in Light of Evil? Debate year 2011" [ref=f4e475] [cursor=pointer]':
+              - /url: /debate/craig-grayling-evil-god-reasonable-2011/
+              - text: "William Lane Craig vs A. C. Grayling: Is Belief in God Reasonable in Light of Evil?"
+              - generic "Debate year 2011" [ref=f4e476]: "2011"
+          - paragraph [ref=f4e477]: Evil and divine reasonableness
+          - generic [ref=f4e478]: Against AC Grayling
+          - generic [ref=f4e479]:
+            - generic [ref=f4e480]:
+              - term [ref=f4e481]: William's score
+              - definition [ref=f4e482]: "84"
+            - generic [ref=f4e483]:
+              - term [ref=f4e484]: Opponents' score
+              - definition [ref=f4e485]: "86"
+        - article [ref=f4e486]:
+          - paragraph [ref=f4e487]: Debate 126
+          - heading [level=3] [ref=f4e488]:
+            - 'link "William Lane Craig vs Scott Clifton: The Kalam Cosmological Argument Debate year 2021" [ref=f4e489] [cursor=pointer]':
+              - /url: /debate/craig-clifton-kalam-cosmological-argument-2021/
+              - text: "William Lane Craig vs Scott Clifton: The Kalam Cosmological Argument"
+              - generic "Debate year 2021" [ref=f4e490]: "2021"
+          - paragraph [ref=f4e491]: Kalam cosmological argument
+          - generic [ref=f4e492]: Against Scott Clifton
+          - generic [ref=f4e493]:
+            - generic [ref=f4e494]:
+              - term [ref=f4e495]: William's score
+              - definition [ref=f4e496]: "82"
+            - generic [ref=f4e497]:
+              - term [ref=f4e498]: Opponents' score
+              - definition [ref=f4e499]: "88"
+        - article [ref=f4e500]:
+          - paragraph [ref=f4e501]: Debate 128
+          - heading [level=3] [ref=f4e502]:
+            - 'link "William Lane Craig vs Stephen Law: Does God Exist? Debate year 2011" [ref=f4e503] [cursor=pointer]':
+              - /url: /debate/craig-law-evil-god-challenge-2011/
+              - text: "William Lane Craig vs Stephen Law: Does God Exist?"
+              - generic "Debate year 2011" [ref=f4e504]: "2011"
+          - paragraph [ref=f4e505]: Evil God challenge and theism
+          - generic [ref=f4e506]: Against Stephen Law
+          - generic [ref=f4e507]:
+            - generic [ref=f4e508]:
+              - term [ref=f4e509]: William's score
+              - definition [ref=f4e510]: "76"
+            - generic [ref=f4e511]:
+              - term [ref=f4e512]: Opponents' score
+              - definition [ref=f4e513]: "88"
+        - article [ref=f4e514]:
+          - paragraph [ref=f4e515]: Debate 137
+          - heading [level=3] [ref=f4e516]:
+            - 'link "Robert Price vs William Lane Craig: Did Jesus Rise From the Dead? Debate year 1999" [ref=f4e517] [cursor=pointer]':
+              - /url: /debate/price-craig-resurrection-historical-analogy-1999/
+              - text: "Robert Price vs William Lane Craig: Did Jesus Rise From the Dead?"
+              - generic "Debate year 1999" [ref=f4e518]: "1999"
+          - paragraph [ref=f4e519]: Resurrection, historical analogy, and evidence
+          - generic [ref=f4e520]: Against Robert Price
+          - generic [ref=f4e521]:
+            - generic [ref=f4e522]:
+              - term [ref=f4e523]: William's score
+              - definition [ref=f4e524]: "83"
+            - generic [ref=f4e525]:
+              - term [ref=f4e526]: Opponents' score
+              - definition [ref=f4e527]: "80"
+        - article [ref=f4e528]:
+          - paragraph [ref=f4e529]: Debate 161
+          - heading [level=3] [ref=f4e530]:
+            - 'link "William Lane Craig vs Peter Millican: Does God Exist? Debate year 2011" [ref=f4e531] [cursor=pointer]':
+              - /url: /debate/craig-millican-does-god-exist-2011/
+              - text: "William Lane Craig vs Peter Millican: Does God Exist?"
+              - generic "Debate year 2011" [ref=f4e532]: "2011"
+          - paragraph [ref=f4e533]: God and skeptical empiricism
+          - generic [ref=f4e534]: Against Peter Millican
+          - generic [ref=f4e535]:
+            - generic [ref=f4e536]:
+              - term [ref=f4e537]: William's score
+              - definition [ref=f4e538]: "75"
+            - generic [ref=f4e539]:
+              - term [ref=f4e540]: Opponents' score
+              - definition [ref=f4e541]: "87"
+        - article [ref=f4e542]:
+          - paragraph [ref=f4e543]: Debate 162
+          - heading [level=3] [ref=f4e544]:
+            - 'link "William Lane Craig vs Shelly Kagan: Is God Necessary for Morality? Debate year 2009" [ref=f4e545] [cursor=pointer]':
+              - /url: /debate/craig-kagan-god-morality-2009/
+              - text: "William Lane Craig vs Shelly Kagan: Is God Necessary for Morality?"
+              - generic "Debate year 2009" [ref=f4e546]: "2009"
+          - paragraph [ref=f4e547]: Moral grounding and ultimate accountability
+          - generic [ref=f4e548]: Against Shelly Kagan
+          - generic [ref=f4e549]:
+            - generic [ref=f4e550]:
+              - term [ref=f4e551]: William's score
+              - definition [ref=f4e552]: "76"
+            - generic [ref=f4e553]:
+              - term [ref=f4e554]: Opponents' score
+              - definition [ref=f4e555]: "85"
+        - article [ref=f4e556]:
+          - paragraph [ref=f4e557]: Debate 163
+          - heading [level=3] [ref=f4e558]:
+            - 'link "William Lane Craig vs Paul Draper: The Existence of God Debate year 1997" [ref=f4e559] [cursor=pointer]':
+              - /url: /debate/craig-draper-existence-of-god-1997/
+              - text: "William Lane Craig vs Paul Draper: The Existence of God"
+              - generic "Debate year 1997" [ref=f4e560]: "1997"
+          - paragraph [ref=f4e561]: God and comparative evidence
+          - generic [ref=f4e562]: Against Paul Draper
+          - generic [ref=f4e563]:
+            - generic [ref=f4e564]:
+              - term [ref=f4e565]: William's score
+              - definition [ref=f4e566]: "78"
+            - generic [ref=f4e567]:
+              - term [ref=f4e568]: Opponents' score
+              - definition [ref=f4e569]: "85"
+        - article [ref=f4e570]:
+          - paragraph [ref=f4e571]: Debate 164
+          - heading [level=3] [ref=f4e572]:
+            - 'link "William Lane Craig vs Erik Wielenberg: God and Morality Debate year 2018" [ref=f4e573] [cursor=pointer]':
+              - /url: /debate/craig-wielenberg-god-morality-2018/
+              - text: "William Lane Craig vs Erik Wielenberg: God and Morality"
+              - generic "Debate year 2018" [ref=f4e574]: "2018"
+          - paragraph [ref=f4e575]: Moral realism and divine authority
+          - generic [ref=f4e576]: Against Erik Wielenberg
+          - generic [ref=f4e577]:
+            - generic [ref=f4e578]:
+              - term [ref=f4e579]: William's score
+              - definition [ref=f4e580]: "80"
+            - generic [ref=f4e581]:
+              - term [ref=f4e582]: Opponents' score
+              - definition [ref=f4e583]: "84"
+        - article [ref=f4e584]:
+          - paragraph [ref=f4e585]: Debate 165
+          - heading [level=3] [ref=f4e586]:
+            - 'link "William Lane Craig vs Alex Rosenberg: Is Faith in God Reasonable? Debate year 2013" [ref=f4e587] [cursor=pointer]':
+              - /url: /debate/craig-rosenberg-faith-god-reasonable-2013/
+              - text: "William Lane Craig vs Alex Rosenberg: Is Faith in God Reasonable?"
+              - generic "Debate year 2013" [ref=f4e588]: "2013"
+          - paragraph [ref=f4e589]: Theism, naturalism, and reasonable belief
+          - generic [ref=f4e590]: Against Alex Rosenberg
+          - generic [ref=f4e591]:
+            - generic [ref=f4e592]:
+              - term [ref=f4e593]: William's score
+              - definition [ref=f4e594]: "81"
+            - generic [ref=f4e595]:
+              - term [ref=f4e596]: Opponents' score
+              - definition [ref=f4e597]: "76"
+        - article [ref=f4e598]:
+          - paragraph [ref=f4e599]: Debate 166
+          - heading [level=3] [ref=f4e600]:
+            - 'link "William Lane Craig vs Peter Atkins: Does God Exist? Debate year 2011" [ref=f4e601] [cursor=pointer]':
+              - /url: /debate/craig-atkins-does-god-exist-2011/
+              - text: "William Lane Craig vs Peter Atkins: Does God Exist?"
+              - generic "Debate year 2011" [ref=f4e602]: "2011"
+          - paragraph [ref=f4e603]: Theistic arguments and scientific naturalism
+          - generic [ref=f4e604]: Against Peter Atkins
+          - generic [ref=f4e605]:
+            - generic [ref=f4e606]:
+              - term [ref=f4e607]: William's score
+              - definition [ref=f4e608]: "83"
+            - generic [ref=f4e609]:
+              - term [ref=f4e610]: Opponents' score
+              - definition [ref=f4e611]: "73"
+        - article [ref=f4e612]:
+          - paragraph [ref=f4e613]: Debate 167
+          - heading [level=3] [ref=f4e614]:
+            - 'link "William Lane Craig vs John Shook: The Existence of God Debate year 2008" [ref=f4e615] [cursor=pointer]':
+              - /url: /debate/craig-shook-existence-god-2008/
+              - text: "William Lane Craig vs John Shook: The Existence of God"
+              - generic "Debate year 2008" [ref=f4e616]: "2008"
+          - paragraph [ref=f4e617]: Naturalism, supernaturalism, and explanatory bridges
+          - generic [ref=f4e618]: Against John Shook
+          - generic [ref=f4e619]:
+            - generic [ref=f4e620]:
+              - term [ref=f4e621]: William's score
+              - definition [ref=f4e622]: "76"
+            - generic [ref=f4e623]:
+              - term [ref=f4e624]: Opponents' score
+              - definition [ref=f4e625]: "83"
+        - article [ref=f4e626]:
+          - paragraph [ref=f4e627]: Debate 168
+          - heading [level=3] [ref=f4e628]:
+            - 'link "William Lane Craig vs Lawrence Krauss: Is There Evidence for God? Debate year 2012" [ref=f4e629] [cursor=pointer]':
+              - /url: /debate/craig-krauss-evidence-god-2012/
+              - text: "William Lane Craig vs Lawrence Krauss: Is There Evidence for God?"
+              - generic "Debate year 2012" [ref=f4e630]: "2012"
+          - paragraph [ref=f4e631]: Evidence, cosmology, and divine explanation
+          - generic [ref=f4e632]: Against Lawrence Krauss
+          - generic [ref=f4e633]:
+            - generic [ref=f4e634]:
+              - term [ref=f4e635]: William's score
+              - definition [ref=f4e636]: "83"
+            - generic [ref=f4e637]:
+              - term [ref=f4e638]: Opponents' score
+              - definition [ref=f4e639]: "81"
+        - article [ref=f4e640]:
+          - paragraph [ref=f4e641]: Debate 179
+          - heading [level=3] [ref=f4e642]:
+            - 'link "William Lane Craig vs Bart Ehrman: Is There Historical Evidence for the Resurrection? Debate year 2006" [ref=f4e643] [cursor=pointer]':
+              - /url: /debate/craig-ehrman-historical-evidence-resurrection-2006/
+              - text: "William Lane Craig vs Bart Ehrman: Is There Historical Evidence for the Resurrection?"
+              - generic "Debate year 2006" [ref=f4e644]: "2006"
+          - paragraph [ref=f4e645]: Historical evidence for Jesus' resurrection
+          - generic [ref=f4e646]: Against Bart Ehrman
+          - generic [ref=f4e647]:
+            - generic [ref=f4e648]:
+              - term [ref=f4e649]: William's score
+              - definition [ref=f4e650]: "84"
+            - generic [ref=f4e651]:
+              - term [ref=f4e652]: Opponents' score
+              - definition [ref=f4e653]: "83"
+        - article [ref=f4e654]:
+          - paragraph [ref=f4e655]: Debate 200
+          - heading [level=3] [ref=f4e656]:
+            - 'link "William Lane Craig vs Victor Stenger: Does God Exist? Debate year 2010" [ref=f4e657] [cursor=pointer]':
+              - /url: /debate/craig-stenger-god-existence-2010/
+              - text: "William Lane Craig vs Victor Stenger: Does God Exist?"
+              - generic "Debate year 2010" [ref=f4e658]: "2010"
+          - paragraph [ref=f4e659]: God and scientific naturalism
+          - generic [ref=f4e660]: Against Victor Stenger
+          - generic [ref=f4e661]:
+            - generic [ref=f4e662]:
+              - term [ref=f4e663]: William's score
+              - definition [ref=f4e664]: "76"
+            - generic [ref=f4e665]:
+              - term [ref=f4e666]: Opponents' score
+              - definition [ref=f4e667]: "69"
+        - article [ref=f4e668]:
+          - paragraph [ref=f4e669]: Debate 203
+          - heading [level=3] [ref=f4e670]:
+            - link "Does God Exist? William Lane Craig vs. Antony Flew Debate year 1998" [ref=f4e671] [cursor=pointer]:
+              - /url: /debate/craig-flew-god-existence-1998/
+              - text: Does God Exist? William Lane Craig vs. Antony Flew
+              - generic "Debate year 1998" [ref=f4e672]: "1998"
+          - paragraph [ref=f4e673]: Evidence for and against God's existence
+          - generic [ref=f4e674]: Against Antony Flew
+          - generic [ref=f4e675]:
+            - generic [ref=f4e676]:
+              - term [ref=f4e677]: William's score
+              - definition [ref=f4e678]: "74"
+            - generic [ref=f4e679]:
+              - term [ref=f4e680]: Opponents' score
+              - definition [ref=f4e681]: "77"
+        - article [ref=f4e682]:
+          - paragraph [ref=f4e683]: Debate 212
+          - heading [level=3] [ref=f4e684]:
+            - 'link "Resurrection Evidence and Naturalistic Alternatives: William Lane Craig vs. Richard Carrier Debate year 2009" [ref=f4e685] [cursor=pointer]':
+              - /url: /debate/craig-carrier-resurrection-2009/
+              - text: "Resurrection Evidence and Naturalistic Alternatives: William Lane Craig vs. Richard Carrier"
+              - generic "Debate year 2009" [ref=f4e686]: "2009"
+          - paragraph [ref=f4e687]: Resurrection evidence, Gospel sources, and natural explanations
+          - generic [ref=f4e688]: Against Richard Carrier
+          - generic [ref=f4e689]:
+            - generic [ref=f4e690]:
+              - term [ref=f4e691]: William's score
+              - definition [ref=f4e692]: "80"
+            - generic [ref=f4e693]:
+              - term [ref=f4e694]: Opponents' score
+              - definition [ref=f4e695]: "80"
+        - article [ref=f4e696]:
+          - paragraph [ref=f4e697]: Debate 271
+          - heading [level=3] [ref=f4e698]:
+            - link "William Lane Craig vs Massimo Pigliucci — Does the Christian God Exist? Debate year 2001" [ref=f4e699] [cursor=pointer]:
+              - /url: /debate/craig-pigliucci-christian-god-2001/
+              - text: William Lane Craig vs Massimo Pigliucci — Does the Christian God Exist?
+              - generic "Debate year 2001" [ref=f4e700]: "2001"
+          - paragraph [ref=f4e701]: Christian God at Georgia
+          - generic [ref=f4e702]: Against Massimo Pigliucci
+          - generic [ref=f4e703]:
+            - generic [ref=f4e704]:
+              - term [ref=f4e705]: William's score
+              - definition [ref=f4e706]: "78"
+            - generic [ref=f4e707]:
+              - term [ref=f4e708]: Opponents' score
+              - definition [ref=f4e709]: "72"
+        - article [ref=f4e710]:
+          - paragraph [ref=f4e711]: Debate 273
+          - heading [level=3] [ref=f4e712]:
+            - link "William Lane Craig vs Austin Dacey — Does God Exist? Debate year 2004" [ref=f4e713] [cursor=pointer]:
+              - /url: /debate/craig-dacey-god-existence-2004/
+              - text: William Lane Craig vs Austin Dacey — Does God Exist?
+              - generic "Debate year 2004" [ref=f4e714]: "2004"
+          - paragraph [ref=f4e715]: God at Purdue
+          - generic [ref=f4e716]: Against Austin Dacey
+          - generic [ref=f4e717]:
+            - generic [ref=f4e718]:
+              - term [ref=f4e719]: William's score
+              - definition [ref=f4e720]: "73"
+            - generic [ref=f4e721]:
+              - term [ref=f4e722]: Opponents' score
+              - definition [ref=f4e723]: "82"
+        - article [ref=f4e724]:
+          - paragraph [ref=f4e725]: Debate 275
+          - heading [level=3] [ref=f4e726]:
+            - link "William Lane Craig vs Michael Tooley — Is God Real? Debate year 2010" [ref=f4e727] [cursor=pointer]:
+              - /url: /debate/craig-tooley-god-real-2010/
+              - text: William Lane Craig vs Michael Tooley — Is God Real?
+              - generic "Debate year 2010" [ref=f4e728]: "2010"
+          - paragraph [ref=f4e729]: Divine Reality and Evidential Evil
+          - generic [ref=f4e730]: Against Michael Tooley
+          - generic [ref=f4e731]:
+            - generic [ref=f4e732]:
+              - term [ref=f4e733]: William's score
+              - definition [ref=f4e734]: "77"
+            - generic [ref=f4e735]:
+              - term [ref=f4e736]: Opponents' score
+              - definition [ref=f4e737]: "80"
+        - article [ref=f4e738]:
+          - paragraph [ref=f4e739]: Debate 282
+          - heading [level=3] [ref=f4e740]:
+            - link "William Lane Craig vs Andrew Pyle — Does the Christian God Exist? Debate year 2007" [ref=f4e741] [cursor=pointer]:
+              - /url: /debate/craig-pyle-christian-god-2007/
+              - text: William Lane Craig vs Andrew Pyle — Does the Christian God Exist?
+              - generic "Debate year 2007" [ref=f4e742]: "2007"
+          - paragraph [ref=f4e743]: Evidence for the Christian God
+          - generic [ref=f4e744]: Against Andrew Pyle
+          - generic [ref=f4e745]:
+            - generic [ref=f4e746]:
+              - term [ref=f4e747]: William's score
+              - definition [ref=f4e748]: "75"
+            - generic [ref=f4e749]:
+              - term [ref=f4e750]: Opponents' score
+              - definition [ref=f4e751]: "83"
+        - article [ref=f4e752]:
+          - paragraph [ref=f4e753]: Debate 284
+          - heading [level=3] [ref=f4e754]:
+            - link "William Lane Craig vs Klemens Kappel — Does God Exist? Debate year 2012" [ref=f4e755] [cursor=pointer]:
+              - /url: /debate/craig-kappel-god-existence-2012/
+              - text: William Lane Craig vs Klemens Kappel — Does God Exist?
+              - generic "Debate year 2012" [ref=f4e756]: "2012"
+          - paragraph [ref=f4e757]: Evidence and Atheistic Knowledge
+          - generic [ref=f4e758]: Against Klemens Kappel
+          - generic [ref=f4e759]:
+            - generic [ref=f4e760]:
+              - term [ref=f4e761]: William's score
+              - definition [ref=f4e762]: "78"
+            - generic [ref=f4e763]:
+              - term [ref=f4e764]: Opponents' score
+              - definition [ref=f4e765]: "84"
+    - region [ref=f4e766]:
+      - generic [ref=f4e767]:
+        - generic [ref=f4e768]:
+          - paragraph [ref=f4e769]: Team record
+          - heading "Team and panel appearances" [level=2] [ref=f4e770]
+        - paragraph [ref=f4e771]: These scorecards assess a combined side. They remain available to read but do not affect this interlocutor’s individual averages, distribution, or opponent record.
+      - generic [ref=f4e772]:
+        - article [ref=f4e773]:
+          - paragraph [ref=f4e774]: Debate 95
+          - heading [level=3] [ref=f4e775]:
+            - 'link "William Lane Craig, Jessica Frazier, Philip Goff, and Joe Folley: Did God Create Reality? Debate year 2026" [ref=f4e776] [cursor=pointer]':
+              - /url: /debate/craig-frazier-goff-folley-god-reality-2026/
+              - text: "William Lane Craig, Jessica Frazier, Philip Goff, and Joe Folley: Did God Create Reality?"
+              - generic "Debate year 2026" [ref=f4e777]: "2026"
+          - paragraph [ref=f4e778]: God reality and objective meaning
+          - generic [ref=f4e779]: "Side: William Lane Craig"
+          - paragraph [ref=f4e780]: Shared side score excluded from the individual record.
+        - article [ref=f4e781]:
+          - paragraph [ref=f4e782]: Debate 105
+          - heading [level=3] [ref=f4e783]:
+            - 'link "William Lane Craig and Rowan Williams vs Sabine Hossenfelder and Slavoj Žižek: Does God Exist? Debate year 2026" [ref=f4e784] [cursor=pointer]':
+              - /url: /debate/craig-williams-hossenfelder-zizek-god-reality-2026/
+              - text: "William Lane Craig and Rowan Williams vs Sabine Hossenfelder and Slavoj Žižek: Does God Exist?"
+              - generic "Debate year 2026" [ref=f4e785]: "2026"
+          - paragraph [ref=f4e786]: God, reality, and Christian atheism
+          - generic [ref=f4e787]: "Side: William Lane Craig and Rowan Williams"
+          - paragraph [ref=f4e788]: Shared side score excluded from the individual record.
+  - contentinfo [ref=f4e789]:
+    - generic [ref=f4e790]:
+      - link "Slugfester" [ref=f4e791] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=f4e792]: Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.
+    - navigation "Footer" [ref=f4e793]:
+      - link "Search" [ref=f4e794] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=f4e795] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=f4e796] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=f4e797] [cursor=pointer]:
+        - /url: /insights/
+      - link "Method" [ref=f4e798] [cursor=pointer]:
+        - /url: /backend/
+      - link "Feedback" [ref=f4e799] [cursor=pointer]:
+        - /url: /corrections/
+      - link "LogFall" [ref=f4e800] [cursor=pointer]:
+        - /url: https://logfall.com/
+      - link "CogBias" [ref=f4e801] [cursor=pointer]:
+        - /url: https://cogbias.site/
+```
+
+# Test source
+
+```ts
+  1  | export async function replayPublication(page, cfg) {
+  2  |   const d = cfg.candidate;
+> 3  |   const fail = (message) => { throw new Error(message); };
+     |                                     ^ Error: desktop profile broken images: {"actual":["http://127.0.0.1:4181/assets/caricatures/erik-wielenberg.webp"],"expected":[]}
+  4  |   const same = (a,b,label) => { if(JSON.stringify(a)!==JSON.stringify(b))fail(label+': '+JSON.stringify({actual:a,expected:b})); };
+  5  |   const ok = (value,label) => { if(!value)fail(label); };
+  6  |   const errors=[],resources=[],observations=[],screenshots=[];
+  7  |   page.on('pageerror',e=>errors.push(String(e)));
+  8  |   page.on('console',e=>{if(e.type()==='error')errors.push(e.text());});
+  9  |   page.on('requestfailed',r=>resources.push({url:r.url(),failure:r.failure()}));
+  10 |   page.on('response',r=>{if(r.status()>=400)resources.push({url:r.url(),status:r.status()});});
+  11 |   const route='/debate/'+d.id+'/';
+  12 |   const go=async path=>{const response=await page.goto(cfg.origin+path);ok(response.status()===200,'route status '+path);await page.waitForLoadState('networkidle');};
+  13 |   const shot=async name=>{if(cfg.screenshots===false)return;const path=cfg.screenshotDirectory+'/'+cfg.prefix+'-'+name+'.png';await page.screenshot({path});screenshots.push(path);};
+  14 |   const overflow=async label=>{const value=await page.evaluate(()=>({viewport:innerWidth,width:document.documentElement.scrollWidth,broken:[...document.images].filter(i=>i.complete&&i.naturalWidth===0).map(i=>i.src)}));ok(value.width<=value.viewport+1,label+' horizontal overflow');same(value.broken,[],label+' broken images');return value;};
+  15 |   const visible=async locator=>{await locator.waitFor({state:'visible'});await page.waitForFunction(el=>{const s=getComputedStyle(el);return s.visibility!=='hidden'&&Number(s.opacity)>0.95;},await locator.elementHandle());};
+  16 |   const expectedSections=d.sections.map(s=>({title:s.title,scores:[s.score.pro,s.score.con],cards:s.exchanges.flatMap(e=>['pro','con'].filter(k=>e[k]).map(k=>({side:k,words:e[k].words,critique:e[k].critique,time:e[k].time,score:e[k].score,role:e[k].role,tags:e[k].tags.map(t=>({label:t.label,context:t.context}))})))}));
+  17 |   for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
+  18 |     const name=viewport.width===1440?'desktop':'mobile';await page.setViewportSize(viewport);await go(route);await page.locator('.debate-section').first().waitFor();
+  19 |     const observed=await page.evaluate(()=>({
+  20 |       title:[...document.querySelector('h1').childNodes].filter(n=>n.nodeType===Node.TEXT_NODE).map(n=>n.textContent).join('').trim(),
+  21 |       year:document.querySelector('.debate-title-year')?.textContent || '',
+  22 |       body:document.querySelector('main').innerText,
+  23 |       source:document.querySelector('a[href^="https://www.youtube.com/watch"]').getAttribute('href'),
+  24 |       sections:[...document.querySelectorAll('.debate-section')].map(s=>({title:s.querySelector('h2').textContent.trim(),scores:[...s.querySelectorAll('.section-score strong')].map(e=>Number(e.textContent)),cards:[...s.querySelectorAll('.argument')].map(c=>({side:c.classList.contains('side-pro')?'pro':'con',words:c.querySelector(':scope > p').textContent.trim(),critique:c.querySelector('.critique-text').textContent.trim().replace(/\s+/g,' '),time:c.querySelector('.timestamp-link').textContent.trim(),score:Number(c.querySelector('.argument-meta strong').textContent),role:c.querySelector('.argument-meta > span:nth-child(2)').textContent.trim(),tags:[...c.querySelectorAll('.tag-wrap')].map(t=>({label:t.querySelector('a.tag').textContent.trim(),context:t.querySelector('.tag-context').textContent.trim()}))}))})),
+  25 |       overall:[...document.querySelectorAll('.overall-score strong')].map(x=>Number(x.textContent)),
+  26 |       quotes:[...document.querySelectorAll('.quote-card blockquote')].map(x=>x.textContent.trim()),
+  27 |       timestampLinks:[...document.querySelectorAll('.argument .timestamp-link')].map(a=>({text:a.textContent.trim(),href:a.href})),
+  28 |       ai:[...document.querySelectorAll('.logical-extension-side')].map(e=>({finalArgument:{thesis:e.querySelector('.extension-thesis').textContent.trim(),premises:[...e.querySelectorAll('.extension-premises li p')].map(p=>p.textContent.trim()),conclusion:e.querySelector('.extension-conclusion p').textContent.trim()},newArguments:[...e.querySelectorAll('.new-argument')].map(a=>({title:a.querySelector('h5').textContent.trim(),text:a.querySelector('p').textContent.trim()}))}))
+  29 |     }));
+  30 |     same(observed.title,d.title.replace(/\s*\(\d{4}\)\s*$/,''),'title');same(observed.year,String(cfg.year),'year');same(observed.sections,expectedSections,'all section and argument text');same(observed.overall,[d.overall.pro.score,d.overall.con.score],'overall scores');same(observed.quotes,['pro','con'].map(s=>'"'+d.quotes[s].text+'"'),'exact quotes');same(observed.ai,[d.logicalExtension.pro,d.logicalExtension.con],'complete AI text');same(observed.source,d.youtubeUrl,'source');
+  31 |     for(const s of ['pro','con']){ok(observed.body.includes(d.sides[s].speaker),'speaker');ok(observed.body.includes(d.sides[s].name),'position');}ok(observed.body.includes(d.motion),'motion');if(cfg.requiredReaderDisclosure)ok(observed.body.includes(cfg.requiredReaderDisclosure),'complete authorized source scope disclosure');ok(observed.body.includes(cfg.modelLabel),'assessment byline');
+  32 |     for(const a of observed.timestampLinks){const parts=a.text.split(':').map(Number);const seconds=parts.reduce((n,x)=>n*60+x,0);const u=new URL(a.href);same(u.searchParams.get('v'),cfg.videoId,'timestamp video');same(u.searchParams.get('t'),seconds+'s','timestamp offset');}
+  33 |     const renderedLabels=await page.locator('.argument .critique-text').evaluateAll(els=>els.map(e=>[...e.querySelectorAll('.critique-section > strong')].map(s=>s.textContent)));same(renderedLabels,expectedSections.flatMap(s=>s.cards.map(()=>['Strongest feature:','Principal limitation:','Live burden:','Locked score:'])),'four independently rendered bold critique labels');
+  34 |     let scopeEvidence=null;
+  35 |     if(cfg.requiredReaderDisclosure){const disclosure=page.locator('.source-context');await visible(disclosure);same((await disclosure.locator('span').innerText()).trim(),cfg.requiredReaderDisclosure,'verbatim visible scope disclosure');
+  36 |     const scopeBox=await disclosure.boundingBox(),firstScoreBox=await page.locator('.scoreboard').first().boundingBox();ok(scopeBox&&firstScoreBox&&scopeBox.y+scopeBox.height<=firstScoreBox.y+2,'scope disclosure before top score summary');
+  37 |     scopeEvidence={text:(await disclosure.innerText()),box:scopeBox,firstScoreBox,beforeScores:true};
+  38 |     }
+  39 |     const size=await overflow(name);await shot(name+'-header');if(cfg.requiredReaderDisclosure){await page.locator('.source-context').scrollIntoViewIfNeeded();await shot(name+'-source-scope');}
+  40 |     const critique=page.locator('.critique button').first(),popover=page.locator('.critique-popover').first();await critique.hover();await visible(popover);await critique.focus();await critique.press('Enter');await visible(popover);await critique.press('Space');await visible(popover);await shot(name+'-critique');
+  41 |     const summary=page.locator('.ai-extension-accordion > summary');await summary.click();same(await page.locator('.ai-extension-accordion').getAttribute('open'),'','immediate distant control after critique');await visible(page.locator('.logical-extension-grid'));await summary.focus();await summary.press('Enter');same(await page.locator('.ai-extension-accordion').getAttribute('open'),null,'Enter collapse');await summary.press('Space');same(await page.locator('.ai-extension-accordion').getAttribute('open'),'','Space expand');
+  42 |     // A fresh navigation removes the focused critique for unobscured visual evidence.
+  43 |     await go(route);await summary.scrollIntoViewIfNeeded();await shot(name+'-ai-closed');await summary.click();await page.locator('.logical-extension').evaluate(e=>window.scrollTo(0,e.getBoundingClientRect().top+scrollY-220));await shot(name+'-ai-open');await page.locator('.new-arguments').first().evaluate(e=>window.scrollTo(0,e.getBoundingClientRect().top+scrollY-220));await shot(name+'-reinforcements');await overflow(name+' AI open');
+  44 |     const tags=page.locator('a.tag');const count=await tags.count();same(count,cfg.tagCount,'all accepted tags rendered');
+  45 |     if(count){await go(route);const tag=page.locator('a.tag').first();const wrap=page.locator('.tag-wrap').first();await tag.hover();await tag.focus();await visible(wrap.locator('.tag-popover'));await shot(name+'-tag');const href=await tag.getAttribute('href');await tag.press('Enter');await page.waitForURL(cfg.origin+href);await page.locator('[id="'+decodeURIComponent(new URL(cfg.origin+href).hash.slice(1))+'"]').waitFor();await page.waitForFunction(([pro,con])=>{const text=document.querySelector('main')?.innerText||'';return text.includes(pro)||text.includes(con);},[d.sides.pro.speaker,d.sides.con.speaker]);ok((await page.locator('main').innerText()).includes(d.sides.pro.speaker)|| (await page.locator('main').innerText()).includes(d.sides.con.speaker),'tag reference occurrence');}
+  46 |     await go('/backend/');await page.locator('.section-score-bucket').first().waitFor();const graph=await page.evaluate(()=>({summary:Object.fromEntries([...document.querySelectorAll('.section-score-distribution-summary > div')].map(x=>[x.querySelector('dt').textContent.trim(),x.querySelector('dd').textContent.trim()])),buckets:[...document.querySelectorAll('.section-score-bucket')].map(x=>({range:x.querySelector('strong').textContent.trim(),count:Number(x.querySelector('.section-score-bar-column > span').textContent),aria:x.getAttribute('aria-label')}))}));
+  47 |     same(Number(graph.summary['Section-side scores'].replaceAll(',','')),cfg.graph.sectionSideScores,'graph total');same(graph.summary['Observed range'],cfg.graph.minimum+'–'+cfg.graph.maximum,'graph range');same(graph.buckets.map(({range,count})=>({range,count})),cfg.graph.buckets,'every graph bucket');for(const b of graph.buckets)same(b.aria,`${b.range} percent: ${b.count} section-side score${b.count===1?'':'s'}`,'graph accessible count');await page.locator('#rubric-quality-check').scrollIntoViewIfNeeded();await shot(name+'-backend');await overflow(name+' backend');
+  48 |     const profiles=[];for(const person of cfg.people){await go('/interlocutor/'+person.slug+'/');await page.locator('.profile-bio-chart').waitFor();const bio=page.locator('.profile-biography').first(),chart=page.locator('.profile-bio-chart .profile-score-histogram');const bb=await bio.boundingBox(),cb=await chart.boundingBox();ok(bb&&cb,'profile biography and graph');if(name==='desktop')ok(bb.x+bb.width<=cb.x+2,'bio left of graph');else ok(bb.y+bb.height<=cb.y+2,'bio above graph');ok(await page.locator('a[href="'+route+'"]').count()>0,'profile debate presence');await page.locator('.profile-bio-chart').scrollIntoViewIfNeeded();await shot(name+'-'+person.slug+'-profile');await overflow(name+' profile');profiles.push({name:person.name,bio:bb,chart:cb});}
+  49 |     observations.push({viewport,size,scopeDisclosure:scopeEvidence,sections:observed.sections.length,cards:observed.sections.reduce((n,s)=>n+s.cards.length,0),exactPublicationText:true,exactAiText:true,exactTimestampLinks:true,acceptedTags:count,critiquePointerEnterSpace:true,accordionPointerEnterSpace:true,immediateDistantControlAfterCritique:true,graph,profiles});
+  50 |   }
+  51 |   await page.setViewportSize({width:1440,height:1000});const routes=[];
+  52 |   for(const path of ['/','/topics/'+d.topicCategory+'/']){await go(path);await page.locator('a[href="'+route+'"]').first().waitFor();routes.push(path);}
+  53 |   await go('/search/');const search=page.locator('input[type="search"]');await search.fill(d.sides.con.speaker);await search.press('Enter');await page.waitForLoadState('networkidle');
+  54 |   const searchedPages=new Set();
+  55 |   while(await page.locator('a[href="'+route+'"]').count()===0){
+  56 |     ok(!searchedPages.has(page.url()),'search pagination cycle');searchedPages.add(page.url());
+  57 |     const next=page.getByRole('link',{name:'Next',exact:true}).first();ok(await next.count()>0,'debate absent from search results');
+  58 |     const href=await next.getAttribute('href');ok(href?.startsWith('/search/?'),'search pagination route');await go(href);
+  59 |   }
+  60 |   await page.locator('a[href="'+route+'"]').first().waitFor();await shot('search');routes.push('/search/');
+  61 |   await go('/rankings/?'+new URLSearchParams({'compare-a':d.sides.pro.speaker,'compare-b':d.sides.con.speaker}));for(const person of cfg.people)await page.locator('a[href="/interlocutor/'+person.slug+'/"]').first().waitFor();await shot('rankings');routes.push('/rankings/');
+  62 |   const sitemap=await page.request.get(cfg.origin+'/sitemap.xml');same(sitemap.status(),200,'sitemap status');ok((await sitemap.text()).includes('https://slugfester.com'+route),'canonical sitemap');
+  63 |   same(errors,[],'browser runtime errors');same(resources,[],'failed resources');
+  64 |   return {status:'passed-exact-publication-browser-replay',debateNumber:d.number,debateId:d.id,origin:cfg.origin,observations,routes,sitemap:true,errors,resources,screenshots};
+  65 | }
+  66 | 
+```

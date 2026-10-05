@@ -1,0 +1,9 @@
+### Result
+[{"name":"desktop","width":1440,"height":1000,"quotes":["\"The absence of evidence for something does not prove that that thing does not exist.\"","\"The reports are there, no doubt. Were they true?\""],"layout":{"viewport":1440,"pageWidth":1440,"quotes":[{"height":169,"scrollHeight":174,"lineClamp":"none"},{"height":127,"scrollHeight":131,"lineClamp":"none"}]}},{"name":"mobile","width":390,"height":844,"quotes":["\"The absence of evidence for something does not prove that that thing does not exist.\"","\"The reports are there, no doubt. Were they true?\""],"layout":{"viewport":390,"pageWidth":390,"quotes":[{"height":140,"scrollHeight":142,"lineClamp":"none"},{"height":84,"scrollHeight":86,"lineClamp":"none"}]}}]
+### Ran Playwright code
+```js
+await (async (page) => { const results=[]; for(const [name,width,height] of [["desktop",1440,1000],["mobile",390,844]]) { await page.setViewportSize({width,height}); await page.goto("http://127.0.0.1:4194/debate/craig-kappel-god-existence-2012/"); await page.waitForLoadState("networkidle"); const grid=page.locator(".quote-grid"); await grid.scrollIntoViewIfNeeded(); await grid.screenshot({path:"output/playwright/debate-284-quotes-local-"+name+"-featured.png"}); results.push({name,width,height,quotes:await page.locator(".quote-card blockquote").allTextContents(),layout:await page.evaluate(()=>({viewport:innerWidth,pageWidth:document.documentElement.scrollWidth,quotes:[...document.querySelectorAll(".quote-card blockquote")].map(e=>({height:e.clientHeight,scrollHeight:e.scrollHeight,lineClamp:getComputedStyle(e).webkitLineClamp}))}))}); } return results; })(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4194/debate/craig-kappel-god-existence-2012/
+- Page Title: Evidence and Atheistic Knowledge — Craig vs Kappel · 2012 | Slugfester
