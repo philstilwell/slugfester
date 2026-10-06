@@ -1,0 +1,16 @@
+{
+  "status": "prehold-terminal-input-stall-preserved",
+  "ownedPid": 88147,
+  "ownedSession": 18541,
+  "command": "/opt/homebrew/Cellar/node/25.9.0_3/bin/node scripts/standalone-workflow.mjs handoff hold --debate 289 --plan docs/assessment-production/standalone-debates-v1/debate-289/publication/rhetorical-tag-review-1/pass-a/execution-plan.json",
+  "metadataAbsent": true,
+  "outputAbsent": true,
+  "expectedCandidateSha256": "4da1a17ec44bb1fd61334b5145e3846e77157c6f73b634c960dc3ca9ac841607",
+  "expectedBytes": 17653,
+  "checkerReportedPassed": true,
+  "diagnosis": "Terminal stdin did not complete after chunked payload and repeated EOF; maintained holder never initialized. Identical candidate retained in original worker persistent memory.",
+  "scope": "Transport-only recovery using safe quoted pipe, same context and exact payload; no content repair or new assessment.",
+  "freshContexts": 0,
+  "savedAttempts": 0,
+  "automaticRetry": false
+}

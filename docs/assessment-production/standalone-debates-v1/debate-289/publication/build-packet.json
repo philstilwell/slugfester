@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "289",
+  "debateId": "wielenberg-johnson-objective-morality-2020",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-289/inventory/inventory.json",
+      "sha256": "2d80b771e27903e727280851c727e851c917428fb6067a3c9150c4c34c70b545",
+      "bytes": 74684
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-289/score-pass/output.json",
+      "sha256": "7f75a56b8445fb2a4df4c01baf076acccda3d73399a27d3986884fe87f7016e9",
+      "bytes": 9166
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-289/publication/skeleton.json",
+      "sha256": "37ec73961a272eb3d9c64c52eaf76bc9d26ca117451f210d0cc9bd9e96786912",
+      "bytes": 7634
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-289/publication/reference-metrics.json",
+      "sha256": "fd62252b0c6f0dcaeb924304591a5c884ca40ced99aefd7ec7cad5dd6662975f",
+      "bytes": 54207
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}
