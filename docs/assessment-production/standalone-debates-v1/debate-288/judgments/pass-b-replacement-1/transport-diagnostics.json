@@ -1,0 +1,27 @@
+{
+  "status": "preserved-prehold-shell-quoting-diagnostic",
+  "failures": [
+    {
+      "type": "custom_tool_call_output",
+      "id": "ctco_01a10f90-bd49-7181-bf4b-d4ce537fcb0b",
+      "call_id": "call_a5855aad39a14e02abe40f953fe98e65",
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"exit_code\":1,\"output\":\"  File \\\"<string>\\\", line 1\\n    import base64,subprocess,sys; data=base64.b64decode(sys.argv[1]); p=subprocess.run([/opt/homebrew/Cellar/node/25.9.0_3/bin/node,docs/assessment-production/standalone-debates-v1/debate-288/judgments/check-judgment.mjs,pass-b,--debate,288],input=data,capture_output=True); sys.stdout.buffer.write(p.stdout); sys.stderr.buffer.write(p.stderr); raise SystemExit(p.returncode)\\n                                                                                        ^\\nSyntaxError: invalid syntax\\n\"}"
+        }
+      ],
+      "internal_chat_message_metadata_passthrough": {
+        "turn_id": "01a10f8d-57d5-78a3-91ce-7c140dae159f",
+        "create_time": 1791262506.313271
+      }
+    }
+  ],
+  "judgmentBytesChanged": false,
+  "additionalAssessmentContexts": 0,
+  "paidCalls": 0
+}

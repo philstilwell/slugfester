@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "debateId": 288,
+  "status": "reading-release-denied",
+  "reviewedAt": "2026-10-06T05:06:46.670565+00:00",
+  "agent": "/root/writer288",
+  "session": "rollout-2026-10-06T01-01-30-01a10f96-98a7-7440-b3ed-b0394fbf1135.jsonl",
+  "finding": "The worker claimed full reading but redirected reader chunks 2101 through 12900 to /dev/null. The controller authenticated actual displayed content and rejected that checkpoint. The first missing nonempty line was 2115.",
+  "consequence": "No authoring or submission was released. The same context was instructed to display and process all missing chunks before another authenticated checkpoint.",
+  "newContext": false,
+  "directCostUsd": 0
+}

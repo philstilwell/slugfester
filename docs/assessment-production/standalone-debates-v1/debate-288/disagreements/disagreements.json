@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "288",
+  "debateId": "shermer-vandeweghe-jesus-miracles-2019",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-islamic-miracle-tradition-comparator:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-islamic-miracle-tradition-comparator",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "con-mythic-parallels-can-express-fulfilled-hope:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "con-mythic-parallels-can-express-fulfilled-hope",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 58,
+          "rationale": "Its calibration is limited or strengthened as follows: possible fulfillment is fair, evidence-for-truth claim is not. This rating uses only the retained formal speech."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "Vandeweghe says parallels may be evidence for truth, an overreach beyond the compatibility point his argument actually establishes."
+        }
+      }
+    },
+    {
+      "disputeId": "con-memory-retains-central-life-changing-events:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-memory-retains-central-life-changing-events",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "con-closing-evidence-supports-commitment:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "con-closing-evidence-supports-commitment",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 62,
+          "rationale": "Its calibration is limited or strengthened as follows: excellent/extraordinary labels exceed unresolved gaps. This rating uses only the retained formal speech."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "Vandeweghe acknowledges risk and choice, but the repeated superlatives about evidence remain more confident than the closing itself substantiates."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate pro adjustment is warranted because all retained formal effects are already captured in the locked move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate pro completion criterion remains outside the locked move ratings.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide pro consequence survives without duplicating assessed move effects.",
+            "alreadyCapturedBy": [
+              "pro-chance-events-need-no-divine-intervention",
+              "pro-comparative-evidence-over-miracle-testimony",
+              "pro-memory-is-reconstructive",
+              "pro-apollonius-parallel",
+              "pro-ancient-redeemer-patterns",
+              "pro-mormon-witness-comparator",
+              "pro-fatima-mass-witness-comparator",
+              "pro-gospels-are-anonymously-attributed",
+              "pro-alien-story-tests-claim-specific-evidence",
+              "pro-martyrdom-shows-conviction-not-truth",
+              "pro-islamic-miracle-tradition-comparator",
+              "pro-informed-religious-disagreement",
+              "pro-closing-truth-claims-require-different-tests",
+              "pro-resurrection-remains-faith-not-public-knowledge"
+            ],
+            "counterfactual": "Removing any alleged global pro effect would merely repeat changes already encoded in move dimensions."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide adjustment is warranted beyond the move ratings; unresolved source and threshold issues are already captured in the individual judgments.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Whether the pro case, across retained formal moves, made the miracle testimony insufficient for belief.",
+            "relatedMoveIds": [
+              "pro-comparative-evidence-over-miracle-testimony",
+              "pro-resurrection-remains-faith-not-public-knowledge"
+            ],
+            "distinctConsequence": "No separate consequence remains after the source, comparison, and epistemic limitations scored move by move.",
+            "alreadyCapturedBy": [
+              "pro-comparative-evidence-over-miracle-testimony",
+              "pro-resurrection-remains-faith-not-public-knowledge"
+            ],
+            "counterfactual": "Removing any claimed global effect would not change burden completion beyond the effects already reflected in those move ratings."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate con adjustment is warranted because all retained formal effects are already captured in the locked move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate con completion criterion remains outside the locked move ratings.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide con consequence survives without duplicating assessed move effects.",
+            "alreadyCapturedBy": [
+              "con-early-christian-costly-sincerity",
+              "con-peter-source-and-first-person-access",
+              "con-luke-investigated-named-witnesses",
+              "con-luke-ordinary-accuracy-supports-historical-care",
+              "con-james-family-access-and-costly-belief",
+              "con-hostile-sorcery-testimony",
+              "con-apollonius-evidence-is-later-and-interested",
+              "con-joseph-smith-witnesses-and-character-disanalogy",
+              "con-extraordinary-evidence-is-offered",
+              "con-first-person-experience-differs-from-inherited-belief",
+              "con-gospel-identity-has-internal-and-external-support",
+              "con-jewish-context-resists-pagan-borrowing",
+              "con-mythic-parallels-can-express-fulfilled-hope",
+              "con-memory-retains-central-life-changing-events",
+              "con-closing-evidence-supports-commitment"
+            ],
+            "counterfactual": "Removing any alleged global con effect would merely repeat changes already encoded in move dimensions."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide adjustment is warranted beyond the move ratings; the source-chain and witness-access strengths and gaps are already captured in the individual judgments.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Whether the con case, across retained formal moves, made Jesus's miracles historically credible enough to believe.",
+            "relatedMoveIds": [
+              "con-peter-source-and-first-person-access",
+              "con-first-person-experience-differs-from-inherited-belief",
+              "con-gospel-identity-has-internal-and-external-support"
+            ],
+            "distinctConsequence": "No separate consequence remains after the source-chain, access, sincerity, and calibration issues scored move by move.",
+            "alreadyCapturedBy": [
+              "con-peter-source-and-first-person-access",
+              "con-first-person-experience-differs-from-inherited-belief",
+              "con-gospel-identity-has-internal-and-external-support"
+            ],
+            "counterfactual": "Removing any claimed global effect would not change burden completion beyond the effects already reflected in those move ratings."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 29,
+    "disputesExtracted": 6,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-288/inventory/inventory.json",
+      "sha256": "aa76c49d450276a982d5efe3bc8bf70cbb36949dc9eb3c8426dd3eb79c466300"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-288/judgments/pass-a/output.json",
+      "sha256": "ee246a96f64cc337b6e24c9efb82e3561583dc1a18bce6d8a523501c4dc30607"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-288/judgments/pass-b/output.json",
+      "sha256": "de29e0f03189d07e0e3006dd4e5197e700abc88effc4605014ff111a77617000"
+    }
+  }
+}

@@ -2,6 +2,7 @@
 // Each entry has a public biographical source checked on the recorded review date.
 export const biographyReviewDate = "2026-09-05";
 const entries = [
+  ["Luuk Vandeweghe", "Luuk Vandeweghe is a Christian author and New Testament researcher whose work examines the historical reliability of the Gospels. His books include The Historical Tell and Living Footnotes in the Gospel of Luke, focusing on eyewitness testimony and Luke–Acts.", "https://www.luukvandeweghe.com/the-historical-tell.html", "2026-10-06"],
   ["Adam Lloyd Johnson", "Adam Lloyd Johnson is a Christian author and speaker whose work examines philosophy of religion and the foundations of morality. He earned a doctorate in theological studies at Southeastern Baptist Theological Seminary and wrote Divine Love Theory.", "https://convincingproof.org/about/", "2026-10-05"],
   ["Klemens Kappel", "Klemens Kappel is a philosopher at the University of Copenhagen whose research examines how social settings shape knowledge, evidence, and disagreement. His work also addresses the role of expertise in democratic decisions, political philosophy, and bioethics.", "https://researchprofiles.ku.dk/en/persons/klemens-kappel/", "2026-10-04"],
   ["Andrew Pyle", "Andrew Pyle is a philosopher whose academic work has been associated with the University of Bristol. He writes on modern philosophy and philosophy of religion, including a study of David Hume’s Dialogues Concerning Natural Religion.", "https://www.bloomsbury.com/us/author/andrew-pyle/", "2026-09-30"],

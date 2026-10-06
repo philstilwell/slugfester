@@ -1,0 +1,22 @@
+{
+  "status": "passed-controller-tool-access-review",
+  "agentPath": "/root/judge288a",
+  "authentication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-288/judgments/pass-a/execution.json",
+    "sha256": "0e03baf74339a9d2ce8de5c476eab2fc42a8c66ebed1e49b681ce188a36bba24",
+    "bytes": 12154
+  },
+  "sessionSha256AtCleanup": "4b167c352dc2e08e3a347d3fc5e3557170f4cf41c947f5436f804f663fef1ee6",
+  "customToolCallCountAtCleanup": 22,
+  "onlyAllowedAssessmentInputsAccessed": true,
+  "allReadsPlanListed": true,
+  "peerOutputExposure": false,
+  "scoreOrWinnerExposure": false,
+  "biographyOrExternalSourceExposure": false,
+  "notes": "Controller inspected plan/reader calls, candidate construction and standard-input checking/holding calls, encoding faults, socket permission continuation and cleanup polling. No additional evidence access occurred. Full reading is authenticated. Isolation is procedural, not an operating-system sandbox. This record establishes isolation only; source compliance is separately reviewed and pass-b failed that gate.",
+  "transportDiagnostics": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-288/judgments/pass-a/transport-diagnostics.json",
+    "sha256": "a28ee4af8205c91a67ab2f72b02d7be3bf4ebbbe5ce2d57e4186ff3a34920e8f",
+    "bytes": 1928
+  }
+}

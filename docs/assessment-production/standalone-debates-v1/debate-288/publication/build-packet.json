@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "288",
+  "debateId": "shermer-vandeweghe-jesus-miracles-2019",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-288/inventory/inventory.json",
+      "sha256": "aa76c49d450276a982d5efe3bc8bf70cbb36949dc9eb3c8426dd3eb79c466300",
+      "bytes": 110198
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-288/score-pass/output.json",
+      "sha256": "d404ebff84a94665bc6c0d293326bf167f8cb04e568f8a244ff252f6c84c4b34",
+      "bytes": 15466
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-288/publication/skeleton.json",
+      "sha256": "f2221df1a444e9643f1f388a64b59ab94156518c33e73eda92c1e5b43f2ef3dd",
+      "bytes": 11790
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-288/publication/reference-metrics.json",
+      "sha256": "6054900f6ddaa6fee27d34df7613f574f4627e80567133c3f181c4f44b51e3e6",
+      "bytes": 54221
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}
