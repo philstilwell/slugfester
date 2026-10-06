@@ -977,9 +977,9 @@ export const interlocutorAvatars = [
     aliases: ["Samuel Nesan"]
   },
   {
-    name: "Adam Johnson",
-    src: `${avatarBasePath}/adam-johnson.webp`,
-    aliases: ["Adam Johnson"]
+    name: "Adam Lloyd Johnson",
+    src: `${avatarBasePath}/adam-lloyd-johnson.webp`,
+    aliases: ["Adam Lloyd Johnson"]
   }
 ];
 
