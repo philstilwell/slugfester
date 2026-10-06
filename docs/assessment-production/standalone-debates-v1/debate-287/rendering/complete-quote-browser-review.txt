@@ -1,0 +1,18 @@
+### Result
+[{"viewport":{"width":1440,"height":1000},"path":"output/playwright/debate-287-local-final-quotes-1440-0.png","text":"GOD EXISTS · ADAM LLOYD JOHNSON\n\"the existence of god is the best explanation for how there could be objective moral truths\"\n\nJohnson states this as the second premise of his moral syllogism, after claiming objective moral truths exist and before inferring that God exists.\n\n\""},{"viewport":{"width":1440,"height":1000},"path":"output/playwright/debate-287-local-final-quotes-1440-1.png","text":"GOD’S EXISTENCE IS UNPROVEN · DAN BARKER\n\"i'm still not convinced i'd be open to being convinced\"\n\nBarker closes by describing his nonbelief as revisable rather than dogmatic, while maintaining that the arguments presented have not met his evidential standard.\n\n\""},{"viewport":{"width":390,"height":844},"path":"output/playwright/debate-287-local-final-quotes-390-0.png","text":"GOD EXISTS · ADAM LLOYD JOHNSON\n\"the existence of god is the best explanation for how there could be objective moral truths\"\n\nJohnson states this as the second premise of his moral syllogism, after claiming objective moral truths exist and before inferring that God exists.\n\n\""},{"viewport":{"width":390,"height":844},"path":"output/playwright/debate-287-local-final-quotes-390-1.png","text":"GOD’S EXISTENCE IS UNPROVEN · DAN BARKER\n\"i'm still not convinced i'd be open to being convinced\"\n\nBarker closes by describing his nonbelief as revisable rather than dogmatic, while maintaining that the arguments presented have not met his evidential standard.\n\n\""}]
+### Ran Playwright code
+```js
+await (async page => {
+const out=[];
+for (const viewport of [{width:1440,height:1000},{width:390,height:844}]) {
+ await page.setViewportSize(viewport); await page.goto('http://127.0.0.1:4174/debate/johnson-barker-god-existence-2022/');
+ await page.locator('.quote-grid').scrollIntoViewIfNeeded();
+ const cards=page.locator('.quote-card');
+ for(let i=0;i<2;i++){const card=cards.nth(i);await card.scrollIntoViewIfNeeded();const path='output/playwright/debate-287-local-final-quotes-'+viewport.width+'-'+i+'.png';await card.screenshot({path});out.push({viewport,path,text:await card.innerText()});}
+}
+return out;
+})(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4174/debate/johnson-barker-god-existence-2022/
+- Page Title: God’s Existence — Johnson vs Barker · 2022 | Slugfester

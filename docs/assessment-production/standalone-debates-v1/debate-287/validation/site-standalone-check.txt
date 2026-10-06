@@ -1,0 +1,182 @@
+
+> slugfester@0.1.0 site:standalone:check
+> npx playwright test tests/site-quality/standalone-publication.spec.mjs
+
+
+
+Running 1 test using 1 worker
+
+
+
+[1/1] tests/site-quality/standalone-publication.spec.mjs:7:1 › checks standalone publication before deployment, including static scope and every graph bucket
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1) tests/site-quality/standalone-publication.spec.mjs:7:1 › checks standalone publication before deployment, including static scope and every graph bucket 
+
+    Error: route status /interlocutor/adam-lloyd-johnson/
+
+       at ../../scripts/lib/standalone-browser-replay.mjs:3
+
+      1 | export async function replayPublication(page, cfg) {
+      2 |   const d = cfg.candidate;
+    > 3 |   const fail = (message) => { throw new Error(message); };
+        |                                     ^
+      4 |   const same = (a,b,label) => { if(JSON.stringify(a)!==JSON.stringify(b))fail(label+': '+JSON.stringify({actual:a,expected:b})); };
+      5 |   const ok = (value,label) => { if(!value)fail(label); };
+      6 |   const errors=[],resources=[],observations=[],screenshots=[];
+        at fail (/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/standalone-browser-replay.mjs:3:37)
+        at ok (/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/standalone-browser-replay.mjs:5:43)
+        at go (/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/standalone-browser-replay.mjs:12:73)
+        at replayPublication (/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/standalone-browser-replay.mjs:48:55)
+        at /Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/tests/site-quality/standalone-publication.spec.mjs:13:3
+
+    Error Context: .playwright-results/standalone-publication-che-e1df9-cope-and-every-graph-bucket/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/standalone-publication-che-e1df9-cope-and-every-graph-bucket/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/standalone-publication-che-e1df9-cope-and-every-graph-bucket/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  1 failed
+    tests/site-quality/standalone-publication.spec.mjs:7:1 › checks standalone publication before deployment, including static scope and every graph bucket 
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:05] "GET / HTTP/1.1" 200 -
+(node:10901) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:07] "GET /debate/licona-carrier-resurrection-formal-rounds-2004/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:07] "GET /src/styles.css?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:07] "GET /debate/aron-ra-jones-christianity-dangerous-formal-rounds-2019/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:07] "GET /debate/atkins-law-science-philosophy-formal-rounds-2014/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:07] "GET /debate/white-price-bible-truth-formal-rounds-2010/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:07] "GET /debate/sharpton-hitchens-god-religion-morality-2007/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:07] "GET /debate/dembski-hitchens-good-god-existence-2010/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:07] "GET /debate/chopra-dawkins-consciousness-purpose-spirituality-2013/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:07] "GET /debate/dillahunty-giunta-faith-rational-justification-2018/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:07] "GET /debate/hitchens-wilson-truth-goodness-beauty-2008/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:07] "GET /debate/sacks-dawkins-science-religion-2012/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/craig-pigliucci-christian-god-2001/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/craig-dacey-god-existence-2004/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/shermer-scrivener-good-without-god-2024/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/lennox-tooley-atheism-christianity-2013/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/slick-barker-god-existence-2014/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/turek-normark-god-existence-2014/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/butt-barker-biblical-god-2009/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/nesan-dillahunty-jesus-prophecy-2021/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/johnson-barker-god-existence-2022/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/licona-carrier-resurrection-formal-rounds-2004/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /src/styles.css?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/aron-ra-jones-christianity-dangerous-formal-rounds-2019/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/atkins-law-science-philosophy-formal-rounds-2014/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/white-price-bible-truth-formal-rounds-2010/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/sharpton-hitchens-god-religion-morality-2007/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/dembski-hitchens-good-god-existence-2010/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/chopra-dawkins-consciousness-purpose-spirituality-2013/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/dillahunty-giunta-faith-rational-justification-2018/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/hitchens-wilson-truth-goodness-beauty-2008/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/sacks-dawkins-science-religion-2012/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/craig-pigliucci-christian-god-2001/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/craig-dacey-god-existence-2004/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/shermer-scrivener-good-without-god-2024/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/lennox-tooley-atheism-christianity-2013/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/slick-barker-god-existence-2014/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/turek-normark-god-existence-2014/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/butt-barker-biblical-god-2009/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:08] "GET /debate/nesan-dillahunty-jesus-prophecy-2021/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /debate/johnson-barker-god-existence-2022/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /debate/johnson-barker-god-existence-2022/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/styles.css?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/app.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/data/reader-guides.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/data/topics.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/data/page-updates.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/data/assessment-process-guide.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/data/critique-format.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/data/debate-summaries.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/data/references.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/data/interlocutors.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/seo.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/data/debate-analytics.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /src/data/debate-details/johnson-barker-god-existence-2022.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:09] "GET /assets/caricatures/dan-barker.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:10] "GET /assets/caricatures/peter-millican.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:10] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:10] "GET /assets/caricatures/paul-draper.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:10] "GET /assets/caricatures/dinesh-dsouza.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:11] "GET /src/data/reference-appearances/fallacy-equivocation.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:11] "GET /backend/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:11] "GET /assets/assessment-process/panel-1.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:11] "GET /src/data/section-score-extremes.js?v=07faf19c83fbba2d HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:11] "GET /assets/assessment-process/panel-2.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:11] "GET /assets/assessment-process/panel-3.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:12] code 404, message File not found
+[WebServer] 127.0.0.1 - - [05/Oct/2026 23:24:12] "GET /interlocutor/adam-lloyd-johnson/ HTTP/1.1" 404 -

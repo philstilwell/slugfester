@@ -1,0 +1,85 @@
+{
+  "status": "diagnosed-repeated-local-transport-failure",
+  "events": [
+    {
+      "type": "console",
+      "messageType": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+      "args": [],
+      "location": {
+        "url": "http://127.0.0.1:4181/src/data/topics.js?v=0e5e536022857355",
+        "lineNumber": 0,
+        "columnNumber": 0
+      },
+      "time": 7397.086,
+      "pageId": "page@40583cc87ffaee765887acfa1b35af40"
+    },
+    {
+      "type": "console",
+      "messageType": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+      "args": [],
+      "location": {
+        "url": "http://127.0.0.1:4181/src/data/reader-guides.js?v=0e5e536022857355",
+        "lineNumber": 0,
+        "columnNumber": 0
+      },
+      "time": 7397.299,
+      "pageId": "page@40583cc87ffaee765887acfa1b35af40"
+    },
+    {
+      "type": "console",
+      "messageType": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+      "args": [],
+      "location": {
+        "url": "http://127.0.0.1:4181/src/data/debate-summaries.js?v=0e5e536022857355",
+        "lineNumber": 0,
+        "columnNumber": 0
+      },
+      "time": 7398.039,
+      "pageId": "page@40583cc87ffaee765887acfa1b35af40"
+    },
+    {
+      "type": "console",
+      "messageType": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+      "args": [],
+      "location": {
+        "url": "http://127.0.0.1:4181/src/data/interlocutors.js?v=0e5e536022857355",
+        "lineNumber": 0,
+        "columnNumber": 0
+      },
+      "time": 7398.063,
+      "pageId": "page@40583cc87ffaee765887acfa1b35af40"
+    },
+    {
+      "type": "console",
+      "messageType": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+      "args": [],
+      "location": {
+        "url": "http://127.0.0.1:4181/src/data/references.js?v=0e5e536022857355",
+        "lineNumber": 0,
+        "columnNumber": 0
+      },
+      "time": 7398.079,
+      "pageId": "page@40583cc87ffaee765887acfa1b35af40"
+    },
+    {
+      "type": "console",
+      "messageType": "error",
+      "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+      "args": [],
+      "location": {
+        "url": "http://127.0.0.1:4181/src/seo.js?v=0e5e536022857355",
+        "lineNumber": 0,
+        "columnNumber": 0
+      },
+      "time": 7398.094,
+      "pageId": "page@40583cc87ffaee765887acfa1b35af40"
+    }
+  ],
+  "traceSha256": "3ff73bf1e191f7c46fb8960698cdfbde02cab7d78ee3316046b39ab87e03ae26",
+  "disposition": "Six module requests were reset on the localhost Python server, preventing the existing debate route from loading its expected detail module. The failure is transport, not a changed data budget or assertion. Start an owned standard Python threaded file server with request_queue_size=128 on the configured port and reuse it through existing Playwright configuration. All test cases, budgets, assertions and site bytes remain unchanged. Close this server after the full precommit run."
+}

@@ -1,0 +1,133 @@
+{
+  "status": "diagnosed-local-transport-failure",
+  "debateNumber": "287",
+  "failedGate": "immediate-precommit site:preflight",
+  "traceSha256": "14966a2e67022b010fb3b45f4de21b36aba391e2f61cda75814a1b23fbd875b0",
+  "events": [
+    {
+      "traceEntry": "test.trace",
+      "event": {
+        "type": "error",
+        "message": "Error: browser runtime errors: {\"actual\":[\"Failed to load resource: net::ERR_CONNECTION_RESET\"],\"expected\":[]}",
+        "stack": [
+          {
+            "file": "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/standalone-browser-replay.mjs",
+            "line": 3,
+            "column": 37,
+            "function": "fail"
+          },
+          {
+            "file": "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/standalone-browser-replay.mjs",
+            "line": 4,
+            "column": 74,
+            "function": "same"
+          },
+          {
+            "file": "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/standalone-browser-replay.mjs",
+            "line": 63,
+            "column": 3,
+            "function": "replayPublication"
+          },
+          {
+            "file": "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/tests/site-quality/standalone-publication.spec.mjs",
+            "line": 13,
+            "column": 3
+          }
+        ]
+      }
+    },
+    {
+      "traceEntry": "2-trace.trace",
+      "event": {
+        "type": "console",
+        "messageType": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET",
+        "args": [],
+        "location": {
+          "url": "http://127.0.0.1:4181/assets/caricatures/bart-ehrman.webp",
+          "lineNumber": 0,
+          "columnNumber": 0
+        },
+        "time": 13488.001,
+        "pageId": "page@b80b54e786465d5e689ca502efa8261c"
+      }
+    },
+    {
+      "traceEntry": "2-trace.network",
+      "event": {
+        "type": "resource-snapshot",
+        "snapshot": {
+          "pageref": "page@b80b54e786465d5e689ca502efa8261c",
+          "startedDateTime": "2026-10-06T03:35:12.784Z",
+          "time": -1,
+          "request": {
+            "method": "GET",
+            "url": "http://127.0.0.1:4181/assets/caricatures/bart-ehrman.webp",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [
+              {
+                "name": "sec-ch-ua-platform",
+                "value": "\"macOS\""
+              },
+              {
+                "name": "Referer",
+                "value": "http://127.0.0.1:4181/rankings/?compare-a=Adam+Lloyd+Johnson&compare-b=Dan+Barker"
+              },
+              {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36"
+              },
+              {
+                "name": "sec-ch-ua",
+                "value": "\"Not=A?Brand\";v=\"99\", \"HeadlessChrome\";v=\"151\", \"Chromium\";v=\"151\""
+              },
+              {
+                "name": "Accept-Language",
+                "value": "en-US"
+              },
+              {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+              }
+            ],
+            "queryString": [],
+            "headersSize": -1,
+            "bodySize": 0
+          },
+          "response": {
+            "status": -1,
+            "statusText": "",
+            "httpVersion": "HTTP/1.1",
+            "cookies": [],
+            "headers": [],
+            "content": {
+              "size": -1,
+              "mimeType": "x-unknown"
+            },
+            "headersSize": -1,
+            "bodySize": -1,
+            "redirectURL": "",
+            "_transferSize": -1,
+            "_failureText": "net::ERR_CONNECTION_RESET"
+          },
+          "cache": {},
+          "timings": {
+            "send": -1,
+            "wait": -1,
+            "receive": -1
+          },
+          "_frameref": "frame@0b5e78744303e345b41c97218be269f3",
+          "_monotonicTime": 13466.252,
+          "_resourceType": "image"
+        }
+      }
+    }
+  ],
+  "asset": {
+    "path": "assets/caricatures/bart-ehrman.webp",
+    "sha256": "31890793b089359a596d3a9ab51df9294108a1dc6ae36d0a824abec24e5d154f",
+    "unchangedFromHead": true
+  },
+  "disposition": "One connection reset loading an existing rankings portrait from the temporary localhost server. Prior complete gate and maintained browser replay passed. Preserve failure evidence, rerun unchanged full precommit gate once; do not suppress resource failures or modify tests."
+}

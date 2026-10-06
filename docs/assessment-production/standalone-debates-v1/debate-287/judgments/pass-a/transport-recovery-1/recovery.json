@@ -1,0 +1,16 @@
+{
+  "status": "exact-original-checked-bytes-recovered-without-inference",
+  "at": "2026-10-06T02:27:38.553724+00:00",
+  "sourceSession": "/Users/philstilwell/.codex/sessions/2026/10/05/rollout-2026-10-05T22-19-50-01a10f02-97a7-7480-bfee-4452f9c13516.jsonl",
+  "sourceSessionSnapshotSha256": "fdeed414615997f4b659cfbd850afa3c274b996178c55b21c813276faded17fd",
+  "sourceToolCallId": "call_GNwIBMShSt5Vcc49FSUMD4kF",
+  "sourceToolArgumentSha256": "388a4dc20dd82423ddd20de7a6d7edb0e3748d51f0b7ac2acafd11214966625c",
+  "recoveredCandidateSha256": "db6cca11427495d766900a4615137aebc709f3a040e888bc753ba6d728820eba",
+  "recoveredCandidateBytes": 43915,
+  "originalCheckerHashMatched": true,
+  "controllerReauthoredJudgment": false,
+  "newModelContext": false,
+  "sourceInputsChanged": false,
+  "earlierCompactRegenerationUsed": false,
+  "explanation": "Worker lost its live variable after socket EPERM and finalized. The original successful checker call preserved a complete deterministic candidate builder in its immutable tool-call record. Controller replayed only that exact builder in a restricted memory-only JavaScript context and recovered the original canonical bytes with the already recorded hash. No text or rating was rewritten. A later compact regeneration is not used. No candidate file was created; bytes are passed directly to the maintained holder for first review and save."
+}
