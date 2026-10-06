@@ -2,12 +2,6 @@ const avatarBasePath = "/assets/caricatures";
 
 export const interlocutorAvatars = [
   {
-    name: "Luuk Vandeweghe",
-    src: "/assets/debate-gloves.png",
-    placeholder: true,
-    aliases: ["Luuk Vandeweghe", "Luuk van de Weghe", "Luuk Van de Weghe"]
-  },
-  {
     name: "Adam Lloyd Johnson",
     src: `${avatarBasePath}/adam-lloyd-johnson.webp`,
     aliases: ["Adam Lloyd Johnson"]
@@ -986,6 +980,11 @@ export const interlocutorAvatars = [
     name: "Samuel Nesan",
     src: `${avatarBasePath}/samuel-nesan.webp`,
     aliases: ["Samuel Nesan"]
+  },
+  {
+    name: "Luuk Vandeweghe",
+    src: `${avatarBasePath}/luuk-vandeweghe.webp`,
+    aliases: ["Luuk Vandeweghe"]
   }
 ];
 
