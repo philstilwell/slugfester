@@ -3,8 +3,7 @@ const avatarBasePath = "/assets/caricatures";
 export const interlocutorAvatars = [
   {
     name: "Adam Lloyd Johnson",
-    src: "/assets/debate-gloves.png",
-    placeholder: true,
+    src: `${avatarBasePath}/adam-lloyd-johnson.webp`,
     aliases: ["Adam Lloyd Johnson"]
   },
   {
