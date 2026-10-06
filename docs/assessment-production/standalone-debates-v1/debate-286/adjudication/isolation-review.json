@@ -1,0 +1,14 @@
+{
+  "status": "passed-controller-tool-access-review",
+  "agentPath": "/root/adjudicator286",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-286/adjudication/execution.json",
+    "sha256": "78b728ec5a655f0368eeb5320e382c44b93d6d1b570fbd7d61f1242f1b637780",
+    "bytes": 16011
+  },
+  "onlyAllowedAssessmentInputsAccessed": true,
+  "passIdentitiesExposed": false,
+  "scoreOrWinnerExposure": false,
+  "biographyOrExternalSourceExposure": false,
+  "notes": "All 40 recorded tool calls inspected. Reads used the exact plan and full allowed reader; authoring stayed in memory and pinned checker/handoff. Failed --help invoked only procedural help. Large terminal input was refused explicitly with instruction to use smaller input; the worker sent the identical bytes in ordered smaller chunks, as directed, without a new candidate, context, or submission. No forbidden evidence or peer identities were accessed."
+}

@@ -1,0 +1,6 @@
+{
+  "status": "passed-controller-complete-tool-call-isolation-review",
+  "authenticatedToolCalls": 47,
+  "review": "All reading and continuation calls inspected. Only own plan/reader, in-memory candidate, pinned checker, and own maintained handoff used. Initial terminal checker stalled on one long JSON line and was terminated; absent TextEncoder/btoa helpers failed before execution, then identical bytes were piped through base64 to stdin. First holder could not bind its socket in the sandbox and exited before a successful hold; the properly escalated holder succeeded with unchanged bytes. No peer identities, other debates, scores, production tags, sessions, network or unauthorized content exposed. Sole saved submission hash equals fully reviewed bytes; holder exited0.",
+  "violations": []
+}

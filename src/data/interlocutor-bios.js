@@ -193,6 +193,7 @@ const entries = [
   ["James Marriott", "James Marriott is a journalist and Times columnist. His writing, including the Cultural Capital newsletter, explores society, ideas, and culture, bringing these subjects into public discussion.", "https://www.penguinrandomhouse.com/authors/129107/james-marriott/"],
   ["Craig Evans", "Craig Evans is a biblical scholar whose work examines the historical Jesus and the world of the New Testament. His research and public lectures connect biblical texts with archaeology, ancient languages, and the Dead Sea Scrolls.", "https://www.thebibleseminary.edu/faculty-1/dr.-craig-evans"],
   ["Jonathan Haidt", "Jonathan Haidt is a social psychologist and author whose research explores the intuitive foundations of morality and differences across cultures and political groups. His books include The Righteous Mind and The Happiness Hypothesis.", "https://www.jonathanhaidt.com/bio", "2026-09-13"],
+  ["Samuel Nesan", "Samuel Nesan is a Christian speaker and co-founder of Explain International. He teaches Christian apologetics, the reasoned defense of Christian belief, and has held teaching and leadership roles at theological seminaries in Malaysia.", "https://toslms.org/mod/page/view.php?id=605&lang=ms", "2026-10-05"],
 ];
 
 export const interlocutorBios = Object.fromEntries(entries.map(([name, text, url, reviewed = biographyReviewDate]) => [name, {
