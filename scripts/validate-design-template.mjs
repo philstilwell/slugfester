@@ -284,6 +284,8 @@ requireIncludes("app reference route", app, "referencePathRoutePattern");
 requireIncludes("app reference route", app, "Why this label appears here");
 requireIncludes("app reference route", app, "Back to this debate");
 requireIncludes("app reference route", app, "reference-debate-link");
+requireIncludes("reference interlocutor name styling", app, '<span class="reference-interlocutor">${escapeHtml(appearance.argument.speaker || appearance.side.speaker)}</span>');
+requireIncludes("reference interlocutor red text", styles, ".reference-interlocutor {\n  color: var(--coral-text);\n}");
 requireIncludes("app reference route", app, "Open debate scorecard");
 requireIncludes("app reference route", app, "REFERENCE_CONTEXT_PAGE_SIZE = 16");
 requireIncludes("app reference route", app, "referencePageUrl");
