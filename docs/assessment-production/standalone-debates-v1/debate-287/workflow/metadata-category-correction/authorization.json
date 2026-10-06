@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-06T02:00:31.179653+00:00",
+  "userAuthorization": "New video supplied under the invoked add-slugfester-youtube-debate skill. Standing user instruction limits assessment to formal rounds and closings and authorizes ordinary assessment, bounded repairs, validation, commit/push, PR, green merge, verified live publication and cleanup without repeated common approvals. Complete-thought featured quotations remain required.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-287",
+    "head": "ebfa394931930924815f8ba5bce1021ce77013d3",
+    "localMain": "ebfa394931930924815f8ba5bce1021ce77013d3",
+    "originMain": "ebfa394931930924815f8ba5bce1021ce77013d3",
+    "clean": true,
+    "isolationReason": "Reused attached clean managed checkout after completed Debate 286; safely fast-forwarded the separately checked clean main checkout, authenticated equality, then created this topic branch before tracked writes."
+  },
+  "identity": {
+    "debateNumber": "287",
+    "debateId": "johnson-barker-god-existence-2022",
+    "videoId": "H32WynQMke0",
+    "canonicalUrl": "https://www.youtube.com/watch?v=H32WynQMke0",
+    "sourceTitle": "DEBATE: Does God Exist? Dan Barker vs. Adam Lloyd Johnson",
+    "eventYear": 2022,
+    "title": "Adam Lloyd Johnson vs Dan Barker — Does God Exist? (2022)",
+    "label": "God’s Existence",
+    "topicCategory": "god-existence",
+    "motion": "Does God exist?",
+    "pro": {
+      "speaker": "Adam Lloyd Johnson",
+      "position": "God exists"
+    },
+    "con": {
+      "speaker": "Dan Barker",
+      "position": "God’s existence is unproven"
+    },
+    "dyadic": true,
+    "originalRecordingDyadic": false,
+    "editorApprovedScope": {
+      "protocolId": "editor-approved-moderator-exclusion-v1",
+      "scopeType": "standing-editor-instruction-formal-rounds-and-closings-with-entire-audience-qa-excluded",
+      "explicitDebateSpecificApproval": true,
+      "videoId": "H32WynQMke0",
+      "userApproval": "The user supplied this next video under the same invoked addition skill after instructing “Assess only the formal debates and closings.” This continuing scope is applied to this recording; no new user reply or automatic moderator exception is claimed.",
+      "originalRecordingIsStrictlyDyadic": false,
+      "automaticPrimarySpeakerExceptionClaimed": false,
+      "readerDisclosureRequired": true,
+      "requiredReaderDisclosure": "This assessment covers both formal opening statements and rebuttals (approximately 10:28–1:03:56), plus both closing statements (1:22:28–1:30:03). The entire audience Q&A, including both speakers’ answers and dependent replies, and the hosts’ introductory and concluding discussion are excluded at the editor’s request. Neither speaker receives credit or penalty for excluded material. These scores assess the formal rounds and closings, not the complete recording.",
+      "assessedWindow": {
+        "startMs": 628079,
+        "endMs": 5403320,
+        "durationMs": 4775241
+      },
+      "retainedIntervals": [
+        {
+          "startMs": 628079,
+          "endMs": 3835559,
+          "durationMs": 3207480
+        },
+        {
+          "startMs": 4948000,
+          "endMs": 5403320,
+          "durationMs": 455320
+        }
+      ],
+      "excludedIntervals": [
+        {
+          "intervalId": "entire-audience-qa-and-dependent-answers",
+          "startMs": 3835559,
+          "endMs": 4948000,
+          "durationMs": 1112441,
+          "reason": "Exclude the entire audience-question segment and transition, every audience intervention, both primary speakers’ answers and dependent replies. Resume at Barker’s independently introduced formal closing. The mixed preclosing event 2273 remains excluded in full.",
+          "dependentRepliesReviewed": true,
+          "noCreditOrPenalty": true
+        }
+      ],
+      "excludedDurationMs": 1112441,
+      "excludedShareOfAssessedWindow": 0.23296017939199298,
+      "boundaryBasis": "Retained substantive speech: Johnson opening events 299–675; Barker opening 688–1131; Barker rebuttal 1179–1486; Johnson rebuttal 1491–1743; Barker closing 2274–2380; Johnson closing 2382–2476. Intervening logistics and applause are unscored. The complete Q&A, including mixed event 2273, is excluded. Absolute caption times overlap at some handoffs, but no selected span may intersect the excluded interval.",
+      "outsideWindowDisposition": "Host introduction, speaker introductions and logistics before event 299, and applause plus host and debater concluding conversation after event 2476, are outside the assessed envelope and unscored.",
+      "coherenceReview": "Both openings, both rebuttals and both complete closings are retained. Closings may be assessed on their independently restated arguments and retained formal evidence only. No Q&A evidence, reply credit, concession or missing-response penalty may be imported. There is no formal cross-examination segment."
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "knownSuccessfulCallCostUsd": 0,
+    "maximumPossiblePriorCostUsd": 0,
+    "currentPlanEstimateUsd": 0,
+    "sourceVerificationAnnouncedMaximumUsd": 0.06,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "audioVerificationPolicy": "Two verification clips were planned, but the public media endpoint returned HTTP 403 before acquisition; no paid request was made. Do not bypass the denial. Preserve uncertain wording and prohibit score or quote reliance on it. Any selected below-high-confidence move requires successful applicable audio verification before adjudication; do not force confidence or silently omit a load-bearing argument. New permitted audio work needs a frozen cumulative estimate before a paid call."
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-287",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/johnson-barker-god-existence-2022.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/johnson-barker-god-existence-2022.js",
+    "src/data/interlocutor-bios.js",
+    "generated site output for this addition"
+  ]
+}

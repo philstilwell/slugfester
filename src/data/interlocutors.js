@@ -2,6 +2,11 @@ const avatarBasePath = "/assets/caricatures";
 
 export const interlocutorAvatars = [
   {
+    name: "Adam Lloyd Johnson",
+    src: `${avatarBasePath}/adam-lloyd-johnson.webp`,
+    aliases: ["Adam Lloyd Johnson"]
+  },
+  {
     name: "Alex O'Connor",
     src: `${avatarBasePath}/alex-oconnor.webp`,
     aliases: ["Alex O'Connor", "Alex OConnor"]
@@ -975,11 +980,6 @@ export const interlocutorAvatars = [
     name: "Samuel Nesan",
     src: `${avatarBasePath}/samuel-nesan.webp`,
     aliases: ["Samuel Nesan"]
-  },
-  {
-    name: "Adam Lloyd Johnson",
-    src: `${avatarBasePath}/adam-lloyd-johnson.webp`,
-    aliases: ["Adam Lloyd Johnson"]
   }
 ];
 

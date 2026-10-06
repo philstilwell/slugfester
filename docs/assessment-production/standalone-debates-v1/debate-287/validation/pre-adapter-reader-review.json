@@ -1,0 +1,18 @@
+{
+  "status": "passed-reader-rules-with-expected-unfrozen-adapter-findings",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-287/publication/output.json",
+    "sha256": "710ede1df523d958a89cc17d9dd20c3f3c2e7c7cc0af5f62f94b0438ab721fa6",
+    "bytes": 64308
+  },
+  "validation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-287/validation/pre-adapter-initial-production-execution.json",
+    "sha256": "26b7c26966dc254075c307efa0b0d72ad0fa43ac5552fc093a4ded8622d3a0e6",
+    "bytes": 506
+  },
+  "fullValidatorPassed": false,
+  "readerFacingFailures": 0,
+  "expectedCompatibilityFailures": 10,
+  "classification": "The production validator still uses its ordinary paired three-row rules because the new standalone ledger/registry route has not been frozen. All ten failures concern that absent adapter: fourth rows, permitted unpaired cards and the missing ledger. Frozen inventory already authorizes these exact capacities. No quote, description, critique, score-note, overall-commentary or AI Contribution reader rule failed. Final full validation remains mandatory after adapter freeze.",
+  "temporaryIntegrationRestoredExactly": true
+}
