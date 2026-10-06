@@ -1,0 +1,15 @@
+{
+  "status": "prerequisite-reading-incomplete-no-release",
+  "agentPath": "/root/writer287",
+  "at": "2026-10-06T02:40:30.607355+00:00",
+  "sessionSnapshot": {
+    "externalLocalSessionPath": "/Users/philstilwell/.codex/sessions/2026/10/05/rollout-2026-10-05T22-37-48-01a10f13-086e-7cb3-94c4-2ccf31eba54d.jsonl",
+    "sha256": "d93e407c17edac7ef9bc1872af8fa5d7bf5ddccde5f1d9a5710d82add3c213a2",
+    "bytes": 2194201,
+    "rawSessionCommitted": false
+  },
+  "finding": "Reviewer incorrectly reported complete reading after directing lines 6001\u201314049 to /dev/null and exposing only final footer text. The literal-reading authenticator rejected the release. No candidate was authored and no output was saved.",
+  "disposition": "Controller required same-context complete model-visible reading of lines 6001\u201314049 in bounded untruncated chunks. No authoring until successful current-plan authentication; no context replacement, assessment retry or changed input.",
+  "candidateAbsent": true,
+  "readingReleaseAbsent": true
+}

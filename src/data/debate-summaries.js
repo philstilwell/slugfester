@@ -13682,5 +13682,52 @@ export const debateSummaries = [
         "title": "Isaiah, Genesis, and typological correspondences"
       }
     ]
+  },
+  {
+    "id": "johnson-barker-god-existence-2022",
+    "number": "287",
+    "title": "Adam Lloyd Johnson vs Dan Barker — Does God Exist?",
+    "year": 2022,
+    "label": "God’s Existence",
+    "date": "2026-10-05",
+    "duration": "1 hr 20 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=H32WynQMke0",
+    "motion": "Does God exist?",
+    "summary": "Johnson narrowly wins by presenting the more integrated cumulative case, though Barker’s coherence and evidential objections substantially limit its force.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God exists",
+        "speaker": "Adam Lloyd Johnson",
+        "color": "teal"
+      },
+      "con": {
+        "name": "God’s existence is unproven",
+        "speaker": "Dan Barker",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 78,
+      "con": 77,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Burden, evidence, and qualified belief"
+      },
+      {
+        "title": "Cosmic origin and causal explanation"
+      },
+      {
+        "title": "Design, fine-tuning, and alternatives"
+      },
+      {
+        "title": "Morality, minds, and grounding"
+      },
+      {
+        "title": "Coherence and explanatory method"
+      }
+    ]
   }
 ];
