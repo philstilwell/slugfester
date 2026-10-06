@@ -13638,5 +13638,49 @@ export const debateSummaries = [
         "title": "Situational moral cases"
       }
     ]
+  },
+  {
+    "id": "nesan-dillahunty-jesus-prophecy-2021",
+    "number": "286",
+    "title": "Samuel Nesan vs Matt Dillahunty — Did Jesus Fulfill Prophecy?",
+    "year": 2021,
+    "label": "Jesus and Prophecy",
+    "date": "2026-10-05",
+    "duration": "3 hr 8 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=iRcx-eDklP0",
+    "motion": "Did Jesus fulfill prophecy?",
+    "summary": "Dillahunty’s two-stage demand for prospective specificity and independent event evidence outweighed Nesan’s thoughtful but insufficiently constrained cumulative covenant reading.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "Jesus fulfilled Old Testament prophecy",
+        "speaker": "Samuel Nesan",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Jesus’s fulfillment of prophecy is unproven",
+        "speaker": "Matt Dillahunty",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 78,
+      "con": 84,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Covenant narrative and messianic identity"
+      },
+      {
+        "title": "Specificity, interpretation, and prospective prediction"
+      },
+      {
+        "title": "Historical evidence and verification"
+      },
+      {
+        "title": "Isaiah, Genesis, and typological correspondences"
+      }
+    ]
   }
 ];

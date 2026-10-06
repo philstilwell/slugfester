@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-05T23:39:04.282582+00:00",
+  "userAuthorization": "New video supplied under the invoked add-slugfester-youtube-debate skill. Standing user instruction limits assessment to formal debate and closings and authorizes ordinary assessment, bounded repairs, validation, commit/push, PR, green merge, verified live publication and cleanup without repeated common approvals. Quote completeness remains required.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-286",
+    "head": "b9b1a1af3b1f669ebbb1b856fa8e674c32a0298e",
+    "localMain": "b9b1a1af3b1f669ebbb1b856fa8e674c32a0298e",
+    "originMain": "b9b1a1af3b1f669ebbb1b856fa8e674c32a0298e",
+    "clean": true,
+    "isolationReason": "Reused attached clean managed checkout after completed Debate 285; safely fast-forwarded the separately checked clean main checkout, authenticated equality, then created the dedicated topic branch before tracked writes."
+  },
+  "identity": {
+    "debateNumber": "286",
+    "debateId": "nesan-dillahunty-jesus-prophecy-2021",
+    "videoId": "iRcx-eDklP0",
+    "canonicalUrl": "https://www.youtube.com/watch?v=iRcx-eDklP0",
+    "sourceTitle": "PASSIONATE DEBATE Matt Dillahunty vs Samuel Nesan | Did Jesus Fulfill Prophecy? | Podcast",
+    "eventYear": 2021,
+    "title": "Samuel Nesan vs Matt Dillahunty — Did Jesus Fulfill Prophecy? (2021)",
+    "label": "Jesus and Prophecy",
+    "topicCategory": "scripture-jesus-resurrection",
+    "motion": "Did Jesus fulfill prophecy?",
+    "pro": {
+      "speaker": "Samuel Nesan",
+      "position": "Jesus fulfilled Old Testament prophecy"
+    },
+    "con": {
+      "speaker": "Matt Dillahunty",
+      "position": "Jesus’s fulfillment of prophecy is unproven"
+    },
+    "dyadic": true,
+    "originalRecordingDyadic": false,
+    "editorApprovedScope": {
+      "protocolId": "editor-approved-moderator-exclusion-v1",
+      "scopeType": "standing-editor-instruction-formal-debate-with-entire-audience-qa-and-after-show-excluded",
+      "explicitDebateSpecificApproval": true,
+      "videoId": "iRcx-eDklP0",
+      "userApproval": "The user supplied this next video under the same invoked addition skill after instructing “Assess only the formal debates and closings.” This continuing scope is applied to the supplied recording; no new user reply or recording-specific moderator exception is claimed.",
+      "originalRecordingIsStrictlyDyadic": false,
+      "automaticPrimarySpeakerExceptionClaimed": false,
+      "readerDisclosureRequired": true,
+      "requiredReaderDisclosure": "This assessment covers the formal opening statements, rebuttals, cross-examination, and the speakers’ subsequent discussion before audience Q&A (approximately 0:12–1:02:31). This recording has no separate formal closing statements. The entire audience Q&A, including both speakers’ answers and dependent replies, plus the host’s after-show, is excluded at the editor’s request. Neither speaker receives credit or penalty for excluded material. These scores assess the debate portion, not the complete recording.",
+      "assessedWindow": {
+        "startMs": 11679,
+        "endMs": 11281000,
+        "durationMs": 11269321
+      },
+      "retainedIntervals": [
+        {
+          "startMs": 11679,
+          "endMs": 3750960,
+          "durationMs": 3739281
+        }
+      ],
+      "excludedIntervals": [
+        {
+          "intervalId": "audience-qa-closing-courtesies-and-host-after-show",
+          "startMs": 3750960,
+          "endMs": 11281000,
+          "durationMs": 7530040,
+          "reason": "Exclude the complete audience-question period with every primary answer and dependent reply, subsequent courtesy remarks and promotions, music, and the host-only after-show. No separately structured substantive closing statements occur. This is the user’s continuing formal-debate-only scope, not a five-percent host exception.",
+          "dependentRepliesReviewed": true,
+          "noCreditOrPenalty": true
+        }
+      ],
+      "excludedDurationMs": 7530040,
+      "excludedShareOfAssessedWindow": 0.6681893256922933,
+      "boundaryBasis": "Canonical events 6–1819 contain the retained debate, including ordinary logistics. Event 1819 completes “relevant to prophecy, so we can move on.” Later transition events initiate audience Q&A. Caption display times overlap but word order is preserved. Introductory moderator words before event 6 are unscored.",
+      "outsideWindowDisposition": "Moderator introduction before 0:11.679 is unscored. AssessedWindow is the source envelope used for exclusion arithmetic; retainedIntervals alone supply assessable arguments.",
+      "coherenceReview": "The speakers mutually convert unused cross-examination time into direct open discussion before Q&A. This remains part of their debate. Both opening cases, both rebuttals and the complete ensuing pre-Q&A exchange are retained. No missing-closing penalty, and no Q&A evidence or reply inference is allowed."
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "knownSuccessfulCallCostUsd": 0.0314625,
+    "maximumPossiblePriorCostUsd": 0.0314625,
+    "currentPlanEstimateUsd": 0.0314625,
+    "sourceVerificationAnnouncedMaximumUsd": 0.12,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "audioVerificationPolicy": "Six completed source-verification clips, one attempt each, no retries. Any below-high-confidence selected move still requires its own applicable evidence review; reuse unchanged successful excerpts where they fully cover it. Freeze and announce cumulative estimate before any newly required paid clip. No direct listening claimed."
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-286",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/nesan-dillahunty-jesus-prophecy-2021.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/nesan-dillahunty-jesus-prophecy-2021.js",
+    "src/data/interlocutor-bios.js",
+    "generated site output for this addition"
+  ]
+}

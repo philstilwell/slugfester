@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "286",
+  "debateId": "nesan-dillahunty-jesus-prophecy-2021",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-286/inventory/inventory.json",
+      "sha256": "b156d270bc1e7aef05ea3376a7eb091d99df000075bfcfdbe95be6bda6741381",
+      "bytes": 116248
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-286/score-pass/output.json",
+      "sha256": "78d55d6fe7543045e29f9d1d4500ad20ad3ebda1ab5d91f35e8f1564d51819bd",
+      "bytes": 15099
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-286/publication/skeleton.json",
+      "sha256": "24b5b14b28b33bad90fd674ece822fddc9dd12cdd07e11761862ead24a7bea4d",
+      "bytes": 11430
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-286/publication/reference-metrics.json",
+      "sha256": "6ab2c0b7179f842abd9be2e09a491c200084b8c1407d61c64388db5f62d17e2c",
+      "bytes": 54734
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}
