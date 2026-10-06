@@ -1,0 +1,34 @@
+{
+  "status": "passed-with-preserved-frozen-evidence-whitespace",
+  "originalCommand": [
+    "git",
+    "diff",
+    "HEAD^",
+    "HEAD",
+    "--check"
+  ],
+  "originalExitCode": 2,
+  "findings": [
+    "docs/assessment-production/standalone-debates-v1/debate-286/judgments/contract.md:26: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-286/publication/contract.md:65: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-286/publication/rhetorical-tag-review-1/contract.md:41: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-286/rendering/local-browser-replay.txt:5: new blank line at EOF."
+  ],
+  "disposition": "Three terminal blank lines are in immutable hash-pinned reviewer contracts; the fourth is the exact failed browser diagnostic log. Authenticated input and diagnostic bytes are preserved. All other whitespace checks pass. No repository configuration, application code, validation or scoring rule changed.",
+  "supplementaryCommand": [
+    "git",
+    "-c",
+    "core.whitespace=-blank-at-eof",
+    "diff",
+    "HEAD^",
+    "HEAD",
+    "--check"
+  ],
+  "supplementaryExitCode": 0,
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-286/validation/committed-whitespace-check.txt",
+    "sha256": "f63b39557fd9fdfe69bb6086188836cca821b309db81b17f5ca1485df19ffd16",
+    "bytes": 476
+  },
+  "packagingSequenceQualification": "A multi-command shell continued after the staged audit assertion and created local commit333d55f16 before its final receipt was saved. Nothing was pushed. This explicit correction completes the missing receipt and records the original four warnings before an additive packaging-evidence commit; future release commands stop on failure."
+}
