@@ -1,0 +1,3457 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: standalone-publication.spec.mjs >> checks standalone publication before deployment, including static scope and every graph bucket
+- Location: tests/site-quality/standalone-publication.spec.mjs:7:1
+
+# Error details
+
+```
+Error: browser runtime errors: {"actual":["Failed to load resource: net::ERR_CONNECTION_RESET"],"expected":[]}
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f15e2]:
+  - link "Skip to main content" [ref=f15e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f15e4]:
+    - link "Slugfester home" [ref=f15e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f15e6]: Slugfester
+    - navigation "Primary" [ref=f15e7]:
+      - link "Debates" [ref=f15e8] [cursor=pointer]:
+        - /url: /
+      - link "Search" [ref=f15e9] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=f15e10] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=f15e11] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=f15e12] [cursor=pointer]:
+        - /url: /insights/
+      - link "Backend" [ref=f15e13] [cursor=pointer]:
+        - /url: /backend/
+      - button "External" [ref=f15e15] [cursor=pointer]:
+        - text: External
+        - generic [ref=f15e16]: ▾
+  - main [ref=f15e17]:
+    - generic [ref=f15e18]:
+      - generic [ref=f15e19]:
+        - paragraph [ref=f15e20]: Published score averages
+        - heading "Rankings & Flags" [level=1] [ref=f15e21]
+        - paragraph [ref=f15e22]: Rank speakers by their published overall scores, with the context to compare topics, sample size, and opponents faced.
+      - complementary "Rankings summary" [ref=f15e23]:
+        - generic [ref=f15e24]: Qualified interlocutors
+        - strong [ref=f15e25]: "53"
+        - generic [ref=f15e26]: Filtered scorecards
+        - strong [ref=f15e27]: "272"
+    - region [ref=f15e28]:
+      - generic [ref=f15e30]:
+        - paragraph [ref=f15e31]: Head-to-head
+        - heading "Compare interlocutors" [level=2] [ref=f15e32]
+        - paragraph [ref=f15e33]: Comparison follows the current topic focus and uses all available appearances within it.
+      - generic [ref=f15e34]:
+        - generic [ref=f15e35]:
+          - generic [ref=f15e36]: First interlocutor
+          - combobox "First interlocutor" [ref=f15e37]:
+            - option "Choose an interlocutor"
+            - option "AC Grayling"
+            - option "Adam Lloyd Johnson" [selected]
+            - option "Al Sharpton"
+            - option "Alex Carter"
+            - option "Alex Malpass"
+            - option "Alex O'Connor"
+            - option "Alex Rosenberg"
+            - option "Alister McGrath"
+            - option "Alok Kanojia"
+            - option "Alvin Plantinga"
+            - option "Andrew Loke"
+            - option "Andrew Pyle"
+            - option "Anil Seth"
+            - option "Ann Widdecombe"
+            - option "Anthony Kenny"
+            - option "Antony Flew"
+            - option "Aron Ra"
+            - option "Austin Dacey"
+            - option "Ayaan Hirsi Ali"
+            - option "Bart Ehrman"
+            - option "Ben Fischer"
+            - option "Ben Shapiro"
+            - option "Ben Watkins"
+            - option "Bernardo Kastrup"
+            - option "Bertrand Russell"
+            - option "Blake Giunta"
+            - option "Braxton Hunter"
+            - option "Brian Cutter"
+            - option "Cameron Bertuzzi"
+            - option "Christopher Hitchens"
+            - option "Christopher Tomaszewski"
+            - option "Cliffe Knechtle"
+            - option "Craig Biddle"
+            - option "Craig Evans"
+            - option "Dan Barker"
+            - option "Dan Paterson"
+            - option "Daniel B. Wallace"
+            - option "Daniel Dennett"
+            - option "Daniel Linford"
+            - option "Dave Farina"
+            - option "David Baggett"
+            - option "David Enoch"
+            - option "David Silverman"
+            - option "David Wood"
+            - option "Deepak Chopra"
+            - option "Denis Lamoureux"
+            - option "Dennis Nørmark"
+            - option "Dennis Prager"
+            - option "Dennis R. MacDonald"
+            - option "Derek Lambert"
+            - option "Derek McAllister"
+            - option "Dinesh D'Souza"
+            - option "Don Loeb"
+            - option "Douglas Wilson"
+            - option "Dustin Crummett"
+            - option "Eben Alexander"
+            - option "Ed Feser"
+            - option "Eli Ayala"
+            - option "Elizabeth Oldfield"
+            - option "Eric Hernandez"
+            - option "Eric Sampson"
+            - option "Erik Wielenberg"
+            - option "Francis Collins"
+            - option "Frank Turek"
+            - option "Frederick Copleston"
+            - option "Fuz Rana"
+            - option "Gary Habermas"
+            - option "Glen Scrivener"
+            - option "Graham Oppy"
+            - option "Greg Koukl"
+            - option "Gregg Caruso"
+            - option "Gregory Pine"
+            - option "Guillaume Bignon"
+            - option "Hans Halvorson"
+            - option "Harold Kushner"
+            - option "Iain McGilchrist"
+            - option "Ian Hutchinson"
+            - option "James Anderson"
+            - option "James Fodor"
+            - option "James Marriott"
+            - option "James Tour"
+            - option "James White"
+            - option "Jay Dyer"
+            - option "Jeffery Jay Lowder"
+            - option "Jessica Frazier"
+            - option "Jimmy Akin"
+            - option "Joe Folley"
+            - option "Joel Settecase"
+            - option "John Dominic Crossan"
+            - option "John Ferrer"
+            - option "John Lennox"
+            - option "John Onaiyekan"
+            - option "John Shook"
+            - option "Jonathan Haidt"
+            - option "Jonathan McLatchie"
+            - option "Jonathan Pageau"
+            - option "Jonathan Sacks"
+            - option "Jordan Peterson"
+            - option "Joseph Schmid"
+            - option "Josh Rasmussen"
+            - option "Joshua Bowen"
+            - option "Julian Baggini"
+            - option "Justin Bass"
+            - option "Justin Brierley"
+            - option "Justin Clarke-Doane"
+            - option "Justin Schieber"
+            - option "Keith Fox"
+            - option "Keith Ward"
+            - option "Kenny Pearce"
+            - option "Kenny Rhodes"
+            - option "Klemens Kappel"
+            - option "Kyle Butt"
+            - option "Lance Bush"
+            - option "Lawrence Krauss"
+            - option "Lee Cronin"
+            - option "Lewis Howitt"
+            - option "Lukas Ruegger"
+            - option "Luuk Vandeweghe"
+            - option "Marvin Olasky"
+            - option "Massimo Pigliucci"
+            - option "Matt Dillahunty"
+            - option "Matt Lutz"
+            - option "Matt Slick"
+            - option "Matthew Adelstein"
+            - option "Max Baker-Hytch"
+            - option "Michael Egnor"
+            - option "Michael Huemer"
+            - option "Michael Jones"
+            - option "Michael Licona"
+            - option "Michael Ruse"
+            - option "Michael Shermer"
+            - option "Michael Tooley"
+            - option "Michel-Yves Bolloré"
+            - option "Mike Winger"
+            - option "Miles Donahue"
+            - option "Nathan Hawkins"
+            - option "Paul Copan"
+            - option "Paul Draper"
+            - option "Peter Atkins"
+            - option "Peter Gomes"
+            - option "Peter Hitchens"
+            - option "Peter J. Williams"
+            - option "Peter Millican"
+            - option "Peter Singer"
+            - option "Phil Halper"
+            - option "Philip Clayton"
+            - option "Philip Goff"
+            - option "Rabbi David Wolpe"
+            - option "Randal Rauser"
+            - option "Ray Comfort"
+            - option "Raymond Moody"
+            - option "Richard Carrier"
+            - option "Richard Dawkins"
+            - option "Richard Swinburne"
+            - option "Robert Price"
+            - option "Robert Sapolsky"
+            - option "Ross Douthat"
+            - option "Rowan Williams"
+            - option "S. Joshua Swamidass"
+            - option "Sabine Hossenfelder"
+            - option "Sam Harris"
+            - option "Samuel Nesan"
+            - option "Scott Clifton"
+            - option "Sean Carroll"
+            - option "Sean McDowell"
+            - option "Shabir Ally"
+            - option "Sharon Dirckx"
+            - option "Shelly Kagan"
+            - option "Shmuley Boteach"
+            - option "Simon Edwards"
+            - option "Slavoj Žižek"
+            - option "Stephen Boyce"
+            - option "Stephen Fry"
+            - option "Stephen Law"
+            - option "Stephen Meyer"
+            - option "Stephen Woodford"
+            - option "Steven Novella"
+            - option "Steven Pinker"
+            - option "Stuart Knechtle"
+            - option "Susan Blackmore"
+            - option "Sy Garte"
+            - option "Sye Ten Bruggencate"
+            - option "Tariq Ramadan"
+            - option "Than Christopoulos"
+            - option "Tom Holland"
+            - option "Tom Jump"
+            - option "Tony Blair"
+            - option "Trent Horn"
+            - option "Tyler Vela"
+            - option "Victor Stenger"
+            - option "William Albrecht"
+            - option "William Dembski"
+            - option "William Lane Craig"
+            - option "Zac Sechler"
+        - generic [ref=f15e39]:
+          - generic [ref=f15e40]: Second interlocutor
+          - combobox "Second interlocutor" [ref=f15e41]:
+            - option "Choose an interlocutor"
+            - option "AC Grayling"
+            - option "Adam Lloyd Johnson"
+            - option "Al Sharpton"
+            - option "Alex Carter"
+            - option "Alex Malpass"
+            - option "Alex O'Connor"
+            - option "Alex Rosenberg"
+            - option "Alister McGrath"
+            - option "Alok Kanojia"
+            - option "Alvin Plantinga"
+            - option "Andrew Loke"
+            - option "Andrew Pyle"
+            - option "Anil Seth"
+            - option "Ann Widdecombe"
+            - option "Anthony Kenny"
+            - option "Antony Flew"
+            - option "Aron Ra"
+            - option "Austin Dacey"
+            - option "Ayaan Hirsi Ali"
+            - option "Bart Ehrman"
+            - option "Ben Fischer"
+            - option "Ben Shapiro"
+            - option "Ben Watkins"
+            - option "Bernardo Kastrup"
+            - option "Bertrand Russell"
+            - option "Blake Giunta"
+            - option "Braxton Hunter"
+            - option "Brian Cutter"
+            - option "Cameron Bertuzzi"
+            - option "Christopher Hitchens"
+            - option "Christopher Tomaszewski"
+            - option "Cliffe Knechtle"
+            - option "Craig Biddle"
+            - option "Craig Evans"
+            - option "Dan Barker"
+            - option "Dan Paterson"
+            - option "Daniel B. Wallace"
+            - option "Daniel Dennett"
+            - option "Daniel Linford"
+            - option "Dave Farina"
+            - option "David Baggett"
+            - option "David Enoch"
+            - option "David Silverman"
+            - option "David Wood"
+            - option "Deepak Chopra"
+            - option "Denis Lamoureux"
+            - option "Dennis Nørmark"
+            - option "Dennis Prager"
+            - option "Dennis R. MacDonald"
+            - option "Derek Lambert"
+            - option "Derek McAllister"
+            - option "Dinesh D'Souza"
+            - option "Don Loeb"
+            - option "Douglas Wilson"
+            - option "Dustin Crummett"
+            - option "Eben Alexander"
+            - option "Ed Feser"
+            - option "Eli Ayala"
+            - option "Elizabeth Oldfield"
+            - option "Eric Hernandez"
+            - option "Eric Sampson"
+            - option "Erik Wielenberg" [selected]
+            - option "Francis Collins"
+            - option "Frank Turek"
+            - option "Frederick Copleston"
+            - option "Fuz Rana"
+            - option "Gary Habermas"
+            - option "Glen Scrivener"
+            - option "Graham Oppy"
+            - option "Greg Koukl"
+            - option "Gregg Caruso"
+            - option "Gregory Pine"
+            - option "Guillaume Bignon"
+            - option "Hans Halvorson"
+            - option "Harold Kushner"
+            - option "Iain McGilchrist"
+            - option "Ian Hutchinson"
+            - option "James Anderson"
+            - option "James Fodor"
+            - option "James Marriott"
+            - option "James Tour"
+            - option "James White"
+            - option "Jay Dyer"
+            - option "Jeffery Jay Lowder"
+            - option "Jessica Frazier"
+            - option "Jimmy Akin"
+            - option "Joe Folley"
+            - option "Joel Settecase"
+            - option "John Dominic Crossan"
+            - option "John Ferrer"
+            - option "John Lennox"
+            - option "John Onaiyekan"
+            - option "John Shook"
+            - option "Jonathan Haidt"
+            - option "Jonathan McLatchie"
+            - option "Jonathan Pageau"
+            - option "Jonathan Sacks"
+            - option "Jordan Peterson"
+            - option "Joseph Schmid"
+            - option "Josh Rasmussen"
+            - option "Joshua Bowen"
+            - option "Julian Baggini"
+            - option "Justin Bass"
+            - option "Justin Brierley"
+            - option "Justin Clarke-Doane"
+            - option "Justin Schieber"
+            - option "Keith Fox"
+            - option "Keith Ward"
+            - option "Kenny Pearce"
+            - option "Kenny Rhodes"
+            - option "Klemens Kappel"
+            - option "Kyle Butt"
+            - option "Lance Bush"
+            - option "Lawrence Krauss"
+            - option "Lee Cronin"
+            - option "Lewis Howitt"
+            - option "Lukas Ruegger"
+            - option "Luuk Vandeweghe"
+            - option "Marvin Olasky"
+            - option "Massimo Pigliucci"
+            - option "Matt Dillahunty"
+            - option "Matt Lutz"
+            - option "Matt Slick"
+            - option "Matthew Adelstein"
+            - option "Max Baker-Hytch"
+            - option "Michael Egnor"
+            - option "Michael Huemer"
+            - option "Michael Jones"
+            - option "Michael Licona"
+            - option "Michael Ruse"
+            - option "Michael Shermer"
+            - option "Michael Tooley"
+            - option "Michel-Yves Bolloré"
+            - option "Mike Winger"
+            - option "Miles Donahue"
+            - option "Nathan Hawkins"
+            - option "Paul Copan"
+            - option "Paul Draper"
+            - option "Peter Atkins"
+            - option "Peter Gomes"
+            - option "Peter Hitchens"
+            - option "Peter J. Williams"
+            - option "Peter Millican"
+            - option "Peter Singer"
+            - option "Phil Halper"
+            - option "Philip Clayton"
+            - option "Philip Goff"
+            - option "Rabbi David Wolpe"
+            - option "Randal Rauser"
+            - option "Ray Comfort"
+            - option "Raymond Moody"
+            - option "Richard Carrier"
+            - option "Richard Dawkins"
+            - option "Richard Swinburne"
+            - option "Robert Price"
+            - option "Robert Sapolsky"
+            - option "Ross Douthat"
+            - option "Rowan Williams"
+            - option "S. Joshua Swamidass"
+            - option "Sabine Hossenfelder"
+            - option "Sam Harris"
+            - option "Samuel Nesan"
+            - option "Scott Clifton"
+            - option "Sean Carroll"
+            - option "Sean McDowell"
+            - option "Shabir Ally"
+            - option "Sharon Dirckx"
+            - option "Shelly Kagan"
+            - option "Shmuley Boteach"
+            - option "Simon Edwards"
+            - option "Slavoj Žižek"
+            - option "Stephen Boyce"
+            - option "Stephen Fry"
+            - option "Stephen Law"
+            - option "Stephen Meyer"
+            - option "Stephen Woodford"
+            - option "Steven Novella"
+            - option "Steven Pinker"
+            - option "Stuart Knechtle"
+            - option "Susan Blackmore"
+            - option "Sy Garte"
+            - option "Sye Ten Bruggencate"
+            - option "Tariq Ramadan"
+            - option "Than Christopoulos"
+            - option "Tom Holland"
+            - option "Tom Jump"
+            - option "Tony Blair"
+            - option "Trent Horn"
+            - option "Tyler Vela"
+            - option "Victor Stenger"
+            - option "William Albrecht"
+            - option "William Dembski"
+            - option "William Lane Craig"
+            - option "Zac Sechler"
+        - generic [ref=f15e42]:
+          - button "Compare" [ref=f15e43]
+          - button "Clear" [ref=f15e44]
+      - generic [ref=f15e45]:
+        - article [ref=f15e46]:
+          - link "Adam Lloyd Johnson Adam Lloyd Johnson 2 scorecards" [ref=f15e47] [cursor=pointer]:
+            - /url: /interlocutor/adam-lloyd-johnson/
+            - img "Adam Lloyd Johnson" [ref=f15e48]
+            - generic [ref=f15e49]:
+              - strong [ref=f15e50]: Adam Lloyd Johnson
+              - generic [ref=f15e51]: 2 scorecards
+          - generic [ref=f15e52]:
+            - generic [ref=f15e53]:
+              - term [ref=f15e54]: Avg.
+              - definition [ref=f15e55]: "74.5"
+            - generic [ref=f15e56]:
+              - term [ref=f15e57]: Opponents' Avg.
+              - definition [ref=f15e58]: "79.5"
+            - generic [ref=f15e59]:
+              - term [ref=f15e60]: Fallacies
+              - definition [ref=f15e61]: 12.5 per 100
+            - generic [ref=f15e62]:
+              - term [ref=f15e63]: Biases
+              - definition [ref=f15e64]: 0.0 per 100
+          - figure "Overall scores by five-point range; both graphs use the same vertical scale." [ref=f15e65]:
+            - generic [ref=f15e66]:
+              - generic [ref=f15e67]: Scorecards
+              - list "Adam Lloyd Johnson overall score distribution from 50 to 100" [ref=f15e68]:
+                - 'listitem "50–54: 0 scorecards" [ref=f15e69]':
+                  - generic [ref=f15e71]: 50–54
+                - 'listitem "55–59: 0 scorecards" [ref=f15e72]':
+                  - generic [ref=f15e74]: 55–59
+                - 'listitem "60–64: 0 scorecards" [ref=f15e75]':
+                  - generic [ref=f15e77]: 60–64
+                - 'listitem "65–69: 0 scorecards" [ref=f15e78]':
+                  - generic [ref=f15e80]: 65–69
+                - 'listitem "70–74: 1 scorecard" [ref=f15e81]':
+                  - strong [ref=f15e82]: "1"
+                  - generic [ref=f15e85]: 70–74
+                - 'listitem "75–79: 1 scorecard" [ref=f15e86]':
+                  - strong [ref=f15e87]: "1"
+                  - generic [ref=f15e90]: 75–79
+                - 'listitem "80–84: 0 scorecards" [ref=f15e91]':
+                  - generic [ref=f15e93]: 80–84
+                - 'listitem "85–89: 0 scorecards" [ref=f15e94]':
+                  - generic [ref=f15e96]: 85–89
+                - 'listitem "90–94: 0 scorecards" [ref=f15e97]':
+                  - generic [ref=f15e99]: 90–94
+                - 'listitem "95–100: 0 scorecards" [ref=f15e100]':
+                  - generic [ref=f15e102]: 95–100
+        - article [ref=f15e104]:
+          - link "Erik Wielenberg Erik Wielenberg 2 scorecards" [ref=f15e105] [cursor=pointer]:
+            - /url: /interlocutor/erik-wielenberg/
+            - img "Erik Wielenberg" [ref=f15e106]
+            - generic [ref=f15e107]:
+              - strong [ref=f15e108]: Erik Wielenberg
+              - generic [ref=f15e109]: 2 scorecards
+          - generic [ref=f15e110]:
+            - generic [ref=f15e111]:
+              - term [ref=f15e112]: Avg.
+              - definition [ref=f15e113]: "83"
+            - generic [ref=f15e114]:
+              - term [ref=f15e115]: Opponents' Avg.
+              - definition [ref=f15e116]: "75.5"
+            - generic [ref=f15e117]:
+              - term [ref=f15e118]: Fallacies
+              - definition [ref=f15e119]: 0.0 per 100
+            - generic [ref=f15e120]:
+              - term [ref=f15e121]: Biases
+              - definition [ref=f15e122]: 0.0 per 100
+          - figure "Overall scores by five-point range; both graphs use the same vertical scale." [ref=f15e123]:
+            - generic [ref=f15e124]:
+              - generic [ref=f15e125]: Scorecards
+              - list "Erik Wielenberg overall score distribution from 50 to 100" [ref=f15e126]:
+                - 'listitem "50–54: 0 scorecards" [ref=f15e127]':
+                  - generic [ref=f15e129]: 50–54
+                - 'listitem "55–59: 0 scorecards" [ref=f15e130]':
+                  - generic [ref=f15e132]: 55–59
+                - 'listitem "60–64: 0 scorecards" [ref=f15e133]':
+                  - generic [ref=f15e135]: 60–64
+                - 'listitem "65–69: 0 scorecards" [ref=f15e136]':
+                  - generic [ref=f15e138]: 65–69
+                - 'listitem "70–74: 0 scorecards" [ref=f15e139]':
+                  - generic [ref=f15e141]: 70–74
+                - 'listitem "75–79: 0 scorecards" [ref=f15e142]':
+                  - generic [ref=f15e144]: 75–79
+                - 'listitem "80–84: 2 scorecards" [ref=f15e145]':
+                  - strong [ref=f15e146]: "2"
+                  - generic [ref=f15e149]: 80–84
+                - 'listitem "85–89: 0 scorecards" [ref=f15e150]':
+                  - generic [ref=f15e152]: 85–89
+                - 'listitem "90–94: 0 scorecards" [ref=f15e153]':
+                  - generic [ref=f15e155]: 90–94
+                - 'listitem "95–100: 0 scorecards" [ref=f15e156]':
+                  - generic [ref=f15e158]: 95–100
+    - region [ref=f15e160]:
+      - generic [ref=f15e161]:
+        - generic [ref=f15e162]:
+          - paragraph [ref=f15e163]: Overall score leaderboard
+          - heading "Ranked by average score" [level=2] [ref=f15e164]
+        - generic [ref=f15e165]:
+          - paragraph [ref=f15e166]: Showing 53 interlocutors from 272 matching scorecards.
+          - paragraph [ref=f15e167]: Group debate scores are not factored into interlocutors' 1-on-1 debate scorecard averages.
+      - region "Ranking controls" [ref=f15e168]:
+        - generic [ref=f15e169]:
+          - generic [ref=f15e170]:
+            - generic [ref=f15e171]: Topic focus
+            - combobox "Topic focus" [ref=f15e172]:
+              - option "All topics" [selected]
+              - option "Cosmological & Contingency Arguments"
+              - option "Science and design"
+              - option "Evolution and origins of life"
+              - option "Bible and historical Jesus"
+              - option "Resurrection and miracles"
+              - option "Christian belief and doctrine"
+              - option "Meaning and purpose"
+              - option "Morality and ethics"
+              - option "Moral realism and objectivity"
+              - option "Evil, suffering, and hiddenness"
+              - option "Mind and consciousness"
+              - option "Free will and determinism"
+              - option "Logic, reason, and presuppositions"
+              - option "Religion, society, and public reason"
+              - option "God, theism, and atheism"
+          - generic [ref=f15e173]:
+            - generic [ref=f15e174]: Minimum debates
+            - combobox "Minimum debates" [ref=f15e175]:
+              - option "3+ appearances" [selected]
+              - option "5+ appearances"
+              - option "10+ appearances"
+          - generic [ref=f15e176]:
+            - generic [ref=f15e177]: Sort by
+            - combobox "Sort by" [ref=f15e178]:
+              - option "Highest average" [selected]
+              - option "Highest Opponents' Avg."
+              - option "Most appearances"
+              - option "Name"
+          - button "Apply" [ref=f15e180]
+      - paragraph [ref=f15e181]: Mini charts show overall scores in five-point ranges from 50 to 100, for interlocutors with 3+ matching 1-on-1 debates. Bar height shows the share of that speaker’s debates (0–100%); numbers above the bars are debate counts.
+      - list [ref=f15e182]:
+        - listitem [ref=f15e183]:
+          - article [ref=f15e184]:
+            - link "Open Joseph Schmid's debate profile" [ref=f15e185] [cursor=pointer]:
+              - /url: /interlocutor/joseph-schmid/
+              - generic "Rank 1" [ref=f15e186]: "1"
+              - img "Joseph Schmid" [ref=f15e187]
+              - generic [ref=f15e188]:
+                - strong [ref=f15e189]: Joseph Schmid
+                - generic [ref=f15e190]:
+                  - generic [ref=f15e191]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e192]: Developing sample
+                - generic [ref=f15e194]: "Most common topic: God, theism, and atheism"
+                - generic "Joseph Schmid's reasoning-tag rates" [ref=f15e195]:
+                  - generic [ref=f15e196]:
+                    - generic [ref=f15e197]: Fallacies
+                    - strong [ref=f15e200]: 1.3 per 100
+                  - generic [ref=f15e201]:
+                    - generic [ref=f15e202]: Biases
+                    - strong [ref=f15e204]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e205]:
+                - generic [ref=f15e206]:
+                  - text: Overall scores
+                  - generic [ref=f15e207]: 0–100% of debates
+                - generic [ref=f15e208]: "Joseph Schmid’s overall scores across 6 matching 1-on-1 debates. 85–89: 5 debates; 90–94: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e209]:
+                  - listitem [ref=f15e210]
+                  - listitem [ref=f15e211]
+                  - listitem [ref=f15e212]
+                  - listitem [ref=f15e213]
+                  - listitem [ref=f15e214]
+                  - listitem [ref=f15e215]
+                  - listitem [ref=f15e216]
+                  - listitem [ref=f15e217]:
+                    - strong [ref=f15e219]: "5"
+                  - listitem [ref=f15e220]:
+                    - strong [ref=f15e222]: "1"
+                  - listitem [ref=f15e223]
+                - generic [ref=f15e224]:
+                  - generic [ref=f15e225]: "50"
+                  - generic [ref=f15e226]: "75"
+                  - generic [ref=f15e227]: "100"
+              - generic [ref=f15e228]:
+                - generic [ref=f15e229]:
+                  - generic [ref=f15e230]: Joseph's avg.
+                  - strong [ref=f15e231]: "87.3"
+                - generic [ref=f15e232]:
+                  - generic [ref=f15e233]: Opponents' Avg.
+                  - strong [ref=f15e234]: "80.5"
+        - listitem [ref=f15e235]:
+          - article [ref=f15e236]:
+            - link "Open Alex Malpass's debate profile" [ref=f15e237] [cursor=pointer]:
+              - /url: /interlocutor/alex-malpass/
+              - generic "Rank 2" [ref=f15e238]: "2"
+              - img "Alex Malpass" [ref=f15e239]
+              - generic [ref=f15e240]:
+                - strong [ref=f15e241]: Alex Malpass
+                - generic [ref=f15e242]:
+                  - generic [ref=f15e243]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e244]: Developing sample
+                - generic [ref=f15e246]: "Most common topic: Cosmological & Contingency Arguments"
+                - generic "Alex Malpass's reasoning-tag rates" [ref=f15e247]:
+                  - generic [ref=f15e248]:
+                    - generic [ref=f15e249]: Fallacies
+                    - strong [ref=f15e251]: 0.0 per 100
+                  - generic [ref=f15e252]:
+                    - generic [ref=f15e253]: Biases
+                    - strong [ref=f15e255]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e256]:
+                - generic [ref=f15e257]:
+                  - text: Overall scores
+                  - generic [ref=f15e258]: 0–100% of debates
+                - generic [ref=f15e259]: "Alex Malpass’s overall scores across 6 matching 1-on-1 debates. 80–84: 2 debates; 85–89: 1 debate; 90–94: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e260]:
+                  - listitem [ref=f15e261]
+                  - listitem [ref=f15e262]
+                  - listitem [ref=f15e263]
+                  - listitem [ref=f15e264]
+                  - listitem [ref=f15e265]
+                  - listitem [ref=f15e266]
+                  - listitem [ref=f15e267]:
+                    - strong [ref=f15e269]: "2"
+                  - listitem [ref=f15e270]:
+                    - strong [ref=f15e272]: "1"
+                  - listitem [ref=f15e273]:
+                    - strong [ref=f15e275]: "3"
+                  - listitem [ref=f15e276]
+                - generic [ref=f15e277]:
+                  - generic [ref=f15e278]: "50"
+                  - generic [ref=f15e279]: "75"
+                  - generic [ref=f15e280]: "100"
+              - generic [ref=f15e281]:
+                - generic [ref=f15e282]:
+                  - generic [ref=f15e283]: Alex's avg.
+                  - strong [ref=f15e284]: "87.2"
+                - generic [ref=f15e285]:
+                  - generic [ref=f15e286]: Opponents' Avg.
+                  - strong [ref=f15e287]: "79.2"
+        - listitem [ref=f15e288]:
+          - article [ref=f15e289]:
+            - link "Open Scott Clifton's debate profile" [ref=f15e290] [cursor=pointer]:
+              - /url: /interlocutor/scott-clifton/
+              - generic "Rank 3" [ref=f15e291]: "3"
+              - img "Scott Clifton" [ref=f15e292]
+              - generic [ref=f15e293]:
+                - strong [ref=f15e294]: Scott Clifton
+                - generic [ref=f15e295]:
+                  - generic [ref=f15e296]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e297]: Developing sample
+                - generic [ref=f15e299]: "Most common topic: Cosmological & Contingency Arguments"
+                - generic "Scott Clifton's reasoning-tag rates" [ref=f15e300]:
+                  - generic [ref=f15e301]:
+                    - generic [ref=f15e302]: Fallacies
+                    - strong [ref=f15e305]: 4.4 per 100
+                  - generic [ref=f15e306]:
+                    - generic [ref=f15e307]: Biases
+                    - strong [ref=f15e310]: 2.2 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e311]:
+                - generic [ref=f15e312]:
+                  - text: Overall scores
+                  - generic [ref=f15e313]: 0–100% of debates
+                - generic [ref=f15e314]: "Scott Clifton’s overall scores across 4 matching 1-on-1 debates. 80–84: 1 debate; 85–89: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e315]:
+                  - listitem [ref=f15e316]
+                  - listitem [ref=f15e317]
+                  - listitem [ref=f15e318]
+                  - listitem [ref=f15e319]
+                  - listitem [ref=f15e320]
+                  - listitem [ref=f15e321]
+                  - listitem [ref=f15e322]:
+                    - strong [ref=f15e324]: "1"
+                  - listitem [ref=f15e325]:
+                    - strong [ref=f15e327]: "3"
+                  - listitem [ref=f15e328]
+                  - listitem [ref=f15e329]
+                - generic [ref=f15e330]:
+                  - generic [ref=f15e331]: "50"
+                  - generic [ref=f15e332]: "75"
+                  - generic [ref=f15e333]: "100"
+              - generic [ref=f15e334]:
+                - generic [ref=f15e335]:
+                  - generic [ref=f15e336]: Scott's avg.
+                  - strong [ref=f15e337]: "86.8"
+                - generic [ref=f15e338]:
+                  - generic [ref=f15e339]: Opponents' Avg.
+                  - strong [ref=f15e340]: "75.8"
+        - listitem [ref=f15e341]:
+          - article [ref=f15e342]:
+            - link "Open Joe Folley's debate profile" [ref=f15e343] [cursor=pointer]:
+              - /url: /interlocutor/joe-folley/
+              - generic "Rank 4" [ref=f15e344]: "4"
+              - img "Joe Folley" [ref=f15e345]
+              - generic [ref=f15e346]:
+                - strong [ref=f15e347]: Joe Folley
+                - generic [ref=f15e348]:
+                  - generic [ref=f15e349]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e350]: Developing sample
+                - generic [ref=f15e352]: "Most common topic: Free will and determinism"
+                - generic "Joe Folley's reasoning-tag rates" [ref=f15e353]:
+                  - generic [ref=f15e354]:
+                    - generic [ref=f15e355]: Fallacies
+                    - strong [ref=f15e358]: 2.8 per 100
+                  - generic [ref=f15e359]:
+                    - generic [ref=f15e360]: Biases
+                    - strong [ref=f15e362]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e363]:
+                - generic [ref=f15e364]:
+                  - text: Overall scores
+                  - generic [ref=f15e365]: 0–100% of debates
+                - generic [ref=f15e366]: "Joe Folley’s overall scores across 6 matching 1-on-1 debates. 80–84: 1 debate; 85–89: 5 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e367]:
+                  - listitem [ref=f15e368]
+                  - listitem [ref=f15e369]
+                  - listitem [ref=f15e370]
+                  - listitem [ref=f15e371]
+                  - listitem [ref=f15e372]
+                  - listitem [ref=f15e373]
+                  - listitem [ref=f15e374]:
+                    - strong [ref=f15e376]: "1"
+                  - listitem [ref=f15e377]:
+                    - strong [ref=f15e379]: "5"
+                  - listitem [ref=f15e380]
+                  - listitem [ref=f15e381]
+                - generic [ref=f15e382]:
+                  - generic [ref=f15e383]: "50"
+                  - generic [ref=f15e384]: "75"
+                  - generic [ref=f15e385]: "100"
+              - generic [ref=f15e386]:
+                - generic [ref=f15e387]:
+                  - generic [ref=f15e388]: Joe's avg.
+                  - strong [ref=f15e389]: "86.2"
+                - generic [ref=f15e390]:
+                  - generic [ref=f15e391]: Opponents' Avg.
+                  - strong [ref=f15e392]: "77.8"
+        - listitem [ref=f15e393]:
+          - article [ref=f15e394]:
+            - link "Open Sean Carroll's debate profile" [ref=f15e395] [cursor=pointer]:
+              - /url: /interlocutor/sean-carroll/
+              - generic "Rank 5" [ref=f15e396]: "5"
+              - img "Sean Carroll" [ref=f15e397]
+              - generic [ref=f15e398]:
+                - strong [ref=f15e399]: Sean Carroll
+                - generic [ref=f15e400]:
+                  - generic [ref=f15e401]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=f15e402]: Limited sample
+                - generic [ref=f15e404]: "Most common topic: Science and design"
+                - generic "Sean Carroll's reasoning-tag rates" [ref=f15e405]:
+                  - generic [ref=f15e406]:
+                    - generic [ref=f15e407]: Fallacies
+                    - strong [ref=f15e409]: 0.0 per 100
+                  - generic [ref=f15e410]:
+                    - generic [ref=f15e411]: Biases
+                    - strong [ref=f15e413]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e414]:
+                - generic [ref=f15e415]:
+                  - text: Overall scores
+                  - generic [ref=f15e416]: 0–100% of debates
+                - generic [ref=f15e417]: "Sean Carroll’s overall scores across 3 matching 1-on-1 debates. 80–84: 2 debates; 90–94: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e418]:
+                  - listitem [ref=f15e419]
+                  - listitem [ref=f15e420]
+                  - listitem [ref=f15e421]
+                  - listitem [ref=f15e422]
+                  - listitem [ref=f15e423]
+                  - listitem [ref=f15e424]
+                  - listitem [ref=f15e425]:
+                    - strong [ref=f15e427]: "2"
+                  - listitem [ref=f15e428]
+                  - listitem [ref=f15e429]:
+                    - strong [ref=f15e431]: "1"
+                  - listitem [ref=f15e432]
+                - generic [ref=f15e433]:
+                  - generic [ref=f15e434]: "50"
+                  - generic [ref=f15e435]: "75"
+                  - generic [ref=f15e436]: "100"
+              - generic [ref=f15e437]:
+                - generic [ref=f15e438]:
+                  - generic [ref=f15e439]: Sean's avg.
+                  - strong [ref=f15e440]: "86"
+                - generic [ref=f15e441]:
+                  - generic [ref=f15e442]: Opponents' Avg.
+                  - strong [ref=f15e443]: "84.7"
+        - listitem [ref=f15e444]:
+          - article [ref=f15e445]:
+            - link "Open Matt Dillahunty's debate profile" [ref=f15e446] [cursor=pointer]:
+              - /url: /interlocutor/matt-dillahunty/
+              - generic "Rank 6" [ref=f15e447]: "6"
+              - img "Matt Dillahunty" [ref=f15e448]
+              - generic [ref=f15e449]:
+                - strong [ref=f15e450]: Matt Dillahunty
+                - generic [ref=f15e451]:
+                  - generic [ref=f15e452]: 31 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e453]: Established sample
+                - generic [ref=f15e455]: "Most common topic: Logic, reason, and presuppositions"
+                - generic "Matt Dillahunty's reasoning-tag rates" [ref=f15e456]:
+                  - generic [ref=f15e457]:
+                    - generic [ref=f15e458]: Fallacies
+                    - strong [ref=f15e461]: 2.8 per 100
+                  - generic [ref=f15e462]:
+                    - generic [ref=f15e463]: Biases
+                    - strong [ref=f15e466]: 0.6 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e467]:
+                - generic [ref=f15e468]:
+                  - text: Overall scores
+                  - generic [ref=f15e469]: 0–100% of debates
+                - generic [ref=f15e470]: "Matt Dillahunty’s overall scores across 31 matching 1-on-1 debates. 80–84: 13 debates; 85–89: 16 debates; 90–94: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e471]:
+                  - listitem [ref=f15e472]
+                  - listitem [ref=f15e473]
+                  - listitem [ref=f15e474]
+                  - listitem [ref=f15e475]
+                  - listitem [ref=f15e476]
+                  - listitem [ref=f15e477]
+                  - listitem [ref=f15e478]:
+                    - strong [ref=f15e480]: "13"
+                  - listitem [ref=f15e481]:
+                    - strong [ref=f15e483]: "16"
+                  - listitem [ref=f15e484]:
+                    - strong [ref=f15e486]: "2"
+                  - listitem [ref=f15e487]
+                - generic [ref=f15e488]:
+                  - generic [ref=f15e489]: "50"
+                  - generic [ref=f15e490]: "75"
+                  - generic [ref=f15e491]: "100"
+              - generic [ref=f15e492]:
+                - generic [ref=f15e493]:
+                  - generic [ref=f15e494]: Matt's avg.
+                  - strong [ref=f15e495]: "85.7"
+                - generic [ref=f15e496]:
+                  - generic [ref=f15e497]: Opponents' Avg.
+                  - strong [ref=f15e498]: "74.8"
+        - listitem [ref=f15e499]:
+          - article [ref=f15e500]:
+            - link "Open Alex O'Connor's debate profile" [ref=f15e501] [cursor=pointer]:
+              - /url: /interlocutor/alex-o-connor/
+              - generic "Rank 7" [ref=f15e502]: "7"
+              - img "Alex O'Connor" [ref=f15e503]
+              - generic [ref=f15e504]:
+                - strong [ref=f15e505]: Alex O'Connor
+                - generic [ref=f15e506]:
+                  - generic [ref=f15e507]: 28 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e508]: Established sample
+                - generic [ref=f15e510]: "Most common topic: God, theism, and atheism"
+                - generic "Alex O'Connor's reasoning-tag rates" [ref=f15e511]:
+                  - generic [ref=f15e512]:
+                    - generic [ref=f15e513]: Fallacies
+                    - strong [ref=f15e516]: 2.0 per 100
+                  - generic [ref=f15e517]:
+                    - generic [ref=f15e518]: Biases
+                    - strong [ref=f15e521]: 1.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e522]:
+                - generic [ref=f15e523]:
+                  - text: Overall scores
+                  - generic [ref=f15e524]: 0–100% of debates
+                - generic [ref=f15e525]: "Alex O'Connor’s overall scores across 28 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 11 debates; 85–89: 14 debates; 90–94: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e526]:
+                  - listitem [ref=f15e527]
+                  - listitem [ref=f15e528]
+                  - listitem [ref=f15e529]
+                  - listitem [ref=f15e530]
+                  - listitem [ref=f15e531]
+                  - listitem [ref=f15e532]:
+                    - strong [ref=f15e534]: "1"
+                  - listitem [ref=f15e535]:
+                    - strong [ref=f15e537]: "11"
+                  - listitem [ref=f15e538]:
+                    - strong [ref=f15e540]: "14"
+                  - listitem [ref=f15e541]:
+                    - strong [ref=f15e543]: "2"
+                  - listitem [ref=f15e544]
+                - generic [ref=f15e545]:
+                  - generic [ref=f15e546]: "50"
+                  - generic [ref=f15e547]: "75"
+                  - generic [ref=f15e548]: "100"
+              - generic [ref=f15e549]:
+                - generic [ref=f15e550]:
+                  - generic [ref=f15e551]: Alex's avg.
+                  - strong [ref=f15e552]: "85.5"
+                - generic [ref=f15e553]:
+                  - generic [ref=f15e554]: Opponents' Avg.
+                  - strong [ref=f15e555]: "77.6"
+        - listitem [ref=f15e556]:
+          - article [ref=f15e557]:
+            - link "Open Bart Ehrman's debate profile" [ref=f15e558] [cursor=pointer]:
+              - /url: /interlocutor/bart-ehrman/
+              - generic "Rank 8" [ref=f15e559]: "8"
+              - img "Bart Ehrman" [ref=f15e560]
+              - generic [ref=f15e561]:
+                - strong [ref=f15e562]: Bart Ehrman
+                - generic [ref=f15e563]:
+                  - generic [ref=f15e564]: 12 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e565]: Established sample
+                - generic [ref=f15e567]: "Most common topic: Bible and historical Jesus"
+                - generic "Bart Ehrman's reasoning-tag rates" [ref=f15e568]:
+                  - generic [ref=f15e569]:
+                    - generic [ref=f15e570]: Fallacies
+                    - strong [ref=f15e573]: 8.2 per 100
+                  - generic [ref=f15e574]:
+                    - generic [ref=f15e575]: Biases
+                    - strong [ref=f15e578]: 2.5 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e579]:
+                - generic [ref=f15e580]:
+                  - text: Overall scores
+                  - generic [ref=f15e581]: 0–100% of debates
+                - generic [ref=f15e582]: "Bart Ehrman’s overall scores across 12 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 2 debates; 85–89: 9 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e583]:
+                  - listitem [ref=f15e584]
+                  - listitem [ref=f15e585]
+                  - listitem [ref=f15e586]
+                  - listitem [ref=f15e587]
+                  - listitem [ref=f15e588]
+                  - listitem [ref=f15e589]:
+                    - strong [ref=f15e591]: "1"
+                  - listitem [ref=f15e592]:
+                    - strong [ref=f15e594]: "2"
+                  - listitem [ref=f15e595]:
+                    - strong [ref=f15e597]: "9"
+                  - listitem [ref=f15e598]
+                  - listitem [ref=f15e599]
+                - generic [ref=f15e600]:
+                  - generic [ref=f15e601]: "50"
+                  - generic [ref=f15e602]: "75"
+                  - generic [ref=f15e603]: "100"
+              - generic [ref=f15e604]:
+                - generic [ref=f15e605]:
+                  - generic [ref=f15e606]: Bart's avg.
+                  - strong [ref=f15e607]: "85.4"
+                - generic [ref=f15e608]:
+                  - generic [ref=f15e609]: Opponents' Avg.
+                  - strong [ref=f15e610]: "81.8"
+        - listitem [ref=f15e611]:
+          - article [ref=f15e612]:
+            - link "Open Susan Blackmore's debate profile" [ref=f15e613] [cursor=pointer]:
+              - /url: /interlocutor/susan-blackmore/
+              - generic "Rank 9" [ref=f15e614]: "9"
+              - img "Susan Blackmore" [ref=f15e615]
+              - generic [ref=f15e616]:
+                - strong [ref=f15e617]: Susan Blackmore
+                - generic [ref=f15e618]:
+                  - generic [ref=f15e619]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=f15e620]: Limited sample
+                - generic [ref=f15e622]: "Most common topic: Mind and consciousness"
+                - generic "Susan Blackmore's reasoning-tag rates" [ref=f15e623]:
+                  - generic [ref=f15e624]:
+                    - generic [ref=f15e625]: Fallacies
+                    - strong [ref=f15e627]: 0.0 per 100
+                  - generic [ref=f15e628]:
+                    - generic [ref=f15e629]: Biases
+                    - strong [ref=f15e631]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e632]:
+                - generic [ref=f15e633]:
+                  - text: Overall scores
+                  - generic [ref=f15e634]: 0–100% of debates
+                - generic [ref=f15e635]: "Susan Blackmore’s overall scores across 3 matching 1-on-1 debates. 85–89: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e636]:
+                  - listitem [ref=f15e637]
+                  - listitem [ref=f15e638]
+                  - listitem [ref=f15e639]
+                  - listitem [ref=f15e640]
+                  - listitem [ref=f15e641]
+                  - listitem [ref=f15e642]
+                  - listitem [ref=f15e643]
+                  - listitem [ref=f15e644]:
+                    - strong [ref=f15e646]: "3"
+                  - listitem [ref=f15e647]
+                  - listitem [ref=f15e648]
+                - generic [ref=f15e649]:
+                  - generic [ref=f15e650]: "50"
+                  - generic [ref=f15e651]: "75"
+                  - generic [ref=f15e652]: "100"
+              - generic [ref=f15e653]:
+                - generic [ref=f15e654]:
+                  - generic [ref=f15e655]: Susan's avg.
+                  - strong [ref=f15e656]: "85.3"
+                - generic [ref=f15e657]:
+                  - generic [ref=f15e658]: Opponents' Avg.
+                  - strong [ref=f15e659]: "77.3"
+        - listitem [ref=f15e660]:
+          - article [ref=f15e661]:
+            - link "Open Lance Bush's debate profile" [ref=f15e662] [cursor=pointer]:
+              - /url: /interlocutor/lance-bush/
+              - generic "Rank 10" [ref=f15e663]: "10"
+              - img "Lance Bush" [ref=f15e664]
+              - generic [ref=f15e665]:
+                - strong [ref=f15e666]: Lance Bush
+                - generic [ref=f15e667]:
+                  - generic [ref=f15e668]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e669]: Developing sample
+                - generic [ref=f15e671]: "Most common topic: Moral realism and objectivity"
+                - generic "Lance Bush's reasoning-tag rates" [ref=f15e672]:
+                  - generic [ref=f15e673]:
+                    - generic [ref=f15e674]: Fallacies
+                    - strong [ref=f15e676]: 0.0 per 100
+                  - generic [ref=f15e677]:
+                    - generic [ref=f15e678]: Biases
+                    - strong [ref=f15e681]: 1.5 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e682]:
+                - generic [ref=f15e683]:
+                  - text: Overall scores
+                  - generic [ref=f15e684]: 0–100% of debates
+                - generic [ref=f15e685]: "Lance Bush’s overall scores across 5 matching 1-on-1 debates. 80–84: 3 debates; 85–89: 1 debate; 90–94: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e686]:
+                  - listitem [ref=f15e687]
+                  - listitem [ref=f15e688]
+                  - listitem [ref=f15e689]
+                  - listitem [ref=f15e690]
+                  - listitem [ref=f15e691]
+                  - listitem [ref=f15e692]
+                  - listitem [ref=f15e693]:
+                    - strong [ref=f15e695]: "3"
+                  - listitem [ref=f15e696]:
+                    - strong [ref=f15e698]: "1"
+                  - listitem [ref=f15e699]:
+                    - strong [ref=f15e701]: "1"
+                  - listitem [ref=f15e702]
+                - generic [ref=f15e703]:
+                  - generic [ref=f15e704]: "50"
+                  - generic [ref=f15e705]: "75"
+                  - generic [ref=f15e706]: "100"
+              - generic [ref=f15e707]:
+                - generic [ref=f15e708]:
+                  - generic [ref=f15e709]: Lance's avg.
+                  - strong [ref=f15e710]: "84.8"
+                - generic [ref=f15e711]:
+                  - generic [ref=f15e712]: Opponents' Avg.
+                  - strong [ref=f15e713]: "81.4"
+        - listitem [ref=f15e714]:
+          - article [ref=f15e715]:
+            - link "Open Graham Oppy's debate profile" [ref=f15e716] [cursor=pointer]:
+              - /url: /interlocutor/graham-oppy/
+              - generic "Rank 11" [ref=f15e717]: "11"
+              - img "Graham Oppy" [ref=f15e718]
+              - generic [ref=f15e719]:
+                - strong [ref=f15e720]: Graham Oppy
+                - generic [ref=f15e721]:
+                  - generic [ref=f15e722]: 12 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e723]: Established sample
+                - generic [ref=f15e725]: "Most common topic: God, theism, and atheism"
+                - generic "Graham Oppy's reasoning-tag rates" [ref=f15e726]:
+                  - generic [ref=f15e727]:
+                    - generic [ref=f15e728]: Fallacies
+                    - strong [ref=f15e731]: 3.9 per 100
+                  - generic [ref=f15e732]:
+                    - generic [ref=f15e733]: Biases
+                    - strong [ref=f15e735]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e736]:
+                - generic [ref=f15e737]:
+                  - text: Overall scores
+                  - generic [ref=f15e738]: 0–100% of debates
+                - generic [ref=f15e739]: "Graham Oppy’s overall scores across 12 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 5 debates; 85–89: 6 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e740]:
+                  - listitem [ref=f15e741]
+                  - listitem [ref=f15e742]
+                  - listitem [ref=f15e743]
+                  - listitem [ref=f15e744]
+                  - listitem [ref=f15e745]
+                  - listitem [ref=f15e746]:
+                    - strong [ref=f15e748]: "1"
+                  - listitem [ref=f15e749]:
+                    - strong [ref=f15e751]: "5"
+                  - listitem [ref=f15e752]:
+                    - strong [ref=f15e754]: "6"
+                  - listitem [ref=f15e755]
+                  - listitem [ref=f15e756]
+                - generic [ref=f15e757]:
+                  - generic [ref=f15e758]: "50"
+                  - generic [ref=f15e759]: "75"
+                  - generic [ref=f15e760]: "100"
+              - generic [ref=f15e761]:
+                - generic [ref=f15e762]:
+                  - generic [ref=f15e763]: Graham's avg.
+                  - strong [ref=f15e764]: "84.1"
+                - generic [ref=f15e765]:
+                  - generic [ref=f15e766]: Opponents' Avg.
+                  - strong [ref=f15e767]: "80.4"
+        - listitem [ref=f15e768]:
+          - article [ref=f15e769]:
+            - link "Open Stephen Law's debate profile" [ref=f15e770] [cursor=pointer]:
+              - /url: /interlocutor/stephen-law/
+              - generic "Rank 12" [ref=f15e771]: "12"
+              - img "Stephen Law" [ref=f15e772]
+              - generic [ref=f15e773]:
+                - strong [ref=f15e774]: Stephen Law
+                - generic [ref=f15e775]:
+                  - generic [ref=f15e776]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e777]: Developing sample
+                - generic [ref=f15e779]: "Most common topic: Evil, suffering, and hiddenness"
+                - generic "Stephen Law's reasoning-tag rates" [ref=f15e780]:
+                  - generic [ref=f15e781]:
+                    - generic [ref=f15e782]: Fallacies
+                    - strong [ref=f15e785]: 2.3 per 100
+                  - generic [ref=f15e786]:
+                    - generic [ref=f15e787]: Biases
+                    - strong [ref=f15e790]: 2.3 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e791]:
+                - generic [ref=f15e792]:
+                  - text: Overall scores
+                  - generic [ref=f15e793]: 0–100% of debates
+                - generic [ref=f15e794]: "Stephen Law’s overall scores across 5 matching 1-on-1 debates. 80–84: 3 debates; 85–89: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e795]:
+                  - listitem [ref=f15e796]
+                  - listitem [ref=f15e797]
+                  - listitem [ref=f15e798]
+                  - listitem [ref=f15e799]
+                  - listitem [ref=f15e800]
+                  - listitem [ref=f15e801]
+                  - listitem [ref=f15e802]:
+                    - strong [ref=f15e804]: "3"
+                  - listitem [ref=f15e805]:
+                    - strong [ref=f15e807]: "2"
+                  - listitem [ref=f15e808]
+                  - listitem [ref=f15e809]
+                - generic [ref=f15e810]:
+                  - generic [ref=f15e811]: "50"
+                  - generic [ref=f15e812]: "75"
+                  - generic [ref=f15e813]: "100"
+              - generic [ref=f15e814]:
+                - generic [ref=f15e815]:
+                  - generic [ref=f15e816]: Stephen's avg.
+                  - strong [ref=f15e817]: "83.4"
+                - generic [ref=f15e818]:
+                  - generic [ref=f15e819]: Opponents' Avg.
+                  - strong [ref=f15e820]: "72.8"
+        - listitem [ref=f15e821]:
+          - article [ref=f15e822]:
+            - link "Open Daniel Dennett's debate profile" [ref=f15e823] [cursor=pointer]:
+              - /url: /interlocutor/daniel-dennett/
+              - generic "Rank 13" [ref=f15e824]: "13"
+              - img "Daniel Dennett" [ref=f15e825]
+              - generic [ref=f15e826]:
+                - strong [ref=f15e827]: Daniel Dennett
+                - generic [ref=f15e828]:
+                  - generic [ref=f15e829]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e830]: Developing sample
+                - generic [ref=f15e832]: "Most common topic: Free will and determinism"
+                - generic "Daniel Dennett's reasoning-tag rates" [ref=f15e833]:
+                  - generic [ref=f15e834]:
+                    - generic [ref=f15e835]: Fallacies
+                    - strong [ref=f15e837]: 0.0 per 100
+                  - generic [ref=f15e838]:
+                    - generic [ref=f15e839]: Biases
+                    - strong [ref=f15e841]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e842]:
+                - generic [ref=f15e843]:
+                  - text: Overall scores
+                  - generic [ref=f15e844]: 0–100% of debates
+                - generic [ref=f15e845]: "Daniel Dennett’s overall scores across 6 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 3 debates; 85–89: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e846]:
+                  - listitem [ref=f15e847]
+                  - listitem [ref=f15e848]
+                  - listitem [ref=f15e849]
+                  - listitem [ref=f15e850]
+                  - listitem [ref=f15e851]
+                  - listitem [ref=f15e852]:
+                    - strong [ref=f15e854]: "1"
+                  - listitem [ref=f15e855]:
+                    - strong [ref=f15e857]: "3"
+                  - listitem [ref=f15e858]:
+                    - strong [ref=f15e860]: "2"
+                  - listitem [ref=f15e861]
+                  - listitem [ref=f15e862]
+                - generic [ref=f15e863]:
+                  - generic [ref=f15e864]: "50"
+                  - generic [ref=f15e865]: "75"
+                  - generic [ref=f15e866]: "100"
+              - generic [ref=f15e867]:
+                - generic [ref=f15e868]:
+                  - generic [ref=f15e869]: Daniel's avg.
+                  - strong [ref=f15e870]: "83.2"
+                - generic [ref=f15e871]:
+                  - generic [ref=f15e872]: Opponents' Avg.
+                  - strong [ref=f15e873]: "81.2"
+        - listitem [ref=f15e874]:
+          - article [ref=f15e875]:
+            - link "Open Max Baker-Hytch's debate profile" [ref=f15e876] [cursor=pointer]:
+              - /url: /interlocutor/max-baker-hytch/
+              - generic "Rank 14" [ref=f15e877]: "14"
+              - img "Max Baker-Hytch" [ref=f15e878]
+              - generic [ref=f15e879]:
+                - strong [ref=f15e880]: Max Baker-Hytch
+                - generic [ref=f15e881]:
+                  - generic [ref=f15e882]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=f15e883]: Limited sample
+                - generic [ref=f15e885]: "Most common topic: Evil, suffering, and hiddenness"
+                - generic "Max Baker-Hytch's reasoning-tag rates" [ref=f15e886]:
+                  - generic [ref=f15e887]:
+                    - generic [ref=f15e888]: Fallacies
+                    - strong [ref=f15e891]: 7.0 per 100
+                  - generic [ref=f15e892]:
+                    - generic [ref=f15e893]: Biases
+                    - strong [ref=f15e896]: 2.3 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e897]:
+                - generic [ref=f15e898]:
+                  - text: Overall scores
+                  - generic [ref=f15e899]: 0–100% of debates
+                - generic [ref=f15e900]: "Max Baker-Hytch’s overall scores across 3 matching 1-on-1 debates. 80–84: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e901]:
+                  - listitem [ref=f15e902]
+                  - listitem [ref=f15e903]
+                  - listitem [ref=f15e904]
+                  - listitem [ref=f15e905]
+                  - listitem [ref=f15e906]
+                  - listitem [ref=f15e907]
+                  - listitem [ref=f15e908]:
+                    - strong [ref=f15e910]: "3"
+                  - listitem [ref=f15e911]
+                  - listitem [ref=f15e912]
+                  - listitem [ref=f15e913]
+                - generic [ref=f15e914]:
+                  - generic [ref=f15e915]: "50"
+                  - generic [ref=f15e916]: "75"
+                  - generic [ref=f15e917]: "100"
+              - generic [ref=f15e918]:
+                - generic [ref=f15e919]:
+                  - generic [ref=f15e920]: Max's avg.
+                  - strong [ref=f15e921]: "83"
+                - generic [ref=f15e922]:
+                  - generic [ref=f15e923]: Opponents' Avg.
+                  - strong [ref=f15e924]: "82"
+        - listitem [ref=f15e925]:
+          - article [ref=f15e926]:
+            - link "Open Michael Ruse's debate profile" [ref=f15e927] [cursor=pointer]:
+              - /url: /interlocutor/michael-ruse/
+              - generic "Rank 15" [ref=f15e928]: "15"
+              - img "Michael Ruse" [ref=f15e929]
+              - generic [ref=f15e930]:
+                - strong [ref=f15e931]: Michael Ruse
+                - generic [ref=f15e932]:
+                  - generic [ref=f15e933]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=f15e934]: Limited sample
+                - generic [ref=f15e936]: "Most common topic: God, theism, and atheism"
+                - generic "Michael Ruse's reasoning-tag rates" [ref=f15e937]:
+                  - generic [ref=f15e938]:
+                    - generic [ref=f15e939]: Fallacies
+                    - strong [ref=f15e941]: 0.0 per 100
+                  - generic [ref=f15e942]:
+                    - generic [ref=f15e943]: Biases
+                    - strong [ref=f15e945]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e946]:
+                - generic [ref=f15e947]:
+                  - text: Overall scores
+                  - generic [ref=f15e948]: 0–100% of debates
+                - generic [ref=f15e949]: "Michael Ruse’s overall scores across 3 matching 1-on-1 debates. 80–84: 2 debates; 85–89: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e950]:
+                  - listitem [ref=f15e951]
+                  - listitem [ref=f15e952]
+                  - listitem [ref=f15e953]
+                  - listitem [ref=f15e954]
+                  - listitem [ref=f15e955]
+                  - listitem [ref=f15e956]
+                  - listitem [ref=f15e957]:
+                    - strong [ref=f15e959]: "2"
+                  - listitem [ref=f15e960]:
+                    - strong [ref=f15e962]: "1"
+                  - listitem [ref=f15e963]
+                  - listitem [ref=f15e964]
+                - generic [ref=f15e965]:
+                  - generic [ref=f15e966]: "50"
+                  - generic [ref=f15e967]: "75"
+                  - generic [ref=f15e968]: "100"
+              - generic [ref=f15e969]:
+                - generic [ref=f15e970]:
+                  - generic [ref=f15e971]: Michael's avg.
+                  - strong [ref=f15e972]: "83"
+                - generic [ref=f15e973]:
+                  - generic [ref=f15e974]: Opponents' Avg.
+                  - strong [ref=f15e975]: "80"
+        - listitem [ref=f15e976]:
+          - article [ref=f15e977]:
+            - link "Open Richard Dawkins's debate profile" [ref=f15e978] [cursor=pointer]:
+              - /url: /interlocutor/richard-dawkins/
+              - generic "Rank 16" [ref=f15e979]: "16"
+              - img "Richard Dawkins" [ref=f15e980]
+              - generic [ref=f15e981]:
+                - strong [ref=f15e982]: Richard Dawkins
+                - generic [ref=f15e983]:
+                  - generic [ref=f15e984]: 9 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e985]: Established sample
+                - generic [ref=f15e987]: "Most common topic: God, theism, and atheism"
+                - generic "Richard Dawkins's reasoning-tag rates" [ref=f15e988]:
+                  - generic [ref=f15e989]:
+                    - generic [ref=f15e990]: Fallacies
+                    - strong [ref=f15e993]: 9.3 per 100
+                  - generic [ref=f15e994]:
+                    - generic [ref=f15e995]: Biases
+                    - strong [ref=f15e998]: 0.8 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e999]:
+                - generic [ref=f15e1000]:
+                  - text: Overall scores
+                  - generic [ref=f15e1001]: 0–100% of debates
+                - generic [ref=f15e1002]: "Richard Dawkins’s overall scores across 9 matching 1-on-1 debates. 75–79: 2 debates; 80–84: 4 debates; 85–89: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1003]:
+                  - listitem [ref=f15e1004]
+                  - listitem [ref=f15e1005]
+                  - listitem [ref=f15e1006]
+                  - listitem [ref=f15e1007]
+                  - listitem [ref=f15e1008]
+                  - listitem [ref=f15e1009]:
+                    - strong [ref=f15e1011]: "2"
+                  - listitem [ref=f15e1012]:
+                    - strong [ref=f15e1014]: "4"
+                  - listitem [ref=f15e1015]:
+                    - strong [ref=f15e1017]: "3"
+                  - listitem [ref=f15e1018]
+                  - listitem [ref=f15e1019]
+                - generic [ref=f15e1020]:
+                  - generic [ref=f15e1021]: "50"
+                  - generic [ref=f15e1022]: "75"
+                  - generic [ref=f15e1023]: "100"
+              - generic [ref=f15e1024]:
+                - generic [ref=f15e1025]:
+                  - generic [ref=f15e1026]: Richard's avg.
+                  - strong [ref=f15e1027]: "82.3"
+                - generic [ref=f15e1028]:
+                  - generic [ref=f15e1029]: Opponents' Avg.
+                  - strong [ref=f15e1030]: "73.6"
+        - listitem [ref=f15e1031]:
+          - article [ref=f15e1032]:
+            - link "Open Michael Huemer's debate profile" [ref=f15e1033] [cursor=pointer]:
+              - /url: /interlocutor/michael-huemer/
+              - generic "Rank 17" [ref=f15e1034]: "17"
+              - img "Michael Huemer" [ref=f15e1035]
+              - generic [ref=f15e1036]:
+                - strong [ref=f15e1037]: Michael Huemer
+                - generic [ref=f15e1038]:
+                  - generic [ref=f15e1039]: 7 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e1040]: Established sample
+                - generic [ref=f15e1042]: "Most common topic: Morality and ethics"
+                - generic "Michael Huemer's reasoning-tag rates" [ref=f15e1043]:
+                  - generic [ref=f15e1044]:
+                    - generic [ref=f15e1045]: Fallacies
+                    - strong [ref=f15e1048]: 8.1 per 100
+                  - generic [ref=f15e1049]:
+                    - generic [ref=f15e1050]: Biases
+                    - strong [ref=f15e1053]: 4.1 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1054]:
+                - generic [ref=f15e1055]:
+                  - text: Overall scores
+                  - generic [ref=f15e1056]: 0–100% of debates
+                - generic [ref=f15e1057]: "Michael Huemer’s overall scores across 7 matching 1-on-1 debates. 75–79: 2 debates; 80–84: 3 debates; 85–89: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1058]:
+                  - listitem [ref=f15e1059]
+                  - listitem [ref=f15e1060]
+                  - listitem [ref=f15e1061]
+                  - listitem [ref=f15e1062]
+                  - listitem [ref=f15e1063]
+                  - listitem [ref=f15e1064]:
+                    - strong [ref=f15e1066]: "2"
+                  - listitem [ref=f15e1067]:
+                    - strong [ref=f15e1069]: "3"
+                  - listitem [ref=f15e1070]:
+                    - strong [ref=f15e1072]: "2"
+                  - listitem [ref=f15e1073]
+                  - listitem [ref=f15e1074]
+                - generic [ref=f15e1075]:
+                  - generic [ref=f15e1076]: "50"
+                  - generic [ref=f15e1077]: "75"
+                  - generic [ref=f15e1078]: "100"
+              - generic [ref=f15e1079]:
+                - generic [ref=f15e1080]:
+                  - generic [ref=f15e1081]: Michael's avg.
+                  - strong [ref=f15e1082]: "82"
+                - generic [ref=f15e1083]:
+                  - generic [ref=f15e1084]: Opponents' Avg.
+                  - strong [ref=f15e1085]: "80.3"
+        - listitem [ref=f15e1086]:
+          - article [ref=f15e1087]:
+            - link "Open Philip Goff's debate profile" [ref=f15e1088] [cursor=pointer]:
+              - /url: /interlocutor/philip-goff/
+              - generic "Rank 18" [ref=f15e1089]: "18"
+              - img "Philip Goff" [ref=f15e1090]
+              - generic [ref=f15e1091]:
+                - strong [ref=f15e1092]: Philip Goff
+                - generic [ref=f15e1093]:
+                  - generic [ref=f15e1094]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e1095]: Developing sample
+                - generic [ref=f15e1097]: "Most common topic: Mind and consciousness"
+                - generic "Philip Goff's reasoning-tag rates" [ref=f15e1098]:
+                  - generic [ref=f15e1099]:
+                    - generic [ref=f15e1100]: Fallacies
+                    - strong [ref=f15e1102]: 0.0 per 100
+                  - generic [ref=f15e1103]:
+                    - generic [ref=f15e1104]: Biases
+                    - strong [ref=f15e1107]: 1.3 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1108]:
+                - generic [ref=f15e1109]:
+                  - text: Overall scores
+                  - generic [ref=f15e1110]: 0–100% of debates
+                - generic [ref=f15e1111]: "Philip Goff’s overall scores across 5 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 4 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1112]:
+                  - listitem [ref=f15e1113]
+                  - listitem [ref=f15e1114]
+                  - listitem [ref=f15e1115]
+                  - listitem [ref=f15e1116]
+                  - listitem [ref=f15e1117]
+                  - listitem [ref=f15e1118]:
+                    - strong [ref=f15e1120]: "1"
+                  - listitem [ref=f15e1121]:
+                    - strong [ref=f15e1123]: "4"
+                  - listitem [ref=f15e1124]
+                  - listitem [ref=f15e1125]
+                  - listitem [ref=f15e1126]
+                - generic [ref=f15e1127]:
+                  - generic [ref=f15e1128]: "50"
+                  - generic [ref=f15e1129]: "75"
+                  - generic [ref=f15e1130]: "100"
+              - generic [ref=f15e1131]:
+                - generic [ref=f15e1132]:
+                  - generic [ref=f15e1133]: Philip's avg.
+                  - strong [ref=f15e1134]: "81.6"
+                - generic [ref=f15e1135]:
+                  - generic [ref=f15e1136]: Opponents' Avg.
+                  - strong [ref=f15e1137]: "80.8"
+        - listitem [ref=f15e1138]:
+          - article [ref=f15e1139]:
+            - link "Open Christopher Hitchens's debate profile" [ref=f15e1140] [cursor=pointer]:
+              - /url: /interlocutor/christopher-hitchens/
+              - generic "Rank 19" [ref=f15e1141]: "19"
+              - img "Christopher Hitchens" [ref=f15e1142]
+              - generic [ref=f15e1143]:
+                - strong [ref=f15e1144]: Christopher Hitchens
+                - generic [ref=f15e1145]:
+                  - generic [ref=f15e1146]: 15 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e1147]: Established sample
+                - generic [ref=f15e1149]: "Most common topic: Religion, society, and public reason"
+                - generic "Christopher Hitchens's reasoning-tag rates" [ref=f15e1150]:
+                  - generic [ref=f15e1151]:
+                    - generic [ref=f15e1152]: Fallacies
+                    - strong [ref=f15e1155]: 3.8 per 100
+                  - generic [ref=f15e1156]:
+                    - generic [ref=f15e1157]: Biases
+                    - strong [ref=f15e1160]: 1.6 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1161]:
+                - generic [ref=f15e1162]:
+                  - text: Overall scores
+                  - generic [ref=f15e1163]: 0–100% of debates
+                - generic [ref=f15e1164]: "Christopher Hitchens’s overall scores across 15 matching 1-on-1 debates. 75–79: 2 debates; 80–84: 11 debates; 85–89: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1165]:
+                  - listitem [ref=f15e1166]
+                  - listitem [ref=f15e1167]
+                  - listitem [ref=f15e1168]
+                  - listitem [ref=f15e1169]
+                  - listitem [ref=f15e1170]
+                  - listitem [ref=f15e1171]:
+                    - strong [ref=f15e1173]: "2"
+                  - listitem [ref=f15e1174]:
+                    - strong [ref=f15e1176]: "11"
+                  - listitem [ref=f15e1177]:
+                    - strong [ref=f15e1179]: "2"
+                  - listitem [ref=f15e1180]
+                  - listitem [ref=f15e1181]
+                - generic [ref=f15e1182]:
+                  - generic [ref=f15e1183]: "50"
+                  - generic [ref=f15e1184]: "75"
+                  - generic [ref=f15e1185]: "100"
+              - generic [ref=f15e1186]:
+                - generic [ref=f15e1187]:
+                  - generic [ref=f15e1188]: Christopher's avg.
+                  - strong [ref=f15e1189]: "81.5"
+                - generic [ref=f15e1190]:
+                  - generic [ref=f15e1191]: Opponents' Avg.
+                  - strong [ref=f15e1192]: "76.9"
+        - listitem [ref=f15e1193]:
+          - article [ref=f15e1194]:
+            - link "Open Sam Harris's debate profile" [ref=f15e1195] [cursor=pointer]:
+              - /url: /interlocutor/sam-harris/
+              - generic "Rank 20" [ref=f15e1196]: "20"
+              - img "Sam Harris" [ref=f15e1197]
+              - generic [ref=f15e1198]:
+                - strong [ref=f15e1199]: Sam Harris
+                - generic [ref=f15e1200]:
+                  - generic [ref=f15e1201]: 8 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e1202]: Established sample
+                - generic [ref=f15e1204]: "Most common topic: Morality and ethics"
+                - generic "Sam Harris's reasoning-tag rates" [ref=f15e1205]:
+                  - generic [ref=f15e1206]:
+                    - generic [ref=f15e1207]: Fallacies
+                    - strong [ref=f15e1209]: 0.0 per 100
+                  - generic [ref=f15e1210]:
+                    - generic [ref=f15e1211]: Biases
+                    - strong [ref=f15e1213]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1214]:
+                - generic [ref=f15e1215]:
+                  - text: Overall scores
+                  - generic [ref=f15e1216]: 0–100% of debates
+                - generic [ref=f15e1217]: "Sam Harris’s overall scores across 8 matching 1-on-1 debates. 75–79: 2 debates; 80–84: 6 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1218]:
+                  - listitem [ref=f15e1219]
+                  - listitem [ref=f15e1220]
+                  - listitem [ref=f15e1221]
+                  - listitem [ref=f15e1222]
+                  - listitem [ref=f15e1223]
+                  - listitem [ref=f15e1224]:
+                    - strong [ref=f15e1226]: "2"
+                  - listitem [ref=f15e1227]:
+                    - strong [ref=f15e1229]: "6"
+                  - listitem [ref=f15e1230]
+                  - listitem [ref=f15e1231]
+                  - listitem [ref=f15e1232]
+                - generic [ref=f15e1233]:
+                  - generic [ref=f15e1234]: "50"
+                  - generic [ref=f15e1235]: "75"
+                  - generic [ref=f15e1236]: "100"
+              - generic [ref=f15e1237]:
+                - generic [ref=f15e1238]:
+                  - generic [ref=f15e1239]: Sam's avg.
+                  - strong [ref=f15e1240]: "81.1"
+                - generic [ref=f15e1241]:
+                  - generic [ref=f15e1242]: Opponents' Avg.
+                  - strong [ref=f15e1243]: "78.5"
+        - listitem [ref=f15e1244]:
+          - article [ref=f15e1245]:
+            - link "Open Michael Licona's debate profile" [ref=f15e1246] [cursor=pointer]:
+              - /url: /interlocutor/michael-licona/
+              - generic "Rank 21" [ref=f15e1247]: "21"
+              - img "Michael Licona" [ref=f15e1248]
+              - generic [ref=f15e1249]:
+                - strong [ref=f15e1250]: Michael Licona
+                - generic [ref=f15e1251]:
+                  - generic [ref=f15e1252]: 7 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e1253]: Established sample
+                - generic [ref=f15e1255]: "Most common topic: Resurrection and miracles"
+                - generic "Michael Licona's reasoning-tag rates" [ref=f15e1256]:
+                  - generic [ref=f15e1257]:
+                    - generic [ref=f15e1258]: Fallacies
+                    - strong [ref=f15e1261]: 2.8 per 100
+                  - generic [ref=f15e1262]:
+                    - generic [ref=f15e1263]: Biases
+                    - strong [ref=f15e1266]: 5.6 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1267]:
+                - generic [ref=f15e1268]:
+                  - text: Overall scores
+                  - generic [ref=f15e1269]: 0–100% of debates
+                - generic [ref=f15e1270]: "Michael Licona’s overall scores across 7 matching 1-on-1 debates. 75–79: 2 debates; 80–84: 5 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1271]:
+                  - listitem [ref=f15e1272]
+                  - listitem [ref=f15e1273]
+                  - listitem [ref=f15e1274]
+                  - listitem [ref=f15e1275]
+                  - listitem [ref=f15e1276]
+                  - listitem [ref=f15e1277]:
+                    - strong [ref=f15e1279]: "2"
+                  - listitem [ref=f15e1280]:
+                    - strong [ref=f15e1282]: "5"
+                  - listitem [ref=f15e1283]
+                  - listitem [ref=f15e1284]
+                  - listitem [ref=f15e1285]
+                - generic [ref=f15e1286]:
+                  - generic [ref=f15e1287]: "50"
+                  - generic [ref=f15e1288]: "75"
+                  - generic [ref=f15e1289]: "100"
+              - generic [ref=f15e1290]:
+                - generic [ref=f15e1291]:
+                  - generic [ref=f15e1292]: Michael's avg.
+                  - strong [ref=f15e1293]: "81"
+                - generic [ref=f15e1294]:
+                  - generic [ref=f15e1295]: Opponents' Avg.
+                  - strong [ref=f15e1296]: "83.6"
+        - listitem [ref=f15e1297]:
+          - article [ref=f15e1298]:
+            - link "Open Stephen Woodford's debate profile" [ref=f15e1299] [cursor=pointer]:
+              - /url: /interlocutor/stephen-woodford/
+              - generic "Rank 22" [ref=f15e1300]: "22"
+              - img "Stephen Woodford" [ref=f15e1301]
+              - generic [ref=f15e1302]:
+                - strong [ref=f15e1303]: Stephen Woodford
+                - generic [ref=f15e1304]:
+                  - generic [ref=f15e1305]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e1306]: Developing sample
+                - generic [ref=f15e1308]: "Most common topic: Logic, reason, and presuppositions"
+                - generic "Stephen Woodford's reasoning-tag rates" [ref=f15e1309]:
+                  - generic [ref=f15e1310]:
+                    - generic [ref=f15e1311]: Fallacies
+                    - strong [ref=f15e1314]: 5.0 per 100
+                  - generic [ref=f15e1315]:
+                    - generic [ref=f15e1316]: Biases
+                    - strong [ref=f15e1319]: 3.3 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1320]:
+                - generic [ref=f15e1321]:
+                  - text: Overall scores
+                  - generic [ref=f15e1322]: 0–100% of debates
+                - generic [ref=f15e1323]: "Stephen Woodford’s overall scores across 6 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 5 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1324]:
+                  - listitem [ref=f15e1325]
+                  - listitem [ref=f15e1326]
+                  - listitem [ref=f15e1327]
+                  - listitem [ref=f15e1328]
+                  - listitem [ref=f15e1329]
+                  - listitem [ref=f15e1330]:
+                    - strong [ref=f15e1332]: "1"
+                  - listitem [ref=f15e1333]:
+                    - strong [ref=f15e1335]: "5"
+                  - listitem [ref=f15e1336]
+                  - listitem [ref=f15e1337]
+                  - listitem [ref=f15e1338]
+                - generic [ref=f15e1339]:
+                  - generic [ref=f15e1340]: "50"
+                  - generic [ref=f15e1341]: "75"
+                  - generic [ref=f15e1342]: "100"
+              - generic [ref=f15e1343]:
+                - generic [ref=f15e1344]:
+                  - generic [ref=f15e1345]: Stephen's avg.
+                  - strong [ref=f15e1346]: "81"
+                - generic [ref=f15e1347]:
+                  - generic [ref=f15e1348]: Opponents' Avg.
+                  - strong [ref=f15e1349]: "77.7"
+        - listitem [ref=f15e1350]:
+          - article [ref=f15e1351]:
+            - link "Open Michael Shermer's debate profile" [ref=f15e1352] [cursor=pointer]:
+              - /url: /interlocutor/michael-shermer/
+              - generic "Rank 23" [ref=f15e1353]: "23"
+              - img "Michael Shermer" [ref=f15e1354]
+              - generic [ref=f15e1355]:
+                - strong [ref=f15e1356]: Michael Shermer
+                - generic [ref=f15e1357]:
+                  - generic [ref=f15e1358]: 8 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e1359]: Established sample
+                - generic [ref=f15e1361]: "Most common topic: God, theism, and atheism"
+                - generic "Michael Shermer's reasoning-tag rates" [ref=f15e1362]:
+                  - generic [ref=f15e1363]:
+                    - generic [ref=f15e1364]: Fallacies
+                    - strong [ref=f15e1367]: 5.4 per 100
+                  - generic [ref=f15e1368]:
+                    - generic [ref=f15e1369]: Biases
+                    - strong [ref=f15e1372]: 0.9 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1373]:
+                - generic [ref=f15e1374]:
+                  - text: Overall scores
+                  - generic [ref=f15e1375]: 0–100% of debates
+                - generic [ref=f15e1376]: "Michael Shermer’s overall scores across 8 matching 1-on-1 debates. 75–79: 3 debates; 80–84: 4 debates; 85–89: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1377]:
+                  - listitem [ref=f15e1378]
+                  - listitem [ref=f15e1379]
+                  - listitem [ref=f15e1380]
+                  - listitem [ref=f15e1381]
+                  - listitem [ref=f15e1382]
+                  - listitem [ref=f15e1383]:
+                    - strong [ref=f15e1385]: "3"
+                  - listitem [ref=f15e1386]:
+                    - strong [ref=f15e1388]: "4"
+                  - listitem [ref=f15e1389]:
+                    - strong [ref=f15e1391]: "1"
+                  - listitem [ref=f15e1392]
+                  - listitem [ref=f15e1393]
+                - generic [ref=f15e1394]:
+                  - generic [ref=f15e1395]: "50"
+                  - generic [ref=f15e1396]: "75"
+                  - generic [ref=f15e1397]: "100"
+              - generic [ref=f15e1398]:
+                - generic [ref=f15e1399]:
+                  - generic [ref=f15e1400]: Michael's avg.
+                  - strong [ref=f15e1401]: "80.9"
+                - generic [ref=f15e1402]:
+                  - generic [ref=f15e1403]: Opponents' Avg.
+                  - strong [ref=f15e1404]: "74.6"
+        - listitem [ref=f15e1405]:
+          - article [ref=f15e1406]:
+            - link "Open Bernardo Kastrup's debate profile" [ref=f15e1407] [cursor=pointer]:
+              - /url: /interlocutor/bernardo-kastrup/
+              - generic "Rank 24" [ref=f15e1408]: "24"
+              - img "Bernardo Kastrup" [ref=f15e1409]
+              - generic [ref=f15e1410]:
+                - strong [ref=f15e1411]: Bernardo Kastrup
+                - generic [ref=f15e1412]:
+                  - generic [ref=f15e1413]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e1414]: Developing sample
+                - generic [ref=f15e1416]: "Most common topic: Mind and consciousness"
+                - generic "Bernardo Kastrup's reasoning-tag rates" [ref=f15e1417]:
+                  - generic [ref=f15e1418]:
+                    - generic [ref=f15e1419]: Fallacies
+                    - strong [ref=f15e1422]: 17.3 per 100
+                  - generic [ref=f15e1423]:
+                    - generic [ref=f15e1424]: Biases
+                    - strong [ref=f15e1427]: 5.1 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1428]:
+                - generic [ref=f15e1429]:
+                  - text: Overall scores
+                  - generic [ref=f15e1430]: 0–100% of debates
+                - generic [ref=f15e1431]: "Bernardo Kastrup’s overall scores across 6 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 5 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1432]:
+                  - listitem [ref=f15e1433]
+                  - listitem [ref=f15e1434]
+                  - listitem [ref=f15e1435]
+                  - listitem [ref=f15e1436]
+                  - listitem [ref=f15e1437]
+                  - listitem [ref=f15e1438]:
+                    - strong [ref=f15e1440]: "1"
+                  - listitem [ref=f15e1441]:
+                    - strong [ref=f15e1443]: "5"
+                  - listitem [ref=f15e1444]
+                  - listitem [ref=f15e1445]
+                  - listitem [ref=f15e1446]
+                - generic [ref=f15e1447]:
+                  - generic [ref=f15e1448]: "50"
+                  - generic [ref=f15e1449]: "75"
+                  - generic [ref=f15e1450]: "100"
+              - generic [ref=f15e1451]:
+                - generic [ref=f15e1452]:
+                  - generic [ref=f15e1453]: Bernardo's avg.
+                  - strong [ref=f15e1454]: "80.7"
+                - generic [ref=f15e1455]:
+                  - generic [ref=f15e1456]: Opponents' Avg.
+                  - strong [ref=f15e1457]: "82.5"
+        - listitem [ref=f15e1458]:
+          - article [ref=f15e1459]:
+            - link "Open Ben Watkins's debate profile" [ref=f15e1460] [cursor=pointer]:
+              - /url: /interlocutor/ben-watkins/
+              - generic "Rank 25" [ref=f15e1461]: "25"
+              - img "Ben Watkins" [ref=f15e1462]
+              - generic [ref=f15e1463]:
+                - strong [ref=f15e1464]: Ben Watkins
+                - generic [ref=f15e1465]:
+                  - generic [ref=f15e1466]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=f15e1467]: Limited sample
+                - generic [ref=f15e1469]: "Most common topic: God, theism, and atheism"
+                - generic "Ben Watkins's reasoning-tag rates" [ref=f15e1470]:
+                  - generic [ref=f15e1471]:
+                    - generic [ref=f15e1472]: Fallacies
+                    - strong [ref=f15e1475]: 6.7 per 100
+                  - generic [ref=f15e1476]:
+                    - generic [ref=f15e1477]: Biases
+                    - strong [ref=f15e1480]: 3.3 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1481]:
+                - generic [ref=f15e1482]:
+                  - text: Overall scores
+                  - generic [ref=f15e1483]: 0–100% of debates
+                - generic [ref=f15e1484]: "Ben Watkins’s overall scores across 3 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 1 debate; 85–89: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1485]:
+                  - listitem [ref=f15e1486]
+                  - listitem [ref=f15e1487]
+                  - listitem [ref=f15e1488]
+                  - listitem [ref=f15e1489]
+                  - listitem [ref=f15e1490]
+                  - listitem [ref=f15e1491]:
+                    - strong [ref=f15e1493]: "1"
+                  - listitem [ref=f15e1494]:
+                    - strong [ref=f15e1496]: "1"
+                  - listitem [ref=f15e1497]:
+                    - strong [ref=f15e1499]: "1"
+                  - listitem [ref=f15e1500]
+                  - listitem [ref=f15e1501]
+                - generic [ref=f15e1502]:
+                  - generic [ref=f15e1503]: "50"
+                  - generic [ref=f15e1504]: "75"
+                  - generic [ref=f15e1505]: "100"
+              - generic [ref=f15e1506]:
+                - generic [ref=f15e1507]:
+                  - generic [ref=f15e1508]: Ben's avg.
+                  - strong [ref=f15e1509]: "80.7"
+                - generic [ref=f15e1510]:
+                  - generic [ref=f15e1511]: Opponents' Avg.
+                  - strong [ref=f15e1512]: "77.3"
+        - listitem [ref=f15e1513]:
+          - article [ref=f15e1514]:
+            - link "Open Josh Rasmussen's debate profile" [ref=f15e1515] [cursor=pointer]:
+              - /url: /interlocutor/josh-rasmussen/
+              - generic "Rank 26" [ref=f15e1516]: "26"
+              - img "Josh Rasmussen" [ref=f15e1517]
+              - generic [ref=f15e1518]:
+                - strong [ref=f15e1519]: Josh Rasmussen
+                - generic [ref=f15e1520]:
+                  - generic [ref=f15e1521]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e1522]: Developing sample
+                - generic [ref=f15e1524]: "Most common topic: God, theism, and atheism"
+                - generic "Josh Rasmussen's reasoning-tag rates" [ref=f15e1525]:
+                  - generic [ref=f15e1526]:
+                    - generic [ref=f15e1527]: Fallacies
+                    - strong [ref=f15e1529]: 0.0 per 100
+                  - generic [ref=f15e1530]:
+                    - generic [ref=f15e1531]: Biases
+                    - strong [ref=f15e1534]: 4.2 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1535]:
+                - generic [ref=f15e1536]:
+                  - text: Overall scores
+                  - generic [ref=f15e1537]: 0–100% of debates
+                - generic [ref=f15e1538]: "Josh Rasmussen’s overall scores across 5 matching 1-on-1 debates. 75–79: 2 debates; 80–84: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1539]:
+                  - listitem [ref=f15e1540]
+                  - listitem [ref=f15e1541]
+                  - listitem [ref=f15e1542]
+                  - listitem [ref=f15e1543]
+                  - listitem [ref=f15e1544]
+                  - listitem [ref=f15e1545]:
+                    - strong [ref=f15e1547]: "2"
+                  - listitem [ref=f15e1548]:
+                    - strong [ref=f15e1550]: "3"
+                  - listitem [ref=f15e1551]
+                  - listitem [ref=f15e1552]
+                  - listitem [ref=f15e1553]
+                - generic [ref=f15e1554]:
+                  - generic [ref=f15e1555]: "50"
+                  - generic [ref=f15e1556]: "75"
+                  - generic [ref=f15e1557]: "100"
+              - generic [ref=f15e1558]:
+                - generic [ref=f15e1559]:
+                  - generic [ref=f15e1560]: Josh's avg.
+                  - strong [ref=f15e1561]: "80.6"
+                - generic [ref=f15e1562]:
+                  - generic [ref=f15e1563]: Opponents' Avg.
+                  - strong [ref=f15e1564]: "86"
+        - listitem [ref=f15e1565]:
+          - article [ref=f15e1566]:
+            - link "Open Richard Carrier's debate profile" [ref=f15e1567] [cursor=pointer]:
+              - /url: /interlocutor/richard-carrier/
+              - generic "Rank 27" [ref=f15e1568]: "27"
+              - img "Richard Carrier" [ref=f15e1569]
+              - generic [ref=f15e1570]:
+                - strong [ref=f15e1571]: Richard Carrier
+                - generic [ref=f15e1572]:
+                  - generic [ref=f15e1573]: 8 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e1574]: Established sample
+                - generic [ref=f15e1576]: "Most common topic: Bible and historical Jesus"
+                - generic "Richard Carrier's reasoning-tag rates" [ref=f15e1577]:
+                  - generic [ref=f15e1578]:
+                    - generic [ref=f15e1579]: Fallacies
+                    - strong [ref=f15e1582]: 9.6 per 100
+                  - generic [ref=f15e1583]:
+                    - generic [ref=f15e1584]: Biases
+                    - strong [ref=f15e1587]: 3.2 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1588]:
+                - generic [ref=f15e1589]:
+                  - text: Overall scores
+                  - generic [ref=f15e1590]: 0–100% of debates
+                - generic [ref=f15e1591]: "Richard Carrier’s overall scores across 8 matching 1-on-1 debates. 70–74: 1 debate; 80–84: 7 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1592]:
+                  - listitem [ref=f15e1593]
+                  - listitem [ref=f15e1594]
+                  - listitem [ref=f15e1595]
+                  - listitem [ref=f15e1596]
+                  - listitem [ref=f15e1597]:
+                    - strong [ref=f15e1599]: "1"
+                  - listitem [ref=f15e1600]
+                  - listitem [ref=f15e1601]:
+                    - strong [ref=f15e1603]: "7"
+                  - listitem [ref=f15e1604]
+                  - listitem [ref=f15e1605]
+                  - listitem [ref=f15e1606]
+                - generic [ref=f15e1607]:
+                  - generic [ref=f15e1608]: "50"
+                  - generic [ref=f15e1609]: "75"
+                  - generic [ref=f15e1610]: "100"
+              - generic [ref=f15e1611]:
+                - generic [ref=f15e1612]:
+                  - generic [ref=f15e1613]: Richard's avg.
+                  - strong [ref=f15e1614]: "80.5"
+                - generic [ref=f15e1615]:
+                  - generic [ref=f15e1616]: Opponents' Avg.
+                  - strong [ref=f15e1617]: "79"
+        - listitem [ref=f15e1618]:
+          - article [ref=f15e1619]:
+            - link "Open Lawrence Krauss's debate profile" [ref=f15e1620] [cursor=pointer]:
+              - /url: /interlocutor/lawrence-krauss/
+              - generic "Rank 28" [ref=f15e1621]: "28"
+              - img "Lawrence Krauss" [ref=f15e1622]
+              - generic [ref=f15e1623]:
+                - strong [ref=f15e1624]: Lawrence Krauss
+                - generic [ref=f15e1625]:
+                  - generic [ref=f15e1626]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=f15e1627]: Limited sample
+                - generic [ref=f15e1629]: "Most common topic: Cosmological & Contingency Arguments"
+                - generic "Lawrence Krauss's reasoning-tag rates" [ref=f15e1630]:
+                  - generic [ref=f15e1631]:
+                    - generic [ref=f15e1632]: Fallacies
+                    - strong [ref=f15e1634]: 0.0 per 100
+                  - generic [ref=f15e1635]:
+                    - generic [ref=f15e1636]: Biases
+                    - strong [ref=f15e1638]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1639]:
+                - generic [ref=f15e1640]:
+                  - text: Overall scores
+                  - generic [ref=f15e1641]: 0–100% of debates
+                - generic [ref=f15e1642]: "Lawrence Krauss’s overall scores across 3 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1643]:
+                  - listitem [ref=f15e1644]
+                  - listitem [ref=f15e1645]
+                  - listitem [ref=f15e1646]
+                  - listitem [ref=f15e1647]
+                  - listitem [ref=f15e1648]
+                  - listitem [ref=f15e1649]:
+                    - strong [ref=f15e1651]: "1"
+                  - listitem [ref=f15e1652]:
+                    - strong [ref=f15e1654]: "2"
+                  - listitem [ref=f15e1655]
+                  - listitem [ref=f15e1656]
+                  - listitem [ref=f15e1657]
+                - generic [ref=f15e1658]:
+                  - generic [ref=f15e1659]: "50"
+                  - generic [ref=f15e1660]: "75"
+                  - generic [ref=f15e1661]: "100"
+              - generic [ref=f15e1662]:
+                - generic [ref=f15e1663]:
+                  - generic [ref=f15e1664]: Lawrence's avg.
+                  - strong [ref=f15e1665]: "80.3"
+                - generic [ref=f15e1666]:
+                  - generic [ref=f15e1667]: Opponents' Avg.
+                  - strong [ref=f15e1668]: "79.3"
+        - listitem [ref=f15e1669]:
+          - article [ref=f15e1670]:
+            - link "Open James Tour's debate profile" [ref=f15e1671] [cursor=pointer]:
+              - /url: /interlocutor/james-tour/
+              - generic "Rank 29" [ref=f15e1672]: "29"
+              - img "James Tour" [ref=f15e1673]
+              - generic [ref=f15e1674]:
+                - strong [ref=f15e1675]: James Tour
+                - generic [ref=f15e1676]:
+                  - generic [ref=f15e1677]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e1678]: Developing sample
+                - generic [ref=f15e1680]: "Most common topic: Evolution and origins of life"
+                - generic "James Tour's reasoning-tag rates" [ref=f15e1681]:
+                  - generic [ref=f15e1682]:
+                    - generic [ref=f15e1683]: Fallacies
+                    - strong [ref=f15e1686]: 2.8 per 100
+                  - generic [ref=f15e1687]:
+                    - generic [ref=f15e1688]: Biases
+                    - strong [ref=f15e1690]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1691]:
+                - generic [ref=f15e1692]:
+                  - text: Overall scores
+                  - generic [ref=f15e1693]: 0–100% of debates
+                - generic [ref=f15e1694]: "James Tour’s overall scores across 4 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1695]:
+                  - listitem [ref=f15e1696]
+                  - listitem [ref=f15e1697]
+                  - listitem [ref=f15e1698]
+                  - listitem [ref=f15e1699]
+                  - listitem [ref=f15e1700]
+                  - listitem [ref=f15e1701]:
+                    - strong [ref=f15e1703]: "1"
+                  - listitem [ref=f15e1704]:
+                    - strong [ref=f15e1706]: "3"
+                  - listitem [ref=f15e1707]
+                  - listitem [ref=f15e1708]
+                  - listitem [ref=f15e1709]
+                - generic [ref=f15e1710]:
+                  - generic [ref=f15e1711]: "50"
+                  - generic [ref=f15e1712]: "75"
+                  - generic [ref=f15e1713]: "100"
+              - generic [ref=f15e1714]:
+                - generic [ref=f15e1715]:
+                  - generic [ref=f15e1716]: James's avg.
+                  - strong [ref=f15e1717]: "80.3"
+                - generic [ref=f15e1718]:
+                  - generic [ref=f15e1719]: Opponents' Avg.
+                  - strong [ref=f15e1720]: "79.3"
+        - listitem [ref=f15e1721]:
+          - article [ref=f15e1722]:
+            - link "Open Miles Donahue's debate profile" [ref=f15e1723] [cursor=pointer]:
+              - /url: /interlocutor/miles-donahue/
+              - generic "Rank 30" [ref=f15e1724]: "30"
+              - img "Miles Donahue" [ref=f15e1725]
+              - generic [ref=f15e1726]:
+                - strong [ref=f15e1727]: Miles Donahue
+                - generic [ref=f15e1728]:
+                  - generic [ref=f15e1729]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=f15e1730]: Limited sample
+                - generic [ref=f15e1732]: "Most common topic: Cosmological & Contingency Arguments"
+                - generic "Miles Donahue's reasoning-tag rates" [ref=f15e1733]:
+                  - generic [ref=f15e1734]:
+                    - generic [ref=f15e1735]: Fallacies
+                    - strong [ref=f15e1737]: 0.0 per 100
+                  - generic [ref=f15e1738]:
+                    - generic [ref=f15e1739]: Biases
+                    - strong [ref=f15e1741]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1742]:
+                - generic [ref=f15e1743]:
+                  - text: Overall scores
+                  - generic [ref=f15e1744]: 0–100% of debates
+                - generic [ref=f15e1745]: "Miles Donahue’s overall scores across 3 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1746]:
+                  - listitem [ref=f15e1747]
+                  - listitem [ref=f15e1748]
+                  - listitem [ref=f15e1749]
+                  - listitem [ref=f15e1750]
+                  - listitem [ref=f15e1751]
+                  - listitem [ref=f15e1752]:
+                    - strong [ref=f15e1754]: "1"
+                  - listitem [ref=f15e1755]:
+                    - strong [ref=f15e1757]: "2"
+                  - listitem [ref=f15e1758]
+                  - listitem [ref=f15e1759]
+                  - listitem [ref=f15e1760]
+                - generic [ref=f15e1761]:
+                  - generic [ref=f15e1762]: "50"
+                  - generic [ref=f15e1763]: "75"
+                  - generic [ref=f15e1764]: "100"
+              - generic [ref=f15e1765]:
+                - generic [ref=f15e1766]:
+                  - generic [ref=f15e1767]: Miles's avg.
+                  - strong [ref=f15e1768]: "80"
+                - generic [ref=f15e1769]:
+                  - generic [ref=f15e1770]: Opponents' Avg.
+                  - strong [ref=f15e1771]: "83.3"
+        - listitem [ref=f15e1772]:
+          - article [ref=f15e1773]:
+            - link "Open Robert Price's debate profile" [ref=f15e1774] [cursor=pointer]:
+              - /url: /interlocutor/robert-price/
+              - generic "Rank 31" [ref=f15e1775]: "31"
+              - img "Robert Price" [ref=f15e1776]
+              - generic [ref=f15e1777]:
+                - strong [ref=f15e1778]: Robert Price
+                - generic [ref=f15e1779]:
+                  - generic [ref=f15e1780]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e1781]: Developing sample
+                - generic [ref=f15e1783]: "Most common topic: Logic, reason, and presuppositions"
+                - generic "Robert Price's reasoning-tag rates" [ref=f15e1784]:
+                  - generic [ref=f15e1785]:
+                    - generic [ref=f15e1786]: Fallacies
+                    - strong [ref=f15e1788]: 0.0 per 100
+                  - generic [ref=f15e1789]:
+                    - generic [ref=f15e1790]: Biases
+                    - strong [ref=f15e1793]: 2.1 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1794]:
+                - generic [ref=f15e1795]:
+                  - text: Overall scores
+                  - generic [ref=f15e1796]: 0–100% of debates
+                - generic [ref=f15e1797]: "Robert Price’s overall scores across 4 matching 1-on-1 debates. 75–79: 1 debate; 80–84: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1798]:
+                  - listitem [ref=f15e1799]
+                  - listitem [ref=f15e1800]
+                  - listitem [ref=f15e1801]
+                  - listitem [ref=f15e1802]
+                  - listitem [ref=f15e1803]
+                  - listitem [ref=f15e1804]:
+                    - strong [ref=f15e1806]: "1"
+                  - listitem [ref=f15e1807]:
+                    - strong [ref=f15e1809]: "3"
+                  - listitem [ref=f15e1810]
+                  - listitem [ref=f15e1811]
+                  - listitem [ref=f15e1812]
+                - generic [ref=f15e1813]:
+                  - generic [ref=f15e1814]: "50"
+                  - generic [ref=f15e1815]: "75"
+                  - generic [ref=f15e1816]: "100"
+              - generic [ref=f15e1817]:
+                - generic [ref=f15e1818]:
+                  - generic [ref=f15e1819]: Robert's avg.
+                  - strong [ref=f15e1820]: "79.8"
+                - generic [ref=f15e1821]:
+                  - generic [ref=f15e1822]: Opponents' Avg.
+                  - strong [ref=f15e1823]: "82"
+        - listitem [ref=f15e1824]:
+          - article [ref=f15e1825]:
+            - link "Open James White's debate profile" [ref=f15e1826] [cursor=pointer]:
+              - /url: /interlocutor/james-white/
+              - generic "Rank 32" [ref=f15e1827]: "32"
+              - img "James White" [ref=f15e1828]
+              - generic [ref=f15e1829]:
+                - strong [ref=f15e1830]: James White
+                - generic [ref=f15e1831]:
+                  - generic [ref=f15e1832]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e1833]: Developing sample
+                - generic [ref=f15e1835]: "Most common topic: Bible and historical Jesus"
+                - generic "James White's reasoning-tag rates" [ref=f15e1836]:
+                  - generic [ref=f15e1837]:
+                    - generic [ref=f15e1838]: Fallacies
+                    - strong [ref=f15e1841]: 7.1 per 100
+                  - generic [ref=f15e1842]:
+                    - generic [ref=f15e1843]: Biases
+                    - strong [ref=f15e1846]: 3.6 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1847]:
+                - generic [ref=f15e1848]:
+                  - text: Overall scores
+                  - generic [ref=f15e1849]: 0–100% of debates
+                - generic [ref=f15e1850]: "James White’s overall scores across 4 matching 1-on-1 debates. 75–79: 2 debates; 80–84: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1851]:
+                  - listitem [ref=f15e1852]
+                  - listitem [ref=f15e1853]
+                  - listitem [ref=f15e1854]
+                  - listitem [ref=f15e1855]
+                  - listitem [ref=f15e1856]
+                  - listitem [ref=f15e1857]:
+                    - strong [ref=f15e1859]: "2"
+                  - listitem [ref=f15e1860]:
+                    - strong [ref=f15e1862]: "2"
+                  - listitem [ref=f15e1863]
+                  - listitem [ref=f15e1864]
+                  - listitem [ref=f15e1865]
+                - generic [ref=f15e1866]:
+                  - generic [ref=f15e1867]: "50"
+                  - generic [ref=f15e1868]: "75"
+                  - generic [ref=f15e1869]: "100"
+              - generic [ref=f15e1870]:
+                - generic [ref=f15e1871]:
+                  - generic [ref=f15e1872]: James's avg.
+                  - strong [ref=f15e1873]: "79.5"
+                - generic [ref=f15e1874]:
+                  - generic [ref=f15e1875]: Opponents' Avg.
+                  - strong [ref=f15e1876]: "78.3"
+        - listitem [ref=f15e1877]:
+          - article [ref=f15e1878]:
+            - link "Open David Wood's debate profile" [ref=f15e1879] [cursor=pointer]:
+              - /url: /interlocutor/david-wood/
+              - generic "Rank 33" [ref=f15e1880]: "33"
+              - img "David Wood" [ref=f15e1881]
+              - generic [ref=f15e1882]:
+                - strong [ref=f15e1883]: David Wood
+                - generic [ref=f15e1884]:
+                  - generic [ref=f15e1885]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e1886]: Developing sample
+                - generic [ref=f15e1888]: "Most common topic: Science and design"
+                - generic "David Wood's reasoning-tag rates" [ref=f15e1889]:
+                  - generic [ref=f15e1890]:
+                    - generic [ref=f15e1891]: Fallacies
+                    - strong [ref=f15e1893]: 0.0 per 100
+                  - generic [ref=f15e1894]:
+                    - generic [ref=f15e1895]: Biases
+                    - strong [ref=f15e1897]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1898]:
+                - generic [ref=f15e1899]:
+                  - text: Overall scores
+                  - generic [ref=f15e1900]: 0–100% of debates
+                - generic [ref=f15e1901]: "David Wood’s overall scores across 4 matching 1-on-1 debates. 70–74: 1 debate; 75–79: 1 debate; 80–84: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1902]:
+                  - listitem [ref=f15e1903]
+                  - listitem [ref=f15e1904]
+                  - listitem [ref=f15e1905]
+                  - listitem [ref=f15e1906]
+                  - listitem [ref=f15e1907]:
+                    - strong [ref=f15e1909]: "1"
+                  - listitem [ref=f15e1910]:
+                    - strong [ref=f15e1912]: "1"
+                  - listitem [ref=f15e1913]:
+                    - strong [ref=f15e1915]: "2"
+                  - listitem [ref=f15e1916]
+                  - listitem [ref=f15e1917]
+                  - listitem [ref=f15e1918]
+                - generic [ref=f15e1919]:
+                  - generic [ref=f15e1920]: "50"
+                  - generic [ref=f15e1921]: "75"
+                  - generic [ref=f15e1922]: "100"
+              - generic [ref=f15e1923]:
+                - generic [ref=f15e1924]:
+                  - generic [ref=f15e1925]: David's avg.
+                  - strong [ref=f15e1926]: "79"
+                - generic [ref=f15e1927]:
+                  - generic [ref=f15e1928]: Opponents' Avg.
+                  - strong [ref=f15e1929]: "83.3"
+        - listitem [ref=f15e1930]:
+          - article [ref=f15e1931]:
+            - link "Open William Lane Craig's debate profile" [ref=f15e1932] [cursor=pointer]:
+              - /url: /interlocutor/william-lane-craig/
+              - generic "Rank 34" [ref=f15e1933]: "34"
+              - img "William Lane Craig" [ref=f15e1934]
+              - generic [ref=f15e1935]:
+                - strong [ref=f15e1936]: William Lane Craig
+                - generic [ref=f15e1937]:
+                  - generic [ref=f15e1938]: 29 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e1939]: Established sample
+                - generic [ref=f15e1941]: "Most common topic: God, theism, and atheism"
+                - generic "William Lane Craig's reasoning-tag rates" [ref=f15e1942]:
+                  - generic [ref=f15e1943]:
+                    - generic [ref=f15e1944]: Fallacies
+                    - strong [ref=f15e1947]: 9.9 per 100
+                  - generic [ref=f15e1948]:
+                    - generic [ref=f15e1949]: Biases
+                    - strong [ref=f15e1952]: 3.3 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e1953]:
+                - generic [ref=f15e1954]:
+                  - text: Overall scores
+                  - generic [ref=f15e1955]: 0–100% of debates
+                - generic [ref=f15e1956]: "William Lane Craig’s overall scores across 29 matching 1-on-1 debates. 70–74: 2 debates; 75–79: 15 debates; 80–84: 11 debates; 85–89: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e1957]:
+                  - listitem [ref=f15e1958]
+                  - listitem [ref=f15e1959]
+                  - listitem [ref=f15e1960]
+                  - listitem [ref=f15e1961]
+                  - listitem [ref=f15e1962]:
+                    - strong [ref=f15e1964]: "2"
+                  - listitem [ref=f15e1965]:
+                    - strong [ref=f15e1967]: "15"
+                  - listitem [ref=f15e1968]:
+                    - strong [ref=f15e1970]: "11"
+                  - listitem [ref=f15e1971]:
+                    - strong [ref=f15e1973]: "1"
+                  - listitem [ref=f15e1974]
+                  - listitem [ref=f15e1975]
+                - generic [ref=f15e1976]:
+                  - generic [ref=f15e1977]: "50"
+                  - generic [ref=f15e1978]: "75"
+                  - generic [ref=f15e1979]: "100"
+              - generic [ref=f15e1980]:
+                - generic [ref=f15e1981]:
+                  - generic [ref=f15e1982]: William's avg.
+                  - strong [ref=f15e1983]: "78.9"
+                - generic [ref=f15e1984]:
+                  - generic [ref=f15e1985]: Opponents' Avg.
+                  - strong [ref=f15e1986]: "82.5"
+        - listitem [ref=f15e1987]:
+          - article [ref=f15e1988]:
+            - link "Open Jonathan McLatchie's debate profile" [ref=f15e1989] [cursor=pointer]:
+              - /url: /interlocutor/jonathan-mclatchie/
+              - generic "Rank 35" [ref=f15e1990]: "35"
+              - img "Jonathan McLatchie" [ref=f15e1991]
+              - generic [ref=f15e1992]:
+                - strong [ref=f15e1993]: Jonathan McLatchie
+                - generic [ref=f15e1994]:
+                  - generic [ref=f15e1995]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e1996]: Developing sample
+                - generic [ref=f15e1998]: "Most common topic: Bible and historical Jesus"
+                - generic "Jonathan McLatchie's reasoning-tag rates" [ref=f15e1999]:
+                  - generic [ref=f15e2000]:
+                    - generic [ref=f15e2001]: Fallacies
+                    - strong [ref=f15e2003]: 0.0 per 100
+                  - generic [ref=f15e2004]:
+                    - generic [ref=f15e2005]: Biases
+                    - strong [ref=f15e2007]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2008]:
+                - generic [ref=f15e2009]:
+                  - text: Overall scores
+                  - generic [ref=f15e2010]: 0–100% of debates
+                - generic [ref=f15e2011]: "Jonathan McLatchie’s overall scores across 5 matching 1-on-1 debates. 70–74: 1 debate; 75–79: 2 debates; 80–84: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2012]:
+                  - listitem [ref=f15e2013]
+                  - listitem [ref=f15e2014]
+                  - listitem [ref=f15e2015]
+                  - listitem [ref=f15e2016]
+                  - listitem [ref=f15e2017]:
+                    - strong [ref=f15e2019]: "1"
+                  - listitem [ref=f15e2020]:
+                    - strong [ref=f15e2022]: "2"
+                  - listitem [ref=f15e2023]:
+                    - strong [ref=f15e2025]: "2"
+                  - listitem [ref=f15e2026]
+                  - listitem [ref=f15e2027]
+                  - listitem [ref=f15e2028]
+                - generic [ref=f15e2029]:
+                  - generic [ref=f15e2030]: "50"
+                  - generic [ref=f15e2031]: "75"
+                  - generic [ref=f15e2032]: "100"
+              - generic [ref=f15e2033]:
+                - generic [ref=f15e2034]:
+                  - generic [ref=f15e2035]: Jonathan's avg.
+                  - strong [ref=f15e2036]: "78.8"
+                - generic [ref=f15e2037]:
+                  - generic [ref=f15e2038]: Opponents' Avg.
+                  - strong [ref=f15e2039]: "81.6"
+        - listitem [ref=f15e2040]:
+          - article [ref=f15e2041]:
+            - link "Open Glen Scrivener's debate profile" [ref=f15e2042] [cursor=pointer]:
+              - /url: /interlocutor/glen-scrivener/
+              - generic "Rank 36" [ref=f15e2043]: "36"
+              - img "Glen Scrivener" [ref=f15e2044]
+              - generic [ref=f15e2045]:
+                - strong [ref=f15e2046]: Glen Scrivener
+                - generic [ref=f15e2047]:
+                  - generic [ref=f15e2048]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e2049]: Developing sample
+                - generic [ref=f15e2051]: "Most common topic: Morality and ethics"
+                - generic "Glen Scrivener's reasoning-tag rates" [ref=f15e2052]:
+                  - generic [ref=f15e2053]:
+                    - generic [ref=f15e2054]: Fallacies
+                    - strong [ref=f15e2057]: 12.3 per 100
+                  - generic [ref=f15e2058]:
+                    - generic [ref=f15e2059]: Biases
+                    - strong [ref=f15e2062]: 1.5 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2063]:
+                - generic [ref=f15e2064]:
+                  - text: Overall scores
+                  - generic [ref=f15e2065]: 0–100% of debates
+                - generic [ref=f15e2066]: "Glen Scrivener’s overall scores across 6 matching 1-on-1 debates. 70–74: 1 debate; 75–79: 2 debates; 80–84: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2067]:
+                  - listitem [ref=f15e2068]
+                  - listitem [ref=f15e2069]
+                  - listitem [ref=f15e2070]
+                  - listitem [ref=f15e2071]
+                  - listitem [ref=f15e2072]:
+                    - strong [ref=f15e2074]: "1"
+                  - listitem [ref=f15e2075]:
+                    - strong [ref=f15e2077]: "2"
+                  - listitem [ref=f15e2078]:
+                    - strong [ref=f15e2080]: "3"
+                  - listitem [ref=f15e2081]
+                  - listitem [ref=f15e2082]
+                  - listitem [ref=f15e2083]
+                - generic [ref=f15e2084]:
+                  - generic [ref=f15e2085]: "50"
+                  - generic [ref=f15e2086]: "75"
+                  - generic [ref=f15e2087]: "100"
+              - generic [ref=f15e2088]:
+                - generic [ref=f15e2089]:
+                  - generic [ref=f15e2090]: Glen's avg.
+                  - strong [ref=f15e2091]: "78.3"
+                - generic [ref=f15e2092]:
+                  - generic [ref=f15e2093]: Opponents' Avg.
+                  - strong [ref=f15e2094]: "84.3"
+        - listitem [ref=f15e2095]:
+          - article [ref=f15e2096]:
+            - link "Open Richard Swinburne's debate profile" [ref=f15e2097] [cursor=pointer]:
+              - /url: /interlocutor/richard-swinburne/
+              - generic "Rank 37" [ref=f15e2098]: "37"
+              - img "Richard Swinburne" [ref=f15e2099]
+              - generic [ref=f15e2100]:
+                - strong [ref=f15e2101]: Richard Swinburne
+                - generic [ref=f15e2102]:
+                  - generic [ref=f15e2103]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e2104]: Developing sample
+                - generic [ref=f15e2106]: "Most common topic: God, theism, and atheism"
+                - generic "Richard Swinburne's reasoning-tag rates" [ref=f15e2107]:
+                  - generic [ref=f15e2108]:
+                    - generic [ref=f15e2109]: Fallacies
+                    - strong [ref=f15e2111]: 0.0 per 100
+                  - generic [ref=f15e2112]:
+                    - generic [ref=f15e2113]: Biases
+                    - strong [ref=f15e2116]: 7.7 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2117]:
+                - generic [ref=f15e2118]:
+                  - text: Overall scores
+                  - generic [ref=f15e2119]: 0–100% of debates
+                - generic [ref=f15e2120]: "Richard Swinburne’s overall scores across 4 matching 1-on-1 debates. 75–79: 2 debates; 80–84: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2121]:
+                  - listitem [ref=f15e2122]
+                  - listitem [ref=f15e2123]
+                  - listitem [ref=f15e2124]
+                  - listitem [ref=f15e2125]
+                  - listitem [ref=f15e2126]
+                  - listitem [ref=f15e2127]:
+                    - strong [ref=f15e2129]: "2"
+                  - listitem [ref=f15e2130]:
+                    - strong [ref=f15e2132]: "2"
+                  - listitem [ref=f15e2133]
+                  - listitem [ref=f15e2134]
+                  - listitem [ref=f15e2135]
+                - generic [ref=f15e2136]:
+                  - generic [ref=f15e2137]: "50"
+                  - generic [ref=f15e2138]: "75"
+                  - generic [ref=f15e2139]: "100"
+              - generic [ref=f15e2140]:
+                - generic [ref=f15e2141]:
+                  - generic [ref=f15e2142]: Richard's avg.
+                  - strong [ref=f15e2143]: "78"
+                - generic [ref=f15e2144]:
+                  - generic [ref=f15e2145]: Opponents' Avg.
+                  - strong [ref=f15e2146]: "84.8"
+        - listitem [ref=f15e2147]:
+          - article [ref=f15e2148]:
+            - link "Open Tom Jump's debate profile" [ref=f15e2149] [cursor=pointer]:
+              - /url: /interlocutor/tom-jump/
+              - generic "Rank 38" [ref=f15e2150]: "38"
+              - img "Tom Jump" [ref=f15e2151]
+              - generic [ref=f15e2152]:
+                - strong [ref=f15e2153]: Tom Jump
+                - generic [ref=f15e2154]:
+                  - generic [ref=f15e2155]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e2156]: Developing sample
+                - generic [ref=f15e2158]: "Most common topic: Mind and consciousness"
+                - generic "Tom Jump's reasoning-tag rates" [ref=f15e2159]:
+                  - generic [ref=f15e2160]:
+                    - generic [ref=f15e2161]: Fallacies
+                    - strong [ref=f15e2164]: 9.4 per 100
+                  - generic [ref=f15e2165]:
+                    - generic [ref=f15e2166]: Biases
+                    - strong [ref=f15e2168]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2169]:
+                - generic [ref=f15e2170]:
+                  - text: Overall scores
+                  - generic [ref=f15e2171]: 0–100% of debates
+                - generic [ref=f15e2172]: "Tom Jump’s overall scores across 6 matching 1-on-1 debates. 70–74: 1 debate; 75–79: 3 debates; 80–84: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2173]:
+                  - listitem [ref=f15e2174]
+                  - listitem [ref=f15e2175]
+                  - listitem [ref=f15e2176]
+                  - listitem [ref=f15e2177]
+                  - listitem [ref=f15e2178]:
+                    - strong [ref=f15e2180]: "1"
+                  - listitem [ref=f15e2181]:
+                    - strong [ref=f15e2183]: "3"
+                  - listitem [ref=f15e2184]:
+                    - strong [ref=f15e2186]: "2"
+                  - listitem [ref=f15e2187]
+                  - listitem [ref=f15e2188]
+                  - listitem [ref=f15e2189]
+                - generic [ref=f15e2190]:
+                  - generic [ref=f15e2191]: "50"
+                  - generic [ref=f15e2192]: "75"
+                  - generic [ref=f15e2193]: "100"
+              - generic [ref=f15e2194]:
+                - generic [ref=f15e2195]:
+                  - generic [ref=f15e2196]: Tom's avg.
+                  - strong [ref=f15e2197]: "77.7"
+                - generic [ref=f15e2198]:
+                  - generic [ref=f15e2199]: Opponents' Avg.
+                  - strong [ref=f15e2200]: "78.8"
+        - listitem [ref=f15e2201]:
+          - article [ref=f15e2202]:
+            - link "Open Ross Douthat's debate profile" [ref=f15e2203] [cursor=pointer]:
+              - /url: /interlocutor/ross-douthat/
+              - generic "Rank 39" [ref=f15e2204]: "39"
+              - img "Ross Douthat" [ref=f15e2205]
+              - generic [ref=f15e2206]:
+                - strong [ref=f15e2207]: Ross Douthat
+                - generic [ref=f15e2208]:
+                  - generic [ref=f15e2209]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=f15e2210]: Limited sample
+                - generic [ref=f15e2212]: "Most common topic: Bible and historical Jesus"
+                - generic "Ross Douthat's reasoning-tag rates" [ref=f15e2213]:
+                  - generic [ref=f15e2214]:
+                    - generic [ref=f15e2215]: Fallacies
+                    - strong [ref=f15e2218]: 21.6 per 100
+                  - generic [ref=f15e2219]:
+                    - generic [ref=f15e2220]: Biases
+                    - strong [ref=f15e2223]: 2.7 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2224]:
+                - generic [ref=f15e2225]:
+                  - text: Overall scores
+                  - generic [ref=f15e2226]: 0–100% of debates
+                - generic [ref=f15e2227]: "Ross Douthat’s overall scores across 3 matching 1-on-1 debates. 65–69: 1 debate; 80–84: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2228]:
+                  - listitem [ref=f15e2229]
+                  - listitem [ref=f15e2230]
+                  - listitem [ref=f15e2231]
+                  - listitem [ref=f15e2232]:
+                    - strong [ref=f15e2234]: "1"
+                  - listitem [ref=f15e2235]
+                  - listitem [ref=f15e2236]
+                  - listitem [ref=f15e2237]:
+                    - strong [ref=f15e2239]: "2"
+                  - listitem [ref=f15e2240]
+                  - listitem [ref=f15e2241]
+                  - listitem [ref=f15e2242]
+                - generic [ref=f15e2243]:
+                  - generic [ref=f15e2244]: "50"
+                  - generic [ref=f15e2245]: "75"
+                  - generic [ref=f15e2246]: "100"
+              - generic [ref=f15e2247]:
+                - generic [ref=f15e2248]:
+                  - generic [ref=f15e2249]: Ross's avg.
+                  - strong [ref=f15e2250]: "77.7"
+                - generic [ref=f15e2251]:
+                  - generic [ref=f15e2252]: Opponents' Avg.
+                  - strong [ref=f15e2253]: "85"
+        - listitem [ref=f15e2254]:
+          - article [ref=f15e2255]:
+            - link "Open John Lennox's debate profile" [ref=f15e2256] [cursor=pointer]:
+              - /url: /interlocutor/john-lennox/
+              - generic "Rank 40" [ref=f15e2257]: "40"
+              - img "John Lennox" [ref=f15e2258]
+              - generic [ref=f15e2259]:
+                - strong [ref=f15e2260]: John Lennox
+                - generic [ref=f15e2261]:
+                  - generic [ref=f15e2262]: 10 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e2263]: Established sample
+                - generic [ref=f15e2265]: "Most common topic: God, theism, and atheism"
+                - generic "John Lennox's reasoning-tag rates" [ref=f15e2266]:
+                  - generic [ref=f15e2267]:
+                    - generic [ref=f15e2268]: Fallacies
+                    - strong [ref=f15e2271]: 15.6 per 100
+                  - generic [ref=f15e2272]:
+                    - generic [ref=f15e2273]: Biases
+                    - strong [ref=f15e2276]: 1.6 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2277]:
+                - generic [ref=f15e2278]:
+                  - text: Overall scores
+                  - generic [ref=f15e2279]: 0–100% of debates
+                - generic [ref=f15e2280]: "John Lennox’s overall scores across 10 matching 1-on-1 debates. 70–74: 2 debates; 75–79: 7 debates; 80–84: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2281]:
+                  - listitem [ref=f15e2282]
+                  - listitem [ref=f15e2283]
+                  - listitem [ref=f15e2284]
+                  - listitem [ref=f15e2285]
+                  - listitem [ref=f15e2286]:
+                    - strong [ref=f15e2288]: "2"
+                  - listitem [ref=f15e2289]:
+                    - strong [ref=f15e2291]: "7"
+                  - listitem [ref=f15e2292]:
+                    - strong [ref=f15e2294]: "1"
+                  - listitem [ref=f15e2295]
+                  - listitem [ref=f15e2296]
+                  - listitem [ref=f15e2297]
+                - generic [ref=f15e2298]:
+                  - generic [ref=f15e2299]: "50"
+                  - generic [ref=f15e2300]: "75"
+                  - generic [ref=f15e2301]: "100"
+              - generic [ref=f15e2302]:
+                - generic [ref=f15e2303]:
+                  - generic [ref=f15e2304]: John's avg.
+                  - strong [ref=f15e2305]: "76.7"
+                - generic [ref=f15e2306]:
+                  - generic [ref=f15e2307]: Opponents' Avg.
+                  - strong [ref=f15e2308]: "80.7"
+        - listitem [ref=f15e2309]:
+          - article [ref=f15e2310]:
+            - link "Open Aron Ra's debate profile" [ref=f15e2311] [cursor=pointer]:
+              - /url: /interlocutor/aron-ra/
+              - generic "Rank 41" [ref=f15e2312]: "41"
+              - img "Aron Ra" [ref=f15e2313]
+              - generic [ref=f15e2314]:
+                - strong [ref=f15e2315]: Aron Ra
+                - generic [ref=f15e2316]:
+                  - generic [ref=f15e2317]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e2318]: Developing sample
+                - generic [ref=f15e2320]: "Most common topic: Logic, reason, and presuppositions"
+                - generic "Aron Ra's reasoning-tag rates" [ref=f15e2321]:
+                  - generic [ref=f15e2322]:
+                    - generic [ref=f15e2323]: Fallacies
+                    - strong [ref=f15e2326]: 11.3 per 100
+                  - generic [ref=f15e2327]:
+                    - generic [ref=f15e2328]: Biases
+                    - strong [ref=f15e2331]: 6.2 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2332]:
+                - generic [ref=f15e2333]:
+                  - text: Overall scores
+                  - generic [ref=f15e2334]: 0–100% of debates
+                - generic [ref=f15e2335]: "Aron Ra’s overall scores across 6 matching 1-on-1 debates. 70–74: 1 debate; 75–79: 5 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2336]:
+                  - listitem [ref=f15e2337]
+                  - listitem [ref=f15e2338]
+                  - listitem [ref=f15e2339]
+                  - listitem [ref=f15e2340]
+                  - listitem [ref=f15e2341]:
+                    - strong [ref=f15e2343]: "1"
+                  - listitem [ref=f15e2344]:
+                    - strong [ref=f15e2346]: "5"
+                  - listitem [ref=f15e2347]
+                  - listitem [ref=f15e2348]
+                  - listitem [ref=f15e2349]
+                  - listitem [ref=f15e2350]
+                - generic [ref=f15e2351]:
+                  - generic [ref=f15e2352]: "50"
+                  - generic [ref=f15e2353]: "75"
+                  - generic [ref=f15e2354]: "100"
+              - generic [ref=f15e2355]:
+                - generic [ref=f15e2356]:
+                  - generic [ref=f15e2357]: Aron's avg.
+                  - strong [ref=f15e2358]: "76.5"
+                - generic [ref=f15e2359]:
+                  - generic [ref=f15e2360]: Opponents' Avg.
+                  - strong [ref=f15e2361]: "77.7"
+        - listitem [ref=f15e2362]:
+          - article [ref=f15e2363]:
+            - link "Open Trent Horn's debate profile" [ref=f15e2364] [cursor=pointer]:
+              - /url: /interlocutor/trent-horn/
+              - generic "Rank 42" [ref=f15e2365]: "42"
+              - img "Trent Horn" [ref=f15e2366]
+              - generic [ref=f15e2367]:
+                - strong [ref=f15e2368]: Trent Horn
+                - generic [ref=f15e2369]:
+                  - generic [ref=f15e2370]: 7 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e2371]: Established sample
+                - generic [ref=f15e2373]: "Most common topic: Christian belief and doctrine"
+                - generic "Trent Horn's reasoning-tag rates" [ref=f15e2374]:
+                  - generic [ref=f15e2375]:
+                    - generic [ref=f15e2376]: Fallacies
+                    - strong [ref=f15e2379]: 8.2 per 100
+                  - generic [ref=f15e2380]:
+                    - generic [ref=f15e2381]: Biases
+                    - strong [ref=f15e2384]: 2.1 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2385]:
+                - generic [ref=f15e2386]:
+                  - text: Overall scores
+                  - generic [ref=f15e2387]: 0–100% of debates
+                - generic [ref=f15e2388]: "Trent Horn’s overall scores across 7 matching 1-on-1 debates. 70–74: 3 debates; 75–79: 3 debates; 80–84: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2389]:
+                  - listitem [ref=f15e2390]
+                  - listitem [ref=f15e2391]
+                  - listitem [ref=f15e2392]
+                  - listitem [ref=f15e2393]
+                  - listitem [ref=f15e2394]:
+                    - strong [ref=f15e2396]: "3"
+                  - listitem [ref=f15e2397]:
+                    - strong [ref=f15e2399]: "3"
+                  - listitem [ref=f15e2400]:
+                    - strong [ref=f15e2402]: "1"
+                  - listitem [ref=f15e2403]
+                  - listitem [ref=f15e2404]
+                  - listitem [ref=f15e2405]
+                - generic [ref=f15e2406]:
+                  - generic [ref=f15e2407]: "50"
+                  - generic [ref=f15e2408]: "75"
+                  - generic [ref=f15e2409]: "100"
+              - generic [ref=f15e2410]:
+                - generic [ref=f15e2411]:
+                  - generic [ref=f15e2412]: Trent's avg.
+                  - strong [ref=f15e2413]: "76.3"
+                - generic [ref=f15e2414]:
+                  - generic [ref=f15e2415]: Opponents' Avg.
+                  - strong [ref=f15e2416]: "80.3"
+        - listitem [ref=f15e2417]:
+          - article [ref=f15e2418]:
+            - link "Open Dan Barker's debate profile" [ref=f15e2419] [cursor=pointer]:
+              - /url: /interlocutor/dan-barker/
+              - generic "Rank 43" [ref=f15e2420]: "43"
+              - img "Dan Barker" [ref=f15e2421]
+              - generic [ref=f15e2422]:
+                - strong [ref=f15e2423]: Dan Barker
+                - generic [ref=f15e2424]:
+                  - generic [ref=f15e2425]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e2426]: Developing sample
+                - generic [ref=f15e2428]: "Most common topic: God, theism, and atheism"
+                - generic "Dan Barker's reasoning-tag rates" [ref=f15e2429]:
+                  - generic [ref=f15e2430]:
+                    - generic [ref=f15e2431]: Fallacies
+                    - strong [ref=f15e2434]: 15.7 per 100
+                  - generic [ref=f15e2435]:
+                    - generic [ref=f15e2436]: Biases
+                    - strong [ref=f15e2438]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2439]:
+                - generic [ref=f15e2440]:
+                  - text: Overall scores
+                  - generic [ref=f15e2441]: 0–100% of debates
+                - generic [ref=f15e2442]: "Dan Barker’s overall scores across 6 matching 1-on-1 debates. 70–74: 1 debate; 75–79: 5 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2443]:
+                  - listitem [ref=f15e2444]
+                  - listitem [ref=f15e2445]
+                  - listitem [ref=f15e2446]
+                  - listitem [ref=f15e2447]
+                  - listitem [ref=f15e2448]:
+                    - strong [ref=f15e2450]: "1"
+                  - listitem [ref=f15e2451]:
+                    - strong [ref=f15e2453]: "5"
+                  - listitem [ref=f15e2454]
+                  - listitem [ref=f15e2455]
+                  - listitem [ref=f15e2456]
+                  - listitem [ref=f15e2457]
+                - generic [ref=f15e2458]:
+                  - generic [ref=f15e2459]: "50"
+                  - generic [ref=f15e2460]: "75"
+                  - generic [ref=f15e2461]: "100"
+              - generic [ref=f15e2462]:
+                - generic [ref=f15e2463]:
+                  - generic [ref=f15e2464]: Dan's avg.
+                  - strong [ref=f15e2465]: "76"
+                - generic [ref=f15e2466]:
+                  - generic [ref=f15e2467]: Opponents' Avg.
+                  - strong [ref=f15e2468]: "73"
+        - listitem [ref=f15e2469]:
+          - article [ref=f15e2470]:
+            - link "Open Gregory Pine's debate profile" [ref=f15e2471] [cursor=pointer]:
+              - /url: /interlocutor/gregory-pine/
+              - generic "Rank 44" [ref=f15e2472]: "44"
+              - img "Gregory Pine" [ref=f15e2473]
+              - generic [ref=f15e2474]:
+                - strong [ref=f15e2475]: Gregory Pine
+                - generic [ref=f15e2476]:
+                  - generic [ref=f15e2477]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=f15e2478]: Limited sample
+                - generic [ref=f15e2480]: "Most common topic: God, theism, and atheism"
+                - generic "Gregory Pine's reasoning-tag rates" [ref=f15e2481]:
+                  - generic [ref=f15e2482]:
+                    - generic [ref=f15e2483]: Fallacies
+                    - strong [ref=f15e2486]: 11.4 per 100
+                  - generic [ref=f15e2487]:
+                    - generic [ref=f15e2488]: Biases
+                    - strong [ref=f15e2491]: 2.9 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2492]:
+                - generic [ref=f15e2493]:
+                  - text: Overall scores
+                  - generic [ref=f15e2494]: 0–100% of debates
+                - generic [ref=f15e2495]: "Gregory Pine’s overall scores across 3 matching 1-on-1 debates. 70–74: 1 debate; 75–79: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2496]:
+                  - listitem [ref=f15e2497]
+                  - listitem [ref=f15e2498]
+                  - listitem [ref=f15e2499]
+                  - listitem [ref=f15e2500]
+                  - listitem [ref=f15e2501]:
+                    - strong [ref=f15e2503]: "1"
+                  - listitem [ref=f15e2504]:
+                    - strong [ref=f15e2506]: "2"
+                  - listitem [ref=f15e2507]
+                  - listitem [ref=f15e2508]
+                  - listitem [ref=f15e2509]
+                  - listitem [ref=f15e2510]
+                - generic [ref=f15e2511]:
+                  - generic [ref=f15e2512]: "50"
+                  - generic [ref=f15e2513]: "75"
+                  - generic [ref=f15e2514]: "100"
+              - generic [ref=f15e2515]:
+                - generic [ref=f15e2516]:
+                  - generic [ref=f15e2517]: Gregory's avg.
+                  - strong [ref=f15e2518]: "76"
+                - generic [ref=f15e2519]:
+                  - generic [ref=f15e2520]: Opponents' Avg.
+                  - strong [ref=f15e2521]: "86.7"
+        - listitem [ref=f15e2522]:
+          - article [ref=f15e2523]:
+            - link "Open Michael Jones's debate profile" [ref=f15e2524] [cursor=pointer]:
+              - /url: /interlocutor/michael-jones/
+              - generic "Rank 45" [ref=f15e2525]: "45"
+              - img "Michael Jones" [ref=f15e2526]
+              - generic [ref=f15e2527]:
+                - strong [ref=f15e2528]: Michael Jones
+                - generic [ref=f15e2529]:
+                  - generic [ref=f15e2530]: 13 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e2531]: Established sample
+                - generic [ref=f15e2533]: "Most common topic: Mind and consciousness"
+                - generic "Michael Jones's reasoning-tag rates" [ref=f15e2534]:
+                  - generic [ref=f15e2535]:
+                    - generic [ref=f15e2536]: Fallacies
+                    - strong [ref=f15e2539]: 5.0 per 100
+                  - generic [ref=f15e2540]:
+                    - generic [ref=f15e2541]: Biases
+                    - strong [ref=f15e2544]: 2.9 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2545]:
+                - generic [ref=f15e2546]:
+                  - text: Overall scores
+                  - generic [ref=f15e2547]: 0–100% of debates
+                - generic [ref=f15e2548]: "Michael Jones’s overall scores across 13 matching 1-on-1 debates. 65–69: 1 debate; 70–74: 6 debates; 75–79: 4 debates; 80–84: 2 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2549]:
+                  - listitem [ref=f15e2550]
+                  - listitem [ref=f15e2551]
+                  - listitem [ref=f15e2552]
+                  - listitem [ref=f15e2553]:
+                    - strong [ref=f15e2555]: "1"
+                  - listitem [ref=f15e2556]:
+                    - strong [ref=f15e2558]: "6"
+                  - listitem [ref=f15e2559]:
+                    - strong [ref=f15e2561]: "4"
+                  - listitem [ref=f15e2562]:
+                    - strong [ref=f15e2564]: "2"
+                  - listitem [ref=f15e2565]
+                  - listitem [ref=f15e2566]
+                  - listitem [ref=f15e2567]
+                - generic [ref=f15e2568]:
+                  - generic [ref=f15e2569]: "50"
+                  - generic [ref=f15e2570]: "75"
+                  - generic [ref=f15e2571]: "100"
+              - generic [ref=f15e2572]:
+                - generic [ref=f15e2573]:
+                  - generic [ref=f15e2574]: Michael's avg.
+                  - strong [ref=f15e2575]: "75.4"
+                - generic [ref=f15e2576]:
+                  - generic [ref=f15e2577]: Opponents' Avg.
+                  - strong [ref=f15e2578]: "82.5"
+        - listitem [ref=f15e2579]:
+          - article [ref=f15e2580]:
+            - link "Open Keith Ward's debate profile" [ref=f15e2581] [cursor=pointer]:
+              - /url: /interlocutor/keith-ward/
+              - generic "Rank 46" [ref=f15e2582]: "46"
+              - img "Keith Ward" [ref=f15e2583]
+              - generic [ref=f15e2584]:
+                - strong [ref=f15e2585]: Keith Ward
+                - generic [ref=f15e2586]:
+                  - generic [ref=f15e2587]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=f15e2588]: Limited sample
+                - generic [ref=f15e2590]: "Most common topic: Mind and consciousness"
+                - generic "Keith Ward's reasoning-tag rates" [ref=f15e2591]:
+                  - generic [ref=f15e2592]:
+                    - generic [ref=f15e2593]: Fallacies
+                    - strong [ref=f15e2596]: 10.3 per 100
+                  - generic [ref=f15e2597]:
+                    - generic [ref=f15e2598]: Biases
+                    - strong [ref=f15e2601]: 10.3 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2602]:
+                - generic [ref=f15e2603]:
+                  - text: Overall scores
+                  - generic [ref=f15e2604]: 0–100% of debates
+                - generic [ref=f15e2605]: "Keith Ward’s overall scores across 3 matching 1-on-1 debates. 70–74: 1 debate; 75–79: 1 debate; 80–84: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2606]:
+                  - listitem [ref=f15e2607]
+                  - listitem [ref=f15e2608]
+                  - listitem [ref=f15e2609]
+                  - listitem [ref=f15e2610]
+                  - listitem [ref=f15e2611]:
+                    - strong [ref=f15e2613]: "1"
+                  - listitem [ref=f15e2614]:
+                    - strong [ref=f15e2616]: "1"
+                  - listitem [ref=f15e2617]:
+                    - strong [ref=f15e2619]: "1"
+                  - listitem [ref=f15e2620]
+                  - listitem [ref=f15e2621]
+                  - listitem [ref=f15e2622]
+                - generic [ref=f15e2623]:
+                  - generic [ref=f15e2624]: "50"
+                  - generic [ref=f15e2625]: "75"
+                  - generic [ref=f15e2626]: "100"
+              - generic [ref=f15e2627]:
+                - generic [ref=f15e2628]:
+                  - generic [ref=f15e2629]: Keith's avg.
+                  - strong [ref=f15e2630]: "75.3"
+                - generic [ref=f15e2631]:
+                  - generic [ref=f15e2632]: Opponents' Avg.
+                  - strong [ref=f15e2633]: "83.3"
+        - listitem [ref=f15e2634]:
+          - article [ref=f15e2635]:
+            - link "Open Dinesh D'Souza's debate profile" [ref=f15e2636] [cursor=pointer]:
+              - /url: /interlocutor/dinesh-d-souza/
+              - generic "Rank 47" [ref=f15e2637]: "47"
+              - img "Dinesh D'Souza" [ref=f15e2638]
+              - generic [ref=f15e2639]:
+                - strong [ref=f15e2640]: Dinesh D'Souza
+                - generic [ref=f15e2641]:
+                  - generic [ref=f15e2642]: 7 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e2643]: Established sample
+                - generic [ref=f15e2645]: "Most common topic: God, theism, and atheism"
+                - generic "Dinesh D'Souza's reasoning-tag rates" [ref=f15e2646]:
+                  - generic [ref=f15e2647]:
+                    - generic [ref=f15e2648]: Fallacies
+                    - strong [ref=f15e2651]: 15.7 per 100
+                  - generic [ref=f15e2652]:
+                    - generic [ref=f15e2653]: Biases
+                    - strong [ref=f15e2656]: 8.4 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2657]:
+                - generic [ref=f15e2658]:
+                  - text: Overall scores
+                  - generic [ref=f15e2659]: 0–100% of debates
+                - generic [ref=f15e2660]: "Dinesh D'Souza’s overall scores across 7 matching 1-on-1 debates. 70–74: 2 debates; 75–79: 5 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2661]:
+                  - listitem [ref=f15e2662]
+                  - listitem [ref=f15e2663]
+                  - listitem [ref=f15e2664]
+                  - listitem [ref=f15e2665]
+                  - listitem [ref=f15e2666]:
+                    - strong [ref=f15e2668]: "2"
+                  - listitem [ref=f15e2669]:
+                    - strong [ref=f15e2671]: "5"
+                  - listitem [ref=f15e2672]
+                  - listitem [ref=f15e2673]
+                  - listitem [ref=f15e2674]
+                  - listitem [ref=f15e2675]
+                - generic [ref=f15e2676]:
+                  - generic [ref=f15e2677]: "50"
+                  - generic [ref=f15e2678]: "75"
+                  - generic [ref=f15e2679]: "100"
+              - generic [ref=f15e2680]:
+                - generic [ref=f15e2681]:
+                  - generic [ref=f15e2682]: Dinesh's avg.
+                  - strong [ref=f15e2683]: "75"
+                - generic [ref=f15e2684]:
+                  - generic [ref=f15e2685]: Opponents' Avg.
+                  - strong [ref=f15e2686]: "83.6"
+        - listitem [ref=f15e2687]:
+          - article [ref=f15e2688]:
+            - link "Open Jordan Peterson's debate profile" [ref=f15e2689] [cursor=pointer]:
+              - /url: /interlocutor/jordan-peterson/
+              - generic "Rank 48" [ref=f15e2690]: "48"
+              - img "Jordan Peterson" [ref=f15e2691]
+              - generic [ref=f15e2692]:
+                - strong [ref=f15e2693]: Jordan Peterson
+                - generic [ref=f15e2694]:
+                  - generic [ref=f15e2695]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e2696]: Developing sample
+                - generic [ref=f15e2698]: "Most common topic: Meaning and purpose"
+                - generic "Jordan Peterson's reasoning-tag rates" [ref=f15e2699]:
+                  - generic [ref=f15e2700]:
+                    - generic [ref=f15e2701]: Fallacies
+                    - strong [ref=f15e2704]: 17.9 per 100
+                  - generic [ref=f15e2705]:
+                    - generic [ref=f15e2706]: Biases
+                    - strong [ref=f15e2708]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2709]:
+                - generic [ref=f15e2710]:
+                  - text: Overall scores
+                  - generic [ref=f15e2711]: 0–100% of debates
+                - generic [ref=f15e2712]: "Jordan Peterson’s overall scores across 6 matching 1-on-1 debates. 70–74: 3 debates; 75–79: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2713]:
+                  - listitem [ref=f15e2714]
+                  - listitem [ref=f15e2715]
+                  - listitem [ref=f15e2716]
+                  - listitem [ref=f15e2717]
+                  - listitem [ref=f15e2718]:
+                    - strong [ref=f15e2720]: "3"
+                  - listitem [ref=f15e2721]:
+                    - strong [ref=f15e2723]: "3"
+                  - listitem [ref=f15e2724]
+                  - listitem [ref=f15e2725]
+                  - listitem [ref=f15e2726]
+                  - listitem [ref=f15e2727]
+                - generic [ref=f15e2728]:
+                  - generic [ref=f15e2729]: "50"
+                  - generic [ref=f15e2730]: "75"
+                  - generic [ref=f15e2731]: "100"
+              - generic [ref=f15e2732]:
+                - generic [ref=f15e2733]:
+                  - generic [ref=f15e2734]: Jordan's avg.
+                  - strong [ref=f15e2735]: "74.8"
+                - generic [ref=f15e2736]:
+                  - generic [ref=f15e2737]: Opponents' Avg.
+                  - strong [ref=f15e2738]: "83.8"
+        - listitem [ref=f15e2739]:
+          - article [ref=f15e2740]:
+            - link "Open Frank Turek's debate profile" [ref=f15e2741] [cursor=pointer]:
+              - /url: /interlocutor/frank-turek/
+              - generic "Rank 49" [ref=f15e2742]: "49"
+              - img "Frank Turek" [ref=f15e2743]
+              - generic [ref=f15e2744]:
+                - strong [ref=f15e2745]: Frank Turek
+                - generic [ref=f15e2746]:
+                  - generic [ref=f15e2747]: 8 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=f15e2748]: Established sample
+                - generic [ref=f15e2750]: "Most common topic: God, theism, and atheism"
+                - generic "Frank Turek's reasoning-tag rates" [ref=f15e2751]:
+                  - generic [ref=f15e2752]:
+                    - generic [ref=f15e2753]: Fallacies
+                    - strong [ref=f15e2756]: 14.9 per 100
+                  - generic [ref=f15e2757]:
+                    - generic [ref=f15e2758]: Biases
+                    - strong [ref=f15e2761]: 2.3 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2762]:
+                - generic [ref=f15e2763]:
+                  - text: Overall scores
+                  - generic [ref=f15e2764]: 0–100% of debates
+                - generic [ref=f15e2765]: "Frank Turek’s overall scores across 8 matching 1-on-1 debates. 70–74: 5 debates; 75–79: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2766]:
+                  - listitem [ref=f15e2767]
+                  - listitem [ref=f15e2768]
+                  - listitem [ref=f15e2769]
+                  - listitem [ref=f15e2770]
+                  - listitem [ref=f15e2771]:
+                    - strong [ref=f15e2773]: "5"
+                  - listitem [ref=f15e2774]:
+                    - strong [ref=f15e2776]: "3"
+                  - listitem [ref=f15e2777]
+                  - listitem [ref=f15e2778]
+                  - listitem [ref=f15e2779]
+                  - listitem [ref=f15e2780]
+                - generic [ref=f15e2781]:
+                  - generic [ref=f15e2782]: "50"
+                  - generic [ref=f15e2783]: "75"
+                  - generic [ref=f15e2784]: "100"
+              - generic [ref=f15e2785]:
+                - generic [ref=f15e2786]:
+                  - generic [ref=f15e2787]: Frank's avg.
+                  - strong [ref=f15e2788]: "74.1"
+                - generic [ref=f15e2789]:
+                  - generic [ref=f15e2790]: Opponents' Avg.
+                  - strong [ref=f15e2791]: "81.5"
+        - listitem [ref=f15e2792]:
+          - article [ref=f15e2793]:
+            - link "Open Alister McGrath's debate profile" [ref=f15e2794] [cursor=pointer]:
+              - /url: /interlocutor/alister-mcgrath/
+              - generic "Rank 50" [ref=f15e2795]: "50"
+              - img "Alister McGrath" [ref=f15e2796]
+              - generic [ref=f15e2797]:
+                - strong [ref=f15e2798]: Alister McGrath
+                - generic [ref=f15e2799]:
+                  - generic [ref=f15e2800]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e2801]: Developing sample
+                - generic [ref=f15e2803]: "Most common topic: Religion, society, and public reason"
+                - generic "Alister McGrath's reasoning-tag rates" [ref=f15e2804]:
+                  - generic [ref=f15e2805]:
+                    - generic [ref=f15e2806]: Fallacies
+                    - strong [ref=f15e2809]: 24.5 per 100
+                  - generic [ref=f15e2810]:
+                    - generic [ref=f15e2811]: Biases
+                    - strong [ref=f15e2814]: 3.8 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2815]:
+                - generic [ref=f15e2816]:
+                  - text: Overall scores
+                  - generic [ref=f15e2817]: 0–100% of debates
+                - generic [ref=f15e2818]: "Alister McGrath’s overall scores across 4 matching 1-on-1 debates. 70–74: 3 debates; 80–84: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2819]:
+                  - listitem [ref=f15e2820]
+                  - listitem [ref=f15e2821]
+                  - listitem [ref=f15e2822]
+                  - listitem [ref=f15e2823]
+                  - listitem [ref=f15e2824]:
+                    - strong [ref=f15e2826]: "3"
+                  - listitem [ref=f15e2827]
+                  - listitem [ref=f15e2828]:
+                    - strong [ref=f15e2830]: "1"
+                  - listitem [ref=f15e2831]
+                  - listitem [ref=f15e2832]
+                  - listitem [ref=f15e2833]
+                - generic [ref=f15e2834]:
+                  - generic [ref=f15e2835]: "50"
+                  - generic [ref=f15e2836]: "75"
+                  - generic [ref=f15e2837]: "100"
+              - generic [ref=f15e2838]:
+                - generic [ref=f15e2839]:
+                  - generic [ref=f15e2840]: Alister's avg.
+                  - strong [ref=f15e2841]: "74"
+                - generic [ref=f15e2842]:
+                  - generic [ref=f15e2843]: Opponents' Avg.
+                  - strong [ref=f15e2844]: "80.5"
+        - listitem [ref=f15e2845]:
+          - article [ref=f15e2846]:
+            - link "Open Eric Hernandez's debate profile" [ref=f15e2847] [cursor=pointer]:
+              - /url: /interlocutor/eric-hernandez/
+              - generic "Rank 51" [ref=f15e2848]: "51"
+              - img "Eric Hernandez" [ref=f15e2849]
+              - generic [ref=f15e2850]:
+                - strong [ref=f15e2851]: Eric Hernandez
+                - generic [ref=f15e2852]:
+                  - generic [ref=f15e2853]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e2854]: Developing sample
+                - generic [ref=f15e2856]: "Most common topic: Mind and consciousness"
+                - generic "Eric Hernandez's reasoning-tag rates" [ref=f15e2857]:
+                  - generic [ref=f15e2858]:
+                    - generic [ref=f15e2859]: Fallacies
+                    - strong [ref=f15e2862]: 8.3 per 100
+                  - generic [ref=f15e2863]:
+                    - generic [ref=f15e2864]: Biases
+                    - strong [ref=f15e2866]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2867]:
+                - generic [ref=f15e2868]:
+                  - text: Overall scores
+                  - generic [ref=f15e2869]: 0–100% of debates
+                - generic [ref=f15e2870]: "Eric Hernandez’s overall scores across 4 matching 1-on-1 debates. 65–69: 1 debate; 70–74: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2871]:
+                  - listitem [ref=f15e2872]
+                  - listitem [ref=f15e2873]
+                  - listitem [ref=f15e2874]
+                  - listitem [ref=f15e2875]:
+                    - strong [ref=f15e2877]: "1"
+                  - listitem [ref=f15e2878]:
+                    - strong [ref=f15e2880]: "3"
+                  - listitem [ref=f15e2881]
+                  - listitem [ref=f15e2882]
+                  - listitem [ref=f15e2883]
+                  - listitem [ref=f15e2884]
+                  - listitem [ref=f15e2885]
+                - generic [ref=f15e2886]:
+                  - generic [ref=f15e2887]: "50"
+                  - generic [ref=f15e2888]: "75"
+                  - generic [ref=f15e2889]: "100"
+              - generic [ref=f15e2890]:
+                - generic [ref=f15e2891]:
+                  - generic [ref=f15e2892]: Eric's avg.
+                  - strong [ref=f15e2893]: "72"
+                - generic [ref=f15e2894]:
+                  - generic [ref=f15e2895]: Opponents' Avg.
+                  - strong [ref=f15e2896]: "80.5"
+        - listitem [ref=f15e2897]:
+          - article [ref=f15e2898]:
+            - link "Open Peter Atkins's debate profile" [ref=f15e2899] [cursor=pointer]:
+              - /url: /interlocutor/peter-atkins/
+              - generic "Rank 52" [ref=f15e2900]: "52"
+              - img "Peter Atkins" [ref=f15e2901]
+              - generic [ref=f15e2902]:
+                - strong [ref=f15e2903]: Peter Atkins
+                - generic [ref=f15e2904]:
+                  - generic [ref=f15e2905]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e2906]: Developing sample
+                - generic [ref=f15e2908]: "Most common topic: Science and design"
+                - generic "Peter Atkins's reasoning-tag rates" [ref=f15e2909]:
+                  - generic [ref=f15e2910]:
+                    - generic [ref=f15e2911]: Fallacies
+                    - strong [ref=f15e2914]: 6.8 per 100
+                  - generic [ref=f15e2915]:
+                    - generic [ref=f15e2916]: Biases
+                    - strong [ref=f15e2918]: 0.0 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2919]:
+                - generic [ref=f15e2920]:
+                  - text: Overall scores
+                  - generic [ref=f15e2921]: 0–100% of debates
+                - generic [ref=f15e2922]: "Peter Atkins’s overall scores across 5 matching 1-on-1 debates. 65–69: 1 debate; 70–74: 3 debates; 75–79: 1 debate. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2923]:
+                  - listitem [ref=f15e2924]
+                  - listitem [ref=f15e2925]
+                  - listitem [ref=f15e2926]
+                  - listitem [ref=f15e2927]:
+                    - strong [ref=f15e2929]: "1"
+                  - listitem [ref=f15e2930]:
+                    - strong [ref=f15e2932]: "3"
+                  - listitem [ref=f15e2933]:
+                    - strong [ref=f15e2935]: "1"
+                  - listitem [ref=f15e2936]
+                  - listitem [ref=f15e2937]
+                  - listitem [ref=f15e2938]
+                  - listitem [ref=f15e2939]
+                - generic [ref=f15e2940]:
+                  - generic [ref=f15e2941]: "50"
+                  - generic [ref=f15e2942]: "75"
+                  - generic [ref=f15e2943]: "100"
+              - generic [ref=f15e2944]:
+                - generic [ref=f15e2945]:
+                  - generic [ref=f15e2946]: Peter's avg.
+                  - strong [ref=f15e2947]: "71.4"
+                - generic [ref=f15e2948]:
+                  - generic [ref=f15e2949]: Opponents' Avg.
+                  - strong [ref=f15e2950]: "82.6"
+        - listitem [ref=f15e2951]:
+          - article [ref=f15e2952]:
+            - link "Open Matt Slick's debate profile" [ref=f15e2953] [cursor=pointer]:
+              - /url: /interlocutor/matt-slick/
+              - generic "Rank 53" [ref=f15e2954]: "53"
+              - img "Matt Slick" [ref=f15e2955]
+              - generic [ref=f15e2956]:
+                - strong [ref=f15e2957]: Matt Slick
+                - generic [ref=f15e2958]:
+                  - generic [ref=f15e2959]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=f15e2960]: Developing sample
+                - generic [ref=f15e2962]: "Most common topic: Logic, reason, and presuppositions"
+                - generic "Matt Slick's reasoning-tag rates" [ref=f15e2963]:
+                  - generic [ref=f15e2964]:
+                    - generic [ref=f15e2965]: Fallacies
+                    - strong [ref=f15e2968]: 25.0 per 100
+                  - generic [ref=f15e2969]:
+                    - generic [ref=f15e2970]: Biases
+                    - strong [ref=f15e2973]: 3.1 per 100
+              - figure "Overall scores 0–100% of debates" [ref=f15e2974]:
+                - generic [ref=f15e2975]:
+                  - text: Overall scores
+                  - generic [ref=f15e2976]: 0–100% of debates
+                - generic [ref=f15e2977]: "Matt Slick’s overall scores across 4 matching 1-on-1 debates. 65–69: 1 debate; 70–74: 3 debates. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale."
+                - list [ref=f15e2978]:
+                  - listitem [ref=f15e2979]
+                  - listitem [ref=f15e2980]
+                  - listitem [ref=f15e2981]
+                  - listitem [ref=f15e2982]:
+                    - strong [ref=f15e2984]: "1"
+                  - listitem [ref=f15e2985]:
+                    - strong [ref=f15e2987]: "3"
+                  - listitem [ref=f15e2988]
+                  - listitem [ref=f15e2989]
+                  - listitem [ref=f15e2990]
+                  - listitem [ref=f15e2991]
+                  - listitem [ref=f15e2992]
+                - generic [ref=f15e2993]:
+                  - generic [ref=f15e2994]: "50"
+                  - generic [ref=f15e2995]: "75"
+                  - generic [ref=f15e2996]: "100"
+              - generic [ref=f15e2997]:
+                - generic [ref=f15e2998]:
+                  - generic [ref=f15e2999]: Matt's avg.
+                  - strong [ref=f15e3000]: "71.3"
+                - generic [ref=f15e3001]:
+                  - generic [ref=f15e3002]: Opponents' Avg.
+                  - strong [ref=f15e3003]: "80"
+      - group [ref=f15e3004]:
+        - generic "Ranking method +" [ref=f15e3005] [cursor=pointer]
+    - region [ref=f15e3006]:
+      - generic [ref=f15e3008]:
+        - paragraph [ref=f15e3009]: Named assessment tags
+        - heading "Reasoning flags by topic" [level=2] [ref=f15e3010]
+        - paragraph [ref=f15e3011]: Rates show cited fallacy and bias tags per 100 scored argument and rebuttal moves.
+      - generic [ref=f15e3012]:
+        - generic [ref=f15e3013]:
+          - generic [ref=f15e3014]: Corpus overview
+          - strong [ref=f15e3015]: All topic clusters
+        - generic [ref=f15e3016]:
+          - generic [ref=f15e3017]:
+            - term [ref=f15e3018]: Scorecards
+            - definition [ref=f15e3019]: "289"
+          - generic [ref=f15e3020]:
+            - term [ref=f15e3021]: Scored moves
+            - definition [ref=f15e3022]: "6699"
+          - generic [ref=f15e3023]:
+            - term [ref=f15e3024]: Fallacy tags
+            - definition [ref=f15e3025]:
+              - text: "508"
+              - generic [ref=f15e3026]: 7.6 per 100
+          - generic [ref=f15e3027]:
+            - term [ref=f15e3028]: Bias tags
+            - definition [ref=f15e3029]:
+              - text: "173"
+              - generic [ref=f15e3030]: 2.6 per 100
+      - generic "Reasoning tag legend" [ref=f15e3031]:
+        - generic [ref=f15e3032]: Logical fallacy tags
+        - generic [ref=f15e3034]: Cognitive bias tags
+        - generic [ref=f15e3036]: Topic groups use each scorecard's primary Slugfester category.
+      - list [ref=f15e3037]:
+        - listitem [ref=f15e3038]:
+          - generic [ref=f15e3039]:
+            - strong [ref=f15e3040]: Cosmological & Contingency Arguments
+            - generic [ref=f15e3041]: 20 scorecards · 394 scored moves · Avg. score 82.3
+          - generic [ref=f15e3042]:
+            - generic [ref=f15e3043]:
+              - generic [ref=f15e3044]: Fallacies
+              - strong [ref=f15e3047]: 4.8 per 100
+            - generic [ref=f15e3048]:
+              - generic [ref=f15e3049]: Biases
+              - strong [ref=f15e3052]: 0.3 per 100
+        - listitem [ref=f15e3053]:
+          - generic [ref=f15e3054]:
+            - strong [ref=f15e3055]: Science and design
+            - generic [ref=f15e3056]: 21 scorecards · 441 scored moves · Avg. score 79.5
+          - generic [ref=f15e3057]:
+            - generic [ref=f15e3058]:
+              - generic [ref=f15e3059]: Fallacies
+              - strong [ref=f15e3062]: 4.8 per 100
+            - generic [ref=f15e3063]:
+              - generic [ref=f15e3064]: Biases
+              - strong [ref=f15e3067]: 2.3 per 100
+        - listitem [ref=f15e3068]:
+          - generic [ref=f15e3069]:
+            - strong [ref=f15e3070]: Evolution and origins of life
+            - generic [ref=f15e3071]: 7 scorecards · 122 scored moves · Avg. score 81.7
+          - generic [ref=f15e3072]:
+            - generic [ref=f15e3073]:
+              - generic [ref=f15e3074]: Fallacies
+              - strong [ref=f15e3077]: 1.6 per 100
+            - generic [ref=f15e3078]:
+              - generic [ref=f15e3079]: Biases
+              - strong [ref=f15e3082]: 2.5 per 100
+        - listitem [ref=f15e3083]:
+          - generic [ref=f15e3084]:
+            - strong [ref=f15e3085]: Bible and historical Jesus
+            - generic [ref=f15e3086]: 20 scorecards · 486 scored moves · Avg. score 81.8
+          - generic [ref=f15e3087]:
+            - generic [ref=f15e3088]:
+              - generic [ref=f15e3089]: Fallacies
+              - strong [ref=f15e3092]: 8.2 per 100
+            - generic [ref=f15e3093]:
+              - generic [ref=f15e3094]: Biases
+              - strong [ref=f15e3097]: 2.9 per 100
+        - listitem [ref=f15e3098]:
+          - generic [ref=f15e3099]:
+            - strong [ref=f15e3100]: Resurrection and miracles
+            - generic [ref=f15e3101]: 20 scorecards · 406 scored moves · Avg. score 82.2
+          - generic [ref=f15e3102]:
+            - generic [ref=f15e3103]:
+              - generic [ref=f15e3104]: Fallacies
+              - strong [ref=f15e3107]: 5.2 per 100
+            - generic [ref=f15e3108]:
+              - generic [ref=f15e3109]: Biases
+              - strong [ref=f15e3112]: 2.0 per 100
+        - listitem [ref=f15e3113]:
+          - generic [ref=f15e3114]:
+            - strong [ref=f15e3115]: Christian belief and doctrine
+            - generic [ref=f15e3116]: 19 scorecards · 455 scored moves · Avg. score 78.8
+          - generic [ref=f15e3117]:
+            - generic [ref=f15e3118]:
+              - generic [ref=f15e3119]: Fallacies
+              - strong [ref=f15e3122]: 10.3 per 100
+            - generic [ref=f15e3123]:
+              - generic [ref=f15e3124]: Biases
+              - strong [ref=f15e3127]: 5.1 per 100
+        - listitem [ref=f15e3128]:
+          - generic [ref=f15e3129]:
+            - strong [ref=f15e3130]: Meaning and purpose
+            - generic [ref=f15e3131]: 10 scorecards · 230 scored moves · Avg. score 78.3
+          - generic [ref=f15e3132]:
+            - generic [ref=f15e3133]:
+              - generic [ref=f15e3134]: Fallacies
+              - strong [ref=f15e3137]: 8.7 per 100
+            - generic [ref=f15e3138]:
+              - generic [ref=f15e3139]: Biases
+              - strong [ref=f15e3142]: 3.0 per 100
+        - listitem [ref=f15e3143]:
+          - generic [ref=f15e3144]:
+            - strong [ref=f15e3145]: Morality and ethics
+            - generic [ref=f15e3146]: 21 scorecards · 490 scored moves · Avg. score 80.3
+          - generic [ref=f15e3147]:
+            - generic [ref=f15e3148]:
+              - generic [ref=f15e3149]: Fallacies
+              - strong [ref=f15e3152]: 8.2 per 100
+            - generic [ref=f15e3153]:
+              - generic [ref=f15e3154]: Biases
+              - strong [ref=f15e3157]: 2.2 per 100
+        - listitem [ref=f15e3158]:
+          - generic [ref=f15e3159]:
+            - strong [ref=f15e3160]: Moral realism and objectivity
+            - generic [ref=f15e3161]: 11 scorecards · 212 scored moves · Avg. score 84.1
+          - generic [ref=f15e3162]:
+            - generic [ref=f15e3163]:
+              - generic [ref=f15e3164]: Fallacies
+              - strong [ref=f15e3167]: 4.2 per 100
+            - generic [ref=f15e3168]:
+              - generic [ref=f15e3169]: Biases
+              - strong [ref=f15e3172]: 2.4 per 100
+        - listitem [ref=f15e3173]:
+          - generic [ref=f15e3174]:
+            - strong [ref=f15e3175]: Evil, suffering, and hiddenness
+            - generic [ref=f15e3176]: 19 scorecards · 436 scored moves · Avg. score 81.3
+          - generic [ref=f15e3177]:
+            - generic [ref=f15e3178]:
+              - generic [ref=f15e3179]: Fallacies
+              - strong [ref=f15e3182]: 5.0 per 100
+            - generic [ref=f15e3183]:
+              - generic [ref=f15e3184]: Biases
+              - strong [ref=f15e3187]: 3.2 per 100
+        - listitem [ref=f15e3188]:
+          - generic [ref=f15e3189]:
+            - strong [ref=f15e3190]: Mind and consciousness
+            - generic [ref=f15e3191]: 21 scorecards · 553 scored moves · Avg. score 79.6
+          - generic [ref=f15e3192]:
+            - generic [ref=f15e3193]:
+              - generic [ref=f15e3194]: Fallacies
+              - strong [ref=f15e3197]: 8.1 per 100
+            - generic [ref=f15e3198]:
+              - generic [ref=f15e3199]: Biases
+              - strong [ref=f15e3202]: 2.9 per 100
+        - listitem [ref=f15e3203]:
+          - generic [ref=f15e3204]:
+            - strong [ref=f15e3205]: Free will and determinism
+            - generic [ref=f15e3206]: 7 scorecards · 132 scored moves · Avg. score 82.5
+          - generic [ref=f15e3207]:
+            - generic [ref=f15e3208]:
+              - generic [ref=f15e3209]: Fallacies
+              - strong [ref=f15e3212]: 0.8 per 100
+            - generic [ref=f15e3213]:
+              - generic [ref=f15e3214]: Biases
+              - strong [ref=f15e3216]: 0.0 per 100
+        - listitem [ref=f15e3217]:
+          - generic [ref=f15e3218]:
+            - strong [ref=f15e3219]: Logic, reason, and presuppositions
+            - generic [ref=f15e3220]: 15 scorecards · 338 scored moves · Avg. score 80.6
+          - generic [ref=f15e3221]:
+            - generic [ref=f15e3222]:
+              - generic [ref=f15e3223]: Fallacies
+              - strong [ref=f15e3226]: 6.8 per 100
+            - generic [ref=f15e3227]:
+              - generic [ref=f15e3228]: Biases
+              - strong [ref=f15e3231]: 0.6 per 100
+        - listitem [ref=f15e3232]:
+          - generic [ref=f15e3233]:
+            - strong [ref=f15e3234]: Religion, society, and public reason
+            - generic [ref=f15e3235]: 21 scorecards · 411 scored moves · Avg. score 80.1
+          - generic [ref=f15e3236]:
+            - generic [ref=f15e3237]:
+              - generic [ref=f15e3238]: Fallacies
+              - strong [ref=f15e3241]: 5.8 per 100
+            - generic [ref=f15e3242]:
+              - generic [ref=f15e3243]: Biases
+              - strong [ref=f15e3246]: 2.9 per 100
+        - listitem [ref=f15e3247]:
+          - generic [ref=f15e3248]:
+            - strong [ref=f15e3249]: God, theism, and atheism
+            - generic [ref=f15e3250]: 57 scorecards · 1593 scored moves · Avg. score 78.5
+          - generic [ref=f15e3251]:
+            - generic [ref=f15e3252]:
+              - generic [ref=f15e3253]: Fallacies
+              - strong [ref=f15e3256]: 10.9 per 100
+            - generic [ref=f15e3257]:
+              - generic [ref=f15e3258]: Biases
+              - strong [ref=f15e3261]: 3.0 per 100
+      - paragraph [ref=f15e3262]: Category averages use both sides’ published overall scores, with each side counted once per scorecard, including shared-side scores in group debates. They are not averages of individual moves. Fallacy and bias rates count named assessment tags, not independent findings that every cited fallacy or bias is established across the corpus.
+  - contentinfo [ref=f15e3263]:
+    - generic [ref=f15e3264]:
+      - link "Slugfester" [ref=f15e3265] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=f15e3266]: Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.
+    - navigation "Footer" [ref=f15e3267]:
+      - link "Search" [ref=f15e3268] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=f15e3269] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=f15e3270] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=f15e3271] [cursor=pointer]:
+        - /url: /insights/
+      - link "Method" [ref=f15e3272] [cursor=pointer]:
+        - /url: /backend/
+      - link "Feedback" [ref=f15e3273] [cursor=pointer]:
+        - /url: /corrections/
+      - link "LogFall" [ref=f15e3274] [cursor=pointer]:
+        - /url: https://logfall.com/
+      - link "CogBias" [ref=f15e3275] [cursor=pointer]:
+        - /url: https://cogbias.site/
+```
+
+# Test source
+
+```ts
+  1  | export async function replayPublication(page, cfg) {
+  2  |   const d = cfg.candidate;
+> 3  |   const fail = (message) => { throw new Error(message); };
+     |                                     ^ Error: browser runtime errors: {"actual":["Failed to load resource: net::ERR_CONNECTION_RESET"],"expected":[]}
+  4  |   const same = (a,b,label) => { if(JSON.stringify(a)!==JSON.stringify(b))fail(label+': '+JSON.stringify({actual:a,expected:b})); };
+  5  |   const ok = (value,label) => { if(!value)fail(label); };
+  6  |   const errors=[],resources=[],observations=[],screenshots=[];
+  7  |   page.on('pageerror',e=>errors.push(String(e)));
+  8  |   page.on('console',e=>{if(e.type()==='error')errors.push(e.text());});
+  9  |   page.on('requestfailed',r=>resources.push({url:r.url(),failure:r.failure()}));
+  10 |   page.on('response',r=>{if(r.status()>=400)resources.push({url:r.url(),status:r.status()});});
+  11 |   const route='/debate/'+d.id+'/';
+  12 |   const go=async path=>{const response=await page.goto(cfg.origin+path);ok(response.status()===200,'route status '+path);await page.waitForLoadState('networkidle');};
+  13 |   const shot=async name=>{if(cfg.screenshots===false)return;const path=cfg.screenshotDirectory+'/'+cfg.prefix+'-'+name+'.png';await page.screenshot({path});screenshots.push(path);};
+  14 |   const overflow=async label=>{const value=await page.evaluate(()=>({viewport:innerWidth,width:document.documentElement.scrollWidth,broken:[...document.images].filter(i=>i.complete&&i.naturalWidth===0).map(i=>i.src)}));ok(value.width<=value.viewport+1,label+' horizontal overflow');same(value.broken,[],label+' broken images');return value;};
+  15 |   const visible=async locator=>{await locator.waitFor({state:'visible'});await page.waitForFunction(el=>{const s=getComputedStyle(el);return s.visibility!=='hidden'&&Number(s.opacity)>0.95;},await locator.elementHandle());};
+  16 |   const expectedSections=d.sections.map(s=>({title:s.title,scores:[s.score.pro,s.score.con],cards:s.exchanges.flatMap(e=>['pro','con'].filter(k=>e[k]).map(k=>({side:k,words:e[k].words,critique:e[k].critique,time:e[k].time,score:e[k].score,role:e[k].role,tags:e[k].tags.map(t=>({label:t.label,context:t.context}))})))}));
+  17 |   for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
+  18 |     const name=viewport.width===1440?'desktop':'mobile';await page.setViewportSize(viewport);await go(route);await page.locator('.debate-section').first().waitFor();
+  19 |     const observed=await page.evaluate(()=>({
+  20 |       title:[...document.querySelector('h1').childNodes].filter(n=>n.nodeType===Node.TEXT_NODE).map(n=>n.textContent).join('').trim(),
+  21 |       year:document.querySelector('.debate-title-year')?.textContent || '',
+  22 |       body:document.querySelector('main').innerText,
+  23 |       source:document.querySelector('a[href^="https://www.youtube.com/watch"]').getAttribute('href'),
+  24 |       sections:[...document.querySelectorAll('.debate-section')].map(s=>({title:s.querySelector('h2').textContent.trim(),scores:[...s.querySelectorAll('.section-score strong')].map(e=>Number(e.textContent)),cards:[...s.querySelectorAll('.argument')].map(c=>({side:c.classList.contains('side-pro')?'pro':'con',words:c.querySelector(':scope > p').textContent.trim(),critique:c.querySelector('.critique-text').textContent.trim().replace(/\s+/g,' '),time:c.querySelector('.timestamp-link').textContent.trim(),score:Number(c.querySelector('.argument-meta strong').textContent),role:c.querySelector('.argument-meta > span:nth-child(2)').textContent.trim(),tags:[...c.querySelectorAll('.tag-wrap')].map(t=>({label:t.querySelector('a.tag').textContent.trim(),context:t.querySelector('.tag-context').textContent.trim()}))}))})),
+  25 |       overall:[...document.querySelectorAll('.overall-score strong')].map(x=>Number(x.textContent)),
+  26 |       quotes:[...document.querySelectorAll('.quote-card blockquote')].map(x=>x.textContent.trim()),
+  27 |       timestampLinks:[...document.querySelectorAll('.argument .timestamp-link')].map(a=>({text:a.textContent.trim(),href:a.href})),
+  28 |       ai:[...document.querySelectorAll('.logical-extension-side')].map(e=>({finalArgument:{thesis:e.querySelector('.extension-thesis').textContent.trim(),premises:[...e.querySelectorAll('.extension-premises li p')].map(p=>p.textContent.trim()),conclusion:e.querySelector('.extension-conclusion p').textContent.trim()},newArguments:[...e.querySelectorAll('.new-argument')].map(a=>({title:a.querySelector('h5').textContent.trim(),text:a.querySelector('p').textContent.trim()}))}))
+  29 |     }));
+  30 |     same(observed.title,d.title.replace(/\s*\(\d{4}\)\s*$/,''),'title');same(observed.year,String(cfg.year),'year');same(observed.sections,expectedSections,'all section and argument text');same(observed.overall,[d.overall.pro.score,d.overall.con.score],'overall scores');same(observed.quotes,['pro','con'].map(s=>'"'+d.quotes[s].text+'"'),'exact quotes');same(observed.ai,[d.logicalExtension.pro,d.logicalExtension.con],'complete AI text');same(observed.source,d.youtubeUrl,'source');
+  31 |     for(const s of ['pro','con']){ok(observed.body.includes(d.sides[s].speaker),'speaker');ok(observed.body.includes(d.sides[s].name),'position');}ok(observed.body.includes(d.motion),'motion');if(cfg.requiredReaderDisclosure)ok(observed.body.includes(cfg.requiredReaderDisclosure),'complete authorized source scope disclosure');ok(observed.body.includes(cfg.modelLabel),'assessment byline');
+  32 |     for(const a of observed.timestampLinks){const parts=a.text.split(':').map(Number);const seconds=parts.reduce((n,x)=>n*60+x,0);const u=new URL(a.href);same(u.searchParams.get('v'),cfg.videoId,'timestamp video');same(u.searchParams.get('t'),seconds+'s','timestamp offset');}
+  33 |     const renderedLabels=await page.locator('.argument .critique-text').evaluateAll(els=>els.map(e=>[...e.querySelectorAll('.critique-section > strong')].map(s=>s.textContent)));same(renderedLabels,expectedSections.flatMap(s=>s.cards.map(()=>['Strongest feature:','Principal limitation:','Live burden:','Locked score:'])),'four independently rendered bold critique labels');
+  34 |     let scopeEvidence=null;
+  35 |     if(cfg.requiredReaderDisclosure){const disclosure=page.locator('.source-context');await visible(disclosure);same((await disclosure.locator('span').innerText()).trim(),cfg.requiredReaderDisclosure,'verbatim visible scope disclosure');
+  36 |     const scopeBox=await disclosure.boundingBox(),firstScoreBox=await page.locator('.scoreboard').first().boundingBox();ok(scopeBox&&firstScoreBox&&scopeBox.y+scopeBox.height<=firstScoreBox.y+2,'scope disclosure before top score summary');
+  37 |     scopeEvidence={text:(await disclosure.innerText()),box:scopeBox,firstScoreBox,beforeScores:true};
+  38 |     }
+  39 |     const size=await overflow(name);await shot(name+'-header');if(cfg.requiredReaderDisclosure){await page.locator('.source-context').scrollIntoViewIfNeeded();await shot(name+'-source-scope');}
+  40 |     const critique=page.locator('.critique button').first(),popover=page.locator('.critique-popover').first();await critique.hover();await visible(popover);await critique.focus();await critique.press('Enter');await visible(popover);await critique.press('Space');await visible(popover);await shot(name+'-critique');
+  41 |     const summary=page.locator('.ai-extension-accordion > summary');await summary.click();same(await page.locator('.ai-extension-accordion').getAttribute('open'),'','immediate distant control after critique');await visible(page.locator('.logical-extension-grid'));await summary.focus();await summary.press('Enter');same(await page.locator('.ai-extension-accordion').getAttribute('open'),null,'Enter collapse');await summary.press('Space');same(await page.locator('.ai-extension-accordion').getAttribute('open'),'','Space expand');
+  42 |     // A fresh navigation removes the focused critique for unobscured visual evidence.
+  43 |     await go(route);await summary.scrollIntoViewIfNeeded();await shot(name+'-ai-closed');await summary.click();await page.locator('.logical-extension').evaluate(e=>window.scrollTo(0,e.getBoundingClientRect().top+scrollY-220));await shot(name+'-ai-open');await page.locator('.new-arguments').first().evaluate(e=>window.scrollTo(0,e.getBoundingClientRect().top+scrollY-220));await shot(name+'-reinforcements');await overflow(name+' AI open');
+  44 |     const tags=page.locator('a.tag');const count=await tags.count();same(count,cfg.tagCount,'all accepted tags rendered');
+  45 |     if(count){await go(route);const tag=page.locator('a.tag').first();const wrap=page.locator('.tag-wrap').first();await tag.hover();await tag.focus();await visible(wrap.locator('.tag-popover'));await shot(name+'-tag');const href=await tag.getAttribute('href');await tag.press('Enter');await page.waitForURL(cfg.origin+href);await page.locator('[id="'+decodeURIComponent(new URL(cfg.origin+href).hash.slice(1))+'"]').waitFor();await page.waitForFunction(([pro,con])=>{const text=document.querySelector('main')?.innerText||'';return text.includes(pro)||text.includes(con);},[d.sides.pro.speaker,d.sides.con.speaker]);ok((await page.locator('main').innerText()).includes(d.sides.pro.speaker)|| (await page.locator('main').innerText()).includes(d.sides.con.speaker),'tag reference occurrence');}
+  46 |     await go('/backend/');await page.locator('.section-score-bucket').first().waitFor();const graph=await page.evaluate(()=>({summary:Object.fromEntries([...document.querySelectorAll('.section-score-distribution-summary > div')].map(x=>[x.querySelector('dt').textContent.trim(),x.querySelector('dd').textContent.trim()])),buckets:[...document.querySelectorAll('.section-score-bucket')].map(x=>({range:x.querySelector('strong').textContent.trim(),count:Number(x.querySelector('.section-score-bar-column > span').textContent),aria:x.getAttribute('aria-label')}))}));
+  47 |     same(Number(graph.summary['Section-side scores'].replaceAll(',','')),cfg.graph.sectionSideScores,'graph total');same(graph.summary['Observed range'],cfg.graph.minimum+'–'+cfg.graph.maximum,'graph range');same(graph.buckets.map(({range,count})=>({range,count})),cfg.graph.buckets,'every graph bucket');for(const b of graph.buckets)same(b.aria,`${b.range} percent: ${b.count} section-side score${b.count===1?'':'s'}`,'graph accessible count');await page.locator('#rubric-quality-check').scrollIntoViewIfNeeded();await shot(name+'-backend');await overflow(name+' backend');
+  48 |     const profiles=[];for(const person of cfg.people){await go('/interlocutor/'+person.slug+'/');await page.locator('.profile-bio-chart').waitFor();const bio=page.locator('.profile-biography').first(),chart=page.locator('.profile-bio-chart .profile-score-histogram');const bb=await bio.boundingBox(),cb=await chart.boundingBox();ok(bb&&cb,'profile biography and graph');if(name==='desktop')ok(bb.x+bb.width<=cb.x+2,'bio left of graph');else ok(bb.y+bb.height<=cb.y+2,'bio above graph');ok(await page.locator('a[href="'+route+'"]').count()>0,'profile debate presence');await page.locator('.profile-bio-chart').scrollIntoViewIfNeeded();await shot(name+'-'+person.slug+'-profile');await overflow(name+' profile');profiles.push({name:person.name,bio:bb,chart:cb});}
+  49 |     observations.push({viewport,size,scopeDisclosure:scopeEvidence,sections:observed.sections.length,cards:observed.sections.reduce((n,s)=>n+s.cards.length,0),exactPublicationText:true,exactAiText:true,exactTimestampLinks:true,acceptedTags:count,critiquePointerEnterSpace:true,accordionPointerEnterSpace:true,immediateDistantControlAfterCritique:true,graph,profiles});
+  50 |   }
+  51 |   await page.setViewportSize({width:1440,height:1000});const routes=[];
+  52 |   for(const path of ['/','/topics/'+d.topicCategory+'/']){await go(path);await page.locator('a[href="'+route+'"]').first().waitFor();routes.push(path);}
+  53 |   await go('/search/');const search=page.locator('input[type="search"]');await search.fill(d.sides.con.speaker);await search.press('Enter');await page.waitForLoadState('networkidle');
+  54 |   const searchedPages=new Set();
+  55 |   while(await page.locator('a[href="'+route+'"]').count()===0){
+  56 |     ok(!searchedPages.has(page.url()),'search pagination cycle');searchedPages.add(page.url());
+  57 |     const next=page.getByRole('link',{name:'Next',exact:true}).first();ok(await next.count()>0,'debate absent from search results');
+  58 |     const href=await next.getAttribute('href');ok(href?.startsWith('/search/?'),'search pagination route');await go(href);
+  59 |   }
+  60 |   await page.locator('a[href="'+route+'"]').first().waitFor();await shot('search');routes.push('/search/');
+  61 |   await go('/rankings/?'+new URLSearchParams({'compare-a':d.sides.pro.speaker,'compare-b':d.sides.con.speaker}));for(const person of cfg.people)await page.locator('a[href="/interlocutor/'+person.slug+'/"]').first().waitFor();await shot('rankings');routes.push('/rankings/');
+  62 |   const sitemap=await page.request.get(cfg.origin+'/sitemap.xml');same(sitemap.status(),200,'sitemap status');ok((await sitemap.text()).includes('https://slugfester.com'+route),'canonical sitemap');
+  63 |   same(errors,[],'browser runtime errors');same(resources,[],'failed resources');
+  64 |   return {status:'passed-exact-publication-browser-replay',debateNumber:d.number,debateId:d.id,origin:cfg.origin,observations,routes,sitemap:true,errors,resources,screenshots};
+  65 | }
+  66 | 
+```

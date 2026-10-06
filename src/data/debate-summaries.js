@@ -13776,5 +13776,49 @@ export const debateSummaries = [
         "title": "Mythology, historical meaning, and closing epistemology"
       }
     ]
+  },
+  {
+    "id": "wielenberg-johnson-objective-morality-2020",
+    "number": "289",
+    "title": "Erik Wielenberg vs Adam Lloyd Johnson — What Is the Best Account of Objective Morality?",
+    "year": 2020,
+    "label": "Moral Foundations",
+    "date": "2026-10-06",
+    "duration": "40 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=bg2WK-IIrd8",
+    "motion": "What is the best account of objective morality?",
+    "summary": "Wielenberg’s focused parity, intrinsic-value, and obligation challenges outperformed Johnson’s theistic grounding, though Johnson pressed a serious evolutionary reliability problem.",
+    "topicCategory": "morality-ethics",
+    "sides": {
+      "pro": {
+        "name": "God grounds objective morality",
+        "speaker": "Adam Lloyd Johnson",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Objective morality needs no divine foundation",
+        "speaker": "Erik Wielenberg",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 71,
+      "con": 82,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Ultimate foundations and stopping points"
+      },
+      {
+        "title": "Non-natural properties and intrinsic value"
+      },
+      {
+        "title": "Goodness, obligation, and accountability"
+      },
+      {
+        "title": "Evolution and access to moral truth"
+      }
+    ]
   }
 ];

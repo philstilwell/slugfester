@@ -1,0 +1,43 @@
+
+> slugfester@0.1.0 site:standalone:check
+> npx playwright test tests/site-quality/standalone-publication.spec.mjs
+
+
+Running 1 test using 1 worker
+
+(node:89685) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/1] tests/site-quality/standalone-publication.spec.mjs:7:1 › checks standalone publication before deployment, including static scope and every graph bucket
+  1) tests/site-quality/standalone-publication.spec.mjs:7:1 › checks standalone publication before deployment, including static scope and every graph bucket 
+
+    Error: browser runtime errors: {"actual":["Failed to load resource: net::ERR_CONNECTION_RESET"],"expected":[]}
+
+       at ../../scripts/lib/standalone-browser-replay.mjs:3
+
+      1 | export async function replayPublication(page, cfg) {
+      2 |   const d = cfg.candidate;
+    > 3 |   const fail = (message) => { throw new Error(message); };
+        |                                     ^
+      4 |   const same = (a,b,label) => { if(JSON.stringify(a)!==JSON.stringify(b))fail(label+': '+JSON.stringify({actual:a,expected:b})); };
+      5 |   const ok = (value,label) => { if(!value)fail(label); };
+      6 |   const errors=[],resources=[],observations=[],screenshots=[];
+        at fail (/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/standalone-browser-replay.mjs:3:37)
+        at same (/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/standalone-browser-replay.mjs:4:74)
+        at replayPublication (/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/standalone-browser-replay.mjs:63:3)
+        at /Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/tests/site-quality/standalone-publication.spec.mjs:13:3
+
+    Error Context: .playwright-results/standalone-publication-che-e1df9-cope-and-every-graph-bucket/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/standalone-publication-che-e1df9-cope-and-every-graph-bucket/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/standalone-publication-che-e1df9-cope-and-every-graph-bucket/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  1 failed
+    tests/site-quality/standalone-publication.spec.mjs:7:1 › checks standalone publication before deployment, including static scope and every graph bucket 

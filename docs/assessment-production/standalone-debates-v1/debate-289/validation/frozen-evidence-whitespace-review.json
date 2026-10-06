@@ -1,0 +1,45 @@
+{
+  "status": "reviewed-exact-evidence-whitespace",
+  "fullDiffCheckExitCode": 2,
+  "findings": [
+    "docs/assessment-production/standalone-debates-v1/debate-289/publication/contract.md:76: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-289/publication/rhetorical-tag-review-1/contract.md:54: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-289/validation/failed-initial-site-check/error-context.md:3456: trailing whitespace.",
+    "docs/assessment-production/standalone-debates-v1/debate-289/validation/site-standalone-initial.log:13: trailing whitespace.",
+    "docs/assessment-production/standalone-debates-v1/debate-289/validation/site-standalone-initial.log:43: trailing whitespace."
+  ],
+  "decision": "Preserve exact authenticated contract bytes and original failed-browser evidence. These five whitespace findings are confined to immutable source/evidence records; altering them would break frozen hashes. No application, generated page or other new-file whitespace issue remains. No repository checks, tests, ignore rules or Git settings changed.",
+  "allOtherStagedFilesCheck": {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      ".",
+      ":(exclude)docs/assessment-production/standalone-debates-v1/debate-289/publication/contract.md",
+      ":(exclude)docs/assessment-production/standalone-debates-v1/debate-289/publication/rhetorical-tag-review-1/contract.md",
+      ":(exclude)docs/assessment-production/standalone-debates-v1/debate-289/validation/failed-initial-site-check/error-context.md",
+      ":(exclude)docs/assessment-production/standalone-debates-v1/debate-289/validation/site-standalone-initial.log"
+    ],
+    "exitCode": 0
+  },
+  "preservedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-289/publication/contract.md",
+      "sha256": "6d7d75e3237c25373803d7f05f7fc566c27c7a731283674bd6a2610f74d5bf44"
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-289/publication/rhetorical-tag-review-1/contract.md",
+      "sha256": "f02c32f233049e6a2cdf0825b7b3205ce8e4c1a8bdd1cae3753512514985a66d"
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-289/validation/failed-initial-site-check/error-context.md",
+      "sha256": "3ac5388dd21b0dbf9f5166bdbd07493941ef83cc1518a6211e4df13fc16c7a63"
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-289/validation/site-standalone-initial.log",
+      "sha256": "0ac6adc6500781c04a35e600c08b14b9bec91310307c2495096b59d4d72657a2"
+    }
+  ]
+}

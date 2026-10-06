@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-06T21:52:35.338266+00:00",
+  "userAuthorization": "New video supplied under the invoked addition skill, with explicit approval of direct-exchange-only assessment. Ordinary assessment, bounded repairs, validation, commit/push, PR, green merge, live verification and cleanup are authorized without repeated common approvals. Complete-thought featured quotations are required.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-289",
+    "head": "a32f69f14cc9878ed920c6b68e763eae1ab5e27d",
+    "localMain": "a32f69f14cc9878ed920c6b68e763eae1ab5e27d",
+    "originMain": "a32f69f14cc9878ed920c6b68e763eae1ab5e27d",
+    "clean": true,
+    "isolationReason": "Reused attached clean managed checkout; inspected clean separate main checkout and fast-forwarded it safely, authenticated equality, then created this topic branch before tracked writes."
+  },
+  "identity": {
+    "debateNumber": "289",
+    "debateId": "wielenberg-johnson-objective-morality-2020",
+    "videoId": "bg2WK-IIrd8",
+    "canonicalUrl": "https://www.youtube.com/watch?v=bg2WK-IIrd8",
+    "sourceTitle": "DEBATE: What Is the Best Account of Objective Morality? Erik Wielenberg vs. Adam Lloyd Johnson",
+    "eventYear": 2020,
+    "title": "Erik Wielenberg vs Adam Lloyd Johnson — What Is the Best Account of Objective Morality? (2020)",
+    "label": "Moral Foundations",
+    "topicCategory": "morality-ethics",
+    "motion": "What is the best account of objective morality?",
+    "pro": {
+      "speaker": "Adam Lloyd Johnson",
+      "position": "God grounds objective morality"
+    },
+    "con": {
+      "speaker": "Erik Wielenberg",
+      "position": "Objective morality needs no divine foundation"
+    },
+    "dyadic": true,
+    "originalRecordingDyadic": false
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "knownSuccessfulCallCostUsd": 0,
+    "maximumPossiblePriorCostUsd": 0,
+    "currentPlanEstimateUsd": 0,
+    "sourceVerificationAnnouncedMaximumUsd": 0.05,
+    "sourceVerificationPlannedEstimateUsd": 0.016,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "audioVerificationPolicy": "Initial public byte probe succeeded, but full audio acquisition returned HTTP 403; no audio downloaded and no paid calls. No bypass or automatic retry. Every selected below-high-attribution move still triggers required verification before adjudication; unverified garbled clauses cannot support a rating or quotation."
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "availableRecordingScope": {
+    "protocolId": "editor-approved-direct-exchange-v1",
+    "debateNumber": "289",
+    "debateId": "wielenberg-johnson-objective-morality-2020",
+    "videoId": "bg2WK-IIrd8",
+    "explicitDebateSpecificApproval": true,
+    "approvedAt": "2026-10-06T21:52:35.338266+00:00",
+    "userApproval": "Yes—assess only the direct exchange. The user answered the recording-specific question proposing 33:05–1:13:25 and excluding introductory moderator questions, audience Q&A, and the final audience-dependent reply.",
+    "assessedWindow": {
+      "startMs": 2002000,
+      "endMs": 4405840,
+      "durationMs": 2403840
+    },
+    "sourceWindow": {
+      "startMs": 0,
+      "endMs": 6798000
+    },
+    "retainedIntervals": [
+      {
+        "startMs": 2002000,
+        "endMs": 4405840,
+        "durationMs": 2403840
+      }
+    ],
+    "excludedIntervals": [
+      {
+        "startMs": 0,
+        "endMs": 2002000,
+        "durationMs": 2002000,
+        "reason": "Entire introduction and moderator-led position discussion plus logistical handoff before Wielenberg’s first direct question. No scoring, quotation, response link, credit, penalty or absence inference may rely on it."
+      },
+      {
+        "startMs": 4405840,
+        "endMs": 6798000,
+        "durationMs": 2392160,
+        "reason": "Entire audience-question session, every debater answer and dependent reply, Johnson’s audience-dependent final response, and host conclusion. No credit, penalty, quotation, response link or absence inference may rely on it."
+      }
+    ],
+    "fullSuppliedRecordingCovered": true,
+    "fullSuppliedRecordingAssessed": false,
+    "readerDisclosureRequired": true,
+    "requiredReaderDisclosure": "This assessment covers only the debaters’ direct exchange (approximately 33:05–1:13:25), as approved by the editor. The introductory position discussion, audience questions and all dependent answers, including the final reply to an audience question, are excluded. This recording has no separate formal opening speeches or paired closing statements. Neither speaker receives credit, penalties, or an inference of failing to reply from excluded material. These scores assess the direct exchange, not the complete recording.",
+    "restrictions": [
+      "Read the entire recording to identify source boundaries; assess only the approved direct exchange.",
+      "Moderator logistics and mixed handoff clauses are not moves or evidence.",
+      "A reference in the direct exchange to earlier remarks permits only the proposition independently stated within the direct exchange, never imported reasons or evidence.",
+      "Do not treat questions as commitments to an unargued contrary theory.",
+      "No independent opening or closing round exists; do not invent or penalize missing formal speeches."
+    ],
+    "changedRubricOrScoreRules": false,
+    "newPaidRetryAuthority": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-289",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/wielenberg-johnson-objective-morality-2020.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/wielenberg-johnson-objective-morality-2020.js",
+    "src/data/interlocutor-bios.js",
+    "src/data/interlocutors.js",
+    "generated site output for this addition"
+  ]
+}

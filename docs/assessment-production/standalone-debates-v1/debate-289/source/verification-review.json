@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0-source-verification-review",
+  "status": "caption-source-qualified-before-judgment",
+  "videoId": "bg2WK-IIrd8",
+  "fullCanonicalSourceRead": true,
+  "audioAvailabilityProbe": {
+    "videoId": "bg2WK-IIrd8",
+    "checkedAt": "2026-10-06T21:48:30.101Z",
+    "method": "Public YouTube Android player audio endpoint; bounded initial byte request",
+    "audioFormatAvailable": true,
+    "httpStatus": 206,
+    "contentType": "audio/mp4",
+    "paidCalls": 0,
+    "paidCostUsd": 0,
+    "accessResult": "public-audio-available",
+    "noSignedUrlPersisted": true
+  },
+  "audioAcquisitionFailure": {
+    "videoId": "bg2WK-IIrd8",
+    "status": "acquisition-failed-before-paid-calls",
+    "initialBoundedRequestStatus": 206,
+    "fullAcquisitionHttpStatus": 403,
+    "noAudioDownloaded": true,
+    "transcriptionAttempts": 0,
+    "knownSuccessfulCallCostUsd": 0,
+    "maximumPossibleCallCostUsd": 0,
+    "automaticPaidRetries": 0,
+    "disposition": "Do not retry denied public media request; no audio-derived verification or direct listening claimed. Canonical captions remain unchanged. Use explicit corrupt-clause restrictions and require any selected below-high-attribution moves to be resolved before adjudication."
+  },
+  "verificationPlan": {
+    "path": ".assessment-cache/captions/bg2WK-IIrd8/audio/verification-plan.json",
+    "sha256": "f30c6032e20ff0553ea91e49e3829d354f61fbb147cf821dccda0642976c65ef",
+    "bytes": 1513
+  },
+  "paidCalls": 0,
+  "knownSuccessfulCallCostUsd": 0,
+  "maximumPossibleCallCostUsd": 0,
+  "audioListeningPerformed": false,
+  "centralWordingCrossCheckedAgainstAudio": false,
+  "restrictions": [
+    {
+      "eventLabels": [
+        "E1718"
+      ],
+      "reason": "The transition says “So, related to the moral axiom so much,” with uncertain polarity. Do not derive a position, contradiction, criticism or quotation from that clause."
+    },
+    {
+      "eventLabels": [
+        "E1748"
+      ],
+      "reason": "“communitarian moral theory” conflicts with the repeatedly stated Trinitarian label. Do not treat this automatic-caption label as a changed theory, and do not quote or penalize it."
+    },
+    {
+      "eventLabels": [
+        "E1894"
+      ],
+      "reason": "“beanies or wolves” is recognition-corrupted. Do not identify the first animal, silently correct it or penalize the wording. The conditional different evolutionary path and different moral beliefs are stated independently in neighboring clear clauses."
+    },
+    {
+      "eventLabels": [
+        "E1236",
+        "E1607"
+      ],
+      "reason": "Mixed speaker handoffs; exclude these entire events from selected evidence and quotations. Neighboring full questions and replies remain available."
+    }
+  ],
+  "speakerAttributionBasis": "Named moderator turn assignments, explicit question addressees, first-person answers, and uninterrupted alternating direct questions and replies. Selected moves must remain wholly within unambiguous ownership.",
+  "belowHighSelectedMoveChecksStillRequired": true
+}

@@ -1,0 +1,20 @@
+import assert from "node:assert/strict";
+import {readFileSync} from "node:fs";
+import {fileURLToPath} from "node:url";
+import path from "node:path";
+import {validateStandaloneInventory} from "../../../../../scripts/lib/assessment-production-standalone-debate-v1.mjs";
+const dir=path.dirname(fileURLToPath(import.meta.url)),root=process.cwd();
+const auth=JSON.parse(readFileSync(path.join(dir,"../authorization.json"),"utf8"));
+const lock=JSON.parse(readFileSync(path.join(dir,"../source/source-lock.json"),"utf8"));
+const id=auth.identity,arg=process.argv.indexOf("--debate");assert(arg>=0&&process.argv[arg+1]===id.debateNumber,"Explicit matching --debate required");
+const registry=JSON.parse(readFileSync(path.join(root,"docs/assessment-production/standalone-debates-v1/registry.json"),"utf8"));
+assert(registry.debates.some(r=>r.debateNumber===id.debateNumber&&r.debateId===id.debateId&&r.videoId===id.videoId&&path.resolve(root,r.root)===path.resolve(dir,"..")),"Registry routing mismatch");
+const events=JSON.parse(readFileSync(path.join(root,".assessment-cache/captions",id.videoId,"events.json"),"utf8"));
+const p=JSON.parse(readFileSync(0,"utf8"));assert.equal(p.motion,id.motion);
+assert.deepEqual(Object.keys(p).sort(),["motion","routes","sections","moves","coverageAudit","speakerAttributionReview","selectionBalanceAudit","publicationCapacityAudit"].sort());
+const inventory={schemaVersion:"1.2-standalone-score-blind-inventory",protocolId:auth.protocolId,status:"complete-and-frozen",debateNumber:id.debateNumber,debateId:id.debateId,assessmentModel:auth.execution.recordedDisplayModel,reasoningEffort:auth.execution.reasoningEffort,assessedDebateWindowMs:lock.participants.assessedDebateWindowMs,...p,audit:{calculatedTotalsAbsent:true,completeTranscriptReviewed:true,allSpansSourceExact:true},moves:p.moves.map(m=>{const {startEvent,endEvent,...rest}=m;assert(Number.isInteger(startEvent)&&Number.isInteger(endEvent)&&events[startEvent]&&events[endEvent],"Invalid source index");return {...rest,sourceSpan:{startEvent,endEvent,startMs:events[startEvent].startMs,endMs:events[endEvent].startMs+events[endEvent].durationMs,excerpt:events.slice(startEvent,endEvent+1).map(e=>e.text).join(" ").replace(/\s+/g," ").trim()}}})};
+assert.deepEqual(auth.availableRecordingScope,lock.availableRecordingScope);inventory.availableRecordingScope=auth.availableRecordingScope;
+const window=inventory.assessedDebateWindowMs;
+for(const m of inventory.moves){assert.equal(m.speaker,id[m.side].speaker);assert(m.sourceSpan.startMs>=window.start&&m.sourceSpan.endMs<=window.end,"Outside retained exchange");for(const x of auth.availableRecordingScope.excludedIntervals)assert(!(m.sourceSpan.startMs<x.endMs&&m.sourceSpan.endMs>x.startMs),"Excluded source overlap");assert(p.routes.find(r=>r.side===m.side).bridges.some(b=>b.bridgeId===m.burdenContact.bridgeId),"Foreign burden");assert.deepEqual([...new Set(m.responseComponents.map(x=>x.targetMoveId))].sort(),[...m.respondsToIds].sort());assert(typeof m.sourceSpanSelectionRationale==="string"&&m.sourceSpanSelectionRationale.length>=40);if(m.sourceSpan.excerpt.length>2200)assert(m.sourceSpanSelectionRationale.length>=100,"Long span needs full boundary rationale");}
+const result=validateStandaloneInventory(inventory,events);
+console.log(JSON.stringify({status:"passed-unsaved-inventory-mechanics",debateNumber:id.debateNumber,result,longSourceSpans:inventory.moves.filter(m=>m.sourceSpan.excerpt.length>2200).map(m=>({moveId:m.moveId,characters:m.sourceSpan.excerpt.length,rationale:m.sourceSpanSelectionRationale})),audioTriggers:inventory.moves.filter(m=>m.attributionConfidence!=="high").map(m=>({moveId:m.moveId,reason:m.audioVerificationReason}))},null,2));

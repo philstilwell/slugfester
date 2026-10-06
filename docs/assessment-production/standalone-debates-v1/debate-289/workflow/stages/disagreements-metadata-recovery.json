@@ -1,0 +1,35 @@
+{
+  "status": "authorized-deterministic-input-path-repair",
+  "failedAttempt": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-289/workflow/stages/disagreements-attempt.json",
+    "sha256": "9cd4848b9b3cf073fdffd32c0ddf32e8be51010306d3978d4434a3490cf91323",
+    "bytes": 288
+  },
+  "failedResult": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-289/workflow/stages/disagreements-result.json",
+    "sha256": "49f69910646d3d511ee301ccac3c6ac8c75a71e5d42749e6f0db01962708ac30",
+    "bytes": 522
+  },
+  "diagnostic": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-289/workflow/stages/disagreements.txt",
+    "sha256": "c326ddbb0278e23b0a93d0cd1e815023095f8ec1a1ea4313328472a0e211ee8d",
+    "bytes": 1479
+  },
+  "originalMetadata": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-289/judgments/judgment-execution.json",
+    "sha256": "78682cfe79a8a9d06d40db03f688478d95ae63024adcee9f867ed4fa67a506b1",
+    "bytes": 5149
+  },
+  "correctedMetadata": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-289/judgments/execution.json",
+    "sha256": "78682cfe79a8a9d06d40db03f688478d95ae63024adcee9f867ed4fa67a506b1",
+    "bytes": 5149
+  },
+  "cause": "Controller saved the correct aggregate execution record under judgment-execution.json, but the current maintained auditor requires judgments/execution.json. The extractor stopped before writing disputes or a packet.",
+  "correction": "Preserve original bytes and copy unchanged to the required path; manually resume only the existing deterministic dispute-extraction command after inspection.",
+  "judgmentsChanged": false,
+  "sourceChanged": false,
+  "modelAttemptAdded": false,
+  "scoringCalled": false,
+  "automaticRetry": false
+}
