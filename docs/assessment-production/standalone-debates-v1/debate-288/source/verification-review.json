@@ -1,0 +1,79 @@
+{
+  "status": "audio-unavailable-restrictions-frozen-before-inventory",
+  "videoId": "AgVCo5Jeq3U",
+  "reviewedAt": "2026-10-06T04:00:23.662549+00:00",
+  "preflight": {
+    "path": ".assessment-cache/captions/AgVCo5Jeq3U/audio-acquisition-review.json",
+    "sha256": "cab692dbcd82b95bbe9c2ea964ef78c9c3618df0802d9a8383b14e02fa8da786",
+    "bytes": 146
+  },
+  "plannedClips": [
+    {
+      "id": "shermer-comparative-evidence-and-arithmetic",
+      "startSeconds": 600,
+      "endSeconds": 965,
+      "reason": "Verify numerical phrasing and comparative testimony formulation."
+    },
+    {
+      "id": "vandeweghe-negations",
+      "startSeconds": 1775,
+      "endSeconds": 1810,
+      "reason": "Verify apparent dropped negation in opening argument."
+    },
+    {
+      "id": "vandeweghe-repeated-negation",
+      "startSeconds": 2220,
+      "endSeconds": 2250,
+      "reason": "Verify Watergate analogy and repeated apparent dropped negation."
+    }
+  ],
+  "acquisitionOutcome": "Public player supplied an English audio format; public media request returned HTTP 403 Forbidden. No paid transcription request and no access-denial bypass.",
+  "announcedMaximumUsd": 0.05,
+  "estimatedClipMinutes": 7.166666666666667,
+  "rateUsdPerMinute": 0.003,
+  "rateSource": "https://developers.openai.com/api/docs/pricing",
+  "paidCalls": 0,
+  "automaticPaidRetries": 0,
+  "knownSuccessfulCallCostUsd": 0,
+  "maximumPossibleCostUsd": 0,
+  "directAudioListeningPerformed": false,
+  "independentAudioTranscriptionPerformed": false,
+  "restrictions": [
+    {
+      "events": [
+        245,
+        280
+      ],
+      "restriction": "Shermer’s dream/coincidence arithmetic includes false starts and recognition ambiguity. Do not quote exact numeric calculations or assign an arithmetic failure. His explicitly stated large-population opportunity and selective-noticing argument remains eligible from clear clauses; verify any materially needed number independently before reliance."
+    },
+    {
+      "events": [
+        344,
+        385
+      ],
+      "restriction": "Hume quotation contains recognition errors such as falsehood becoming “also it.” Do not reproduce corrupt quoted wording or penalize Hume/Shermer for it. Use Shermer’s own clear comparative-evidence formulation when selecting a move."
+    },
+    {
+      "events": [
+        706,
+        707
+      ],
+      "restriction": "Caption “they were liars and they weren’t fooled” contains an apparent dropped negation. Do not treat it as Vandeweghe’s claim or a contradiction; do not silently amend an exact quote. His clean restatements at 760, 964, 1112–1113 and 2775–2777 establish the argument independently."
+    },
+    {
+      "events": [
+        855,
+        858
+      ],
+      "restriction": "The Watergate quotation and summary have recognition-corrupted lie/negation wording. Do not quote or score the corrupt “they were fooled” clause as his commitment; rely on independently clear restatements if assessing the sincerity/informedness argument."
+    },
+    {
+      "events": [
+        1589,
+        1592
+      ],
+      "restriction": "The number of recalled details in the memory study is garbled (“17 295”). Do not invent or penalize the count. The clear reported 82%/81% comparison and broad memory-stability argument can be assessed as the speaker’s claim without external endorsement."
+    }
+  ],
+  "disposition": "Caption text remains canonical and unchanged. No load-bearing position may be reconstructed from uncertain words. Flag residual material uncertainty rather than inflating confidence."
+}

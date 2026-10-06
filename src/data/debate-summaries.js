@@ -13729,5 +13729,52 @@ export const debateSummaries = [
         "title": "Coherence and explanatory method"
       }
     ]
+  },
+  {
+    "id": "shermer-vandeweghe-jesus-miracles-2019",
+    "number": "288",
+    "title": "Michael Shermer vs Luuk Vandeweghe — Are the Miracles of Jesus Unbelievable?",
+    "year": 2019,
+    "label": "Jesus’s Miracles",
+    "date": "2026-10-06",
+    "duration": "1 hr 51 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=AgVCo5Jeq3U",
+    "motion": "Are the miracles of Jesus unbelievable?",
+    "summary": "Shermer wins by pressing claim-specific evidence and comparative religious testimony, while Vandeweghe offers substantive but incompletely connected historical witness arguments.",
+    "topicCategory": "resurrection-miracles",
+    "sides": {
+      "pro": {
+        "name": "Jesus’s miracles are unbelievable",
+        "speaker": "Michael Shermer",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Jesus’s miracles are historically credible",
+        "speaker": "Luuk Vandeweghe",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 82,
+      "con": 75,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Probability, testimony, and the threshold for miracles"
+      },
+      {
+        "title": "Historical sources, authorship, and memory"
+      },
+      {
+        "title": "Witness sincerity, access, and martyrdom"
+      },
+      {
+        "title": "Competing miracle traditions and hostile testimony"
+      },
+      {
+        "title": "Mythology, historical meaning, and closing epistemology"
+      }
+    ]
   }
 ];

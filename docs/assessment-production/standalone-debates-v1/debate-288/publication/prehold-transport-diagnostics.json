@@ -1,0 +1,26 @@
+{
+  "status": "preserved-nonsubmitting-command-error",
+  "debateNumber": "288",
+  "failures": [
+    {
+      "callId": "call_2d16ad9e662a4198a1358bf65a6c1424",
+      "diagnostic": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.1 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "node:internal/modules/cjs/loader:1478\n  throw err;\n  ^\n\nError: Cannot find module '/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/check-publication.mjs'\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1475:15)\n    at wrapResolveFilename (node:internal/modules/cjs/loader:1048:27)\n    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1072:10)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1093:12)\n    at Module._load (node:internal/modules/cjs/loader:1261:25)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47 {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: []\n}\n\nNode.js v25.9.0\n"
+        },
+        {
+          "type": "input_text",
+          "text": "exit=1"
+        }
+      ]
+    }
+  ],
+  "interpretation": "One mistaken nonexistent checker path failed before execution; rereading the allowed plan located the correct pinned checker. No evidence or candidate changed due to this path failure, no outside file was opened, and no submission occurred.",
+  "automaticModelRetry": false,
+  "additionalDirectCostUsd": 0
+}

@@ -1,0 +1,74 @@
+{
+  "status": "preserved-unsaved-mechanical-failures",
+  "recovery": "The original complete data-only object literal and its two explicit field mutations reconstruct each in-memory checker input without rerunning assessment or executable tool calls.",
+  "failures": [
+    {
+      "candidate": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-288/inventory/prehold-invalid-candidate-1.json",
+        "sha256": "79023d810f339efa38f6bab0fc63be0364cebf352694ec7179086ffe4a67604e",
+        "bytes": 54559
+      },
+      "callId": "call_RIEmGeJhD9712NwaXvQLvoPf",
+      "diagnostic": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.2 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"exit_code\":1,\"output\":\"file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/assessment-production-standalone-debate-v1.mjs:29\\n  if (!condition) throw new Error(message);\\n                        ^\\n\\nError: moves[10]: quote is not an exact 3-18 word source substring\\n    at assertStandalone (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/assessment-production-standalone-debate-v1.mjs:29:25)\\n    at validateStandaloneInventory (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/assessment-production-standalone-debate-v1.mjs:271:7)\\n    at file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-288/inventory/check-inventory.mjs:21:14\\n    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)\\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)\\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\\n\\nNode.js v25.9.0\\n\",\"bytes\":54405}"
+        }
+      ],
+      "unsavedAtFailure": true
+    },
+    {
+      "candidate": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-288/inventory/prehold-invalid-candidate-2.json",
+        "sha256": "8aa21a055e68c495f51c1d70e3dfa19263bcbed0dc58ec9dcc830fd6c4aa3a1b",
+        "bytes": 54532
+      },
+      "callId": "call_AvnNKwYd3DH4mlimKIG0WB37",
+      "diagnostic": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.2 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"exit_code\":1,\"output\":\"file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/assessment-production-standalone-debate-v1.mjs:29\\n  if (!condition) throw new Error(message);\\n                        ^\\n\\nError: moves[27]: constructive move cannot have response targets\\n    at assertStandalone (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/assessment-production-standalone-debate-v1.mjs:29:25)\\n    at validateStandaloneInventory (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/assessment-production-standalone-debate-v1.mjs:311:7)\\n    at file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-288/inventory/check-inventory.mjs:21:14\\n    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)\\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)\\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\\n\\nNode.js v25.9.0\\n\",\"bytes\":54378}"
+        }
+      ],
+      "unsavedAtFailure": true
+    },
+    {
+      "candidate": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-288/inventory/prehold-invalid-candidate-3.json",
+        "sha256": "fb535f85127a0fadc9bb54b99bbaf4b33341315df24db8836a46108a3921a548",
+        "bytes": 54525
+      },
+      "callId": "call_DIxoIqWHmwtqe3wNpQuoupvn",
+      "diagnostic": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.2 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"exit_code\":1,\"output\":\"file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/assessment-production-standalone-debate-v1.mjs:29\\n  if (!condition) throw new Error(message);\\n                        ^\\n\\nError: inventory: selectionBalanceAudit totals or thresholds differ\\n    at assertStandalone (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/assessment-production-standalone-debate-v1.mjs:29:25)\\n    at validateStandaloneInventory (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/scripts/lib/assessment-production-standalone-debate-v1.mjs:346:5)\\n    at file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-288/inventory/check-inventory.mjs:21:14\\n    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)\\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)\\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\\n\\nNode.js v25.9.0\\n\",\"bytes\":54371}"
+        }
+      ],
+      "unsavedAtFailure": true
+    }
+  ],
+  "transportFaults": [
+    "TextEncoder is not defined",
+    "btoa is not defined"
+  ],
+  "firstSavedSubmissionUnchanged": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-288/inventory/draft-parts.json",
+    "sha256": "70b86deb17eb1cb350f3ba009cc410aa0af9a7d7b0b3292f99af035ef226fe7c",
+    "bytes": 52906
+  },
+  "newModelContexts": 0,
+  "newSavedAttempts": 0
+}

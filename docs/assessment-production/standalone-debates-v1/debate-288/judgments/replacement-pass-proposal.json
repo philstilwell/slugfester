@@ -1,0 +1,42 @@
+{
+  "status": "proposed-awaiting-user-authority",
+  "reason": "Original pass-b violated frozen caption-error exclusions in five dimensions; reviewer confirmed influence on values.",
+  "preserve": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-288/inventory/inventory.json",
+      "sha256": "aa76c49d450276a982d5efe3bc8bf70cbb36949dc9eb3c8426dd3eb79c466300",
+      "bytes": 110198
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-288/judgments/pass-a/output.json",
+      "sha256": "ee246a96f64cc337b6e24c9efb82e3561583dc1a18bce6d8a523501c4dc30607",
+      "bytes": 39832
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-288/judgments/pass-b/held-source-review-candidate-1.json",
+      "sha256": "2a94bdaf7ddef30bc1cfdc8a1a2c98a4fc25d48de875c9a2ab991a78024ecff6",
+      "bytes": 38892
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-288/judgments/pass-b/source-compliance-failure.json",
+      "sha256": "2ef8e378c24b656ff20b6b78e609806609cef1d40a7134f7c0e71e8c77bac99e",
+      "bytes": 2134
+    }
+  ],
+  "requestedException": {
+    "additionalPrimaryContexts": 1,
+    "replacementFor": "pass-b",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "forkTurns": "none",
+    "subscription": true,
+    "paidInferenceCalls": 0,
+    "maximumDirectIncrementalCostUsd": 0,
+    "attempts": 1,
+    "retries": 0,
+    "allowedEvidence": "Identical frozen source, inventory and rubric from original primary reader; no original or accepted pass outputs and no scores.",
+    "outputDirectory": "docs/assessment-production/standalone-debates-v1/debate-288/judgments/pass-b-replacement-1",
+    "scope": "One complete fresh independent replacement judgment of all 29 locked moves. Original pass-a remains immutable; rejected pass-b is preserved and excluded. No change to source, inventory, scoring policy or one-calculation rule. Standard complete-reading authentication, source-compliance review and exact-byte first submission still required."
+  },
+  "notYetDispatched": true
+}
