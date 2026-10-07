@@ -134290,6 +134290,665 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    "number": "296",
+    "id": "dillahunty-rauser-humanism-christianity-2023",
+    "date": "2026-10-07",
+    "title": "Matt Dillahunty vs Randal Rauser — Humanism or Christianity? (2023)",
+    "label": "Humanism or Christianity",
+    "topicCategory": "religion-society-public-reason",
+    "youtubeUrl": "https://www.youtube.com/watch?v=0T6SKpzyJ2I",
+    "duration": "1 hr 9 min",
+    "motion": "Is secular humanism better for society than Christianity?",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "sourceNote": "This assessment covers Matt Dillahunty and Randal Rauser’s opening speeches and direct debate, including the concluding exchange, approximately 0:22–1:09:31. Moderator logistics and promotional breaks are excluded. There are no paired formal closing speeches. Audience Q&A, its replies, the brief post-Q&A exchange and the host outro are excluded. Neither speaker receives credit, penalties or an inference of failing to reply from excluded material or the moderator’s final cutoff. The question concerns which framework is better for society; these scores do not determine whether Christianity is true. Sources: complete English automatic YouTube captions, with selected wording and speaker handoffs compared against automated transcription of the matching Modern-Day Debate publisher audio; no direct listening is claimed. Quotations preserve the source words; argument cards condense the speakers’ reasoning. Historical and theological claims are assessed as presented, without external fact-checking.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance, rather than judgments about worldview truth; the separate AI Contribution does not affect these scores.",
+    "sides": {
+      "pro": {
+        "name": "Secular humanism is better for society",
+        "speaker": "Matt Dillahunty",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christianity is better for society",
+        "speaker": "Randal Rauser",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 83,
+      "con": 84,
+      "winner": "con"
+    },
+    "summary": "Matt Dillahunty and Randal Rauser compare secular humanism and mere Christianity as practical foundations for equal worth, moral judgment, solidarity, and present human flourishing.",
+    "quotes": {
+      "pro": {
+        "text": "There's no agreement on what God wants.",
+        "context": "Dillahunty argues that Christian disagreement about divine purposes obstructs a common method for resolving practical social questions in the present world."
+      },
+      "con": {
+        "text": "Christianity and humanism are not scorched earth enemies.",
+        "context": "Rauser establishes shared commitments to humility, human nobility, and solidarity before arguing that mere Christianity cultivates those values more effectively."
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "frameworks-for-present-flourishing",
+        "title": "Frameworks for present human flourishing",
+        "timebox": "2:01–33:39",
+        "score": {
+          "pro": 85,
+          "con": 85
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-present-life-human-flourishing",
+              "time": "2:01",
+              "score": 85,
+              "role": "Constructive",
+              "words": "Dillahunty defines the comparison around human flourishing during this life, making practical consequences for people sharing the world the motion’s controlling measure.",
+              "critique": "Strongest feature: Dillahunty establishes a precise, socially relevant criterion by centering the lives people presently share, thereby preventing speculative afterlife benefits from automatically deciding the comparison. Principal limitation: A present-life focus identifies what should be measured but does not itself demonstrate that secular humanism produces superior outcomes, especially because Christianity can also claim current practices of care, reconciliation, and solidarity. Live burden: He must connect human-centered assessment to comparative evidence showing that its institutions, correction methods, or incentives reliably improve flourishing beyond the qualified Christianity Rauser defends. Locked score: 85 The framing is clear, responsive, and indispensable to the motion, yet its considerable argumentative value remains primarily criterial until outcome claims receive stronger support.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-mere-christianity-qualified-case",
+              "time": "18:22",
+              "score": 86,
+              "role": "Constructive",
+              "words": "Rauser limits his defense to creed-centered discipleship of Jesus, concedes severe Christian failures, and argues that this qualified tradition better cultivates shared social goods.",
+              "critique": "Strongest feature: Rauser states a disciplined target, openly concedes that many Christians have performed worse than humanists, and prevents the defense from depending on every historical expression of Christianity. Principal limitation: The boundary of “mere Christianity” is partly stipulated, creating a risk that damaging manifestations are excluded while favorable exemplars represent the tradition, and concessions alone do not prove superiority. Live burden: He must show that creed-centered discipleship has identifiable, non-selective features that predict social benefit despite Christian diversity and institutional failure. Locked score: 86 The qualification responsibly addresses obvious counterexamples, but its evidential legitimacy ultimately depends on principled membership criteria that do not select favorable Christian examples while excluding damaging manifestations.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-creed-flourishing-challenge",
+              "time": "27:30",
+              "score": 83,
+              "role": "Reply",
+              "words": "Dillahunty asks which claims in the Apostles’ Creed improve daily human flourishing, arguing that most concern divine identity, judgment, resurrection, and everlasting life.",
+              "critique": "Strongest feature: Dillahunty applies the agreed present-life criterion directly to Rauser’s chosen definition of Christianity, requiring a clear bridge from creedal propositions to social benefit rather than accepting relevance by association. Principal limitation: Saying the creed contains “literally” nothing about flourishing overstates the textual gap, because its claims can organize relationships, community, forgiveness, purpose, and embodied restoration even when those implications require interpretation. Live burden: He must distinguish absence of explicit policy from absence of socially consequential meaning and assess whether the inferred practices actually improve present life. Locked score: 83 The challenge is pointed and properly burden-focused, but its strongest wording understates how narrated doctrines can shape present conduct even when a creed does not state a social policy explicitly.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-hope-motivates-action",
+              "time": "25:08",
+              "score": 82,
+              "role": "Constructive",
+              "words": "Christian hope in God’s coming kingdom is presented as a rallying call that sustains persistent good work rather than encouraging passive withdrawal from society.",
+              "critique": "Strongest feature: Rauser explicitly rejects quietism and links hope to perseverance, using the promised restoration of creation to explain why Christians should continue costly action despite delayed success. Principal limitation: Scriptural exhortations and inspirational sayings establish an available interpretation, but they do not show that eschatological hope generally motivates action or surpasses secular confidence, solidarity, and concern for future generations. Live burden: He must demonstrate the causal bridge from anticipated divine restoration to sustained present service while accounting for Christian interpretations that encourage withdrawal. Locked score: 82 The answer protects Christian hope from a simple afterlife objection and fits the motion, yet its distinctive motivational advantage remains unestablished across communities facing comparable sacrifice, disappointment, and political pressure.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-demand-for-present-benefit",
+              "time": "31:18",
+              "score": 87,
+              "role": "Reply",
+              "words": "Dillahunty presses for a concrete explanation of how Jesus-belief or Jesus-oriented practice improves his remaining earthly life beyond the benefits he attributes to humanism.",
+              "critique": "Strongest feature: Dillahunty sharpens the motion into a concrete comparative question about what changes before death, forcing general claims about Jesus to identify present mechanisms rather than leaning on ultimate salvation. Principal limitation: His own autobiographical confidence that humanist principles improve life does not supply comparative evidence, and framing the question around belief initially risks missing Rauser’s emphasis on emulation and communal practice. Live burden: He must evaluate the offered practices by their consequences and show that humanism provides them more reliably, accessibly, or coherently. Locked score: 87 The demand is exceptionally clear and elicits Rauser’s strongest practical answer, although Dillahunty still owes evidence that secular practice performs better in communities facing equivalent opportunities, costs, and constraints.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-creed-restoration-and-purpose",
+              "time": "29:06",
+              "score": 82,
+              "role": "Reply",
+              "words": "The creed frames Jesus’ death and resurrection as restoring relationships, locating human purpose in communion with God, others, creatures, self, and a future embodied renewal.",
+              "critique": "Strongest feature: Rauser answers the textual challenge by supplying an integrated interpretation in which reconciliation, community, purpose, creation, and bodily resurrection all bear on human flourishing rather than mere escape. Principal limitation: The response moves densely from doctrinal meaning to claimed social value without independently showing that accepting this interpretation produces better relationships or institutions in the present. Live burden: He must translate restoration and teleology into identifiable practices and comparative consequences while respecting the debate’s agreement not to adjudicate the creed’s ultimate truth. Locked score: 82 The answer makes the creed plausibly relevant and prevents its dismissal as socially empty, but theological interpretation still substitutes for evidence that these meanings generate comparatively better relationships or institutions.",
+              "tags": []
+            }
+          },
+          {
+            "con": {
+              "ledgerMoveId": "con-emulating-jesus-present-practice",
+              "time": "32:19",
+              "score": 88,
+              "role": "Reply",
+              "words": "Emulating Jesus means feeding hungry people, visiting prisoners, comforting mourners, loving neighbors, practicing self-denial, and seeking reconciliation as sources of present flourishing.",
+              "critique": "Strongest feature: Rauser answers the personal-benefit challenge with recognizable conduct, explaining fulfillment through right relationship and showing that taking up one’s cross involves outward care rather than abstract assent. Principal limitation: These practices are available within humanism and other traditions, so their goodness establishes compatibility with Christian discipleship without demonstrating Christian uniqueness or superior frequency, durability, and reach. Live burden: He must show how Jesus’ authority and the surrounding Christian framework add motivational or institutional power beyond shared humanitarian reasons. Locked score: 88 The response is direct, concrete, and closely tied to flourishing, making it one of Rauser’s strongest moves, while the availability of the same humanitarian conduct elsewhere prevents the example alone from ranking the frameworks.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "revision-public-reasons-and-guidance",
+        "title": "Revision, public reasons, and practical guidance",
+        "timebox": "5:34–34:56",
+        "score": {
+          "pro": 81,
+          "con": 81
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-revisable-open-method",
+              "time": "5:34",
+              "score": 84,
+              "role": "Constructive",
+              "words": "Humanism may adopt demonstrably beneficial practices from any source and revise its methods through evidence, discussion, and debate when better consequences become available.",
+              "critique": "Strongest feature: Dillahunty presents revisability as an operational advantage, explaining how humanism can absorb successful practices from Christianity or elsewhere without preserving an unhelpful doctrinal package. Principal limitation: The account leaves “better results” and the procedure for resolving conflicts among autonomy, happiness, health, and equality insufficiently specified, so openness can describe adaptability without guaranteeing sound correction. Live burden: He must show how humanist communities rank competing goods, identify reliable evidence, and prevent fashionable majorities from redefining improvement against vulnerable people. Locked score: 84 The move gives secular humanism a plausible learning mechanism and directly answers fixed-dogma concerns, but its comparative force depends on a more determinate method for adjudicating contested values.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-humanism-nature-derivative-challenge",
+              "time": "33:36",
+              "score": 81,
+              "role": "Reply",
+              "words": "Rauser asks whether humanism weakens environmental and animal concern by valuing nature, sentient creatures, and ecosystems only through their contribution to human flourishing.",
+              "critique": "Strongest feature: Rauser probes a genuine boundary of an explicitly human-centered ethic and asks whether derivative valuation can protect nonhuman beings and ecosystems when immediate human interests point elsewhere. Principal limitation: The motion concerns which framework better serves human society, so limited intrinsic scope does not itself show practical inferiority, and derivative concern may still generate extensive environmental and animal protection. Live burden: He must identify cases where Christian intrinsic or creation-based value yields better social guidance than humanism’s cooperative, ecological, and sentience-sensitive reasons. Locked score: 81 The question usefully tests conceptual reach, but it remains one step removed from the motion because derivative value can still support strong protection when ecological health and animal welfare affect enduring human interests.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-christian-disagreement-and-present-cost",
+              "time": "11:12",
+              "score": 78,
+              "role": "Constructive",
+              "words": "Christian disagreement about God’s will weakens practical resolution, while religious resources and attention may be diverted from demonstrable flourishing toward an unverified afterlife.",
+              "critique": "Strongest feature: Dillahunty identifies a genuine governance problem: rival Christian interpretations can yield opposed policies while appealing to the same divine authority, complicating publicly shared resolution. Principal limitation: Denominational diversity does not show that Christianity lacks interpretive or deliberative resources, and claims about happier secular societies, wasted income, or neglected interests are asserted without adequate comparative support. Live burden: He must demonstrate that disagreement is more disabling within qualified Christianity than within plural humanism and that religious expenditures predictably reduce rather than enhance present flourishing. Locked score: 78 The objection is relevant and potentially consequential, but its empirical generalizations and movement from disagreement to practical inferiority remain too compressed for a stronger conclusion.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "human-worth-and-equal-status",
+        "title": "Human worth and equal status",
+        "timebox": "8:11–55:53",
+        "score": {
+          "pro": 83,
+          "con": 86
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-human-centered-equality-and-autonomy",
+              "time": "8:11",
+              "score": 81,
+              "role": "Constructive",
+              "words": "Beginning from human flourishing directs society toward equal status across sex and ethnicity, bodily sovereignty, property equality, and personal authority over life’s purpose.",
+              "critique": "Strongest feature: Dillahunty translates an abstract human-centered outlook into concrete stakes involving legal status, bodily control, property, ethnicity, sex, and self-directed purpose, making the social comparison intelligible. Principal limitation: His contrast relies substantially on his former religious experience and the possibility of God-focused priorities, although divine orientation need not logically exclude attention to human interests or equal treatment. Live burden: He must establish that humanism grounds these commitments more securely or implements them more consistently than Rauser’s egalitarian mere Christianity, rather than simply announcing them as humanist values. Locked score: 81 The move supplies valuable practical specificity and a coherent direction of travel, but the claimed comparative advantage remains under-supported by representative institutional evidence or a deeper account of equality.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-image-grounded-species-worth",
+              "time": "20:50",
+              "score": 83,
+              "role": "Constructive",
+              "words": "The image of God grounds value across the human species independently of developed reason, language, imagination, self-consciousness, usefulness, recognition, or subjective self-valuation.",
+              "critique": "Strongest feature: Rauser directly addresses marginal cases by locating worth in a relation shared across the species, thereby avoiding standards that fluctuate with cognitive achievement, usefulness, or another person’s approval. Principal limitation: The Mark Twain stamp analogy illustrates transferred significance but cannot establish the divine relation, God’s evaluative authority, or why bearing that image generates equal moral status in the public comparison. Live burden: He must defend the grounding premise sufficiently for social use without shifting the agreed motion into a demand to prove Christianity true. Locked score: 83 The account coherently protects vulnerable humans more explicitly than capacity theories, although its public comparative force remains conditional on a disputed theological relation whose practical adoption outside the tradition is unexplained.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-species-value-and-cooperation",
+              "time": "35:30",
+              "score": 79,
+              "role": "Reply",
+              "words": "Dillahunty accepts human-centered species preference, assigns all humans value, and extends concern outward through intertwined lives, empathy, social proximity, and cooperation’s practical advantages.",
+              "critique": "Strongest feature: Dillahunty candidly accepts graded concern while separating universal human status from equal emotional proximity, then connects broader regard to interdependence and the benefits of cooperation. Principal limitation: Saying humans have value by virtue of being human declares the crucial species-wide principle rather than grounding it, while references to self-value and intertwined lives do not cover isolated, unwanted, or cognitively impaired people. Live burden: He must explain why universal protection follows when reciprocity, affection, and individual valuation disappear, without misrepresenting the view as depending only on liking oneself. Locked score: 79 The response is candid and socially practical, but its several rationales do not yet converge into an unconditional account protecting humans outside every relationship of exchange, dependence, affection, or recognition.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-subjective-value-pressure",
+              "time": "38:07",
+              "score": 85,
+              "role": "Reply",
+              "words": "Rauser argues that tying human value to self-regard makes humanism radically subjective, since some people dislike themselves or cease valuing their continued lives.",
+              "critique": "Strongest feature: Rauser detects that one strand of Dillahunty’s explanation invokes personal valuation and tests whether worth would disappear when self-regard collapses, a serious concern for vulnerable individuals. Principal limitation: The formulation compresses Dillahunty’s broader position, which separately declares species-wide value, mutual concern, and general protections, so it treats one illustration as the entire humanist basis. Live burden: He must engage the strongest version of the account by showing why collective species commitments and equal policy cannot secure status without objective grounding. Locked score: 85 The pressure test is sharp and prompts an important clarification, but its narrow focus on self-value does not defeat the broader species commitment, interpersonal concern, and general protections Dillahunty had already placed within his account.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-humanism-not-dependent-on-self-liking",
+              "time": "39:00",
+              "score": 87,
+              "role": "Reply",
+              "words": "Humanism persists even when someone no longer values personal survival, because its principles concern nearly everyone’s interests and social protections rather than individual self-liking.",
+              "critique": "Strongest feature: Dillahunty decisively rejects the proposed dependency by explaining that a person can lose interest in continued life while still endorsing protections and flourishing for others. Principal limitation: The response defeats Rauser’s characterization but does not yet explain the ultimate normative force of the species-wide generalization, particularly for humans whom nobody values and who cannot reciprocate. Live burden: He must connect the prevalence of human interests to an equal claim possessed by every individual without letting exceptional cases lose protection. Locked score: 87 The counterexample clearly preserves humanism across changes in self-regard and corrects the exchange’s direction, although the response still leaves unexplained why isolated humans who cannot reciprocate, communicate preferences, or benefit a community possess equal status.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-unvalued-infant-challenge",
+              "time": "41:01",
+              "score": 89,
+              "role": "Reply",
+              "words": "An orphaned infant lacking developed cognition, self-valuation, and anyone’s affection tests whether humanism can secure individual worth when capacity, reciprocity, and recognition are absent.",
+              "critique": "Strongest feature: Rauser constructs a demanding marginal case that isolates the grounding question and prevents ordinary affection, usefulness, agency, or reciprocal cooperation from doing unnoticed argumentative work. Principal limitation: Exposing a gap in Dillahunty’s explanation does not establish the divine-image alternative, and the case asks about worth rather than any position on voluntary assisted dying. Live burden: He must show why image-bearing supplies equal status more successfully than a humanist species principle, while Dillahunty must explain protection without interpersonal recognition. Locked score: 89 The challenge is precise, memorable, and central because it exposes an explanatory gap concerning the hardest vulnerable case without pretending that diagnostic success independently verifies divine image-bearing or any other Christian metaphysical claim.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-divine-premise-public-burden",
+              "time": "52:19",
+              "score": 86,
+              "role": "Reply",
+              "words": "Rauser’s grounding depends on believing in a morally perfect being and understanding its values, so its public force remains conditional on disputed theological premises.",
+              "critique": "Strongest feature: Dillahunty accurately identifies that the image-of-God explanation inherits commitments about God’s existence, goodness, intentions, and human interpretation, all of which matter when reasons govern a plural society. Principal limitation: Conditional dependence does not make the account incoherent or socially useless, and lack of shared proof cannot by itself establish that a humanist declaration has stronger normative authority or practical results. Live burden: He must show why publicly disputed premises impair decision-making more than humanism’s own unproved equality premise, without demanding a full proof of Christianity outside the motion. Locked score: 86 The objection places public accessibility squarely in view and exposes theological conditionality fairly, but comparative superiority requires more than disagreement because every framework begins from commitments whose authority may reasonably be questioned.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-species-codification-objection",
+              "time": "54:38",
+              "score": 88,
+              "role": "Reply",
+              "words": "Collective codification cannot ground every individual’s status because many humans neither recognize nor exercise rights, leaving species membership’s normative significance unexplained and potentially arbitrary.",
+              "critique": "Strongest feature: Rauser exposes the gap between some humans creating institutions and every human possessing equal status, especially for individuals unable to participate in recognition, protection, or political agency. Principal limitation: The objection shows that institutional activity alone is insufficient, but it neither defeats a separately stipulated species-wide principle nor demonstrates that God’s selection of humanity is less arbitrary. Live burden: He must establish the positive relevance of divine image-bearing while engaging humanism’s strongest claim that equality is a governing commitment rather than a capacity each person exercises. Locked score: 88 The critique precisely targets an explanatory mismatch and advances the central dispute, though its diagnostic success leaves Rauser with an equivalent responsibility to justify the positive Christian account he proposes.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "moral-intuition-and-warrant",
+        "title": "Moral intuition and warrant",
+        "timebox": "19:23–51:37",
+        "score": {
+          "pro": 83,
+          "con": 82
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-test-intuitions-not-rationalize",
+              "time": "45:37",
+              "score": 83,
+              "role": "Reply",
+              "words": "Moral intuitions should be investigated for correctness and consequences rather than rationalized, while unusual facts can change life-saving choices and rights remain defeasible for sufficient reasons.",
+              "critique": "Strongest feature: Dillahunty draws an important methodological distinction between seeking reasons that confirm an intuition and testing whether it survives counterexamples, consequences, and wider evidence. Principal limitation: Adding cancer-curing chimp blood changes the sparse hypothetical rather than evaluating the original judgment, and extended asides about dilemmas, divine plans, and punishment diffuse the central epistemic proposal. Live burden: He must state a workable testing procedure and explain how its results interact with the equal-status default when intuitions and predicted consequences diverge. Locked score: 83 The move advances a valuable anti-rationalization standard and appropriate fallibility, but its application remains improvised where incomplete information and uncertain consequences make moral correction neither immediate nor socially neutral.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-original-sin-humility",
+              "time": "19:23",
+              "score": 79,
+              "role": "Constructive",
+              "words": "Original sin explains persistent individual and collective moral failure without fatalism, encouraging sober vigilance about anyone’s capacity to participate in grave social wrongdoing.",
+              "critique": "Strongest feature: Rauser gives original sin a practical, nonfatalistic interpretation as disciplined suspicion of personal and collective virtue, using moral catastrophe to motivate humility rather than resignation. Principal limitation: Human fallibility and susceptibility to atrocities are available to secular psychology and history as well, so the examples support vigilance without showing that this theological doctrine uniquely or more effectively cultivates it. Live burden: He must connect the doctrine’s specific content and communal practice to measurably better self-correction than humanist recognition of bias and institutional danger. Locked score: 79 The doctrine receives a serious social function, yet secular access to the same lesson about fallibility and the absence of matched institutional outcomes substantially limit the claimed Christian advantage in cultivating vigilance.",
+              "tags": []
+            }
+          },
+          {
+            "con": {
+              "ledgerMoveId": "con-moral-intuition-and-imago-coherence",
+              "time": "43:49",
+              "score": 80,
+              "role": "Reply",
+              "words": "The strong intuition to save one infant before ten sophisticated chimpanzees coheres with imago Dei, which supplies Rauser’s preferred explanation for species-wide moral priority.",
+              "critique": "Strongest feature: Rauser links a vivid moral judgment to his account of human status and presents mutual coherence, rather than pretending the hypothetical independently demonstrates the doctrine’s truth. Principal limitation: The fire case is an intuition pump with sparse facts, not an experiment, and compatibility between intuition and theology neither proves reliability nor excludes secular explanations of species preference. Live burden: He must justify the contested intuition, address consequential qualifications, and show why imago Dei explains it better than evolved attachment, social commitments, or a stipulated human equality principle. Locked score: 80 The case illuminates Christianity’s internal fit, but its evidential reach remains modest because the intuition is contestable and coherence with prior theology may increase systematic unity without increasing moral reliability.",
+              "tags": [
+                {
+                  "type": "bias",
+                  "label": "Subjective validation",
+                  "url": "https://cogbias.site/biases/subjective-validation/",
+                  "context": "Rauser says imago Dei fits his deeply held infant-saving intuition and offers their dovetailing as mutual reinforcement."
+                }
+              ]
+            }
+          },
+          {
+            "con": {
+              "ledgerMoveId": "con-fallible-properly-basic-intuitions",
+              "time": "49:21",
+              "score": 87,
+              "role": "Reply",
+              "words": "Moral intuitions can arise immediately as properly basic beliefs yet remain fallible and subject to testing for coherence within a broader network of beliefs.",
+              "critique": "Strongest feature: Rauser directly corrects the suggestion that intuition is either deductively inferred or treated as infallible, offering a coherent account in which immediate beliefs can receive later scrutiny. Principal limitation: Analogies to perception, noncontradiction, and obvious assault judgments do not establish the reliability of the contested infant-versus-chimp intuition or explain how conflicting intuitions should be resolved. Live burden: He must provide criteria for defeaters, weighting, and cross-person disagreement that do more than reward fit with beliefs already held. Locked score: 87 The clarification is philosophically sophisticated and answers the rationalization concern, while the intuition’s warrant and the method’s comparative social advantage remain unsettled when equally reflective people reach persistent opposing judgments about unfamiliar cases.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "rights-existence-and-codification",
+        "title": "Rights, entitlement, and codification",
+        "timebox": "41:34–1:07:44",
+        "score": {
+          "pro": 83,
+          "con": 83
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-equal-rights-as-humanist-policy",
+              "time": "41:34",
+              "score": 79,
+              "role": "Reply",
+              "words": "Humanists protect every human through equal rights and privileges they would want themselves, regardless of disability, while allowing separate debate about voluntary end-of-life choices.",
+              "critique": "Strongest feature: Dillahunty supplies a clear policy commitment that protects the infant as a human being and refuses to make actual cognitive capacity or another person’s affection a prerequisite for rights. Principal limitation: Reciprocal language about protections “we would like” shifts from intrinsic worth to a chosen social rule, and the assisted-dying aside distracts from the involuntary infant case without answering its grounding challenge. Live burden: He must explain why the universal policy binds when collective preference changes and distinguish voluntary autonomy from decisions imposed on nonconsenting vulnerable people. Locked score: 79 The practical answer blocks any inference that humanism abandons disabled infants, but its unnecessary assisted-dying aside and unexplained policy universality leave the central philosophical ground of protection insufficiently developed.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-goodness-and-objective-rights",
+              "time": "56:36",
+              "score": 83,
+              "role": "Reply",
+              "words": "Because God is identified with maximal goodness, image-bearing confers value, while the right not to be tortured should remain real even when a collective refuses recognition.",
+              "critique": "Strongest feature: Rauser joins his positive grounding claim to a forceful counterexample, showing why moral criticism seems to require entitlements that remain valid when law and public opinion become vicious. Principal limitation: Defining God as maximal goodness does not by itself establish that God exists, creates image-bearers, or transmits equal status, and calling Dillahunty’s question confused dismisses a legitimate explanatory request too quickly. Live burden: He must articulate the relation between divine goodness and human entitlement while preserving the agreed practical scope rather than demanding worldview proof. Locked score: 83 The torture example powerfully distinguishes objective entitlement from codification, but the proposed alternative remains under-defended until a credible account connects divine goodness, image-bearing, and each person’s equal claims.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-equality-as-foundational-declaration",
+              "time": "53:16",
+              "score": 80,
+              "role": "Constructive",
+              "words": "Human beings begin equal in value and rights because collective institutions must codify and protect rights, making equal status the governing humanist foundation for social decisions.",
+              "critique": "Strongest feature: Dillahunty states an uncomplicated institutional rule with immediate implications for law and policy, ensuring that differences in power, capacity, or recognition do not determine initial civic standing. Principal limitation: The move combines a declaration of moral equality with the sociological fact that humans enforce rights, but enforcement capacity does not explain why the declaration is true or binding. Live burden: He must distinguish the normative principle from its legal implementation and justify why future collectives may not abandon equality when preferences or predicted benefits shift. Locked score: 80 The foundation is socially attractive and operationally clear, yet assigning equality a decisive institutional role does not explain its normative authority, leaving universal status asserted at the precise point where Rauser requests a ground that survives collective rejection.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-objective-rights-final-clarification",
+              "time": "1:07:12",
+              "score": 84,
+              "role": "Reply",
+              "words": "Rauser closes by distinguishing rights that exist independently of human thought from protections whose existence depends entirely on social recognition, leaving that disagreement unresolved.",
+              "critique": "Strongest feature: Rauser concisely identifies the exchange’s deepest conceptual divide and prevents the legal history discussion from obscuring his claim that moral entitlements can survive unanimous denial. Principal limitation: The clarification restates the objective-rights position without adding an argument for divine grounding, explaining its epistemic accessibility, or showing superior practical consequences under the motion. Live burden: He must support the independence claim and connect it to reliable social protection, while Dillahunty must explain principled criticism if recognition creates every right. Locked score: 84 The closing formulation accurately maps the deepest disagreement, but its brevity leaves both the metaphysical warrant and the comparative social payoff unresolved, so it clarifies the competing positions more effectively than it supplies a reason to choose between them.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-rights-require-collective-protection",
+              "time": "55:50",
+              "score": 84,
+              "role": "Reply",
+              "words": "Rights exist only when communities codify, guarantee, and protect them; an unenforced claim is instead a proposal about which permissions a system should establish.",
+              "critique": "Strongest feature: Dillahunty emphasizes the practical difference between a moral aspiration and an enforceable social protection, keeping attention on institutions capable of securing people against actual interference. Principal limitation: Claiming that unprotected rights do not exist collapses moral entitlement into legal recognition and makes ordinary criticism of unjust law difficult, even though his own “should have” language appears to invoke standards beyond current enforcement. Live burden: He must explain how an institution can be wrong before it changes if rights are wholly created by collective action, or explicitly separate moral claims from legal rights. Locked score: 84 The operational emphasis is valuable for policy, but equating existence with enforcement creates an internal tension because Dillahunty’s own historical criticism appears to invoke standards that unjust institutions failed to recognize.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-rights-versus-what-should-be-rights",
+              "time": "57:27",
+              "score": 88,
+              "role": "Reply",
+              "words": "Historical exclusions show the difference between rights legally possessed and rights people should receive under an equality-based system whose institutions may contradict their own principles.",
+              "critique": "Strongest feature: Dillahunty uses voting exclusions to clarify that institutional facts can diverge from a framework’s declared values, allowing criticism of past law without pretending excluded citizens already enjoyed enforceable protections. Principal limitation: His claim that a humanist founding would have secured equal voting is counterfactual and unsupported, while “should have” continues to sound like a moral entitlement not reducible to codification. Live burden: He must explain the normative force of system-relative should-claims and show that humanist equality would resist historical interests more reliably than Christian egalitarianism. Locked score: 88 The distinction between legal possession and principled demand is illuminating and responsive, but it leaves unresolved whether the equality principle identifies moral entitlements that precede collective recognition.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "equality-and-revisability",
+        "title": "Equality and the limits of revision",
+        "timebox": "39:48–1:06:55",
+        "score": {
+          "pro": 86,
+          "con": 84
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-scriptural-hierarchy-equality-challenge",
+              "time": "39:48",
+              "score": 83,
+              "role": "Reply",
+              "words": "Biblical rules concerning property, church speech, and wifely submission appear hierarchical, so Christianity must reject that hierarchy or explain why it benefits society.",
+              "critique": "Strongest feature: Dillahunty names concrete textual pressures instead of making a generic accusation, and he fairly allows that Rauser may defend an egalitarian Christianity rather than treating every Christian interpretation alike. Principal limitation: Different roles do not by themselves entail unequal human worth, and selected passages cannot establish how representative, necessary, or socially dominant the hierarchy is within Rauser’s qualified framework. Live burden: He must show that the cited structure genuinely compromises equal status or outcomes and then compare it with humanism’s own institutional failures. Locked score: 83 The objection is relevant and carefully conditional, but moving from disputed role prescriptions to systematic inequality requires stronger interpretive and comparative support across the textual and institutional forms under discussion.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-egalitarian-image-and-entitlement",
+              "time": "58:40",
+              "score": 86,
+              "role": "Reply",
+              "words": "Genesis presents male and female together as God’s image, supporting egalitarian status, while the claim that women should vote implies entitlement prior to legal recognition.",
+              "critique": "Strongest feature: Rauser directly rejects complementarianism for his defended framework and then uses Dillahunty’s own normative wording to reopen the distinction between an existing moral claim and delayed institutional acknowledgment. Principal limitation: The egalitarian reading is contested and not shown uniquely required by Christianity, while historical revolutionary significance and theological assertions receive no independent verification within the debate. Live burden: He must demonstrate that image-bearing explains equal civic entitlement more securely than a humanist equality axiom and that his interpretation has practical formative force. Locked score: 86 The two-part answer is responsive and philosophically consequential, though its scriptural foundation and comparative social effectiveness remain conditional on Rauser’s preferred interpretation rather than independently established.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-codification-can-fail-its-values",
+              "time": "59:57",
+              "score": 89,
+              "role": "Reply",
+              "words": "A government may deny protections while contradicting its own equality commitments, so historical injustice reflects institutional inconsistency rather than absence of a humanist standard.",
+              "critique": "Strongest feature: Dillahunty clearly separates a framework’s evaluative commitments from the behavior of institutions claiming related ideals, permitting internal criticism without defining every abuse as the framework’s true content. Principal limitation: The argument presupposes that equality has binding authority within humanism and that the hypothetical United States would have applied it inclusively, neither of which follows merely from institutional inconsistency. Live burden: He must justify the equality premise and specify when deviation represents mistaken application rather than legitimate revision of a flexible framework. Locked score: 89 The internal-critique structure handles historical counterexamples powerfully, but defining equality as humanism’s authentic norm does not by itself establish that norm’s authority, explain its content, or demonstrate its practical reliability under sustained political pressure.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-revisability-categorical-rights-challenge",
+              "time": "1:01:11",
+              "score": 83,
+              "role": "Reply",
+              "words": "If humanism remains open to revision, Rauser asks whether future evidence could make categorical denial of women’s voting rights consistent with humanist values.",
+              "critique": "Strongest feature: Rauser identifies a genuine structural tension between advertising comprehensive revisability and treating equal civic status as permanently insulated from evidential challenge, forcing Dillahunty to define humanism’s fixed commitments. Principal limitation: The question initially blurs revision of empirical policies with contradiction of a constitutive equality principle, and it supplies no plausible evidence that could justify sex-based exclusion while preserving equal status. Live burden: He must show that voting equality is an empirical conclusion vulnerable to revision rather than an application of the framework’s identity conditions. Locked score: 83 The challenge elicits valuable clarification and tests conceptual consistency, but its force diminishes once individual restrictions, universal abolition, and categorical discrimination are carefully distinguished.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-equality-logically-constrains-revision",
+              "time": "1:01:37",
+              "score": 85,
+              "role": "Reply",
+              "words": "Because women are human and humans receive equal rights, sex-based voting exclusion contradicts humanism, though evidence may still revise policies consistent with that categorical equality.",
+              "critique": "Strongest feature: Dillahunty gives a compact set-theoretic answer: once equal rights attach to humans and women belong to that class, excluding women as women violates the premise rather than revising an incidental policy. Principal limitation: The crucial premise that every person has the voting right remains assumed, his “a posteriori” description sits awkwardly beside claimed logical necessity, and later qualifications are needed to avoid overbreadth. Live burden: He must explain which rights equality entails and how they are established while preserving room for individual disqualification or universal institutional change. Locked score: 85 The conditional logic is strong, but the central normative question remains why equal consideration entails this particular franchise and makes that civic premise permanently constitutive rather than one institutional arrangement among several possible expressions of equality.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-physics-analogy-and-missing-premise",
+              "time": "1:02:28",
+              "score": 83,
+              "role": "Reply",
+              "words": "Rauser compares scientific paradigm change with humanist revision and argues that equal humanity alone does not entail an equal voting right without an additional normative premise.",
+              "critique": "Strongest feature: Rauser correctly isolates the missing premise between belonging to the human class and possessing a particular civic entitlement, preventing set membership from concealing the argument’s substantive normative step. Principal limitation: The physics analogy is loose because empirical theories and constitutive moral commitments have different revision conditions, and the extended exchange becomes organizationally diffuse before reaching the precise logical objection. Live burden: He must challenge or replace the voting-right premise itself rather than infer that scientific fallibility makes categorical discrimination potentially humanist. Locked score: 83 The missing-premise analysis is valuable and survives Dillahunty’s frustration, but the paradigm analogy obscures the issue because scientific prediction and logical consistency within a moral framework answer importantly different questions.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-qualified-categorical-equality-response",
+              "time": "1:04:23",
+              "score": 88,
+              "role": "Reply",
+              "words": "Dillahunty distinguishes sex-based exclusion from denying particular felons or abolishing voting universally, insisting that claimed humanists may violate equality without changing humanism’s principles.",
+              "critique": "Strongest feature: Dillahunty finally supplies every needed qualification, separating categorical discrimination from individualized restrictions, universal abolition, and misconduct by people who merely claim the humanist label. Principal limitation: His presentation is frustrated and lengthy, and the universal voting premise still rests on a declared equality whose precise content and derivation remain insufficiently defended. Live burden: He must explain why equal consideration entails this particular distribution of political power while identifying principled boundaries for permissible exceptions. Locked score: 88 The response defeats the overbroad scenario and preserves meaningful revision, although its frustrated presentation obscures a careful distinction among framework identity, civic design, individualized criminal disability, universal abolition, and impermissible categorical inequality.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "solidarity-self-denial-and-hope",
+        "title": "Solidarity, self-denial, and hope",
+        "timebox": "9:41–1:09:31",
+        "score": {
+          "pro": 80,
+          "con": 86
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-cooperative-impact-test",
+              "time": "9:41",
+              "score": 81,
+              "role": "Constructive",
+              "words": "Humanists should assess actions by generalizing their social effects, seeking cooperation, happiness, health, autonomy, and minimal imposed constraint in a shared world.",
+              "critique": "Strongest feature: Dillahunty offers a recognizable practical test by asking what society would become if conduct were generally permitted, linking personal freedom to reciprocal effects on everyone sharing social space. Principal limitation: The test gathers several attractive goods without explaining how to decide when happiness, health, autonomy, cooperation, and limited government conflict, and the universalization illustration remains informal rather than demonstrative. Live burden: He must specify priority rules or institutional safeguards that convert this cluster into guidance for hard cases and then compare its reliability with Christian moral formation. Locked score: 81 The proposal is accessible and action-guiding at an introductory level, yet unresolved tradeoffs and limited comparative evidence constrain its capacity to establish humanism’s overall superiority.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-shared-humanist-values",
+              "time": "15:43",
+              "score": 86,
+              "role": "Constructive",
+              "words": "Rauser begins from shared commitments to humility, human nobility, and solidarity, arguing that Christianity overlaps substantially with humanism before claiming stronger cultivation.",
+              "critique": "Strongest feature: Rauser avoids a false dichotomy by granting extensive moral common ground, which makes his later comparison about cultivation rather than caricature and accurately acknowledges humanist aspirations. Principal limitation: Establishing overlap shows compatibility, not that Christianity produces these goods more effectively, and selected scriptural or historical illustrations cannot establish typical causal outcomes across communities. Live burden: He must explain what distinctive Christian mechanisms strengthen humility, nobility, and solidarity, then provide comparative reason to expect those mechanisms to outperform humanist analogues. Locked score: 86 The charitable framing materially improves the debate and identifies a fair target, although the superiority inference still needs evidence that ordinary Christian communities cultivate these shared values more reliably than comparable secular organizations.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-hope-focused-on-afterlife-challenge",
+              "time": "1:07:42",
+              "score": 80,
+              "role": "Reply",
+              "words": "Dillahunty argues that Christian hope concerns a future life and therefore may not improve present flourishing amid teachings about earthly suffering, trial, and tribulation.",
+              "critique": "Strongest feature: Dillahunty returns the conclusion to the agreed present-life standard and asks for the missing connection between eschatological expectation and benefits experienced by existing societies. Principal limitation: The challenge underrepresents Rauser’s explicit rejection of quietism, his claim that hope motivates good action, and his earlier examples of present solidarity, so it targets a narrower Christianity than the one offered. Live burden: He must answer the motivational argument by comparing present conduct rather than treating all Christian hope as escape from earthly life. Locked score: 80 The present-life relevance test is legitimate, but the objection loses force by not engaging Rauser’s explicit claim that Christian expectation sustains perseverance and social repair now, a claim that still needed comparative evidence rather than dismissal itself.",
+              "tags": [
+                {
+                  "type": "bias",
+                  "label": "Confirmation bias",
+                  "url": "https://cogbias.site/biases/confirmation-bias/",
+                  "context": "Dillahunty recasts Christian hope as afterlife-focused after Rauser explicitly rejected quietism and gave repeated present-action examples."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "con-jesus-solidarity-and-nonviolence",
+              "time": "22:23",
+              "score": 86,
+              "role": "Constructive",
+              "words": "Jesus’ teaching and example cultivate solidarity with marginalized people, grace, enemy-love, forgiveness, self-denial, and disciplined nonviolent resistance capable of social transformation.",
+              "critique": "Strongest feature: Rauser connects Christianity to demanding present practices rather than private belief, and the discussion of nonviolent resistance shows how enemy-love can oppose injustice without mirroring aggression. Principal limitation: Francis and King establish that Christian interpretation can inspire transformative action, not that Christianity uniquely produces it or does so more reliably than secular moral movements. Live burden: He must identify the formative mechanism linking Jesus-centered discipleship to representative social outcomes and compare it with humanist solidarity rather than relying on exceptional exemplars. Locked score: 86 The move is concrete, morally serious, and directly relevant to flourishing, but exemplary achievements cannot alone show that Christian formation changes ordinary adherents more reliably than available secular disciplines.",
+              "tags": []
+            }
+          },
+          {
+            "con": {
+              "ledgerMoveId": "con-dispensationalism-not-mere-christianity",
+              "time": "1:08:06",
+              "score": 88,
+              "role": "Reply",
+              "words": "Rauser rejects tribulation-centered dispensationalism as an American minority tradition rather than a defining feature of the mere Christianity he has undertaken to defend.",
+              "critique": "Strongest feature: Rauser precisely limits the target and prevents a distinctive modern eschatology from being attributed to Christianity as a whole, consistent with his earlier creed-centered qualification. Principal limitation: Correcting scope is primarily defensive; it removes one objection but does not itself establish how his preferred eschatology improves present society or outperforms humanist motivation. Live burden: He must offer the positive renewed-creation account and draw a clear practical inference from it to sustained worldly care. Locked score: 88 The scope correction is accurate, efficient, and essential to fair assessment, though it remains a defensive success whose present-life significance depends on Rauser’s ensuing explanation of renewed creation and its still-unstated practical consequences for Christian conduct in shared institutions and civic life.",
+              "tags": []
+            }
+          },
+          {
+            "con": {
+              "ledgerMoveId": "con-renewed-creation-hope-reply",
+              "time": "1:08:46",
+              "score": 84,
+              "role": "Reply",
+              "words": "Jesus’ bodily resurrection anticipates renewed creation rather than escape from earth, so Christian hope concerns restoration of bodies, relationships, and the created world.",
+              "critique": "Strongest feature: Rauser completes the answer by distinguishing renewed creation from a heaven-versus-earth escape story, giving theological continuity between Jesus’ body, creation’s liberation, and the restoration of all things. Principal limitation: The present social implication remains mostly implicit, because a doctrine of future renewal can motivate stewardship or passivity depending on interpretation and practice. Live burden: He must show why this eschatology reliably produces current repair and how its motivation compares with humanist concern for finite lives and future generations. Locked score: 84 The completed response corrects Dillahunty’s characterization and preserves present-world relevance, but it does not demonstrate comparatively stronger effects through observable institutions, habits, incentives, or sacrifices prior to the promised restoration.",
+              "tags": []
+            }
+          }
+        ]
+      }
+    ],
+    "overall": {
+      "pro": {
+        "score": 83,
+        "strengths": [
+          "Dillahunty consistently keeps the comparison focused on human flourishing in this life and asks how each framework guides public decisions.",
+          "His distinction between legal recognition and what a system says people should receive clarifies how institutions can violate their stated equality.",
+          "He answers the voting challenge with careful qualifications for individual disqualification, universal abolition, and impermissible sex-based exclusion.",
+          "His insistence that intuitions be tested rather than merely harmonized supplies a clear standard for revising moral judgments."
+        ],
+        "blunders": [
+          {
+            "text": "He declares equal human status as foundational without fully explaining why species membership carries that universal normative force.",
+            "links": []
+          },
+          {
+            "text": "He often asserts better secular outcomes and Christian present-life costs without supplying comparative evidence strong enough for the motion.",
+            "links": []
+          },
+          {
+            "text": "His claim that rights exist only through collective protection risks collapsing moral entitlement into enforceable legal recognition.",
+            "links": []
+          }
+        ]
+      },
+      "con": {
+        "score": 84,
+        "strengths": [
+          "Rauser defines a qualified mere Christianity, concedes Christian failures, and builds from substantial common ground with secular humanism.",
+          "His image-of-God account directly addresses persons lacking developed capacities, self-valuation, or recognition by surrounding communities.",
+          "He exposes the distinction between possessing a moral entitlement and having institutions codify or protect that entitlement.",
+          "His account of fallible properly basic intuitions answers the charge that intuition must be treated as either infallible or rationalized."
+        ],
+        "blunders": [
+          {
+            "text": "He repeatedly shows coherence between Christian premises and moral judgments without independently establishing that this coherence yields superior social outcomes.",
+            "links": []
+          },
+          {
+            "text": "His historical and theological examples demonstrate possible Christian motivation, but do not compare representative results across the two frameworks.",
+            "links": []
+          },
+          {
+            "text": "The physics analogy obscures the difference between revising empirical beliefs and remaining consistent with a defining equality commitment.",
+            "links": []
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "A socially preferable framework should combine equal standing with correction procedures that remain publicly contestable by everyone affected.",
+          "premises": [
+            "Public rules govern people who reasonably disagree about theology, ultimate reality, and the sources of moral authority.",
+            "Equal standing therefore requires reasons whose consequences and consistency can be examined without prior membership in one religious tradition.",
+            "Humanist commitments to welfare, autonomy, and cooperation create standards against which institutions can identify internal failures.",
+            "Revisability improves those standards when evidence reveals harm, while equality constrains revision from excluding human classes arbitrarily.",
+            "A framework that borrows successful practices without requiring their original metaphysics can preserve benefits while widening public accessibility."
+          ],
+          "conclusion": "Secular humanism offers the stronger social framework when its revisable methods operate under a stable commitment to equal human consideration and transparent correction."
+        },
+        "newArguments": [
+          {
+            "title": "Reciprocal Public Standing",
+            "text": "When coercive rules affect citizens with incompatible worldviews, each person should retain standing to challenge them using reasons that do not presuppose another citizen’s religious allegiance. This principle changes institutional design: agencies should publish evidence, invite objections from affected minorities, and explain unequal effects before enforcement. Humanism could make those procedures an expression of equality, converting a general commitment to public reasons into protections against decisions that remain insulated inside one interpretive community."
+          },
+          {
+            "title": "Modular Moral Learning",
+            "text": "Treating practices as separable from complete worldviews creates a form of social error containment. A society can test nonviolence, forgiveness, disciplined service, or community care in different institutions, retain what works, and revise one practice without destabilizing every other commitment. This modular structure also permits several communities to supply overlapping reasons for the same policy. The resulting redundancy can preserve cooperation when confidence in any single religious, philosophical, or empirical justification weakens."
+          },
+          {
+            "title": "Symmetry Against Exclusion",
+            "text": "A durable equality rule can shift the burden of proof for categorical exclusions. Any proposed restriction must identify conduct relevant to the protected activity and apply the same standard across comparable persons; sex membership alone cannot satisfy that symmetry test. Evidence may therefore revise eligibility rules without licensing status-based discrimination. This principle goes beyond calling women human: it supplies a public method for detecting when a formally revisable policy covertly abandons equal consideration."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "A socially durable account of flourishing needs intrinsic human worth and motivating practices that survive failures of recognition, capacity, and immediate reward.",
+          "premises": [
+            "Legal protection can disappear precisely when vulnerable people most need a reason for others to respect their status.",
+            "Grounding worth in developed capacities, self-valuation, or current collective recognition leaves some humans dependent on contingent approval.",
+            "The image of God assigns status across the human species before achievement, usefulness, or institutional acknowledgment enters the calculation.",
+            "Emulating Jesus supplies practices of self-denial, forgiveness, care, and nonviolent resistance that translate that status into social conduct.",
+            "Renewed-creation hope can sustain costly action by locating present repair within a larger story rather than treating earthly life as disposable."
+          ],
+          "conclusion": "Mere Christianity can better support society when intrinsic status, disciplined solidarity, and hope jointly protect vulnerable people and motivate present restoration."
+        },
+        "newArguments": [
+          {
+            "title": "Countermajoritarian Memory",
+            "text": "A doctrine of status prior to law can give reform communities a durable vocabulary for remembering people whom prevailing institutions erased. Liturgies, teaching, and shared narratives can carry that judgment across generations even when courts and majorities deny it, allowing later advocates to treat reform as recognition of an existing claim rather than invention of a new favor. This social memory could strengthen resistance to normalized abuse, although its value depends on communities applying image-bearing consistently rather than selectively."
+          },
+          {
+            "title": "Practiced Moral Attention",
+            "text": "Repeated acts of visiting prisoners, feeding hungry people, confessing failure, and forgiving enemies may train attention before a dramatic sacrifice is demanded. The social benefit would arise through accumulated perception: members become more likely to notice neglected people, interpret need as a claim, and organize assistance without waiting for reciprocal gain. Christianity’s comparative case would then concern whether its recurring communal practices reliably form this attention, a proposition requiring broader evidence than the celebrated examples offered in the exchange."
+          },
+          {
+            "title": "Intergenerational Restoration",
+            "text": "If renewed creation preserves rather than discards embodied life, damage inflicted now can be understood as a breach of continuity with the future Christians anticipate. That premise can support obligations to repair institutions and environments whose benefits will mostly reach later generations, even when current participants receive little return. Hope then operates through intergenerational stewardship rather than optimism about immediate success. Its force remains conditional on communities interpreting restoration as responsibility for shared creation instead of guaranteed divine repair."
+          }
+        ]
+      }
+    }
   }
 ];
 

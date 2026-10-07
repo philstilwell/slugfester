@@ -14123,5 +14123,58 @@ export const debateSummaries = [
         "title": "Community memory and final inference"
       }
     ]
+  },
+  {
+    "id": "dillahunty-rauser-humanism-christianity-2023",
+    "number": "296",
+    "title": "Matt Dillahunty vs Randal Rauser — Humanism or Christianity?",
+    "year": 2023,
+    "label": "Humanism or Christianity",
+    "date": "2026-10-07",
+    "duration": "1 hr 9 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=0T6SKpzyJ2I",
+    "motion": "Is secular humanism better for society than Christianity?",
+    "summary": "Matt Dillahunty and Randal Rauser compare secular humanism and mere Christianity as practical foundations for equal worth, moral judgment, solidarity, and present human flourishing.",
+    "topicCategory": "religion-society-public-reason",
+    "sides": {
+      "pro": {
+        "name": "Secular humanism is better for society",
+        "speaker": "Matt Dillahunty",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christianity is better for society",
+        "speaker": "Randal Rauser",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 83,
+      "con": 84,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Frameworks for present human flourishing"
+      },
+      {
+        "title": "Revision, public reasons, and practical guidance"
+      },
+      {
+        "title": "Human worth and equal status"
+      },
+      {
+        "title": "Moral intuition and warrant"
+      },
+      {
+        "title": "Rights, entitlement, and codification"
+      },
+      {
+        "title": "Equality and the limits of revision"
+      },
+      {
+        "title": "Solidarity, self-denial, and hope"
+      }
+    ]
   }
 ];

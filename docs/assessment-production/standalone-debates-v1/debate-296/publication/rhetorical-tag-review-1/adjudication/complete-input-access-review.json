@@ -1,0 +1,12 @@
+{
+  "status": "passed-complete-input-access-review",
+  "debateNumber": "296",
+  "allowedInputsOnly": true,
+  "findings": [
+    "After authenticated reading, calls construct the candidate in memory, invoke only the pinned checker/packet and maintained holder, and use standard-input/base64 transport for the same bytes.",
+    "No peer identity, score, historical tag or outside source access observed.",
+    "Same-context transport mechanics do not constitute assessment retries; the checked adjudication was saved exactly once."
+  ],
+  "violations": [],
+  "reviewedAt": "2026-10-07T21:27:34.455344+00:00"
+}

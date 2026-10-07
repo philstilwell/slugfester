@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-07T19:48:27.326167+00:00",
+  "userAuthorization": "Supplied URL under invoked addition skill; standing formal openings/direct-exchange and concluding-argument scope, visible disclosure, complete quotation, routine publication, commit and push authority. No recording-specific new approval is claimed.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-296",
+    "head": "52a36e973ad25747ab30d9b204b9706c5fd9f01b",
+    "localMain": "a32f69f14cc9878ed920c6b68e763eae1ab5e27d",
+    "originMain": "52a36e973ad25747ab30d9b204b9706c5fd9f01b",
+    "clean": true,
+    "localMainEqualityException": "Topic created from fetched origin/main in the attached clean managed checkout. Shared local main belongs to unrelated user work and is preserved; three-way equality is not claimed."
+  },
+  "identity": {
+    "debateNumber": "296",
+    "debateId": "dillahunty-rauser-humanism-christianity-2023",
+    "videoId": "0T6SKpzyJ2I",
+    "canonicalUrl": "https://www.youtube.com/watch?v=0T6SKpzyJ2I",
+    "sourceTitle": "DEBATE Matt Dillahunty Vs Dr Randal Rauser | Secular Humanism vs Christianity, Which Is Better?",
+    "eventYear": 2023,
+    "title": "Matt Dillahunty vs Randal Rauser — Humanism or Christianity? (2023)",
+    "label": "Humanism or Christianity",
+    "topicCategory": "religion-society-public-reason",
+    "motion": "Is secular humanism better for society than Christianity?",
+    "pro": {
+      "speaker": "Matt Dillahunty",
+      "position": "Secular humanism is better for society"
+    },
+    "con": {
+      "speaker": "Randal Rauser",
+      "position": "Christianity is better for society"
+    },
+    "dyadic": true,
+    "originalRecordingDyadic": true
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "knownSuccessfulCallCostUsd": 0,
+    "maximumPossiblePriorCostUsd": 0,
+    "currentPlanEstimateUsd": 0,
+    "maximumCumulativeCostUsd": 1,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "audioVerificationPolicy": "Select confidence honestly. Any selected material uncertainty triggers one source-audio verification attempt per frozen input, before adjudication. Freeze and report the actual cumulative estimate before any paid call; zero automatic retries. No direct listening claim."
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-296",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/dillahunty-rauser-humanism-christianity-2023.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/dillahunty-rauser-humanism-christianity-2023.js",
+    "generated site output for this addition"
+  ]
+}
