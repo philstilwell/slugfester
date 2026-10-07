@@ -91,3 +91,38 @@ test("shorthand clarification cannot invent a definition or change the conclusio
   alteredConclusion.shards[0].fields[0].after = "[suffering] is therefore evidence that disproves theism.";
   assert.throws(() => applyFeaturedQuoteCorrection(shorthandCandidate, shorthandInventory, alteredConclusion), /changes source words/);
 });
+
+const noteBase = "docs/assessment-production/standalone-debates-v1/debate-291";
+const noteCandidate = read(`${noteBase}/publication/output.json`).candidate;
+const noteCorrection = read(`${noteBase}/publication/source-note-correction-1/correction.json`);
+const noteScope = read(`${noteBase}/source/reader-scope-disclosure.json`).requiredReaderDisclosure;
+const noteEntry = read("docs/assessment-production/standalone-debates-v1/registry.json").debates.find(item => item.debateNumber === "291");
+import { applySourceNoteCorrection, reviewedSourceNoteCandidate } from "../scripts/lib/source-note-correction.mjs";
+
+test("source-note copyediting preserves scope, scores and every other field", async () => {
+  const before = structuredClone(noteCandidate);
+  const revised = reviewedSourceNoteCandidate(root, noteEntry, noteCandidate);
+  assert(revised.sourceNote.includes(noteScope));
+  assert.match(revised.sourceNote, /automatic transcription with speaker labels/);
+  assert.deepEqual({...revised, sourceNote: noteCandidate.sourceNote}, noteCandidate);
+  assert.deepEqual(noteCandidate, before);
+  const { debates } = await import("../src/data/debates.js");
+  assert.deepEqual(debates.find(item => item.id === noteCandidate.id), revised);
+});
+
+test("source-note supplement rejects changed scope, scoring fields, originals and duplicate repairs", () => {
+  for (const mutate of [
+    c => {c.shards[0].fields[0].after = "Complete recording assessed.";},
+    c => {c.shards[0].fields[0].path = "score.pro";},
+    c => {c.shards[0].fields[0].before += " altered";},
+    c => {c.shards[0].fields.push(c.shards[0].fields[0]);},
+    c => {c.shards.push(c.shards[0]);}
+  ]) {
+    const bad = structuredClone(noteCorrection); mutate(bad);
+    assert.throws(() => applySourceNoteCorrection(noteCandidate, bad, noteScope));
+  }
+  const badEntry = structuredClone(noteEntry);
+  badEntry.sourceNoteCorrection.record.sha256 = "0".repeat(64);
+  assert.throws(() => reviewedSourceNoteCandidate(root, badEntry, noteCandidate), /hash mismatch/);
+  assert.throws(() => reviewedSourceNoteCandidate(root, noteEntry, {...noteCandidate, sourceNote: "altered"}), /base differs/);
+});

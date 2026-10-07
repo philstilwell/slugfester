@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "291",
+  "debateId": "rauser-schieber-god-existence-2015",
+  "videoId": "Y-Ju8tGlK7g",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-291/inventory/inventory.json",
+    "sha256": "f078170fa5887721d1edf58e99eb3a240651dbf3f152093242ddba880db369e2",
+    "bytes": 124414
+  },
+  "preFreezeSourceReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-291/inventory/submission-release.json",
+    "sha256": "1f56d4c1594f3f9659aca493359ec0c3928fcaa8709dc64f7066a95c24fbb437",
+    "bytes": 2591
+  },
+  "costPreflight": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-291/audio/cost-preflight.json",
+    "sha256": "89ca160875158e6603ea2d773831bd57cc2ef08eb85a38ce2ca189301247c0f0",
+    "bytes": 1118
+  },
+  "triggeredMoveIds": [
+    "con-rational-updating-is-not-proper-basicality"
+  ],
+  "checks": [
+    {
+      "moveId": "con-rational-updating-is-not-proper-basicality",
+      "status": "completed-attribution-resolved-word-uncertainty-excluded",
+      "method": "Single OpenAI gpt-4o-transcribe-diarize request on a public canonical-video audio clip; controller compared all speaker-labelled output with frozen caption context. No direct human listening claimed.",
+      "clip": {
+        "path": ".assessment-cache/captions/Y-Ju8tGlK7g/audio-verification.webm",
+        "sha256": "651a1ae2ceb87629c7af12a9be684c8efd7bcb4cc5e368a420670f1cac73c85d",
+        "bytes": 1428416
+      },
+      "rawResult": {
+        "path": ".assessment-cache/captions/Y-Ju8tGlK7g/audio-verification.diarized.json",
+        "sha256": "b2aaad7c3a05801161d0044c9e9073966ca85f9906a6de7c74d4faed8a67d5a8",
+        "bytes": 5820
+      },
+      "speakerMapping": {
+        "A": "Randal Rauser",
+        "B": "Justin Schieber"
+      },
+      "mappingBasis": "Voice A continues Rauser’s immediately preceding Cummings/experience argument and asks the properly-basic concession question; voice B answers both and rejects that classification. These assignments agree with the formal alternating roles and continuous canonical transcript.",
+      "alignment": {
+        "nominalClipCanonicalStartSeconds": 4020,
+        "method": "The downloaded85-second requested range retained approximately10seconds of seek preroll. Alignments verified by utterance: clip18.75s begins canonicalE1970 so I am not actually arguing; clip50.456s is Rauser’s E1984–E1988 clarification; clip56.556s is Schieber’s E1989 denial; clip63.892s is his E1993–E2002 distinction; clip83.476s is RauserE2003 following turn.",
+        "preciseWordTimestampsUsedForScoring": false
+      },
+      "finding": "The automated speaker separation confirms Schieber owns the prior-sensitive rationality grant and the later distinction between evidential updating and proper basicality. Rauser owns the intervening concession question and brief overlapping interjections. Those words are context only and may not be credited or penalized as Schieber speech.",
+      "wordUncertainty": "Both ASR systems produce an internally inconsistent not rational clause near E1983; its polarity remains uncertain. Other ASR errors include theatre/physicality for philosophical terms. No correction is inserted into the frozen captions. Exclude every uncertain clause/word from ratings, quotation and inferences; the explicit earlier that might be rational clause and clear later two-different-questions distinction independently support the selected move.",
+      "ownershipResolved": true,
+      "sourceTextModified": false
+    }
+  ],
+  "verificationClips": [
+    {
+      "path": ".assessment-cache/captions/Y-Ju8tGlK7g/audio-verification.webm",
+      "sha256": "651a1ae2ceb87629c7af12a9be684c8efd7bcb4cc5e368a420670f1cac73c85d",
+      "bytes": 1428416,
+      "durationSeconds": 94.9935,
+      "rawResult": {
+        "path": ".assessment-cache/captions/Y-Ju8tGlK7g/audio-verification.diarized.json",
+        "sha256": "b2aaad7c3a05801161d0044c9e9073966ca85f9906a6de7c74d4faed8a67d5a8",
+        "bytes": 5820
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "disposition": "Mandatory below-high ownership check completed before adjudication. Audio-derived speaker separation confirms the two substantive Schieber turns and the contextual Rauser question. Word-level uncertainty remains explicitly ineligible; no ASR correction or direct-listening claim. All other move ownership remains high under frozen formal-round context. Excluded Q&A and host material remain ineligible.",
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0.031335,
+    "maximumPossibleCostUsd": 0.031335,
+    "additionalThisPhaseUsd": 0.031335,
+    "paidRetries": 0,
+    "transportUncertainCalls": 0,
+    "usage": {
+      "input_tokens": 1562,
+      "output_tokens": 2743,
+      "total_tokens": 4305,
+      "type": "tokens",
+      "input_token_details": {
+        "audio_tokens": 1474,
+        "text_tokens": 88
+      }
+    },
+    "costBasis": "API returned1562input/2743output tokens; published$2.50/$10 per million gives$0.031335. Successful response, one request, retries disabled; maximum preflight$0.06."
+  },
+  "audit": {
+    "requiredAttributionChecks": 1,
+    "completedAttributionChecks": 1,
+    "unresolvedAttributionChecks": 0,
+    "sourceTextModified": false,
+    "selectedQuotationOwnershipResolved": true,
+    "directListeningClaimed": false,
+    "automaticSpeakerDiarizationClaimed": true,
+    "unresolvedWordPolarityExcluded": true
+  }
+}

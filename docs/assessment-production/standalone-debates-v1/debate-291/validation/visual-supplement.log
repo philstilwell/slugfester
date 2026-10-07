@@ -1,0 +1,32 @@
+### Result
+{"status":"passed-quote-and-second-tag-visual-capture","observations":[{"viewport":{"width":1440,"height":1000},"type":"quote","side":0,"text":"GOD EXISTS · RANDAL RAUSER\n\"one can have rational belief in god apart from evidence\"\n\nRauser concludes that an immediate experience of spiritual presence can sometimes confer prima facie rationality without an inferential argument.\n\n\"","box":{"x":130,"y":300.625,"width":582,"height":392.296875}},{"viewport":{"width":1440,"height":1000},"type":"quote","side":1,"text":"NATURALISM BETTER FITS THE EVIDENCE · JUSTIN SCHIEBER\n\"the massive amounts of seemingly pointless suffering in the world strongly favor naturalism over theism\"\n\nSchieber compares how expected apparently gratuitous human and animal suffering would be under naturalism and a perfectly good, powerful God.\n\n\"","box":{"x":728,"y":300.625,"width":582,"height":392.296875}},{"viewport":{"width":1440,"height":1000},"type":"second-tag","text":"Red herring\nLOGICAL FALLACY\nDiverting attention from the issue under dispute to a related but less relevant point, leaving the original challenge insufficiently answered.\nThe response shifts from pervasive cosmic lethality to grandeur, intimacy, and whether humans require a maximally comfortable universe.\nOPEN THE REFERENCE PAGE FOR MORE."},{"viewport":{"width":390,"height":844},"type":"quote","side":0,"text":"GOD EXISTS · RANDAL RAUSER\n\"one can have rational belief in god apart from evidence\"\n\nRauser concludes that an immediate experience of spiritual presence can sometimes confer prima facie rationality without an inferential argument.\n\n\"","box":{"x":10,"y":278.8828125,"width":370,"height":280}},{"viewport":{"width":390,"height":844},"type":"quote","side":1,"text":"NATURALISM BETTER FITS THE EVIDENCE · JUSTIN SCHIEBER\n\"the massive amounts of seemingly pointless suffering in the world strongly favor naturalism over theism\"\n\nSchieber compares how expected apparently gratuitous human and animal suffering would be under naturalism and a perfectly good, powerful God.\n\n\"","box":{"x":10,"y":463.8828125,"width":370,"height":381.34375}},{"viewport":{"width":390,"height":844},"type":"second-tag","text":"Red herring\nLOGICAL FALLACY\nDiverting attention from the issue under dispute to a related but less relevant point, leaving the original challenge insufficiently answered.\nThe response shifts from pervasive cosmic lethality to grandeur, intimacy, and whether humans require a maximally comfortable universe.\nOPEN THE REFERENCE PAGE FOR MORE."}]}
+### Ran Playwright code
+```js
+await (async (page) => {
+  const observations=[];
+  for(const viewport of [{width:1440,height:1000},{width:390,height:844}]) {
+    await page.setViewportSize(viewport);
+    await page.goto('http://127.0.0.1:4191/debate/rauser-schieber-god-existence-2015/');
+    await page.waitForLoadState('networkidle');
+    const cards=page.locator('.quote-card');
+    for(let i=0;i<await cards.count();i++) {
+      const card=cards.nth(i);await card.scrollIntoViewIfNeeded();
+      await card.screenshot({path:'output/playwright/debate-291-local-quotes-'+viewport.width+'-'+i+'.png'});
+      observations.push({viewport,type:'quote',side:i,text:await card.innerText(),box:await card.boundingBox()});
+    }
+    const tag=page.locator('a.tag').nth(1);await tag.hover();await tag.focus();
+    const popup=page.locator('.tag-wrap').nth(1).locator('.tag-popover');await popup.waitFor({state:'visible'});
+    await page.screenshot({path:'output/playwright/debate-291-local-second-tag-'+viewport.width+'.png'});
+    observations.push({viewport,type:'second-tag',text:await popup.innerText()});
+    await page.goto('http://127.0.0.1:4191/debate/rauser-schieber-god-existence-2015/');
+    const accordion=page.locator('.ai-extension-accordion > summary');await accordion.scrollIntoViewIfNeeded();
+    await page.waitForFunction(()=>[...document.querySelectorAll('img')].filter(x=>{const r=x.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight}).every(x=>x.complete&&x.naturalWidth>0));
+    await page.screenshot({path:'output/playwright/debate-291-local-ai-closed-loaded-'+viewport.width+'.png'});
+  }
+  return {status:'passed-quote-and-second-tag-visual-capture',observations};
+}
+)(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4191/debate/rauser-schieber-god-existence-2015/
+- Page Title: God and Naturalism — Rauser vs Schieber · 2015 | Slugfester

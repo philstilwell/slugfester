@@ -1,0 +1,218 @@
+
+> slugfester@0.1.0 assessment:standalone:workflow:test
+> node --test tests/standalone-workflow.test.mjs tests/featured-quote-correction.test.mjs
+
+✔ reviewed quote completion preserves all other publication content and the frozen inputs (3.69975ms)
+✔ quote supplement cannot change an assessed score (0.457125ms)
+✔ quote completion rejects invented wording and the wrong speaker (1.0595ms)
+✔ quote correction refuses a changed original or tampered evidence reference (2.353708ms)
+✔ bracketed shorthand clarification preserves the assessment and the other quote (0.833375ms)
+✔ published Rauser–Malpass data matches only the verified quote correction (72.095875ms)
+✔ shorthand clarification requires visible brackets and an explicit explanation (0.623834ms)
+✔ shorthand clarification cannot invent a definition or change the conclusion (0.744916ms)
+✔ source-note copyediting preserves scope, scores and every other field (0.939875ms)
+✔ source-note supplement rejects changed scope, scoring fields, originals and duplicate repairs (0.683375ms)
+✔ reviewed quote completion preserves all other publication content and the frozen inputs (3.775417ms)
+✔ quote supplement cannot change an assessed score (0.612708ms)
+✔ quote completion rejects invented wording and the wrong speaker (1.1ms)
+✔ quote correction refuses a changed original or tampered evidence reference (2.468083ms)
+✔ bracketed shorthand clarification preserves the assessment and the other quote (0.893542ms)
+✔ published Rauser–Malpass data matches only the verified quote correction (67.790417ms)
+✔ shorthand clarification requires visible brackets and an explicit explanation (0.398375ms)
+✔ shorthand clarification cannot invent a definition or change the conclusion (0.526084ms)
+✔ source-note copyediting preserves scope, scores and every other field (0.786917ms)
+✔ source-note supplement rejects changed scope, scoring fields, originals and duplicate repairs (1.157083ms)
+✔ lossless packing preserves repeated nested arguments, exclusions, Unicode and order (0.630667ms)
+✔ paired primary plans are identical in evidence, disjoint in outputs and exclude peer/score files (11.894917ms)
+✔ frozen runs reject preparation and score execution; duplicate submissions remain exact (5.867416ms)
+✔ repository paths reject traversal and links outside the checkout (3.790042ms)
+✔ timing distinguishes parallel worker effort, elapsed intervals, waiting and unfinished work (0.795875ms)
+✔ timing rejects unmatched stops and conflicting interval ownership (4.278584ms)
+✔ graph counts preserve duplicate section scores and exact bin boundaries (3.5005ms)
+✔ handoff authenticates reading, keeps candidate unsaved, blocks stale approval and saves exact bytes once (116.981292ms)
+✔ invalid candidate never enters handoff or creates a submission (58.255291ms)
+✔ resumption reports interrupted handoffs and attempted stages without requiring a live socket (9.543417ms)
+✖ public source-eligibility checks accept ordinary and explicitly scoped frozen ledgers (115.464667ms)
+✖ public tag checks reject changed authenticated output and plan bytes for every reviewer (125.622709ms)
+✖ public publication preparation rejects missing metrics before any output is saved (86.841959ms)
+✖ zero accepted tags produce an unchanged publication and can be checked without a prior-output archive (118.11375ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 30
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 840.117792
+
+✖ failing tests:
+
+test at tests/standalone-workflow.test.mjs:205:1
+✖ public source-eligibility checks accept ordinary and explicitly scoped frozen ledgers (115.464667ms)
+  AssertionError [ERR_ASSERTION]: node:internal/modules/esm/resolve:271
+      throw new ERR_MODULE_NOT_FOUND(
+            ^
+  
+  Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-cwiQ1x/scripts/lib/source-note-correction.mjs' imported from /private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-cwiQ1x/scripts/lib/standalone-publication-check.mjs
+      at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+      at moduleResolve (node:internal/modules/esm/resolve:861:10)
+      at defaultResolve (node:internal/modules/esm/resolve:988:11)
+      at #cachedDefaultResolve (node:internal/modules/esm/loader:697:20)
+      at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:714:38)
+      at ModuleLoader.resolveSync (node:internal/modules/esm/loader:746:52)
+      at #resolve (node:internal/modules/esm/loader:679:17)
+      at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:599:35)
+      at ModuleJob.syncLink (node:internal/modules/esm/module_job:162:33)
+      at ModuleJob.link (node:internal/modules/esm/module_job:252:17) {
+    code: 'ERR_MODULE_NOT_FOUND',
+    url: 'file:///private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-cwiQ1x/scripts/lib/source-note-correction.mjs'
+  }
+  
+  Node.js v25.9.0
+  
+  
+  1 !== 0
+  
+      at passedMechanical (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/tests/standalone-workflow.test.mjs:155:10)
+      at TestContext.<anonymous> (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/tests/standalone-workflow.test.mjs:212:18)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/standalone-workflow.test.mjs:218:1
+✖ public tag checks reject changed authenticated output and plan bytes for every reviewer (125.622709ms)
+  AssertionError [ERR_ASSERTION]: node:internal/modules/esm/resolve:271
+      throw new ERR_MODULE_NOT_FOUND(
+            ^
+  
+  Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-n45WXm/scripts/lib/source-note-correction.mjs' imported from /private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-n45WXm/scripts/lib/standalone-publication-check.mjs
+      at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+      at moduleResolve (node:internal/modules/esm/resolve:861:10)
+      at defaultResolve (node:internal/modules/esm/resolve:988:11)
+      at #cachedDefaultResolve (node:internal/modules/esm/loader:697:20)
+      at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:714:38)
+      at ModuleLoader.resolveSync (node:internal/modules/esm/loader:746:52)
+      at #resolve (node:internal/modules/esm/loader:679:17)
+      at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:599:35)
+      at ModuleJob.syncLink (node:internal/modules/esm/module_job:162:33)
+      at ModuleJob.link (node:internal/modules/esm/module_job:252:17) {
+    code: 'ERR_MODULE_NOT_FOUND',
+    url: 'file:///private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-n45WXm/scripts/lib/source-note-correction.mjs'
+  }
+  
+  Node.js v25.9.0
+  
+  
+  1 !== 0
+  
+      at passedMechanical (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/tests/standalone-workflow.test.mjs:155:10)
+      at TestContext.<anonymous> (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/tests/standalone-workflow.test.mjs:220:16)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/standalone-workflow.test.mjs:233:1
+✖ public publication preparation rejects missing metrics before any output is saved (86.841959ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /reference-metrics\.json/. Input:
+  
+  'node:internal/modules/esm/resolve:271\n' +
+    '    throw new ERR_MODULE_NOT_FOUND(\n' +
+    '          ^\n' +
+    '\n' +
+    "Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-Pp0415/scripts/lib/source-note-correction.mjs' imported from /private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-Pp0415/scripts/lib/standalone-publication-check.mjs\n" +
+    '    at finalizeResolution (node:internal/modules/esm/resolve:271:11)\n' +
+    '    at moduleResolve (node:internal/modules/esm/resolve:861:10)\n' +
+    '    at defaultResolve (node:internal/modules/esm/resolve:988:11)\n' +
+    '    at #cachedDefaultResolve (node:internal/modules/esm/loader:697:20)\n' +
+    '    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:714:38)\n' +
+    '    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:746:52)\n' +
+    '    at #resolve (node:internal/modules/esm/loader:679:17)\n' +
+    '    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:599:35)\n' +
+    '    at ModuleJob.syncLink (node:internal/modules/esm/module_job:162:33)\n' +
+    '    at ModuleJob.link (node:internal/modules/esm/module_job:252:17) {\n' +
+    "  code: 'ERR_MODULE_NOT_FOUND',\n" +
+    "  url: 'file:///private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-Pp0415/scripts/lib/source-note-correction.mjs'\n" +
+    '}\n' +
+    '\n' +
+    'Node.js v25.9.0\n'
+  
+      at TestContext.<anonymous> (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/tests/standalone-workflow.test.mjs:242:86)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: "node:internal/modules/esm/resolve:271\n    throw new ERR_MODULE_NOT_FOUND(\n          ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find module '/private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-Pp0415/scripts/lib/source-note-correction.mjs' imported from /private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-Pp0415/scripts/lib/standalone-publication-check.mjs\n    at finalizeResolution (node:internal/modules/esm/resolve:271:11)\n    at moduleResolve (node:internal/modules/esm/resolve:861:10)\n    at defaultResolve (node:internal/modules/esm/resolve:988:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:697:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:714:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:746:52)\n    at #resolve (node:internal/modules/esm/loader:679:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:599:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:162:33)\n    at ModuleJob.link (node:internal/modules/esm/module_job:252:17) {\n  code: 'ERR_MODULE_NOT_FOUND',\n  url: 'file:///private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-Pp0415/scripts/lib/source-note-correction.mjs'\n}\n\nNode.js v25.9.0\n",
+    expected: /reference-metrics\.json/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests/standalone-workflow.test.mjs:250:1
+✖ zero accepted tags produce an unchanged publication and can be checked without a prior-output archive (118.11375ms)
+  AssertionError [ERR_ASSERTION]: node:internal/modules/esm/resolve:271
+      throw new ERR_MODULE_NOT_FOUND(
+            ^
+  
+  Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-JKxRXc/scripts/lib/source-note-correction.mjs' imported from /private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-JKxRXc/scripts/lib/standalone-publication-check.mjs
+      at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+      at moduleResolve (node:internal/modules/esm/resolve:861:10)
+      at defaultResolve (node:internal/modules/esm/resolve:988:11)
+      at #cachedDefaultResolve (node:internal/modules/esm/loader:697:20)
+      at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:714:38)
+      at ModuleLoader.resolveSync (node:internal/modules/esm/loader:746:52)
+      at #resolve (node:internal/modules/esm/loader:679:17)
+      at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:599:35)
+      at ModuleJob.syncLink (node:internal/modules/esm/module_job:162:33)
+      at ModuleJob.link (node:internal/modules/esm/module_job:252:17) {
+    code: 'ERR_MODULE_NOT_FOUND',
+    url: 'file:///private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-workflow-test-JKxRXc/scripts/lib/source-note-correction.mjs'
+  }
+  
+  Node.js v25.9.0
+  
+  
+  1 !== 0
+  
+      at passedMechanical (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/tests/standalone-workflow.test.mjs:155:10)
+      at TestContext.<anonymous> (file:///Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/tests/standalone-workflow.test.mjs:252:17)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:831:18)
+      at Test.postRun (node:internal/test_runner/test:1330:19)
+      at Test.run (node:internal/test_runner/test:1258:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

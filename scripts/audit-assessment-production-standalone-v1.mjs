@@ -9,6 +9,7 @@ import { debates } from "../src/data/debates.js";
 import { openTeamRun } from "./lib/assessment-standalone-team-pipeline-v1.mjs";
 import { validateEditorScopedSource } from "./lib/assessment-editor-scoped-source.mjs";
 import { reviewedFeaturedQuoteCandidate } from "./lib/featured-quote-correction.mjs";
+import { reviewedSourceNoteCandidate } from "./lib/source-note-correction.mjs";
 import {
   STANDALONE_PROTOCOL_ID,
   STANDALONE_ROOT,
@@ -131,6 +132,18 @@ const absolute = (relative) => path.join(ROOT, relative);
 const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
 const VERSIONED_CONTROL_SNAPSHOTS = new Map([
+  [
+    "scripts/lib/standalone-publication-check.mjs\u0000f51b342bd2905527f44e11332d8a8544bd02e9ed5b01513d25ffa1817c196181",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/f51b342bd2905527f44e11332d8a8544bd02e9ed5b01513d25ffa1817c196181/standalone-publication-check.mjs"
+  ],
+  [
+    "package.json\u00008ba54eb2409856430fe56731ade8196310cdb8526936543060cac72950e92186",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/8ba54eb2409856430fe56731ade8196310cdb8526936543060cac72950e92186/package.json"
+  ],
+  [
+    "scripts/audit-assessment-production-standalone-v1.mjs\u0000d22c202cbc5cf2853777394e6fb98fe4f624c8a58f8dcdaf1640f54f358cf9cc",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/d22c202cbc5cf2853777394e6fb98fe4f624c8a58f8dcdaf1640f54f358cf9cc/audit-assessment-production-standalone-v1.mjs"
+  ],
   [
     "scripts/lib/standalone-publication-check.mjs\u0000fc8b776d3003d8a67a4c791b74fc3161dd055483bb884d645fecbe8995c997e3",
     "docs/assessment-production/standalone-debates-v1/control-snapshots/fc8b776d3003d8a67a4c791b74fc3161dd055483bb884d645fecbe8995c997e3/standalone-publication-check.mjs"
@@ -1680,9 +1693,11 @@ function audit({ repositoryOnly = false } = {}) {
   assert.ok(production, `Debate ${DEBATE_NUMBER}: production record missing`);
   assert.equal(production.id, selectedRegistryRecord.debateId);
   assert.equal(production.motion, authorization.identity.motion);
+  const reviewedCandidate = reviewedSourceNoteCandidate(ROOT, selectedRegistryRecord, reviewedFeaturedQuoteCandidate(ROOT, selectedRegistryRecord, publication.candidate));
+  if (selectedRegistryRecord.sourceNoteCorrection) assert.equal(production.sourceNote, reviewedCandidate.sourceNote, "Production source note differs from its authenticated correction");
   assert.deepEqual(
     publicationComparable(production),
-    publicationComparable(reviewedFeaturedQuoteCandidate(ROOT, selectedRegistryRecord, publication.candidate)),
+    publicationComparable(reviewedCandidate),
     "production debate differs from its frozen candidate and authenticated reader-facing corrections"
   );
   const adapter = json(paths.productionLedger);
