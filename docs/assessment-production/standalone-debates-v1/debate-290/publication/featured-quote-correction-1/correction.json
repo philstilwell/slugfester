@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0-featured-quote-correction",
+  "status": "user-authorized-copyedit",
+  "debateNumber": "290",
+  "debateId": "rauser-malpass-evidential-problem-evil-2021",
+  "authorization": {
+    "request": "Fix this quote in our last assessed debate: https://slugfester.com/debate/rauser-malpass-evidential-problem-evil-2021/ Follow-up: Yes, use \"[suffering]\".",
+    "date": "2026-10-06"
+  },
+  "basePublication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/output.json",
+    "sha256": "f8b5e7c50a8f72fe041b2c5a099acf9b9eef235061690501c32854ebdbad6437",
+    "bytes": 70610
+  },
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-290/inventory/inventory.json",
+    "sha256": "68274f97da36121db243a5e14616a36c4ffa956cc90883ca5ce18d74bed5fb55",
+    "bytes": 147321
+  },
+  "normalization": "bracketed-source-shorthand",
+  "sourceReview": {
+    "pro": {
+      "moveId": "malpass-states-likelihood-inference",
+      "exactSourceText": "s is therefore evidence that favors indifference over theism",
+      "sourceTime": "8:56",
+      "shorthand": {
+        "symbol": "s",
+        "expansion": "suffering",
+        "definitionMoveId": "malpass-defines-comparative-hypotheses",
+        "definitionExactSourceText": "by s i just mean some fact about suffering"
+      },
+      "completeThoughtReview": "At 7:22 Malpass explicitly defines S as some fact about suffering. At the user's request, [suffering] replaces only that symbol, and the context preserves its meaning as a fact about suffering. Brackets disclose the editorial expansion. The comparative conclusion remains unchanged, without adding a claim of disproof or overall posterior probability."
+    },
+    "con": {
+      "moveId": "rauser-fallible-testimony-deference",
+      "exactSourceText": "our first person awareness of our own interior states is not infallible",
+      "sourceTime": "56:29",
+      "completeThoughtReview": "Rauser's existing complete statement about the fallibility of first-person awareness is unchanged, as are its context and its qualification about provisional deference to survivors."
+    }
+  },
+  "shards": [
+    {
+      "id": "pro",
+      "attempts": 1,
+      "fields": [
+        {
+          "path": "quotes.pro.text",
+          "before": "s is therefore evidence that favors indifference over theism",
+          "after": "[suffering] is therefore evidence that favors indifference over theism."
+        },
+        {
+          "path": "quotes.pro.context",
+          "before": "Here s denotes the stipulated fact of suffering, and Malpass presents the comparative likelihood conclusion without claiming that theism is disproven or that indifference has the higher overall posterior probability.",
+          "after": "Brackets expand Malpass’s “S,” his shorthand for a fact about suffering. He argues that this evidence favors indifference over theism, without claiming that theism is disproven or that indifference has the higher overall probability."
+        }
+      ]
+    }
+  ],
+  "scope": "Only Malpass's featured quote and its context are copyedited. Square brackets explicitly distinguish the editorial expansion from verbatim caption words. The source, original publication, inventory, judgments, scores, tags, critiques, other quote, and speaker biographies remain unchanged.",
+  "directIncrementalCostUsd": 0
+}

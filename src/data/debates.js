@@ -131258,8 +131258,8 @@ export const debates = [
     "summary": "Malpass argues suffering favors indifference over classical theism; Rauser concedes the bare comparison while defending richer theistic background beliefs.",
     "quotes": {
       "pro": {
-        "text": "s is therefore evidence that favors indifference over theism",
-        "context": "Here s denotes the stipulated fact of suffering, and Malpass presents the comparative likelihood conclusion without claiming that theism is disproven or that indifference has the higher overall posterior probability."
+        "text": "[suffering] is therefore evidence that favors indifference over theism.",
+        "context": "Brackets expand Malpass’s “S,” his shorthand for a fact about suffering. He argues that this evidence favors indifference over theism, without claiming that theism is disproven or that indifference has the higher overall probability."
       },
       "con": {
         "text": "our first person awareness of our own interior states is not infallible",
