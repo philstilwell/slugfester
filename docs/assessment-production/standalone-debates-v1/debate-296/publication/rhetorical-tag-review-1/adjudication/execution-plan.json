@@ -1,0 +1,577 @@
+{
+  "schemaVersion": "2.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "rhetorical-adjudication",
+  "debateNumber": "296",
+  "debateId": "dillahunty-rauser-humanism-christianity-2023",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/workflow/rhetorical-adjudication/reader.txt",
+      "sha256": "486b6d675f5e589086b9b6fc5e5e67ec0c25cbf7dbf2bbffa113c9f4c89cf337",
+      "bytes": 459386
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/contract.md",
+      "sha256": "65b79dd8269ab2d699b07a6a436a68bb356c40021b69672c73cdc0a48f89dfe4",
+      "bytes": 57228
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "dd8254f838c9998afeb8f571d67ea25521c3c69386763c53b85ce2ba5cd44c2c",
+      "bytes": 16479
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "095c829f29f89d0ae216c464cfe41382bed2d7ead020648854cddaa7ba9eced7",
+      "bytes": 175533
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    {
+      "path": ".assessment-cache/captions/0T6SKpzyJ2I/indexed-transcript.txt",
+      "sha256": "0dfb22ed300a2c500ca068c033e8f0271a07f34bf6d693534619d7e55370dc2d",
+      "bytes": 195056
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/source/assessment-source-notes.md",
+      "sha256": "5ad3dbc355f6ff3a3e68afe3403c4f3287f37ead83f51fec56b324a0ceeb946d",
+      "bytes": 4767
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/source/source-lock.json",
+      "sha256": "69a332af2ad79b6d79a7b77fed347a5f6f27fd82efc6e9d74054016e530fa7da",
+      "bytes": 9403
+    }
+  ],
+  "toolInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/check-review.mjs",
+      "sha256": "e4f2013da4cfa8f8f690b324f00567584c67759b68e2c45ed8455008da8005de",
+      "bytes": 4109
+    },
+    {
+      "path": "scripts/standalone-workflow.mjs",
+      "sha256": "f9bebb3157c0227e20f396240411af838138b4520c7a48bec411725896f841cc",
+      "bytes": 5880
+    },
+    {
+      "path": "scripts/lib/standalone-workflow.mjs",
+      "sha256": "bd13373d22b4a2d74b1d6788c6b25613611be653a212aeaf31ca4bfcadcde333",
+      "bytes": 18686
+    },
+    {
+      "path": "scripts/lib/standalone-handoff.mjs",
+      "sha256": "939461c747837553ff5d65a83d9af0ad51c576c314959d2c59e6773bf236b42f",
+      "bytes": 6020
+    },
+    {
+      "path": "scripts/authenticate-standalone-worker.py",
+      "sha256": "98c8186c703818d1eaf5270d26adbfaaf7f7284180cf3482d3ec7a64e5e9219e",
+      "bytes": 6247
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "55bf7b441bef410cd2f8f27a2e5278090aed084771257cf4fff4a9bc29860898",
+      "bytes": 79869
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "aae806466005602401fb9536cbeab97cda43cd898ef78d2c200c012b24a2b8eb",
+      "bytes": 13580
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+      "bytes": 13417
+    },
+    {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "45bb5c6ca356eb66c4339507c0bcdb7af0888b2c6b5ae146f4d9a60ff0de89a3",
+      "bytes": 91388
+    },
+    {
+      "path": "package.json",
+      "sha256": "2248d1660c49a048566a632e83b4895a56bd37a98d8c0359d386d018c4d9d682",
+      "bytes": 65122
+    },
+    {
+      "path": "scripts/lib/assessment-production-score-stability-policy-active.mjs",
+      "sha256": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+      "bytes": 1331
+    },
+    {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    },
+    {
+      "path": "scripts/standalone/lock-inventory.mjs",
+      "sha256": "dd2fba288eaab30c2af64c097abcde4f93d1f383b24f4c2a833f9f6866ab2a70",
+      "bytes": 5778
+    },
+    {
+      "path": "scripts/lib/standalone-publication-check.mjs",
+      "sha256": "fa5d57e9932db7cd0243b015dd68c9556465b194501fdd830ba73b0e20637809",
+      "bytes": 7222
+    },
+    {
+      "path": "scripts/lib/assessment-editor-scoped-source.mjs",
+      "sha256": "a97ee74f7afc04da1a943494d53a2aadb958618d0ab6296584603fdc5d4f7395",
+      "bytes": 6789
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "dd8254f838c9998afeb8f571d67ea25521c3c69386763c53b85ce2ba5cd44c2c",
+      "bytes": 16479
+    }
+  ],
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-296/workflow/rhetorical-adjudication/packet.json",
+    "sha256": "06168991ad805675219f5fc935f81a82dd2f9f65d07136cef81b3925c647578b",
+    "bytes": 478327
+  },
+  "fullReadRequiredForAllAllowedInputs": true,
+  "toolSourceReadRequired": false,
+  "validationParameters": {
+    "mode": "anonymous-adjudication",
+    "debateNumber": "296",
+    "debateId": "dillahunty-rauser-humanism-christianity-2023",
+    "sourcePacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "095c829f29f89d0ae216c464cfe41382bed2d7ead020648854cddaa7ba9eced7",
+      "bytes": 175533
+    },
+    "catalogSnapshot": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    "candidates": [
+      {
+        "moveId": "con-mere-christianity-qualified-case",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser limits the defended framework before the exchange and concedes damaging Christian history; the boundary may be selective, but it is explicit and tied to his stated thesis."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Rauser narrows the defended framework to creed-centered discipleship before the direct exchange, while expressly conceding historical and individual Christian failures; that gives a stated principle for the boundary."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-creed-flourishing-challenge",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The Creed’s relationship to present flourishing is central because Rauser selected it to define Christianity; Dillahunty’s challenge may overstate textual absence but does not divert from the motion."
+          }
+        ]
+      },
+      {
+        "moveId": "con-hope-motivates-action",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Paul, Wesley, and King are cited as examples of action-oriented Christian hope, yet Rauser also states the motivating inference; their status is not offered as settling comparative superiority."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Paul, Wesley, and King are quoted as examples of an action-oriented Christian interpretation, not as authorities whose standing independently proves Christianity better for society."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-demand-for-present-benefit",
+        "type": "bias",
+        "label": "Subjective validation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Dillahunty’s remaining lifespan makes the present-benefit question concrete, but he does not claim his personal desire itself verifies humanism’s general comparative superiority."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-christian-disagreement-and-present-cost",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Dillahunty uses unresolved disagreement to question public guidance, but he does not conclude Christianity is false solely because God or divine intentions have not been demonstrated."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Dillahunty points to unresolved interpretation and public guidance problems rather than asserting Christianity false solely because God or an afterlife has not been proved."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-human-centered-equality-and-autonomy",
+        "type": "bias",
+        "label": "Subjective validation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Dillahunty’s former-Christian experience frames his concern about God-centered priorities, but his conclusion also invokes shared-world decisions and concrete autonomy questions rather than private resonance alone."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "His former-Christian experience illustrates why human-centered language troubled him, but the move’s stated social stakes also include public equality, autonomy, and shared decision-making."
+          }
+        ]
+      },
+      {
+        "moveId": "con-image-grounded-species-worth",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The embosser analogy fails to prove the divine-image premise, but Rauser offers that premise as his positive worldview ground rather than disguising the full conclusion inside an equivalent premise."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "The divine-image premise is disputed and not independently established, but Rauser transparently offers it as the conditional grounding claim rather than covertly assuming the exact comparative conclusion."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-species-value-and-cooperation",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Dillahunty declares species-wide human value without an ultimate derivation, but an openly stipulated foundational value is weakly grounded rather than circularly smuggled into supporting premises."
+          }
+        ]
+      },
+      {
+        "moveId": "con-unvalued-infant-challenge",
+        "type": "bias",
+        "label": "Base-rate neglect",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The unusual infant case is vivid, yet it deliberately tests a universal claim about every human’s worth; rarity therefore does not make background prevalence the relevant missing evidence."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-divine-premise-public-burden",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Dillahunty argues that an unproved theological premise lacks shared public force; he does not infer that the premise is false merely from the absence of demonstration."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-test-intuitions-not-rationalize",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The cancer-curing chimp changes Rauser’s original hypothetical and briefly distracts, but Dillahunty uses it to test sensitivity to consequences and then returns to intuition-testing and equal-rights defaults."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Adding a cancer-curing chimp changes the original sparse case, but it tests whether consequential information can defeat the intuition and remains relevant to his proposed evaluation method."
+          }
+        ]
+      },
+      {
+        "moveId": "con-original-sin-humility",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The historical example and Warnock reflection motivate fallibilist humility; neither the philosopher’s status nor the quotation is presented as independently settling original sin or comparative superiority."
+          }
+        ]
+      },
+      {
+        "moveId": "con-moral-intuition-and-imago-coherence",
+        "type": "bias",
+        "label": "Subjective validation",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Rauser says imago Dei conforms very nicely with his deeply held moral intuitions about human significance.",
+            "rationale": "Rauser gives his contested infant-saving intuition added support because the theological account personally fits and reinforces that intuition, without independently establishing the intuition’s reliability or excluding secular explanations."
+          },
+          {
+            "decision": "accepted",
+            "context": "Rauser says his strong infant-saving intuition conforms with imago Dei and offers their dovetailing as mutual reinforcement.",
+            "rationale": "Rauser gives extra evidential weight to the theological account because it fits a deeply held personal intuition, without independently establishing that intuition’s reliability or the doctrine’s accuracy."
+          }
+        ]
+      },
+      {
+        "moveId": "con-fallible-properly-basic-intuitions",
+        "type": "bias",
+        "label": "Confirmation bias",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Testing intuitions for fit within a broader belief set could preserve existing commitments, but Rauser explicitly calls the beliefs fallible and does not describe discounting contrary evidence in this move."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Although coherence with a broader belief set could preserve existing commitments, Rauser expressly calls intuitions fallible and testable, so selective treatment of contrary evidence is not shown here."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-equal-rights-as-humanist-policy",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The voluntary assisted-dying aside is distracting in an abandoned-infant exchange, but Dillahunty returns to the infant’s status and states a universal rights-and-privileges policy, so the challenge is answered."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "The assisted-dying aside is distracting, but Dillahunty returns to a direct all-human rights answer and does not use voluntary dying to resolve the abandoned infant’s treatment."
+          }
+        ]
+      },
+      {
+        "moveId": "con-goodness-and-objective-rights",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser’s maximal-goodness definition does not establish God or image-bearing, yet his torture counterexample independently pressures Dillahunty’s codification claim; the conclusion is not simply restated as its premise."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Rauser assumes his theistic conception for the conditional comparison but separately raises the unrecognized torture-right problem; he does not derive objective rights solely by restating their conclusion."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-rights-require-collective-protection",
+        "type": "fallacy",
+        "label": "Equivocation",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Dillahunty moves between enforceable legal rights and claims about rights people should have under equality.",
+            "rationale": "Dillahunty treats “right” as an actually codified protection while also using normative should-have claims to criticize existing law, and the unmarked shift makes collective enforcement appear to exhaust moral entitlement."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Dillahunty consistently uses ‘right’ here for an institutionally protected permission. That definition may be too narrow, but no within-move meaning shift makes the inference appear stronger."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-rights-versus-what-should-be-rights",
+        "type": "fallacy",
+        "label": "Equivocation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Dillahunty explicitly distinguishes legally possessed rights from rights a system should grant. The normative basis remains incomplete, but the two senses are marked rather than covertly exchanged."
+          }
+        ]
+      },
+      {
+        "moveId": "con-egalitarian-image-and-entitlement",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser’s egalitarian reading is contested, yet he identified his qualified Christianity at the outset and directly disavows complementarianism, supplying a consistent reason for excluding that interpretation."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-codification-can-fail-its-values",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Dillahunty distinguishes humanism’s equality commitment from inconsistent adherents, but he grants the same distinction for Christians who violate their principles, so the standard is not uniquely relaxed for his side."
+          }
+        ]
+      },
+      {
+        "moveId": "con-physics-analogy-and-missing-premise",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The physics analogy is imperfect and lengthens the exchange, but Rauser uses it to introduce revisability and then directly identifies the missing premise that every person should vote."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "The scientific paradigm analogy is imperfect, but Rauser uses it to reach the directly relevant missing voting-right premise and does not abandon the equality-and-revisability dispute."
+          }
+        ]
+      },
+      {
+        "moveId": "con-shared-humanist-values",
+        "type": "bias",
+        "label": "Authority bias",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Sagan, Francis, and King make the overlap vivid, but Rauser does not treat their prestige as evidence sufficient to establish the comparative social outcome."
+          }
+        ]
+      },
+      {
+        "moveId": "con-shared-humanist-values",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser cites Sagan, scripture, Francis, and King to illustrate shared values, but those names do not function as authorities whose prestige alone is said to settle Christianity’s comparative performance."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-hope-focused-on-afterlife-challenge",
+        "type": "bias",
+        "label": "Confirmation bias",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Dillahunty recasts Christian hope as afterlife-focused despite Rauser’s explicit rejection of quietism and repeated present-action examples.",
+            "rationale": "Dillahunty interprets Christian hope through suffering and afterlife themes that favor his prior view while discounting Rauser’s contrary action-oriented account already presented in the debate."
+          }
+        ]
+      },
+      {
+        "moveId": "con-jesus-solidarity-and-nonviolence",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "King functions as an illustrative case of Christian nonviolent practice; Rauser does not argue that King’s prestige alone proves the doctrine uniquely or generally effective."
+          }
+        ]
+      },
+      {
+        "moveId": "con-dispensationalism-not-mere-christianity",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser’s exclusion of dispensationalism follows the creed-centered mere-Christianity target stated in his opening, so the correction applies a previously announced scope rather than an ad hoc exemption."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "The dispensationalism exclusion follows Rauser’s opening definition of mere Christianity and directly identifies a distinct theological scheme, rather than introducing an ad hoc exception after criticism."
+          }
+        ]
+      }
+    ],
+    "expectedCandidateCount": 26,
+    "outputSchemaBounds": {
+      "decisions": {
+        "minItems": 26,
+        "maxItems": 26
+      }
+    }
+  },
+  "outputPath": "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/adjudication/output.json"
+  ],
+  "checker": [
+    "/opt/homebrew/Cellar/node/25.9.0_3/bin/node",
+    "docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/check-review.mjs",
+    "--debate",
+    "296",
+    "--packet",
+    "docs/assessment-production/standalone-debates-v1/debate-296/publication/rhetorical-tag-review-1/adjudication/packet.json"
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Read this plan and the entire reader.txt including shared blocks. Never open peer outputs. Run the pinned checker without rereading its implementation. Authenticate reading before authoring. Keep candidates in memory; handoff holds approved candidate bytes in memory until the controller supplies authenticated source/editorial release. Only that release writes the first submission. A saved failure consumes its attempt. No autonomous retry.",
+  "isolation": "Fresh fork-none subscription context; protocol isolation, not an operating-system sandbox.",
+  "packetMetrics": {
+    "originalBytes": 462821,
+    "readerBytes": 459386,
+    "sharedBlocks": 1,
+    "completeDocuments": 7,
+    "losslessRoundTrip": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "296",
+  "debateId": "dillahunty-rauser-humanism-christianity-2023",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/inventory/inventory.json",
+      "sha256": "f43fc170df96859df20031c4113034530ce2f19a197a24e890060f514f41706b",
+      "bytes": 149011
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/score-pass/output.json",
+      "sha256": "e9600a801c844ada7f2d035d0e62f1967ed619325f4f843e44847256bfef1731",
+      "bytes": 21134
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/publication/skeleton.json",
+      "sha256": "cbfb04f041b22651d7509f09465752e5f78946194e4d498addcedd02bb276a5b",
+      "bytes": 15520
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/publication/reference-metrics.json",
+      "sha256": "49f4343412f2d317bd14ca3272775a30f209b8540557cc1c305a6460225f49a9",
+      "bytes": 54147
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

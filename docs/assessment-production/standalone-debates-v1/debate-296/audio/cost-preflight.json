@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0-frozen-audio-cost-preflight",
+  "status": "frozen-before-first-paid-call",
+  "debateNumber": "296",
+  "videoId": "0T6SKpzyJ2I",
+  "createdAt": "2026-10-07T20:05:16.849021+00:00",
+  "purpose": "Verify caption-corrupted wording and mixed handoffs in the retained debate. Publisher episode includes excluded Q&A; its contents remain outside scoring. Align by utterance sequence, not assumed timestamp equality.",
+  "model": "gpt-4o-mini-transcribe",
+  "responseFormat": "json",
+  "language": "en",
+  "chunkingStrategy": "auto",
+  "knownSuccessfulPriorCallCostUsd": 0,
+  "maximumPossiblePriorCostUsd": 0,
+  "rateSourceUrl": "https://developers.openai.com/api/docs/pricing",
+  "rateEstimateUsdPerMinute": 0.003,
+  "textInputUsdPerMillionTokens": 1.25,
+  "audioInputUsdPerMillionTokens": 3,
+  "textOutputUsdPerMillionTokens": 5,
+  "sourceAudio": {
+    "path": ".assessment-cache/captions/0T6SKpzyJ2I/publisher-audio.mp3",
+    "sha256": "45f7dcc4a570799b31d896d7003e5d20f04e7838f1f650c1262ba36439146438",
+    "bytes": 80026485
+  },
+  "sourceMetadata": {
+    "path": ".assessment-cache/captions/0T6SKpzyJ2I/publisher-audio-metadata.json",
+    "sha256": "eda483449e7c481fd9c48c2af628feef194ff7976985bc3c565d06f072b81b43",
+    "bytes": 944
+  },
+  "sourceDurationSeconds": 5001.384,
+  "plannedAudioSeconds": 5001.384,
+  "calculatedDurationEstimateUsd": 0.2500692,
+  "communicatedCumulativeEstimateUsd": 0.26,
+  "communicatedMaximumUsd": 0.35,
+  "standingCapUsd": 1,
+  "userEstimateDisclosedBeforeCalls": true,
+  "authority": "Standing invoked-skill transcription allowance; no new ordinary approval requested.",
+  "maxRetries": 0,
+  "oneCallPerInput": true,
+  "uncertainCallsConsumeAttempt": true,
+  "inputs": [
+    {
+      "callOrdinal": 1,
+      "media": {
+        "path": ".assessment-cache/captions/0T6SKpzyJ2I/verification-part-1.mp3",
+        "sha256": "65239fb38bcfc56df85535968ed6ec20026b205f8654e880bbf6bf5721a33c75",
+        "bytes": 9604928,
+        "durationSeconds": 1200,
+        "publisherWindowSeconds": [
+          0,
+          1200
+        ]
+      },
+      "outputPath": ".assessment-cache/captions/0T6SKpzyJ2I/verification-part-1.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "callOrdinal": 2,
+      "media": {
+        "path": ".assessment-cache/captions/0T6SKpzyJ2I/verification-part-2.mp3",
+        "sha256": "7ba406a7d4c0405f531b49d3b7c97538527a80322a88451946a39dd10415d8f5",
+        "bytes": 9604928,
+        "durationSeconds": 1200,
+        "publisherWindowSeconds": [
+          1200,
+          2400
+        ]
+      },
+      "outputPath": ".assessment-cache/captions/0T6SKpzyJ2I/verification-part-2.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "callOrdinal": 3,
+      "media": {
+        "path": ".assessment-cache/captions/0T6SKpzyJ2I/verification-part-3.mp3",
+        "sha256": "9f5e1cdfbf397969193cfc0f95f279958552881935170ed4e2052d7c50e716e6",
+        "bytes": 9604928,
+        "durationSeconds": 1200,
+        "publisherWindowSeconds": [
+          2400,
+          3600
+        ]
+      },
+      "outputPath": ".assessment-cache/captions/0T6SKpzyJ2I/verification-part-3.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "callOrdinal": 4,
+      "media": {
+        "path": ".assessment-cache/captions/0T6SKpzyJ2I/verification-part-4.mp3",
+        "sha256": "2bd6c8c6493238d5fdb4caf4ac560ace3f1abaeb8e292a50498dc169e2b15e45",
+        "bytes": 9604928,
+        "durationSeconds": 1200,
+        "publisherWindowSeconds": [
+          3600,
+          4800
+        ]
+      },
+      "outputPath": ".assessment-cache/captions/0T6SKpzyJ2I/verification-part-4.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "callOrdinal": 5,
+      "media": {
+        "path": ".assessment-cache/captions/0T6SKpzyJ2I/verification-part-5.mp3",
+        "sha256": "491aaa484da095c23063cd2bd83afb40c0c917d4e923f129b4339997f4d83b56",
+        "bytes": 1616000,
+        "durationSeconds": 201.38400000000001,
+        "publisherWindowSeconds": [
+          4800,
+          5001.384
+        ]
+      },
+      "outputPath": ".assessment-cache/captions/0T6SKpzyJ2I/verification-part-5.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ]
+}

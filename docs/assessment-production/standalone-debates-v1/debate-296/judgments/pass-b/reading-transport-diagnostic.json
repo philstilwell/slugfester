@@ -1,0 +1,28 @@
+{
+  "status": "reading-release-withheld-pending-individually-authenticated-chunks",
+  "at": "2026-10-07T20:20:46.682703+00:00",
+  "cause": "Yielded batched reader outputs are not associated with their originating read command by the maintained authenticator; first unmatched source line3301.",
+  "disposition": "Same context re-reads affected chunks individually before authoring. No submission or model retry consumed. No frozen source or validator changed.",
+  "affectedRanges": [
+    [
+      3301,
+      3600
+    ],
+    [
+      3901,
+      4200
+    ],
+    [
+      4501,
+      4800
+    ],
+    [
+      5101,
+      5400
+    ],
+    [
+      5701,
+      6096
+    ]
+  ]
+}

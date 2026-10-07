@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "296",
+  "debateId": "dillahunty-rauser-humanism-christianity-2023",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The pro motion, revisability, equality, and public-justification routes have no distinct unscored completion effect; their successes and gaps are already attached to the relevant moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Pro completed portions and remaining gaps are represented by its motion framing, practical tests, rights replies, and linked rebuttals.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No additional debate-wide consequence survives outside the move ratings and response links.",
+            "alreadyCapturedBy": [
+              "locked move-level judgments and response links"
+            ],
+            "counterfactual": "Without a separate adjustment, the recorded move ratings still capture every demonstrated burden consequence."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The remaining debate-wide questions are whether declared equality is grounded for every unvalued person and whether humanism shows a comparative present benefit. Those consequences are already captured in the ratings for the species-value, infant-policy, foundational-equality, and public-justification moves, so a separate adjustment would duplicate them.",
+          "eligibility": {
+            "distinctDebateWideConsequence": true,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-equal-rights",
+              "pro-public-justification"
+            ],
+            "completionCriterion": "Ground equal status for every human and demonstrate a comparative present-life advantage over the qualified Christian framework.",
+            "relatedMoveIds": [
+              "pro-species-value-and-cooperation",
+              "pro-equal-rights-as-humanist-policy",
+              "pro-equality-as-foundational-declaration",
+              "pro-demand-for-present-benefit"
+            ],
+            "distinctConsequence": "These gaps limit completion of universal grounding and comparative advantage across the pro route rather than creating an additional unscored move.",
+            "alreadyCapturedBy": [
+              "pro-species-value-and-cooperation.evidenceWarrant",
+              "pro-equal-rights-as-humanist-policy.logicalCoherence",
+              "pro-equality-as-foundational-declaration.evidenceWarrant",
+              "pro-demand-for-present-benefit.evidenceWarrant"
+            ],
+            "counterfactual": "If those moves fully grounded universal status and demonstrated the distinct comparative benefit, their own ratings would rise and no separate adjustment would be needed."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The con flourishing, intrinsic-worth, Jesus-practice, and objective-ground routes have no distinct unscored completion effect; their successes and gaps are already attached to the relevant moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Con completed portions and remaining gaps are represented by its qualified framework, worth challenges, practice replies, and hope exchange.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No additional debate-wide consequence survives outside the move ratings and response links.",
+            "alreadyCapturedBy": [
+              "locked move-level judgments and response links"
+            ],
+            "counterfactual": "Without a separate adjustment, the recorded move ratings still capture every demonstrated burden consequence."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The remaining debate-wide questions are whether the divine-image premise is publicly warranted and whether Christian practices are shown to outperform shared humanist practices. Those consequences are already captured in the image-grounding, Creed, Jesus-practice, and hope move ratings, so a separate adjustment would duplicate them.",
+          "eligibility": {
+            "distinctDebateWideConsequence": true,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-intrinsic-worth",
+              "con-christian-flourishing",
+              "con-jesus-practice"
+            ],
+            "completionCriterion": "Publicly warrant species-wide divine-image value and show that the defended Christian practices better cultivate present social flourishing.",
+            "relatedMoveIds": [
+              "con-image-grounded-species-worth",
+              "con-creed-restoration-and-purpose",
+              "con-emulating-jesus-present-practice",
+              "con-hope-motivates-action"
+            ],
+            "distinctConsequence": "These gaps limit completion of the grounding and comparative-performance routes rather than creating a separate unscored debate-wide failure.",
+            "alreadyCapturedBy": [
+              "con-image-grounded-species-worth.evidenceWarrant",
+              "con-creed-restoration-and-purpose.evidenceWarrant",
+              "con-emulating-jesus-present-practice.evidenceWarrant",
+              "con-hope-motivates-action.evidenceWarrant"
+            ],
+            "counterfactual": "If those moves publicly established the premise and comparative performance, their own ratings would rise and no separate adjustment would be justified."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 41,
+    "disputesExtracted": 2,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/inventory/inventory.json",
+      "sha256": "f43fc170df96859df20031c4113034530ce2f19a197a24e890060f514f41706b"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/judgments/pass-a/output.json",
+      "sha256": "7c2d547542e8f814f41323f357333f55510309f559adfb8ae45a79cf06e43289"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-296/judgments/pass-b/output.json",
+      "sha256": "4f3863de4583c0a535bd1acaf4b886feecf53cd21753f26ea57a648cc8ca71d0"
+    }
+  }
+}
