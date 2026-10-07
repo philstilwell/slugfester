@@ -132,6 +132,8 @@ const absolute = (relative) => path.join(ROOT, relative);
 const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
 const VERSIONED_CONTROL_SNAPSHOTS = new Map([
+  ["scripts/lib/standalone-publication-check.mjs\u000005dd933b6a6d798ac36f5de6a61631ddead81e72043a6e6a522c88811461082c", "docs/assessment-production/standalone-debates-v1/control-snapshots/05dd933b6a6d798ac36f5de6a61631ddead81e72043a6e6a522c88811461082c/standalone-publication-check.mjs"],
+  ["scripts/audit-assessment-production-standalone-v1.mjs\u00001d6d1613fdfbe7bf6f4d546303161bddbf2ee1432463b3477fa5d36152ed2873", "docs/assessment-production/standalone-debates-v1/control-snapshots/1d6d1613fdfbe7bf6f4d546303161bddbf2ee1432463b3477fa5d36152ed2873/audit-assessment-production-standalone-v1.mjs"],
   [
     "scripts/lib/standalone-publication-check.mjs\u0000f51b342bd2905527f44e11332d8a8544bd02e9ed5b01513d25ffa1817c196181",
     "docs/assessment-production/standalone-debates-v1/control-snapshots/f51b342bd2905527f44e11332d8a8544bd02e9ed5b01513d25ffa1817c196181/standalone-publication-check.mjs"

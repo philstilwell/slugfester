@@ -1,0 +1,24 @@
+{
+  "status": "authorized-routine-mechanical-display-fix-before-publication",
+  "at": "2026-10-07T03:49:02.535050+00:00",
+  "debateNumber": "292",
+  "basis": "Approved assessment of three noncontiguous exchanges and explicit user request for scope disclosure; routine reversible display correctness fix, no new inference or spending.",
+  "additionalAllowedTrackedPaths": [
+    "scripts/standalone/prepare-publication.mjs"
+  ],
+  "change": "Display duration as the union of retained scope intervals instead of the enclosing start-to-end window, which includes excluded audience and personal material. Original card timestamps remain unchanged. Unscoped recordings retain their existing duration calculation.",
+  "unchanged": [
+    "canonical evidence",
+    "approved retained and excluded intervals",
+    "motion and speakers",
+    "inventory attempt and model settings",
+    "rubric and score calculation",
+    "historical published records"
+  ],
+  "helper": {
+    "path": "scripts/standalone/prepare-publication.mjs",
+    "sha256": "ab6d17c8e7023c1428ef193b576986b3174ad9c5cc7b4ba1b8ee7f54ebebcfd8",
+    "bytes": 6003
+  },
+  "validationPlan": "Syntax checked; verify generated 39-minute duration against the three frozen intervals, then full repository checks and local/live browser publication checks."
+}

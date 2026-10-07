@@ -14,7 +14,14 @@ const sourceNote=value('--source-note');assert(sourceNote.length>100);
 if(auth.availableRecordingScope){assert.equal(auth.availableRecordingScope.videoId,entry.videoId);assert(sourceNote.includes(auth.availableRecordingScope.requiredReaderDisclosure),'Approved source-scope disclosure must be preserved verbatim');}
 const timestamp=ms=>{const sec=Math.floor(ms/1000),s=String(sec%60).padStart(2,'0'),min=Math.floor(sec/60);return min>=60?`${Math.floor(min/60)}:${String(min%60).padStart(2,'0')}:${s}`:`${min}:${s}`;};
 const window=inventory.assessedDebateWindowMs;assert(Number.isFinite(window.start)&&Number.isFinite(window.end)&&window.end>window.start);
-const durationMs=window.end-window.start;
+// A scoped conversation can contain excluded gaps between retained exchanges.
+// Display the retained duration, while keeping original timestamps on every card.
+const retained=auth.availableRecordingScope?.retainedIntervals;
+let durationMs=window.end-window.start;
+if(Array.isArray(retained)&&retained.length){
+ const ordered=[...retained].sort((a,b)=>a.startMs-b.startMs);let lastEnd=-Infinity;durationMs=0;
+ for(const interval of ordered){assert(Number.isFinite(interval.startMs)&&Number.isFinite(interval.endMs)&&interval.endMs>interval.startMs);durationMs+=Math.max(0,interval.endMs-Math.max(interval.startMs,lastEnd));lastEnd=Math.max(lastEnd,interval.endMs);}
+}
 const durationMinutes=Math.round(durationMs/60000),hours=Math.floor(durationMinutes/60),minutes=durationMinutes%60;
 const duration=hours?`${hours} hr ${minutes} min`:`${minutes} min`;
 const byId=new Map(inventory.moves.map(m=>[m.moveId,m]));

@@ -53,11 +53,17 @@ export async function browserConfig(run,{origin,prefix=`debate-${run.entry.debat
   const raw=(await import(pathToFileURL(inside(run.root,'src/data/debates.js')).href)).debates;
   assert.deepEqual(raw.find(d=>d.id===candidate.id),candidate,'Published candidate differs from the frozen submission');
   const cases=await scopeCases(run),scope=cases.find(x=>x.id===candidate.id);
-  const slug=name=>name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+  const { avatarsForSpeakerText } = await import(pathToFileURL(inside(run.root,'src/data/interlocutors.js')).href);
+  const { interlocutorSlug } = await import(pathToFileURL(inside(run.root,'src/seo.js')).href);
+  const people=['pro','con'].map(side=>{
+    const matches=avatarsForSpeakerText(candidate.sides[side].speaker);
+    assert.equal(matches.length,1,'Standalone profile must resolve to one registered speaker');
+    return {name:matches[0].name,slug:interlocutorSlug(matches[0].name)};
+  });
   return {candidate,origin:origin.replace(/\/$/,''),prefix,screenshots,screenshotDirectory,requiredReaderDisclosure:scope?.notice||null,scopeCases:cases,
     year:candidate.title.match(/\((\d{4})\)\s*$/)?.[1]||'',videoId:run.entry.videoId,modelLabel:run.manifest.modelSettings.displayLabel,
     tagCount:candidate.sections.flatMap(s=>s.exchanges.flatMap(e=>[e.pro,e.con].filter(Boolean))).reduce((n,c)=>n+c.tags.length,0),
-    people:['pro','con'].map(s=>({name:candidate.sides[s].speaker,slug:slug(candidate.sides[s].speaker)})),graph:await reconcileGraph(run)};
+    people,graph:await reconcileGraph(run)};
 }
 
 // Run before the interactive replay: this catches source notices hidden by a successful JS render.

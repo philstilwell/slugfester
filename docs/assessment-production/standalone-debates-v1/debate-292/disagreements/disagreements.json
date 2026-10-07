@@ -1,0 +1,285 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "292",
+  "debateId": "thomason-clifton-morality-meaning-god-2020",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-jesus-love-mercy-and-justice:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "pro-jesus-love-mercy-and-justice",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 67,
+          "rationale": "The atonement account offers a recognizable reconciliation of mercy and justice, but assumes punishment transfer answers rather than relocates the objection."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "The atonement account coherently explains how mercy and justice are intended to coexist, but it assumes transferred punishment resolves rather than reproduces the fairness concern."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-jesus-love-mercy-and-justice:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "pro-jesus-love-mercy-and-justice",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 69,
+          "rationale": "It responds to the salvation objection by presenting atonement, but does not address Clifton's concern that rescue is conditional on belief and credit."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "It directly answers the salvation objection by explaining forgiveness, justice, and atonement, although it does not address belief-conditioned rescue or default torment."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-jesus-love-mercy-and-justice:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "pro-jesus-love-mercy-and-justice",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "The move supplies positive Christian moral content, though it incompletely discharges the live coherence burden."
+        },
+        "option-b": {
+          "value": 82,
+          "rationale": "This is the principal pro response on Christian moral coherence and supplies positive content, but it only partially closes the specific objection."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-jesus-love-mercy-and-justice:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-jesus-love-mercy-and-justice",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 66,
+          "rationale": "Saying critics fail to attend to Jesus and presenting the model as reconciliation understates Clifton's already explicit concern with its concrete terms."
+        },
+        "option-b": {
+          "value": 75,
+          "rationale": "Thomason frames Jesus as the example she would use, but treats substitution as reconciling justice without acknowledging the live objection to that premise."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-heaven-is-not-earth-forever:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "pro-heaven-is-not-earth-forever",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 68,
+          "rationale": "It anticipates an objection, but Clifton's actual concern is endless conscious experience itself rather than ordinary earthly conditions."
+        },
+        "option-b": {
+          "value": 58,
+          "rationale": "It anticipates an objection to heaven but attributes to Clifton a picture he immediately denies, so it engages a weaker reconstruction."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate debate-wide adjustment is warranted: incomplete source, duty, purpose, and Christian-coherence bridges are already captured in the ratings of the related moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-god-grounds-morality-purpose",
+              "pro-transcendent-moral-source",
+              "pro-universal-values-duties",
+              "pro-higher-purpose-calling",
+              "pro-christian-love-accountability"
+            ],
+            "completionCriterion": "Whether the selected moves collectively complete the claimed divine grounding and higher-purpose routes beyond their individually rated bridges.",
+            "relatedMoveIds": [
+              "pro-transcendent-source-across-eras",
+              "pro-common-values-transcendent-lord",
+              "pro-cross-cultural-findings-to-objective-duties",
+              "pro-atheism-ends-in-forgetting",
+              "pro-jesus-love-mercy-and-justice"
+            ],
+            "distinctConsequence": "Any remaining incompleteness follows from limitations already assessed within the linked moves rather than a separate uncaptured debate-wide event.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without those already-rated limitations, the retained pro route would require no additional global correction beyond its move-level performance."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate debate-wide adjustment is warranted: the pro side’s incompletely defended source and higher-purpose bridges are already captured in the individual move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No independent completion criterion remains beyond the central and motion-level bridges already assessed move by move.",
+            "relatedMoveIds": [
+              "pro-transcendent-source-across-eras",
+              "pro-gifts-point-to-assigned-calling",
+              "pro-atheism-ends-in-forgetting"
+            ],
+            "distinctConsequence": "The remaining limitations concern the same inferential gaps already evaluated in the relevant pro moves.",
+            "alreadyCapturedBy": [
+              "pro-transcendent-source-across-eras",
+              "pro-gifts-point-to-assigned-calling",
+              "pro-atheism-ends-in-forgetting"
+            ],
+            "counterfactual": "Removing those move-level limitations would remove the asserted basis for any additional burden adjustment."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate debate-wide adjustment is warranted: the strengths and residual gaps of the secular routes are already captured in the ratings of the related moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-god-not-required",
+              "con-wellbeing-facts",
+              "con-facts-not-categorical-duties",
+              "con-naturalistic-explanation",
+              "con-finite-meaning",
+              "con-christianity-moral-coherence"
+            ],
+            "completionCriterion": "Whether the selected challenges and constructive distinctions collectively show that morality and finite meaning need not depend on God.",
+            "relatedMoveIds": [
+              "con-facts-values-duties-distinction",
+              "con-agreement-does-not-prove-metaphysics",
+              "con-finitude-does-not-remove-value",
+              "con-convinced-yet-moral-questions-remain"
+            ],
+            "distinctConsequence": "The retained con route contains no additional unscored debate-wide success or failure distinct from the consequences assessed in its moves.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Removing the already-rated strengths or weaknesses would change move performance, not create an independent global burden-completion consequence."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate debate-wide adjustment is warranted: the con side’s qualifications and remaining positive-theory gaps are already captured in the individual move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No independent completion criterion remains beyond the well-being, conditional-reasons, and finite-meaning bridges assessed in the moves.",
+            "relatedMoveIds": [
+              "con-objective-wellbeing-facts",
+              "con-conditional-ought-without-cosmic-binding",
+              "con-finitude-does-not-remove-value"
+            ],
+            "distinctConsequence": "Any residual limitation concerns the same positive warrants and scope qualifications already scored in those con moves.",
+            "alreadyCapturedBy": [
+              "con-objective-wellbeing-facts",
+              "con-conditional-ought-without-cosmic-binding",
+              "con-finitude-does-not-remove-value"
+            ],
+            "counterfactual": "Removing the identified move-level gaps would remove the asserted basis for any additional burden adjustment."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 31,
+    "disputesExtracted": 7,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-292/inventory/inventory.json",
+      "sha256": "52aab99188152bc049752be93ea30b6ee55b29fb1877283500dbb22814f8ac02"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-292/judgments/pass-a/output.json",
+      "sha256": "643c33cc7503768e6902de1c8e39f6fdf5473771e4531c7209ae3be143670193"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-292/judgments/pass-b/output.json",
+      "sha256": "e1f216383ed36ad11db938d53c1a3e6a33f4ff3763a181042ca754869cc156c2"
+    }
+  }
+}

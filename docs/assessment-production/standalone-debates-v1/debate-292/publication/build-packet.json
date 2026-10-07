@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "292",
+  "debateId": "thomason-clifton-morality-meaning-god-2020",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-292/inventory/inventory.json",
+      "sha256": "52aab99188152bc049752be93ea30b6ee55b29fb1877283500dbb22814f8ac02",
+      "bytes": 105263
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-292/score-pass/output.json",
+      "sha256": "c3eb92b7761756cbbf35d86d540607f4e6288956f9f8671333de0ba5699b672d",
+      "bytes": 16475
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-292/publication/skeleton.json",
+      "sha256": "93c4c73ccb669934bc73a3f2ed4361da23d30703db2051100523d97c4a4c3554",
+      "bytes": 12575
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-292/publication/reference-metrics.json",
+      "sha256": "83fcd634fbe5c63a332a42f52868545a0a8deb30af6edaef3169025309dce2a3",
+      "bytes": 54202
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

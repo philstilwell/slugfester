@@ -1,0 +1,26 @@
+{
+  "status": "preserved-frozen-controls-for-canonical-profile-replay",
+  "reason": "Existing upstream S.J. Thomason registration resolves the frozen SJ Thomason speaker alias. Browser checks now use the same canonical identity and slug as site generation. Every required check remains; historical control bytes and manifest hashes are preserved unchanged.",
+  "controls": [
+    {
+      "original": {
+        "path": "scripts/lib/standalone-publication-check.mjs",
+        "sha256": "05dd933b6a6d798ac36f5de6a61631ddead81e72043a6e6a522c88811461082c",
+        "bytes": 6904
+      },
+      "snapshot": "docs/assessment-production/standalone-debates-v1/control-snapshots/05dd933b6a6d798ac36f5de6a61631ddead81e72043a6e6a522c88811461082c/standalone-publication-check.mjs",
+      "gitCommit": "205f9224355645047b12efecc47aa490ef66d255"
+    },
+    {
+      "original": {
+        "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+        "sha256": "1d6d1613fdfbe7bf6f4d546303161bddbf2ee1432463b3477fa5d36152ed2873",
+        "bytes": 79267
+      },
+      "snapshot": "docs/assessment-production/standalone-debates-v1/control-snapshots/1d6d1613fdfbe7bf6f4d546303161bddbf2ee1432463b3477fa5d36152ed2873/audit-assessment-production-standalone-v1.mjs",
+      "gitCommit": "205f9224355645047b12efecc47aa490ef66d255"
+    }
+  ],
+  "scoresChanged": false,
+  "assessmentEvidenceChanged": false
+}
