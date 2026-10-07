@@ -1,0 +1,12 @@
+import {readFileSync} from "node:fs";
+import {createHash} from "node:crypto";
+import {fileURLToPath} from "node:url";
+import path from "node:path";
+import {validateStandaloneAdjudication} from "../../../../../scripts/lib/assessment-production-standalone-debate-v1.mjs";
+const dir=path.dirname(fileURLToPath(import.meta.url));
+const packet=JSON.parse(readFileSync(path.join(dir,"packet.json"),"utf8"));
+const index=process.argv.indexOf("--debate");
+if(index<0||process.argv[index+1]!==packet.debateNumber)throw Error("Explicit matching --debate required");
+const raw=readFileSync(0,"utf8"),candidate=JSON.parse(raw);
+const result=validateStandaloneAdjudication(candidate,packet);
+console.log(JSON.stringify({status:"passed-unsaved-adjudication-mechanics",result,rawSha256:createHash("sha256").update(raw).digest("hex")},null,2));

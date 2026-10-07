@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "294",
+  "debateId": "copan-rauser-canaanite-conquest-2022",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "copan-marcionite-authority-concern:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "copan-marcionite-authority-concern",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "rauser-identity-removal-can-be-genocide:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "rauser-identity-removal-can-be-genocide",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "copan-defeasible-intuition:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "copan-defeasible-intuition",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate pro adjustment is warranted because debate-wide completion consequences are already captured in the judged moves and their burden links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion remains outside the move-level judgments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide consequence remains uncaptured by the scored inventory.",
+            "alreadyCapturedBy": [
+              "move-level dimensions",
+              "locked burden links"
+            ],
+            "counterfactual": "Removing the already-scored material would change move ratings, not create an independent adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Copan’s remaining debate-wide gap is the same case-specific justification weakness already scored in his exception and civilian-target moves, so no separate adjustment is warranted.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-targets",
+              "pro-exception"
+            ],
+            "completionCriterion": "Complete the pro burden by establishing case-specific morally sufficient reasons for any residual civilian deaths.",
+            "relatedMoveIds": [
+              "copan-citadels-drive-out-and-survivors",
+              "copan-unique-contextual-judgment"
+            ],
+            "distinctConsequence": "No independent debate-wide consequence remains after the move-level treatment of the citadel evidence and contextual-exception warrant.",
+            "alreadyCapturedBy": [
+              "copan-citadels-drive-out-and-survivors:evidenceWarrant",
+              "copan-unique-contextual-judgment:evidenceWarrant"
+            ],
+            "counterfactual": "If the case-specific necessity and proportionality bridge had been independently established outside those moves, a positive completion adjustment could be considered."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate con adjustment is warranted because debate-wide completion consequences are already captured in the judged moves and their burden links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion remains outside the move-level judgments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide consequence remains uncaptured by the scored inventory.",
+            "alreadyCapturedBy": [
+              "move-level dimensions",
+              "locked burden links"
+            ],
+            "counterfactual": "Removing the already-scored material would change move ratings, not create an independent adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Rauser’s unresolved need to defend an exceptionless moral rule and his alternative readings is already captured in the relevant closing and constructive moves, so no separate adjustment applies.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-christology",
+              "con-alternatives",
+              "con-civilians"
+            ],
+            "completionCriterion": "Complete the con burden by defending the exceptionless moral principle and a viable Christian appropriation of the texts.",
+            "relatedMoveIds": [
+              "rauser-jesus-moral-intuition-test",
+              "rauser-alternative-readings",
+              "rauser-intrinsic-wrongness-closing"
+            ],
+            "distinctConsequence": "No independent debate-wide consequence remains beyond the move-level limits on moral intuition, alternatives, and the future-risk argument.",
+            "alreadyCapturedBy": [
+              "rauser-jesus-moral-intuition-test:evidenceWarrant",
+              "rauser-alternative-readings:evidenceWarrant",
+              "rauser-intrinsic-wrongness-closing:calibrationCharity"
+            ],
+            "counterfactual": "If a distinct debate-wide demonstration had completed those burdens without repeating the scored moves, an adjustment could be considered."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 18,
+    "disputesExtracted": 5,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-294/inventory/inventory.json",
+      "sha256": "5e86271fb64401f8c225537b1543c6374e978664d50a676136b518fecc06720b"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-294/judgments/pass-a/output.json",
+      "sha256": "949a5507efea0061c592a76442fd20eadcd5a36be22b51cb7dcb8c5a13df2686"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-294/judgments/pass-b/output.json",
+      "sha256": "e1daa15efc4ec3bfde2b96d2a88db15000041d66605aad9aef57ccccecb42dc6"
+    }
+  }
+}

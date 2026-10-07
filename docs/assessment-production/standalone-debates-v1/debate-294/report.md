@@ -1,0 +1,15 @@
+# Debate 294: Copan–Rauser
+
+Paul Copan 82; Randal Rauser 85. The motion is whether the Canaanite conquest is morally defensible as an act commanded by a loving God. Both speakers are Christians.
+
+The retained discussion and final statements run approximately 4:31–1:25:19, with visible exclusions. Incidental host advocacy is 78.302 seconds, 1.615% of the assessed window. The union of host advocacy and dependent-reply exclusions is 480 seconds; introductions and programme material are also excluded. No credit, penalty or silence inference comes from excluded material. There were no formal timed rounds or audience Q&A.
+
+Complete English automatic captions contain 2,273 events and 18,208 words including timestamps. Five separate automated transcriptions of the publisher audio supported 17 eligibility checks; no direct listening is claimed. Uncertain recognition wording cannot supply an exact quotation or independent penalty. Both featured quotes express complete thoughts and retain the closing qualifications through their contexts.
+
+Two isolated 5.6 Sol / low judgments cover 18 locked moves, nine per side. A fresh adjudicator resolved five extracted disputes. The unchanged calculator ran once; no manual scores or reruns. Stability: mean distance 0.75, maximum 1, no directional excursion. The public assessment has five semantic sections and 11 rows. Two blind complete rhetorical reviews and fresh adjudication considered 25 distinct candidates, accepting one appeal-to-authority label without changing scores.
+
+The full source, resolved judgment, 25-debate prose comparison, punctuation, content parity and quote checks passed. Desktop 1440×1000 and mobile 390×844 checks verify every card, timestamp, scope notice, quote, AI Contribution, controls, profiles and discovery routes. Scope placement also passes with JavaScript disabled. The Backend graph reconciles all 3,240 section-side scores, including this debate’s ten values. Twenty-eight final screenshots are hashed. The initial warmed browser cache and transient lazy portrait loading are preserved as diagnostics; fresh replay and settled screenshots passed without product changes.
+
+Known direct cost: $0.16498875, below the communicated $0.28 estimate and $0.40 maximum. Five successful transcription calls; no failed, uncertain or retry calls. All assessment contexts used the subscription and added no direct API charge.
+
+Production validation, corpus verification, SEO generation/check, full repository check, both target evidence audits, all published standalone evidence, rhetorical and content-parity audits, and frozen campaign closure passed. Immediate precommit, committed-only replay, protected PR, post-merge Site Quality/Pages and live checks are separate final release boundaries and must all succeed before completion is reported. Local browser and server are closed; runtime replay adapter removed. Timing is recorded separately; concurrent worker time is not elapsed time. Unrelated work and the shared local main branch are preserved.

@@ -1,0 +1,20 @@
+{
+  "status": "inspected-pre-adapter-dependency-failure",
+  "command": "node scripts/validate-debates.mjs (temporary integration restored afterward)",
+  "exitCode": 1,
+  "elapsedMs": 1795,
+  "baselineHead": "d7f47c11949198f86fc37f9fce887ef48eb216b9",
+  "candidateSha256": "e2762913b69eb07407fe9756f465721c5cf815955d0478b8ae4743c791360507",
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-294/checks/pre-adapter-production-validation.log",
+    "sha256": "0ea2cb33a6a00d644e48981807a40e536b1b55fc587de31be44a7b0db1b0ea8f",
+    "bytes": 728
+  },
+  "temporaryIntegrationRestoredExactly": true,
+  "dependencyReview": {
+    "status": "reader-facing-fields-passed-pending-real-adapter",
+    "expectedFailures": 5,
+    "explanation": "Four absent side-card complaints are the validator\u2019s legacy symmetric-row path because hasStandaloneLedgerAdapter is false until the real ledger exists; the fifth explicitly requires that ledger. Source-locked 18-card standalone structure passed its dedicated candidate checker. No text, quote, AI, punctuation or size issue was reported. Final production validator must pass after actual adapter construction.",
+    "codeReference": "scripts/validate-debates.mjs:2618\u20132688"
+  }
+}
