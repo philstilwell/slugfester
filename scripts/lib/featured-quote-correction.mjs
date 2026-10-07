@@ -27,7 +27,7 @@ export function applyFeaturedQuoteCorrection(candidate, inventory, correction) {
   assert.equal(inventory.debateNumber, candidate.number);
   assert.equal(inventory.debateId, candidate.id);
   assert(correction.authorization?.request?.trim(), "Missing user authorization");
-  assert.equal(correction.normalization, "capitalization-and-punctuation-only");
+  assert(["capitalization-and-punctuation-only", "bracketed-source-shorthand"].includes(correction.normalization));
   assert.equal(correction.directIncrementalCostUsd, 0);
   assert(Array.isArray(correction.shards) && correction.shards.length > 0);
   const result = structuredClone(candidate);
@@ -57,8 +57,27 @@ export function applyFeaturedQuoteCorrection(candidate, inventory, correction) {
     assert(move && move.side === side && move.speaker === candidate.sides[side].speaker, "Quote speaker/source mismatch");
     assert(typeof review.exactSourceText === "string" && review.exactSourceText.trim());
     assert(move.sourceSpan.excerpt.includes(review.exactSourceText), "Quote is absent from its locked full source span");
-    assert.deepEqual(tokens(result.quotes[side].text), tokens(review.exactSourceText), "Quote changes source words");
-    assert(/[.!?]$/.test(result.quotes[side].text), "Featured quote ends mid-sentence");
+    let clarifiedSource = review.exactSourceText;
+    if (review.shorthand) {
+      assert.equal(correction.normalization, "bracketed-source-shorthand");
+      const { symbol, expansion, definitionMoveId, definitionExactSourceText } = review.shorthand;
+      keys(review.shorthand, ["symbol", "expansion", "definitionMoveId", "definitionExactSourceText"]);
+      assert.match(symbol, /^[a-z]$/i, "Only a single-letter source shorthand can be expanded");
+      assert(clarifiedSource.startsWith(symbol + " "), "Shorthand must be the quote's opening subject");
+      assert(expansion && !/[\[\]]/.test(expansion), "Expansion must contain plain source words");
+      assert(move.sourceSpan.excerpt.toLowerCase().includes(expansion.toLowerCase()), "Expansion is absent from the quote's source context");
+      const definition = inventory.moves.find(item => item.moveId === definitionMoveId);
+      assert(definition && definition.side === side && definition.speaker === move.speaker, "Shorthand definition speaker/source mismatch");
+      assert(definitionExactSourceText?.trim() && definition.sourceSpan.excerpt.includes(definitionExactSourceText), "Shorthand definition is absent from its locked source");
+      assert(tokens(definitionExactSourceText).includes(symbol.toLowerCase()), "Definition must identify the shorthand symbol");
+      clarifiedSource = "[" + expansion + "]" + clarifiedSource.slice(symbol.length);
+      assert(result.quotes[side].text.startsWith("[" + expansion + "] "), "Editorial expansion must be shown in brackets");
+      assert(/brackets/i.test(result.quotes[side].context) && tokens(result.quotes[side].context).includes(symbol.toLowerCase()), "Context must disclose the bracketed shorthand expansion");
+    }
+    assert.deepEqual(tokens(result.quotes[side].text), tokens(clarifiedSource), "Quote changes source words");
+    if (changed.has(`quotes.${side}.text`)) {
+      assert(/[.!?]$/.test(result.quotes[side].text), "Featured quote ends mid-sentence");
+    }
     assert(typeof review.completeThoughtReview === "string" && words(review.completeThoughtReview).length >= 12, "Missing source-specific complete-thought review");
   }
   return result;
