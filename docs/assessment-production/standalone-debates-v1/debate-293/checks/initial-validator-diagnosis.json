@@ -1,0 +1,5 @@
+{
+  "status": "expected-pre-adapter-dependency",
+  "failures": 7,
+  "explanation": "The initial production validator ran before build-adapter and reports missing matching ledger plus six dependent legacy row/null-side constraints. Inspection of usesStandaloneLedgerAdapter and usesAdjudicatedConsensusLedgerAdapter confirms that both require the real JSON ledger to exist. The frozen balanced-capacity profile and source-grounded row audit authorize these exact rows. No validator or publication substance changed; full validation must pass after normal adapter creation."
+}

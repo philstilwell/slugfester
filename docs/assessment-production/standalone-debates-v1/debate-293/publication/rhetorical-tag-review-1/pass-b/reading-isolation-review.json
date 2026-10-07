@@ -1,0 +1,13 @@
+{
+  "debateNumber": "293",
+  "status": "passed-blind-reading-isolation-review",
+  "readingEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-293/publication/rhetorical-tag-review-1/pass-b/reading-release.json",
+    "sha256": "bf8f416fc9167727a652b0adcf465689c544067eb6d3c688e9da32937ba1ade7",
+    "bytes": 10560
+  },
+  "review": "Controller inspected actual reader tool calls: only literal own execution plan, maintained complete reader chunks and output-path existence checks were accessed. Full 3669-line reader authenticated. No peer results, scores, existing tags, external sources, environment or credentials read.",
+  "scope": "Protocol isolation; no operating-system sandbox claimed.",
+  "violations": [],
+  "mechanicalNote": "Initial existence check guessed review.json; the authenticator independently verified the actual sole output.json remained absent before authoring release."
+}
