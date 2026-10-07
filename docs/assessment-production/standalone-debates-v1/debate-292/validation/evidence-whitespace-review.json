@@ -1,0 +1,10 @@
+{
+  "status": "preserved-exact-evidence-whitespace",
+  "files": [
+    "publication/contract.md",
+    "publication/rhetorical-tag-review-1/contract.md",
+    "publication/superseded-local-speaker-registration.patch",
+    "validation/early-site-preflight.log"
+  ],
+  "reason": "Hash-pinned contracts contain a terminal blank line; preserved patch and original failing test log contain original trailing whitespace. Narrow per-file whitespace attributes preserve their exact bytes while keeping textual diffs visible. No product source, test assertion, ignore rule or substantive assessment changed."
+}

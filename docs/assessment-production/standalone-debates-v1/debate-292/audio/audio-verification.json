@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "292",
+  "debateId": "thomason-clifton-morality-meaning-god-2020",
+  "videoId": "ycLfV4RVv5U",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-292/inventory/inventory.json",
+    "sha256": "52aab99188152bc049752be93ea30b6ee55b29fb1877283500dbb22814f8ac02",
+    "bytes": 105263
+  },
+  "preFreezeSourceReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-292/inventory/submission-release.json",
+    "sha256": "ec81fe38accdddd54ee4e18805bf478d2d9584f0aea427a184d13273613f8e7c",
+    "bytes": 2192
+  },
+  "costPreflight": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-292/audio/cost-preflight.json",
+    "sha256": "41acbae18b915da41d18abb578aa72bc5d6ee827d670f6704840d1ad31aad2e3",
+    "bytes": 1174
+  },
+  "triggeredMoveIds": [
+    "con-contrary-consequences-divine-command-test"
+  ],
+  "checks": [
+    {
+      "moveId": "con-contrary-consequences-divine-command-test",
+      "status": "completed-attribution-resolved-context-tail-remains-ineligible",
+      "method": "Single OpenAI gpt-4o-transcribe-diarize request on canonical public-video audio clip; controller compared entire speaker-labelled output with frozen captions. No direct human listening claimed.",
+      "clip": {
+        "path": ".assessment-cache/captions/ycLfV4RVv5U/audio-verification.webm",
+        "sha256": "b0afb0ea55eacab8ac821233af400ed44d5d22e87c53a59f4cad3b04af671422",
+        "bytes": 818818
+      },
+      "rawResult": {
+        "path": ".assessment-cache/captions/ycLfV4RVv5U/audio-verification.diarized.json",
+        "sha256": "12e77b1667c4974dc2d802e467a180c858136fc920e694a98ac7e92fb7b4ff7f",
+        "bytes": 5424
+      },
+      "speakerMapping": {
+        "A": "Scott Clifton",
+        "B": "SJ Thomason"
+      },
+      "mappingBasis": "A continues the hypothetical addressed to SJ and resumes its stated purpose; B answers the question and then introduces the independently attributed cross-cultural-evidence response. Sustained turn continuity matches the frozen source.",
+      "alignment": {
+        "requestedCanonicalWindowSeconds": [
+          1880,
+          1932
+        ],
+        "seekPrerollSeconds": 10,
+        "method": "Clip0.628s begins the relationship clause at canonical E0816\u2013E0817; clip35.572\u201339.122s completes the second branch through what I ought to do in E0833. B begins the following answer at clip40.322s; clip55.314s begins B\u2019s I want to dig into that line at E0840\u2013E0841. Approximate alignment uses utterances, not exact caption word timing.",
+        "preciseWordTimestampsUsedForScoring": false
+      },
+      "finding": "Speaker A owns the entire either-or question, including the completion in E0833. The trailing yeah you would probably belongs to B\u2019s following answer. This confirms the frozen ownership boundary; the mixed assent and dependent following words remain context only and are not credited as Thomason\u2019s concession.",
+      "wordUncertainty": "Overlapping particles around clip44.9\u201346.4s remain imperfectly transcribed and are outside the scored question. No uncertain particle or recognition wording becomes credit, penalty or absence inference.",
+      "ownershipResolved": true,
+      "sourceTextModified": false
+    }
+  ],
+  "verificationClips": [
+    {
+      "path": ".assessment-cache/captions/ycLfV4RVv5U/audio-verification.webm",
+      "sha256": "b0afb0ea55eacab8ac821233af400ed44d5d22e87c53a59f4cad3b04af671422",
+      "bytes": 818818,
+      "durationSeconds": 61.9935,
+      "rawResult": {
+        "path": ".assessment-cache/captions/ycLfV4RVv5U/audio-verification.diarized.json",
+        "sha256": "12e77b1667c4974dc2d802e467a180c858136fc920e694a98ac7e92fb7b4ff7f",
+        "bytes": 5424
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "disposition": "The sole mandatory below-high handoff check is completed before adjudication. It confirms Clifton owns the complete selected question; trailing Thomason words remain ineligible context under the frozen inventory. Source and inventory unchanged. No direct-listening claim.",
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0.021115,
+    "maximumPossibleCostUsd": 0.021115,
+    "additionalThisPhaseUsd": 0.021115,
+    "paidRetries": 0,
+    "transportUncertainCalls": 0,
+    "usage": {
+      "input_tokens": 886,
+      "output_tokens": 1890,
+      "total_tokens": 2776,
+      "type": "tokens",
+      "input_token_details": {
+        "audio_tokens": 849,
+        "text_tokens": 37
+      }
+    },
+    "costBasis": "Successful response returned886input/1890output tokens. Verified published$2.50/$10 per million gives$0.021115, within communicated$0.03 allowance. One request; SDK retries disabled."
+  },
+  "audit": {
+    "requiredAttributionChecks": 1,
+    "completedAttributionChecks": 1,
+    "unresolvedAttributionChecks": 0,
+    "sourceTextModified": false,
+    "selectedQuotationOwnershipResolved": true,
+    "directListeningClaimed": false,
+    "automaticSpeakerDiarizationClaimed": true,
+    "unresolvedParticlesExcluded": true
+  }
+}

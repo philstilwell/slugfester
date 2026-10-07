@@ -13923,5 +13923,55 @@ export const debateSummaries = [
         "title": "Suffering and unknown purposes"
       }
     ]
+  },
+  {
+    "id": "thomason-clifton-morality-meaning-god-2020",
+    "number": "292",
+    "title": "SJ Thomason vs Scott Clifton — Morality, Meaning and God",
+    "year": 2020,
+    "label": "Morality and Meaning",
+    "date": "2026-10-07",
+    "duration": "39 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ycLfV4RVv5U",
+    "motion": "Do morality and meaning point to God?",
+    "summary": "Clifton’s careful separation of moral facts, duties, and finite meaning outperformed Thomason’s suggestive but under-supported appeals to transcendence and higher calling.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God grounds morality and higher purpose",
+        "speaker": "SJ Thomason",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Moral facts and meaningful lives do not require God",
+        "speaker": "Scott Clifton",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 70,
+      "con": 85,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Objective moral facts and well-being"
+      },
+      {
+        "title": "Transcendent grounding and categorical duties"
+      },
+      {
+        "title": "Moral motivation and divine command"
+      },
+      {
+        "title": "Cross-cultural agreement and naturalistic explanation"
+      },
+      {
+        "title": "Higher purpose and finite meaning"
+      },
+      {
+        "title": "Christianity, salvation, and eternal life"
+      }
+    ]
   }
 ];

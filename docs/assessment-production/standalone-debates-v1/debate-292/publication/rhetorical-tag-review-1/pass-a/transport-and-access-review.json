@@ -1,0 +1,90 @@
+{
+  "status": "reviewed-transport-deviations-without-semantic-contamination",
+  "debateNumber": "292",
+  "agent": "/root/rhetorical292a",
+  "sessionPath": "/Users/philstilwell/.codex/sessions/2026/10/07/rollout-2026-10-07T00-44-44-01a114ad-9ca0-7ea3-9f38-8416dadf02a4.jsonl",
+  "reviewedCalls": [
+    {
+      "timestamp": "2026-10-07T04:48:25.781Z",
+      "name": "exec",
+      "inputSummary": "Candidate stdin transport; exact content remains in authenticated source session."
+    },
+    {
+      "timestamp": "2026-10-07T04:48:31.266Z",
+      "name": "exec",
+      "inputSummary": "const r=await tools.exec_command({cmd:\"node scripts/standalone-workflow.mjs handoff --help\",workdir:\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",yield_time_ms:10000,max_output_tokens:12000});text(r.output);\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:48:44.738Z",
+      "name": "exec",
+      "inputSummary": "Candidate stdin transport; exact content remains in authenticated source session."
+    },
+    {
+      "timestamp": "2026-10-07T04:48:59.235Z",
+      "name": "exec",
+      "inputSummary": "const r=await tools.exec_command({cmd:\"ps -ax -o pid=,command= | rg 'standalone-workflow\\\\.mjs handoff hold --debate 292'\",\"workdir\":\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",\"yield_time_ms\":10000,\"max_output_tokens\":12000});text(r.output);\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:49:05.410Z",
+      "name": "exec",
+      "inputSummary": "const r=await tools.exec_command({cmd:\"node scripts/standalone-workflow.mjs handoff hold --debate 292 --plan docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/pass-a/execution-plan.json\",workdir:\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",yield_time_ms:1000,max_output_tokens:2000,tty:true,sandbox_permissions:\"require_escalated\",justification:\"Allow the maintained workflow to open its in-memory review holder; this does not create or modify the output file.\"});\nif(r.session_id) store(\"holdSession292a\",r.session_id);\ntext(JSON.stringify({output:r.output,exit_code:r.exi"
+    },
+    {
+      "timestamp": "2026-10-07T04:49:19.201Z",
+      "name": "exec",
+      "inputSummary": "Candidate stdin transport; exact content remains in authenticated source session."
+    },
+    {
+      "timestamp": "2026-10-07T04:49:23.004Z",
+      "name": "exec",
+      "inputSummary": "Candidate stdin transport; exact content remains in authenticated source session."
+    },
+    {
+      "timestamp": "2026-10-07T04:49:33.032Z",
+      "name": "exec",
+      "inputSummary": "Candidate stdin transport; exact content remains in authenticated source session."
+    },
+    {
+      "timestamp": "2026-10-07T04:49:37.760Z",
+      "name": "exec",
+      "inputSummary": "Candidate stdin transport; exact content remains in authenticated source session."
+    },
+    {
+      "timestamp": "2026-10-07T04:49:42.457Z",
+      "name": "exec",
+      "inputSummary": "Candidate stdin transport; exact content remains in authenticated source session."
+    },
+    {
+      "timestamp": "2026-10-07T04:49:46.676Z",
+      "name": "exec",
+      "inputSummary": "Candidate stdin transport; exact content remains in authenticated source session."
+    },
+    {
+      "timestamp": "2026-10-07T04:49:50.439Z",
+      "name": "exec",
+      "inputSummary": "Candidate stdin transport; exact content remains in authenticated source session."
+    },
+    {
+      "timestamp": "2026-10-07T04:51:47.338Z",
+      "name": "exec",
+      "inputSummary": "Candidate stdin transport; exact content remains in authenticated source session."
+    },
+    {
+      "timestamp": "2026-10-07T04:51:54.509Z",
+      "name": "exec",
+      "inputSummary": "const r=await tools.exec_command({cmd:\"node scripts/standalone-workflow.mjs handoff hold --debate 292 --plan docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/pass-a/execution-plan.json\",workdir:\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",yield_time_ms:1000,max_output_tokens:1000,tty:true,sandbox_permissions:\"require_escalated\",justification:\"Allow the maintained workflow to open a new in-memory holder for the controller-authorized seven-leaf correction; this still does not save the output file.\"});if(r.session_id)store(\"holdSession292aRevised\",r.session_id);text(JS"
+    },
+    {
+      "timestamp": "2026-10-07T04:52:02.436Z",
+      "name": "exec",
+      "inputSummary": "Candidate stdin transport; exact content remains in authenticated source session."
+    }
+  ],
+  "observations": [
+    "The generic handoff help and an unsuccessful process query exposed no peer content, scores or tag decisions.",
+    "Two large stdin writes were rejected by automatic tool-input review; smaller chunks transmitted the same unsaved candidate successfully. An abandoned input-only process PID 51812 was inspected and stopped by the controller.",
+    "The first candidate received the preserved source/editorial review and exactly seven authorized leaf changes. The once-saved final candidate has SHA256 fae47990def0517f483bf65ef4c9a3d227e598f3897fb7ab1c19a15bde164432.",
+    "No additional model judgment, saved failed output, peer-content read or score change occurred."
+  ],
+  "violationsAffectingBlindness": []
+}

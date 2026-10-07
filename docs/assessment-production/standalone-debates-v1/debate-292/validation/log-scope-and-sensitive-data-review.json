@@ -1,0 +1,217 @@
+{
+  "status": "passed-exact-log-review",
+  "records": [
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/early-site-preflight-after-measured-review-execution.json",
+      "command": [
+        "npm",
+        "run",
+        "site:preflight"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/early-site-preflight-after-measured-review.log",
+        "sha256": "ea299bc5734675d7642e2dbd51ba894a24141bb254b9685ebb21f2716b2a2e8c",
+        "bytes": 61616
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/early-site-preflight-execution.json",
+      "command": [
+        "npm",
+        "run",
+        "site:preflight"
+      ],
+      "exitCode": 1,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/early-site-preflight.log",
+        "sha256": "a8d597920f6b8ed50fcab465418055ee8f6a7494872c3ad7fad6799288b009da",
+        "bytes": 48750
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/full-repository-check-after-ledger-registration-execution.json",
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/full-repository-check-after-ledger-registration.log",
+        "sha256": "8d8494a9d43f8a857f6cf30e28a5fc63c2dfacb6f5600a9990a64ae6c39472cd",
+        "bytes": 67760
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/full-repository-check-execution.json",
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exitCode": 1,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/full-repository-check.log",
+        "sha256": "7b89b2cea346c9838a749f68d4af41adbbb9115473fb916d20fdd5ec112a8faf",
+        "bytes": 6221
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/local-browser-replay-execution.json",
+      "command": [
+        "/Users/philstilwell/.codex/skills/playwright/scripts/playwright_cli.sh",
+        "--session",
+        "debate292",
+        "run-code",
+        "--filename",
+        ".assessment-cache/debate-292-local-replay.js"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/local-browser-replay.log",
+        "sha256": "9de527c86566470f57a9fc097ae727b2a7aedeb0d1626ed6fe2c30ba4660fe56",
+        "bytes": 93250
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/performance-measurements-execution.json",
+      "command": [
+        "/Users/philstilwell/.codex/skills/playwright/scripts/playwright_cli.sh",
+        "--session",
+        "debate292",
+        "run-code",
+        "--filename",
+        ".assessment-cache/debate-292-performance-review.js"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/performance-measurements.log",
+        "sha256": "c3c3b301b376013b0a80f99eee316033ac600907eb5ab8672741976ca39957a0",
+        "bytes": 4094
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/pre-adapter-production-validation-execution.json",
+      "command": [
+        "node",
+        "scripts/validate-debates.mjs"
+      ],
+      "exitCode": 1,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/pre-adapter-production-validation.log",
+        "sha256": "996f0f3782892e575032341ad3872dd5d2eb6fe2dc9e24d99b97285181488d50",
+        "bytes": 866
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/seo-generation-execution.json",
+      "command": [
+        "npm",
+        "run",
+        "seo"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/seo-generation.log",
+        "sha256": "8164f9df728187f9f42509310afe0bb8a38435b20d5df727f8f0ca0e429c988a",
+        "bytes": 88
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/target-full-source-audit-execution.json",
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-v1.mjs",
+        "--audit",
+        "--debate",
+        "292"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/target-full-source-audit.log",
+        "sha256": "9b12cffd76cd83e9650698a27e8b71829bde77d2cd395c309ebb40241283cb4a",
+        "bytes": 254
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/target-repository-audit-after-freeze-execution.json",
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-v1.mjs",
+        "--audit",
+        "--debate",
+        "292",
+        "--repository-only"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/target-repository-audit-after-freeze.log",
+        "sha256": "d1c48b3fe7b73cb35050c58c2d0c78853afe3969e092bf6fb2660c7af8fc5acc",
+        "bytes": 241
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/target-repository-audit-execution.json",
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-v1.mjs",
+        "--audit",
+        "--debate",
+        "292",
+        "--repository-only"
+      ],
+      "exitCode": 1,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/target-repository-audit.log",
+        "sha256": "979ce4ce2098fba0c582c0e765471c89e297611d3fb61a4afb43295e34e67ce8",
+        "bytes": 1237
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/visual-supplement-execution.json",
+      "command": [
+        "/Users/philstilwell/.codex/skills/playwright/scripts/playwright_cli.sh",
+        "--session",
+        "debate292",
+        "run-code",
+        "--filename",
+        ".assessment-cache/debate-292-visual-supplement.js"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/visual-supplement.log",
+        "sha256": "7f4c0ff1b87cd0265cda616d36b209eb568a304d8631cda8674c6738436637f9",
+        "bytes": 5367
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    },
+    {
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-292/validation/workflow-focused-tests-execution.json",
+      "command": [
+        "npm",
+        "run",
+        "assessment:standalone:workflow:test"
+      ],
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/workflow-focused-tests.log",
+        "sha256": "e4d45836fbaaf8e35abd37ee08d4a564f5d871955a1b3c7e0d2df940c58956a2",
+        "bytes": 3530
+      },
+      "review": "Expected local validation or browser result; scanned for credentials and signed media URLs; no matches."
+    }
+  ],
+  "forbiddenMatches": []
+}

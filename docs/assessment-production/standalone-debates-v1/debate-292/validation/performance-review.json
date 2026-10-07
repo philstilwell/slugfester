@@ -1,0 +1,248 @@
+{
+  "status": "passed-measured-limit-preserving-review",
+  "debateNumber": "292",
+  "publishedDebates": 292,
+  "measurementMethod": "fresh-isolated-browser-context-per-route",
+  "testBefore": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-292/validation/performance-test-before.mjs.txt",
+    "sha256": "bb345041e4e398ed6deb0ff4b8774b08ecaff1ebfde806efbbea0a4c285eff1a",
+    "bytes": 14288
+  },
+  "testAfter": {
+    "path": "tests/site-quality/site-quality.spec.mjs",
+    "sha256": "d7a13ef403320299f056eb8c377d7cd8ea255ad3441d22b098562a04c3438834",
+    "bytes": 14288
+  },
+  "before": {
+    "baselineDebates": 281,
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10,
+    "baseDataBytes": [
+      615000,
+      665000,
+      700000,
+      705000
+    ]
+  },
+  "after": {
+    "baselineDebates": 292,
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10,
+    "baseDataBytes": [
+      670000,
+      720000,
+      755000,
+      760000
+    ]
+  },
+  "effectiveLimitsBefore": [
+    670000,
+    720000,
+    755000,
+    760000
+  ],
+  "effectiveLimitsAfter": [
+    670000,
+    720000,
+    755000,
+    760000
+  ],
+  "proof": "For every N >= 292, old base + 5000*(N-281) equals (old base + 55000) + 5000*(N-292). Current and future effective byte ceilings are unchanged. All four routes measured before refreshing the review count.",
+  "measurements": [
+    {
+      "route": "/",
+      "resources": [
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 14036
+        },
+        {
+          "name": "/src/data/critique-format.js",
+          "bytes": 852
+        },
+        {
+          "name": "/src/data/topic-preview.js",
+          "bytes": 737
+        },
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 10454
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 26360
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 456881
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        }
+      ],
+      "loadedBytes": 529792,
+      "limitBytes": 670000,
+      "headroomBytes": 140208
+    },
+    {
+      "route": "/rankings/",
+      "resources": [
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 14036
+        },
+        {
+          "name": "/src/data/critique-format.js",
+          "bytes": 852
+        },
+        {
+          "name": "/src/data/topic-preview.js",
+          "bytes": 737
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 10454
+        },
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 456881
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 26360
+        },
+        {
+          "name": "/src/data/debate-analytics.js",
+          "bytes": 61480
+        }
+      ],
+      "loadedBytes": 591272,
+      "limitBytes": 720000,
+      "headroomBytes": 128728
+    },
+    {
+      "route": "/debate/craig-oconnor-god-debate-2026/",
+      "resources": [
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 14036
+        },
+        {
+          "name": "/src/data/critique-format.js",
+          "bytes": 852
+        },
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 10454
+        },
+        {
+          "name": "/src/data/topic-preview.js",
+          "bytes": 737
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 26360
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 456881
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/debate-analytics.js",
+          "bytes": 61480
+        },
+        {
+          "name": "/src/data/debate-details/craig-oconnor-god-debate-2026.js",
+          "bytes": 35843
+        }
+      ],
+      "loadedBytes": 627115,
+      "limitBytes": 755000,
+      "headroomBytes": 127885
+    },
+    {
+      "route": "/reference/fallacy/equivocation/",
+      "resources": [
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 14036
+        },
+        {
+          "name": "/src/data/critique-format.js",
+          "bytes": 852
+        },
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 10454
+        },
+        {
+          "name": "/src/data/topic-preview.js",
+          "bytes": 737
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 456881
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 26360
+        },
+        {
+          "name": "/src/data/reference-appearances/fallacy-equivocation.js",
+          "bytes": 134834
+        }
+      ],
+      "loadedBytes": 664626,
+      "limitBytes": 760000,
+      "headroomBytes": 95374
+    }
+  ],
+  "temporaryContextsClosed": true,
+  "scoringMechanismChanged": false,
+  "directIncrementalCostUsd": 0
+}

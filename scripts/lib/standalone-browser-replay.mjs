@@ -58,7 +58,7 @@ export async function replayPublication(page, cfg) {
     const href=await next.getAttribute('href');ok(href?.startsWith('/search/?'),'search pagination route');await go(href);
   }
   await page.locator('a[href="'+route+'"]').first().waitFor();await shot('search');routes.push('/search/');
-  await go('/rankings/?'+new URLSearchParams({'compare-a':d.sides.pro.speaker,'compare-b':d.sides.con.speaker}));for(const person of cfg.people)await page.locator('a[href="/interlocutor/'+person.slug+'/"]').first().waitFor();await shot('rankings');routes.push('/rankings/');
+  await go('/rankings/?'+new URLSearchParams({'compare-a':cfg.people[0].name,'compare-b':cfg.people[1].name}));for(const person of cfg.people)await page.locator('a[href="/interlocutor/'+person.slug+'/"]').first().waitFor();await shot('rankings');routes.push('/rankings/');
   const sitemap=await page.request.get(cfg.origin+'/sitemap.xml');same(sitemap.status(),200,'sitemap status');ok((await sitemap.text()).includes('https://slugfester.com'+route),'canonical sitemap');
   same(errors,[],'browser runtime errors');same(resources,[],'failed resources');
   return {status:'passed-exact-publication-browser-replay',debateNumber:d.number,debateId:d.id,origin:cfg.origin,observations,routes,sitemap:true,errors,resources,screenshots};

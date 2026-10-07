@@ -1,0 +1,224 @@
+{
+  "status": "reviewed-no-semantic-contamination-or-candidate-change",
+  "debateNumber": "292",
+  "candidateSha256": "7cc627a8b0124c2bde8247661873b2850fea4b1a22a8a6cc2a4522c81a159918",
+  "checkerPassedBeforeExtraStatusReadAt": "2026-10-07T04:49:30.274Z",
+  "extraStatusReadAt": "2026-10-07T04:49:54.774Z",
+  "review": "Controller read the complete status output: it exposed only stage existence, hashes, byte counts, process paths, timings and command names, with no score values, review prose, label counts, candidate labels, decisions or explanations. The independently authored candidate already passed the checker with its final identical SHA before this read. Generic skill and runner help contained process instructions only. Incorrect CLI forms, oversized terminal-input rejections, an aborted partial input and empty non-TTY input occurred before any holder/save. These are retained transport deviations, not fresh model judgments or changed candidates; the sole successful holder revalidated identical approved-input bytes. No permission denial was bypassed: the documented smaller-input route succeeded.",
+  "newModelContexts": 0,
+  "candidateSemanticRetries": 0,
+  "savedFailedOutputs": 0,
+  "workflowProcessCalls": [
+    {
+      "timestamp": "2026-10-07T04:49:28.609Z",
+      "callOrdinal": 29,
+      "input": "const bytes = load(\"rhetorical292b_candidate\");\nconst started = await tools.exec_command({\n  cmd:\"/opt/homebrew/Cellar/node/25.9.0_3/bin/node docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/check-review.mjs --debate 292 --packet docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/pass-b/packet.json\",\n  workdir:\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",\n  yield_time_ms:1000,\n  max_output_tokens:2000,\n  tty:true\n});\nif (!started.session_id) { text(JSON.stringify(started)); exit(); }\nawait tools.write_stdin({session_id:started.session_id,chars:bytes,yield_time_ms:250,max_output_tokens:1000});\nconst done = await tools.write_stdin({session_id:started.session_id,chars:\"\\u0004\",yield_time_ms:10000,max_output_tokens:5000});\ntext(JSON.stringify({initial:started.output,final:done.output,exit_code:done.exit_code,session_id:started.session_id}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:49:41.501Z",
+      "callOrdinal": 30,
+      "input": "const started = await tools.exec_command({\n  cmd:\"node scripts/standalone-workflow.mjs handoff --debate 292 --plan docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/pass-b/execution-plan.json\",\n  workdir:\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",\n  yield_time_ms:1000,\n  max_output_tokens:2000,\n  tty:true,\n  sandbox_permissions:\"require_escalated\",\n  justification:\"Allow the approved SLUGFESTER workflow to place the exact checker-passed, unsaved review bytes into its temporary controller hold?\"\n});\nif (!started.session_id) { text(JSON.stringify(started)); exit(); }\nstore(\"rhetorical292b_handoff_session\",started.session_id);\ntext(JSON.stringify({session_id:started.session_id,output:started.output}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:49:54.774Z",
+      "callOrdinal": 31,
+      "input": "const r = await tools.exec_command({cmd:\"node scripts/standalone-workflow.mjs status --debate 292 --plan docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/pass-b/execution-plan.json\",\"workdir\":\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",\"yield_time_ms\":10000,\"max_output_tokens\":5000}); text(r.output)\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:50:04.080Z",
+      "callOrdinal": 32,
+      "input": "const started = await tools.exec_command({\n  cmd:\"node scripts/standalone-workflow.mjs release --debate 292 --plan docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/pass-b/execution-plan.json\",\n  workdir:\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",\n  yield_time_ms:1000,\n  max_output_tokens:2000,\n  tty:true,\n  sandbox_permissions:\"require_escalated\",\n  justification:\"Allow the approved SLUGFESTER workflow to receive the exact checker-passed review bytes and keep them in its temporary controller hold?\"\n});\nif (!started.session_id) { text(JSON.stringify(started)); exit(); }\nstore(\"rhetorical292b_handoff_session\",started.session_id);\ntext(JSON.stringify({session_id:started.session_id,output:started.output}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:50:17.166Z",
+      "callOrdinal": 33,
+      "input": "const r = await tools.exec_command({cmd:\"node scripts/standalone-workflow.mjs help\",\"workdir\":\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",\"yield_time_ms\":10000,\"max_output_tokens\":5000}); text(r.output)\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:50:25.232Z",
+      "callOrdinal": 34,
+      "input": "const bytes = load(\"rhetorical292b_candidate\");\nconst started = await tools.exec_command({\n  cmd:\"node scripts/standalone-workflow.mjs handoff hold --debate 292 --plan docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/pass-b/execution-plan.json\",\n  workdir:\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",\n  yield_time_ms:1000,\n  max_output_tokens:2000,\n  tty:true,\n  sandbox_permissions:\"require_escalated\",\n  justification:\"Allow the approved SLUGFESTER workflow to validate and hold the exact checker-passed review bytes in temporary memory for controller inspection?\"\n});\nif (!started.session_id) { text(JSON.stringify(started)); exit(); }\nawait tools.write_stdin({session_id:started.session_id,chars:bytes,yield_time_ms:250,max_output_tokens:1000});\nconst held = await tools.write_stdin({session_id:started.session_id,chars:\"\\u0004\",yield_time_ms:1000,max_output_tokens:5000});\nstore(\"rhetorical292b_handoff_session\",started.session_id);\ntext(JSON.stringify({initial:started.output,held:held.output,exit_code:held.exit_code,session_id:started.session_id}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:50:44.026Z",
+      "callOrdinal": 35,
+      "input": "const started = await tools.exec_command({\n  cmd:\"node scripts/standalone-workflow.mjs handoff hold --debate 292 --plan docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/pass-b/execution-plan.json\",\n  workdir:\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",\n  yield_time_ms:1000,\n  max_output_tokens:1000,\n  tty:true,\n  sandbox_permissions:\"require_escalated\",\n  justification:\"Allow the approved SLUGFESTER workflow to validate and hold the checker-passed review in temporary memory for controller inspection?\"\n});\nif (started.session_id) store(\"rhetorical292b_handoff_session\",started.session_id);\ntext(JSON.stringify({session_id:started.session_id,output:started.output,exit_code:started.exit_code}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:51:01.854Z",
+      "callOrdinal": 36,
+      "input": "const bytes = load(\"rhetorical292b_candidate\");\nconst sid = load(\"rhetorical292b_handoff_session\");\nconst sent = await tools.write_stdin({session_id:sid,chars:bytes,yield_time_ms:250,max_output_tokens:1000});\ntext(JSON.stringify({session_id:sid,output:sent.output,exit_code:sent.exit_code}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:51:20.552Z",
+      "callOrdinal": 38,
+      "input": "const sid=load(\"rhetorical292b_handoff_session\");\nconst stopped=await tools.write_stdin({session_id:sid,chars:\"\\u0003\",yield_time_ms:1000,max_output_tokens:1000});\ntext(JSON.stringify(stopped));\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:51:29.445Z",
+      "callOrdinal": 39,
+      "input": "const started = await tools.exec_command({\n  cmd:\"node scripts/standalone-workflow.mjs handoff hold --debate 292 --plan docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/pass-b/execution-plan.json\",\n  workdir:\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",\n  yield_time_ms:1000,\n  max_output_tokens:1000,\n  tty:false,\n  sandbox_permissions:\"require_escalated\",\n  justification:\"Allow the approved SLUGFESTER workflow to validate and hold the checker-passed review in temporary memory for controller inspection?\"\n});\nif (started.session_id) store(\"rhetorical292b_handoff_session\",started.session_id);\ntext(JSON.stringify({session_id:started.session_id,output:started.output,exit_code:started.exit_code}));\n"
+    },
+    {
+      "timestamp": "2026-10-07T04:51:40.781Z",
+      "callOrdinal": 40,
+      "input": "const started = await tools.exec_command({\n  cmd:\"node scripts/standalone-workflow.mjs handoff hold --debate 292 --plan docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/pass-b/execution-plan.json\",\n  workdir:\"/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com\",\n  yield_time_ms:1000,max_output_tokens:100,tty:true,\n  sandbox_permissions:\"require_escalated\",\n  justification:\"Allow the approved SLUGFESTER workflow to validate and hold the checker-passed review in temporary memory for controller inspection?\"\n});\nif (started.session_id) {store(\"rhetorical292b_handoff_session\",started.session_id);store(\"rhetorical292b_handoff_offset\",0);}\ntext(JSON.stringify({session_id:started.session_id,output:started.output}));\n"
+    }
+  ],
+  "workflowProcessOutputs": [
+    {
+      "timestamp": "2026-10-07T04:49:30.274Z",
+      "callOrdinal": 29,
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 1.7 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"initial\":\"\",\"final\":\"^D\\b\\b{\\\"status\\\":\\\"passed-unsaved-review\\\",\\\"sha256\\\":\\\"7cc627a8b0124c2bde8247661873b2850fea4b1a22a8a6cc2a4522c81a159918\\\",\\\"bytes\\\":21784,\\\"moves\\\":31,\\\"candidates\\\":22,\\\"accepted\\\":3}\\r\\n\",\"exit_code\":0,\"session_id\":47728}"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-07T04:49:49.526Z",
+      "callOrdinal": 30,
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 8.0 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"9b6acb\",\"wall_time_seconds\":0.00000775,\"exit_code\":1,\"original_token_count\":26,\"output\":\"The expression evaluated to a falsy value:\\r\\n\\r\\n  assert(['status','read','release'].includes(action))\\r\\n\\r\\n\"}"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-07T04:49:54.960Z",
+      "callOrdinal": 31,
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.2 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\n  \"debateNumber\": \"292\",\n  \"debateId\": \"thomason-clifton-morality-meaning-god-2020\",\n  \"registryStatus\": \"authorized-in-progress\",\n  \"stages\": [\n    {\n      \"role\": \"inventory\",\n      \"outputPresent\": true,\n      \"evidenceMustStillBeAuthenticated\": true\n    },\n    {\n      \"role\": \"judgments/pass-a\",\n      \"outputPresent\": true,\n      \"evidenceMustStillBeAuthenticated\": true\n    },\n    {\n      \"role\": \"judgments/pass-b\",\n      \"outputPresent\": true,\n      \"evidenceMustStillBeAuthenticated\": true\n    },\n    {\n      \"role\": \"adjudication\",\n      \"outputPresent\": true,\n      \"evidenceMustStillBeAuthenticated\": true\n    },\n    {\n      \"role\": \"publication\",\n      \"outputPresent\": true,\n      \"evidenceMustStillBeAuthenticated\": true\n    },\n    {\n      \"role\": \"publication/rhetorical-tag-review-1/pass-a\",\n      \"outputPresent\": false,\n      \"evidenceMustStillBeAuthenticated\": true\n    },\n    {\n      \"role\": \"publication/rhetorical-tag-review-1/pass-b\",\n      \"outputPresent\": false,\n      \"evidenceMustStillBeAuthenticated\": true\n    },\n    {\n      \"role\": \"publication/rhetorical-tag-review-1/adjudication\",\n      \"outputPresent\": false,\n      \"evidenceMustStillBeAuthenticated\": true\n    }\n  ],\n  \"handoffs\": [\n    {\n      \"metadata\": \".assessment-cache/workflow-handoff/661e056a9b008861f8c684d2256c69ec.json\",\n      \"status\": \"submitted-once\",\n      \"createdAt\": \"2026-10-07T04:43:06.403Z\",\n      \"pid\": 50234,\n      \"plan\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/publication/execution-plan.json\",\n        \"sha256\": \"fd1b3d882b6ffe374e45e167b79c3bbb3f81d9f9fc754788ffb81784cb3950a1\",\n        \"bytes\": 8894\n      },\n      \"candidateSha256\": \"bc8ee1503c6c9a5fa1f92c2c61b62881f891f6f879c3d40a25c47a86f941bab4\",\n      \"candidateBytes\": 46027,\n      \"socket\": \"/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-661e056a9b008861f8c684d2256c69ec.sock\",\n      \"checkerExitCode\": 0,\n      \"checkerOutputSha256\": \"272e19fcbf6693f1b9b09e016e7e1a27117dcba4c02462ad67634676e0427517\",\n      \"completedAt\": \"2026-10-07T04:44:02.436Z\",\n      \"output\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/publication/first-submission-parts.json\",\n        \"sha256\": \"bc8ee1503c6c9a5fa1f92c2c61b62881f891f6f879c3d40a25c47a86f941bab4\",\n        \"bytes\": 46027\n      },\n      \"approval\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/publication/submission-release.json\",\n        \"sha256\": \"c3ffe2a11f72d5cc4831e0135141174ecb31fb0a0334bf8e510514cb49c462ee\",\n        \"bytes\": 1994\n      },\n      \"automaticRetry\": false\n    },\n    {\n      \"metadata\": \".assessment-cache/workflow-handoff/7545595b31752baab3bddb485145e527.json\",\n      \"status\": \"submitted-once\",\n      \"createdAt\": \"2026-10-07T04:16:14.517Z\",\n      \"pid\": 41085,\n      \"plan\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/judgments/pass-a/execution-plan.json\",\n        \"sha256\": \"011b3d837ad31e4a89b6f29f5c02d3326adde58a05bc3bf486158e98092db7cf\",\n        \"bytes\": 8140\n      },\n      \"candidateSha256\": \"643c33cc7503768e6902de1c8e39f6fdf5473771e4531c7209ae3be143670193\",\n      \"candidateBytes\": 39180,\n      \"socket\": \"/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-7545595b31752baab3bddb485145e527.sock\",\n      \"checkerExitCode\": 0,\n      \"checkerOutputSha256\": \"f8cac78cbe036a3899f332ccfc3b1871829538908e9e81cb05d6b79d513fb782\",\n      \"completedAt\": \"2026-10-07T04:17:06.667Z\",\n      \"output\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/judgments/pass-a/output.json\",\n        \"sha256\": \"643c33cc7503768e6902de1c8e39f6fdf5473771e4531c7209ae3be143670193\",\n        \"bytes\": 39180\n      },\n      \"approval\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/judgments/pass-a/submission-release.json\",\n        \"sha256\": \"523763524bb62e6f0a2b7a49febf1d2fb47e7b78adc4c53fb4355ba29cc62f7d\",\n        \"bytes\": 1714\n      },\n      \"automaticRetry\": false\n    },\n    {\n      \"metadata\": \".assessment-cache/workflow-handoff/bd19952b32034083d7e885a39b879639.json\",\n      \"status\": \"submitted-once\",\n      \"createdAt\": \"2026-10-07T04:03:54.170Z\",\n      \"pid\": 39237,\n      \"plan\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/inventory/execution-plan.json\",\n        \"sha256\": \"3219564b1c8e8c76073b3c8b35100736fb0603f019df1fa798e7756af3a0ad7c\",\n        \"bytes\": 7495\n      },\n      \"candidateSha256\": \"2693110c7786fd8765c21890f8ce38a0816d3c27ca2553fb6265a91b1067b46c\",\n      \"candidateBytes\": 57618,\n      \"socket\": \"/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-bd19952b32034083d7e885a39b879639.sock\",\n      \"checkerExitCode\": 0,\n      \"checkerOutputSha256\": \"0fbf07b4ebf1ee264d9d20aa42c208c243b30fc90fbb2d713c909ec0cc547228\",\n      \"completedAt\": \"2026-10-07T04:04:49.100Z\",\n      \"output\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/inventory/draft-parts.json\",\n        \"sha256\": \"2693110c7786fd8765c21890f8ce38a0816d3c27ca2553fb6265a91b1067b46c\",\n        \"bytes\": 57618\n      },\n      \"approval\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/inventory/submission-release.json\",\n        \"sha256\": \"ec81fe38accdddd54ee4e18805bf478d2d9584f0aea427a184d13273613f8e7c\",\n        \"bytes\": 2192\n      },\n      \"automaticRetry\": false\n    },\n    {\n      \"metadata\": \".assessment-cache/workflow-handoff/c8811849ace440ec744b87f20f4a4d0b.json\",\n      \"status\": \"submitted-once\",\n      \"createdAt\": \"2026-10-07T04:14:15.349Z\",\n      \"pid\": 40762,\n      \"plan\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/judgments/pass-b/execution-plan.json\",\n        \"sha256\": \"acf6bc2d1020f501372285ce315a5623e2136f6a7c3950f69abaa11d4799b674\",\n        \"bytes\": 8140\n      },\n      \"candidateSha256\": \"e1f216383ed36ad11db938d53c1a3e6a33f4ff3763a181042ca754869cc156c2\",\n      \"candidateBytes\": 42044,\n      \"socket\": \"/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-c8811849ace440ec744b87f20f4a4d0b.sock\",\n      \"checkerExitCode\": 0,\n      \"checkerOutputSha256\": \"b0fef81cc772bb78a643d1303263692945ca610fdf10aff0d2f016521a81bdaf\",\n      \"completedAt\": \"2026-10-07T04:15:23.299Z\",\n      \"output\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/judgments/pass-b/output.json\",\n        \"sha256\": \"e1f216383ed36ad11db938d53c1a3e6a33f4ff3763a181042ca754869cc156c2\",\n        \"bytes\": 42044\n      },\n      \"approval\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/judgments/pass-b/submission-release.json\",\n        \"sha256\": \"7385708a4a3a60064514169ceabe7979a344d721dbe12a9d21da1f0ba5ee3946\",\n        \"bytes\": 1661\n      },\n      \"automaticRetry\": false\n    },\n    {\n      \"metadata\": \".assessment-cache/workflow-handoff/e304d065060b93669635de4c118d0fb7.json\",\n      \"status\": \"submitted-once\",\n      \"createdAt\": \"2026-10-07T04:22:01.563Z\",\n      \"pid\": 41768,\n      \"plan\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/adjudication/execution-plan.json\",\n        \"sha256\": \"3f7c1944dde4f388d35aaf7eb39d10d2e8275db87ebdc69aaa12d7d6e104a2cd\",\n        \"bytes\": 8345\n      },\n      \"candidateSha256\": \"a585e557f74adbb9de7ca140af381bc4692185d67c330e2374d17383d1871d57\",\n      \"candidateBytes\": 2773,\n      \"socket\": \"/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-e304d065060b93669635de4c118d0fb7.sock\",\n      \"checkerExitCode\": 0,\n      \"checkerOutputSha256\": \"8886d0de3eead3fe39adab77e20078de5ee2eb506ae54d8ee098469b839f0f7e\",\n      \"completedAt\": \"2026-10-07T04:22:37.338Z\",\n      \"output\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/adjudication/output.json\",\n        \"sha256\": \"a585e557f74adbb9de7ca140af381bc4692185d67c330e2374d17383d1871d57\",\n        \"bytes\": 2773\n      },\n      \"approval\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/adjudication/submission-release.json\",\n        \"sha256\": \"27caa4a9e6a7afec55971708a5e81a07e16d0c83ccee561571e215261627e777\",\n        \"bytes\": 1176\n      },\n      \"automaticRetry\": false\n    },\n    {\n      \"metadata\": \".assessment-cache/workflow-handoff/f45d2645b0452dfe00a46280b46391a4.json\",\n      \"status\": \"held-in-memory\",\n      \"createdAt\": \"2026-10-07T04:49:52.555Z\",\n      \"pid\": 51860,\n      \"plan\": {\n        \"path\": \"docs/assessment-production/standalone-debates-v1/debate-292/publication/rhetorical-tag-review-1/pass-a/execution-plan.json\",\n        \"sha256\": \"dcefc57e47d36b29ae51263ce6bab0edef17e8489b762710c4bff6bec7c0e1cf\",\n        \"bytes\": 10685\n      },\n      \"candidateSha256\": \"ca51e36cbd2a63b405ec035086611e2edcc120123e04ee80a5920d3b0b78a2d1\",\n      \"candidateBytes\": 18021,\n      \"socket\": \"/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/sf-f45d2645b0452dfe00a46280b46391a4.sock\",\n      \"checkerExitCode\": 0,\n      \"checkerOutputSha256\": \"06d58136dcd6372dc6d7cc477bc8cf306f552d6cda65fb43b6ceb624cb1c3c09\",\n      \"automaticRetry\": false\n    }\n  ],\n  \"deterministicAttempts\": [\n    {\n      \"stage\": \"assemble-ledger\",\n      \"command\": [\n        \"/opt/homebrew/Cellar/node/25.9.0_3/bin/node\",\n        \"scripts/audit-assessment-production-standalone-v1.mjs\",\n        \"--assemble-ledger\",\n        \"--debate\",\n        \"292\"\n      ],\n      \"startedAt\": \"2026-10-07T04:23:17.418Z\",\n      \"automaticRetry\": false\n    },\n    {\n      \"stage\": \"disagreements\",\n      \"command\": [\n        \"/opt/homebrew/Cellar/node/25.9.0_3/bin/node\",\n        \"scripts/audit-assessment-production-standalone-v1.mjs\",\n        \"--write-disagreements\",\n        \"--debate\",\n        \"292\"\n      ],\n      \"startedAt\": \"2026-10-07T04:17:53.097Z\",\n      \"automaticRetry\": false\n    },\n    {\n      \"stage\": \"judgment-packet\",\n      \"command\": [\n        \"/opt/homebrew/Cellar/node/25.9.0_3/bin/node\",\n        \"scripts/audit-assessment-production-standalone-v1.mjs\",\n        \"--write-judgment-packet\",\n        \"--debate\",\n        \"292\"\n      ],\n      \"startedAt\": \"2026-10-07T04:05:20.765Z\",\n      \"automaticRetry\": false\n    },\n    {\n      \"stage\": \"score-once\",\n      \"command\": [\n        \"/opt/homebrew/Cellar/node/25.9.0_3/bin/node\",\n        \"scripts/audit-assessment-production-standalone-v1.mjs\",\n        \"--score-once\",\n        \"--debate\",\n        \"292\"\n      ],\n      \"startedAt\": \"2026-10-07T04:23:23.183Z\",\n      \"automaticRetry\": false\n    }\n  ],\n  \"scoreAlreadyPresent\": true,\n  \"timing\": {\n    \"trackedWallMs\": 3693261,\n    \"summedIntervalMs\": 4997024,\n    \"summedWorkMs\": 4997024,\n    \"waitingWallMs\": 0,\n    \"byStageAndKind\": {\n      \"adjudication/active\": {\n        \"wallMs\": 291359,\n        \"summedMs\": 291359\n      },\n      \"assemble-ledger/active\": {\n        \"wallMs\": 148,\n        \"summedMs\": 148\n      },\n      \"disagreements/active\": {\n        \"wallMs\": 159,\n        \"summedMs\": 159\n      },\n      \"inventory/active\": {\n        \"wallMs\": 676373,\n        \"summedMs\": 676373\n      },\n      \"inventory/repair\": {\n        \"wallMs\": 609756,\n        \"summedMs\": 609756\n      },\n      \"judgment-packet/active\": {\n        \"wallMs\": 151,\n        \"summedMs\": 151\n      },\n      \"judgments/active\": {\n        \"wallMs\": 718566,\n        \"summedMs\": 1324161\n      },\n      \"judgments/repair\": {\n        \"wallMs\": 148654,\n        \"summedMs\": 148654\n      },\n      \"publication/active\": {\n        \"wallMs\": 1105233,\n        \"summedMs\": 1105233\n      },\n      \"publication/repair\": {\n        \"wallMs\": 258220,\n        \"summedMs\": 258220\n      },\n      \"rhetorical/active\": {\n        \"wallMs\": 291374,\n        \"summedMs\": 582668\n      },\n      \"score-once/active\": {\n        \"wallMs\": 142,\n        \"summedMs\": 142\n      }\n    },\n    \"openIntervals\": [\n      \"rhetorical-a-292\",\n      \"rhetorical-b-292\"\n    ],\n    \"untrackedTimeNotAttributed\": true\n  }\n}\n"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-07T04:50:12.824Z",
+      "callOrdinal": 32,
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 8.7 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"8ea169\",\"wall_time_seconds\":0.000007792,\"exit_code\":1,\"original_token_count\":7,\"output\":\"Unknown command; use help\\r\\n\"}"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-07T04:50:17.327Z",
+      "callOrdinal": 33,
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 0.2 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "Usage: node scripts/standalone-workflow.mjs COMMAND --debate NNN\n  status                              Show existing phases and timing; never retry\n  prepare --phase PHASE [--dry-run]    Freeze lossless role packets and isolated plans\n  read --plan PATH [--start 1 --count 120]  Read bounded, numbered input lines\n  stage --stage NAME                  Run an existing deterministic repository stage once\n  time --stage NAME --kind active|wait|repair --event start|stop --id ID\n  authenticate --plan PATH --session PATH --agent AGENT --stage reading|complete --output PATH\n  mechanical --step NAME [--check-only]  Reuse maintained inventory/publication/tag tools\n  handoff hold --plan PATH            Read candidate JSON from stdin; validate and hold in RAM\n  handoff read --plan PATH [--start 0 --count 16000]\n  handoff status --plan PATH\n  handoff release --plan PATH --approval PATH --sha256 HASH\n  graph                               Compare all published section scores with generated analytics\n  browser --origin URL --output PATH [--prefix NAME]  Prepare the same full local/live replay\n\nprepare phases: inventory, primary, adjudication, publication, rhetorical, rhetorical-adjudication\nstage names: judgment-packet, disagreements, assemble-ledger, score-once, build-adapter, audit\nNo inference, paid services, automatic retries, score overrides, or Git publication occurs here.\n"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-07T04:50:34.071Z",
+      "callOrdinal": 34,
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script failed\nWall time 8.8 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "Script error:\nwrite_stdin rejected: terminal input and permission details are too large to review safely; use a smaller input or start a new terminal with fewer grants"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-07T04:50:51.961Z",
+      "callOrdinal": 35,
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 7.9 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"session_id\":5624,\"output\":\"\"}"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-07T04:51:01.932Z",
+      "callOrdinal": 36,
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script failed\nWall time 0.0 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "Script error:\nwrite_stdin rejected: terminal input and permission details are too large to review safely; use a smaller input or start a new terminal with fewer grants"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-07T04:51:24.208Z",
+      "callOrdinal": 38,
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 3.6 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"chunk_id\":\"5993d7\",\"wall_time_seconds\":0.000023416,\"exit_code\":1,\"original_token_count\":1,\"output\":\"^C\"}"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-07T04:51:32.191Z",
+      "callOrdinal": 39,
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 2.7 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"output\":\"Candidate must be nonempty and at most 8 MiB\\n\",\"exit_code\":1}"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-07T04:51:45.895Z",
+      "callOrdinal": 40,
+      "output": [
+        {
+          "type": "input_text",
+          "text": "Script completed\nWall time 5.1 seconds\nOutput:\n"
+        },
+        {
+          "type": "input_text",
+          "text": "{\"session_id\":34421,\"output\":\"\"}"
+        }
+      ]
+    }
+  ]
+}
