@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "294",
+  "debateId": "copan-rauser-canaanite-conquest-2022",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-294/inventory/inventory.json",
+      "sha256": "5e86271fb64401f8c225537b1543c6374e978664d50a676136b518fecc06720b",
+      "bytes": 97081
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-294/score-pass/output.json",
+      "sha256": "fe803bf86dca2517d6bf8c408febc8eaf584aac2afee7b71c6f7fa1578c64838",
+      "bytes": 10387
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-294/publication/skeleton.json",
+      "sha256": "c46f13670e2cd04e0b090475fc65d4cb7a73506336d1138410878313c613bcee",
+      "bytes": 8498
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-294/publication/reference-metrics.json",
+      "sha256": "c219bb0ba933c24cf31e16bb58d71cbbcc4e29c879f592dbc6fb6f8bd6df3080",
+      "bytes": 54203
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

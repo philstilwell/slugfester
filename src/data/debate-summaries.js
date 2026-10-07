@@ -14023,5 +14023,52 @@ export const debateSummaries = [
         "title": "Final motion-level synthesis"
       }
     ]
+  },
+  {
+    "id": "copan-rauser-canaanite-conquest-2022",
+    "number": "294",
+    "title": "Paul Copan vs Randal Rauser — The Canaanite Conquest and a God of Love",
+    "year": 2022,
+    "label": "The Canaanite Conquest",
+    "date": "2026-10-07",
+    "duration": "1 hr 21 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=NU4UQtuNBl8",
+    "motion": "Is the Canaanite conquest morally defensible as an act commanded by a loving God?",
+    "summary": "Copan defends a historically grounded, hyperbolic conquest under exceptional divine judgment; Rauser argues that residual civilian targeting and identity destruction remain morally indefensible.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "The conquest can be morally defended",
+        "speaker": "Paul Copan",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The moral defense is inadequate",
+        "speaker": "Randal Rauser",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 82,
+      "con": 85,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Scripture and interpretive method"
+      },
+      {
+        "title": "Historicity and war rhetoric"
+      },
+      {
+        "title": "Civilian harm and moral responsibility"
+      },
+      {
+        "title": "Identity removal, herem, and genocide"
+      },
+      {
+        "title": "Christological alternatives and exceptional judgment"
+      }
+    ]
   }
 ];

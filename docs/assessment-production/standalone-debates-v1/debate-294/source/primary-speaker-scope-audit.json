@@ -1,0 +1,101 @@
+{
+  "enabled": true,
+  "protocolId": "primary-speaker-scope-exception-v1",
+  "primarySpeakers": {
+    "pro": "Paul Copan",
+    "con": "Randal Rauser"
+  },
+  "nonPrimarySpeakers": [
+    {
+      "name": "Justin Brierley",
+      "role": "Moderator with incidental arguments"
+    }
+  ],
+  "maximumHostAdvocacyShare": 0.05,
+  "assessedWindow": {
+    "startMs": 271080,
+    "endMs": 5119620,
+    "durationMs": 4848540
+  },
+  "excludedIntervals": [
+    {
+      "intervalId": "host-analogy-reinforcement",
+      "kind": "host-advocacy",
+      "speaker": "Justin Brierley",
+      "startMs": 3353819,
+      "endMs": 3403800,
+      "durationMs": 49981,
+      "summary": "The host endorses the dismantling-Nazism comparison and adds unnamed commentators on terrible Canaanite practices as reasons for divine intervention. Conservative boundary includes the mixed handoff.",
+      "burdenImpactRationale": "Copan independently advances dismantling harmful religious identity at 52:04–55:53 and love opposing dehumanization at 44:35–45:04. This reinforcement introduces no distinct side or unique burden.",
+      "uniqueLoadBearingArgument": false
+    },
+    {
+      "intervalId": "response-analogy-and-sacrifice",
+      "kind": "dependent-response",
+      "speaker": "Randal Rauser",
+      "startMs": 3399119,
+      "endMs": 3536520,
+      "durationMs": 137401,
+      "summary": "Rauser answers the reinforced analogy, then develops a sacrificial-burning challenge within this host-prompted answer; exclude the entire answer conservatively.",
+      "burdenImpactRationale": "The host-led answer supplies no assessed evidence, credit or penalty. Rauser independently develops the moral problem of civilian killing at 35:22–39:21 and cultural removal at 48:25–50:50.",
+      "uniqueLoadBearingArgument": false
+    },
+    {
+      "intervalId": "response-collateral-and-identity",
+      "kind": "dependent-response",
+      "speaker": "Paul Copan",
+      "startMs": 3533400,
+      "endMs": 3706579,
+      "durationMs": 173179,
+      "summary": "Copan answers the preceding excluded challenge with collateral harm, the citadel claim, and the dismantling of Nazi identity. Exclude this dependent reply through the break handoff.",
+      "burdenImpactRationale": "The dependent reply is unscored. Copan independently develops the citadel case at 39:22–41:17 and identity analogy at 52:04–55:53; his final airplane example is an independently delivered closing claim.",
+      "uniqueLoadBearingArgument": false
+    },
+    {
+      "intervalId": "host-atheist-framing",
+      "kind": "host-advocacy",
+      "speaker": "Justin Brierley",
+      "startMs": 3703079,
+      "endMs": 3731400,
+      "durationMs": 28321,
+      "summary": "The host frames Rauser’s criticism as objections against the Bible that an atheist could also make, before asking how he reconciles the passages with divine love.",
+      "burdenImpactRationale": "Conservatively exclude this argumentative characterization. Rauser independently identifies his Christian inspiration commitments at 12:50–14:01. The host adds no evidential premise or unique motion burden.",
+      "uniqueLoadBearingArgument": false
+    },
+    {
+      "intervalId": "response-collateral-reprise",
+      "kind": "dependent-response",
+      "speaker": "Randal Rauser",
+      "startMs": 4066920,
+      "endMs": 4133460,
+      "durationMs": 66540,
+      "summary": "Rauser explicitly revisits Copan’s excluded collateral-damage answer and argues that everyone in the citadels was targeted. Exclude the whole dependent reprise.",
+      "burdenImpactRationale": "Its immediate target is an excluded reply, so it cannot supply scoring evidence or imply that Copan left it unanswered. Rauser’s independent earlier civilian argument and later closing remain assessable.",
+      "uniqueLoadBearingArgument": false
+    },
+    {
+      "intervalId": "response-intramural-qualification",
+      "kind": "dependent-response",
+      "speaker": "Randal Rauser",
+      "startMs": 4129799,
+      "endMs": 4169339,
+      "durationMs": 39540,
+      "summary": "Rauser explicitly corrects the host’s atheist framing and characterizes his contribution as clarifying the implications of Copan’s interpretation. This directly dependent response is excluded.",
+      "burdenImpactRationale": "Do not use this reply for credit, penalty or burden completion. His Christian identity and opposition to the moral defense of civilian targeting are established independently earlier; do not portray him as an atheist or critic of Christianity as such.",
+      "uniqueLoadBearingArgument": false
+    }
+  ],
+  "status": "complete-and-frozen-before-judgment",
+  "derivedDurations": {
+    "hostAdvocacyMs": 78302,
+    "dependentResponseMs": 416660,
+    "totalExcludedMs": 480000,
+    "hostAdvocacyShare": 0.016149603798256796
+  },
+  "allHostInterventionsEnumerated": true,
+  "noDistinctSideIntroduced": true,
+  "noUniqueLoadBearingArgumentIntroduced": true,
+  "noSelectedEvidenceIntersectsExclusions": true,
+  "neitherSideCreditedOrPenalized": true,
+  "readerDisclosureRequired": true
+}

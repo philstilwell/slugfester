@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-07T14:07:00.124524+00:00",
+  "userAuthorization": "Supplied URL under the invoked addition skill, standing substantive-exchange and closings preference, visible scope disclosure, complete quotations, ordinary publication and commit/push authority; no new recording-specific exception approval claimed.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-294",
+    "head": "d7f47c11949198f86fc37f9fce887ef48eb216b9",
+    "localMain": "a32f69f14cc9878ed920c6b68e763eae1ab5e27d",
+    "originMain": "d7f47c11949198f86fc37f9fce887ef48eb216b9",
+    "clean": true,
+    "localMainEqualityException": "Topic created from fetched origin/main in attached clean managed checkout. Shared local main belongs to unrelated user checkout and is preserved; three-way equality is not claimed."
+  },
+  "identity": {
+    "debateNumber": "294",
+    "debateId": "copan-rauser-canaanite-conquest-2022",
+    "videoId": "NU4UQtuNBl8",
+    "canonicalUrl": "https://www.youtube.com/watch?v=NU4UQtuNBl8",
+    "sourceTitle": "Can we reconcile the Canaanite conquest with a God of love? Paul Copan vs Randal Rauser",
+    "eventYear": 2022,
+    "title": "Paul Copan vs Randal Rauser — The Canaanite Conquest and a God of Love (2022)",
+    "label": "The Canaanite Conquest",
+    "topicCategory": "scripture-jesus-resurrection",
+    "motion": "Is the Canaanite conquest morally defensible as an act commanded by a loving God?",
+    "pro": {
+      "speaker": "Paul Copan",
+      "position": "The conquest can be morally defended"
+    },
+    "con": {
+      "speaker": "Randal Rauser",
+      "position": "The moral defense is inadequate"
+    },
+    "dyadic": true,
+    "originalRecordingDyadic": false,
+    "primarySpeakerScopeException": {
+      "enabled": true,
+      "protocolId": "primary-speaker-scope-exception-v1",
+      "primarySpeakers": {
+        "pro": "Paul Copan",
+        "con": "Randal Rauser"
+      },
+      "nonPrimarySpeakers": [
+        {
+          "name": "Justin Brierley",
+          "role": "Moderator with incidental arguments"
+        }
+      ],
+      "maximumHostAdvocacyShare": 0.05,
+      "assessedWindow": {
+        "startMs": 271080,
+        "endMs": 5119620,
+        "durationMs": 4848540
+      },
+      "excludedIntervals": [
+        {
+          "intervalId": "host-analogy-reinforcement",
+          "kind": "host-advocacy",
+          "speaker": "Justin Brierley",
+          "startMs": 3353819,
+          "endMs": 3403800,
+          "durationMs": 49981,
+          "summary": "The host endorses the dismantling-Nazism comparison and adds unnamed commentators on terrible Canaanite practices as reasons for divine intervention. Conservative boundary includes the mixed handoff.",
+          "burdenImpactRationale": "Copan independently advances dismantling harmful religious identity at 52:04–55:53 and love opposing dehumanization at 44:35–45:04. This reinforcement introduces no distinct side or unique burden.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "response-analogy-and-sacrifice",
+          "kind": "dependent-response",
+          "speaker": "Randal Rauser",
+          "startMs": 3399119,
+          "endMs": 3536520,
+          "durationMs": 137401,
+          "summary": "Rauser answers the reinforced analogy, then develops a sacrificial-burning challenge within this host-prompted answer; exclude the entire answer conservatively.",
+          "burdenImpactRationale": "The host-led answer supplies no assessed evidence, credit or penalty. Rauser independently develops the moral problem of civilian killing at 35:22–39:21 and cultural removal at 48:25–50:50.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "response-collateral-and-identity",
+          "kind": "dependent-response",
+          "speaker": "Paul Copan",
+          "startMs": 3533400,
+          "endMs": 3706579,
+          "durationMs": 173179,
+          "summary": "Copan answers the preceding excluded challenge with collateral harm, the citadel claim, and the dismantling of Nazi identity. Exclude this dependent reply through the break handoff.",
+          "burdenImpactRationale": "The dependent reply is unscored. Copan independently develops the citadel case at 39:22–41:17 and identity analogy at 52:04–55:53; his final airplane example is an independently delivered closing claim.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "host-atheist-framing",
+          "kind": "host-advocacy",
+          "speaker": "Justin Brierley",
+          "startMs": 3703079,
+          "endMs": 3731400,
+          "durationMs": 28321,
+          "summary": "The host frames Rauser’s criticism as objections against the Bible that an atheist could also make, before asking how he reconciles the passages with divine love.",
+          "burdenImpactRationale": "Conservatively exclude this argumentative characterization. Rauser independently identifies his Christian inspiration commitments at 12:50–14:01. The host adds no evidential premise or unique motion burden.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "response-collateral-reprise",
+          "kind": "dependent-response",
+          "speaker": "Randal Rauser",
+          "startMs": 4066920,
+          "endMs": 4133460,
+          "durationMs": 66540,
+          "summary": "Rauser explicitly revisits Copan’s excluded collateral-damage answer and argues that everyone in the citadels was targeted. Exclude the whole dependent reprise.",
+          "burdenImpactRationale": "Its immediate target is an excluded reply, so it cannot supply scoring evidence or imply that Copan left it unanswered. Rauser’s independent earlier civilian argument and later closing remain assessable.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "response-intramural-qualification",
+          "kind": "dependent-response",
+          "speaker": "Randal Rauser",
+          "startMs": 4129799,
+          "endMs": 4169339,
+          "durationMs": 39540,
+          "summary": "Rauser explicitly corrects the host’s atheist framing and characterizes his contribution as clarifying the implications of Copan’s interpretation. This directly dependent response is excluded.",
+          "burdenImpactRationale": "Do not use this reply for credit, penalty or burden completion. His Christian identity and opposition to the moral defense of civilian targeting are established independently earlier; do not portray him as an atheist or critic of Christianity as such.",
+          "uniqueLoadBearingArgument": false
+        }
+      ]
+    }
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "knownSuccessfulCallCostUsd": 0,
+    "maximumPossiblePriorCostUsd": 0,
+    "currentPlanEstimateUsd": 0,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "audioVerificationPolicy": "All selected below-high material uncertainties require one authorized source-audio check each before adjudication. No audio call has occurred."
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-294",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/copan-rauser-canaanite-conquest-2022.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/copan-rauser-canaanite-conquest-2022.js",
+    "generated site output for this addition"
+  ]
+}

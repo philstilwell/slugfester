@@ -1,0 +1,6 @@
+### Result
+{"observed":[{"src":"http://127.0.0.1:4194/assets/debate-gloves.png","loading":"auto","className":"brand-logo","complete":true,"width":444},{"src":"http://127.0.0.1:4194/assets/caricatures/paul-copan.webp","loading":"lazy","className":"speaker-avatar","complete":true,"width":512},{"src":"http://127.0.0.1:4194/assets/caricatures/randal-rauser.webp","loading":"lazy","className":"speaker-avatar","complete":true,"width":512}],"complete":true}
+### Ran Playwright code
+```js
+await (async(page)=>{const observed=await page.evaluate(()=>[...document.images].filter(i=>{const r=i.getBoundingClientRect();return r.width>0&&r.height>0&&r.top<innerHeight&&r.bottom>0}).map(i=>({src:i.src,loading:i.loading,className:i.className,complete:i.complete,width:i.naturalWidth})));if(observed.length<2)throw Error('Visible image inventory missing');await page.waitForFunction(()=>[...document.images].filter(i=>{const r=i.getBoundingClientRect();return r.width>0&&r.height>0&&r.top<innerHeight&&r.bottom>0}).every(i=>i.complete&&i.naturalWidth>0));await page.screenshot({path:'output/playwright/debate-294-local-desktop-ai-closed.png'});return {observed,complete:true};})(page);
+```

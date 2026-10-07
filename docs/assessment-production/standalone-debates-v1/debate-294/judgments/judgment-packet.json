@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-10-07T14:32:06.909Z",
+  "debateNumber": "294",
+  "debateId": "copan-rauser-canaanite-conquest-2022",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Is the Canaanite conquest morally defensible as an act commanded by a loving God?",
+  "sides": {
+    "pro": {
+      "speaker": "Paul Copan",
+      "position": "The conquest can be morally defended"
+    },
+    "con": {
+      "speaker": "Randal Rauser",
+      "position": "The moral defense is inadequate"
+    }
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-294/inventory/inventory.json",
+      "sha256": "5e86271fb64401f8c225537b1543c6374e978664d50a676136b518fecc06720b",
+      "bytes": 97081
+    },
+    "events": {
+      "path": ".assessment-cache/captions/NU4UQtuNBl8/events.json",
+      "sha256": "8826890483e41a22b89ffee0b52cfd318c0338e4e76d4fc9834f1313adb7257c",
+      "bytes": 245353
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/NU4UQtuNBl8/transcript.txt",
+      "sha256": "b7c52d76557db6c3ba14a681680c92c59e153137fd8cf7affc4ea201bfd87dd1",
+      "bytes": 104035
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    }
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true
+  },
+  "instructions": {
+    "reviewCompleteLockedInventory": true,
+    "judgeEveryMoveExactlyOnce": true,
+    "preserveInventoryStructure": true,
+    "doNotAddDropMergeOrSplitMoves": true,
+    "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true,
+    "scoreTranscriptPerformanceNotWorldviewTruth": true,
+    "supplyRatingsAndRationalesOnly": true,
+    "calculatedMoveSectionAndOverallScoresForbidden": true,
+    "winnerForbidden": true,
+    "publicationProseForbidden": true
+  },
+  "dimensionKeys": [
+    "logicalCoherence",
+    "evidenceWarrant",
+    "responsiveness",
+    "relevanceBurden",
+    "precisionClarity",
+    "calibrationCharity"
+  ],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "burdenAdjustmentControls": {
+    "minimum": -5,
+    "maximum": 5,
+    "integerOnly": true,
+    "nonzeroRequiresDistinctDebateWideConsequence": true,
+    "nonzeroRequiresBurdenCompletionEffect": true,
+    "nonzeroRequiresNotAlreadyScored": true,
+    "duplicateCaptureForcesZero": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "5e86271fb64401f8c225537b1543c6374e978664d50a676136b518fecc06720b",
+    "judgmentFields": {
+      "moveId": "exact locked move ID in inventory order",
+      "assessmentConfidence": "high, medium, or low",
+      "dimensions": "exactly the six named dimension objects, each with integer value and rationale"
+    },
+    "burdenCompletionAdjustmentFields": {
+      "value": "integer -5 through 5",
+      "rationale": "source-grounded explanation",
+      "eligibility": [
+        "distinctDebateWideConsequence",
+        "affectsBurdenCompletion",
+        "notAlreadyScored",
+        "affectedBurdenIds",
+        "completionCriterion",
+        "relatedMoveIds",
+        "distinctConsequence",
+        "alreadyCapturedBy",
+        "counterfactual"
+      ]
+    },
+    "requiredAuditBooleans": [
+      "completeLockedInventoryReviewed",
+      "allMovesJudgedOnce",
+      "ratingsOnlyNoCalculatedScores",
+      "publicationBlind",
+      "scoreBlind"
+    ]
+  }
+}
