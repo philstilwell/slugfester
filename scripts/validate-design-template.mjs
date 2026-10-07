@@ -185,7 +185,7 @@ requireIncludes("app interlocutor profile", app, 'class="profile-debate-grid"');
 requireIncludes("app topics page", app, 'class="topic-debate-card"');
 requireIncludes("app topics page", app, 'class="topic-card-people"');
 requireIncludes("app topics page", app, 'class="topic-card-reveal"');
-requireIncludes("app topics page", app, "Debate summary and speakers");
+requireIncludes("app topics page", app, "Debate focus and speakers");
 requireIncludes("app topics page", app, "Speakers");
 requireIncludes("app topics page", app, "topicCategoriesForDebate");
 requireIncludes("app topics categories", topics, "Cosmological & Contingency Arguments");
