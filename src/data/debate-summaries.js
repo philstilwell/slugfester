@@ -14176,5 +14176,58 @@ export const debateSummaries = [
         "title": "Solidarity, self-denial, and hope"
       }
     ]
+  },
+  {
+    "id": "winger-paulogia-resurrection-evidence-2018",
+    "number": "297",
+    "title": "Mike Winger vs Paulogia — Evidence for the Resurrection",
+    "year": 2018,
+    "label": "Evidence for the Resurrection",
+    "date": "2026-10-07",
+    "duration": "1 hr 16 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=myRsIqEOT1w",
+    "motion": "Is there sufficient evidence to believe in the resurrection of Jesus?",
+    "summary": "Mike Winger and Paulogia dispute whether early resurrection reports, appearances, persecution, and the empty tomb make Jesus’s resurrection the best historical explanation.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "Sufficient evidence supports the resurrection",
+        "speaker": "Mike Winger",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The evidence is insufficient to establish the resurrection",
+        "speaker": "Paulogia",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 82,
+      "con": 84,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Historical method and source standards"
+      },
+      {
+        "title": "Minimal facts and limited grants"
+      },
+      {
+        "title": "Appearance reports and the early creed"
+      },
+      {
+        "title": "Bereavement experiences and group appearances"
+      },
+      {
+        "title": "Explanatory burden and natural alternatives"
+      },
+      {
+        "title": "Sincerity, persecution, and recantation"
+      },
+      {
+        "title": "Empty tomb, embarrassment, and Mark"
+      }
+    ]
   }
 ];

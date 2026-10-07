@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "297",
+  "debateId": "winger-paulogia-resurrection-evidence-2018",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-297/inventory/inventory.json",
+      "sha256": "ffe4b055a8b49710438053e9a4a66f0c4f76741646f4236ed4564f46fe051fad",
+      "bytes": 142144
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-297/score-pass/output.json",
+      "sha256": "92ca15302e959d545b313032f91c684e40985afc3a873a67633c3cf59e90f17b",
+      "bytes": 17526
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-297/publication/skeleton.json",
+      "sha256": "620f82f8ebf1286ff453adf1499e253b9e7cafed9d3d4210e89d6a1def21d793",
+      "bytes": 13298
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-297/publication/reference-metrics.json",
+      "sha256": "d7e94dd596f260e0173e2cb2da4ef1ef1258930fdfa35a28317196753994126e",
+      "bytes": 54189
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "preserved-mechanical-transport-diagnostics",
+  "debateNumber": "297",
+  "reviewAttemptCount": 1,
+  "semanticReviewReruns": 0,
+  "candidateBytesChangedByTransport": false,
+  "candidateSha256": "1c08412ec3541a737b1ab0bd35ed53ff24c92ba162072df77350714dc39523e5",
+  "candidateBytes": 25328,
+  "events": [
+    {
+      "stage": "memory-helper",
+      "error": "ReferenceError: TextEncoder is not defined",
+      "effect": "Candidate was already stored intact; helper changed only transport encoding."
+    },
+    {
+      "stage": "first-holder-start",
+      "error": "listen EPERM: operation not permitted",
+      "effect": "Restricted sandbox could not bind temporary socket; no successful hold or output save."
+    },
+    {
+      "stage": "escalated-holder-input",
+      "error": "terminal input and permission details are too large to review safely; use a smaller input or start a new terminal with fewer grants",
+      "effect": "Tool review declined oversized terminal input; exact stored bytes then sent in1800-character chunks to the same live holder."
+    }
+  ],
+  "mechanicalHolderStartupRetries": 1,
+  "controllerAssessment": "The worker repaired transport without a prior controller checkpoint; this is explicitly recorded rather than represented as no mechanical retry. The source review and candidate were not regenerated, the checker and held hashes match, and only one authenticated output was saved after full controller review. No fresh judgment context or extra semantic attempt was consumed.",
+  "ownedHolderClosed": true,
+  "remainingOwnedProcesses": 0,
+  "directCostUsd": 0
+}
