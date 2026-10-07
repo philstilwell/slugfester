@@ -1,0 +1,28 @@
+{
+  "status": "authorized-unsaved-revision-same-context",
+  "at": "2026-10-06T23:47:58.831Z",
+  "agent": "/root/inventory290",
+  "assessmentAttempt": 1,
+  "additionalContext": false,
+  "firstSavedSubmissionStillAbsent": true,
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-290/inventory/execution-plan.json",
+    "sha256": "8fd89bf5e7c4e201ae77425b75dd2e4d554862cbc09fba3a569ea31e0c900a31",
+    "bytes": 7496
+  },
+  "retiredMetadata": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-290/inventory/unsaved-review-3/retired-transport-metadata.json",
+    "sha256": "2d014abfc45c313d18d6bcb01bdfdb1b3183b62c842b9375315b418396c7a53b",
+    "bytes": 702
+  },
+  "interruptionCause": "Worker stopped its owned holder after controller requested a complete-thought quote replacement. Controller had not yet reviewed the held bytes. No submission exists and the same worker retains exact bytes in memory. This was an unauthorized transport retirement, now diagnosed and preserved; it did not alter frozen inputs or consume a saved attempt.",
+  "diagnosticPreservationAuthority": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-290/inventory/unsaved-review-3/interrupted-candidate.json",
+    "sha256": "37a1fdb3a8b1729835c9fdb8a459c758aaf6db647a0db2ae50305394868dfd6b",
+    "bytes": 82342,
+    "exactOldBytesOnly": true,
+    "notAnAssessmentSubmission": true
+  },
+  "scope": "First preserve the exact stopped candidate to the single authorized diagnostic path with hash verification. Replace only the unclear con quote candidate with the source-exact complete sentence from the already selected fallible-deference move, then run checker and hold. All held content still requires full controller review. Do not stop future holders without controller instruction.",
+  "paidCalls": 0
+}

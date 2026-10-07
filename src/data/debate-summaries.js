@@ -13820,5 +13820,58 @@ export const debateSummaries = [
         "title": "Evolution and access to moral truth"
       }
     ]
+  },
+  {
+    "id": "rauser-malpass-evidential-problem-evil-2021",
+    "number": "290",
+    "title": "Randal Rauser vs Alex Malpass — Does Suffering Provide Evidence Against Theism?",
+    "year": 2021,
+    "label": "Suffering and Theism",
+    "date": "2026-10-06",
+    "duration": "1 hr 0 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dvSd4IL35vs",
+    "motion": "Does suffering provide evidence against theism?",
+    "summary": "Malpass argues suffering favors indifference over classical theism; Rauser concedes the bare comparison while defending richer theistic background beliefs.",
+    "topicCategory": "evil-suffering-hiddenness",
+    "sides": {
+      "pro": {
+        "name": "Suffering favors indifference",
+        "speaker": "Alex Malpass",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Theistic background weakens the inference",
+        "speaker": "Randal Rauser",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 87,
+      "con": 83,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "The comparative likelihood argument"
+      },
+      {
+        "title": "Background beliefs and soul-making"
+      },
+      {
+        "title": "The Platonism analogy and bare-theism concession"
+      },
+      {
+        "title": "Animal suffering and independent support"
+      },
+      {
+        "title": "Cognitive closure and moral knowledge"
+      },
+      {
+        "title": "Thresholds, testimony, and counterfactual lives"
+      },
+      {
+        "title": "World-level effects and the caregiving example"
+      }
+    ]
   }
 ];

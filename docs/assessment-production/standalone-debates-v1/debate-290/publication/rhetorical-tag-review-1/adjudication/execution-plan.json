@@ -1,0 +1,582 @@
+{
+  "schemaVersion": "2.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "rhetorical-adjudication",
+  "debateNumber": "290",
+  "debateId": "rauser-malpass-evidential-problem-evil-2021",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/workflow/rhetorical-adjudication/reader.txt",
+      "sha256": "7558087ee7a0e1803e02f25e73dfc6d66b066e5765194e6bfc9b81c8cd1d8ba9",
+      "bytes": 506935
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/contract.md",
+      "sha256": "57622c5670b6be13c4a198b7a26691d28e3432c697a0d6a8e04e9bd8b5432784",
+      "bytes": 9054
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "bc4460d1faf27647f7a5d07c63365bea8fae2873c91076455266029ff4686432",
+      "bytes": 15997
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "a61404c3de245e0e6d3620314bd9267c1337d726aaf3948f5232b559ad2b7206",
+      "bytes": 168652
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    {
+      "path": ".assessment-cache/captions/dvSd4IL35vs/indexed-transcript.txt",
+      "sha256": "397c5d1b59f40edf80dd43e3ad5391911d204da691e2e30f3dffa4b43959c9b8",
+      "bytes": 296585
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/source/assessment-source-notes.md",
+      "sha256": "6bba66d099ad55d384e7d3e63849a68af78c7619cb6de10c2a9f5affd924ab50",
+      "bytes": 5096
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/source/source-lock.json",
+      "sha256": "17b8487b4a66456183c8853a92b9d1e10614ac40c6d91db50a69605cd4c27bdd",
+      "bytes": 10960
+    }
+  ],
+  "toolInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/check-review.mjs",
+      "sha256": "e4f2013da4cfa8f8f690b324f00567584c67759b68e2c45ed8455008da8005de",
+      "bytes": 4109
+    },
+    {
+      "path": "scripts/standalone-workflow.mjs",
+      "sha256": "f9bebb3157c0227e20f396240411af838138b4520c7a48bec411725896f841cc",
+      "bytes": 5880
+    },
+    {
+      "path": "scripts/lib/standalone-workflow.mjs",
+      "sha256": "bd13373d22b4a2d74b1d6788c6b25613611be653a212aeaf31ca4bfcadcde333",
+      "bytes": 18686
+    },
+    {
+      "path": "scripts/lib/standalone-handoff.mjs",
+      "sha256": "939461c747837553ff5d65a83d9af0ad51c576c314959d2c59e6773bf236b42f",
+      "bytes": 6020
+    },
+    {
+      "path": "scripts/authenticate-standalone-worker.py",
+      "sha256": "98c8186c703818d1eaf5270d26adbfaaf7f7284180cf3482d3ec7a64e5e9219e",
+      "bytes": 6247
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "d22c202cbc5cf2853777394e6fb98fe4f624c8a58f8dcdaf1640f54f358cf9cc",
+      "bytes": 78019
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "aae806466005602401fb9536cbeab97cda43cd898ef78d2c200c012b24a2b8eb",
+      "bytes": 13580
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+      "bytes": 13417
+    },
+    {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "45bb5c6ca356eb66c4339507c0bcdb7af0888b2c6b5ae146f4d9a60ff0de89a3",
+      "bytes": 91388
+    },
+    {
+      "path": "package.json",
+      "sha256": "8ba54eb2409856430fe56731ade8196310cdb8526936543060cac72950e92186",
+      "bytes": 65081
+    },
+    {
+      "path": "scripts/lib/assessment-production-score-stability-policy-active.mjs",
+      "sha256": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+      "bytes": 1331
+    },
+    {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    },
+    {
+      "path": "scripts/standalone/lock-inventory.mjs",
+      "sha256": "dd2fba288eaab30c2af64c097abcde4f93d1f383b24f4c2a833f9f6866ab2a70",
+      "bytes": 5778
+    },
+    {
+      "path": "scripts/lib/standalone-publication-check.mjs",
+      "sha256": "f51b342bd2905527f44e11332d8a8544bd02e9ed5b01513d25ffa1817c196181",
+      "bytes": 6780
+    },
+    {
+      "path": "scripts/lib/assessment-editor-scoped-source.mjs",
+      "sha256": "a97ee74f7afc04da1a943494d53a2aadb958618d0ab6296584603fdc5d4f7395",
+      "bytes": 6789
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "bc4460d1faf27647f7a5d07c63365bea8fae2873c91076455266029ff4686432",
+      "bytes": 15997
+    }
+  ],
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-290/workflow/rhetorical-adjudication/packet.json",
+    "sha256": "19130c37ec59f0014b7968e3c9f2ed6a5309cea78f3a931a51a3258a046038e8",
+    "bytes": 524564
+  },
+  "fullReadRequiredForAllAllowedInputs": true,
+  "toolSourceReadRequired": false,
+  "validationParameters": {
+    "mode": "anonymous-adjudication",
+    "debateNumber": "290",
+    "debateId": "rauser-malpass-evidential-problem-evil-2021",
+    "sourcePacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "a61404c3de245e0e6d3620314bd9267c1337d726aaf3948f5232b559ad2b7206",
+      "bytes": 168652
+    },
+    "catalogSnapshot": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    "candidates": [
+      {
+        "moveId": "rauser-narrows-overall-force",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The broader-evidence point remains directly relevant to the limited force of a likelihood argument. Its unspecified content weakens the reply but does not divert to a different dispute."
+          }
+        ]
+      },
+      {
+        "moveId": "malpass-indifference-predicts-suffering",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Malpass repeatedly says there is no reason to expect protection under indifference, but he also supplies a positive evolutionary and environmental mechanism for expecting suffering."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Malpass does say there is no protective reason under indifference, but he also supplies a positive unguided-evolutionary mechanism; he does not infer truth solely from non-disproof."
+          }
+        ]
+      },
+      {
+        "moveId": "malpass-specificity-costs-prior",
+        "type": "bias",
+        "label": "Base-rate neglect",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The move explicitly directs attention to intrinsic probability and prior cost, so its missing numerical comparison is underdevelopment rather than neglect of background rates."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "This move explicitly emphasizes intrinsic probability and the cost of added specificity. Its weakness is an unmeasured analogy, not underweighting priors while fixating on a vivid case."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-school-bus-background",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The analogy illustrates how established background facts alter expectations; it does not itself claim the theological background is established. Missing independent warrant is not circular assumption."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-school-bus-background",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The school-bus distinction offers a general conditionalization principle applicable to either worldview; the disputed independence of theological background weakens the analogy without creating an unprincipled exception."
+          }
+        ]
+      },
+      {
+        "moveId": "malpass-soul-making-leaves-unobserved-suffering",
+        "type": "bias",
+        "label": "Scope neglect",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Malpass arguably overgeneralizes from an isolated-whale example to most suffering, but the defect is unsupported prevalence, not failure to adjust concern proportionally to a stated scale."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-moral-platonism-reverse-analogy",
+        "type": "fallacy",
+        "label": "Equivocation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser moves between indifference, atheism, and naturalism in an imperfect analogy, yet he does not covertly change one key term’s meaning within a single inference."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-moral-platonism-reverse-analogy",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Moral Platonism is an imperfect reverse analogy, but it remains aimed at the central question of how antecedent background beliefs affect evidential force."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "The moral-Platonism example is structurally imperfect but is offered to illuminate background conditioning, the disputed issue itself. It does not merely distract and abandon that challenge."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-platonist-package-restated",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser says objective moral facts are entailed within Platonism to illustrate package-relative expectation; he does not smuggle the disputed suffering conclusion into his theistic premises."
+          }
+        ]
+      },
+      {
+        "moveId": "malpass-animal-resurrection-needs-independent-support",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Malpass argues that unsupported resurrection should not change a probability ratio, rather than claiming animal resurrection is false solely because direct proof has not been offered."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-defeater-relative-to-held-beliefs",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser does not claim his existing beliefs deserve exemption merely because they are his; he identifies antecedent commitment as relevant while leaving its independent warrant unresolved."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-animal-suffering-concession-and-options",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser names writers and response families but does not present their status as settling animal suffering. He openly concedes the burden and treats the proposals as options."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-biblical-creation-renewal-support",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser uses scriptural passages as internal evidence that renewal predates this objection; he does not invoke their religious status as settling whether every animal is restored."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "The scriptural citations serve as direct evidence about what the antecedent Christian tradition contains, not as prestigious authorities whose status is supposed to settle moral justification."
+          }
+        ]
+      },
+      {
+        "moveId": "malpass-unknown-reason-parallels-ad-hoc-escape",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Malpass challenges the evidential force of a merely possible unknown reason and does not infer that no divine reason exists simply because none has been demonstrated."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Malpass says an unsupported possibility should not neutralize evidence; he does not conclude hidden divine reasons are false merely because they have not been positively demonstrated."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-cognitive-closure-limited",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser's explicit conclusion is that non-access is not evidence of absence, not that an unknown sufficient reason must exist because critics cannot disprove one."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Rauser argues only that lack of cognitive access does not establish absence. He does not infer that a sufficient divine reason exists because opponents cannot disprove it."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-apprenticeship-analogy",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The analogy assumes a known competent trainer, unlike the disputed divine case, but it proposes a model for conditional reasoning rather than directly smuggling God’s goodness into proof."
+          }
+        ]
+      },
+      {
+        "moveId": "malpass-deontic-ledger-objection",
+        "type": "bias",
+        "label": "Belief bias",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Malpass repeatedly calls the tradeoff wrong and unconscionable, yet he also supplies a deontological constraint and organ-harvesting comparison. Palatability is not his sole evaluation."
+          }
+        ]
+      },
+      {
+        "moveId": "malpass-extreme-cases-beyond-cutoff",
+        "type": "bias",
+        "label": "Belief bias",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Malpass relies heavily on moral intuition, but his boundary argument concerns classifying clear extremes without exact cutoffs, not substituting a believable conclusion for invalid inference."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "The conclusion rests substantially on moral intuition, but the inference concerns recognizable extreme cases despite boundary uncertainty, not acceptance simply because the conclusion feels familiar."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-soldier-testimony-cautions",
+        "type": "bias",
+        "label": "Scope neglect",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The amputation example is much smaller than the Holocaust case it follows, but Rauser draws only a limited cautionary conclusion and does not equate their magnitudes."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-soldier-testimony-cautions",
+        "type": "bias",
+        "label": "Subjective validation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The soldier’s own interpretation is relevant testimony about his valued life, and Rauser carefully avoids universalizing it. Personal resonance is not offered as proof of divine justification."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-soldier-testimony-cautions",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser treats the soldier's first-person perspective as defeasible evidence and explicitly warns against speaking for other sufferers, so testimonial standing does not settle the conclusion."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Rauser gives limited weight to the sufferer’s relevant first-person perspective and explicitly calls it fallible. He does not treat personal status as settling the wider argument."
+          }
+        ]
+      },
+      {
+        "moveId": "malpass-post-hoc-adaptation-challenge",
+        "type": "bias",
+        "label": "Confirmation bias",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Malpass characterizes the wounded soldier's reported gratitude and improved life as post hoc rationalization of his current condition.",
+            "rationale": "Malpass discounts the soldier's contrary first-person testimony as adaptive rationalization without case-specific evidence, interpreting inconvenient evidence to preserve his existing assessment of the injury."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Malpass discounts contrary first-person testimony through a general adaptation hypothesis without case-specific support, but he presents a recognized alternative explanation rather than selectively hiding or misremembering evidence."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-fallible-testimony-deference",
+        "type": "bias",
+        "label": "Authority bias",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser explicitly says first-person awareness is fallible and grants only prima facie deference, so the sufferer's perspective receives evidential weight without overriding counterfactual analysis."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Rauser’s deference is limited, defeasible, and tied to relevant access to interior experience. He explicitly acknowledges error and does not overweight prestige or institutional standing."
+          }
+        ]
+      },
+      {
+        "moveId": "malpass-counterfactual-life-balance",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The imagined fulfilling alternative is insufficiently supported and may conceal feasibility costs, but Malpass does not insert the ultimate conclusion that suffering favors indifference into a premise."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-world-level-effects",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser invokes possible incalculable effects to challenge an atomistic comparison, but he frames them as epistemic possibilities and does not establish their actual beneficial direction."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Rauser invokes possible incalculable effects without directional evidence, yet uses them to challenge an atomistic comparison rather than declaring a favorable world-level balance proven."
+          }
+        ]
+      },
+      {
+        "moveId": "malpass-caregiving-alternative",
+        "type": "bias",
+        "label": "Base-rate neglect",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Malpass asserts that caregiver numbers would remain similar without Alzheimer's suffering but cites no known background rate that he then underweights; the defect is unsupported extrapolation."
+          }
+        ]
+      },
+      {
+        "moveId": "rauser-family-caregiving-causal-example",
+        "type": "bias",
+        "label": "Subjective validation",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Rauser extends his family's caregiving experience and its positive effects into support for a broader greater-good hypothesis about suffering.",
+            "rationale": "Rauser treats his family's personally meaningful aftermath as raising the broad greater-good hypothesis, extending private resonance beyond the genuine but narrow causal fact about his brother."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Rauser’s family experience supplies an actual causal observation and is explicitly described as one small part of a story. Its personal character limits generalization but does not establish this bias."
+          }
+        ]
+      }
+    ],
+    "expectedCandidateCount": 27,
+    "outputSchemaBounds": {
+      "decisions": {
+        "minItems": 27,
+        "maxItems": 27
+      }
+    }
+  },
+  "outputPath": "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/adjudication/output.json"
+  ],
+  "checker": [
+    "/opt/homebrew/Cellar/node/25.9.0_3/bin/node",
+    "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/check-review.mjs",
+    "--debate",
+    "290",
+    "--packet",
+    "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/adjudication/packet.json"
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Read this plan and the entire reader.txt including shared blocks. Never open peer outputs. Run the pinned checker without rereading its implementation. Authenticate reading before authoring. Keep candidates in memory; handoff holds approved candidate bytes in memory until the controller supplies authenticated source/editorial release. Only that release writes the first submission. A saved failure consumes its attempt. No autonomous retry.",
+  "isolation": "Fresh fork-none subscription context; protocol isolation, not an operating-system sandbox.",
+  "packetMetrics": {
+    "originalBytes": 510699,
+    "readerBytes": 506935,
+    "sharedBlocks": 1,
+    "completeDocuments": 7,
+    "losslessRoundTrip": true
+  }
+}
