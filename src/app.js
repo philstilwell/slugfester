@@ -1,12 +1,12 @@
-import { pageUpdates } from "./data/page-updates.js?v=5a7b8572ba58e1db";
-import { renderCritiqueText } from "./data/critique-format.js?v=5a7b8572ba58e1db";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=5a7b8572ba58e1db";
-import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=5a7b8572ba58e1db";
-import { topicPreviewText } from "./data/topic-preview.js?v=5a7b8572ba58e1db";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=5a7b8572ba58e1db";
-import { debateSummaries } from "./data/debate-summaries.js?v=5a7b8572ba58e1db";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=5a7b8572ba58e1db";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=5a7b8572ba58e1db";
+import { pageUpdates } from "./data/page-updates.js?v=6c2ddd771816700a";
+import { renderCritiqueText } from "./data/critique-format.js?v=6c2ddd771816700a";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=6c2ddd771816700a";
+import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=6c2ddd771816700a";
+import { topicPreviewText } from "./data/topic-preview.js?v=6c2ddd771816700a";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=6c2ddd771816700a";
+import { debateSummaries } from "./data/debate-summaries.js?v=6c2ddd771816700a";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=6c2ddd771816700a";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=6c2ddd771816700a";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -45,7 +45,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=5a7b8572ba58e1db";
+} from "./seo.js?v=6c2ddd771816700a";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -100,7 +100,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=5a7b8572ba58e1db")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=6c2ddd771816700a")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -119,7 +119,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=5a7b8572ba58e1db")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=6c2ddd771816700a")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -135,7 +135,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=5a7b8572ba58e1db`)
+    const promise = import(`./data/debate-details/${id}.js?v=6c2ddd771816700a`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -150,7 +150,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=5a7b8572ba58e1db`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=6c2ddd771816700a`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -3756,28 +3756,28 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=5a7b8572ba58e1db")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=6c2ddd771816700a")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=5a7b8572ba58e1db")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=6c2ddd771816700a")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=5a7b8572ba58e1db")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=6c2ddd771816700a")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=5a7b8572ba58e1db")
+    insightsPromise ||= import("./data/insights.js?v=6c2ddd771816700a")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);
