@@ -83,7 +83,7 @@ Design constraints:
 
 Topic categorization:
 
-- The fifteen categories, their exact IDs, and their editorial boundaries are documented in [the category guide](topic-categories.md). Category definitions are shared by the site and publication validation.
+- The current categories, their exact IDs, and their editorial boundaries are documented in [the category guide](topic-categories.md). Category definitions are shared by the site and publication validation. Distinguish creator-only arguments from further theistic commitments; do not assign a category from a speaker's religious identity.
 - `/topics/` uses the explicitly assigned published `topicCategory` to determine the primary group; label keywords never supply a primary category. It continues to use the debate `label` to derive up to three supplementary topic chips alongside it, for four chips total, so the label should contain the clearest recurring subject terms without adding interlocutor names.
 - After adding a debate, check that the new compact card appears under the intended `/topics/` category, that its card title remains a general topic title rather than a speaker-vs-speaker title, and that hover/focus reveals the full summary and compact speaker names within the card.
 

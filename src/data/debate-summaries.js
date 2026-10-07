@@ -609,7 +609,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Ht_SVm0GWBs",
     "motion": "Does the evidence from consciousness, emergence, morality, and cosmology make theism more plausible than naturalism?",
     "summary": "Jones and Carrier closely contest whether consciousness, cosmic structure, morality, and origins comparatively favor theistic idealism or secular naturalism.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Theistic idealism",
@@ -796,7 +796,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=9WnOYHi5k4g",
     "motion": "Do fine-tuning, suffering, religious experience, practice, and purpose make Christianity or a God-ish hypothesis more plausible than atheist skepticism?",
     "summary": "Williams, Goff, and Oldfield defend traditional, revised, and experiential Christianity; O'Connor presses fine-tuning limits, suffering, Gnosticism, and purpose.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Christian and God-ish",
@@ -1170,7 +1170,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=uDCDTaKfzXU",
     "motion": "What best explains reality: theism, with a personal creator and revelation, or atheism, with no supernatural dimension?",
     "summary": "Turek advances a cumulative theistic explanation, while Hitchens more consistently supplies calibrated naturalistic alternatives and challenges the inferential bridges to design and revelation.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Theism explains reality",
@@ -1311,7 +1311,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=RzP07nEwNP8",
     "motion": "Which better explains reality: theism, with God as the ground of creation, reason, information, morality, evil, and science, or atheism, with natural inquiry and human responsibility?",
     "summary": "Turek advances cumulative theistic explanations, while Silverman emphasizes natural processes, evidential restraint, human responsibility, and tensions between divine attributes and suffering.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Theism explains reality",
@@ -1918,7 +1918,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=rX6di0Au5Kg",
     "motion": "Is divine simplicity, understood as God's absence of real intrinsic parts or composition, coherent with classical theism, Trinitarian doctrine, divine freedom, and omniscient knowledge of contingent reality?",
     "summary": "Schmid presses simplicity through composition, Trinitarian asymmetry, and contingent knowledge; Tomaszewski answers through aseity, analogical predication, subsistent relations, and extrinsic differentiation.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "divine-nature-attributes",
     "sides": {
       "pro": {
         "name": "Classical theist",
@@ -2939,7 +2939,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=0QMwHUijmqo",
     "motion": "Does God exist, and do Thomistic arguments from being, act and potency, divine simplicity, revelation, evil, freedom, and changing knowledge support or undermine classical theism?",
     "summary": "Pine defends classical theism through Thomistic metaphysics, while Watkins presses identification gaps, divine-attribute tensions, evolutionary suffering, hiddenness, and religious disagreement.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "divine-nature-attributes",
     "sides": {
       "pro": {
         "name": "Thomistic theism",
@@ -3497,7 +3497,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=8WE1y00bwCU",
     "motion": "Does the surprising applicability of mathematics to the physical world support theism better than naturalism?",
     "summary": "Craig argues that mathematics’ predictive applicability favors intentional divine ordering; Oppy challenges the datum and offers naturalistic necessity, structural, and selection-based alternatives.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Theistic mathematical explanation",
@@ -3638,7 +3638,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=hKw3d3qOYSo",
     "motion": "Is theism more probable than naturalism when judged by simplicity, explanatory scope, fine-tuning, consciousness, and modality?",
     "summary": "Swinburne advances a cumulative theistic explanation, while Oppy answers with economical naturalistic alternatives and sharper comparative, anthropocentric, consciousness, and modal challenges.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Probabilistic theism",
@@ -3730,7 +3730,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=YhqFdIb13bk",
     "motion": "Is a theistic supreme foundation or a naturalistic initial reality the better account of ultimate reality, mind, and worldview simplicity?",
     "summary": "Rasmussen develops unified theistic foundations from unlimitedness and consciousness; Oppy answers with naturalistic continuity, neural identity, and disciplined whole-worldview comparison.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "creator-arguments-theism",
     "sides": {
       "pro": {
         "name": "Theistic supremacy",
@@ -3963,7 +3963,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=yahf0t5mK5g",
     "motion": "Does God exist, and do Thomistic proofs, moral law, and natural theology meet the burden of proof against skeptical atheism?",
     "summary": "Egnor developed cumulative Thomistic, natural-order, and moral arguments, while Dillahunty more effectively defended evidential restraint and exposed unsupported transitions to God.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "creator-arguments-theism",
     "sides": {
       "pro": {
         "name": "Thomistic theism",
@@ -4055,7 +4055,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=FUPOouj5jNg",
     "motion": "Did a perfect mind create the universe, and do simplicity, moral agents, beauty, fine-tuning, meaning, and purpose favor that hypothesis over non-theism?",
     "summary": "Sechler presents a cumulative perfect-mind inference; Dillahunty answers that unspecified hypotheses, missing likelihood baselines, hiddenness, and rival agent explanations limit its force.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "creator-arguments-theism",
     "sides": {
       "pro": {
         "name": "Perfect-mind theism",
@@ -4331,7 +4331,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=1IkAU6zAYLU",
     "motion": "Is theism coherent, especially if God is described as omnipotent, omniscient, perfectly good, and infinite in power or knowledge?",
     "summary": "Swinburne defends coherent maximal attributes through logical possibility and doctrinal distinctions; Huemer presses quantitative infinity, residual knowledge, temporal conflict, and supertask objections.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "divine-nature-attributes",
     "sides": {
       "pro": {
         "name": "Coherent theism",
@@ -4377,7 +4377,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=ZVMMO_kgtDQ",
     "motion": "Did God create physical reality, and does classical theism best explain the universe, objective meaning, mystical experience, consciousness, and moral obligation?",
     "summary": "Craig defends classical Christian theism as the best explanation of reality and objective meaning; Frazier, Goff, and Folley press Hindu, mystical, and agnostic alternatives that complicate God, value, experience, and morality.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Classical theism",
@@ -4846,7 +4846,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=spiiYYgi9Wg",
     "motion": "Does God belong in our best account of reality, given cosmology, explanation, resurrection claims, suffering, religious practice, and the limits of science?",
     "summary": "Craig and Williams defend Christian theism through arguments, experience, practice, and human meaning; Hossenfelder and Žižek press scientific restraint, religious plurality, and a Christian-atheist reading of God as a communal or symbolic force.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -5033,7 +5033,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=rnIQFI1pYLM",
     "motion": "Theism or naturalism: which provides a better account of reality, including biological information, resurrection testimony, divine hiddenness, religious geography, and suffering?",
     "summary": "McLatchie advances biological-design and resurrection arguments while answering hiddenness and suffering objections through adequate evidence, moral probation, epistemic limits, and lawful regularity.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -5174,7 +5174,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=qQda8Cywqvo",
     "motion": "Is belief in God reasonable, given cosmology, fine-tuning, consciousness, rationality, morality, evil, religious history, and the record of scientific explanation?",
     "summary": "Copan’s cumulative theistic explanation connected cosmology, consciousness, morality, and reform, but underdeveloped rival comparisons and the evidential challenge from suffering.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Reasonable theism",
@@ -7568,7 +7568,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=lK3jVNbG2-s",
     "motion": "Does the total evidence concerning the universe, life, morality, Jesus, religious experience, suffering, and hiddenness favor theism over naturalism?",
     "summary": "Craig advances a cumulative Christian case, while Draper’s disciplined comparative-likelihood framework more effectively integrates evolution, suffering, hiddenness, and qualified replies.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -7902,7 +7902,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=HoTILnpd3q8",
     "motion": "Given science, human rationality, morality, suffering, and the historical claims about Jesus, is belief in the biblical God rational?",
     "summary": "Lennox presents a cumulative Christian explanation of reason, value, hope, and Jesus; Singer answers with naturalistic alternatives, evidential demands, and suffering.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -8135,7 +8135,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=SyhMlwsQuqc",
     "motion": "Does theism offer a better overall explanation of reality than naturalism?",
     "summary": "Pearce develops theistic grounding and experiential arguments, while Oppy presses symmetrical naturalistic alternatives, epistemic calibration, and religious diversity as stronger comparative explanations.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Theism",
@@ -9021,7 +9021,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=FcNR4vJdcE4",
     "motion": "Is God the simplest and most probable explanation of the universe and its general features?",
     "summary": "Swinburne defended personal explanation, simplicity, freedom, and compensation; Millican pressed predictive specificity, scientific background, divine coherence, embodiment, and victim-centered suffering.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "God is the best explanation",
@@ -9116,7 +9116,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=0-8n2SGFSL8",
     "motion": "Does God exist?",
     "summary": "Rasmussen advances a cumulative explanatory case for God, while Huemer presses competing finite-creator, multiverse, infinity, and evidential suffering objections.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "creator-arguments-theism",
     "sides": {
       "pro": {
         "name": "God exists",
@@ -9406,7 +9406,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=zF5bPI92-5o",
     "motion": "Is belief in the Christian God a delusion?",
     "summary": "Dawkins prevailed narrowly by pressing natural explanations, evidential scrutiny, and secular accounts of morality, while Lennox answered strongly on evidential faith, science's limits, and Christian distinctiveness.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Atheistic naturalism",
@@ -9553,7 +9553,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=GTPwaU3JAU8",
     "motion": "Does God exist?",
     "summary": "Horn argued from a first actualizer, finite past, divine attributes, and moral value; Watkins countered with sustaining-causation objections, naturalism’s simpler prior, evolutionary evil, hiddenness, and secular moral realism.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "creator-arguments-theism",
     "sides": {
       "pro": {
         "name": "Classical theism",
@@ -10906,7 +10906,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=u9ZuXmpod0Q",
     "motion": "Is finite theism preferable to naturalism?",
     "summary": "Goff’s finite God unifies purposive value and suffering through limited power; Oppy’s naturalism counters with simplicity, modal uncertainty, and evolutionary explanation, producing a tie.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "creator-arguments-theism",
     "sides": {
       "pro": {
         "name": "Finite theism is preferable to naturalism",
@@ -11356,7 +11356,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=ll_6JtbQtHU",
     "motion": "Does God exist?",
     "summary": "Law’s evidential and symmetry challenges outscored Ward’s carefully limited mind-like theism, especially on suffering, hypothesis discrimination, and experiential reliability.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "divine-nature-attributes",
     "sides": {
       "pro": {
         "name": "God exists as a mind-like spiritual reality",
@@ -11603,7 +11603,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=uhke5_tk6N0",
     "motion": "Is divine simplicity true?",
     "summary": "Pine develops a coherent classical framework, but Schmid more effectively isolates missing causal bridges and unresolved differences between necessary divinity and contingent knowledge.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "divine-nature-attributes",
     "sides": {
       "pro": {
         "name": "Divine simplicity follows from God as the uncaused, purely actual source of being",
@@ -11709,7 +11709,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=_6kdwlkceRA",
     "motion": "Does Thomistic classical theism adequately account for abstract objects, divine uniqueness, and relations to creation?",
     "summary": "Joe more effectively exposes gaps in the uniqueness arguments; Christopher clarifies conceptual existence and extrinsic predication, with both sides leaving substantive explanatory questions open.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "divine-nature-attributes",
     "sides": {
       "pro": {
         "name": "Thomistic classical theism withstands the proposed objections",
@@ -12326,7 +12326,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=vnMYL8sF7bQ",
     "motion": "Does God exist?",
     "summary": "Boteach grounds design and human worth in a personal God; Hitchens answers with natural explanation, moral autonomy, and challenges to interventionist religion.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "creator-arguments-theism",
     "sides": {
       "pro": {
         "name": "Jewish theism",
@@ -12479,7 +12479,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=D6K43WSZrmI",
     "motion": "Does a good God exist?",
     "summary": "Hitchens wins by exposing the gap between design and a good providential God, while Dembski offers careful limits and several effective scientific replies.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "creator-arguments-theism",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -12685,7 +12685,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=g6UU9C-WmvM",
     "motion": "Are truth, goodness, and beauty better explained by Christian theism than by atheistic naturalism?",
     "summary": "Wilson argues that theism grounds reason, value, and purposeful beauty; Hitchens answers with human responsibility, secular awe, skeptical inquiry, and stricter tests for miracles.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -12732,7 +12732,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=8Ad3rVRdgbI",
     "motion": "Can religion and science form a coherent partnership?",
     "summary": "Sacks defends compatibility through distinct roles and disciplined interpretation, while Dawkins more successfully presses whether religious purpose and supernatural premises have independent warrant.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Jewish theism",
@@ -12782,7 +12782,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=WjVHREd0mvQ",
     "motion": "In light of contemporary physics, should we accept that physical reality had a cause or beginning?",
     "summary": "Linford’s carefully limited skepticism outperformed Loke’s positive case by separating first changes from total beginnings and sustaining nonmetric, timeless-grounding, and material-parity alternatives.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "First-cause theism",
@@ -12835,7 +12835,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=bIuDfh-6iUs",
     "motion": "Does the Christian God exist?",
     "summary": "Horn narrowly prevailed through stronger metaphysical replies and a resilient resurrection case, while Barker excelled on institutional accountability, scriptural morality, and textual conflict.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -12882,7 +12882,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Rr2nrj3yXq8",
     "motion": "Does the Christian God exist?",
     "summary": "Craig prevailed through cumulative structure, sharper historical replies, and key conceptual distinctions, while Pigliucci led on scope and pressed serious evidential alternatives.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -12932,7 +12932,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=-U3IyfrnavU",
     "motion": "Does God exist?",
     "summary": "McLatchie’s cumulative Bayesian case narrowly prevailed, while Jump’s underdetermination challenges exposed unresolved comparisons behind its numerical confidence.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "theism-naturalism-ultimate-reality",
     "sides": {
       "pro": {
         "name": "Theism",
@@ -13032,7 +13032,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=fzP-3z3RoFM",
     "motion": "Does the God of the Bible exist?",
     "summary": "Barker won by exposing the gap between transcendental theism and the biblical God, while Ayala effectively qualified prayer claims and challenged Barker's moral foundation.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Biblical theism",
@@ -13241,7 +13241,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=s3_CCw2e__I",
     "motion": "Is Christianity more reasonable than atheism?",
     "summary": "Tooley wins by separating atheism from anti-Christian critique and pressing evil and prophecy; Lennox offers strong compatibility replies but leaves key positive warrants underdeveloped.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christianity defended",
@@ -13438,7 +13438,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=wsO0ysGyjMg",
     "motion": "Does the Christian God exist?",
     "summary": "Pyle’s burden-sensitive critiques expose decisive identification and probability gaps, while Craig presents a clear cumulative case whose resurrection bridge remains contested.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "The Christian God exists",
@@ -13597,7 +13597,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=c8DEQAjVesc",
     "motion": "Does the God of the Bible exist?",
     "summary": "Dan Barker narrowly wins through stronger natural alternatives and direct corrections, while Kyle Butt delivers the best single rebuttal on testimony but leaves key biblical identification bridges unsupported.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "The biblical God exists",

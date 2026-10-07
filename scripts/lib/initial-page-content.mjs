@@ -4,7 +4,7 @@ import { renderAssessmentProcessGuide } from "../../src/data/assessment-process-
 import { renderDebateRecommendation } from "../../src/data/debate-recommendation.js";
 import { renderCritiqueText } from "../../src/data/critique-format.js";
 import { avatarsForSpeakerText } from "../../src/data/interlocutors.js";
-import { topicCategoryDefinitions } from "../../src/data/topics.js";
+import { topicCategoryDefinitions, creatorTheismScopeNote } from "../../src/data/topics.js";
 import { referenceDefinitions, referenceFromUrl } from "../../src/data/references.js";
 import { debatePath, debateTitleWithYear, interlocutorPath, topicPath } from "../../src/seo.js";
 
@@ -62,7 +62,7 @@ export function initialPageContent(path) {
       ${cards(individual.map(({ debate }) => debate))}</section>${team.length ? `<section><h2>Team and other excluded appearances</h2><p>These records do not contribute to individual averages.</p>${cards(team.map(({ debate }) => debate))}</section>` : ""}`;
   }
   if (path === "/" || path === "/search/") return `<section><h2>${path === "/" ? "Newest debate additions" : "Browse all debate summaries"}</h2><p>These summaries and links work without JavaScript. Use your browser’s Find command to locate a speaker or subject; interactive filtering requires JavaScript.</p>${cards(path === "/" ? catalogue.slice(0, 12) : catalogue)}${path === "/" ? '<p><a href="/search/">Read all debate summaries</a></p>' : ""}</section>`;
-  if (path === "/topics/") return topicCategoryDefinitions.map((topic) => `<section><h2><a href="${topicPath(topic)}">${escape(topic.title)}</a></h2>${paragraph(topic.description)}${cards(catalogue.filter((debate) => debate.topicCategory === topic.id))}</section>`).join("");
+  if (path === "/topics/") return paragraph(creatorTheismScopeNote) + topicCategoryDefinitions.map((topic) => `<section><h2><a href="${topicPath(topic)}">${escape(topic.title)}</a></h2>${paragraph(topic.description)}${cards(catalogue.filter((debate) => debate.topicCategory === topic.id))}</section>`).join("");
   if (path === "/rankings/") {
     const rows = [...people.values()].map(({ person, records }) => ({ person, records: records.filter(({ debate }) => eligible(debate)) })).filter(({ records }) => records.length).sort((a, b) => average(b.records) - average(a.records) || b.records.length - a.records.length || a.person.name.localeCompare(b.person.name));
     return `<section><h2>One-on-one scorecard averages</h2><p>Group debate scores are excluded. These averages summarize the published sample, not a definitive ranking of ability. Small samples and different opponents limit comparisons. Interactive filters and comparisons require JavaScript.</p><table><caption>All eligible interlocutors, ordered by published average</caption><thead><tr><th scope="col">Interlocutor</th><th scope="col">Scorecards</th><th scope="col">Average /100</th></tr></thead><tbody>${rows.map(({ person, records }) => `<tr><th scope="row"><a href="${escape(interlocutorPath(person))}">${escape(person.name)}</a></th><td>${records.length}</td><td>${number(average(records))}</td></tr>`).join("")}</tbody></table></section>`;

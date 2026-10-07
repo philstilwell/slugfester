@@ -4,7 +4,7 @@ export const topicCategoryDefinitions = [
     "id": "cosmological-arguments",
     "title": "Cosmological & Contingency Arguments",
     "shortLabel": "Cosmological arguments",
-    "description": "Kalam, contingency, beginnings, finitude, fine-tuning, cosmic evidence, and arguments from the universe to God or necessary reality.",
+    "description": "Kalam, contingency, beginnings, finitude, fine-tuning, and arguments from the universe to a creator or necessary reality. A creator-only conclusion does not by itself establish the stronger claims of theism.",
     "keywords": [
       "cosmology",
       "cosmological",
@@ -28,7 +28,7 @@ export const topicCategoryDefinitions = [
     "id": "science-design",
     "title": "Science and design",
     "shortLabel": "Science & design",
-    "description": "Scientific explanation, naturalism, physics, cosmic or mathematical design, and the scope and limits of empirical methods.",
+    "description": "Scientific explanation, naturalism, physics, cosmic or mathematical design, and the scope and limits of empirical methods. Arguments for a designer are distinguished from further claims about that designer's identity or involvement.",
     "keywords": [
       "science",
       "scientific",
@@ -252,22 +252,75 @@ export const topicCategoryDefinitions = [
   },
   {
     "id": "god-theism-atheism",
-    "title": "God, theism, and atheism",
-    "shortLabel": "God & theism",
-    "description": "Direct cases for and against God, theism, atheism, divine reality, classical theism, and broad explanatory comparisons.",
+    "title": "God’s existence and rational belief",
+    "shortLabel": "God’s existence",
+    "description": "Broad cumulative cases for or against God's existence and the reasonableness of belief, spanning several questions without one specialist issue dominating. Creator-only arguments are not treated as sufficient to establish a personal, involved God.",
     "keywords": [
       "god",
       "theism",
       "atheism",
       "atheist",
-      "christian theism",
-      "classical theism",
       "divine",
-      "ultimate reality",
       "belief in god",
       "does god exist"
+    ]
+  },
+  {
+    "id": "creator-arguments-theism",
+    "title": "From a creator to a personal God",
+    "shortLabel": "Creator arguments & theism",
+    "description": "Creator-only (deistic) arguments and the further step to a personal, involved God. These debates test whether a creator, designer, or ultimate foundation also warrants claims about divine goodness, providence, revelation, or intervention. This describes the arguments, not the speakers' religious identities.",
+    "keywords": [
+      "deism",
+      "deistic",
+      "creator-only",
+      "personal creator",
+      "perfect mind",
+      "finite theism",
+      "finite creator",
+      "gap problem",
+      "interventionist",
+      "ultimate foundation"
+    ]
+  },
+  {
+    "id": "theism-naturalism-ultimate-reality",
+    "title": "Theism, naturalism, and ultimate reality",
+    "shortLabel": "Theism & naturalism",
+    "description": "Comparisons of whole worldviews: whether theism, naturalism, or other accounts best explain reality, consciousness, value, and experience. The focus is comparative explanatory scope, simplicity, and evidence, rather than a creator-only argument or one divine attribute.",
+    "keywords": [
+      "theism or naturalism",
+      "theism and naturalism",
+      "theism versus naturalism",
+      "ultimate reality",
+      "worldview",
+      "worldviews",
+      "best explains reality",
+      "comparative explanation",
+      "explanatory scope"
+    ]
+  },
+  {
+    "id": "divine-nature-attributes",
+    "title": "God’s nature and attributes",
+    "shortLabel": "Divine nature & attributes",
+    "description": "The coherence and implications of divine simplicity, omnipotence, omniscience, timelessness, goodness, freedom, and uniqueness. These debates ask what God could be like, rather than treating evidence for a creator as proof of all those attributes.",
+    "keywords": [
+      "divine simplicity",
+      "classical theism",
+      "divine attributes",
+      "omnipotence",
+      "omnipotent",
+      "omniscience",
+      "omniscient",
+      "timelessness",
+      "divine freedom",
+      "monotheism",
+      "theism coherent"
     ]
   }
 ];
 
 export const topicCategoryIds = new Set(topicCategoryDefinitions.map(({ id }) => id));
+
+export const creatorTheismScopeNote = "A creator is not yet the God of theism. Creator-only (deistic) arguments do not by themselves establish revelation, intervention, or a God who answers prayer. Categories describe the main question of each debate, not the religious identity of its speakers.";
