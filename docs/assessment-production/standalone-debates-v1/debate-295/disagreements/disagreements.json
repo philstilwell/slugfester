@@ -1,0 +1,317 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "295",
+  "debateId": "horn-paulogia-apostolic-sincerity-2023",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-acts-brevity-supports-historicity:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-acts-brevity-supports-historicity",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "pro-james-lawbreaking-points-to-preaching:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-james-lawbreaking-points-to-preaching",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "con-trauma-proposal-conceded-speculative:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "con-trauma-proposal-conceded-speculative",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 88,
+          "rationale": "The explicit concession accurately marks that no evidence was supplied, preventing the possibility from carrying unwarranted explanatory weight."
+        },
+        "option-b": {
+          "value": 77,
+          "rationale": "He offers a general description of delayed trauma but expressly admits there is no explicit evidence connecting that mechanism to Paul."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-named-apostates-would-expose-abandonment:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-named-apostates-would-expose-abandonment",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "pro-early-organization-supports-apostolic-continuity:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-early-organization-supports-apostolic-continuity",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "con-minimal-sincere-experiences-scenario:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-minimal-sincere-experiences-scenario",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate pro debate-wide adjustment is warranted because completion strengths and gaps are already captured in the move ratings and their locked burden links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Completion of the pro motion-level burden without counting consequences already assessed move by move.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No uncaptured debate-wide consequence remains after the complete locked inventory review.",
+            "alreadyCapturedBy": [
+              "pro-unequal-martyrdom-evidence",
+              "con-appreciates-nuanced-scope",
+              "pro-four-witness-core",
+              "con-sparse-james-causation",
+              "pro-acts-brevity-supports-historicity",
+              "pro-james-brother-multiple-attestation",
+              "con-james-brother-political-motive",
+              "pro-james-lawbreaking-points-to-preaching",
+              "pro-tacitus-belief-directed-persecution",
+              "con-nero-scapegoat-problem",
+              "pro-probability-over-possibility",
+              "con-nonuniform-roman-practice",
+              "pro-risk-before-arrest",
+              "con-recantation-card-challenge",
+              "pro-recantation-costs-status-and-reputation",
+              "con-recanting-does-not-erase-benefit",
+              "pro-public-association-analogy",
+              "con-association-itself-unproven",
+              "pro-sincerity-not-objective-truth",
+              "con-paul-sincere-but-different-category",
+              "pro-trauma-account-is-unsupported-speculation",
+              "con-trauma-proposal-conceded-speculative",
+              "pro-collective-acts-and-paul-evidence",
+              "con-collective-evidence-stops-early",
+              "pro-apostle-as-public-messenger",
+              "con-inference-stacking",
+              "pro-two-lines-support-group-preaching",
+              "con-named-leaders-not-all-eleven",
+              "con-disappearance-allows-multiple-outcomes",
+              "pro-named-apostates-would-expose-abandonment",
+              "pro-early-organization-supports-apostolic-continuity",
+              "pro-strongest-case-is-expected-suffering",
+              "con-positive-evidence-needed-for-all",
+              "con-minimal-sincere-experiences-scenario",
+              "pro-compare-whole-narratives"
+            ],
+            "counterfactual": "Removing the scored move effects would change the record, but no independent residual consequence remains."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate pro debate-wide adjustment is warranted because the relevant completion strengths and limits are already captured in the scored locked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "The pro route is completed only through the already scored move-level evidence and replies.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No additional unscored debate-wide consequence remains for the pro side.",
+            "alreadyCapturedBy": [
+              "pro-unequal-martyrdom-evidence",
+              "pro-four-witness-core",
+              "pro-acts-brevity-supports-historicity",
+              "pro-james-brother-multiple-attestation",
+              "pro-james-lawbreaking-points-to-preaching",
+              "pro-tacitus-belief-directed-persecution",
+              "pro-probability-over-possibility",
+              "pro-risk-before-arrest",
+              "pro-recantation-costs-status-and-reputation",
+              "pro-public-association-analogy",
+              "pro-sincerity-not-objective-truth",
+              "pro-trauma-account-is-unsupported-speculation",
+              "pro-collective-acts-and-paul-evidence",
+              "pro-apostle-as-public-messenger",
+              "pro-two-lines-support-group-preaching",
+              "pro-named-apostates-would-expose-abandonment",
+              "pro-early-organization-supports-apostolic-continuity",
+              "pro-strongest-case-is-expected-suffering",
+              "pro-compare-whole-narratives"
+            ],
+            "counterfactual": "Removing any claimed adjustment would not change the move-level record for the pro burden."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate con debate-wide adjustment is warranted because completion strengths and gaps are already captured in the move ratings and their locked burden links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Completion of the con motion-level burden without counting consequences already assessed move by move.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No uncaptured debate-wide consequence remains after the complete locked inventory review.",
+            "alreadyCapturedBy": [
+              "pro-unequal-martyrdom-evidence",
+              "con-appreciates-nuanced-scope",
+              "pro-four-witness-core",
+              "con-sparse-james-causation",
+              "pro-acts-brevity-supports-historicity",
+              "pro-james-brother-multiple-attestation",
+              "con-james-brother-political-motive",
+              "pro-james-lawbreaking-points-to-preaching",
+              "pro-tacitus-belief-directed-persecution",
+              "con-nero-scapegoat-problem",
+              "pro-probability-over-possibility",
+              "con-nonuniform-roman-practice",
+              "pro-risk-before-arrest",
+              "con-recantation-card-challenge",
+              "pro-recantation-costs-status-and-reputation",
+              "con-recanting-does-not-erase-benefit",
+              "pro-public-association-analogy",
+              "con-association-itself-unproven",
+              "pro-sincerity-not-objective-truth",
+              "con-paul-sincere-but-different-category",
+              "pro-trauma-account-is-unsupported-speculation",
+              "con-trauma-proposal-conceded-speculative",
+              "pro-collective-acts-and-paul-evidence",
+              "con-collective-evidence-stops-early",
+              "pro-apostle-as-public-messenger",
+              "con-inference-stacking",
+              "pro-two-lines-support-group-preaching",
+              "con-named-leaders-not-all-eleven",
+              "con-disappearance-allows-multiple-outcomes",
+              "pro-named-apostates-would-expose-abandonment",
+              "pro-early-organization-supports-apostolic-continuity",
+              "pro-strongest-case-is-expected-suffering",
+              "con-positive-evidence-needed-for-all",
+              "con-minimal-sincere-experiences-scenario",
+              "pro-compare-whole-narratives"
+            ],
+            "counterfactual": "Removing the scored move effects would change the record, but no independent residual consequence remains."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate con debate-wide adjustment is warranted because the relevant completion strengths and limits are already captured in the scored locked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "The con route is completed only through the already scored move-level evidence and replies.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No additional unscored debate-wide consequence remains for the con side.",
+            "alreadyCapturedBy": [
+              "con-appreciates-nuanced-scope",
+              "con-sparse-james-causation",
+              "con-james-brother-political-motive",
+              "con-nero-scapegoat-problem",
+              "con-nonuniform-roman-practice",
+              "con-recantation-card-challenge",
+              "con-recanting-does-not-erase-benefit",
+              "con-association-itself-unproven",
+              "con-paul-sincere-but-different-category",
+              "con-trauma-proposal-conceded-speculative",
+              "con-collective-evidence-stops-early",
+              "con-inference-stacking",
+              "con-named-leaders-not-all-eleven",
+              "con-disappearance-allows-multiple-outcomes",
+              "con-positive-evidence-needed-for-all",
+              "con-minimal-sincere-experiences-scenario"
+            ],
+            "counterfactual": "Removing any claimed adjustment would not change the move-level record for the con burden."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 35,
+    "disputesExtracted": 8,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-295/inventory/inventory.json",
+      "sha256": "8e2b483b859ea9ef8caa0f6d77a1732bb73e79a4f67be2aba7e89b7f834bfecd"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-295/judgments/pass-a/output.json",
+      "sha256": "581e0702c5a599887f7d8acafe83e9ae0d1ecefd3d94654724460d017a03cd82"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-295/judgments/pass-b/output.json",
+      "sha256": "2139986d5cb4251eaceddd3543a71e83b6309a22b21ede21de18e91062a6ceeb"
+    }
+  }
+}

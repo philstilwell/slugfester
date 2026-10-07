@@ -1,0 +1,20 @@
+### Result
+[{"viewport":{"width":1440,"height":1000},"quotes":["\n      The evidence supports their sincerity · Trent Horn\n      \"they never stopped teaching and preaching Jesus the Christ\"\n      Horn quotes Acts to support collective, continuing proclamation by the apostles after authorities ordered them to stop.\n      \"\n    ","\n      The evidence is insufficient for all · Paulogia\n      \"there isn't strong evidence for that positive claim\"\n      Paulogia distinguishes evidence for sincere named leaders from the stronger claim that all eleven publicly persisted under danger.\n      \"\n    "],"overflow":false,"screenshots":["output/playwright/debate-295-local-desktop-quote-0.png","output/playwright/debate-295-local-desktop-quote-1.png"]},{"viewport":{"width":390,"height":844},"quotes":["\n      The evidence supports their sincerity · Trent Horn\n      \"they never stopped teaching and preaching Jesus the Christ\"\n      Horn quotes Acts to support collective, continuing proclamation by the apostles after authorities ordered them to stop.\n      \"\n    ","\n      The evidence is insufficient for all · Paulogia\n      \"there isn't strong evidence for that positive claim\"\n      Paulogia distinguishes evidence for sincere named leaders from the stronger claim that all eleven publicly persisted under danger.\n      \"\n    "],"overflow":false,"screenshots":["output/playwright/debate-295-local-mobile-quote-0.png","output/playwright/debate-295-local-mobile-quote-1.png"]}]
+### Ran Playwright code
+```js
+await (async page => {
+const result=[];
+for(const [name,width,height] of [['desktop',1440,1000],['mobile',390,844]]) {
+ await page.setViewportSize({width,height}); await page.goto('http://127.0.0.1:4188/debate/horn-paulogia-apostolic-sincerity-2023/');
+ await page.locator('.quote-card').first().waitFor();
+ const cards=page.locator('.quote-card');
+ for(let i=0;i<2;i++){await cards.nth(i).scrollIntoViewIfNeeded(); await cards.nth(i).screenshot({path:`output/playwright/debate-295-local-${name}-quote-${i}.png`});}
+ result.push({viewport:{width,height},quotes:await cards.allTextContents(),overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),screenshots:[0,1].map(i=>`output/playwright/debate-295-local-${name}-quote-${i}.png`)});
+}
+return result;
+}
+)(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4188/debate/horn-paulogia-apostolic-sincerity-2023/
+- Page Title: Apostolic Sincerity — Horn vs Paulogia · 2023 | Slugfester

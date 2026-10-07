@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "2.0-authenticated-subscription-worker-evidence",
+  "status": "authenticated-and-released-for-first-unsaved-candidate",
+  "debateNumber": "295",
+  "debateId": "horn-paulogia-apostolic-sincerity-2023",
+  "createdAt": "2026-10-07T16:37:26.830247+00:00",
+  "agentPath": "/root/inventory295",
+  "actualContextModels": [
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low"
+    }
+  ],
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-295/inventory/execution-plan.json",
+    "sha256": "98c3af11abdeefb551c42e249a04bc2e9b51aea3088aedbc6871dd599bc75ad7",
+    "bytes": 7490
+  },
+  "sessionSnapshot": {
+    "externalLocalSessionPath": "/Users/philstilwell/.codex/sessions/2026/10/07/rollout-2026-10-07T12-36-21-01a11739-1dd6-74d1-98d3-dba7727d5d09.jsonl",
+    "sessionId": "01a11739-1dd6-74d1-98d3-dba7727d5d09",
+    "parentThreadId": "01a0f359-eb70-7da1-8b88-83ebe51a754a",
+    "sha256": "8ea9d17129d4f7ae4fa811b1db92d796747d30271faba0041d19751a1a5e3993",
+    "bytes": 1018769,
+    "rawSessionCommitted": false
+  },
+  "authentication": "ChatGPT subscription via built-in collaboration; no API inference",
+  "isolation": "Fresh fork-none context, restricted inputs and disjoint output. No operating-system sandbox claimed. Controller inspects tool calls separately.",
+  "attempts": 1,
+  "retries": 0,
+  "attemptNumber": 1,
+  "replacementAuthorization": null,
+  "directIncrementalCostUsd": 0,
+  "inputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-295/inventory/execution-plan.json",
+      "sha256": "98c3af11abdeefb551c42e249a04bc2e9b51aea3088aedbc6871dd599bc75ad7",
+      "bytes": 7490,
+      "literalCompleteReadAuthenticated": true,
+      "nonemptyLines": 189,
+      "missingLines": [],
+      "toolOutputEvidence": [
+        {
+          "callId": "call_b7b5205dedba47f082d9993a318532b3",
+          "sourceLineCount": 189,
+          "firstSourceLine": 1,
+          "lastSourceLine": 189
+        },
+        {
+          "callId": "call_25e55df78f10473099fe13d9c0d237af",
+          "sourceLineCount": 69,
+          "firstSourceLine": 1,
+          "lastSourceLine": 189
+        }
+      ]
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-295/workflow/inventory/reader.txt",
+      "sha256": "cff53059400450b5b0454208507f63752e269533d3527d1296d3375e68128629",
+      "bytes": 176406,
+      "literalCompleteReadAuthenticated": true,
+      "nonemptyLines": 2357,
+      "missingLines": [],
+      "toolOutputEvidence": [
+        {
+          "callId": "call_4b5af54e458b4cdc9da81c4eb146951a",
+          "sourceLineCount": 463,
+          "firstSourceLine": 1,
+          "lastSourceLine": 2391
+        },
+        {
+          "callId": "call_422479f758d848e4a87d77dd07a4f661",
+          "sourceLineCount": 480,
+          "firstSourceLine": 481,
+          "lastSourceLine": 960
+        },
+        {
+          "callId": "call_47b426a81245481e91de9379b80dff51",
+          "sourceLineCount": 480,
+          "firstSourceLine": 961,
+          "lastSourceLine": 1440
+        },
+        {
+          "callId": "call_de8f66d1b10946a8b36f7fd387031d83",
+          "sourceLineCount": 480,
+          "firstSourceLine": 1441,
+          "lastSourceLine": 1920
+        },
+        {
+          "callId": "call_25e55df78f10473099fe13d9c0d237af",
+          "sourceLineCount": 458,
+          "firstSourceLine": 53,
+          "lastSourceLine": 2391
+        }
+      ]
+    }
+  ],
+  "toolCallRecords": [
+    {
+      "callId": "call_b7b5205dedba47f082d9993a318532b3",
+      "tool": "exec",
+      "argumentsSha256": "8d826a3d02399cdc3c21cf36a6b2700f9681226e12cdf659fb681e847446198d"
+    },
+    {
+      "callId": "call_4b5af54e458b4cdc9da81c4eb146951a",
+      "tool": "exec",
+      "argumentsSha256": "c7a12c8f509095fb883779e3c7766618fb1351f2c90cd4d5f1553c0fb1cbe733"
+    },
+    {
+      "callId": "call_422479f758d848e4a87d77dd07a4f661",
+      "tool": "exec",
+      "argumentsSha256": "217cf2e2bacf744110714e58a4303064da3be2b527e7b8a264cdf934bc5292d9"
+    },
+    {
+      "callId": "call_47b426a81245481e91de9379b80dff51",
+      "tool": "exec",
+      "argumentsSha256": "8c28d87ba817cd95f82e6b66456be3cc1098334cff336e02100d882047703773"
+    },
+    {
+      "callId": "call_de8f66d1b10946a8b36f7fd387031d83",
+      "tool": "exec",
+      "argumentsSha256": "e95df4d4e8a348871d32a63ad06ba817474bccfdd5e06cc7814d72d1fd3f0eef"
+    },
+    {
+      "callId": "call_25e55df78f10473099fe13d9c0d237af",
+      "tool": "exec",
+      "argumentsSha256": "028b3383229a8f671fe0c9ac66c6b6154d77e9d99e01bd62d063cda4d1630d69"
+    },
+    {
+      "callId": "call_23e6e34774d9467691ab21adccac3f3d",
+      "tool": "send_message",
+      "argumentsSha256": "6947bef4dcb3a12f2b5dde5b32996819ee9c7162620dfb0ba95a65258e7cc157"
+    },
+    {
+      "callId": "call_7da709edd8ad4015b65f8583c95dd0a8",
+      "tool": "wait_agent",
+      "argumentsSha256": "7d04d57c16360ab72473962796ad05822bc069874d59d5edcc66fd72a377fbfb"
+    }
+  ],
+  "outputAbsentAtRelease": true
+}
