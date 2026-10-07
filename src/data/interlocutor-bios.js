@@ -2,6 +2,7 @@
 // Each entry has a public biographical source checked on the recorded review date.
 export const biographyReviewDate = "2026-09-05";
 const entries = [
+  ["Michael Nugent", "Michael Nugent is a writer from Dublin and a secular advocate with Atheist Ireland. His public work includes promoting atheism and secularism, campaigning against terrorism, and supporting assisted-dying rights. He also co-wrote the comedy musical I, Keano.", "https://www.michaelnugent.com/about/", "2026-10-07"],
   ["Raphael Lataster", "Raphael Lataster is a researcher and author whose work has examined religion, philosophy, history, and science. He holds a doctorate from the University of Sydney and also writes about misinformation in politics and health.", "https://www.raphaellataster.com/", "2026-10-07"],
   ["Paulogia", "Paulogia is the online name of Paul Ens, a video creator and podcaster who examines Christian apologetics and biblical history. A former Christian, he produces responses to religious arguments and conversations with scholars about early Christianity and Jesus’ resurrection.", "https://www.bartehrman.com/author/paulens/", "2026-10-07"],
   ["S.J. Thomason", "S.J. Thomason is a Christian writer and business-management academic. Her work includes Christian apologetics, objective morality, and ethical decision-making. She publishes at Christian Apologist and is the author of A Quick and Concise Case for Christ.", "https://christian-apologist.com/about/", "2026-10-07"],
