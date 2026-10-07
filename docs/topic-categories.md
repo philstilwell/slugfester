@@ -6,6 +6,8 @@ The definitions and supplementary keywords live in `src/data/topics.js`. New deb
 
 Run `npm run seo` after changing assignments or definitions. Both `npm run check` and `npm run site:check` validate explicit primary assignments and generated catalogue consistency. A missing or invalid primary category stops publication.
 
+The **Debates by topic** hover/focus previews and initial HTML are neutral browsing aids: describe the question and themes, not the winner, relative performance, or scores. `src/data/topic-preview.js` uses each debate's motion and section headings rather than its assessment summary, so new debates inherit this distinction. Published assessments and summaries elsewhere remain unchanged. `scripts/validate-neutral-topic-previews.mjs` checks every published preview and prevents verdict fields from entering these cards.
+
 ## October 6, 2026 expansion: creator arguments and theism
 
 The 57-debate **God, theism, and atheism** group was reviewed against each debate's motion, summary, sections, and published analysis. The approved expansion adds three categories, narrows the old group, and moves specialist debates into existing groups. There are now **18 categories**. Counts below describe the 289-debate catalogue at this change, not targets or limits.

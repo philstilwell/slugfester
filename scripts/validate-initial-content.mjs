@@ -5,6 +5,7 @@ import { avatarsForSpeakerText } from "../src/data/interlocutors.js";
 import { debatePath, interlocutorPath } from "../src/seo.js";
 import { initialPageContent } from "./lib/initial-page-content.mjs";
 import { renderAssessmentProcessGuide } from "../src/data/assessment-process-guide.js";
+import { topicPreviewText } from "../src/data/topic-preview.js";
 
 const escape = (value) => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 const read = (path) => readFileSync(new URL(`..${path}index.html`, import.meta.url), "utf8");
@@ -35,6 +36,6 @@ assert(readFileSync(new URL("../assets/assessment-process/slugfester-assessment-
 const topics = read("/topics/");
 for (const debate of debates) {
   assert(search.includes(escape(debate.summary)), `Missing catalogue summary: ${debate.id}`);
-  assert(topics.includes(escape(debate.summary)), `Missing topic summary: ${debate.id}`);
+  assert(topics.includes(escape(topicPreviewText(debate))), `Missing neutral topic preview: ${debate.id}`);
 }
 console.log(`Validated substantive initial text for ${debates.length} debates and ${people.size} profiles, plus catalogue, topics, rankings and method pages.`);
