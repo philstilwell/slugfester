@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "293",
+  "debateId": "mcdowell-paulogia-apostolic-martyrdom-2020",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate adjustment is warranted because pro’s burden completion and remaining limits are already captured in the locked move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-sincerity-contribution",
+              "pro-group-testimony"
+            ],
+            "completionCriterion": "Whether pro completes its limited sincerity contribution without duplicating assessed strengths and gaps.",
+            "relatedMoveIds": [
+              "pro-sincerity-not-proof",
+              "pro-multiple-attestation",
+              "pro-cost-supports-sincerity",
+              "pro-final-sincerity"
+            ],
+            "distinctConsequence": "No additional consequence independently changes burden completion outside the assessed moves.",
+            "alreadyCapturedBy": [
+              "pro-sincerity-not-proof",
+              "pro-multiple-attestation",
+              "pro-cost-supports-sincerity",
+              "pro-final-sincerity"
+            ],
+            "counterfactual": "Removing any alleged extra consequence leaves the burden assessment expressed by the move ratings."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate pro adjustment is warranted: completion of the sincerity and group-testimony burdens is already represented in the locked move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-sincerity-contribution",
+              "pro-group-testimony",
+              "pro-costly-proclamation",
+              "pro-specific-deaths"
+            ],
+            "completionCriterion": "Whether the locked pro moves collectively establish a limited sincerity and anti-conspiracy contribution from apostolic suffering.",
+            "relatedMoveIds": [
+              "pro-sincerity-not-proof",
+              "pro-multiple-attestation",
+              "pro-graded-central-deaths",
+              "pro-cost-supports-sincerity",
+              "pro-final-sincerity"
+            ],
+            "distinctConsequence": "Any residual strength or weakness in pro burden completion arises from the same source bridges already rated move by move.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "If the rated source and scope bridges were materially stronger or weaker, their existing dimension ratings would change rather than justify a separate adjustment."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate adjustment is warranted because con’s scope, specificity, and truth-gap performance is already captured in the locked move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-truth-gap",
+              "con-eyewitness-scope",
+              "con-death-specificity"
+            ],
+            "completionCriterion": "Whether con completes its critical burdens without counting source and scope objections a second time.",
+            "relatedMoveIds": [
+              "con-small-number-changes-burden",
+              "con-survey-aggregation-objection",
+              "con-deaths-mostly-limited",
+              "con-final-insufficient"
+            ],
+            "distinctConsequence": "No independent debate-wide consequence remains after the locked moves capture con’s limits.",
+            "alreadyCapturedBy": [
+              "con-small-number-changes-burden",
+              "con-survey-aggregation-objection",
+              "con-deaths-mostly-limited",
+              "con-final-insufficient"
+            ],
+            "counterfactual": "Removing any claimed extra consequence does not alter the burden record in the judgments."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate con adjustment is warranted: eyewitness scope, death specificity, and sincere-error limits are already captured in the locked move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-truth-gap",
+              "con-eyewitness-scope",
+              "con-death-specificity",
+              "con-sincere-error"
+            ],
+            "completionCriterion": "Whether the locked con moves sufficiently preserve the gap from limited sincere belief and death evidence to resurrection truth.",
+            "relatedMoveIds": [
+              "con-small-number-changes-burden",
+              "con-acts-is-indirect",
+              "con-deaths-mostly-limited",
+              "con-two-person-sincere-error",
+              "con-final-insufficient"
+            ],
+            "distinctConsequence": "Any remaining con burden-completion consequence repeats the scope, source, and alternative-explanation limits already assessed in dimensions.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "If con had established broader or narrower limits on the accepted evidence, those changes would belong in the existing move ratings rather than a new adjustment."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 25,
+    "disputesExtracted": 2,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-293/inventory/inventory.json",
+      "sha256": "4123a3d7f268d5fb3d5ddfa5cebf2cd5da49734f04550458a952cc74a84a7676"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-293/judgments/pass-a/output.json",
+      "sha256": "f45af7d259237e403d2470276b4315b67bc06d0c5505e471430c6b5a4d02a42a"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-293/judgments/pass-b/output.json",
+      "sha256": "d32675566879f7e8c6b120a875165c5ab699abc4e1c62fb53ade113bc1294687"
+    }
+  }
+}

@@ -13973,5 +13973,55 @@ export const debateSummaries = [
         "title": "Christianity, salvation, and eternal life"
       }
     ]
+  },
+  {
+    "id": "mcdowell-paulogia-apostolic-martyrdom-2020",
+    "number": "293",
+    "title": "Sean McDowell vs Paulogia — Apostolic Martyrdom and the Resurrection",
+    "year": 2020,
+    "label": "Apostolic Martyrdom",
+    "date": "2026-10-07",
+    "duration": "1 hr 3 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=vJGRgxkzrjA",
+    "motion": "Are apostolic martyrdom and suffering good evidence for the resurrection?",
+    "summary": "McDowell argues costly apostolic persistence supports sincere resurrection belief, while Paulogia accepts key individuals but challenges group scope, death evidence, and the move from sincerity to truth.",
+    "topicCategory": "resurrection-miracles",
+    "sides": {
+      "pro": {
+        "name": "Apostolic suffering supports resurrection belief",
+        "speaker": "Sean McDowell",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The martyrdom evidence is insufficient",
+        "speaker": "Paulogia",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 86,
+      "con": 86,
+      "winner": "tie"
+    },
+    "sections": [
+      {
+        "title": "Definition and evidential role"
+      },
+      {
+        "title": "Eyewitness scope and source reliability"
+      },
+      {
+        "title": "Death evidence and individual cases"
+      },
+      {
+        "title": "Sincere error and alternative explanations"
+      },
+      {
+        "title": "Historical standards and checkability"
+      },
+      {
+        "title": "Final motion-level synthesis"
+      }
+    ]
   }
 ];

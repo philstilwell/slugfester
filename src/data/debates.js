@@ -132895,6 +132895,463 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    "number": "293",
+    "id": "mcdowell-paulogia-apostolic-martyrdom-2020",
+    "date": "2026-10-07",
+    "title": "Sean McDowell vs Paulogia — Apostolic Martyrdom and the Resurrection (2020)",
+    "label": "Apostolic Martyrdom",
+    "topicCategory": "resurrection-miracles",
+    "youtubeUrl": "https://www.youtube.com/watch?v=vJGRgxkzrjA",
+    "duration": "1 hr 3 min",
+    "motion": "Are apostolic martyrdom and suffering good evidence for the resurrection?",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "sourceNote": "Based on complete English automatic captions from the linked YouTube recording, with nine uncertain passages checked using automated transcription of the official publisher’s audio. Direct quotations preserve the locked source wording; argument descriptions are condensed summaries. This assessment covers Sean McDowell and Paulogia’s substantive discussion and final statements, approximately 8:43–1:11:15, with exclusions. Introductions, advertisements, moderator commentary and the host’s argumentative interventions and dependent replies are excluded, including the exchange at approximately 1:00:08–1:08:35. Neither speaker receives credit, penalties, or an inference of failing to reply from excluded material. There were no formal timed rounds or audience Q&A. The scores assess the retained discussion, not the complete recording. The displayed duration describes that overall time span, including its excluded intervals.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance, rather than judgments about worldview truth; the separate AI Contribution does not affect these scores.",
+    "sides": {
+      "pro": {
+        "name": "Apostolic suffering supports resurrection belief",
+        "speaker": "Sean McDowell",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The martyrdom evidence is insufficient",
+        "speaker": "Paulogia",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 86,
+      "con": 86,
+      "winner": "tie"
+    },
+    "summary": "McDowell argues costly apostolic persistence supports sincere resurrection belief, while Paulogia accepts key individuals but challenges group scope, death evidence, and the move from sincerity to truth.",
+    "quotes": {
+      "pro": {
+        "text": "this doesn't prove the resurrection is true",
+        "context": "McDowell uses this qualification in his final synthesis, limiting apostolic suffering to evidence of sincere belief and against conscious fabrication within a larger case."
+      },
+      "con": {
+        "text": "we just have to explain how two people came to sincerely believe something",
+        "context": "Paulogia concludes his two-person alternative by arguing that the securely accepted Peter and Paul cases need no unusual collective-experience explanation."
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "definition-and-evidential-role",
+        "title": "Definition and evidential role",
+        "timebox": "8:43–20:54",
+        "score": {
+          "pro": 88,
+          "con": 87
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-broader-martyr-definition",
+              "time": "10:55",
+              "score": 82,
+              "role": "Reply",
+              "words": "McDowell broadens martyrdom to dangerous public religious persistence connected to death, using scholarly practice and a modern priest to challenge an explicit-recantation requirement.",
+              "critique": "Strongest feature: McDowell gives a coherent alternative category in which persistent public proclamation under foreseeable danger can qualify as martyrdom even when no surviving source records a formal offer to recant. Principal limitation: The appeal to scholarly practice and a modern priest illustrates usage but does not establish that the ancient apostles actually satisfy the proposed definition, while the asserted breadth of agreement receives limited examination. Live burden: The pro side must connect particular people, proclamations, dangers, and deaths rather than allow a defensible definition to substitute for the historical application Paulogia requests. Locked score: 82 recognizes a responsive and reasonably clear definitional reply, tempered because the scholarship is compressed and the historical application to particular apostles remains independently contestable.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-three-part-martyr-test",
+              "time": "8:43",
+              "score": 84,
+              "role": "Constructive",
+              "words": "Paulogia requires eyewitness status, an opportunity to recant, and an actual death-level test, arguing that mere willingness to suffer carries weaker evidential force.",
+              "critique": "Strongest feature: Paulogia identifies three evidential links that popular martyrdom arguments often compress, separating claimed firsthand knowledge, an opportunity to recant, and conduct tested by death rather than mere abstract willingness. Principal limitation: He explains why knowledge and serious cost matter, but does not fully establish that every relevant case must include an explicit recantation scene or why each proposed condition is strictly necessary rather than evidentially strengthening. Live burden: The con side must apply the clarified test case by case without treating its proposed standard as historical evidence or disregarding costly public persistence that may bear on sincerity even absent a recorded ultimatum. Locked score: 84 reflects a coherent, motion-focused framework whose useful distinctions outweigh its incomplete defense of necessity and its limited application to the contested apostolic cases.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-sincerity-not-proof",
+              "time": "20:04",
+              "score": 92,
+              "role": "Constructive",
+              "words": "McDowell limits suffering evidence to supporting sincere resurrection belief and resisting deliberate fabrication, presenting it as one component rather than proof of Christianity.",
+              "critique": "Strongest feature: McDowell states the affirmative burden with unusual discipline, expressly distinguishing evidence of sincere belief and resistance to conspiracy from proof that the resurrection occurred or that Christianity is true. Principal limitation: The inference from costly persistence to sincerity is plausible, but this move does not establish how many apostles displayed the relevant conduct or whether the historical sources connect each person’s cost to an appearance claim. Live burden: The pro side must supply those scope and source bridges while maintaining this limited conclusion, because sincerity can contribute to a cumulative case without resolving whether sincere witnesses were mistaken. Locked score: 92 reflects outstanding logical calibration, clarity, and motion relevance, with the remaining weakness located in the unproved historical reach of the otherwise carefully bounded inference.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-definition-does-not-supply-evidence",
+              "time": "15:03",
+              "score": 89,
+              "role": "Reply",
+              "words": "Paulogia conditionally grants the broader definition but argues that unknown preaching, death causes, and political factors leave the apostolic cases historically unestablished.",
+              "critique": "Strongest feature: Paulogia cleanly separates the meaning of martyrdom from the evidence that any particular apostle meets that meaning, identifying preaching content, causal connection, and political alternatives as distinct historical questions. Principal limitation: Although the missing links are concrete, the reply mostly states that the relevant evidence is absent or insufficient without developing the source record for each disputed individual within this move. Live burden: The con side must sustain those case-specific doubts against McDowell’s graded evidence while avoiding the stronger claim that political causation and religious proclamation cannot overlap. Locked score: 89 rewards an exceptionally responsive conditional argument that reaches the central factual burden, with a modest deduction because its historical examples and individual applications remain compressed rather than demonstrated in detail.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "eyewitness-scope-and-sources",
+        "title": "Eyewitness scope and source reliability",
+        "timebox": "20:51–38:40",
+        "score": {
+          "pro": 84,
+          "con": 89
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-early-varied-group-sources",
+              "time": "21:58",
+              "score": 84,
+              "role": "Reply",
+              "words": "McDowell argues that varied early sources can support group appearance belief without surviving first-person writings from every apostle, extending evidence beyond Peter and Paul.",
+              "critique": "Strongest feature: McDowell offers a recognizable historical method for learning about groups without demanding autobiographical documents from every member, drawing together early materials of different genres and explicit named figures. Principal limitation: The move describes those sources as consistent but does not adequately establish their independence, transmission paths, or equal reach to each apostle, leaving the grouped-to-individual inference substantially underdefended. Live burden: The pro side must show why converging reports add information rather than recycle a common tradition and must calibrate the conclusion to sincere group belief instead of veridical resurrection. Locked score: 84 reflects a coherent and directly responsive expansion beyond Peter and Paul, reduced by compressed source criticism, broad consensus framing, and unresolved aggregation across uneven individuals.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-small-number-changes-burden",
+              "time": "20:51",
+              "score": 89,
+              "role": "Reply",
+              "words": "Paulogia argues that if reliable firsthand belief chiefly concerns Peter and Paul, sincere error needs explanation for only two individuals rather than a collective experience.",
+              "critique": "Strongest feature: Paulogia accepts the limited sincerity point and then identifies witness scope as load-bearing, since explaining two independently sincere believers requires less than explaining a broad apostolic group with shared experiential claims. Principal limitation: The conditional logic is strong, but the premise that the secure pool is chiefly Peter and Paul remains disputed and cannot be established merely by repeating that individual first-person writings are scarce. Live burden: The con side must defend the restricted pool through source analysis while allowing that indirect early testimony may still carry some historical weight beyond the two named figures across the disputed wider group. Locked score: 89 captures a precise, charitable, and strategically important reframing whose explanatory consequence is persuasive if its disputed numerical premise survives source-level scrutiny.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-multiple-attestation",
+              "time": "28:37",
+              "score": 84,
+              "role": "Reply",
+              "words": "McDowell combines Acts, an early First Corinthians creed, and repeated appearance traditions to support historically usable group belief without accepting every narrative detail.",
+              "critique": "Strongest feature: McDowell presents a cumulative route from early and varied attestations to the limited conclusion that disciples believed they experienced the risen Jesus, explicitly allowing hallucination or other interpretations of those experiences. Principal limitation: The move bundles several contested warrants without resolving possible dependence, survey aggregation, or the move from grouped language to each individual, and its qualified scholarly estimate cannot bear precise evidential weight. Live burden: The pro side must demonstrate genuine informational independence and specify whose belief each source supports, while retaining the important distinction between sincere experience claims and resurrection truth. Locked score: 84 reflects substantial relevance, coherence, and calibration, offset by compressed source analysis and an incomplete bridge from multiple references to a broad apostolic group.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-acts-is-indirect",
+              "time": "23:46",
+              "score": 88,
+              "role": "Reply",
+              "words": "Paulogia treats Acts as an indirect historical claim because its relevant early chapters precede Paul’s conversion and depend on unidentified prior reports.",
+              "critique": "Strongest feature: Paulogia pinpoints why possible companion authorship would not make the relevant Acts episodes firsthand, using the chronology before Paul’s conversion to distinguish a historical source from direct witness testimony. Principal limitation: Establishing indirect transmission does not establish unreliability, and the move does not evaluate what the unidentified sources might have been or how their claims compare with other early materials. Live burden: The con side must translate the justified source-status caution into a proportionate evidential judgment rather than assuming that all mediated testimony is historically unusable. Locked score: 88 recognizes a clear, specific, and highly responsive source criticism that materially narrows what Acts independently proves, while leaving room for indirect evidence to contribute within a cumulative assessment.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-group-reference-bulls-analogy",
+              "time": "34:05",
+              "score": 78,
+              "role": "Reply",
+              "words": "McDowell uses ordinary team reference to argue that a recognized group can be identified without naming every member, so silence about individuals need not erase group evidence.",
+              "critique": "Strongest feature: The Bulls analogy clearly illustrates the semantic point that ordinary group references can convey information about members without listing each person, and McDowell treats the inference as defeasible by contrary evidence. Principal limitation: A familiar modern team has publicly fixed membership and direct observation conditions unlike transmitted ancient reports, so the analogy does little to establish the reliability, independence, or firsthand basis of the apostolic sources. Live burden: The pro side must supplement the linguistic possibility with historical evidence that the relevant group was stable, intended, and accurately reported in each source. Locked score: 78 credits a lucid answer to the narrow naming objection, while recognizing that modern team semantics cannot establish reliability under materially different ancient transmission conditions.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-survey-aggregation-objection",
+              "time": "32:01",
+              "score": 88,
+              "role": "Reply",
+              "words": "Paulogia argues that possible Acts dependence and grouped scholarly answers may mask sharply uneven evidence, with Peter and Paul driving apparent agreement about all disciples.",
+              "critique": "Strongest feature: Paulogia exposes an aggregation problem: a survey answer about disciples can remain literally affirmative because of well-attested central figures while concealing disagreement about most named apostles used in the wider argument. Principal limitation: The claims about Josephus dependence, mismatch between Acts and Paul, and individual scholarly disagreement are asserted more than demonstrated, so the strongest part is the general aggregation critique rather than each historical premise. Live burden: The con side must connect that methodological warning to the actual source distribution without implying that grouped language communicates nothing about recognized membership. Locked score: 88 rewards a logically sharp and highly responsive challenge to collective consensus language, moderated by the compressed support for its source-dependence and individual-disagreement claims.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-multiple-sources-without-wholesale-trust",
+              "time": "37:26",
+              "score": 87,
+              "role": "Reply",
+              "words": "McDowell argues that historians may compare claims across Acts, Paul, the Gospels, and early sources without accepting whole documents as uniformly true.",
+              "critique": "Strongest feature: McDowell clearly distinguishes testing a particular claim across sources from granting wholesale reliability to every book, thereby answering the suggestion that his inference depends on treating scripture as uniformly true. Principal limitation: Listing books and genres does not establish that their relevant traditions are independent or that each reaches the same apostolic group, so the cumulative force remains partly assumed. Live burden: The pro side must trace the informational relationships among these attestations and state precisely which individuals or collective beliefs each supports, without exceeding the limited conclusion of sincere claimed experiences. Locked score: 87 rewards a sophisticated, charitable, and highly responsive methodological clarification, tempered by unresolved dependence and the continuing gap between several documents and comprehensive group coverage.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-early-creed-not-group-firsthand",
+              "time": "35:55",
+              "score": 90,
+              "role": "Reply",
+              "words": "Paulogia concedes the First Corinthians creed’s early date but distinguishes Paul’s received formula from firsthand reports by every person included in its group claims.",
+              "critique": "Strongest feature: Paulogia promptly retracts the dismissive nursery-rhyme label, accepts the creed’s earliness, and isolates the genuine issue: early transmission is not identical to direct testimony from every grouped individual. Principal limitation: Received status limits what Paul personally witnessed, but it does not by itself show that the formula lacked close or reliable sources, a possibility the move leaves largely unexplored. Live burden: The con side must assess the creed’s transmission quality and scope rather than treating indirectness as disqualification, while preserving its justified refusal to infer individual firsthand statements automatically in this particular exchange. Locked score: 90 reflects excellent calibration, clarity, and responsiveness, with the remaining gap between identifying mediated testimony and determining how much evidential value that mediation removes.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "death-evidence-and-individual-cases",
+        "title": "Death evidence and individual cases",
+        "timebox": "39:22–44:03",
+        "score": {
+          "pro": 88,
+          "con": 87
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-graded-central-deaths",
+              "time": "42:24",
+              "score": 88,
+              "role": "Reply",
+              "words": "McDowell accepts graded uncertainty, emphasizes stronger central cases, and argues that his sincerity case does not require every traditional apostolic death to be historical.",
+              "critique": "Strongest feature: McDowell narrows the argument responsibly by distinguishing stronger central deaths from weaker and inconclusive traditions, thereby preventing uncertainty about most apostles from defeating every evidential contribution. Principal limitation: The classification hierarchy and centrality of Peter and Paul do not themselves establish that each death resulted from resurrection proclamation, and the underlying source reasons receive only compressed treatment here. Live burden: The pro side must connect the strongest individual conduct to the relevant belief and cost while avoiding any return to an all-twelve narrative that the move explicitly disowns. Locked score: 88 recognizes a highly responsive, well-calibrated reply grounded in differentiated confidence, with the remaining deduction for incomplete causal linkage between accepted deaths and the precise proclamation at issue.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-deaths-mostly-limited",
+              "time": "39:22",
+              "score": 87,
+              "role": "Constructive",
+              "words": "Paulogia concedes Peter and Paul probably died sincerely but argues that late, embellished, or apocryphal traditions leave most other apostolic deaths weaker or inconclusive.",
+              "critique": "Strongest feature: Paulogia grades rather than dismisses the evidence, openly conceding the probable deaths and sincerity of Peter and Paul while explaining why later or embellished traditions should receive less confidence. Principal limitation: He speaks from memory and revises several identities and classifications during the turn, so the detailed mapping is difficult to audit even though his broader hierarchy and central concessions remain clear. Live burden: The con side must defend reduced confidence in the weaker Andrew, Thomas, and remaining traditions from their sources, while respecting McDowell’s concession that the argument need not establish deaths for all twelve. Locked score: 87 reflects strong calibration, relevance, and responsiveness, with precision reduced because the memory-qualified source hierarchy particularly needs more case-specific demonstration.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "sincere-error-and-alternative-explanations",
+        "title": "Sincere error and alternative explanations",
+        "timebox": "44:03–1:00:01",
+        "score": {
+          "pro": 85,
+          "con": 78
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-two-central-witnesses",
+              "time": "45:08",
+              "score": 85,
+              "role": "Reply",
+              "words": "McDowell argues that even Peter and Paul alone matter because central figures from sharply different backgrounds accepted risk for the same resurrection belief.",
+              "critique": "Strongest feature: McDowell works from Paulogia’s minimum concession and explains why two central spokespeople with contrasting histories provide more evidential interest than an undifferentiated count of two anonymous believers. Principal limitation: Different backgrounds and shared costly belief support significance but do not compare the probability of independent sincere error, social transmission, or the particular visionary pathways Paulogia proposes. Live burden: The pro side must explain how the contrasting backgrounds make coordinated fabrication less plausible and strengthen the adopted sincerity inference, while comparing separate sincere-error pathways without claiming resurrection proof or a wider group. Locked score: 85 rewards a clear, calibrated defense of the accepted minimum, while recognizing that it preserves relevance more effectively than it compares the competing pathways in evidential detail.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-two-person-sincere-error",
+              "time": "44:03",
+              "score": 82,
+              "role": "Reply",
+              "words": "Paulogia proposes that Peter and Paul could have reached sincere resurrection belief through separate paths, eliminating the need for an unusual collective-event explanation.",
+              "critique": "Strongest feature: The hypothesis scales an alternative explanation to the con side’s accepted evidence and correctly observes that two sincere beliefs can arise through distinct personal pathways without requiring a collective experience. Principal limitation: The suggested guilt and visionary mechanisms are possibilities rather than demonstrated causes, and their plausibility depends on the still-contested premise that only Peter and Paul require explanation. Live burden: The con side need not prove an entire contrary worldview, but it must compare these pathways with the source evidence rather than treating mere conceivability as sufficient probability. Locked score: 82 reflects a coherent, responsive, and explicitly tentative alternative whose explanatory architecture is useful, while its case-specific evidential warrant remains notably weaker than its logical possibility.",
+              "tags": []
+            }
+          },
+          {
+            "con": {
+              "ledgerMoveId": "con-status-motivation-proposal",
+              "time": "57:50",
+              "score": 73,
+              "role": "Constructive",
+              "words": "Paulogia uses ministry and audience analogies to suggest that modest attention, leadership, or status could coexist with costly commitment and complicate a pure-conviction explanation.",
+              "critique": "Strongest feature: Paulogia identifies a logically genuine possibility that sincere participation and ordinary status motives can coexist, and he expressly qualifies that such attention would not necessarily motivate someone to suffer or die. Principal limitation: Personal ministry and audience anecdotes provide no direct evidence that apostolic conduct was materially driven by status, so the move advances possibility far more than a case-specific causal explanation. Live burden: The con side may use mixed motives to resist an exclusive pure-conviction inference, but must connect attention or leadership to the accepted central witnesses before assigning the proposal meaningful case-specific weight. Locked score: 73 reflects relevance and commendable qualification, sharply limited because the analogy supplies no case-specific apostolic corroboration for the proposed motive.",
+              "tags": [
+                {
+                  "type": "bias",
+                  "label": "Subjective validation",
+                  "url": "https://cogbias.site/biases/subjective-validation/",
+                  "context": "Paulogia treats his own ministry and audience experiences as support for analogous apostolic status motivation."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "historical-standards-and-checkability",
+        "title": "Historical standards and checkability",
+        "timebox": "45:50–54:41",
+        "score": {
+          "pro": 81,
+          "con": 88
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-cultural-resistance-and-living-witnesses",
+              "time": "45:50",
+              "score": 75,
+              "role": "Constructive",
+              "words": "McDowell argues that a culturally costly resurrection message arose amid surviving contemporaries and public scrutiny, so Peter and Paul alone cannot explain church expansion.",
+              "critique": "Strongest feature: McDowell connects cultural resistance and the presence of contemporaries to potential constraints on invention, broadening the discussion from two individuals to the social setting in which resurrection claims circulated. Principal limitation: The move compresses cultural cost, broad population assertions, practical investigability, additional writings, and church growth into one chain, while the claimed availability of many witnesses and the emphatic conclusion about expansion receive little demonstration. Live burden: The pro side must explain how available contemporaries could actually identify and test the claims, and why movement growth bears specifically on apostolic suffering rather than wider social dynamics. Locked score: 75 reflects a relevant and potentially fruitful contextual argument whose warrant, precision, and calibration are weakened by multiple underdeveloped bridges and excessive confidence.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-legends-can-grow-despite-checkability",
+              "time": "47:03",
+              "score": 87,
+              "role": "Reply",
+              "words": "Paulogia argues that false religious claims can spread despite theoretical checks because unnamed witnesses from decades earlier may be practically difficult to locate and verify.",
+              "critique": "Strongest feature: Paulogia distinguishes theoretical falsifiability from practical investigation, using the anonymity of the five hundred and ordinary social-memory effects to challenge the claim that surviving contemporaries ensured effective correction. Principal limitation: The analogies establish possibility rather than the probability that this report developed through legend, and the general observation that religions grow despite falsehood remains mostly asserted. Live burden: The con side must show why the practical obstacles materially reduce this source’s weight without claiming a specific legendary process that the retained evidence does not demonstrate. Locked score: 87 recognizes a clear, responsive, and carefully qualified rebuttal to checkability and growth, with a measured deduction because its illustrations constrain pro’s inference more than they establish con’s alternative.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-five-hundred-public-challenge",
+              "time": "48:53",
+              "score": 80,
+              "role": "Reply",
+              "words": "McDowell argues that social networks could locate witnesses and that Paul’s early public formulation invited investigation, while expressly denying that his case depends on the five hundred.",
+              "critique": "Strongest feature: McDowell directly addresses practical access with a concrete network mechanism and responsibly limits the stakes by saying his broader case does not rest on the disputed five-hundred claim. Principal limitation: A modern chain connecting known people differs substantially from locating an ancient anonymous group, and the assertion that Paul intended an open investigative challenge receives little textual defense in the move. Live burden: The pro side must show how investigators could overcome distance, anonymity, and the age of the reported event to locate relevant witnesses, while preserving the claim’s explicitly subsidiary role. Locked score: 80 reflects good responsiveness, clarity, and calibration about the claim’s subsidiary importance, offset because the modern network illustration leaves the ancient search mechanism historically underdeveloped.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-initial-mental-check-not-refusal",
+              "time": "51:41",
+              "score": 89,
+              "role": "Reply",
+              "words": "Paulogia clarifies that considering imagination, fatigue, and a real appearance together is ordinary comparison of explanations rather than an unconditional rejection of miracle evidence.",
+              "critique": "Strongest feature: Paulogia directly repairs the central mischaracterization by distinguishing an initial check for ordinary causes from a settled refusal, and his two-options example keeps a real appearance explicitly on the table. Principal limitation: The pastoral hypothetical establishes the reasonableness of comparative checking but does not itself determine how ancient testimony or miracle hypotheses should be weighted historically. Live burden: The con side must carry this open comparison into the historical record by assessing what the early sources support and whether specific ordinary causal accounts explain that evidence better than an appearance. Locked score: 89 rewards exceptional responsiveness, clarity, coherence, and charity, with a modest limit because it defends an open method without yet performing the ancient evidential comparison case-specifically.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-hyper-skepticism-method-challenge",
+              "time": "50:09",
+              "score": 70,
+              "role": "Reply",
+              "words": "McDowell argues that Paulogia’s initial mental-state check reveals an unusually demanding standard that helps explain his low confidence in the historical evidence.",
+              "critique": "Strongest feature: McDowell identifies evidential method as a legitimate source of disagreement and balances his criticism of skeptical excess with an admission that Christians can also trust inherited claims too readily. Principal limitation: He treats Paulogia’s stated first step of checking ordinary error as if it implied categorical resistance to later evidence, without showing that this method distorted the particular source judgments under debate. Live burden: The pro side must defend the disputed historical bridges directly or demonstrate an actual asymmetry in standards, rather than rely on the broad label hyper-skeptical concerning Acts, the creed, and group testimony. Locked score: 70 reflects an intelligible methodological challenge, but the mischaracterization and limited warrant weaken its responsiveness where direct criticism of the disputed sources would have carried greater force.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-cost-supports-sincerity",
+              "time": "53:15",
+              "score": 92,
+              "role": "Reply",
+              "words": "McDowell concedes initial skepticism but argues that continued public commitment under genuine cost supports sincere belief while leaving miracle truth as a separate question.",
+              "critique": "Strongest feature: McDowell accepts Paulogia’s correction and cleanly separates three questions: whether an appearance occurred, whether history proves a miracle, and what persistence under meaningful cost indicates about the claimant’s sincerity. Principal limitation: The inference is persuasive for established costly conduct, but the move still depends on disputed evidence about which apostles made firsthand claims and incurred relevant costs for those claims. Live burden: The pro side must establish that historical scope without converting sincerity into truth or assuming that all suffering excludes mixed motives and sincere error beyond the securely accepted Peter and Paul cases. Locked score: 92 reflects outstanding responsiveness, coherence, precision, burden contact, and calibration, while the disputed evidence about group scope still governs how broadly this strong inference applies.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "final-motion-level-synthesis",
+        "title": "Final motion-level synthesis",
+        "timebox": "1:09:19–1:11:15",
+        "score": {
+          "pro": 91,
+          "con": 85
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-final-sincerity",
+              "time": "1:10:10",
+              "score": 91,
+              "role": "Reply",
+              "words": "McDowell concludes that early sources and intentional exposure to harm support sincere apostolic belief and resist fabrication, while explicitly denying standalone resurrection proof.",
+              "critique": "Strongest feature: McDowell closes with a disciplined synthesis that combines early claims, named figures, group testimony, and chosen risk while repeating that the argument supports sincerity and anti-fabrication rather than resurrection truth. Principal limitation: The summary retains the debate’s unresolved group-scope and source-independence questions, so its reference to the apostles collectively remains stronger than the evidence Paulogia concedes. Live burden: The pro side must show which early sources independently support which claimants and how broadly relevant costly conduct extends, while keeping the conclusion limited to sincerity and resistance to conscious fabrication. Locked score: 91 reflects an exceptionally clear, responsive, and charitable synthesis whose narrow burden is substantially met, though collective scope remains the decisive unresolved historical qualification.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-final-insufficient",
+              "time": "1:09:19",
+              "score": 85,
+              "role": "Constructive",
+              "words": "Paulogia concludes that some historical points are probable yet too limited to overcome his broader doubts, while acknowledging stronger independent evidence would matter.",
+              "critique": "Strongest feature: Paulogia’s closing assessment is notably calibrated: he accepts probable historical claims, acknowledges that stronger extrabiblical support would be important, and denies only that the retained evidence reaches the needed overall force. Principal limitation: The appeal to other doubts and to evidence being insufficient remains underspecified in this final move, so it synthesizes prior limits more effectively than it performs an explicit comparative probability analysis. Live burden: The con side must preserve the distinction between showing a truth gap and proving resurrection false, while grounding insufficiency in the source and scope objections already developed. Locked score: 85 rewards a clear, relevant, and charitable final answer, moderated because its broader comparative standard remains partly articulated through prior objections rather than this conclusion itself.",
+              "tags": []
+            }
+          }
+        ]
+      }
+    ],
+    "overall": {
+      "pro": {
+        "score": 86,
+        "strengths": [
+          "Consistently limits suffering evidence to sincerity and anti-conspiracy support within a larger resurrection case.",
+          "Uses graded confidence in death traditions instead of depending on every traditional apostolic martyrdom.",
+          "Concedes reasonable initial skepticism and clearly separates sincere belief from the truth of a miracle."
+        ],
+        "blunders": [
+          {
+            "text": "The Bulls analogy illustrates collective reference but poorly matches ancient transmission, membership, and source-reliability conditions.",
+            "links": []
+          },
+          {
+            "text": "The cultural-resistance argument compresses broad population assertions, practical investigability, surviving writings, and church growth into an underdemonstrated chain.",
+            "links": []
+          }
+        ]
+      },
+      "con": {
+        "score": 86,
+        "strengths": [
+          "Separates the definition of martyrdom from case-specific evidence about preaching, causation, recantation, and death.",
+          "Concedes Peter and Paul’s probable sincerity and deaths while resisting unsupported extension to the entire group.",
+          "Immediately retracts the nursery-rhyme label, accepts the creed’s earliness, and preserves the narrower firsthand-status objection."
+        ],
+        "blunders": [
+          {
+            "text": "The two-person alternative offers possible guilt and visionary pathways without demonstrating that either caused the accepted beliefs.",
+            "links": []
+          },
+          {
+            "text": "The status-motivation analogy establishes mixed motives as possible but supplies no direct evidence about apostolic motivation.",
+            "links": []
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "Costly persistence by historically supported central witnesses raises the probability of sincere resurrection belief, even though it cannot by itself establish a resurrection.",
+          "premises": [
+            "Evidence for Peter and Paul is stronger than evidence for many other apostolic deaths, so the argument should begin with these central cases rather than an all-twelve claim.",
+            "Independent differences in Peter’s and Paul’s backgrounds reduce the chance that one identical prior interest explains both commitments, while leaving separate sincere-error routes possible.",
+            "Public persistence under meaningful and avoidable cost is more expected if a claimant sincerely accepts the proclaimed belief than if the claimant consciously fabricated it.",
+            "Early mediated group reports may add modest corroboration when their informational relationships are assessed, but they should not be treated as direct testimony from every named apostle.",
+            "Because sincerity is compatible with error, the resulting evidence properly weakens deliberate-conspiracy hypotheses without independently selecting resurrection over every sincere-error explanation."
+          ],
+          "conclusion": "Therefore the strongest defensible martyrdom argument is a calibrated likelihood contribution: central costly witnesses support sincerity and resist conscious fabrication, while resurrection truth still depends on additional evidence."
+        },
+        "newArguments": [
+          {
+            "title": "Differential-Cost Test",
+            "text": "The evidential value of suffering should track whether the cost was foreseeable, avoidable by abandoning the proclamation, and specifically connected to that proclamation. This creates a graded test rather than a binary martyr label. A central witness who repeatedly continues despite escalating, belief-specific costs provides stronger sincerity evidence than someone who suffers for ambiguous political reasons. Applying that test case by case would preserve McDowell’s limited inference while answering Paulogia’s demand for causal specificity."
+          },
+          {
+            "title": "Convergent Biography Argument",
+            "text": "The Peter and Paul cases gain cumulative force only to the extent that their commitments are evidentially independent. Their different biographies do not settle that question, because both could still depend on one shared proclamation or community interpretation. Pro should therefore ask which causal inputs overlap and which are genuinely separate, then predict what each hypothesis expects: conscious coordination predicts shared strategic incentives, while independent sincere commitment predicts convergence despite distinct prior interests. This dependence test turns background contrast into a discriminating comparison rather than a simple count of two witnesses."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "Sincere costly belief among a limited number of central witnesses leaves a substantial evidential gap unless sources establish broader firsthand scope and discriminate resurrection from ordinary error.",
+          "premises": [
+            "Historical evidence for Peter and Paul is stronger than evidence for most other apostles, so conclusions about a broad group require additional source-specific support.",
+            "An early received creed can preserve an early group claim without functioning as direct testimony from every person included in that claim.",
+            "Costly persistence strongly bears on sincerity but is compatible with perceptual error, visionary experience, social reinforcement, and mixed ordinary motivations.",
+            "Indirect and potentially dependent reports gain limited force from repetition unless their informational independence and access to the alleged witnesses are demonstrated.",
+            "A resurrection inference must outperform sincere-error explanations rather than merely show that conscious fabrication is unlikely."
+          ],
+          "conclusion": "Therefore apostolic suffering can support a narrow sincerity conclusion while remaining insufficient, on the retained evidence, to establish either a wide eyewitness group or resurrection truth."
+        },
+        "newArguments": [
+          {
+            "title": "Scope-Sensitivity Principle",
+            "text": "The strength of a collective claim should vary with the proportion of named individuals for whom source access, claimed experience, proclamation, and relevant cost are separately supported. Group labels may convey real information, yet their evidential force declines when a few well-attested members drive the entire inference. This principle avoids treating indirect testimony as worthless while preventing evidence for Peter and Paul from being silently multiplied across every apostle."
+          },
+          {
+            "title": "Explanatory Partition Argument",
+            "text": "A partitioned explanation should earn credibility through constraints rather than by assigning an unconstrained story to each witness. Con should identify evidence expected under each proposed pathway, such as differences in reported experience, timing, prior commitments, or dependence on a shared tradition, and then compare those predictions with the record. Additional mechanisms incur a complexity cost, so separate explanations outperform a common cause only when they explain real divergences or reduce unsupported assumptions. This framework converts mere possibility into a testable comparative model without requiring one universal naturalistic mechanism."
+          }
+        ]
+      }
+    }
   }
 ];
 

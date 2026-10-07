@@ -1,0 +1,39 @@
+{
+  "label": "target-evidence-audit-complete",
+  "command": [
+    "node",
+    "scripts/audit-assessment-production-standalone-v1.mjs",
+    "--audit",
+    "--debate",
+    "293",
+    "--repository-only"
+  ],
+  "head": "d8c7e5796b0386c3b59fcac9067bb90d6fc072ed",
+  "workingDiffSha256": "f11b471827f5449aa03a8f42bb264c04c79467cbb6ad0a9a182d8ce83a9f5921",
+  "inputs": [
+    {
+      "path": "src/data/debates.js",
+      "sha256": "61eb2f4257a1e165b3077f79390d5ddb72599d8b60e86cdc6e857c547bb142ec",
+      "bytes": 13946405
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "fb1cd876f9c6d967f0cf7bb63ff098c072fdbe79eeb38ef40972f8a330546846",
+      "bytes": 190821
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-293/publication/output.json",
+      "sha256": "5a8a94b33216317b959c3e1edba19dbc1ab38d86b1bd87f1cc0145cf8b8e7cf1",
+      "bytes": 51390
+    }
+  ],
+  "startedAt": "2026-10-07T07:06:03.338020+00:00",
+  "elapsedSeconds": 0.136,
+  "exitCode": 0,
+  "status": "passed",
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-293/checks/target-evidence-audit-complete.log",
+    "sha256": "71966576cc1e856c8965fa9a888eeb55bea2b215643e25a09334271c33237c69",
+    "bytes": 243
+  }
+}
