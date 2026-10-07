@@ -1,0 +1,26 @@
+{
+  "status": "resolved-by-temporary-file-cleanup",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "exitCode": 2,
+  "findings": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-295/judgments/contract-base.md",
+      "line": 38,
+      "warning": "new blank line at EOF",
+      "disposition": "Further inspection proved contract-base.md was an unreferenced temporary composition file, not the frozen contract.md authenticated in either reviewer plan. Removed only this temporary file. All actual frozen contracts and hashes are unchanged. Initial conservative frozen-input classification was corrected before commit."
+    }
+  ],
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-295/validation/staged-whitespace-check.txt",
+    "sha256": "2a636db154aa11998118c08daf4adfd367e55ebb41013a0b286c8d6fdcc54b04",
+    "bytes": 114
+  },
+  "allOtherStagedPathsPassed": true,
+  "removedTemporaryFileSha256": "3f93e2c08d3b92f578015aec436e8587a143c70250255486225aebf47df1749f",
+  "allStagedPathsPassAfterCleanup": true
+}

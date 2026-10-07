@@ -14070,5 +14070,58 @@ export const debateSummaries = [
         "title": "Christological alternatives and exceptional judgment"
       }
     ]
+  },
+  {
+    "id": "horn-paulogia-apostolic-sincerity-2023",
+    "number": "295",
+    "title": "Trent Horn vs Paulogia — Did the Apostles Die for a Lie?",
+    "year": 2023,
+    "label": "Apostolic Sincerity",
+    "date": "2026-10-07",
+    "duration": "1 hr 20 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=sQkEbHqEv9o",
+    "motion": "Does the historical evidence of suffering justify confidence in the sincerity of all the original resurrection witnesses?",
+    "summary": "Horn argues that documented and foreseeable suffering supports apostolic sincerity; Paulogia answers that evidence for several named leaders cannot establish all eleven.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "The evidence supports their sincerity",
+        "speaker": "Trent Horn",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The evidence is insufficient for all",
+        "speaker": "Paulogia",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 86,
+      "con": 87,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Scope and evidential baseline"
+      },
+      {
+        "title": "The two Jameses: sources and motives"
+      },
+      {
+        "title": "Nero and Roman procedure"
+      },
+      {
+        "title": "Recantation, status, and accepted risk"
+      },
+      {
+        "title": "Experience categories and sincerity scope"
+      },
+      {
+        "title": "Collective preaching and the eleven"
+      },
+      {
+        "title": "Community memory and final inference"
+      }
+    ]
   }
 ];

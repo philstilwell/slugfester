@@ -1,0 +1,12 @@
+### Result
+{"visibleImages":[{"src":"/assets/debate-gloves.png","width":444},{"src":"/assets/caricatures/trent-horn.webp","width":512},{"src":"/assets/caricatures/paulogia.webp","width":512}],"screenshot":"output/playwright/debate-295-local-desktop-ai-closed-settled.png"}
+### Ran Playwright code
+```js
+await (async page => {
+await page.setViewportSize({width:1440,height:1000});await page.goto('http://127.0.0.1:4188/debate/horn-paulogia-apostolic-sincerity-2023/');await page.locator('.ai-extension-accordion > summary').scrollIntoViewIfNeeded();
+await page.waitForFunction(()=>[...document.images].filter(i=>{const b=i.getBoundingClientRect();return b.width>0&&b.top<innerHeight&&b.bottom>0;}).every(i=>i.complete&&i.naturalWidth>0));
+await page.screenshot({path:'output/playwright/debate-295-local-desktop-ai-closed-settled.png'});
+return {visibleImages:await page.evaluate(()=>[...document.images].filter(i=>{const b=i.getBoundingClientRect();return b.width>0&&b.top<innerHeight&&b.bottom>0;}).map(i=>({src:i.getAttribute('src'),width:i.naturalWidth}))),screenshot:'output/playwright/debate-295-local-desktop-ai-closed-settled.png'};
+}
+)(page);
+```
