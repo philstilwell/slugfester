@@ -2,6 +2,7 @@
 // Each entry has a public biographical source checked on the recorded review date.
 export const biographyReviewDate = "2026-09-05";
 const entries = [
+  ["Paulogia", "Paulogia is the online name of Paul Ens, a video creator and podcaster who examines Christian apologetics and biblical history. A former Christian, he produces responses to religious arguments and conversations with scholars about early Christianity and Jesus’ resurrection.", "https://www.bartehrman.com/author/paulens/", "2026-10-07"],
   ["S.J. Thomason", "S.J. Thomason is a Christian writer and business-management academic. Her work includes Christian apologetics, objective morality, and ethical decision-making. She publishes at Christian Apologist and is the author of A Quick and Concise Case for Christ.", "https://christian-apologist.com/about/", "2026-10-07"],
   ["Luuk Vandeweghe", "Luuk Vandeweghe is a Christian author and New Testament researcher whose work examines the historical reliability of the Gospels. His books include The Historical Tell and Living Footnotes in the Gospel of Luke, focusing on eyewitness testimony and Luke–Acts.", "https://www.luukvandeweghe.com/the-historical-tell.html", "2026-10-06"],
   ["Adam Lloyd Johnson", "Adam Lloyd Johnson is a Christian author and speaker whose work examines philosophy of religion and the foundations of morality. He earned a doctorate in theological studies at Southeastern Baptist Theological Seminary and wrote Divine Love Theory.", "https://convincingproof.org/about/", "2026-10-05"],
