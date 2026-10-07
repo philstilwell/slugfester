@@ -13873,5 +13873,55 @@ export const debateSummaries = [
         "title": "World-level effects and the caregiving example"
       }
     ]
+  },
+  {
+    "id": "rauser-schieber-god-existence-2015",
+    "number": "291",
+    "title": "Randal Rauser vs Justin Schieber — Does God Exist?",
+    "year": 2015,
+    "label": "God and Naturalism",
+    "date": "2026-10-06",
+    "duration": "1 hr 25 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Y-Ju8tGlK7g",
+    "motion": "Does God exist?",
+    "summary": "Schieber’s comparative naturalist case better connects simplicity, hiddenness, cosmic hostility, and suffering to the motion, while Rauser offers serious epistemic and moral replies.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God exists",
+        "speaker": "Randal Rauser",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Naturalism better fits the evidence",
+        "speaker": "Justin Schieber",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 76,
+      "con": 83,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Rational belief and epistemic limits"
+      },
+      {
+        "title": "God as explanation and prior simplicity"
+      },
+      {
+        "title": "Moral knowledge and disagreement"
+      },
+      {
+        "title": "Hiddenness and relationship"
+      },
+      {
+        "title": "Cosmic hostility and anthropocentrism"
+      },
+      {
+        "title": "Suffering and unknown purposes"
+      }
+    ]
   }
 ];

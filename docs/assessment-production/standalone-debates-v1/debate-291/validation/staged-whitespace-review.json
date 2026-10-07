@@ -1,0 +1,23 @@
+{
+  "status": "preserved-immutable-evidence-whitespace",
+  "at": "2026-10-07T03:11:11.952520+00:00",
+  "reason": "The raw staged diff flags the frozen generated contracts\u2019 final blank lines and whitespace printed by the saved failing test. Rewriting these bytes would invalidate authentic execution hashes. Preserve these three files and separately require a clean whitespace check on every other staged file. No production formatting exception or ignored evidence removal.",
+  "exactFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/contract.md",
+      "sha256": "d1cd1529d5844c961bc9835f1a0a03157466dc241fd1f17cda9a437848bbfea6",
+      "bytes": 14775
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/contract.md",
+      "sha256": "840ba605532ac8120eb486da9642ce481918c934ee96e51aed7004535c6c4dce",
+      "bytes": 10156
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/validation/workflow-and-copyedit-tests.log",
+      "sha256": "2bc8122d948413deeee823449721f56048607e203376d29e4f244d50918b8807",
+      "bytes": 14859
+    }
+  ],
+  "originalCheck": "validation/staged-diff-check-execution.json"
+}

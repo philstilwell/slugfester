@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "291",
+  "debateId": "rauser-schieber-god-existence-2015",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/inventory/inventory.json",
+      "sha256": "f078170fa5887721d1edf58e99eb3a240651dbf3f152093242ddba880db369e2",
+      "bytes": 124414
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/score-pass/output.json",
+      "sha256": "68501acaa271122e9d8009bb14f0076eb2d239d8c8c236d2f4941ed57ff9a901",
+      "bytes": 16813
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/skeleton.json",
+      "sha256": "a3e7a2fb87bf489e7251425048192292dda0f58a839d1f6d8e1e7761da027fa5",
+      "bytes": 12562
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/reference-metrics.json",
+      "sha256": "461f06a7b1b9bc91e7bb3acb1c08ff8e9d41dc89f1397ba78f47c7b7232ce7b6",
+      "bytes": 54163
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

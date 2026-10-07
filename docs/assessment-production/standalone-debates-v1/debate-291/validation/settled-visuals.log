@@ -1,0 +1,22 @@
+### Result
+{"status":"passed-settled-visual-capture","observations":[{"viewport":{"width":1440,"height":1000},"type":"second-tag","opacity":"1","text":"Red herring\nLOGICAL FALLACY\nDiverting attention from the issue under dispute to a related but less relevant point, leaving the original challenge insufficiently answered.\nThe response shifts from pervasive cosmic lethality to grandeur, intimacy, and whether humans require a maximally comfortable universe.\nOPEN THE REFERENCE PAGE FOR MORE."},{"viewport":{"width":390,"height":844},"type":"second-tag","opacity":"1","text":"Red herring\nLOGICAL FALLACY\nDiverting attention from the issue under dispute to a related but less relevant point, leaving the original challenge insufficiently answered.\nThe response shifts from pervasive cosmic lethality to grandeur, intimacy, and whether humans require a maximally comfortable universe.\nOPEN THE REFERENCE PAGE FOR MORE."}]}
+### Ran Playwright code
+```js
+await (async (page) => {
+  const observations=[];
+  for(const viewport of [{width:1440,height:1000},{width:390,height:844}]) {
+    await page.setViewportSize(viewport);
+    await page.goto('http://127.0.0.1:4191/debate/rauser-schieber-god-existence-2015/');await page.waitForLoadState('networkidle');
+    const tag=page.locator('a.tag').nth(1);await tag.hover();await tag.focus();
+    const popup=page.locator('.tag-wrap').nth(1).locator('.tag-popover');
+    await page.waitForFunction(el=>Number(getComputedStyle(el).opacity)>0.99,await popup.elementHandle());
+    await page.screenshot({path:'output/playwright/debate-291-local-second-tag-settled-'+viewport.width+'.png'});
+    observations.push({viewport,type:'second-tag',opacity:await popup.evaluate(el=>getComputedStyle(el).opacity),text:await popup.innerText()});
+    await page.goto('http://127.0.0.1:4191/debate/rauser-schieber-god-existence-2015/');await page.waitForLoadState('networkidle');
+    await page.locator('.ai-extension-accordion > summary').scrollIntoViewIfNeeded();await page.waitForLoadState('networkidle');
+    await page.screenshot({path:'output/playwright/debate-291-local-ai-closed-settled-'+viewport.width+'.png'});
+  }
+  return {status:'passed-settled-visual-capture',observations};
+}
+)(page);
+```

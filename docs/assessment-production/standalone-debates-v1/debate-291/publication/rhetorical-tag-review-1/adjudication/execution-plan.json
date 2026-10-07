@@ -1,0 +1,466 @@
+{
+  "schemaVersion": "2.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "rhetorical-adjudication",
+  "debateNumber": "291",
+  "debateId": "rauser-schieber-god-existence-2015",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/workflow/rhetorical-adjudication/reader.txt",
+      "sha256": "e69afafee0501c0602f50316e4aec8fec8e469ddc403f5892e5d8dd6a042243c",
+      "bytes": 399940
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/contract.md",
+      "sha256": "840ba605532ac8120eb486da9642ce481918c934ee96e51aed7004535c6c4dce",
+      "bytes": 10156
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "63f4949d0b996ec880b9fe691c738f0c0a75a58665573dae37e77490896979cd",
+      "bytes": 12003
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "c1159fa376983d047bfeb71ed33e6a045960dc0b9396e3eedded40c896362d5b",
+      "bytes": 138893
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    {
+      "path": ".assessment-cache/captions/Y-Ju8tGlK7g/indexed-transcript.txt",
+      "sha256": "c2d3bb442a03f82bc7db4311696c0f6e426fd114ba5a5eb17c7288e887881ea5",
+      "bytes": 219562
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/source/assessment-source-notes.md",
+      "sha256": "13b7ff322603a5872de261485c81a0179c7db41e5cd443cfdf4b797908aa2504",
+      "bytes": 5754
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/source/source-lock.json",
+      "sha256": "d8b161558384c8ee0f0db9b8c5394ae0dad4665e95e41af42beda20ffea8ce11",
+      "bytes": 13643
+    }
+  ],
+  "toolInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/check-review.mjs",
+      "sha256": "e4f2013da4cfa8f8f690b324f00567584c67759b68e2c45ed8455008da8005de",
+      "bytes": 4109
+    },
+    {
+      "path": "scripts/standalone-workflow.mjs",
+      "sha256": "f9bebb3157c0227e20f396240411af838138b4520c7a48bec411725896f841cc",
+      "bytes": 5880
+    },
+    {
+      "path": "scripts/lib/standalone-workflow.mjs",
+      "sha256": "bd13373d22b4a2d74b1d6788c6b25613611be653a212aeaf31ca4bfcadcde333",
+      "bytes": 18686
+    },
+    {
+      "path": "scripts/lib/standalone-handoff.mjs",
+      "sha256": "939461c747837553ff5d65a83d9af0ad51c576c314959d2c59e6773bf236b42f",
+      "bytes": 6020
+    },
+    {
+      "path": "scripts/authenticate-standalone-worker.py",
+      "sha256": "98c8186c703818d1eaf5270d26adbfaaf7f7284180cf3482d3ec7a64e5e9219e",
+      "bytes": 6247
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "d22c202cbc5cf2853777394e6fb98fe4f624c8a58f8dcdaf1640f54f358cf9cc",
+      "bytes": 78019
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "aae806466005602401fb9536cbeab97cda43cd898ef78d2c200c012b24a2b8eb",
+      "bytes": 13580
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+      "bytes": 13417
+    },
+    {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "45bb5c6ca356eb66c4339507c0bcdb7af0888b2c6b5ae146f4d9a60ff0de89a3",
+      "bytes": 91388
+    },
+    {
+      "path": "package.json",
+      "sha256": "8ba54eb2409856430fe56731ade8196310cdb8526936543060cac72950e92186",
+      "bytes": 65081
+    },
+    {
+      "path": "scripts/lib/assessment-production-score-stability-policy-active.mjs",
+      "sha256": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+      "bytes": 1331
+    },
+    {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    },
+    {
+      "path": "scripts/standalone/lock-inventory.mjs",
+      "sha256": "dd2fba288eaab30c2af64c097abcde4f93d1f383b24f4c2a833f9f6866ab2a70",
+      "bytes": 5778
+    },
+    {
+      "path": "scripts/lib/standalone-publication-check.mjs",
+      "sha256": "f51b342bd2905527f44e11332d8a8544bd02e9ed5b01513d25ffa1817c196181",
+      "bytes": 6780
+    },
+    {
+      "path": "scripts/lib/assessment-editor-scoped-source.mjs",
+      "sha256": "a97ee74f7afc04da1a943494d53a2aadb958618d0ab6296584603fdc5d4f7395",
+      "bytes": 6789
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "63f4949d0b996ec880b9fe691c738f0c0a75a58665573dae37e77490896979cd",
+      "bytes": 12003
+    }
+  ],
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-291/workflow/rhetorical-adjudication/packet.json",
+    "sha256": "6fd81891c192022d2b1945e9f902e9c8d40c27439168dc9e1ac83be7e705dc63",
+    "bytes": 415249
+  },
+  "fullReadRequiredForAllAllowedInputs": true,
+  "toolSourceReadRequired": false,
+  "validationParameters": {
+    "mode": "anonymous-adjudication",
+    "debateNumber": "291",
+    "debateId": "rauser-schieber-god-existence-2015",
+    "sourcePacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "c1159fa376983d047bfeb71ed33e6a045960dc0b9396e3eedded40c896362d5b",
+      "bytes": 138893
+    },
+    "catalogSnapshot": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    "candidates": [
+      {
+        "moveId": "pro-experience-can-ground-basic-theistic-belief",
+        "type": "bias",
+        "label": "Subjective validation",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "The spiritual presence felt natural and immediate, so Rauser treats the resulting God-belief as prima facie properly basic.",
+            "rationale": "Rauser gives the private experience justificatory force because its phenomenology feels immediate and self-presenting, without establishing the external calibration that supports ordinary perception."
+          },
+          {
+            "decision": "accepted",
+            "context": "The felt naturalness and immediacy of spiritual presence is treated as prima facie warrant for the belief.",
+            "rationale": "Rauser treats the private experience’s felt immediacy as conferring special epistemic standing even though comparable external calibration and dependable environmental sensitivity are not established for spiritual seemings."
+          }
+        ]
+      },
+      {
+        "moveId": "con-proper-basicality-needs-nonpermissive-constraints",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Although Schieber names Christian philosopher James Sennett, he states and applies the three proposed criteria themselves; the cited status is not offered as settling their truth."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-particularism-starts-from-natural-belief-formation",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The method risks choosing divine experience as a credible starting case, but this move only describes particularism and does not yet use its conclusion to prove that disputed case reliable."
+          }
+        ]
+      },
+      {
+        "moveId": "con-normal-functioning-qualifies-universal-sanction",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Schieber does not independently define normal functioning, creating the frozen critique’s circularity risk, but the source never states that agreement with ordinary moral belief itself determines who counts as normal."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "The undefined appeal to normal functioning could become circular if normality were fixed by agreement, but Schieber actually emphasizes a minority exception and calls his criterion tentative rather than assuming its conclusion."
+          }
+        ]
+      },
+      {
+        "moveId": "con-closing-reductio-demands-limits",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The Great Pumpkin comparison is colorful and relevant similarity is underdeveloped, but it directly tests the permissiveness of Rauser’s stated justificatory method rather than diverting to an unrelated issue."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-transcendent-agency-is-explanatorily-permissible",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser mentions academic philosophy and named thinkers, but he also gives category-based reasons involving transcendence and ordinary agent causation; institutional or personal status does not alone settle his limited conclusion."
+          }
+        ]
+      },
+      {
+        "moveId": "con-naturalism-has-prior-simplicity-advantage",
+        "type": "bias",
+        "label": "Scope neglect",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Schieber incompletely inventories naturalism’s commitments, yet the defect concerns the chosen simplicity measure and comparative background assumptions, not failure to adjust for a stated scale or magnitude."
+          }
+        ]
+      },
+      {
+        "moveId": "con-naturalism-has-prior-simplicity-advantage",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Schieber cites Paul Draper and broad philosophical agreement, yet independently identifies classical theism’s additional attributes and limits the result to an all-else-equal prior consideration rather than relying solely on prestige."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-god-best-explains-moral-cognition",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser emphasizes gaps in naturalistic access, but also supplies positive claimed fit through a perfectly good creator’s motive and ability, so ignorance is not the sole inferential basis."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Rauser does press gaps in naturalistic access accounts, but he also supplies a positive explanation from a perfectly good creator’s motive and ability; the defect is inadequate comparison, not truth inferred solely from ignorance."
+          }
+        ]
+      },
+      {
+        "moveId": "con-moral-intuition-can-be-prima-facie-naturalistically",
+        "type": "bias",
+        "label": "Subjective validation",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "rationale": "Schieber assigns prima facie justificatory weight because the moral judgment feels obvious and parallels intuitive recognition in logic and grammar, while leaving its objective truth-tracking connection unexplained.",
+            "context": "Because murder being bad seems obvious, Schieber treats the corresponding intuition as prima facie justified despite lacking a known connection mechanism."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-naturalism-still-owes-moral-intuition-mechanism",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser identifies an explanatory gap and requests a mechanism, but this move does not conclude theism true merely because Schieber cannot presently supply the naturalistic process."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-naturalism-still-owes-moral-intuition-mechanism",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser demands a naturalistic truth-tracking mechanism while leaving divine calibration thin, creating a possible asymmetry; however this move requests clarification and does not explicitly exempt theism from the same explanatory obligation."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-closing-answers-moral-disagreement",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser cites Lewis’s cross-cultural chart as purported evidence and adds an independent self-justification explanation; he does not present Lewis’s status as settling the factual question."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Rauser cites C. S. Lewis’s chart but identifies its claimed cross-cultural examples and adds self-justification as a mechanism, so the authority’s status is not presented as dispositive."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-justice-seeking-can-be-implicit-divine-relationship",
+        "type": "fallacy",
+        "label": "Equivocation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser broadens relationship to include unrecognized orientation toward justice and mercy, but he makes that conceptual proposal openly; the inference is underjustified without a covert mid-argument meaning shift."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-temporary-distance-may-protect-future-relationship",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The protective-distance scenario is speculative and poorly generalized, but Rauser explicitly offers it as a possibility rather than claiming it true because opponents cannot disprove it."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "The scenario lacks evidence that it applies widely, yet Rauser expressly presents temporary distance as one possible compatibility case rather than claiming hidden divine reasons are true because they cannot be disproved."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-hostility-argument-assumes-anthropocentrism",
+        "type": "bias",
+        "label": "Scope neglect",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser underanswers the overwhelming ratio of hostile regions, but accepting scope neglect would duplicate the same diversion already captured by red herring rather than identify a distinct catalog-defined failure."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-hostility-argument-assumes-anthropocentrism",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "The reply shifts from pervasive cosmic lethality to grandeur, intimacy, and whether humans need a maximally comfortable universe.",
+            "rationale": "Schieber’s argument concerns hostility together with scale, while Rauser mainly defends vast grandeur and rejects maximal comfort, leaving the lethal-hostility component insufficiently answered."
+          },
+          {
+            "decision": "accepted",
+            "context": "The reply substitutes artistic grandeur and resistance to maximal human comfort for the challenged prevalence of lethal conditions.",
+            "rationale": "Schieber’s argument concerns hostility combined with scale, but Rauser’s architect response chiefly defends grandeur and rejects maximal human comfort, diverting from and leaving the pervasive-lethality challenge insufficiently answered."
+          }
+        ]
+      },
+      {
+        "moveId": "pro-finite-perspective-limits-suffering-inference",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Rauser stresses unavailable context, yet expressly says suffering may truly lack a point and argues only for reduced confidence, not hidden justification’s truth from its non-disproof."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Rauser argues that missing wider context limits confidence in pointlessness; he does not conclude that unseen justifying purposes therefore exist, so the move is skeptical caution rather than ignorance-based proof."
+          }
+        ]
+      }
+    ],
+    "expectedCandidateCount": 18,
+    "outputSchemaBounds": {
+      "decisions": {
+        "minItems": 18,
+        "maxItems": 18
+      }
+    }
+  },
+  "outputPath": "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/adjudication/output.json"
+  ],
+  "checker": [
+    "/opt/homebrew/Cellar/node/25.9.0_3/bin/node",
+    "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/check-review.mjs",
+    "--debate",
+    "291",
+    "--packet",
+    "docs/assessment-production/standalone-debates-v1/debate-291/publication/rhetorical-tag-review-1/adjudication/packet.json"
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Read this plan and the entire reader.txt including shared blocks. Never open peer outputs. Run the pinned checker without rereading its implementation. Authenticate reading before authoring. Keep candidates in memory; handoff holds approved candidate bytes in memory until the controller supplies authenticated source/editorial release. Only that release writes the first submission. A saved failure consumes its attempt. No autonomous retry.",
+  "isolation": "Fresh fork-none subscription context; protocol isolation, not an operating-system sandbox.",
+  "packetMetrics": {
+    "originalBytes": 404366,
+    "readerBytes": 399940,
+    "sharedBlocks": 1,
+    "completeDocuments": 7,
+    "losslessRoundTrip": true
+  }
+}

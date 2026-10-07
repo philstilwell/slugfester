@@ -1,0 +1,46 @@
+
+> slugfester@0.1.0 assessment:standalone:workflow:test
+> node --test tests/standalone-workflow.test.mjs tests/featured-quote-correction.test.mjs
+
+✔ reviewed quote completion preserves all other publication content and the frozen inputs (3.400584ms)
+✔ quote supplement cannot change an assessed score (0.500834ms)
+✔ quote completion rejects invented wording and the wrong speaker (1.021334ms)
+✔ quote correction refuses a changed original or tampered evidence reference (2.262541ms)
+✔ bracketed shorthand clarification preserves the assessment and the other quote (0.828292ms)
+✔ published Rauser–Malpass data matches only the verified quote correction (68.312084ms)
+✔ shorthand clarification requires visible brackets and an explicit explanation (0.468959ms)
+✔ shorthand clarification cannot invent a definition or change the conclusion (0.626541ms)
+✔ source-note copyediting preserves scope, scores and every other field (0.884417ms)
+✔ source-note supplement rejects changed scope, scoring fields, originals and duplicate repairs (0.687958ms)
+✔ reviewed quote completion preserves all other publication content and the frozen inputs (3.413708ms)
+✔ quote supplement cannot change an assessed score (0.540459ms)
+✔ quote completion rejects invented wording and the wrong speaker (1.162375ms)
+✔ quote correction refuses a changed original or tampered evidence reference (2.515209ms)
+✔ bracketed shorthand clarification preserves the assessment and the other quote (0.846625ms)
+✔ published Rauser–Malpass data matches only the verified quote correction (68.15125ms)
+✔ shorthand clarification requires visible brackets and an explicit explanation (0.395ms)
+✔ shorthand clarification cannot invent a definition or change the conclusion (0.547167ms)
+✔ source-note copyediting preserves scope, scores and every other field (0.7945ms)
+✔ source-note supplement rejects changed scope, scoring fields, originals and duplicate repairs (1.002625ms)
+✔ lossless packing preserves repeated nested arguments, exclusions, Unicode and order (0.607625ms)
+✔ paired primary plans are identical in evidence, disjoint in outputs and exclude peer/score files (12.591958ms)
+✔ frozen runs reject preparation and score execution; duplicate submissions remain exact (6.46975ms)
+✔ repository paths reject traversal and links outside the checkout (3.604041ms)
+✔ timing distinguishes parallel worker effort, elapsed intervals, waiting and unfinished work (0.881667ms)
+✔ timing rejects unmatched stops and conflicting interval ownership (4.15875ms)
+✔ graph counts preserve duplicate section scores and exact bin boundaries (3.535917ms)
+✔ handoff authenticates reading, keeps candidate unsaved, blocks stale approval and saves exact bytes once (107.528125ms)
+✔ invalid candidate never enters handoff or creates a submission (59.112167ms)
+✔ resumption reports interrupted handoffs and attempted stages without requiring a live socket (11.245125ms)
+✔ public source-eligibility checks accept ordinary and explicitly scoped frozen ledgers (299.584833ms)
+✔ public tag checks reject changed authenticated output and plan bytes for every reviewer (2232.589417ms)
+✔ public publication preparation rejects missing metrics before any output is saved (432.083917ms)
+✔ zero accepted tags produce an unchanged publication and can be checked without a prior-output archive (683.600292ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4032.526959
