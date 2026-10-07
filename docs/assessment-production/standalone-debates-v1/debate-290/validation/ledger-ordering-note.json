@@ -1,0 +1,17 @@
+{
+  "status": "publication-rules-passed-pending-post-render-registry-classification",
+  "at": "2026-10-07T01:06:52.257Z",
+  "preAdapter": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-290/validation/pre-adapter-debate-validation-execution.json",
+    "sha256": "64638312e977c0b82788ad4f30da685a59cafea49294d4f66c7b92ef7f766f4e",
+    "bytes": 545
+  },
+  "postAdapter": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-290/validation/post-adapter-preclassification-validation-execution.json",
+    "sha256": "6357fbc6c26308e0d4ea2b6fd51b1b19b4e01d46aceedca66a96815ed6e34de1",
+    "bytes": 556
+  },
+  "explanation": "The pre-adapter production check reports the missing ledger plus eight dependent row/one-sided-card issues because standalone display permissions are supplied by that ledger. After building the authenticated ledger, all row and reader-facing issues disappear; only the registry published-and-frozen classification remains. Classification is intentionally deferred until actual rendering checks finish. No validator, score, locked inventory or row rules were changed.",
+  "remainingIssue": "standalone adapter or registry differs from its frozen route",
+  "requiredFinalValidation": true
+}

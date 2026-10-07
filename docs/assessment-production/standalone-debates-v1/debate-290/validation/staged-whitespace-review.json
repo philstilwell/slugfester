@@ -1,0 +1,37 @@
+{
+  "status": "passed-with-two-preserved-frozen-contract-eof-blanks",
+  "completedAt": "2026-10-07T01:16:53.244Z",
+  "originalCheck": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-290/validation/staged-diff-check-execution.json",
+    "sha256": "c5fc905fab8b89f24e3e2b888c6e45cfce2f16535185218b310afa4912f8dcdb",
+    "bytes": 538
+  },
+  "finding": "Two generated reviewer contracts end with an extra blank line. These exact contract bytes were read, hashed and frozen before review and cannot be rewritten during publication.",
+  "frozenContracts": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/contract.md",
+      "sha256": "3cacd2ee4d269486d90fb98cfc11d2ac829ab0e05191585d500781027e9d5016",
+      "bytes": 13564
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/contract.md",
+      "sha256": "57622c5670b6be13c4a198b7a26691d28e3432c697a0d6a8e04e9bd8b5432784",
+      "bytes": 9054
+    }
+  ],
+  "remainingChangedFilesCheck": {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      ".",
+      ":(exclude)docs/assessment-production/standalone-debates-v1/debate-290/publication/contract.md",
+      ":(exclude)docs/assessment-production/standalone-debates-v1/debate-290/publication/rhetorical-tag-review-1/contract.md"
+    ],
+    "exitCode": 0,
+    "output": ""
+  },
+  "assessmentOrProductionTextChanges": 0
+}

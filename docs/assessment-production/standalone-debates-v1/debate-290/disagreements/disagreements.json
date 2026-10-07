@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "290",
+  "debateId": "rauser-malpass-evidential-problem-evil-2021",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Malpass's burden was to show that suffering is more expected on indifference than on classical theism, including the likelihood premises and the cost of unsupported auxiliaries. His successes and residual gaps on those consequences are already scored in the pro motion, comparative-premise, unexplained-suffering, and auxiliary-cost moves, so no separate debate-wide adjustment remains.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-likelihood",
+              "pro-comparative-premises",
+              "pro-auxiliary-cost",
+              "pro-unexplained-suffering"
+            ],
+            "completionCriterion": "Complete the modest comparative likelihood case without converting it into a disproof or overall posterior.",
+            "relatedMoveIds": [
+              "malpass-states-likelihood-inference",
+              "malpass-theism-disfavors-egregious-suffering",
+              "malpass-specificity-costs-prior",
+              "malpass-soul-making-leaves-unobserved-suffering"
+            ],
+            "distinctConsequence": "No additional consequence exists beyond the comparative inference, residual suffering, and auxiliary-cost effects already scored.",
+            "alreadyCapturedBy": [
+              "malpass-states-likelihood-inference",
+              "malpass-theism-disfavors-egregious-suffering",
+              "malpass-specificity-costs-prior",
+              "malpass-soul-making-leaves-unobserved-suffering"
+            ],
+            "counterfactual": "Without those already-scored move effects, there would be no independent basis for a pro completion adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate pro adjustment is warranted because the debate-wide completion strengths and limits are already captured in the locked move judgments.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-likelihood",
+              "pro-comparative-premises",
+              "pro-auxiliary-cost",
+              "pro-unexplained-suffering",
+              "pro-unknown-reason-cost",
+              "pro-basic-moral-knowledge",
+              "pro-counterfactual-alternatives"
+            ],
+            "completionCriterion": "Whether Malpass completed his modest comparative likelihood burden across the approved exchange.",
+            "relatedMoveIds": [
+              "malpass-defines-comparative-hypotheses",
+              "malpass-states-likelihood-inference",
+              "malpass-indifference-predicts-suffering",
+              "malpass-theism-disfavors-egregious-suffering",
+              "malpass-specificity-costs-prior",
+              "malpass-soul-making-leaves-unobserved-suffering",
+              "malpass-animal-resurrection-needs-independent-support",
+              "malpass-grants-limited-scriptural-support",
+              "malpass-indifference-broader-than-naturalism",
+              "malpass-entailment-breaks-analogy",
+              "malpass-unknown-reason-parallels-ad-hoc-escape",
+              "malpass-basic-moral-knowledge-resists-closure",
+              "malpass-deontic-ledger-objection",
+              "malpass-extreme-cases-beyond-cutoff",
+              "malpass-post-hoc-adaptation-challenge",
+              "malpass-counterfactual-life-balance",
+              "malpass-unknown-effects-symmetry",
+              "malpass-caregiving-alternative"
+            ],
+            "distinctConsequence": "The remaining question is the cumulative completion of the same bridges already evaluated move by move.",
+            "alreadyCapturedBy": [
+              "malpass-defines-comparative-hypotheses",
+              "malpass-states-likelihood-inference",
+              "malpass-indifference-predicts-suffering",
+              "malpass-theism-disfavors-egregious-suffering",
+              "malpass-specificity-costs-prior",
+              "malpass-soul-making-leaves-unobserved-suffering",
+              "malpass-animal-resurrection-needs-independent-support",
+              "malpass-grants-limited-scriptural-support",
+              "malpass-indifference-broader-than-naturalism",
+              "malpass-entailment-breaks-analogy",
+              "malpass-unknown-reason-parallels-ad-hoc-escape",
+              "malpass-basic-moral-knowledge-resists-closure",
+              "malpass-deontic-ledger-objection",
+              "malpass-extreme-cases-beyond-cutoff",
+              "malpass-post-hoc-adaptation-challenge",
+              "malpass-counterfactual-life-balance",
+              "malpass-unknown-effects-symmetry",
+              "malpass-caregiving-alternative"
+            ],
+            "counterfactual": "Without those already-scored strengths and limitations, there would be no distinct residual pro consequence to adjust."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Rauser's burden was to weaken the inference by conditioning it on richer, independently held theistic background beliefs while preserving his qualified bare-theism concession. His successes and gaps on background conditioning, soul-making, cognitive closure, natural evil, and defeater relativity are already scored in the con moves, leaving no distinct adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-background-conditioning",
+              "con-soul-making",
+              "con-defeater-relative",
+              "con-cognitive-closure",
+              "con-natural-evil-resources"
+            ],
+            "completionCriterion": "Show that richer theistic background can weaken the inference without needing to prove God or deny the bare-theism result.",
+            "relatedMoveIds": [
+              "rauser-school-bus-background",
+              "rauser-defeater-relative-to-held-beliefs",
+              "rauser-cognitive-closure-limited",
+              "rauser-animal-suffering-concession-and-options",
+              "rauser-qualified-bare-theism-concession"
+            ],
+            "distinctConsequence": "No additional consequence exists beyond the conditioning, defeater, cognitive-limit, and natural-evil effects already scored.",
+            "alreadyCapturedBy": [
+              "rauser-school-bus-background",
+              "rauser-defeater-relative-to-held-beliefs",
+              "rauser-cognitive-closure-limited",
+              "rauser-animal-suffering-concession-and-options",
+              "rauser-qualified-bare-theism-concession"
+            ],
+            "counterfactual": "Without those already-scored move effects, there would be no independent basis for a con completion adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate con adjustment is warranted because the debate-wide completion strengths and limits are already captured in the locked move judgments.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-background-conditioning",
+              "con-classical-concession",
+              "con-soul-making",
+              "con-defeater-relative",
+              "con-natural-evil-resources",
+              "con-cognitive-closure",
+              "con-testimony-and-threshold"
+            ],
+            "completionCriterion": "Whether Rauser completed his critical burden against the inference on a richer theistic background.",
+            "relatedMoveIds": [
+              "rauser-narrows-overall-force",
+              "rauser-classical-attributes-create-problem",
+              "rauser-school-bus-background",
+              "rauser-soul-making-expectation",
+              "rauser-defeater-relative-to-held-beliefs",
+              "rauser-animal-suffering-concession-and-options",
+              "rauser-biblical-creation-renewal-support",
+              "rauser-moral-platonism-reverse-analogy",
+              "rauser-platonist-package-restated",
+              "rauser-qualified-bare-theism-concession",
+              "rauser-cognitive-closure-limited",
+              "rauser-apprenticeship-analogy",
+              "rauser-permissible-suffering-threshold",
+              "rauser-soldier-testimony-cautions",
+              "rauser-fallible-testimony-deference",
+              "rauser-world-level-effects",
+              "rauser-family-caregiving-causal-example",
+              "rauser-final-individual-causal-history"
+            ],
+            "distinctConsequence": "The remaining question is the cumulative completion of the same bridges already evaluated move by move.",
+            "alreadyCapturedBy": [
+              "rauser-narrows-overall-force",
+              "rauser-classical-attributes-create-problem",
+              "rauser-school-bus-background",
+              "rauser-soul-making-expectation",
+              "rauser-defeater-relative-to-held-beliefs",
+              "rauser-animal-suffering-concession-and-options",
+              "rauser-biblical-creation-renewal-support",
+              "rauser-moral-platonism-reverse-analogy",
+              "rauser-platonist-package-restated",
+              "rauser-qualified-bare-theism-concession",
+              "rauser-cognitive-closure-limited",
+              "rauser-apprenticeship-analogy",
+              "rauser-permissible-suffering-threshold",
+              "rauser-soldier-testimony-cautions",
+              "rauser-fallible-testimony-deference",
+              "rauser-world-level-effects",
+              "rauser-family-caregiving-causal-example",
+              "rauser-final-individual-causal-history"
+            ],
+            "counterfactual": "Without those already-scored strengths and limitations, there would be no distinct residual con consequence to adjust."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 36,
+    "disputesExtracted": 2,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/inventory/inventory.json",
+      "sha256": "68274f97da36121db243a5e14616a36c4ffa956cc90883ca5ce18d74bed5fb55"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/judgments/pass-a/output.json",
+      "sha256": "04cc458515c45d398a30079ef5d927366cbd7bb5b58b00651dca7758cff016a4"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/judgments/pass-b/output.json",
+      "sha256": "f3a60b6a498fbf1f8a07546dd43d8b3bd10db2b3eabfc1445ec224596a6088da"
+    }
+  }
+}

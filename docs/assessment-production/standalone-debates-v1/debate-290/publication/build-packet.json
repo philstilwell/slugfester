@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "290",
+  "debateId": "rauser-malpass-evidential-problem-evil-2021",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/inventory/inventory.json",
+      "sha256": "68274f97da36121db243a5e14616a36c4ffa956cc90883ca5ce18d74bed5fb55",
+      "bytes": 147321
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/score-pass/output.json",
+      "sha256": "dcbba4d5093d748bcd2772eeacef20c28afe0e3ce7d79e6b6ed0c5ca6dbf1020",
+      "bytes": 19054
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/skeleton.json",
+      "sha256": "c07e725112b7ea5f379a601c75893f2ab9b08ee01e16cddf0c9935e10176c6b9",
+      "bytes": 14186
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-290/publication/reference-metrics.json",
+      "sha256": "b4966c70d52773ac0c9b6f12f4695c64074764e39253c79821e5d120ce055239",
+      "bytes": 54146
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}
