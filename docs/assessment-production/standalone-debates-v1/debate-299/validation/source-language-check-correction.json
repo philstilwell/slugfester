@@ -1,0 +1,19 @@
+{
+  "status": "implemented-focused-source-disclosure-check",
+  "reason": "The required reader-facing qualification about automated audio verification falsely matched the internal-metadata phrase audio checks. Accept only the complete accurate sentence inside sourceNote; all remaining content and other fields retain the exact prior pattern. No debate-number exception, scoring, source or publication change.",
+  "frozenControls": [
+    {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "45bb5c6ca356eb66c4339507c0bcdb7af0888b2c6b5ae146f4d9a60ff0de89a3",
+      "snapshot": "docs/assessment-production/standalone-debates-v1/control-snapshots/45bb5c6ca356eb66c4339507c0bcdb7af0888b2c6b5ae146f4d9a60ff0de89a3/validate-debates.mjs",
+      "bytes": 91388
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "55bf7b441bef410cd2f8f27a2e5278090aed084771257cf4fff4a9bc29860898",
+      "snapshot": "docs/assessment-production/standalone-debates-v1/control-snapshots/55bf7b441bef410cd2f8f27a2e5278090aed084771257cf4fff4a9bc29860898/audit-assessment-production-standalone-v1.mjs",
+      "bytes": 79869
+    }
+  ],
+  "tests": "tests/publication-source-language.test.mjs; included through existing default standalone workflow test entry point"
+}

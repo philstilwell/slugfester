@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "status": "passed",
+  "debateNumber": "299",
+  "debateId": "paulogia-jones-divine-hiddenness-2019",
+  "scope": "Source, assessment, publication, independent corpus comparison and full desktop/mobile rendering passed. Repository replay, immediate precommit, committed-only replay, protected PR checks and live deployment remain separate release gates at this content-freeze boundary.",
+  "source": {
+    "method": "Complete public English automatic captions supplemented by nine targeted automated audio-transcription inputs. No direct human listening or independent fact-check claim.",
+    "events": 2085,
+    "transcriptWordsIncludingTimestamps": 17089,
+    "retainedMilliseconds": 2795630,
+    "pairedFormalClosings": false,
+    "primarySpeakerException": false,
+    "explicitEditorApprovedModeratorContext": true,
+    "audienceQaExcluded": true
+  },
+  "assessment": {
+    "moves": 29,
+    "proMoves": 14,
+    "conMoves": 15,
+    "acceptedPrimaryPasses": 2,
+    "primaryContexts": 2,
+    "adjudicatedDisputes": 16,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "manualScoreOverrides": 0,
+    "scores": {
+      "pro": 86,
+      "con": 83,
+      "winner": "pro"
+    }
+  },
+  "publication": {
+    "sections": 7,
+    "rows": 15,
+    "cards": 29,
+    "rhetoricalCandidates": 21,
+    "acceptedTags": 0,
+    "rejectedCandidates": 21,
+    "contentParityPassed": true,
+    "nonformulaicAiReviewPassed": true,
+    "punctuationIntegrityPassed": true,
+    "featuredQuotesCompleteThoughts": true,
+    "durationCorrection": "Deterministic retained interval total displays47minutes; frozen assessed window and all words/scores unchanged."
+  },
+  "rendering": {
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "viewports": 2,
+    "screenshots": 28,
+    "argumentCardsPerViewport": 29,
+    "acceptedTagsRendered": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0
+  },
+  "directCostUsd": 0.433725,
+  "maximumPossibleCostUsd": 0.433725,
+  "costQualification": "Estimated from returned usage; invoice not verified. Nine successful paid calls, no failed/uncertain calls or paid retries. Below announced0.57estimate and1.00cap.",
+  "timing": {
+    "trackedWallMs": 4735884,
+    "summedIntervalMs": 5803141,
+    "summedWorkMs": 5803141,
+    "waitingWallMs": 0,
+    "byStageAndKind": {
+      "adjudication/active": {
+        "wallMs": 263340,
+        "summedMs": 263340
+      },
+      "assemble-ledger/active": {
+        "wallMs": 193,
+        "summedMs": 193
+      },
+      "build-adapter/active": {
+        "wallMs": 149,
+        "summedMs": 149
+      },
+      "disagreements/active": {
+        "wallMs": 197,
+        "summedMs": 197
+      },
+      "inventory/active": {
+        "wallMs": 1130086,
+        "summedMs": 1130086
+      },
+      "judgment-packet/active": {
+        "wallMs": 199,
+        "summedMs": 199
+      },
+      "judgments/active": {
+        "wallMs": 769961,
+        "summedMs": 1254674
+      },
+      "publication/active": {
+        "wallMs": 1279402,
+        "summedMs": 1279402
+      },
+      "rhetorical/active": {
+        "wallMs": 504150,
+        "summedMs": 1007990
+      },
+      "rhetorical-adjudication/active": {
+        "wallMs": 228349,
+        "summedMs": 228349
+      },
+      "score-once/active": {
+        "wallMs": 174,
+        "summedMs": 174
+      },
+      "audio/active": {
+        "wallMs": 260569,
+        "summedMs": 260569
+      },
+      "validation-and-release/active": {
+        "wallMs": 377819,
+        "summedMs": 377819
+      }
+    },
+    "openIntervals": [],
+    "untrackedTimeNotAttributed": true
+  },
+  "componentEvidence": {
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/publication/execution.json",
+      "sha256": "fe8a0c8d67467aaffde815ed4d49842897bd7ccf908808a461e46ee6531faee2",
+      "bytes": 30099
+    },
+    "editorial": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/publication/editorial-source-review.json",
+      "sha256": "fce81cafa8d5a28c9e68d3d3cc57e04b7ba36066a875e0b272d09a9ce1ca3a9d",
+      "bytes": 1295
+    },
+    "duration": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/publication/duration-correction.json",
+      "sha256": "fb2c44f35a08b47e290e207c233171edf7eb9cd3e47024c89e186e03e85f1737",
+      "bytes": 1138
+    },
+    "rhetorical": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/publication/rhetorical-tag-review-1/audit.json",
+      "sha256": "085c537d997e2950055142a04de23e3947aea097e8f969ab2cc0bf3c27f5678f",
+      "bytes": 23781
+    },
+    "parity": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/publication/content-parity-audit.json",
+      "sha256": "216461e2d562ef7898bc54086d23dd5300fcbd44f73130d640d47d297aff00f7",
+      "bytes": 6697
+    },
+    "independentComparison": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/publication/independent-production-comparison.json",
+      "sha256": "0783296f446033c8e33ba1c8dee7e2fba9fe84402c68e7dd414d9f48ce488dc3",
+      "bytes": 5206
+    },
+    "aiProse": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/publication/ai-prose-and-punctuation-review.json",
+      "sha256": "1e2f643c4123df179d33c94a2319b34dd2609efe14adc77d51642de0af07804a",
+      "bytes": 46052
+    },
+    "rendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/rendering/rendering-audit.json",
+      "sha256": "80f0f3d6de61d0bdf7798ad1f999a3e709bb1daf7bb84b8acc41fa447e2ad053",
+      "bytes": 9948
+    },
+    "earlySiteCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/validation/early-standalone-site-check.json",
+      "sha256": "1e46146352b0d1da2fb7415a3aec39756d6632d0146c5c633f53fd28b4cd5ca2",
+      "bytes": 428
+    },
+    "sourceLanguage": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/validation/source-language-check-correction.json",
+      "sha256": "0244da032ecf95419c144582d856b652115b5d0ecfaff21ecb2352b4524a01f7",
+      "bytes": 1293
+    }
+  }
+}

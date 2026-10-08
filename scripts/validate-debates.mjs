@@ -1,3 +1,4 @@
+import { hasInternalDebateMetadata } from "./lib/publication-source-language.mjs";
 import { topicCategoryIds } from "../src/data/topics.js";
 import { TEAM_ADAPTER_VERSION, validateTeamSiteLedgerAdapter, validateTeamStagingCandidate } from "./lib/assessment-standalone-team-pipeline-v1.mjs";
 import { MULTI_SPEAKER_RUBRIC } from "./lib/assessment-production-multi-speaker-approximation-v1.mjs";
@@ -121,8 +122,7 @@ const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const debateNumberPattern = /^\d{2,}$/;
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const youtubePattern = /^https:\/\/(www\.)?youtube\.com\/watch\?v=[A-Za-z0-9_-]+/;
-const internalDebateMetadataPattern =
-  /(?:SHA-?256|\.assessment-cache|locally cached|timestamped events|below-high-confidence|audio checks?|adjudicated-consensus|disputed-field adjudication|quote-eligible|locked source spans?|repository code|isolated judgments?|source-exact|manifest\.json|transcript\.txt|events\.json)/i;
+
 const legacyAssessmentModel = "GPT 5.5 Extra High";
 const currentAssessmentModel = "5.6 Terra Extra High";
 const reassessmentRubrics = new Set([V2_RUBRIC, V21_RUBRIC, MULTI_SPEAKER_RUBRIC]);
@@ -197,7 +197,7 @@ function requireArray(object, key, path, options = {}) {
 
 function validateNoInternalDebateMetadata(value, path) {
   if (typeof value === "string") {
-    if (internalDebateMetadataPattern.test(value)) {
+    if (hasInternalDebateMetadata(value, path.at(-1))) {
       addError(path, "must use reader-facing language without internal workflow data");
     }
     return;

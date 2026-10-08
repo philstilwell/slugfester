@@ -1,3 +1,4 @@
+import "./publication-source-language.test.mjs";
 import "./featured-quote-correction.test.mjs";
 import { test } from 'node:test';
 import assert from 'node:assert/strict';

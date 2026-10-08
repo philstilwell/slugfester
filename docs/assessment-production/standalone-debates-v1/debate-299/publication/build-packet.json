@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "299",
+  "debateId": "paulogia-jones-divine-hiddenness-2019",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/inventory/inventory.json",
+      "sha256": "4bae7259291108a390209e4bdc3cad1ecf64eff75bbd98af6375e33088086f3c",
+      "bytes": 128043
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/score-pass/output.json",
+      "sha256": "54a8c391aece5b6008034ba6d5d72849110fdf1ebea5bf6db557aba0f2c72508",
+      "bytes": 15852
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/publication/skeleton.json",
+      "sha256": "d341117e52762bef67556dfe96866fa431971c5e8702b96d80e23fd062c6d922",
+      "bytes": 12048
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/publication/reference-metrics.json",
+      "sha256": "00af380aa5df1caaecbecce7b2b85b8960f239c9b9901f23096981d6a372ab10",
+      "bytes": 54291
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

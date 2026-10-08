@@ -1,0 +1,144 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-v1.mjs",
+        "--audit",
+        "--debate",
+        "299",
+        "--repository-only"
+      ],
+      "inputRevision": "436f355f7808b01ef536c8546a4270d69128820e",
+      "workingTree": "frozen debate299 and checked generated pages",
+      "startedAt": "2026-10-08T04:51:32.159646+00:00",
+      "elapsedSeconds": 0.169,
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-299/validation/evidence-audits-1.txt",
+        "sha256": "2028422cd4c68ca4f188fcfd23a4b74505979c9795af4406fd612932dd48222a",
+        "bytes": 242
+      }
+    },
+    {
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-v1.mjs",
+        "--audit",
+        "--repository-only"
+      ],
+      "inputRevision": "436f355f7808b01ef536c8546a4270d69128820e",
+      "workingTree": "frozen debate299 and checked generated pages",
+      "startedAt": "2026-10-08T04:51:32.330075+00:00",
+      "elapsedSeconds": 17.667,
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-299/validation/evidence-audits-2.txt",
+        "sha256": "ce26ce671b33ec93c47ef0ab52e1cc5585cb71f3937661ea63f8fc74c4be39bd",
+        "bytes": 24828
+      }
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "assessment:standalone:content-parity:check"
+      ],
+      "inputRevision": "436f355f7808b01ef536c8546a4270d69128820e",
+      "workingTree": "frozen debate299 and checked generated pages",
+      "startedAt": "2026-10-08T04:51:49.997545+00:00",
+      "elapsedSeconds": 3.246,
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-299/validation/evidence-audits-3.txt",
+        "sha256": "213fd7912b2d565cec195ce2418bd98882dd1aeef24fff9511a921dbb5570668",
+        "bytes": 12935
+      }
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "assessment:standalone:rhetorical-tags:check"
+      ],
+      "inputRevision": "436f355f7808b01ef536c8546a4270d69128820e",
+      "workingTree": "frozen debate299 and checked generated pages",
+      "startedAt": "2026-10-08T04:51:53.244182+00:00",
+      "elapsedSeconds": 0.495,
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-299/validation/evidence-audits-4.txt",
+        "sha256": "5f9cddeef885335873dc64180653d0cca359d93153579f7b0823a51615372b9e",
+        "bytes": 12938
+      }
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "assessment:campaign:closure:repository:check"
+      ],
+      "inputRevision": "436f355f7808b01ef536c8546a4270d69128820e",
+      "workingTree": "frozen debate299 and checked generated pages",
+      "startedAt": "2026-10-08T04:51:53.739917+00:00",
+      "elapsedSeconds": 1.131,
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-299/validation/evidence-audits-5.txt",
+        "sha256": "dd14cf9cb4b91f0495025a5fc13ee7bb10e0dc82864f0edea18c33132cbd7849",
+        "bytes": 407
+      }
+    },
+    {
+      "command": [
+        "node",
+        "scripts/validate-corpus-transcripts.mjs"
+      ],
+      "inputRevision": "436f355f7808b01ef536c8546a4270d69128820e",
+      "workingTree": "frozen debate299 and checked generated pages",
+      "startedAt": "2026-10-08T04:51:54.870848+00:00",
+      "elapsedSeconds": 0.3,
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-299/validation/evidence-audits-6.txt",
+        "sha256": "5abffb88fd8afa1803985189093b58de76ac6990a409ce0cbcfed63284a63750",
+        "bytes": 152
+      }
+    },
+    {
+      "command": [
+        "node",
+        "scripts/generate-seo-pages.mjs",
+        "--check"
+      ],
+      "inputRevision": "436f355f7808b01ef536c8546a4270d69128820e",
+      "workingTree": "frozen debate299 and checked generated pages",
+      "startedAt": "2026-10-08T04:51:55.170979+00:00",
+      "elapsedSeconds": 1.109,
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-299/validation/evidence-audits-7.txt",
+        "sha256": "339033945539ae4192008c616ff72224a92d69c63a981a9ccd8d93a85733da00",
+        "bytes": 25
+      }
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "inputRevision": "436f355f7808b01ef536c8546a4270d69128820e",
+      "workingTree": "frozen debate299 and checked generated pages",
+      "startedAt": "2026-10-08T04:51:56.279984+00:00",
+      "elapsedSeconds": 0.194,
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-299/validation/evidence-audits-8.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}
