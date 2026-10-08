@@ -25,6 +25,8 @@ import {
   absoluteUrl,
   backendPath,
   backendSeo,
+  chartsPath,
+  chartsSeo,
   insightsPath,
   insightsSeo,
   insightsMethodsSeo,
@@ -92,6 +94,7 @@ const browserImportVersions = /(\.\/(?:data\/[^"'`?]+|seo\.js)\?v=)[^"'`]+/g;
 const normalizedApp = appSource.replace(browserImportVersions, "$1CONTENT_VERSION");
 const normalizedSeo = seoSource.replace(browserImportVersions, "$1CONTENT_VERSION");
 const browserSources = await Promise.all([
+  "src/data/charts.js", "src/data/chart-snapshot.js",
   "src/styles.css", "src/data/topics.js", "src/data/topic-preview.js", "src/data/assessment-process-guide.js", "src/data/debate-recommendation.js", "src/data/critique-format.js",
   "src/data/interlocutors.js", "src/data/references.js", "src/data/reader-guides.js", "src/data/insights.js", "src/data/insights-methods.js", "src/data/interlocutor-bios.js"
 ].map((path) => readFile(join(root, path), "utf8")));
@@ -157,6 +160,7 @@ function fallbackMarkup(seo, summary) {
     { href: rankingsPath(), label: "Compare interlocutors" },
     { href: backendPath(), label: "Read the assessment method" },
     { href: insightsPath(), label: "Explore research insights" },
+    { href: chartsPath(), label: "Explore argument charts" },
     ...(seo.relatedLinks || [])
   ];
   const uniqueLinks = [
@@ -211,7 +215,9 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   const updatedMeta = updatedTime
     ? `<meta property="og:updated_time" content="${escapeHtml(updatedTime)}">\n    `
     : "";
-  const fallback = seo.canonicalPath === "/insights/data-and-methods/"
+  const fallback = seo.canonicalPath === chartsPath()
+    ? `<main class="charts-page" id="main-content" data-initial-path="/charts/">${initialPageContent(chartsPath())}<p><a href="/">Back to debates</a></p></main>`
+    : seo.canonicalPath === "/insights/data-and-methods/"
     ? `<main class="insights-page" id="main-content" data-initial-path="/insights/data-and-methods/">${renderInsightsMethodsContent()}</main>`
     : seo.canonicalPath === insightsPath()
     ? `<main class="insights-page" id="main-content" data-initial-path="/insights/">${renderInsightsContent()}<p><a href="/">Back to debates</a> · <a href="/backend/">Assessment method</a></p></main>`
@@ -730,6 +736,7 @@ addPage(
 
 addPage("/insights/data-and-methods/", insightsMethodsSeo(), "Read the evidence, methods and limitations behind the seven studies.");
 addPage(insightsPath(), insightsSeo(), "Explore seven research findings, figures, limitations and links to the debates.");
+addPage(chartsPath(), chartsSeo(), "Explore a manually published snapshot of argument families, scores, replies, and reasoning dimensions.");
 
 addPage(
   correctionsPath(),

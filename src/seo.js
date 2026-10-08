@@ -1,4 +1,4 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=fe680444edd1fa10";
+import { topicCategoryDefinitions } from "./data/topics.js?v=653ff8c7b5e8665a";
 
 export const SITE_URL = "https://slugfester.com";
 export const SITE_NAME = "Slugfester";
@@ -245,6 +245,19 @@ export function backendPath() {
 
 export function insightsPath() {
   return "/insights/";
+}
+
+export function chartsPath() { return "/charts/"; }
+
+export function chartsSeo() {
+  const description = "Explore arguments supporting and challenging religious claims: frequency, scores, replies and reasoning dimensions, with dated data and linked debate evidence.";
+  return {
+    title: pageTitle("Charts of arguments for and against theism"), heading: "Charts of the assessed arguments",
+    description, canonicalPath: chartsPath(),
+    jsonLd: [organizationJsonLd(), websiteJsonLd(),
+      { "@context": "https://schema.org", "@type": "CollectionPage", name: "Charts of the assessed arguments", description, url: absoluteUrl(chartsPath()), isPartOf: { "@id": WEBSITE_ID } },
+      breadcrumbJsonLd([{ name: SITE_NAME, path: "/" }, { name: "Charts", path: chartsPath() }])]
+  };
 }
 
 export function insightsSeo() {

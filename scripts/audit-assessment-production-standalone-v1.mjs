@@ -133,6 +133,14 @@ const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
 const VERSIONED_CONTROL_SNAPSHOTS = new Map([
   [
+    "package.json\u00002248d1660c49a048566a632e83b4895a56bd37a98d8c0359d386d018c4d9d682",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/2248d1660c49a048566a632e83b4895a56bd37a98d8c0359d386d018c4d9d682/package.json"
+  ],
+  [
+    "scripts/audit-assessment-production-standalone-v1.mjs\u00006e869936a2bf9607e9d26073d23b593e0797572330f4761e0f5df8d486cab618",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/6e869936a2bf9607e9d26073d23b593e0797572330f4761e0f5df8d486cab618/audit-assessment-production-standalone-v1.mjs"
+  ],
+  [
     "scripts/validate-debates.mjs\u000045bb5c6ca356eb66c4339507c0bcdb7af0888b2c6b5ae146f4d9a60ff0de89a3",
     "docs/assessment-production/standalone-debates-v1/control-snapshots/45bb5c6ca356eb66c4339507c0bcdb7af0888b2c6b5ae146f4d9a60ff0de89a3/validate-debates.mjs"
   ],
