@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-08T05:22:56.510Z",
+  "userAuthorization": "User supplied the video under the invoked addition skill. Standing instruction: assess only formal debates and closings; disclose chosen scope; use complete quotations; avoid routine approvals; commit and push by default. Formal opening and reply rounds are retained, and later discussion is excluded without claiming a new recording-specific scope exception.",
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "repositoryBaseline": {
+    "branch": "codex/debate-300-dennett-sapolsky",
+    "head": "74e9c7cbd850d0df733d7a1689e80802281bbfa1",
+    "originMain": "74e9c7cbd850d0df733d7a1689e80802281bbfa1",
+    "localMain": "a32f69f14cc9878ed920c6b68e763eae1ab5e27d",
+    "cleanBeforeBranch": true,
+    "preservationException": "Shared local main is checked out in another user checkout. Preserve its files and branch pointer; the clean attached worktree starts at fetched origin/main. Three-way equality is not claimed. The preceding Meyer–Shermer request has only ignored intake evidence and a pending scope question; it has no authorized run or reserved registry number."
+  },
+  "identity": {
+    "debateNumber": "300",
+    "debateId": "dennett-sapolsky-free-will-2023",
+    "videoId": "aYzFH8xqhns",
+    "canonicalUrl": "https://www.youtube.com/watch?v=aYzFH8xqhns",
+    "sourceTitle": "Do We Have Freewill? / Daniel Dennett VS Robert Sapolsky",
+    "eventYear": 2023,
+    "title": "Daniel Dennett vs Robert Sapolsky — Do We Have Free Will? (2023)",
+    "label": "Free Will and Biological Responsibility",
+    "topicCategory": "mind-consciousness-free-will",
+    "motion": "Do human beings have free will?",
+    "pro": {
+      "speaker": "Daniel Dennett",
+      "position": "Humans can have free will"
+    },
+    "con": {
+      "speaker": "Robert Sapolsky",
+      "position": "Humans do not have free will"
+    },
+    "dyadic": true,
+    "originalRecordingDyadic": true
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "knownSuccessfulCallCostUsd": 0.0108525,
+    "maximumPossiblePriorCostUsd": 0.0108525,
+    "currentPlanEstimateUsd": 0.15,
+    "maximumCumulativeCostUsd": 0.5,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "audioVerificationPolicy": "Five source checks completed once after announced $0.03–$0.15 estimate and $0.50 cumulative ceiling. Selected below-high-confidence moves require one frozen input each and a fresh cumulative estimate before their calls. No automatic paid retries or direct-listening claim."
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-300",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/dennett-sapolsky-free-will-2023.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/dennett-sapolsky-free-will-2023.js",
+    "generated site output for this addition"
+  ]
+}

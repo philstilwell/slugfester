@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "status": "passed",
+  "debateNumber": "300",
+  "debateId": "dennett-sapolsky-free-will-2023",
+  "scope": "Source, assessment, publication, independent corpus comparison and full desktop/mobile rendering passed. Repository replay, immediate precommit, committed-only replay, protected PR checks and live deployment remain separate release gates at this content-freeze boundary.",
+  "source": {
+    "method": "Complete public English automatic captions supplemented by five targeted automated audio checks. No direct listening or independent scientific/textual fact-check claim.",
+    "events": 1672,
+    "transcriptWordsIncludingTimestamps": 11798,
+    "retainedMilliseconds": 2371920,
+    "pairedFormalClosings": false,
+    "primarySpeakerException": false,
+    "strictlyDyadic": true,
+    "laterDiscussionAndAudienceQaExcluded": true
+  },
+  "assessment": {
+    "moves": 23,
+    "proMoves": 12,
+    "conMoves": 11,
+    "acceptedPrimaryPasses": 2,
+    "primaryContexts": 2,
+    "adjudicatedDisputes": 16,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "manualScoreOverrides": 0,
+    "scores": {
+      "pro": 82,
+      "con": 84,
+      "winner": "con"
+    }
+  },
+  "publication": {
+    "sections": 5,
+    "rows": 14,
+    "cards": 23,
+    "rhetoricalCandidates": 28,
+    "acceptedTags": 1,
+    "rejectedCandidates": 27,
+    "contentParityPassed": true,
+    "nonformulaicAiReviewPassed": true,
+    "punctuationIntegrityPassed": true,
+    "featuredQuotesCompleteThoughts": true
+  },
+  "rendering": {
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "viewports": 2,
+    "screenshots": 30,
+    "argumentCardsPerViewport": 23,
+    "acceptedTagsRendered": 1,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0
+  },
+  "directCostUsd": 0.0108525,
+  "maximumPossibleCostUsd": 0.0108525,
+  "costQualification": "Estimated from returned usage; invoice not verified. Five successful paid calls, no failed/uncertain calls or paid retries. Below announced $0.03\u20130.15 estimate and $0.50 cap.",
+  "timing": {
+    "trackedWallMs": 40973799,
+    "summedIntervalMs": 42017854,
+    "summedWorkMs": 5568924,
+    "waitingWallMs": 36448930,
+    "byStageAndKind": {
+      "adjudication/active": {
+        "wallMs": 318754,
+        "summedMs": 318754
+      },
+      "assemble-ledger/active": {
+        "wallMs": 186,
+        "summedMs": 186
+      },
+      "build-adapter/active": {
+        "wallMs": 146,
+        "summedMs": 146
+      },
+      "disagreements/active": {
+        "wallMs": 216,
+        "summedMs": 216
+      },
+      "inventory/active": {
+        "wallMs": 1516185,
+        "summedMs": 1516185
+      },
+      "inventory/wait": {
+        "wallMs": 36448930,
+        "summedMs": 36448930
+      },
+      "judgment-packet/active": {
+        "wallMs": 184,
+        "summedMs": 184
+      },
+      "judgments/active": {
+        "wallMs": 561265,
+        "summedMs": 1121075
+      },
+      "publication/active": {
+        "wallMs": 535558,
+        "summedMs": 535558
+      },
+      "publication/repair": {
+        "wallMs": 264379,
+        "summedMs": 264379
+      },
+      "score-once/active": {
+        "wallMs": 165,
+        "summedMs": 165
+      },
+      "rhetorical/active": {
+        "wallMs": 450971,
+        "summedMs": 874208
+      },
+      "rhetorical-adjudication/active": {
+        "wallMs": 564666,
+        "summedMs": 564666
+      },
+      "rhetorical-adjudication/repair": {
+        "wallMs": 109638,
+        "summedMs": 109638
+      },
+      "validation-and-release/active": {
+        "wallMs": 263564,
+        "summedMs": 263564
+      }
+    },
+    "openIntervals": [],
+    "untrackedTimeNotAttributed": true
+  },
+  "componentEvidence": {
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/publication/execution.json",
+      "sha256": "676b776a38e3bc7da78b838cd87e30b6d68996b91837c4d1efe62752864ab9d2",
+      "bytes": 27628
+    },
+    "editorial": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/publication/editorial-source-review.json",
+      "sha256": "422cb41e1af544643173e18cff3e93a72872ebe9469d4bd244bb75a46c91cf83",
+      "bytes": 3233
+    },
+    "rhetorical": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/publication/rhetorical-tag-review-1/audit.json",
+      "sha256": "9f74bd193b5a58776b7bc524c01fa77f20c68bba2a1227d65a353e8c740b4b6f",
+      "bytes": 31870
+    },
+    "parity": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/publication/content-parity-audit.json",
+      "sha256": "abc4f76f069c73769b0f09d9838bc0c46ad92d3a759c7c4dea01cee23465584d",
+      "bytes": 5479
+    },
+    "independentComparison": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/publication/independent-production-comparison.json",
+      "sha256": "c3b6d06debb943222a81fa981c394c70cd85bb1d7cd4207d10109293283193f5",
+      "bytes": 5032
+    },
+    "aiProse": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/publication/ai-prose-and-punctuation-review.json",
+      "sha256": "a6fe56235da655c8edfaf11707e51699cc427f297c43c076df062ec56a13132d",
+      "bytes": 47996
+    },
+    "rendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/rendering/rendering-audit.json",
+      "sha256": "a642511be9cf29453fec716f96dd8fe377258f956c0a005d77824cea4427a2fb",
+      "bytes": 10365
+    },
+    "earlySiteCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/validation/early-standalone-site-check.json",
+      "sha256": "35a4707ff5262f28d5105a840cdaa13449c564125d0910343447ee109e54704a",
+      "bytes": 463
+    },
+    "source": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/source/source-lock.json",
+      "sha256": "5f2cd18854f06a8470cd3d173f7e428092d4724da5b4aeb076e8e7f1d83be04a",
+      "bytes": 12023
+    }
+  }
+}

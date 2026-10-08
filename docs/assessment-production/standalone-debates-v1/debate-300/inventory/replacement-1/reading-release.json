@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "2.0-authenticated-subscription-worker-evidence",
+  "status": "authenticated-and-released-for-first-unsaved-candidate",
+  "debateNumber": "300",
+  "debateId": "dennett-sapolsky-free-will-2023",
+  "createdAt": "2026-10-08T15:44:10.767272+00:00",
+  "agentPath": "/root/inventory300replacement",
+  "actualContextModels": [
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low"
+    }
+  ],
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/replacement-1/execution-plan.json",
+    "sha256": "4c4d18d99b11c7dcb62412895d30e5ce124cc27ea4d16570f4e1ddbf159ebc4e",
+    "bytes": 7619
+  },
+  "sessionSnapshot": {
+    "externalLocalSessionPath": "/Users/philstilwell/.codex/sessions/2026/10/08/rollout-2026-10-08T11-42-59-01a11c2e-9ccf-7792-b976-551aaf2fdacd.jsonl",
+    "sessionId": "01a11c2e-9ccf-7792-b976-551aaf2fdacd",
+    "parentThreadId": "01a0f359-eb70-7da1-8b88-83ebe51a754a",
+    "sha256": "6a3d6f33a3be5a9264e479ba8e74b9efa8e0223aa9842725749883cc7217cc03",
+    "bytes": 859587,
+    "rawSessionCommitted": false
+  },
+  "authentication": "ChatGPT subscription via built-in collaboration; no API inference",
+  "isolation": "Fresh fork-none context, restricted inputs and disjoint output. No operating-system sandbox claimed. Controller inspects tool calls separately.",
+  "attempts": 1,
+  "retries": 0,
+  "attemptNumber": 2,
+  "replacementAuthorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/replacement-authorization.json",
+    "sha256": "301ab85a9bfc69d4d2cb1da9c677dba7dcd7221d4c0127d41bb0a9a17ab610ad",
+    "bytes": 1309
+  },
+  "directIncrementalCostUsd": 0,
+  "inputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/replacement-1/execution-plan.json",
+      "sha256": "4c4d18d99b11c7dcb62412895d30e5ce124cc27ea4d16570f4e1ddbf159ebc4e",
+      "bytes": 7619,
+      "literalCompleteReadAuthenticated": true,
+      "nonemptyLines": 190,
+      "missingLines": [],
+      "toolOutputEvidence": [
+        {
+          "callId": "call_c2f7e1122fea4f08a5553ade7ee5ff5a",
+          "sourceLineCount": 190,
+          "firstSourceLine": 1,
+          "lastSourceLine": 190
+        },
+        {
+          "callId": "call_602cec5a3a3e46f89ae2a3db17925005",
+          "sourceLineCount": 68,
+          "firstSourceLine": 1,
+          "lastSourceLine": 190
+        }
+      ]
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/workflow/inventory/reader.txt",
+      "sha256": "2a04e53a9a66ffcc59f06c1f0bdffa481b997d362e07021bd7ac8e226b131cb8",
+      "bytes": 134733,
+      "literalCompleteReadAuthenticated": true,
+      "nonemptyLines": 1971,
+      "missingLines": [],
+      "toolOutputEvidence": [
+        {
+          "callId": "call_ddd4c63a37194adcb0ad7b2a6dda7dc4",
+          "sourceLineCount": 103,
+          "firstSourceLine": 1,
+          "lastSourceLine": 2027
+        },
+        {
+          "callId": "call_a677d353012b4ba2b6b0bae9c61b9f95",
+          "sourceLineCount": 240,
+          "firstSourceLine": 121,
+          "lastSourceLine": 360
+        },
+        {
+          "callId": "call_a9c523c40e154803bd23f581e0548238",
+          "sourceLineCount": 240,
+          "firstSourceLine": 361,
+          "lastSourceLine": 600
+        },
+        {
+          "callId": "call_7bb8257a54de491e86ab63544f12df77",
+          "sourceLineCount": 240,
+          "firstSourceLine": 601,
+          "lastSourceLine": 840
+        },
+        {
+          "callId": "call_2c1bca5cc0124be18cadcdd15737927a",
+          "sourceLineCount": 240,
+          "firstSourceLine": 841,
+          "lastSourceLine": 1080
+        },
+        {
+          "callId": "call_80d2be1ad4b9499f987271f197b6bd06",
+          "sourceLineCount": 240,
+          "firstSourceLine": 1081,
+          "lastSourceLine": 1320
+        },
+        {
+          "callId": "call_235a39ee29454779840630766979fcf8",
+          "sourceLineCount": 240,
+          "firstSourceLine": 1321,
+          "lastSourceLine": 1560
+        },
+        {
+          "callId": "call_9c81299dbccb466e9ce92e5e714e3e9b",
+          "sourceLineCount": 232,
+          "firstSourceLine": 15,
+          "lastSourceLine": 2027
+        },
+        {
+          "callId": "call_602cec5a3a3e46f89ae2a3db17925005",
+          "sourceLineCount": 224,
+          "firstSourceLine": 73,
+          "lastSourceLine": 2027
+        }
+      ]
+    }
+  ],
+  "toolCallRecords": [
+    {
+      "callId": "call_c2f7e1122fea4f08a5553ade7ee5ff5a",
+      "tool": "exec",
+      "argumentsSha256": "647ef78e66879cc125c8e3c43b265c9da20454141c0279f3308e55847baa113a"
+    },
+    {
+      "callId": "call_ddd4c63a37194adcb0ad7b2a6dda7dc4",
+      "tool": "exec",
+      "argumentsSha256": "d3ba77899099dc43e931301e7f0df77528ebed45ace0e65fb8db7178e308ebdb"
+    },
+    {
+      "callId": "call_a677d353012b4ba2b6b0bae9c61b9f95",
+      "tool": "exec",
+      "argumentsSha256": "e8425c4ee60afd70f029ba7ef4e4a2da5415bc8e1fbf4a5e796bfd20d1cb18f1"
+    },
+    {
+      "callId": "call_a9c523c40e154803bd23f581e0548238",
+      "tool": "exec",
+      "argumentsSha256": "190895a7f524a0b7a9f805e0425f85c3fc684fc8b458bedc690157546c5312ae"
+    },
+    {
+      "callId": "call_7bb8257a54de491e86ab63544f12df77",
+      "tool": "exec",
+      "argumentsSha256": "9c9cd92332705d9b6b6ffab4fe96cf23ba6cc2b9ee06857fda378fe0116c6182"
+    },
+    {
+      "callId": "call_2c1bca5cc0124be18cadcdd15737927a",
+      "tool": "exec",
+      "argumentsSha256": "b303d8aad0d613877cf0bbf0c7f5eefb7c0cebb60b490cc27104f7339c88d446"
+    },
+    {
+      "callId": "call_80d2be1ad4b9499f987271f197b6bd06",
+      "tool": "exec",
+      "argumentsSha256": "3b8d42641b058ebfe658d78e00d4c5580ea2208392d045b6f309c5326cde51f4"
+    },
+    {
+      "callId": "call_235a39ee29454779840630766979fcf8",
+      "tool": "exec",
+      "argumentsSha256": "0f03e50bdc3ca33845c2f619a1e2c0b75b26c9548d1541a3a3e8bc4dc1b96049"
+    },
+    {
+      "callId": "call_9c81299dbccb466e9ce92e5e714e3e9b",
+      "tool": "exec",
+      "argumentsSha256": "f8ec76122a212f974822a4a5cecf6b1d6d4376e792011ad916614cb9f3a0d310"
+    },
+    {
+      "callId": "call_602cec5a3a3e46f89ae2a3db17925005",
+      "tool": "exec",
+      "argumentsSha256": "ba972a94b89636f5de31ee9ec91047545a647ad7d1e2050a2c8f5b01f33731f3"
+    },
+    {
+      "callId": "call_b4ebdec1ca584331955f3a002ce1e8af",
+      "tool": "send_message",
+      "argumentsSha256": "5c5bb5e606d148c4bf917010caf08bfb201b236c0ff4a15e2665f1c8ffe02c8d"
+    },
+    {
+      "callId": "call_c46c8045c08843a686f174558233d23f",
+      "tool": "wait_agent",
+      "argumentsSha256": "7d04d57c16360ab72473962796ad05822bc069874d59d5edcc66fd72a377fbfb"
+    }
+  ],
+  "outputAbsentAtRelease": true
+}
