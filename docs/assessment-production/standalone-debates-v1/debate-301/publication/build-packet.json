@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "301",
+  "debateId": "wood-ally-resurrection-2018",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/inventory/inventory.json",
+      "sha256": "020dba22b2ec1b75a03d24bd813576451c4b37164327d256ebd819ff35f565e5",
+      "bytes": 141152
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/score-pass/output.json",
+      "sha256": "1eaae8cedbea115a8e61cc836f9c97a61f421f993b64972a4f47f9f74e357494",
+      "bytes": 18068
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/skeleton.json",
+      "sha256": "d677a0494ef620993ec8eaa6a09b48c91d7077ab89bfbf17a097d0286023936a",
+      "bytes": 13289
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/reference-metrics.json",
+      "sha256": "ae3baa4de97054e66991e897a562f64679214dd35a51817e95ff9f8636c2d257",
+      "bytes": 27242
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

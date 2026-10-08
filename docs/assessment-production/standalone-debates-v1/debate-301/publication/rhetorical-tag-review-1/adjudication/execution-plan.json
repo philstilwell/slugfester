@@ -1,0 +1,554 @@
+{
+  "schemaVersion": "2.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "rhetorical-adjudication",
+  "debateNumber": "301",
+  "debateId": "wood-ally-resurrection-2018",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/workflow/rhetorical-adjudication/reader.txt",
+      "sha256": "88da216c82d6499c41cffc26c060715dffc22428e8953381492fcbea848d2566",
+      "bytes": 537891
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/contract.md",
+      "sha256": "c02f510a50cbdfcbd5c1d58406a8356ce464f5776fcff3c08eb71721654d3d92",
+      "bytes": 8606
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "10b7ab0c364a58bb559bdf4c3241cd8847ec5963898e8c9df66e540fced31ba3",
+      "bytes": 14652
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "47c50af9ed94fbb6da05ea9a8a912b1062056a2de6cc52f1bcb4af5b03433e1d",
+      "bytes": 168214
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    {
+      "path": ".assessment-cache/captions/ST4RS0U5kpU/indexed-transcript.txt",
+      "sha256": "3abf37281db8ab248a86685f2cebb0c19244807badd7f19df7bf86d013420031",
+      "bytes": 324205
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/source/assessment-source-notes.md",
+      "sha256": "66a0f117a66f1e10c093126395adf4d96dcd69be4a2cb1601e592638b8af4a6a",
+      "bytes": 9887
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/source/source-lock.json",
+      "sha256": "621ea42649332f1f26ee0df840f9be717c4bc2e1887f8b422f83fe8c735eee66",
+      "bytes": 16826
+    }
+  ],
+  "toolInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/check-review.mjs",
+      "sha256": "e4f2013da4cfa8f8f690b324f00567584c67759b68e2c45ed8455008da8005de",
+      "bytes": 4109
+    },
+    {
+      "path": "scripts/standalone-workflow.mjs",
+      "sha256": "f9bebb3157c0227e20f396240411af838138b4520c7a48bec411725896f841cc",
+      "bytes": 5880
+    },
+    {
+      "path": "scripts/lib/standalone-workflow.mjs",
+      "sha256": "bd13373d22b4a2d74b1d6788c6b25613611be653a212aeaf31ca4bfcadcde333",
+      "bytes": 18686
+    },
+    {
+      "path": "scripts/lib/standalone-handoff.mjs",
+      "sha256": "939461c747837553ff5d65a83d9af0ad51c576c314959d2c59e6773bf236b42f",
+      "bytes": 6020
+    },
+    {
+      "path": "scripts/authenticate-standalone-worker.py",
+      "sha256": "98c8186c703818d1eaf5270d26adbfaaf7f7284180cf3482d3ec7a64e5e9219e",
+      "bytes": 6247
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "6e869936a2bf9607e9d26073d23b593e0797572330f4761e0f5df8d486cab618",
+      "bytes": 80467
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "aae806466005602401fb9536cbeab97cda43cd898ef78d2c200c012b24a2b8eb",
+      "bytes": 13580
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+      "bytes": 13417
+    },
+    {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "116c3e17197981a5a440a96445ee1d5e121a94296edcd328e46a7ac83e63b57e",
+      "bytes": 91151
+    },
+    {
+      "path": "package.json",
+      "sha256": "2248d1660c49a048566a632e83b4895a56bd37a98d8c0359d386d018c4d9d682",
+      "bytes": 65122
+    },
+    {
+      "path": "scripts/lib/assessment-production-score-stability-policy-active.mjs",
+      "sha256": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+      "bytes": 1331
+    },
+    {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    },
+    {
+      "path": "scripts/standalone/lock-inventory.mjs",
+      "sha256": "dd2fba288eaab30c2af64c097abcde4f93d1f383b24f4c2a833f9f6866ab2a70",
+      "bytes": 5778
+    },
+    {
+      "path": "scripts/lib/standalone-publication-check.mjs",
+      "sha256": "fa5d57e9932db7cd0243b015dd68c9556465b194501fdd830ba73b0e20637809",
+      "bytes": 7222
+    },
+    {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-proposal.md",
+      "sha256": "629c22081fb5ebffc0c39ab247ba3c82ee10f86a43931a2b577eefef2d0ac7d2",
+      "bytes": 3702
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/adjudication/packet.json",
+      "sha256": "10b7ab0c364a58bb559bdf4c3241cd8847ec5963898e8c9df66e540fced31ba3",
+      "bytes": 14652
+    }
+  ],
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-301/workflow/rhetorical-adjudication/packet.json",
+    "sha256": "283037a733f55a8feb04e3e533f7c7e3cea7b2fad4b93908d48c603fa5ba3697",
+    "bytes": 556602
+  },
+  "fullReadRequiredForAllAllowedInputs": true,
+  "toolSourceReadRequired": false,
+  "validationParameters": {
+    "mode": "anonymous-adjudication",
+    "debateNumber": "301",
+    "debateId": "wood-ally-resurrection-2018",
+    "sourcePacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "47c50af9ed94fbb6da05ea9a8a912b1062056a2de6cc52f1bcb4af5b03433e1d",
+      "bytes": 168214
+    },
+    "catalogSnapshot": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    "candidates": [
+      {
+        "moveId": "wood-multiple-sources-and-crucifixion-practice",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Wood names sources but also supplies an execution-practice argument; the critique concerns independence and case specificity, not reliance on status alone."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-short-crucifixion-and-possible-survival",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Ally uses affirmative circumstances to keep survival possible and remains modal, rather than declaring survival true solely because death is not conclusively proved."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-reported-death-consensus",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Scholars call the death indisputable and historically certain, therefore denying it is out of touch.",
+            "rationale": "Wood uses the cited scholars’ status and emphatic consensus language as if it settles death, without adequately presenting the relevant case-specific evidence or reasoning."
+          },
+          {
+            "decision": "accepted",
+            "context": "We can only conclude that any worldview that denies Jesus death by crucifixion is simply out of touch with reality.",
+            "rationale": "Wood treats a roster of emphatic scholarly judgments as effectively dispositive, while the move does not present enough of their underlying case-specific evidence to carry that certainty."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-psalms-describe-rescue-before-death",
+        "type": "fallacy",
+        "label": "Equivocation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Ally may misapply original Psalm contexts to later preaching, but he does not shift a key term’s meaning within the argument as the catalog requires."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-early-corinthians-creed",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Wood cites scholars for dating the creed, but also quotes its contents and develops a chronological inference; the authorities support a premise rather than replace the argument."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-assumption-and-vision-chain-compatible-with-quran",
+        "type": "bias",
+        "label": "Confirmation bias",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Ally expressly permits postmortem assumption and offers the staged sequence as Quran-compatible rather than demonstrated; conjectural fit alone does not show selective treatment of contrary evidence."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-assumption-and-vision-chain-compatible-with-quran",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The proposed transmission chain is speculative, but Ally frames it as a compatible possible reconstruction and does not claim it is true merely because rivals are unproved."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-group-appearances-against-hallucination",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Wood’s exclusion of ordinary individual hallucination does not adequately establish a shared external event, but this gap is an incomplete mechanism rather than truth from non-disproof."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-group-appearances-against-hallucination",
+        "type": "fallacy",
+        "label": "Begging the question",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Wood cites a Pauline report and insufficiently establishes a shared external experience, but reliance on that contested premise does not assume the resurrection conclusion itself."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-james-and-paul-do-not-establish-friend-and-foe-pattern",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Ally notes missing independent verification but also offers source-based challenges; his speculative alternatives are not asserted as true merely because verification is absent."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-persecution-shows-sincere-belief",
+        "type": "bias",
+        "label": "Belief bias",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Wood explicitly infers sincere belief from costly conduct rather than evaluating resurrection as true because sincerity feels persuasive, preserving the necessary logical distinction."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-miracle-counts-undercut-linear-embellishment",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Raw miracle totals replace the disputed trend in miracle type and narrative function.",
+            "rationale": "Ally expressly argued for a non-linear qualitative trend, while Wood redirects attention to aggregate counts and leaves the specified geographic, physical, and theological developments unanswered."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Wood’s numerical comparison only partially answers Ally’s qualitative trend, but it still tests one expected implication of embellishment and therefore does not divert from the development dispute."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-guards-spices-and-saints-as-later-additions",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Ally offers positive reasons beyond silence: the women’s concern about the stone conflicts with expected guards, while a public saints event is independently implausible; overstatement is not ignorance."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Ally overstates invention from silence for some examples, yet he also offers concrete narrative expectations and tensions; the conclusion is not based only on missing disproof."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-location-and-physicality-conflicts",
+        "type": "bias",
+        "label": "Confirmation bias",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The move advances concrete textual comparisons, and the critique identifies incomplete exclusion of alternatives rather than selective evidence handling sufficient to establish confirmation bias."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-john-spices-conflict-with-womens-purchase",
+        "type": "fallacy",
+        "label": "Argument from ignorance",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Ally has not excluded supplementary rites or differing knowledge, but he relies on a positive practical conflict between the accounts rather than absence of a demonstrated reconciliation alone."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-substitution-portrays-deception-and-failure",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "The attack precedes Ally’s rejection and addresses a common Muslim account within the announced perspectives; it does not initially divert from an already stated opposing position."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-rejects-substitution-and-reads-denial-as-nonkilling",
+        "type": "fallacy",
+        "label": "Equivocation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Ally explicitly distinguishes two senses of crucifixion and argues which sense the denial bears; transparent semantic analysis is not a concealed shift in meaning."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-quran-allows-death-without-opponents-victory",
+        "type": "fallacy",
+        "label": "Equivocation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Wood openly distinguishes ordinary human agency from Allah’s ultimate agency through stated parallels; questionable contextual transfer is a weak analogy, not a concealed shift in meaning."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-uppermost-followers-and-gospel-as-interpretive-route",
+        "type": "fallacy",
+        "label": "Equivocation",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Wood selects one disputed meaning of uppermost and retains it consistently; unsupported interpretation is not the catalog’s required mid-argument shift in meaning."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-gospel-command-has-legal-context",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Although Ally lacks a complete method for separating revelation from additions, he offers legal context as a principled basis rather than asserting a bare favorable exception."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-critical-scholars-reject-islam-and-quran-is-instructional",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Accepting scholars’ textual analysis while rejecting their theology can follow a principled domain distinction, and Ally openly acknowledges their adverse conclusions about Islam."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-consistent-critical-methods-across-traditions",
+        "type": "fallacy",
+        "label": "Red herring",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Comparing source-critical standards across traditions bears directly on Ally’s method and evidential consistency, even though differences in genre reduce the analogy’s force."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "The Quran comparison broadens the discussion, but it directly tests whether Ally’s source-critical standards are consistent across traditions and therefore remains relevant to the methodological dispute."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-consistent-critical-methods-across-traditions",
+        "type": "fallacy",
+        "label": "Special pleading",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Wood alleges uneven standards, while Ally identifies differences in genre and asserted purpose. The move itself does not grant Wood’s sources an unexplained exception from a shared rule."
+          }
+        ]
+      },
+      {
+        "moveId": "ally-q-scholarship-and-assumption-distinction",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Ally uses scholarly uptake to establish that the reconstruction is discussable, while preserving it as reconstruction rather than claiming academic prestige settles historical survival."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Ally uses scholarly lineage to show the reconstruction is a live academic proposal, not to prove it true solely because named scholars or institutions endorse it."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-zeller-and-q-are-speculative",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "rejected",
+            "rationale": "Wood invokes limited uptake, but also presents layered-reconstruction criticism and a conditional challenge using Ally’s own criterion; scholarly popularity is not the sole basis of rejection."
+          },
+          {
+            "decision": "rejected",
+            "rationale": "Wood mentions that Zeller’s view has not caught on, but also criticizes the layered inference from reconstructed Q and conditionally applies Ally’s own scholarly-uptake criterion; authority does not replace all reasoning."
+          }
+        ]
+      },
+      {
+        "moveId": "wood-closing-critical-consensus-remains",
+        "type": "fallacy",
+        "label": "Appeal to authority",
+        "anonymousReviews": [
+          {
+            "decision": "accepted",
+            "context": "Departure from mainstream consensus is treated as reason to abandon Ally’s conclusion.",
+            "rationale": "Wood makes distance from mainstream scholarship itself a reason to stop rejecting resurrection, although the cited consensus concerns death and sincere appearance belief, not resurrection."
+          },
+          {
+            "decision": "accepted",
+            "context": "If the only way I can get away from this conclusion is to adopt this methodology, maybe I need a new methodology.",
+            "rationale": "Wood treats departure from mainstream critical consensus as itself a reason to abandon Ally’s conclusion, instead of fully resolving whether the minority reconstruction’s evidence succeeds."
+          }
+        ]
+      }
+    ],
+    "expectedCandidateCount": 26,
+    "outputSchemaBounds": {
+      "decisions": {
+        "minItems": 26,
+        "maxItems": 26
+      }
+    }
+  },
+  "outputPath": "/private/tmp/slugfester-debate-301/docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/adjudication/output.json",
+  "allowedOutputPaths": [
+    "/private/tmp/slugfester-debate-301/docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/adjudication/output.json"
+  ],
+  "checker": [
+    "/opt/homebrew/Cellar/node/25.9.0_3/bin/node",
+    "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/check-review.mjs",
+    "--debate",
+    "301",
+    "--packet",
+    "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/adjudication/packet.json"
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Read this plan and the entire reader.txt including shared blocks. Never open peer outputs. Run the pinned checker without rereading its implementation. Authenticate reading before authoring. Keep candidates in memory; handoff holds approved candidate bytes in memory until the controller supplies authenticated source/editorial release. Only that release writes the first submission. A saved failure consumes its attempt. No autonomous retry.",
+  "isolation": "Fresh fork-none subscription context; protocol isolation, not an operating-system sandbox.",
+  "packetMetrics": {
+    "originalBytes": 546745,
+    "readerBytes": 537891,
+    "sharedBlocks": 1,
+    "completeDocuments": 7,
+    "losslessRoundTrip": true
+  }
+}

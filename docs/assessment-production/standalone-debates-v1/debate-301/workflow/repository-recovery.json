@@ -1,0 +1,13 @@
+{
+  "status": "passed-independent-object-store-recovery",
+  "baselinePreserved": "8c1dfde56f39a0eb61a80ddc126eb5c08d51425c",
+  "baselineCatalogueVerified": true,
+  "assessmentFilesReset": false,
+  "workingFilesReplaced": false,
+  "originalCheckoutModified": false,
+  "sourceRepository": "https://github.com/philstilwell/slugfester.git",
+  "failure": "The shared local alternate pack was reported too short; HEAD tree unavailable both inside and outside the sandbox.",
+  "recovery": "Downloaded authentic repository history to a temporary bare copy, copied its objects into this task\u2019s own Git store, retired the dependency on the unreadable alternate and pruned only remote-tracking branches GitHub confirms were deleted. The first connectivity check exposed one stale remote-only missing object; the final check passed after that standard prune. Local branch and all working assessment files were preserved.",
+  "connectivityCheckExit": 0,
+  "temporaryBareCopyRemoved": true
+}

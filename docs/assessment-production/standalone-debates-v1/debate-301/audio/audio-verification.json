@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "301",
+  "debateId": "wood-ally-resurrection-2018",
+  "completedAt": "2026-10-08T18:32:36.086251+00:00",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-301/inventory/inventory.json",
+    "sha256": "020dba22b2ec1b75a03d24bd813576451c4b37164327d256ebd819ff35f565e5",
+    "bytes": 141152
+  },
+  "triggeredMoveIds": [],
+  "checks": [],
+  "cost": {
+    "status": "all-paid-inputs-successful-no-retries",
+    "debateNumber": "301",
+    "model": "gpt-4o-mini-transcribe",
+    "knownSuccessfulCallCostUsd": 0.01503875,
+    "maximumPossibleTotalCostUsd": 0.01503875,
+    "directCostUsd": 0.01503875,
+    "costIsEstimatedFromReturnedUsage": true,
+    "invoiceVerified": false,
+    "paidCalls": 5,
+    "failedPaidCalls": 0,
+    "uncertainCalls": 0,
+    "automaticRetries": 0,
+    "communicatedCumulativeEstimateUsd": [
+      0.03,
+      0.15
+    ],
+    "communicatedMaximumUsd": 0.5,
+    "authorizedRunCapUsd": 0.5,
+    "withinCommunicatedCeiling": true,
+    "inputResults": [
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-301/audio/call-result-ally-core.json",
+        "sha256": "8ddec4082bcee69644fa1c2d11a0d4079ceb09060dfd545b050fdf96c126f438",
+        "bytes": 1039
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-301/audio/call-result-closing-boundary.json",
+        "sha256": "6ee8f08a30f99f6f531b4d216168accfd7a35e7f125d084273108263c23e18e1",
+        "bytes": 1063
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-301/audio/call-result-crossfire-handoff.json",
+        "sha256": "9164f7b2064a23af45e812184f6acd665528e8efbc74d56c348ea15e92bf6baf",
+        "bytes": 1065
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-301/audio/call-result-opening-handoff.json",
+        "sha256": "d17c5bd520e88fec948e0b51603ff6735ffade8f23387d3b4817c4d94b9d2e69",
+        "bytes": 1059
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-301/audio/call-result-wood-core.json",
+        "sha256": "f48dbc1911a747df154077c766e5c6bd9a15bcc3cabe9caa9e7c976302ca95a4",
+        "bytes": 1039
+      }
+    ],
+    "newVerificationCalls": 0
+  },
+  "supplementarySourceVerification": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-301/source/verification-review.json",
+    "sha256": "88952364c78e3ba50a1ba74a8a0d4163cfa21e6560b1c0a0ccd504188e6ca853",
+    "bytes": 4325
+  },
+  "wordingLimitations": [
+    "Five source cross-checks are automated recognition only, not direct human listening.",
+    "Names, Arabic terms and other recognizer corruption are not quotation anchors or assessment penalties.",
+    "All source-window and internal exclusions remain unchanged."
+  ],
+  "audit": {
+    "requiredAttributionChecks": 0,
+    "completedAttributionChecks": 0,
+    "unresolvedAttributionChecks": 0,
+    "unresolvedMaterialWordingsExcludedFromJudgment": true,
+    "directAudioListeningClaimed": false,
+    "originalCaptionChainUnchanged": true,
+    "allScopeExclusionsUnchanged": true
+  }
+}

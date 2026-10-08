@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "authorizedAt": "2026-10-08T18:11:19.997668+00:00",
+  "userAuthorization": "User supplied the video under the invoked addition skill. Standing instructions authorize assessment and publication, formal debate rounds and closings only, clear scope disclosure, complete featured quotations, avoiding routine approvals, and ordinary commit/push/PR/merge. No new scope exception is needed for this formal two-speaker debate.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-301-wood-ally",
+    "head": "8c1dfde56f39a0eb61a80ddc126eb5c08d51425c",
+    "originMain": "8c1dfde56f39a0eb61a80ddc126eb5c08d51425c",
+    "localMain": "8c1dfde56f39a0eb61a80ddc126eb5c08d51425c",
+    "cleanBeforeBranch": true,
+    "workingCopyRoot": "/private/tmp/slugfester-debate-301",
+    "preservationNote": "Separate local copy of the existing repository, with its own branch references, preserves unrelated user checkouts. HEAD, local main, and fetched origin/main were equal before topic-branch creation."
+  },
+  "identity": {
+    "debateNumber": "301",
+    "debateId": "wood-ally-resurrection-2018",
+    "videoId": "ST4RS0U5kpU",
+    "canonicalUrl": "https://www.youtube.com/watch?v=ST4RS0U5kpU",
+    "sourceTitle": "Did Jesus Rise From The Dead? Shabir Ally Vs David Wood Unedited Full Debate + Q & A",
+    "eventYear": 2018,
+    "title": "David Wood vs Shabir Ally — Did Jesus Rise from the Dead? (2018)",
+    "label": "Resurrection and Ascension",
+    "topicCategory": "resurrection-miracles",
+    "motion": "Did Jesus rise from the dead?",
+    "pro": {
+      "speaker": "David Wood",
+      "position": "Jesus rose from the dead"
+    },
+    "con": {
+      "speaker": "Shabir Ally",
+      "position": "Resurrection from death is not established"
+    },
+    "dyadic": true,
+    "originalRecordingDyadic": true
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "knownSuccessfulCallEstimatedCostUsd": 0.0299,
+    "maximumPossiblePriorCostUsd": 0.0299,
+    "currentPlanEstimateUsd": 0.15,
+    "maximumCumulativeCostUsd": 0.5,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "audioVerificationPolicy": "Five targeted source cross-checks, one call per frozen clip, after announced $0.03–$0.15 estimate and $0.50 cumulative ceiling. No automatic paid retries. Any inventory-triggered audio inputs need a fresh frozen plan within the cumulative ceiling."
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-301",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/wood-ally-resurrection-2018.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/wood-ally-resurrection-2018.js",
+    "generated site output for this addition"
+  ]
+}
