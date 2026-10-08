@@ -1,0 +1,15 @@
+{
+  "status": "pending-authentic-adapter-only",
+  "debateNumber": "300",
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-300/validation/pre-adapter-production-schema.txt",
+    "sha256": "c3e63501621458d525ad8f8fad0da71419ded2a7c7ed6fc838df7b09dc20f174",
+    "bytes": 415
+  },
+  "readerFacingIssues": 0,
+  "classification": "All six diagnostics depend on the intentionally absent production ledger: usesAdjudicatedConsensusLedgerAdapter returns false before the real adapter exists, causing five one-sided locked rows to take the old paired-card branch. Existing generic standalone logic already permits these rows once its authentic adapter is present. No shared validator, source, inventory, layout or score change is required. Full production validation will run after the one maintained adapter build.",
+  "missingAdapter": true,
+  "unsupportedOneSidedRows": false,
+  "sharedCodeChanges": 0,
+  "sourceRestoredExactly": true
+}

@@ -1,0 +1,3234 @@
+{
+  "schemaVersion": "1.0-standalone-resolved-final-ledger",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "fully-resolved-and-frozen-before-scoring",
+  "debateNumber": "300",
+  "debateId": "dennett-sapolsky-free-will-2023",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "sourceManifest": "docs/assessment-production/standalone-debates-v1/debate-300/source/source-lock.json",
+  "evidenceLocks": {
+    "inventory": {
+      "sha256": "a5595a42500c3dddb4a8c08f1a48ca9d0c3ed58daf3ab384d089477eaa967ff3"
+    },
+    "passA": {
+      "sha256": "042ab400c2a6b264af356bebf5d2d8588b8798dafc8e08970c3471e2a52ffc3f"
+    },
+    "passB": {
+      "sha256": "cdcd61fc3072acecda1db9daa4776ab19e64a5765dcdc0858d95a61bd5d91004"
+    },
+    "disagreements": {
+      "sha256": "d3e302ef72cb5cf5f4830e1e8e6dadaf66fe1478f5fb4fe035ade8a997b7cfd9"
+    },
+    "adjudication": {
+      "sha256": "6bea97a95eb3d98c4ab7f0a79db7b8cb16bdaba3802e550e4c06b3803b5de3ef"
+    },
+    "audio": {
+      "sha256": "932d2e640b0913d3ced304a8ea391c9b9885e580b67cb135c1c6efc7da595d3a"
+    }
+  },
+  "routes": [
+    {
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "bridges": [
+        {
+          "bridgeId": "pro-compatible-freedom",
+          "tier": "motion",
+          "description": "Establish that deterministic causation is compatible with the kind of free will worth having."
+        },
+        {
+          "bridgeId": "pro-reasons-control",
+          "tier": "central",
+          "description": "Connect responsiveness to reasons, foresight, and self-control to agency and responsibility."
+        },
+        {
+          "bridgeId": "pro-evolved-social-capacity",
+          "tier": "central",
+          "description": "Explain free will as an evolved skill strengthened by education and social institutions."
+        },
+        {
+          "bridgeId": "pro-fair-accountability",
+          "tier": "subsidiary",
+          "description": "Show how graded capacities support fair, humane, and instrumental accountability practices."
+        }
+      ]
+    },
+    {
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "bridges": [
+        {
+          "bridgeId": "con-no-originating-control",
+          "tier": "motion",
+          "description": "Argue that choices do not constitute free will because agents did not control the causes that formed their chooser and values."
+        },
+        {
+          "bridgeId": "con-causal-continuity",
+          "tier": "central",
+          "description": "Trace behavior through an unbroken biological and environmental history rather than an independent source of action."
+        },
+        {
+          "bridgeId": "con-biological-self-control",
+          "tier": "central",
+          "description": "Treat self-control itself as a biologically developed trait whose distribution is not chosen."
+        },
+        {
+          "bridgeId": "con-humane-nonblame",
+          "tier": "subsidiary",
+          "description": "Connect reduced responsibility judgments to less cruel institutions while retaining instrumental protection and incentives."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "causal-origins-of-agency",
+      "title": "Causal origins of agency",
+      "weightPercent": 25,
+      "rationale": "The central clash begins with whether present intention and reasons-responsiveness suffice, or whether freedom requires control over the history that formed the intending agent."
+    },
+    {
+      "sectionId": "evolved-self-control",
+      "title": "Evolved self-control and reasons",
+      "weightPercent": 22,
+      "rationale": "Dennett identifies free will with an evolved capacity for foresight, reliability, reasons, and self-control; Sapolsky argues that this capacity is itself biologically caused."
+    },
+    {
+      "sectionId": "responsibility-and-humane-institutions",
+      "title": "Responsibility and humane institutions",
+      "weightPercent": 20,
+      "rationale": "Both accept instrumental sanctions but dispute whether responsibility remains justified and whether moral progress reflects improved accountability or subtraction of blame."
+    },
+    {
+      "sectionId": "quotation-and-intuition-disputes",
+      "title": "Quotation, interpretation, and intuition",
+      "weightPercent": 13,
+      "rationale": "The live exchange over the machine passage, runner analogy, two-stage model, and intuition bears directly on how each side represents and supports the rival conception."
+    },
+    {
+      "sectionId": "determinism-choice-and-unpredictability",
+      "title": "Determinism, choice, and unpredictability",
+      "weightPercent": 20,
+      "rationale": "The parties agree that options and choices occur but dispute whether deterministic chaos and uncontrollable variation leave room for autonomy once the chooser's values are causally formed."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-intent-does-not-settle-freedom",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "sectionId": "causal-origins-of-agency",
+      "moveKind": "constructive",
+      "claim": "Ordinary intention, alternatives, and absence of coercion do not by themselves establish free will.",
+      "warrant": "Present choice is only the end of the causal story; the prior question is how the person became someone who would form that intention.",
+      "inference": "Responsibility cannot be grounded merely in the phenomenology or legal surface features of choosing.",
+      "sourceSpanSelectionRationale": "The span begins with Sapolsky's explicit thesis and includes the complete intent-and-movie analogy through his statement of the upstream question.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "The moderator explicitly hands the opening to Robert, and uninterrupted first-person continuity identifies Sapolsky throughout.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "This states the con side's central criterion and the question every later causal example is meant to answer.",
+      "burdenContact": {
+        "bridgeId": "con-no-originating-control",
+        "tier": "motion",
+        "rationale": "It directly denies that an occurrent choice supplies the originating control required for free will."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "sourceSpan": {
+        "startEvent": 68,
+        "endEvent": 113,
+        "startMs": 147560,
+        "endMs": 264640,
+        "excerpt": "just to start with a very subtle nuance stance, I think there is no free will whatsoever. Um I think that is abundantly clear, and on top of that, um I think if people started believing that, it would be a far more humane world. This would be a very good thing. Now, looking at the fact that people very strongly hold on to the notion of free will, I want to try to unpack one of the things that really sort of fuels that stance, which is we make decisions. We make choices. We sit there, we choose vanilla over chocolate ice cream, we choose to pull a trigger or not to do so. We are full of intent at that moment, and we make a choice. And there is something intuitively truly seductive about that. And unpacking the choice, the intent, we know we have the intent at that point. We have a pretty good sense what the consequence is going to be. We know we're not being coerced. There's alternatives available to us, and to most people, and to courts of law in the United States, that's enough. You have responsibility. And my starting point is that tells us nothing whatsoever about free will. It is completely irrelevant to it. Whether we form an intent to do this or to do that, that is completely irrelevant for a very simple reason. Because assessing behavior based on that is like reviewing a movie when all you've seen is the last 3 minutes of the movie. Because what you're never ever asking with that stance is, \"Oh yeah, where did that intent come from? How did you become the sort of person where that is the sort of intent you would form at that moment? Because that's really the only thing to do. It's the only question to ask. Okay, let me"
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "con-intent-does-not-settle-freedom",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The movie analogy gives a coherent reason to distinguish a present intention from control over the history that produced it."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The move uses familiar features of choosing and a clear causal question, though it offers little evidence within this initial framing."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "As an opening move, it directly contests the motion-level idea that intention, alternatives, and lack of coercion are sufficient."
+            },
+            "relevanceBurden": {
+              "value": 92,
+              "rationale": "The move squarely establishes the con side’s originating-control criterion and explains why ordinary choice does not meet it."
+            },
+            "precisionClarity": {
+              "value": 82,
+              "rationale": "The intended contrast is clear, although saying present intention is completely irrelevant is broader than the supporting analogy establishes."
+            },
+            "calibrationCharity": {
+              "value": 80,
+              "rationale": "Sapolsky accurately allows intentions and choices to occur, but his categorical language somewhat outruns the limited opening warrant."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "con-intent-does-not-settle-freedom",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The movie analogy cleanly separates present intention from control over the history that produced it."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The move offers an apt explanatory analogy, though it does not yet supply the later biological evidence."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "It directly addresses ordinary choice and legal responsibility as the motion’s intuitive starting point."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "It states the con side’s motion-level criterion and explains why surface voluntariness is insufficient."
+            },
+            "precisionClarity": {
+              "value": 84,
+              "rationale": "The contrast between choosing now and forming the chooser is clear despite a few sweeping phrases."
+            },
+            "calibrationCharity": {
+              "value": 77,
+              "rationale": "Calling intention completely irrelevant overstates matters, but the move fairly identifies the missing upstream issue."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-multiscale-development-shapes-choice",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "sectionId": "causal-origins-of-agency",
+      "moveKind": "constructive",
+      "claim": "Choices emerge from interacting conditions ranging from current physiology through development and fetal life.",
+      "warrant": "Sapolsky cites immediate states, hormones, trauma, childhood adversity and culture, and fetal stress or nutrition as mechanisms affecting judgment and executive control.",
+      "inference": "The agent's present decision-making capacities are products of an inherited causal history rather than self-created starting points.",
+      "sourceSpanSelectionRationale": "This long but unified span follows Sapolsky's declared biological hierarchy from immediate states through childhood, culture, and fetal development; ending earlier would omit a major level of the same cumulative warrant.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "This is continuous speech within Sapolsky's formally introduced opening.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "It supplies the principal empirical-style causal chain supporting the con account of agency.",
+      "burdenContact": {
+        "bridgeId": "con-causal-continuity",
+        "tier": "central",
+        "rationale": "The examples connect present executive control to unchosen conditions across several timescales."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "sourceSpan": {
+        "startEvent": 146,
+        "endEvent": 262,
+        "startMs": 333680,
+        "endMs": 620640,
+        "excerpt": "And if you come from a world of biology as I do, uh that's a whole hierarchy of questions. Because there's a whole hierarchy of things that went into each of those people intending to do what they do. Part of what was playing out in the previous minutes to hours. Were they angry? Were they hungry? Were they in pain? Were they sleep deprived? Were they stressed? Were they scared? Whatever. Because we know people's choices will change dramatically in those circumstances. People's judgment, people's executive control, people's capacity to make one site type of decision if it is a tougher one, but it is more appealing in the long run. Okay, so that matters. What also matters in the previous hours to days are hormone levels. Because that will have If you had elevated levels of oxytocin, you're more likely to be trusting of what the movie was telling you. If you had elevated levels of testosterone, you were more likely to be pissed off and perceive the movie makers as having bad intent. But you also have to ask, what was going on in the previous months to decades? As one example, if you had had a trauma, and you now have PTSD, post-traumatic stress disorder, a structure in your brain, the amygdala will have grown larger, and we can tell you down to the molecules exactly how that works. And when you have an amygdala like that, in circumstances that other people would decide are neutral, you're going to decide is provocative and threatening. And even though we understand much less about it, the same changes, the same drama would have occurred in your brain if in the previous months to decades you had found love, you had found God, you had found All of that matters. Okay, so now we got to barrel back to adolescence and childhood. And I think no one needs to be convinced by now that the type of childhood you have influences the type of adult you become. What we've been learning since are the nuts and bolts, the epigenetics of how the brain you have as an adult sitting and watching that movie is going to be vastly influenced by how many traumas you had as a child, how much adversity, how much stimulation. And there's a whole world of developmental people who even have a scoring system. What is your ACE score? Your adverse childhood experience score. Were you physically abused, psychologically, sexually? Were you witness to? Did you have a family member who was incarcerated? Was there somebody with a substance abuse problem? Uh and each additional you know, score you get in that questionnaire, there's about a 35% increased chance that by young adulthood you will have a history of antisocial violence. Childhood matters. The culture you were raised in as a child matters. Are you raised in a culture of honor? Because as as an adult, you were more likely to advocate aggressive responses to ambiguous social circumstances, and you're more likely to secrete stress hormones at the time. Were you raised in an individualistic or a collectivist culture? Because that's going to influence your levels of trust and cooperation with people you don't know. Were you raised in a culture with this value, with that, to turn the other cheek, to take revenge? Because if they take your camel now and you do nothing, tomorrow they'll take the rest of your camels. All of this is instantiated in the brain you develop. But you got to push back even further, back to your fetal life. Because what was going on there was directing the brain and its construction that you were going to have now in that moment forming that intent in that movie theater. If, for example, you were exposed to a lot of stress hormones as a fetus, because mom was stressed as hell trying to pay the rent, being homeless, whatever, you're going to develop a larger amygdala. And as a result, you were going to have an elevated stress response, which is going to make your judgment and executive control not as effective as usual. If you were as a fetus deprived of calories, as an adult, you're more likely to form the the intent, \"Screw Amnesty International, and screw getting my money back. I'm going to go get a lot more popcorn.\" Because you will have developed with fewer dopamine neurons in your reward area and you will have less satiation and you will be more prone towards adult onset diabetes, metabolic syndrome, hypertension, obesity, all of that because your fetal life. Then we got to push a step further back."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "con-multiscale-development-shapes-choice",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The successive causal levels consistently support the inference that present decision capacities have histories the agent did not create."
+            },
+            "evidenceWarrant": {
+              "value": 79,
+              "rationale": "Many concrete biological and developmental examples are supplied, but reported mechanisms and statistics are asserted rather than documented or compared."
+            },
+            "responsiveness": {
+              "value": 87,
+              "rationale": "The causal hierarchy directly develops the upstream question posed in Sapolsky’s opening and anticipates a capacity-based account of freedom."
+            },
+            "relevanceBurden": {
+              "value": 90,
+              "rationale": "Tracing executive control through physiology, childhood, culture, and fetal life materially advances the con causal-continuity burden."
+            },
+            "precisionClarity": {
+              "value": 81,
+              "rationale": "The chronology is easy to reconstruct despite compression and occasional sweeping transitions across distinct kinds of influence."
+            },
+            "calibrationCharity": {
+              "value": 76,
+              "rationale": "The examples are generally qualified as influences, yet some confident mechanistic claims receive little acknowledgement of uncertainty or variation."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "con-multiscale-development-shapes-choice",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The hierarchy forms a coherent cumulative account from immediate states through development and fetal conditions."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "Many concrete mechanisms and examples support the causal claim, though several reported figures remain unverified here."
+            },
+            "responsiveness": {
+              "value": 87,
+              "rationale": "As a constructive opening, it directly develops the promised answer about where present intentions come from."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "It strongly advances causal continuity, while the examples alone do not prove the absence of every possible freedom."
+            },
+            "precisionClarity": {
+              "value": 78,
+              "rationale": "The organizing timescale is clear, but the long catalogue sometimes compresses qualifications and causal detail."
+            },
+            "calibrationCharity": {
+              "value": 72,
+              "rationale": "The examples are generally measured, though some confident biological formulations outrun the support presented in debate."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 74,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-genes-culture-and-continuous-causal-arc",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "sectionId": "determinism-choice-and-unpredictability",
+      "moveKind": "constructive",
+      "claim": "Genes, culture, and prior biology operate as interacting parts of one continuous causal history.",
+      "warrant": "Sapolsky rejects genetic isolation, describes genes as shaping responses to environments, extends the history through ancestral culture, and says these levels form a continuous biological arc.",
+      "inference": "No temporal level in the described history supplies an independent break where free will enters.",
+      "sourceSpanSelectionRationale": "The span begins with Sapolsky's express rejection of genetic fundamentalism and preserves the complete genes-environment, ancestral-culture, luck-amplification, and continuous-arc synthesis.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Sapolsky supplies the substantive argument throughout; a brief moderator one-more-minute reminder is mixed into the span but contributes no argument.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "It integrates the separate causal levels into the con side's continuous-history account and explicitly avoids simple genetic determinism.",
+      "burdenContact": {
+        "bridgeId": "con-causal-continuity",
+        "tier": "central",
+        "rationale": "It argues that interacting biological and environmental causes leave no independent causal gap."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "sourceSpan": {
+        "startEvent": 263,
+        "endEvent": 313,
+        "startMs": 617080,
+        "endMs": 749920,
+        "excerpt": "Genes. Genes determine next to nothing. People have to be weaned off to that notion of sort of genetic molecular fundamentalism, but what genes do is influence how you were going to respond to environment. And by now we know we differ from one person to the next the variants of genes we have related to hormones like oxytocin and vasopressin. How able are you to have empathy? How trusting are you? How generous? Hormone genes related to your stress response. Do you see threat that other people don't? Genes related to your vulnerability to mood disorders, anxiety disorders, genes related to your propensity towards violence depending on whether you were abused as a child or not. All of these come into it. And one more one more minute. You've got to push one step further back. Culture. Where'd that come from? If your ancestors grew up in a world with a heavy infectious disease load, you're likely to be more hostile to immigration. If your ancestors grew up as shepherds, you were more likely to be aggressive than if they grew up as farmers. Where is behavior coming from? Where's responsibility coming from? It's coming from one second ago to thousands of years ago and what we have here are a number of punchlines. The first one is history matters. The past isn't even past and what we see over and over is the biology of why luck does not even out over time as Dan has often said, instead bad luck amplifies and good luck and privilege amplifies in the opposite direction. What we also see is a realm where these are not just biological influences. If you're talking about genes, you're talking about the evolution. You're talking about the epigenetics of your fetal life that regulate them. You're talking about the proteins they made 20 minutes ago. It forms one continuous arc of biology in which there is not a crack there into which you can shoehorn free will. If it"
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "con-genes-culture-and-continuous-causal-arc",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The move coherently integrates gene-environment interaction, culture, and evolutionary history into a continuous causal account."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "It offers specific examples and explicitly rejects simple genetic determinism, though the ancestral-culture claims are presented without checking alternatives."
+            },
+            "responsiveness": {
+              "value": 85,
+              "rationale": "The synthesis answers the likely objection that earlier examples are isolated influences rather than parts of one causal history."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "The continuous-arc conclusion directly supports the central con route, while still requiring the disputed premise that causation excludes freedom."
+            },
+            "precisionClarity": {
+              "value": 80,
+              "rationale": "The gene-environment qualification is clear, but several rapid examples compress their scope and evidential status."
+            },
+            "calibrationCharity": {
+              "value": 78,
+              "rationale": "Sapolsky avoids genetic reductionism, yet the claim that no crack remains is more certain than the examples alone demonstrate."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "con-genes-culture-and-continuous-causal-arc",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The interactionist account consistently links genes, environments, culture, and prior biology without a causal gap."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "Specific gene-environment and cultural examples support the arc, but their empirical bases are asserted rather than examined."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "It extends the opening’s causal case while expressly avoiding the weaker claim of simple genetic determinism."
+            },
+            "relevanceBurden": {
+              "value": 90,
+              "rationale": "The synthesis directly advances the central continuity burden and connects the examples to the claimed absence of a break."
+            },
+            "precisionClarity": {
+              "value": 85,
+              "rationale": "The distinction between genetic determination and gene-environment response is stated clearly and usefully."
+            },
+            "calibrationCharity": {
+              "value": 79,
+              "rationale": "The move avoids genetic reductionism, though saying there is no crack remains stronger than the surveyed examples alone establish."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-independence-burden-challenge",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "sectionId": "causal-origins-of-agency",
+      "moveKind": "constructive",
+      "claim": "Free-will advocates must show action independent of biological and environmental history.",
+      "warrant": "Sapolsky says known causal influences form a continuous arc with no demonstrated break and challenges the opposing side to identify an independent action.",
+      "inference": "Absent such evidence, the default should be doubt rather than belief in free will.",
+      "sourceSpanSelectionRationale": "The span begins with Sapolsky's explicit challenge after completing the causal hierarchy and retains the complete burden allocation and stated default.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Continuous Sapolsky opening ending immediately before the moderator's poll report.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "This converts the causal survey into the con side's express motion-level burden and conclusion.",
+      "burdenContact": {
+        "bridgeId": "con-no-originating-control",
+        "tier": "motion",
+        "rationale": "It states what evidence Sapolsky believes is necessary to establish free will and why he thinks it is absent."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "sourceSpan": {
+        "startEvent": 314,
+        "endEvent": 336,
+        "startMs": 747400,
+        "endMs": 808760,
+        "excerpt": "was 500 years ago and somebody said, \"Wow, we just noticed when people get hammered over the head their behavior changes. The brain may be relevant.\" That's one thing. We know a ton now. We know enough to present the challenge. Show me a brain a person who has just done something completely independent of every one of those biological environmental influences I just outlined and you've proven there's free will. And at this point we know enough of this biology that the onus is on the free will believers. Unless you can show evidence of people's actions, people's behavior, people's personalities, proclivities, desires, etc. being independent of their biological and environmental history, you've presented no evidence that free will exists and the only default stance there is is to doubt that it exists, to not accept its existence."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "con-independence-burden-challenge",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 67,
+              "rationale": "The challenge follows from Sapolsky’s adopted definition, but it risks assuming that freedom requires independence from all prior causes."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The preceding causal survey supports pervasive influence, though it does not itself establish that no reasons-responsive form of freedom can exist."
+            },
+            "responsiveness": {
+              "value": 80,
+              "rationale": "It directly states what would answer the con case, but does not engage the compatibilist criterion Dennett subsequently adopts."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move makes the con motion-level burden explicit and explains why Sapolsky treats causal independence as decisive."
+            },
+            "precisionClarity": {
+              "value": 80,
+              "rationale": "The requested showing and default are plainly stated, although ‘completely independent’ sets an unusually absolute test."
+            },
+            "calibrationCharity": {
+              "value": 62,
+              "rationale": "Assigning the entire onus to free-will advocates and calling doubt the only default understates the live definitional alternative."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "con-independence-burden-challenge",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 73,
+              "rationale": "The challenge follows from Sapolsky’s criterion, but it risks building causal independence into the definition under dispute."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "It rests on the prior causal survey, yet absence of an identified gap does not by itself establish the demanded impossibility."
+            },
+            "responsiveness": {
+              "value": 82,
+              "rationale": "It squarely challenges free-will advocates to identify what their claimed freedom adds beyond causal history."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It makes the con motion-level burden explicit, though its burden allocation favors its own contested criterion."
+            },
+            "precisionClarity": {
+              "value": 82,
+              "rationale": "The requested evidence and default conclusion are stated plainly enough to audit."
+            },
+            "calibrationCharity": {
+              "value": 61,
+              "rationale": "The absolute default and shifted onus understate the live compatibilist alternative that denies independence is required."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 62,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-compatibilism-and-receptivity-to-reasons",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "causal-origins-of-agency",
+      "moveKind": "constructive",
+      "claim": "Determinism and free will can coexist when free will is understood as receptivity to reasons rather than independence from all prior influence.",
+      "warrant": "Dennett notes that argument can convince people, accepts unequal hormonal and developmental starting material, and describes free will as a social system that reduces those disadvantages while cultivating reliability and self-control.",
+      "inference": "Causal history does not disqualify agency if people can respond to reasons and develop dependable control.",
+      "sourceSpanSelectionRationale": "The span starts at Dennett's formal opening answer and ends after his compact definition of reliability and self-control, preserving his concession about unequal causal starting points.",
+      "quoteEligibleExactSpans": [
+        "I believe in both determinism and free will."
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "The moderator names Dan at the handoff, followed by continuous first-person argument in Dennett's opening.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "This directly answers the con criterion and states the pro side's central compatibilist alternative.",
+      "burdenContact": {
+        "bridgeId": "pro-compatible-freedom",
+        "tier": "motion",
+        "rationale": "It supplies the pro definition under which determination by prior causes does not negate freedom."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "sourceSpan": {
+        "startEvent": 343,
+        "endEvent": 396,
+        "startMs": 823240,
+        "endMs": 964640,
+        "excerpt": "Um first of all, I I would like to uh issue a little disclaimer about your poll. You asked whether you believe in determinism or free will. I believe in both determinism and free will. Yeah. And because I think that what Robert shows so eloquently is that he's been taken in by the philosophers who have inflated the idea of free will way beyond what it has to be and he says, \"If if you can't point to a an a decision you make which is completely free of all earlier uh uh considerations and influences, then then you can't show free will.\" But that's a that's just a daft notion of free will. And there's a strange tension in in in Robert's 10 minutes there. What's he doing? Why is he talking to me? Does he think he convince me? He can convince me or convince anybody? I think I can convince people and I think he thinks he can convince people and that's because we are both receptive to reasons. Now, I agree with everything he says about the hormonal and developmental and epistatic uh developments that impinge on who one is at the time. That's the raw material each of us starts with and we don't start in the same place. As he says in his book, life isn't fair. And that's true. There're tremendous differences in style, in in talent, in accomplishment, in education, in upbringing, in nutrition. That's true. The whole point of free will is that this is a socially evolved system which minimizes those, which takes steps to make the world safer for everybody. I counted on Robert being here today. I'm sure he counted on my being here. We both are reliable people. You can trust us. That's one of the key elements of free will. To be self-controlled."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-compatibilism-and-receptivity-to-reasons",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "Dennett consistently replaces causal independence with reasons-responsiveness, reliability, and self-control as the relevant freedom-making features."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "Mutual attempts at persuasion and unequal starting conditions are apt observations, but the bridge from receptivity to responsibility remains compressed."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "The move directly answers Sapolsky’s independence test by offering a causal, functional conception of free will."
+            },
+            "relevanceBurden": {
+              "value": 93,
+              "rationale": "It explicitly accepts determinism while supplying the pro side’s central criterion for the kind of freedom at issue."
+            },
+            "precisionClarity": {
+              "value": 84,
+              "rationale": "The core definition is understandable, though the role of the broader socially evolved system is introduced faster than it is explained."
+            },
+            "calibrationCharity": {
+              "value": 80,
+              "rationale": "Dennett fairly concedes luck and unequal development, while dismissing the rival conception somewhat more sharply than his argument warrants."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-compatibilism-and-receptivity-to-reasons",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The move coherently substitutes reasons-responsive control for causal independence and acknowledges unequal starting conditions."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "Mutual susceptibility to persuasion and reliable conduct are relevant examples, though the social-system warrant remains compressed."
+            },
+            "responsiveness": {
+              "value": 90,
+              "rationale": "It directly answers Sapolsky’s independence criterion rather than denying the causal history he described."
+            },
+            "relevanceBurden": {
+              "value": 92,
+              "rationale": "It clearly states the pro motion-level conception under which determinism and freedom can coexist."
+            },
+            "precisionClarity": {
+              "value": 86,
+              "rationale": "The definition through reasons, reliability, and self-control is clear, with only some looseness about the social system."
+            },
+            "calibrationCharity": {
+              "value": 78,
+              "rationale": "The concessions on luck and development are fair, though calling the rival conception daft understates its motivating concern."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 93,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evolution-builds-foreseeing-self-control",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "evolved-self-control",
+      "moveKind": "constructive",
+      "claim": "Free will is an evolved suite of skills for self-control, foresight, and reliable conduct.",
+      "warrant": "Dennett traces increasing competence from early life through civilization and contrasts humans' ability to foresee and prevent harm with a tree's lack of such capacities.",
+      "inference": "Degrees of developed control can ground meaningful freedom without any metaphysical exemption from causation.",
+      "sourceSpanSelectionRationale": "The span contains the complete evolutionary-skill argument from the origin of competence through civilization's distillation of self-control and the foresight contrast.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Dennett opening with consistent first-person and subject continuity.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "It provides the positive pro account of what free will is and how it arises.",
+      "burdenContact": {
+        "bridgeId": "pro-evolved-social-capacity",
+        "tier": "central",
+        "rationale": "The evolutionary and civilizational account links ordinary capacities to the claimed freedom."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "sourceSpan": {
+        "startEvent": 398,
+        "endEvent": 445,
+        "startMs": 964640,
+        "endMs": 1082120,
+        "excerpt": "Robert says go back years and years and years. Go back before your birth. I want to go back even further. I want to go back to the beginning of life. Because when evolution gets started, what begins is a process of skill development. The very first living things were better at staying alive and making progeny than the alternative. And it's been a growth of skill and competence ever since. And there's skills that Robert and I have that many people don't have and there's other skills that we don't have. I can't play the violin. I I I can't dance the minuet. I I can't read Persian. There's lots of things I can't do. Too bad, but I've got my own set of skills. He's got his own set of skills. And what civilization has done is to over the centuries, over the millennia, what civilization has done is to distill out the most important skills for making people safe and reliable citizens and that is they have the skill of self-control. Now, that's what evolution is all about. Evolution is about the evolution of the skill of self-control. And we are better self-controlled because we have many more degrees of freedom than any other living thing on the planet. We have a lot more skill. If a tree falls and kills somebody, we don't hold it responsible. It doesn't have the skill. It doesn't have the perceptual organs. It's not able to prevent foreseeable damages because it can't foresee. But we can."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-evolution-builds-foreseeing-self-control",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The progression from evolved competence to foresight and self-control provides an intelligible functional account of degrees of freedom."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The tree contrast illustrates the capacity difference, but the broad claim that evolution is about self-control is asserted at high generality."
+            },
+            "responsiveness": {
+              "value": 86,
+              "rationale": "The move responds to causal-history arguments by explaining how causation can build rather than negate control capacities."
+            },
+            "relevanceBurden": {
+              "value": 89,
+              "rationale": "It supplies a positive account of the evolved skill central to the pro burden and connects it to foreseeable harm."
+            },
+            "precisionClarity": {
+              "value": 84,
+              "rationale": "The capacities and comparison are clear, although ‘degrees of freedom’ shifts between ordinary ability and the debated normative concept."
+            },
+            "calibrationCharity": {
+              "value": 79,
+              "rationale": "Dennett recognizes unequal skills, but moves quickly from evolved competence to responsibility without fully considering the rival origin criterion."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-evolution-builds-foreseeing-self-control",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The evolutionary progression from competence to foresight and self-control is intelligible and internally consistent."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The tree contrast and skill examples illustrate the account, but the evolutionary bridge to responsibility is mostly asserted."
+            },
+            "responsiveness": {
+              "value": 86,
+              "rationale": "It develops a positive alternative to the con causal history rather than merely rejecting that history."
+            },
+            "relevanceBurden": {
+              "value": 89,
+              "rationale": "It strongly advances the evolved-capacity burden, while leaving the exact threshold for responsibility to a later move."
+            },
+            "precisionClarity": {
+              "value": 83,
+              "rationale": "The capacities of foresight, prevention, and self-control are recoverable despite broad claims about evolution."
+            },
+            "calibrationCharity": {
+              "value": 80,
+              "rationale": "The move acknowledges degrees of skill, though it generalizes widely from competence to freedom without comparing rival interpretations."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-capacity-thresholds-and-diminished-control",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "responsibility-and-humane-institutions",
+      "moveKind": "constructive",
+      "claim": "Responsibility depends on sufficient self-control and can be withheld when capacity is diminished.",
+      "warrant": "Dennett distinguishes adequately self-controlled adults from people who should not drive or cannot manage contracts and acknowledges an inevitably somewhat arbitrary threshold.",
+      "inference": "A capacity-based account can recognize luck, impairment, and loss of free will without abandoning responsibility for everyone.",
+      "sourceSpanSelectionRationale": "This span begins with the wiring and driving examples and includes the full threshold, diminished-capacity, and loss-of-control qualification through the achievement definition.",
+      "quoteEligibleExactSpans": [
+        "Free will is an achievement. It's a skill."
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Continuous Dennett speech with no ambiguous ownership apart from routine caption overlap.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "It is the main pro answer to inequality and impairment while preserving a responsibility category.",
+      "burdenContact": {
+        "bridgeId": "pro-fair-accountability",
+        "tier": "subsidiary",
+        "rationale": "It grounds accountability in assessed capacity and explicitly exempts people below the threshold."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "sourceSpan": {
+        "startEvent": 448,
+        "endEvent": 504,
+        "startMs": 1083640,
+        "endMs": 1220600,
+        "excerpt": "there there's a quote that I love from from the late great uh novelist and critic Tom Wolfe who said the uh the conclusion people out beyond the library walls, laboratory walls are drawing is the fix is in. We're all hardwired that and don't blame me, I'm wired wrong. Well, if you're wired wrong, I won't blame you, but what about being wired right? Not perfectly, but well enough to be held responsible and to hold yourself responsible. I assume Robert has a driver's license. He has self-control enough. He's I'm not scared if he's out on the highway because he's basically sane and he has self-control. There are other people who shouldn't be on the highway. Now, one of the points that he makes a great deal of in his book and it's an important one is that we have to draw the line somewhere. Some people just miss the boat for having the kind of skill, the kind of self-control that entitles them to treat themselves as responsible agents. To make contracts, to make promises, to take care of yourself, to go free in the world. Now, we're learning every day and Robert has a lot to say about this, ways in which people have diminished self-control, diminished capacity. And we have to recognize that beyond some point and it's going to have to be arbitrary like driver's license age, we have to say, \"I'm sorry, you're not responsible. You have lost your free will. It has nothing to do with determinism. It has everything to do with control. I'm getting old. I may lose my marbles one of these days and then I'll lose my self-control. I'll lose my free will. Free will is an achievement. It's a skill. It's not a metaphysical feature."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-capacity-thresholds-and-diminished-control",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "A graded capacity account coherently explains why some agents qualify for responsibility while impaired agents may not."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "Driving, contracting, aging, and impairment are useful examples, though no independent basis is offered for the precise responsibility threshold."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "The move squarely addresses luck and diminished capacity rather than claiming that every person has equal or permanent control."
+            },
+            "relevanceBurden": {
+              "value": 89,
+              "rationale": "It materially advances fair accountability by tying responsibility to assessable capacities and explicit exceptions."
+            },
+            "precisionClarity": {
+              "value": 82,
+              "rationale": "The achievement-and-skill formulation is clear, while the acknowledged arbitrary boundary leaves some cases unsettled."
+            },
+            "calibrationCharity": {
+              "value": 89,
+              "rationale": "Dennett carefully concedes impairment, uncertainty, and line-drawing instead of treating responsibility as universal or all-or-nothing."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-capacity-thresholds-and-diminished-control",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The graded-capacity account consistently explains responsibility, excuse, impairment, and possible loss of free will."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "Driving, contracting, and cognitive decline provide useful public examples, though the threshold lacks independent validation."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "It anticipates the strongest inequality objection by expressly recognizing diminished control and arbitrary boundary drawing."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "It directly supports fair accountability by limiting responsibility to people with sufficient practical control."
+            },
+            "precisionClarity": {
+              "value": 87,
+              "rationale": "The threshold and its admitted arbitrariness are clearly distinguished from metaphysical determinism."
+            },
+            "calibrationCharity": {
+              "value": 86,
+              "rationale": "The move is notably calibrated about luck and impairment, though it does not fully resolve borderline cases."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-civilization-reduces-cruel-punishment",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "responsibility-and-humane-institutions",
+      "moveKind": "constructive",
+      "claim": "Civilization has improved responsibility practices by discarding horrific punishment and theological guilt.",
+      "warrant": "Dennett points to historical movement away from drawing and quartering and from barbaric notions of guilt.",
+      "inference": "Keeping a naturalized free-will framework need not preserve cruel or medieval blame.",
+      "sourceSpanSelectionRationale": "The selected events capture Dennett's complete moral-progress point from his praise of Sapolsky's history through the explicit rejection of horrific punishment and guilt.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "The passage remains within Dennett's uninterrupted opening.",
+      "audioVerificationReason": "",
+      "importance": 2,
+      "importanceRationale": "It addresses the practical humanitarian burden shared by both speakers, though it is not the primary definition of free will.",
+      "burdenContact": {
+        "bridgeId": "pro-fair-accountability",
+        "tier": "subsidiary",
+        "rationale": "It argues that accountability institutions can evolve away from cruelty while remaining functional."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "sourceSpan": {
+        "startEvent": 510,
+        "endEvent": 530,
+        "startMs": 1229360,
+        "endMs": 1284520,
+        "excerpt": "described in some detail and with lots of improvements over the centuries by civilizations. And we've made tremendous progress. One of the things I really admire about about Robert's book is he goes back and gives lots of detail about the horrific punishments that used to pass muster, that used to be considered all right. None of us want to live in that world. That's terrible. Look, we've made improvement. We've gotten better. We've evolved. We've arrived at a point where we don't draw and quarter people. We don't and and we don't need the horrific blame of guilt in the eyes of God. That's that's a a barbarism that we can ex- exclude."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-civilization-reduces-cruel-punishment",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The decline of horrific punishment is compatible with a naturalized responsibility framework, but it does not by itself show that framework caused the improvement."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "Historical examples support the direction of moral change, though the causal connection to retained free will is largely asserted."
+            },
+            "responsiveness": {
+              "value": 78,
+              "rationale": "The move addresses Sapolsky’s humanitarian concern, but does not yet answer the claim that reduced blame rather than refined responsibility explains progress."
+            },
+            "relevanceBurden": {
+              "value": 75,
+              "rationale": "Humane institutions are relevant to the subsidiary pro burden, although this short move only partially connects reform to responsibility."
+            },
+            "precisionClarity": {
+              "value": 82,
+              "rationale": "The rejection of cruelty and theological guilt is clear, but the positive replacement practice remains underdescribed."
+            },
+            "calibrationCharity": {
+              "value": 84,
+              "rationale": "Dennett credits Sapolsky’s historical account and avoids defending barbaric punishment, with only a modest overstatement about what progress establishes."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-civilization-reduces-cruel-punishment",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The inference that humane reform is compatible with retained responsibility is coherent but only lightly developed."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "Historical examples of abandoned punishments support progress, though they do not identify what role free will played."
+            },
+            "responsiveness": {
+              "value": 77,
+              "rationale": "It addresses the institutional consequence central to Sapolsky’s opening humane-world claim."
+            },
+            "relevanceBurden": {
+              "value": 78,
+              "rationale": "It advances the subsidiary accountability burden, but does not by itself establish that responsibility caused the improvement."
+            },
+            "precisionClarity": {
+              "value": 82,
+              "rationale": "The intended distinction between responsibility and barbaric guilt is understandable and concise."
+            },
+            "calibrationCharity": {
+              "value": 84,
+              "rationale": "The move fairly praises Sapolsky’s history and rejects cruelty, while avoiding a universal claim about all punishment."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 77,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-freedom-evolves-and-undetermined-will-is-undesirable",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "determinism-choice-and-unpredictability",
+      "moveKind": "constructive",
+      "claim": "Free will has grown with evolved self-control, and an undetermined will would not be worth wanting.",
+      "warrant": "Dennett describes increasing capacities to control ourselves and each other and says wills should be determined by facts and values.",
+      "inference": "Deterministic formation by relevant reasons can constitute, rather than defeat, worthwhile freedom.",
+      "sourceSpanSelectionRationale": "The span begins at Dennett's explicit evolutionary summation and runs through his complete contrast between an undetermined will and determination by facts and values.",
+      "quoteEligibleExactSpans": [
+        "We want our will to be determined by the facts and by our values."
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Continuous Dennett opening, with no handoff until after the subsequent machine passage.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "This gives the pro side's direct answer to why determinism does not remove the freedom at issue.",
+      "burdenContact": {
+        "bridgeId": "pro-compatible-freedom",
+        "tier": "motion",
+        "rationale": "It directly presents determination by facts and values as compatible with valuable agency."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "sourceSpan": {
+        "startEvent": 534,
+        "endEvent": 567,
+        "startMs": 1288960,
+        "endMs": 1369240,
+        "excerpt": "I I find myself in an odd position of saying to a biologist that he should take evolution more seriously. The that evolution as the title of my book Freedom Evolves makes clear, shows that there was no free will at all billions of years ago and that free will has been growing and growing and growing as we become ever more capable of controlling ourselves and controlling each other and thinking about how to control ourselves and improving our methods of self-control. And there's a long way to go. And he himself has spoken about the desire to educate people and get them to see Well, he wants to say that they don't have free will. I say, they don't have any kind of free will that some philosophers say they should have. But that's not a variety of free will that anyone should should care about. It's not It's not worth having. I have never seen anybody explain why it would be desirable to have an undetermined will. We want our will to be determined by the facts and by our values. That's what self-control is."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-freedom-evolves-and-undetermined-will-is-undesirable",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "Dennett coherently argues that worthwhile agency can consist in improved control guided by facts and values rather than causal exemption."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The evolutionary growth claim and desirability test are plausible supports, but neither is developed with comparative evidence in this move."
+            },
+            "responsiveness": {
+              "value": 86,
+              "rationale": "The move directly answers the alleged conflict between determinism and freedom by rejecting undetermined will as the relevant target."
+            },
+            "relevanceBurden": {
+              "value": 92,
+              "rationale": "It strongly advances the motion-level compatibilist burden by specifying why determination by reasons can be valuable."
+            },
+            "precisionClarity": {
+              "value": 85,
+              "rationale": "The contrast between undetermined will and fact-sensitive self-control is crisp, though ‘determined’ retains multiple possible senses."
+            },
+            "calibrationCharity": {
+              "value": 81,
+              "rationale": "Dennett frames the rival ideal fairly enough as undetermined will, but says no one has explained its value without addressing Sapolsky’s originating-control concern."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-freedom-evolves-and-undetermined-will-is-undesirable",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The move consistently argues that determination by facts and values can constitute rather than negate self-control."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The desirability argument is conceptually relevant, though it offers limited evidence for how the capacity develops."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "It directly contests the inference from determinism to absence of worthwhile freedom."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "It squarely advances the compatibility burden by identifying the kind of determination the pro side values."
+            },
+            "precisionClarity": {
+              "value": 86,
+              "rationale": "The contrast between undetermined willing and reasons-guided determination is clear and memorable."
+            },
+            "calibrationCharity": {
+              "value": 81,
+              "rationale": "The claim is proportionate about the freedom worth wanting, though it compresses alternative accounts of indeterminism."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-machines-can-have-welfare",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "quotation-and-intuition-disputes",
+      "moveKind": "constructive",
+      "claim": "Being an evolved machine does not prevent good or bad things from happening to a person.",
+      "warrant": "Dennett identifies himself as a machine made of machines while maintaining that he can still fare well or badly.",
+      "inference": "A mechanistic account of humans alone does not eliminate welfare or the meaningful capacities associated with free will.",
+      "sourceSpanSelectionRationale": "This retains Dennett's introduction of Sapolsky's machine statement, his entire machine-and-welfare response, and his concluding interpretation.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Dennett explicitly introduces the quotation and then speaks in the first person through the end of his opening.",
+      "audioVerificationReason": "",
+      "importance": 2,
+      "importanceRationale": "It tests whether mechanistic description has the normative implications Dennett attributes to Sapolsky's wording.",
+      "burdenContact": {
+        "bridgeId": "pro-reasons-control",
+        "tier": "central",
+        "rationale": "The move resists an inference from machine status to the absence of normatively significant human capacities."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "sourceSpan": {
+        "startEvent": 568,
+        "endEvent": 588,
+        "startMs": 1366440,
+        "endMs": 1419480,
+        "excerpt": "One thing that Robert says that I wouldn't actually invite him to to back off on. He says at one point, it's logically indefensible, ludicrous, meaningless to think that something good can happen to a machine. I'm a machine. I'm an evolved machine made of machines made of machines made of machines. There's nothing magic about me, but good things can happen to me and bad things can happen to me. That's how good a machine I am. It seems to me that that Robert has a secret yearning for sort of magical power which he realizes he can't have. Okay. I say, no, you can have it."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-machines-can-have-welfare",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 72,
+              "rationale": "Machine status plainly does not entail absence of welfare, but the inference addresses a proposition Sapolsky immediately says was incompletely quoted."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "Dennett’s self-description supplies a conceptual counterexample only if his capacity for welfare is granted, and the source quotation is not fully presented."
+            },
+            "responsiveness": {
+              "value": 62,
+              "rationale": "The move responds to reported wording rather than the qualified position Sapolsky restores, so its force against the con case is limited."
+            },
+            "relevanceBurden": {
+              "value": 73,
+              "rationale": "Separating mechanism from welfare is relevant, but it does not directly establish reasons-responsive freedom or responsibility."
+            },
+            "precisionClarity": {
+              "value": 75,
+              "rationale": "The machine-and-welfare distinction is understandable, although the target quotation’s missing continuation obscures the actual disagreement."
+            },
+            "calibrationCharity": {
+              "value": 48,
+              "rationale": "Attributing a secret yearning for magical power is weakly charitable, especially because the omitted qualification preserves welfare."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-machines-can-have-welfare",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The counterexample coherently shows that machine status alone does not logically eliminate welfare."
+            },
+            "evidenceWarrant": {
+              "value": 66,
+              "rationale": "It relies mainly on Dennett’s self-description and intuition, with little warrant connecting welfare to free will."
+            },
+            "responsiveness": {
+              "value": 69,
+              "rationale": "It answers the quoted machine statement, but the omitted qualification means it engages an incomplete version."
+            },
+            "relevanceBurden": {
+              "value": 65,
+              "rationale": "It is relevant to normative implications but only indirectly advances reasons-responsive agency."
+            },
+            "precisionClarity": {
+              "value": 82,
+              "rationale": "The distinction between mechanistic composition and welfare is expressed clearly."
+            },
+            "calibrationCharity": {
+              "value": 50,
+              "rationale": "The secret-yearning attribution is speculative, and the omitted welfare qualification materially weakens charitable representation."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 66,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 49,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-restores-machine-welfare-qualification",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "sectionId": "quotation-and-intuition-disputes",
+      "moveKind": "reply",
+      "claim": "Sapolsky's machine statement did not deny that less pain and more happiness are good.",
+      "warrant": "He supplies the omitted continuation saying that, at his core, lives with less pain and more happiness are good; Dennett acknowledges the addendum.",
+      "inference": "The mechanistic con position should not be treated as eliminating human welfare.",
+      "sourceSpanSelectionRationale": "The span starts with Sapolsky's substantive response, includes the challenged quotation and its complete qualification, and includes Dennett's brief acknowledgment as contextual confirmation rather than as Sapolsky's words.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "The moderator hands the reply to Robert, and auxiliary audio text confirms Sapolsky's qualification; zero-based event 615 is Dennett's brief contextual acknowledgment, not Sapolsky speech.",
+      "audioVerificationReason": "",
+      "importance": 2,
+      "importanceRationale": "This correction prevents a material misstatement of the con position's practical implications.",
+      "burdenContact": {
+        "bridgeId": "con-humane-nonblame",
+        "tier": "subsidiary",
+        "rationale": "The restored qualification preserves welfare improvement as a con-side normative aim."
+      },
+      "respondsToIds": [
+        "pro-machines-can-have-welfare"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-machines-can-have-welfare",
+          "description": "Restores the immediate qualification omitted from the machine quotation and accepts that welfare can improve."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 598,
+        "endEvent": 615,
+        "startMs": 1442240,
+        "endMs": 1482080,
+        "excerpt": "amazingly enough, I don't agree with everything you said, Dan, but I'm greatly admiring sort of the the eloquence with which you've argued for free will. I think there's something very interesting that you brought up that quote of mine at the end, which was saying it's ridiculous to say that anything good can happen to a machine. You didn't finish the quote where I then say, \"Nonetheless, at my very core, I think it is a good thing when we are made to have lives with less pain and more happiness.\" Um so with me. Yes. Okay. So, a good addendum there."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "con-restores-machine-welfare-qualification",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The restored continuation directly shows that mechanistic description and concern for reduced pain and increased happiness are consistent."
+            },
+            "evidenceWarrant": {
+              "value": 88,
+              "rationale": "Sapolsky supplies the missing words in the live exchange and Dennett acknowledges the addendum, providing strong record-internal support."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "The reply answers the exact machine-welfare challenge at the omitted qualification that determined its meaning."
+            },
+            "relevanceBurden": {
+              "value": 81,
+              "rationale": "Correcting the characterization protects the con humanitarian route, although it does not independently prove the no-free-will thesis."
+            },
+            "precisionClarity": {
+              "value": 92,
+              "rationale": "The qualification and its limited implication are stated plainly with little residual ambiguity."
+            },
+            "calibrationCharity": {
+              "value": 94,
+              "rationale": "Sapolsky accurately narrows the dispute, and the acknowledgment avoids overstating the correction as a broader victory."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "con-restores-machine-welfare-qualification",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The restored continuation directly defeats the inference that Sapolsky’s mechanistic view excludes welfare."
+            },
+            "evidenceWarrant": {
+              "value": 88,
+              "rationale": "The live quotation supplies specific textual evidence, reinforced by Dennett’s immediate acknowledgment."
+            },
+            "responsiveness": {
+              "value": 96,
+              "rationale": "It answers the exact omission at the decisive point and corrects the represented con position."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "It restores the humane aim needed for the con institutional burden without expanding the claim."
+            },
+            "precisionClarity": {
+              "value": 91,
+              "rationale": "The qualification about less pain and more happiness is concise, complete, and easy to audit."
+            },
+            "calibrationCharity": {
+              "value": 94,
+              "rationale": "The reply accurately narrows the dispute and Dennett’s acknowledgment confirms the correction without hostility."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 96,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 94,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-accepts-instrumental-reward-and-punishment",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "sectionId": "responsibility-and-humane-institutions",
+      "moveKind": "reply",
+      "claim": "Rejecting free will is compatible with using punishment and reward instrumentally.",
+      "warrant": "Sapolsky expressly says both speakers agree that these tools are permissible for their effects.",
+      "inference": "The con view does not entail abandoning public protection, incentives, or behavioral intervention.",
+      "sourceSpanSelectionRationale": "These events contain the complete explicit common-ground statement and end as Sapolsky turns to the disputed evolutionary issue.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Sapolsky continues his reply; the auxiliary audio text separately confirms the same speaker and words.",
+      "audioVerificationReason": "",
+      "importance": 2,
+      "importanceRationale": "It answers a central practical concern about the consequences of rejecting responsibility.",
+      "burdenContact": {
+        "bridgeId": "con-humane-nonblame",
+        "tier": "subsidiary",
+        "rationale": "It preserves protective and incentive functions while separating them from desert-based blame."
+      },
+      "respondsToIds": [
+        "pro-civilization-reduces-cruel-punishment"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-civilization-reduces-cruel-punishment",
+          "description": "Accepts the instrumental reform aim while preparing to dispute that it shows an increase in free will."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 617,
+        "endEvent": 622,
+        "startMs": 1482080,
+        "endMs": 1500520,
+        "excerpt": "Uh one other thing we agree on. Both of us agree we lest we get caught in the sort of mud with this, we both think punishment and reward are okay to use in an instrumental sense. So, completely in agreement on that. Okay, so where we're"
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "con-accepts-instrumental-reward-and-punishment",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "Accepting instrumental sanctions while rejecting desert-based free will is internally consistent and blocks a simple institutional non sequitur."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The shared agreement is direct evidence of both speakers’ stated positions, though the practical adequacy of instrumental sanctions is not argued here."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "The move preempts the live concern that denying free will entails abandoning punishment, reward, or behavioral intervention."
+            },
+            "relevanceBurden": {
+              "value": 83,
+              "rationale": "It materially supports humane nonblame by preserving protective tools, but the point remains a concise agreement rather than a full institutional model."
+            },
+            "precisionClarity": {
+              "value": 89,
+              "rationale": "The instrumental limitation is explicit and cleanly distinguishes permitted effects from broader claims about desert."
+            },
+            "calibrationCharity": {
+              "value": 92,
+              "rationale": "Sapolsky accurately marks common ground and does not assign Dennett a commitment to cruelty or deny practical constraints."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "con-accepts-instrumental-reward-and-punishment",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The distinction between instrumental sanctions and desert-based blame is coherent and stable."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The explicit common-ground statement supports the claim, though it does not elaborate institutional mechanisms."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "It directly removes a major practical misunderstanding and identifies agreement with Dennett."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "It materially supports humane nonblame by retaining protection and incentives after rejecting free will."
+            },
+            "precisionClarity": {
+              "value": 89,
+              "rationale": "The limited claim about permissible instrumental use is plainly and precisely stated."
+            },
+            "calibrationCharity": {
+              "value": 93,
+              "rationale": "The concession accurately represents both sides and avoids attributing indiscriminate release or opposition to incentives."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 93,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-moral-progress-subtracts-responsibility",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "sectionId": "responsibility-and-humane-institutions",
+      "moveKind": "reply",
+      "claim": "Historical moral progress has often come from recognizing less responsibility, not more free will.",
+      "warrant": "Sapolsky cites witches, epilepsy, and dyslexia as cases where causal understanding displaced blame and cruel treatment.",
+      "inference": "The humane trajectory invoked by Dennett supports continued subtraction of responsibility from causal misfortune.",
+      "sourceSpanSelectionRationale": "The span starts at Sapolsky's explicit answer to Dennett's evolutionary-progress point and includes all three examples through the humane conclusion.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Continuous Sapolsky reply with clear address to Dan and stable first-person framing.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "This reverses Dennett's practical-progress argument and links the con theory to institutional reform.",
+      "burdenContact": {
+        "bridgeId": "con-humane-nonblame",
+        "tier": "subsidiary",
+        "rationale": "It argues that causal explanation has improved institutions by reducing blame."
+      },
+      "respondsToIds": [
+        "pro-civilization-reduces-cruel-punishment"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-civilization-reduces-cruel-punishment",
+          "description": "Reinterprets the same decline in cruel punishment as evidence of reduced attributions of responsibility."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 624,
+        "endEvent": 653,
+        "startMs": 1500520,
+        "endMs": 1574360,
+        "excerpt": "issue is an interesting one in terms of what you described sort of the evolution of. You point out, say, we do not flay people and burn them at the stake anymore. We have evolved. And in some way, I think you're equating that that we have evolved to have more free will because you're yoking our capacity for self-control to evolution an awful lot. The fact that we don't burn people at the stake anymore, I think shows exactly the opposite, which is over and over throughout history, we have learned, \"Ah, someone is actually not responsible for this. Somebody does not control the weather and thus deserves to be burned at the stake as a witch. Ah, somebody has an epileptic seizure not because they're sleeping with Satan. Ah, somebody has trouble learning to read because they have dyslexia and we know the neuroanatomy of it rather than they're lazy and unmotivated.\" At each one of these steps where we have subtracted out responsibility, where we have viewed the world as having less free will, it's become a much nicer place to live in."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "con-moral-progress-subtracts-responsibility",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The examples coherently support the interpretation that causal understanding can reduce blame and cruelty rather than increase free will."
+            },
+            "evidenceWarrant": {
+              "value": 79,
+              "rationale": "Witches, epilepsy, and dyslexia are concrete historical examples, though their analogy to all ordinary agency is not independently defended."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "The move directly reverses Dennett’s moral-progress argument by offering a competing explanation of the same humane trajectory."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "It strongly advances the con institutional burden by linking causal explanation to reduced responsibility judgments."
+            },
+            "precisionClarity": {
+              "value": 85,
+              "rationale": "The contrast between adding freedom and subtracting blame is clear, with only some compression across very different examples."
+            },
+            "calibrationCharity": {
+              "value": 84,
+              "rationale": "Sapolsky targets responsibility practices rather than denying instrumental measures, but generalizes from clear error cases toward the full population."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "con-moral-progress-subtracts-responsibility",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The examples consistently support the proposed pattern that causal understanding can reduce blame and cruelty."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "Witches, epilepsy, and dyslexia are concrete illustrations, though the broader historical generalization remains selective."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "It directly reverses Dennett’s historical-progress example rather than changing the subject."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "It strongly advances the humane nonblame burden, while not showing that every reform requires eliminating responsibility."
+            },
+            "precisionClarity": {
+              "value": 86,
+              "rationale": "The repeated contrast between causal explanation and blame is clear and well bounded by examples."
+            },
+            "calibrationCharity": {
+              "value": 82,
+              "rationale": "The interpretation is generally fair, though it somewhat equates reduced mistaken blame with less free will overall."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-self-control-is-biological-and-unchosen",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "sectionId": "evolved-self-control",
+      "moveKind": "reply",
+      "claim": "Self-control is a biological trait, not a freely supplied use of otherwise unchosen attributes.",
+      "warrant": "Sapolsky identifies prefrontal development as a basis of control and cites early socioeconomic conditions as predictors of that development.",
+      "inference": "Differences in gumption and executive control cannot independently ground desert because the capacities themselves arise from luck and environment.",
+      "sourceSpanSelectionRationale": "This extended span preserves the full false-dichotomy setup, biological account of self-control, childhood socioeconomic example, and resulting conclusion about later decisions.",
+      "quoteEligibleExactSpans": [
+        "self-control is as biological of a trait as is your eye color."
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "This is continuous Sapolsky reply; the odd word 'courtesies' is caption recognition noise, so it is not used as a featured quotation.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "It directly attacks the capacity that carries most of Dennett's constructive case.",
+      "burdenContact": {
+        "bridgeId": "con-biological-self-control",
+        "tier": "central",
+        "rationale": "It treats reasons-responsive control as another caused and unequally distributed biological ability."
+      },
+      "respondsToIds": [
+        "pro-evolution-builds-foreseeing-self-control",
+        "pro-capacity-thresholds-and-diminished-control"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-evolution-builds-foreseeing-self-control",
+          "description": "Accepts that self-control exists but argues its biological origin prevents it from supplying ultimate control."
+        },
+        {
+          "targetMoveId": "pro-capacity-thresholds-and-diminished-control",
+          "description": "Challenges the distinction between assigned traits and the allegedly responsible use of those traits."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 654,
+        "endEvent": 736,
+        "startMs": 1572320,
+        "endMs": 1779919,
+        "excerpt": "Now, as a second point, sort of you're alluding Dan to what I think is another incredibly like tempting, seductive way to in which to get into trouble, which is to make this false dichotomy. Yes, most people will admit we have no control over some of the attributes that we were given, that we were gifted with, that we were cursed with, and so on. Some of us are tall, some of us have perfect pitch, some of us have good memory spans for digits, some of us this or that, and you know, we were given these traits. Yeah, yeah, yeah, most people will now believe rather than being Calvinists that this was outside our realm of control. What people then do is this like leapfrog over this Grand Canyon of a false dichotomy into but where we have free will is what we do with those attributes. Do we show tenacity? Do we show gumption and backbone when the going gets tough do the tough get going? Do we show self-control? Or conversely, are we privileged and gifted and we squander it away with self-indulgence? The seduction is that things like, \"Oh, how good your memory span is, what type of receptor you have for this neurotransmitter relevant to memory.\" Yeah, yeah, yeah, that stuff you were given, but what you do with it, more gumption, your control or lack thereof, that's made of fairy dust. That's magical stuff. That's a completely different category. And what we see is self-control is as biological of a trait as is your eye color. As is your capacity to play the piano, as is your height. It's a different kind of biology. For my money, it's a hell of a lot more interesting biology, but it's just as biological. And what it's embedded in is a squishy, real, biologically yucky part of the brain called the prefrontal cortex. You develop a good prefrontal cortex, you are going to be good at showing self-control. As an adult, you will be better at doing the hard thing when it's the right thing to do. Are we responsible for the sort of prefrontal courtesies we have? Not a chance. Here's one example that should stop people right in their tracks, that that should have people out, you know, yelling at the barricades and singing like revolutionary songs from Les Mis. By the time a child is 5 years old, the socioeconomic status of their parents is already a predictor of the thickness of their prefrontal cortex and its metabolic rate. And big surprise, it goes in the direction of if you very imprudently intended and chose to be born into a family in poverty, you're going to have a screwed-up prefrontal cortex on the average by the time you're 5 years old. Bad luck evens out over time. Gumption is not made of biology. This is the biology which every step along the afterward is the biology and interactions with environment of why at virtually every juncture this person is going to make the wrong decision and go in the wrong direction. And it has as little to do with choice and free will as your eye color does."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "con-self-control-is-biological-and-unchosen",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The move consistently argues that using self-control to ground desert cannot escape the causal history of the control capacity itself."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "Prefrontal development and childhood socioeconomic conditions provide specific support, though the neurological claims and predictive strength are unverified here."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "It directly attacks the capacity distinction carrying Dennett’s case while granting that self-control is a real trait."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "The move strongly develops the con biological-self-control bridge and connects it to unequal developmental luck."
+            },
+            "precisionClarity": {
+              "value": 84,
+              "rationale": "The core causal point is clear despite rhetorical exaggeration and one recognition-corrupted technical word that is not needed for the claim."
+            },
+            "calibrationCharity": {
+              "value": 77,
+              "rationale": "Sapolsky avoids denying self-control, but comparisons to eye color and near-inevitable wrong choices overstate differences in plasticity and degree."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "con-self-control-is-biological-and-unchosen",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The move coherently extends the causal-origin challenge to the very self-control capacity invoked by Dennett."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "Prefrontal development and childhood socioeconomic conditions provide specific support, though causal detail is presented without checking."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "It directly targets both the evolved-skill account and the capacity threshold at their shared foundation."
+            },
+            "relevanceBurden": {
+              "value": 93,
+              "rationale": "It strongly advances the biological-self-control burden by denying that acquired control is self-originated."
+            },
+            "precisionClarity": {
+              "value": 84,
+              "rationale": "The biological comparison and luck argument are clear despite rhetorical excess and one corrupted caption word."
+            },
+            "calibrationCharity": {
+              "value": 78,
+              "rationale": "The move accepts that self-control exists, but occasionally overstates equivalence with eye color and the inevitability of wrong decisions."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 93,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-runner-analogy-challenges-desert",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "sectionId": "quotation-and-intuition-disputes",
+      "moveKind": "reply",
+      "claim": "Dennett's reported runner analogy appears to attach desert to overcoming an initial disadvantage.",
+      "warrant": "Sapolsky quotes the analogy and reads failure to overcome bad luck as a moral judgment that insufficient gumption does not deserve success.",
+      "inference": "A free-will account based on control risks treating biologically caused capacities as morally self-created.",
+      "sourceSpanSelectionRationale": "The span includes the full live quotation of the runner analogy, Sapolsky's interpretation, and his explicit disagreement without extending into the separate intuition argument.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Sapolsky explicitly labels the passage as a quotation from Dan and then clearly marks his own interpretation.",
+      "audioVerificationReason": "",
+      "importance": 2,
+      "importanceRationale": "It is a concrete textual challenge to the role of luck and desert in Dennett's position.",
+      "burdenContact": {
+        "bridgeId": "con-biological-self-control",
+        "tier": "central",
+        "rationale": "The move argues that overcoming disadvantage depends on caused capacities rather than independent control."
+      },
+      "respondsToIds": [
+        "pro-evolution-builds-foreseeing-self-control"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-evolution-builds-foreseeing-self-control",
+          "description": "Challenges the desert implications of treating evolved control skills as achievements attributable to the agent."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 737,
+        "endEvent": 757,
+        "startMs": 1778080,
+        "endMs": 1837600,
+        "excerpt": "I think the final point I want to make with that is running through that is a notion again of the gumption angle is a source of pulling out judgment and responsibility, which I think is simply antithetical to where the science is. If I can have a quote of yours, Dan. Quote, \"A good runner who starts at the back of the pack, if he is really good enough to deserve winning, will probably have plenty of opportunities to overcome the initial disadvantage.\" In other words, if he fails to show sufficient gumption to make up for that deficit, he doesn't deserve to win. It is a moral judgment that he was not able to overcome his initial bad luck because control is made out of magic. Control is something that is not made out of biology. And I obviously strongly disagree with that. I"
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "con-runner-analogy-challenges-desert",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 61,
+              "rationale": "Sapolsky’s interpretation would challenge desert if the quotation stood alone, but Dennett says its continuation explicitly rejects that framing."
+            },
+            "evidenceWarrant": {
+              "value": 64,
+              "rationale": "A live quotation is offered, yet its reported context is incomplete and the record provides no independent verification of either book account."
+            },
+            "responsiveness": {
+              "value": 48,
+              "rationale": "Because Dennett’s later reply says the passage calls the analogy misleading, this move engages a weaker reconstruction of the pro view."
+            },
+            "relevanceBurden": {
+              "value": 65,
+              "rationale": "The concern about treating control as self-created is relevant, but the quoted example does not securely establish that Dennett holds the targeted position."
+            },
+            "precisionClarity": {
+              "value": 72,
+              "rationale": "Sapolsky clearly distinguishes quotation from interpretation, though he states the moral implication more firmly than the partial context permits."
+            },
+            "calibrationCharity": {
+              "value": 40,
+              "rationale": "The move attributes magical control and a desert judgment despite the live correction that the cited passage continued by rejecting the analogy."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "con-runner-analogy-challenges-desert",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 69,
+              "rationale": "Given the quoted sentence, Sapolsky’s desert concern is intelligible, but it depends on treating an excerpt as Dennett’s settled view."
+            },
+            "evidenceWarrant": {
+              "value": 62,
+              "rationale": "The live quotation is specific evidence, yet its surrounding textual context is not established until Dennett’s reply."
+            },
+            "responsiveness": {
+              "value": 76,
+              "rationale": "It challenges a concrete apparent implication of the pro skill account rather than ignoring it."
+            },
+            "relevanceBurden": {
+              "value": 72,
+              "rationale": "It bears on biological self-control and desert, though the context dispute limits its burden-level force."
+            },
+            "precisionClarity": {
+              "value": 80,
+              "rationale": "The distinction between initial luck, gumption, and deserved success is stated clearly."
+            },
+            "calibrationCharity": {
+              "value": 57,
+              "rationale": "The interpretation becomes insufficiently charitable because it infers magical control from a passage Dennett says immediately rejects."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 61,
+          "rationale": "Sapolsky’s interpretation would challenge desert if the quotation stood alone, but Dennett says its continuation explicitly rejects that framing.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "The quoted sentence makes the desert inference intelligible in isolation, but Dennett’s live reply says the passage immediately rejects the analogy, leaving Sapolsky’s inference dependent on incomplete context."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "A live quotation is offered, yet its reported context is incomplete and the record provides no independent verification of either book account.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Sapolsky supplies a specific live quotation, but the surrounding book context is disputed by Dennett and neither speaker’s textual account is independently verified in the locked source."
+        },
+        "responsiveness": {
+          "value": 48,
+          "rationale": "Because Dennett’s later reply says the passage calls the analogy misleading, this move engages a weaker reconstruction of the pro view.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "The move engages the pro account of developed control, yet Dennett’s formal reply says the cited passage itself calls the runner framing misleading, so the challenge answers a materially weaker reconstruction."
+        },
+        "relevanceBurden": {
+          "value": 65,
+          "rationale": "The concern about treating control as self-created is relevant, but the quoted example does not securely establish that Dennett holds the targeted position.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Whether caused capacities can ground desert is central to the con burden, but the partial quotation does not securely show that Dennett adopts the specific desert position being attacked."
+        },
+        "precisionClarity": {
+          "value": 72,
+          "rationale": "Sapolsky clearly distinguishes quotation from interpretation, though he states the moral implication more firmly than the partial context permits.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Sapolsky clearly separates Dennett’s quoted sentence from his own interpretation, but presents the moral implication more decisively than the disputed and incomplete textual context supports."
+        },
+        "calibrationCharity": {
+          "value": 57,
+          "rationale": "The interpretation becomes insufficiently charitable because it infers magical control from a passage Dennett says immediately rejects.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "The quotation gives Sapolsky a concrete basis for concern, but inferring magical control and settled desert from a passage Dennett says immediately rejects is materially uncharitable without making either book claim verified fact."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-intuition-is-an-unreliable-guide",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "sectionId": "quotation-and-intuition-disputes",
+      "moveKind": "reply",
+      "claim": "Intuition is an unreliable guide to free will and responsibility.",
+      "warrant": "Sapolsky says past intuitions supported slavery, child labor, and blame for dyslexia, and that growing causal knowledge repeatedly displaced those judgments.",
+      "inference": "A model's fit with authorship intuitions supplies little support when those intuitions may encode mistaken responsibility judgments.",
+      "sourceSpanSelectionRationale": "The span retains the two-stage-model quotation, the express attack on intuition, multiple historical and medical examples, and the concluding institutional implication.",
+      "quoteEligibleExactSpans": [
+        "intuition is a really lousy guide for thinking about how the world works."
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Continuous Sapolsky reply with explicit quotation markers separating Dennett's reported words from Sapolsky's argument.",
+      "audioVerificationReason": "",
+      "importance": 2,
+      "importanceRationale": "It challenges an identified support for a free-will model and broadens the con case about moral learning.",
+      "burdenContact": {
+        "bridgeId": "con-humane-nonblame",
+        "tier": "subsidiary",
+        "rationale": "It links correction of responsibility intuitions to less punitive and more accurate social treatment."
+      },
+      "respondsToIds": [
+        "pro-freedom-evolves-and-undetermined-will-is-undesirable"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-freedom-evolves-and-undetermined-will-is-undesirable",
+          "description": "Challenges reliance on intuitive authorship as support for models intended to explain worthwhile freedom."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 758,
+        "endEvent": 839,
+        "startMs": 1834920,
+        "endMs": 2037160,
+        "excerpt": "think the very last point, Dan, is there's another realm in which I think you've been seduced into a great embrace of free will, which is you've got a lot more faith in intuition than I think is justified. For example, you have the really interesting two-stage model of decision-making, which let's not get into it, but I disagree with, blah, blah, big surprise. But you say one of its strengths is it aligns with our intuitions. Quote, that model, quote, provides some account of our important intuition that we are the authors of our moral decisions. In other words, your model for why free will is more acceptable because it fits with our intuition that we have free will. And I think my last point here that I want to make is intuition is a really lousy guide for thinking about how the world works. Let me give you an example. I will bet, Dan, if you and I were sitting in a cafe 400 years ago, we were the same people and just as reflective and we would have like given money to NPR if it existed at the time. All of that, we would have been the same reasonable people. It would have been probably intuitively obvious to us that certain people are meant to be slaves. In fact, they're so incapable of taking care of themselves, it's a blessing to enslave them and feed them and clothe them and that and that's not intuitively obvious to to us anymore. It's not intuitively obvious that it's okay to have 4-year-olds work in factories. But in the past would have seemed intuitively obvious to us as well. It's no longer intuitively obvious that a kid who has a cortical malformation and as a result reverses looped letters and has trouble learning to read because of their dyslexia, it's no longer intuitively obvious to us that they're lazy and unmotivated. But 40, 50 years ago, I suspect both of us would have found it obvious that this is a kid who just really isn't paying attention, isn't motivated. Over and over and over, our intuitions have proven wrong. Over and over, when we realize our intuitions are very poor litmus test and we recognize we are intuitively punishing and rewarding and judging and all of that for things people had no control over. Over and over, when we recognize that these intuitions, in fact, are based on responsibility, which is simply not there, the world becomes a better place. It really is a very good thing that we figured out witches don't control the weather and we figured out that rotten psychoanalytically poisonous mothers don't cause schizophrenia and that people with a certain variant of a gene for the leptin receptor have trouble having their brain satiate rather than them just hating themselves and thus eating themselves into obesity. At every one of these steps, our initial intuitions have proven very, very suspect and wrong. And at each step, when we actually learn what's going on, we we subtract responsibility out of it. And not only doesn't the societal roof fall in, it becomes a much better place to live in."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "con-intuition-is-an-unreliable-guide",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The historical examples coherently show that intuitive responsibility judgments can be mistaken and therefore need independent support."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "Multiple concrete cases support caution about intuition, though they do not establish that every authorship intuition is similarly unreliable."
+            },
+            "responsiveness": {
+              "value": 64,
+              "rationale": "The general attack on intuition is relevant, but Dennett later clarifies that he noted an intuition while rejecting the cited two-stage model."
+            },
+            "relevanceBurden": {
+              "value": 79,
+              "rationale": "The move undermines intuition as decisive support and connects correction to humane treatment, without by itself resolving the motion."
+            },
+            "precisionClarity": {
+              "value": 84,
+              "rationale": "Its epistemic caution is clear, although the phrase ‘intuition’ covers moral conventions, empirical beliefs, and phenomenology without much separation."
+            },
+            "calibrationCharity": {
+              "value": 60,
+              "rationale": "Sapolsky reasonably urges skepticism, but portrays the model as Dennett’s endorsed account despite the subsequent explicit contextual correction."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "con-intuition-is-an-unreliable-guide",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The historical examples coherently establish that intuition can be mistaken, though not that every authorship intuition is false."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "Several concrete moral and medical cases support caution, but analogy alone does not settle the specific free-will intuition."
+            },
+            "responsiveness": {
+              "value": 79,
+              "rationale": "It addresses an identified intuition-based support, yet the later reply shows Dennett did not endorse the cited model."
+            },
+            "relevanceBurden": {
+              "value": 81,
+              "rationale": "It usefully weakens intuition as sole support and connects that caution to humane institutional judgment."
+            },
+            "precisionClarity": {
+              "value": 84,
+              "rationale": "The governing claim and examples are understandable despite the lengthy sequence and some broad formulations."
+            },
+            "calibrationCharity": {
+              "value": 72,
+              "rationale": "The warning about intuition is calibrated in principle, but the move overstates Dennett’s reliance on the two-stage model."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 64,
+          "rationale": "The general attack on intuition is relevant, but Dennett later clarifies that he noted an intuition while rejecting the cited two-stage model.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "The general case against intuition is relevant, but Dennett’s live reply distinguishes noting that an intuition is met from endorsing the two-stage model, so the move only partly answers his actual position."
+        },
+        "relevanceBurden": {
+          "value": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 60,
+          "rationale": "Sapolsky reasonably urges skepticism, but portrays the model as Dennett’s endorsed account despite the subsequent explicit contextual correction.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Sapolsky reasonably argues that intuitions can mislead, yet he treats the two-stage model as Dennett’s endorsed support even though Dennett’s formal reply expressly reports rejecting that model."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-restores-context-to-runner-and-two-stage-passages",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "quotation-and-intuition-disputes",
+      "moveKind": "reply",
+      "claim": "The runner and two-stage passages, as Dennett reports their contexts, do not endorse the views Sapolsky attributes to him.",
+      "warrant": "Dennett says the runner passage immediately calls the analogy misleading and the article rejects the two-stage model despite noting that it meets an intuition.",
+      "inference": "Sapolsky's textual challenges do not establish that Dennett grounds responsibility in overcoming luck or endorses that decision model.",
+      "sourceSpanSelectionRationale": "The span starts at Dennett's formal reply, includes both complete context corrections, and ends after his explicit distinction between meeting an intuition and supporting the model.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "The moderator names Dan, and auxiliary audio text confirms the wording and speaker of both context corrections.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "It is the direct reply to two source-based attacks that otherwise materially characterize the pro theory.",
+      "burdenContact": {
+        "bridgeId": "pro-evolved-social-capacity",
+        "tier": "central",
+        "rationale": "The correction protects the pro account from being assessed as the runner-desert or two-stage theory it disclaims."
+      },
+      "respondsToIds": [
+        "con-runner-analogy-challenges-desert",
+        "con-intuition-is-an-unreliable-guide"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-runner-analogy-challenges-desert",
+          "description": "Says the cited text continues by rejecting the runner framing as misleading."
+        },
+        {
+          "targetMoveId": "con-intuition-is-an-unreliable-guide",
+          "description": "Distinguishes acknowledging that a model meets an intuition from endorsing that model."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 844,
+        "endEvent": 881,
+        "startMs": 2041840,
+        "endMs": 2136880,
+        "excerpt": "indeed. Um first of all, thank you, Robert, for giving me some wonderful examples to talk about. You quote me twice. And in both cases, you ignore the fact that I reject the view that you quote. So, uh I forgive you for that cuz you're not responsible. Uh you couldn't help it. It was your It was the various imbalances in your brain that led you to misunderstand the quote about the about the marathon. The very passage where you cite in in your book, page uh what, 376 of uh Freedom Evolves, I go on to say, \"But that's wrong.\" I say I say uh uh that that uh misleads. Uh it underplays the role of non-fortuitous breaks in the race to responsible agenthood. If you'd read the rest of the sentence, but I guess you were not hadn't have enough self-control to do that. But if you had, you would have realized that you were misquoting me. And as for the two-stage model, the whole point of that article is to say the two-stage model doesn't work. So, you sort of admitted that that I didn't endorse that model. So, you found one thing that I gainsaid about it. I said, \"Well, you know, it does meet an intuition, but I didn't on that ground support the model. In fact, I rejected the model. So, but since you don't have responsibility, I don't blame you."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-restores-context-to-runner-and-two-stage-passages",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "If the reported continuations are as stated, they directly defeat the inference that Dennett endorsed either the runner framing or two-stage model."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "Dennett provides specific continuations and explains their import, though the books themselves are unavailable for independent textual verification."
+            },
+            "responsiveness": {
+              "value": 96,
+              "rationale": "The reply precisely addresses both quotation-based challenges at the omitted context and endorsement distinction."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "Correcting two material representations protects the pro theory from burdens it did not adopt, while leaving the broader substantive dispute open."
+            },
+            "precisionClarity": {
+              "value": 88,
+              "rationale": "The distinctions between quoting, rejecting, meeting an intuition, and endorsing a model are clearly drawn."
+            },
+            "calibrationCharity": {
+              "value": 74,
+              "rationale": "The substantive correction is bounded, but repeated personal sarcasm distracts from an otherwise accurate reconstruction of Sapolsky’s live claims."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-restores-context-to-runner-and-two-stage-passages",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "If Dennett’s reported continuations are accurate, both quoted attacks lose the attributed endorsement coherently."
+            },
+            "evidenceWarrant": {
+              "value": 86,
+              "rationale": "He supplies specific contextual continuations for each passage, though the books themselves are not independently verified here."
+            },
+            "responsiveness": {
+              "value": 96,
+              "rationale": "It directly answers both quotation challenges at the exact disputed textual point."
+            },
+            "relevanceBurden": {
+              "value": 89,
+              "rationale": "It materially protects the pro burden from two theories Dennett expressly says he rejected."
+            },
+            "precisionClarity": {
+              "value": 85,
+              "rationale": "The distinction between noting an intuition and endorsing a model is precise and useful."
+            },
+            "calibrationCharity": {
+              "value": 75,
+              "rationale": "The corrections are substantively fair, though the joking attacks on Sapolsky’s control add unnecessary personal rhetoric."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 96,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 75,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-deterministic-chaos-supports-autonomy",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "determinism-choice-and-unpredictability",
+      "moveKind": "reply",
+      "claim": "Compatibilist freedom needs complex unpredictability and resistance to manipulation, not indeterminism.",
+      "warrant": "Dennett invokes chaotic, hard-to-predict brain activity and says mature responsible people can resist being turned into puppets, while conceding they did not choose to become such people and cannot always resist.",
+      "inference": "A causally formed person can still possess operational autonomy in the face of present influence.",
+      "sourceSpanSelectionRationale": "The span begins with the quoted educational claim, preserves Dennett's compatibilist correction, and includes his complete autonomy claim with its express origin and reliability qualifications.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Continuous Dennett reply; first-person and direct address remain clear despite automatic-caption fillers.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "This is the most developed reply defining what deterministic autonomy adds beyond mere causation.",
+      "burdenContact": {
+        "bridgeId": "pro-compatible-freedom",
+        "tier": "motion",
+        "rationale": "It explains the freedom-making capacity available within a deterministic system."
+      },
+      "respondsToIds": [
+        "con-independence-burden-challenge",
+        "con-intuition-is-an-unreliable-guide"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-independence-burden-challenge",
+          "description": "Rejects causal independence as the criterion and substitutes resistance to present control."
+        },
+        {
+          "targetMoveId": "con-intuition-is-an-unreliable-guide",
+          "description": "Recasts the dispute as a definitional and functional compatibilist claim rather than reliance on indeterminism."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 891,
+        "endEvent": 923,
+        "startMs": 2155200,
+        "endMs": 2243960,
+        "excerpt": "At one point, you say, \"As we've seen, rejection of free will doesn't doom you to break bad, not if you've been educated about the roots of where our behavior comes from.\" I agree with that with everything except you're taking on the definition of free will as as being uh incompatible with determinism, but it's not. That's what compatibilists say. We say, \"No, you don't need indeterminism. What you do need is chaos. You do need that squishy uh messy impossible to predict goings-on in your neocortex and elsewhere in your brain because we have to be a little bit unpredictable. We have to keep our counsel. We don't want to be controlled by others. The whole key to free will is Yes, you're not responsible for becoming a free will responsible person. But once you become one, you now have the talent to resist being turned into a puppet. You can maintain your autonomy in the face of other other influences. Now, not always, but at least you know you should try. And you do."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-deterministic-chaos-supports-autonomy",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "Resistance to present manipulation can define operational autonomy, but unpredictability alone is not clearly shown to produce reasons-responsive control."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "Brain complexity and resistance to puppetry are plausible considerations, though the causal role of chaos is asserted rather than demonstrated."
+            },
+            "responsiveness": {
+              "value": 84,
+              "rationale": "The move directly rejects causal independence and answers with a functional capacity to resist present control, including explicit limitations."
+            },
+            "relevanceBurden": {
+              "value": 90,
+              "rationale": "It materially advances compatibilist freedom by identifying the autonomy available to a causally formed agent."
+            },
+            "precisionClarity": {
+              "value": 70,
+              "rationale": "The distinction between deterministic unpredictability, secrecy, and autonomy remains compressed, leaving the exact role of chaos unclear."
+            },
+            "calibrationCharity": {
+              "value": 82,
+              "rationale": "Dennett expressly concedes unchosen formation and imperfect resistance, keeping the claim proportionate despite the unexplained chaos link."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-deterministic-chaos-supports-autonomy",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The move distinguishes causal formation from present resistance to manipulation, but the need for chaos is underexplained."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "Unpredictable neural activity and puppet resistance are relevant warrants, though no detailed link between them is established."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "It directly rejects causal independence and answers with an operational conception of autonomy."
+            },
+            "relevanceBurden": {
+              "value": 85,
+              "rationale": "It advances compatible freedom by identifying a practical capacity beyond mere occurrence of choice."
+            },
+            "precisionClarity": {
+              "value": 76,
+              "rationale": "The core resistance claim is clear, but unpredictability, chaos, privacy, and autonomy are somewhat compressed together."
+            },
+            "calibrationCharity": {
+              "value": 84,
+              "rationale": "The concessions that agents did not choose their formation and cannot always resist are appropriately calibrated."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 73,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-sapolsky-values-the-relevant-capacity",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "evolved-self-control",
+      "moveKind": "reply",
+      "claim": "Sapolsky already values and exercises the kind of self-regulation Dennett calls free will.",
+      "warrant": "Dennett points to Sapolsky's effort to understand and manage his own mental difficulties and to his educational project about behavioral causes.",
+      "inference": "Their disagreement may concern the label and an incompatibilist definition more than the desirability of the underlying capacity.",
+      "sourceSpanSelectionRationale": "This concise span contains Dennett's complete argument from Sapolsky's acknowledged striving and achievement to the definitional disagreement about indeterminism.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Dennett continues uninterrupted and explicitly addresses Robert and his book.",
+      "audioVerificationReason": "",
+      "importance": 2,
+      "importanceRationale": "It attempts to establish common ground around the central capacity even if the term remains disputed.",
+      "burdenContact": {
+        "bridgeId": "pro-reasons-control",
+        "tier": "central",
+        "rationale": "It identifies reflective self-regulation as a real and desired human competence."
+      },
+      "respondsToIds": [
+        "con-self-control-is-biological-and-unchosen"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-self-control-is-biological-and-unchosen",
+          "description": "Concedes causal formation but argues that Sapolsky still values and exercises the resulting control capacity."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 924,
+        "endEvent": 946,
+        "startMs": 2241240,
+        "endMs": 2300680,
+        "excerpt": "And I really admire the honesty of your book. You acknowledge a lot of your own uh mental imbalances that bother you. And I'm saying, you already agree with me that free will of the sort that I'm talking about is a desirable thing. It's what you strive for. And what, to a very great degree, you achieve. You say at one point, \"First, it isn't free will and responsibility just because on the social level, everyone says it is.\" That's the central point of the book. And I'm saying, that sentence reveals that you have bought the pathetic line of those incompatibilist philosophers who insist that free will depends on indeterminism."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-sapolsky-values-the-relevant-capacity",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 74,
+              "rationale": "Sapolsky’s valuing self-regulation supports common ground about the capacity, but it does not establish that the capacity should be called free will."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "Dennett cites Sapolsky’s striving and educational project, though the personal example does limited work on the disputed responsibility criterion."
+            },
+            "responsiveness": {
+              "value": 78,
+              "rationale": "The move answers the biological-origin objection by stressing the value of the resulting capacity, but leaves the origin-based challenge intact."
+            },
+            "relevanceBurden": {
+              "value": 78,
+              "rationale": "It supports the reasons-control route by identifying shared commitment to reflective regulation, while only partly advancing the motion-level label."
+            },
+            "precisionClarity": {
+              "value": 76,
+              "rationale": "The common-ground claim is understandable, but the transition from desirable achievement to free will is somewhat compressed."
+            },
+            "calibrationCharity": {
+              "value": 72,
+              "rationale": "Dennett acknowledges causal formation, yet his claim that Sapolsky already agrees risks conflating agreement about a capacity with agreement about responsibility."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-sapolsky-values-the-relevant-capacity",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The inference from valuing self-regulation to possessing Dennettian freedom is plausible but partly definitional."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "Sapolsky’s self-management and educational project are relevant examples, though they show desirability more clearly than freedom."
+            },
+            "responsiveness": {
+              "value": 86,
+              "rationale": "It directly answers the claim that biologically caused self-control cannot count as responsible agency."
+            },
+            "relevanceBurden": {
+              "value": 78,
+              "rationale": "It establishes common ground about the capacity, but does not independently settle whether the label free will applies."
+            },
+            "precisionClarity": {
+              "value": 78,
+              "rationale": "The distinction between the valued capacity and the disputed label is understandable despite compressed wording."
+            },
+            "calibrationCharity": {
+              "value": 68,
+              "rationale": "The move recognizes common ground, though it attributes philosophical capture and personal imbalance more sharply than warranted."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 77,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 70,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evolution-needs-uncontrollable-variation-not-indeterminism",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "determinism-choice-and-unpredictability",
+      "moveKind": "reply",
+      "claim": "Evolution and agency can use uncontrollable variation without requiring metaphysical indeterminism.",
+      "warrant": "Dennett distinguishes determined but uncontrollable coin flips from control by an agent and says natural selection works with deterministic chaos.",
+      "inference": "Appealing to evolved option generation does not show that determinism rules out free will.",
+      "sourceSpanSelectionRationale": "The span begins at Dennett's explicit incompatibilism charge and preserves the full coin-flip, uncontrollability, variation, and deterministic-chaos distinction.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Dennett retains the floor through the moderator's subsequent invitation to Robert.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "It directly separates determinism from predictability and frames the final exchange over option generation.",
+      "burdenContact": {
+        "bridgeId": "pro-compatible-freedom",
+        "tier": "motion",
+        "rationale": "It blocks the inference from deterministic evolution to the absence of usable variation or freedom."
+      },
+      "respondsToIds": [
+        "con-independence-burden-challenge"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-independence-burden-challenge",
+          "description": "Argues that deterministic causal history can still generate uncontrollable diversity and thus does not decide the motion by itself."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 947,
+        "endEvent": 961,
+        "startMs": 2297359,
+        "endMs": 2335840,
+        "excerpt": "It doesn't. It depends on randomness. Let me Let me put a question to you. Does evolution depend on indeterminism or on randomness, like a coin flip? Coin flips aren't random. They're just not controllable. They're determined. They're just not controllable. Evolution depends on the uncontrollable generation of diversity. But that doesn't you can't prove indeterminism by citing natural selection as your proof because natural selection works fine with deterministic chaos."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-evolution-needs-uncontrollable-variation-not-indeterminism",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The core distinction that deterministic systems can generate variation is coherent, though the shifting coin-flip language introduces tension."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "Natural selection and deterministic chaos provide relevant conceptual support, but the move offers little explanation of how variation yields agency."
+            },
+            "responsiveness": {
+              "value": 79,
+              "rationale": "It answers the independence challenge insofar as deterministic causation need not eliminate option generation, but not the con concern about the chooser’s origins."
+            },
+            "relevanceBurden": {
+              "value": 82,
+              "rationale": "The move advances compatibility by blocking one route from determinism to absent alternatives, without completing the positive freedom burden."
+            },
+            "precisionClarity": {
+              "value": 62,
+              "rationale": "Saying coin flips are not random before invoking randomness and uncontrollability leaves key terminology unstable."
+            },
+            "calibrationCharity": {
+              "value": 75,
+              "rationale": "Dennett appropriately limits the conclusion about natural selection, but the opening wording claims dependence on randomness too categorically."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-evolution-needs-uncontrollable-variation-not-indeterminism",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The distinction between deterministic processes and agent control coherently blocks a simple inference to indeterminism."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The coin-flip and natural-selection examples are relevant, but the shift between randomness and uncontrollability is insufficiently defended."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "It directly responds to the causal-independence challenge and sets up the final option-generation exchange."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It advances compatibility by showing that useful variation need not require a metaphysical causal break."
+            },
+            "precisionClarity": {
+              "value": 70,
+              "rationale": "The main distinction is recoverable, though the wording first denies and then invokes randomness in a confusing way."
+            },
+            "calibrationCharity": {
+              "value": 80,
+              "rationale": "The move properly limits its conclusion to what evolution does not prove rather than claiming evolution proves free will."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The core distinction that deterministic systems can generate variation is coherent, though the shifting coin-flip language introduces tension.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "The central distinction between deterministic causation and uncontrollable variation is coherent, but Dennett’s shift from saying freedom depends on randomness to denying coin-flip randomness creates a real internal tension."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Natural selection and deterministic chaos provide relevant conceptual support, but the move offers little explanation of how variation yields agency.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Natural selection and deterministic chaos support the limited claim that variation need not be indeterministic, while the move gives little warrant for the further bridge from generated variation to responsible agency."
+        },
+        "responsiveness": {
+          "value": 79,
+          "rationale": "It answers the independence challenge insofar as deterministic causation need not eliminate option generation, but not the con concern about the chooser’s origins.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "The reply directly blocks the claim that deterministic causation prevents option generation, but it does not answer Sapolsky’s deeper challenge that the chooser and ranking values have unchosen origins."
+        },
+        "relevanceBurden": {
+          "value": 82,
+          "rationale": "The move advances compatibility by blocking one route from determinism to absent alternatives, without completing the positive freedom burden.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Showing that deterministic evolution can generate usable variation materially advances compatibility, but it does not complete the pro burden of explaining why a causally formed chooser is free."
+        },
+        "precisionClarity": {
+          "value": 62,
+          "rationale": "Saying coin flips are not random before invoking randomness and uncontrollability leaves key terminology unstable.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Dennett’s sequence first says freedom depends on randomness, then says coin flips are not random, and then invokes uncontrollable variation, leaving the key terminology materially unstable despite a recoverable core."
+        },
+        "calibrationCharity": {
+          "value": 75,
+          "rationale": "Dennett appropriately limits the conclusion about natural selection, but the opening wording claims dependence on randomness too categorically.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Dennett properly limits his conclusion to denying that natural selection proves indeterminism, but his opening statement that freedom depends on randomness is broader and less carefully qualified."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-options-do-not-free-the-chooser",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "sectionId": "determinism-choice-and-unpredictability",
+      "moveKind": "reply",
+      "claim": "Generating and choosing among options does not yield free will when the chooser's values were not chosen.",
+      "warrant": "Sapolsky accepts chaotic option production, filtering, weighing, reflection, and genuine choice, but asks how the person became one who would rank and select those options.",
+      "inference": "More sophisticated decision machinery relocates rather than answers the question of originating control.",
+      "sourceSpanSelectionRationale": "The span begins at Sapolsky's invited direct answer and retains his complete concession about option generation and choice through the return to unchosen values and character.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "The moderator explicitly invites Robert; the answer remains his until Dennett addresses him by name.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "This is the con side's direct final answer to Dennett's deterministic-chaos challenge.",
+      "burdenContact": {
+        "bridgeId": "con-no-originating-control",
+        "tier": "motion",
+        "rationale": "It accepts ordinary choosing while denying that the agent controlled the formation of the chooser."
+      },
+      "respondsToIds": [
+        "pro-evolution-needs-uncontrollable-variation-not-indeterminism"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-evolution-needs-uncontrollable-variation-not-indeterminism",
+          "description": "Accepts generated variation but argues that selection among options still expresses unchosen values and character."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 964,
+        "endEvent": 999,
+        "startMs": 2342000,
+        "endMs": 2428000,
+        "excerpt": "Yeah, very briefly. Um this is your two-stage model, Dan, which is stage one is a generation of randomness, a chaoticism that bubbles up all sorts of options for behavior. And as you point out, filtering out the nonsense, what should I do next, bark like a dog, that's probably not very viable, a reasonable number of them. And then stage two, you choose. You choose, you weigh them, you reflect, all of that, and you choose which of those options you do. And all that does is take us back to where I started. How did you wind up being the sort of person where that's the choice you would make, that that's the values that you have, that that's the thing you consider to be most important. That's the same issue again. You did not choose to become the sort of person who would make that choice at that point. It's absolutely a choice at that point. And yes, I agree with your sort of chaoticism of generating options, doing a couple of filterings. Richard Dawkins has done fascinating stuff on how we filter out the nonsense of options and algorithms for doing that. We focus in on the reasonable stuff and then the sort of person that circumstances outside your control have made you chooses among the options. We're back to where I started. Absolutely."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "con-options-do-not-free-the-chooser",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The move consistently grants generation, filtering, reflection, and actual choice while returning to the unchosen formation of values and character."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "Its support is mainly the causal-origin framework already developed, with no new evidence but a well-specified application to option selection."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "Sapolsky directly answers Dennett’s question and targets the precise inference from deterministic variation to free agency."
+            },
+            "relevanceBurden": {
+              "value": 93,
+              "rationale": "The reply strongly completes the con originating-control route by showing why more elaborate choosing does not satisfy its criterion."
+            },
+            "precisionClarity": {
+              "value": 87,
+              "rationale": "The concessions and remaining disagreement are clearly separated, making the reply easy to audit."
+            },
+            "calibrationCharity": {
+              "value": 90,
+              "rationale": "Sapolsky represents option generation and genuine choice accurately, avoiding the caricature that determinism means choices do not occur."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "con-options-do-not-free-the-chooser",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The reply accepts every decision-stage capacity offered and consistently returns to the unchosen formation of values."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "Conceding option generation, filtering, reflection, and real choice gives the inference a strong shared factual base."
+            },
+            "responsiveness": {
+              "value": 96,
+              "rationale": "It answers Dennett’s direct challenge at the decisive point instead of denying his account of option generation."
+            },
+            "relevanceBurden": {
+              "value": 94,
+              "rationale": "It strongly completes the originating-control burden by showing why sophisticated choice machinery does not meet that criterion."
+            },
+            "precisionClarity": {
+              "value": 91,
+              "rationale": "The separation between actual choice and control over becoming the chooser is exceptionally clear."
+            },
+            "calibrationCharity": {
+              "value": 89,
+              "rationale": "The reply represents Dennett’s mechanism generously and narrows disagreement to the exact criterion of originating control."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 95,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 94,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-civilization-counteracts-causes-and-excuses-incapacity",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "causal-origins-of-agency",
+      "moveKind": "reply",
+      "claim": "Education and treatment can counteract causal disadvantages, while persistent incapacity can excuse rather than erase freedom universally.",
+      "warrant": "Dennett agrees that history formed people but argues civilization learns to remedy some effects and withhold responsibility from children, senile people, and people with brain damage.",
+      "inference": "Causal origin and luck are compatible with later acquisition of responsibility-capable agency by many people.",
+      "sourceSpanSelectionRationale": "The span begins with Dennett's acknowledgment of the shared long history and includes the complete counteraction, treatment, exception, education, and responsibility argument.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Dennett resumes by addressing Robert and continues without a handoff.",
+      "audioVerificationReason": "",
+      "importance": 3,
+      "importanceRationale": "It directly answers the con claim that causal formation removes agency from every chooser.",
+      "burdenContact": {
+        "bridgeId": "pro-evolved-social-capacity",
+        "tier": "central",
+        "rationale": "It argues that social intervention can build or restore the capacities constituting free will."
+      },
+      "respondsToIds": [
+        "con-multiscale-development-shapes-choice",
+        "con-self-control-is-biological-and-unchosen",
+        "con-options-do-not-free-the-chooser"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-multiscale-development-shapes-choice",
+          "description": "Accepts the causal history but says education and treatment can counteract some of its effects."
+        },
+        {
+          "targetMoveId": "con-self-control-is-biological-and-unchosen",
+          "description": "Treats biological impairment as grounds for graded excuse rather than universal abolition of responsibility."
+        },
+        {
+          "targetMoveId": "con-options-do-not-free-the-chooser",
+          "description": "Maintains that a causally formed chooser can later acquire the competence to take responsibility."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 1000,
+        "endEvent": 1039,
+        "startMs": 2424120,
+        "endMs": 2536560,
+        "excerpt": "Well, Robert uh You Yes, you you and I are who we are because of that whole long history that goes back to the birth of life. But one of the wonderful things about what civilization has managed to do is to create a perspective where that doesn't matter all that much. And where because of education, because of all the research that you and your colleagues do, we've learned how to address and counteract a lot of the effects. And where we can't counteract them, we excuse people. Some people don't have free will. But many people do have free will that they get because they have been fortunate enough to know They weren't responsible for this, but they were lucky enough to get treated for the conditions that maladapted their brains for citizenship. And I agree with you. We should do a lot more, you say at one point in your book. We've got to have education. We've got to teach people what the what the real sources of a lot of these motivations are. And we are doing it and we have been doing it. And that's what free will is. And it's only because we can do that that we can treat one group of human beings not the young children, not the senile, not the brain damaged as capable of taking responsibility for the judgments they make. And we hold them responsible. And they hold themselves responsible. And"
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-civilization-counteracts-causes-and-excuses-incapacity",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The move coherently distinguishes unchosen causal history from later developed competence and explains how remediation or excuse can follow."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "Education, treatment, and familiar impairment categories support the account, though their success and threshold effects are not documented."
+            },
+            "responsiveness": {
+              "value": 90,
+              "rationale": "It directly answers multiscale causation, biological self-control, and the unchosen chooser by accepting history while disputing its universal consequence."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "The move strongly advances evolved social capacity and graded responsibility across both ordinary and impaired cases."
+            },
+            "precisionClarity": {
+              "value": 82,
+              "rationale": "The remedy-excuse distinction is clear, although saying causal history does not matter much compresses the acknowledged continuing inequalities."
+            },
+            "calibrationCharity": {
+              "value": 88,
+              "rationale": "Dennett explicitly preserves luck, children, senility, brain damage, and failed treatment as exceptions rather than universalizing responsibility."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-civilization-counteracts-causes-and-excuses-incapacity",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The move coherently combines causal history, remediable effects, graded capacity, and excuse for persistent impairment."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "Education and treatment are plausible mechanisms, though their success and the citizenship standard receive limited evidence."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "It directly answers three central con claims while accepting their strongest causal premises."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "It strongly advances evolved social capacity and explains how many agents can acquire responsibility within determinism."
+            },
+            "precisionClarity": {
+              "value": 83,
+              "rationale": "The general structure is clear, though the phrase that history matters less risks overstating what intervention establishes."
+            },
+            "calibrationCharity": {
+              "value": 88,
+              "rationale": "The explicit luck, child, senility, and brain-damage qualifications make the account notably calibrated and humane."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 91,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-fair-nonawful-sanctions",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "sectionId": "responsibility-and-humane-institutions",
+      "moveKind": "reply",
+      "claim": "Civilization needs law and punishment, but the ideal sanction system is fair and non-awful.",
+      "warrant": "Dennett invokes the necessity of law and order and explicitly qualifies the ideal system by fairness and minimized suffering.",
+      "inference": "Responsibility can serve instrumental social coordination without endorsing gratuitous cruelty.",
+      "sourceSpanSelectionRationale": "The span contains the final formal-round punishment argument through the clear fair-and-non-awful qualification; the recognition-corrupted final clause is retained as boundary evidence but not quoted or interpreted.",
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Dennett's ownership is clear, but the last captioned clause is recognition-corrupted; the selected claim relies only on the clear preceding wording.",
+      "audioVerificationReason": "Verify the recognition-corrupted final clause from the prescribed source-audio boundary clip before downstream editorial use.",
+      "importance": 2,
+      "importanceRationale": "It closes the formal exchange on the shared institutional question while preserving Dennett's humanitarian limitation.",
+      "burdenContact": {
+        "bridgeId": "pro-fair-accountability",
+        "tier": "subsidiary",
+        "rationale": "It states the practical form that justified accountability should take."
+      },
+      "respondsToIds": [
+        "con-accepts-instrumental-reward-and-punishment",
+        "con-moral-progress-subtracts-responsibility"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-accepts-instrumental-reward-and-punishment",
+          "description": "Builds on the shared acceptance of instrumental sanctions."
+        },
+        {
+          "targetMoveId": "con-moral-progress-subtracts-responsibility",
+          "description": "Answers the humane-treatment concern by limiting sanctions to a fair and non-awful system."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 1040,
+        "endEvent": 1052,
+        "startMs": 2534480,
+        "endMs": 2562920,
+        "excerpt": "as I've said at one point the ideal system of punishment, and I'm glad you agree with me that punishment is a necessity. You can't have a civilization without punishment, without law and order. The ideal situation uh circumstance of punishment is where you have a system of punishment which is so fair and so non-awful that the person punishes thanks, I needed that."
+      },
+      "judgments": {
+        "passA": {
+          "moveId": "pro-fair-nonawful-sanctions",
+          "assessmentConfidence": "medium",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "Instrumental law and punishment are consistent with a fair, minimally harmful system, and the humanitarian qualification limits the conclusion."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "The need for law and punishment is asserted as institutional necessity rather than supported with comparative evidence in this short closing move."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "The move directly builds on shared acceptance of instrumental sanctions and answers the concern that accountability entails cruelty."
+            },
+            "relevanceBurden": {
+              "value": 82,
+              "rationale": "It advances fair accountability by stating its intended form, though it does not explain how fairness is determined under unequal capacities."
+            },
+            "precisionClarity": {
+              "value": 86,
+              "rationale": "The clear fair-and-non-awful language is precise enough for the selected claim; the corrupted final clause is excluded from evaluation."
+            },
+            "calibrationCharity": {
+              "value": 87,
+              "rationale": "Dennett acknowledges the shared instrumental ground and expressly rejects awful punishment, keeping the claim humane and appropriately limited."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "pro-fair-nonawful-sanctions",
+          "assessmentConfidence": "medium",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The necessity claim and humane qualification fit together coherently as an instrumental accountability position."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The need for law and punishment is asserted rather than demonstrated, while the fairness condition is explicit."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "It builds directly on shared instrumental agreement and answers the concern about cruel institutional consequences."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It supports fair accountability, though the brief ending cannot specify how fairness would be achieved."
+            },
+            "precisionClarity": {
+              "value": 80,
+              "rationale": "The clear fair-and-non-awful formulation is assessable despite the excluded recognition-corrupted final clause."
+            },
+            "calibrationCharity": {
+              "value": 90,
+              "rationale": "The move carefully limits punishment by fairness and reduced suffering and does not rely on the corrupted wording."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "medium"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "The pro case addresses compatibility, developed control, exceptions, and humane sanctions through scored moves; no separate debate-wide consequence remains uncaptured.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [
+          "pro-compatible-freedom",
+          "pro-reasons-control",
+          "pro-evolved-social-capacity",
+          "pro-fair-accountability"
+        ],
+        "completionCriterion": "Whether the pro side established a causally compatible, reasons-responsive capacity that supports graded and humane accountability.",
+        "relatedMoveIds": [
+          "pro-compatibilism-and-receptivity-to-reasons",
+          "pro-evolution-builds-foreseeing-self-control",
+          "pro-capacity-thresholds-and-diminished-control",
+          "pro-civilization-counteracts-causes-and-excuses-incapacity",
+          "pro-fair-nonawful-sanctions"
+        ],
+        "distinctConsequence": "No additional debate-wide consequence exists beyond the compatibility, capacity, exception, and sanction issues already evaluated move by move.",
+        "alreadyCapturedBy": [
+          "pro-compatibilism-and-receptivity-to-reasons",
+          "pro-capacity-thresholds-and-diminished-control",
+          "pro-civilization-counteracts-causes-and-excuses-incapacity"
+        ],
+        "counterfactual": "Without the scored compatibility and capacity moves, the pro burden would be incomplete, but those consequences are already reflected in their ratings."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "The con case addresses originating control, causal continuity, biological self-control, and humane nonblame through scored moves; no distinct uncaptured consequence remains.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [
+          "con-no-originating-control",
+          "con-causal-continuity",
+          "con-biological-self-control",
+          "con-humane-nonblame"
+        ],
+        "completionCriterion": "Whether the con side showed that real choices and self-control fail to supply freedom because their formative causes were not chosen.",
+        "relatedMoveIds": [
+          "con-intent-does-not-settle-freedom",
+          "con-multiscale-development-shapes-choice",
+          "con-genes-culture-and-continuous-causal-arc",
+          "con-self-control-is-biological-and-unchosen",
+          "con-options-do-not-free-the-chooser"
+        ],
+        "distinctConsequence": "No additional debate-wide consequence remains separate from the causal-origin, control, and institutional arguments already assessed in the ledger.",
+        "alreadyCapturedBy": [
+          "con-intent-does-not-settle-freedom",
+          "con-self-control-is-biological-and-unchosen",
+          "con-options-do-not-free-the-chooser"
+        ],
+        "counterfactual": "Without the scored causal-origin and chooser replies, the con burden would be incomplete, but those consequences are already represented in their ratings."
+      }
+    }
+  },
+  "audit": {
+    "inventoryStructureUnchanged": true,
+    "acceptedJudgmentsPreserved": true,
+    "disputesResolved": 16,
+    "unresolvedDisputes": 0,
+    "requiredAudioChecksComplete": true,
+    "calculatedMoveScoresAbsent": true,
+    "calculatedSectionScoresAbsent": true,
+    "calculatedOverallScoresAbsent": true,
+    "readyForSingleScorePass": true
+  }
+}

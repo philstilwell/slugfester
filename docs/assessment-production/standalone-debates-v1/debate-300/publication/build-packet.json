@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "300",
+  "debateId": "dennett-sapolsky-free-will-2023",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/inventory.json",
+      "sha256": "a5595a42500c3dddb4a8c08f1a48ca9d0c3ed58daf3ab384d089477eaa967ff3",
+      "bytes": 89979
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/score-pass/output.json",
+      "sha256": "ba9bf1a104a2d2e46ce6a3cfad8bfcf8a073179e06462a2f0f0749ed4c26902f",
+      "bytes": 12799
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/publication/skeleton.json",
+      "sha256": "ab9e9b342724a43d724f1719d06cf2f5dcf5ecef02feb79bffa0edb7581e1212",
+      "bytes": 9915
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/publication/reference-metrics.json",
+      "sha256": "dd24227e7f9ac1767010cf321aa682474c10140af1a0f47ff58378f52205af64",
+      "bytes": 54174
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

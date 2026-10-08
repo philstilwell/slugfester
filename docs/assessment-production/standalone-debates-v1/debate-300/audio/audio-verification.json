@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "300",
+  "debateId": "dennett-sapolsky-free-will-2023",
+  "completedAt": "2026-10-08T15:56:51.052325+00:00",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/inventory.json",
+    "sha256": "a5595a42500c3dddb4a8c08f1a48ca9d0c3ed58daf3ab384d089477eaa967ff3",
+    "bytes": 89979
+  },
+  "triggeredMoveIds": [
+    "pro-fair-nonawful-sanctions"
+  ],
+  "checks": [
+    {
+      "moveId": "pro-fair-nonawful-sanctions",
+      "status": "complete-eligible-inference-confirmed",
+      "method": "Controller compared full canonical span, source handoffs, and existing targeted automated audio transcript. No direct human listening claimed.",
+      "results": [
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-300/audio/final-reply-verification.json",
+          "sha256": "7edb087c412b189bf5b7f731acb77ce200f7434bdf03c31594512ceea0454fe7",
+          "bytes": 2796
+        }
+      ],
+      "attributionDecision": "Daniel Dennett owns the argument; following moderator questions are excluded.",
+      "finding": "Dennett owns the final formal reply. The existing 42:08\u201343:00 automated audio check covers the complete selected 42:14\u201342:43 passage and confirms his claim that civilization needs punishment and law and order, followed by the explicit ideal of a fair and non-awful system. Both canonical captions and auxiliary recognition leave the final punished-person clause garbled. That final clause is excluded from quotation, inference and clarity or logical penalties; it is not needed for the selected claim. The subsequent moderator questions are outside scope. This is automated recognition checked against full surrounding text, not direct human listening or independent verification of the institutional claim.",
+      "sourceQualification": "Dennett owns the final formal reply. The existing 42:08\u201343:00 automated audio check covers the complete selected 42:14\u201342:43 passage and confirms his claim that civilization needs punishment and law and order, followed by the explicit ideal of a fair and non-awful system. Both canonical captions and auxiliary recognition leave the final punished-person clause garbled. That final clause is excluded from quotation, inference and clarity or logical penalties; it is not needed for the selected claim. The subsequent moderator questions are outside scope. This is automated recognition checked against full surrounding text, not direct human listening or independent verification of the institutional claim.",
+      "unresolvedMaterialUsedForJudgment": false
+    }
+  ],
+  "cost": {
+    "status": "all-paid-inputs-successful-no-retries",
+    "debateNumber": "300",
+    "model": "gpt-4o-mini-transcribe",
+    "knownSuccessfulCallCostUsd": 0.0108525,
+    "maximumPossibleTotalCostUsd": 0.0108525,
+    "directCostUsd": 0.0108525,
+    "costIsEstimatedFromReturnedUsage": true,
+    "invoiceVerified": false,
+    "paidCalls": 5,
+    "failedPaidCalls": 0,
+    "uncertainCalls": 0,
+    "automaticRetries": 0,
+    "communicatedCumulativeEstimateUsd": [
+      0.03,
+      0.15
+    ],
+    "communicatedMaximumUsd": 0.5,
+    "authorizedRunCapUsd": 0.5,
+    "withinCommunicatedCeiling": true,
+    "inputResults": [
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/audio/source-call-core-con.json",
+        "sha256": "8d4cef854e061ef213f01b13c7930318fc41db4779aa05c88228593d3bb7ff36",
+        "bytes": 1173
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/audio/source-call-core-pro.json",
+        "sha256": "c15b2504b114c94bfba7e13592afde4b5a91c3740b247c0953e8b5694c53f715",
+        "bytes": 1187
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/audio/source-call-machine-qualification.json",
+        "sha256": "3743b42226954526120efabdc88815ab06d59ff3fac79d1ee057e1e0f9bcb03e",
+        "bytes": 1260
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/audio/source-call-quote-replies.json",
+        "sha256": "e110a0bc44ebb5de9285c8ce1e8d955a39a8ccd265b340e30e897f54eb7acd5f",
+        "bytes": 1247
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/audio/source-call-round-boundary.json",
+        "sha256": "111098a25da58e086e8036d694cd1ebda0e5eb4d51dc72250197a8722757a11e",
+        "bytes": 1205
+      }
+    ],
+    "newVerificationCalls": 0
+  },
+  "wordingLimitations": [
+    "The garbled final punished-person clause is ineligible for quotation, inference or any assessment penalty.",
+    "Auxiliary recognition supplements the unchanged captions; no direct listening or external fact-checking is claimed.",
+    "All formal-window and interior exclusions remain unchanged."
+  ],
+  "audit": {
+    "requiredAttributionChecks": 1,
+    "completedAttributionChecks": 1,
+    "unresolvedAttributionChecks": 0,
+    "unresolvedMaterialWordingsExcludedFromJudgment": true,
+    "directAudioListeningClaimed": false,
+    "originalCaptionChainUnchanged": true,
+    "allScopeExclusionsUnchanged": true
+  }
+}

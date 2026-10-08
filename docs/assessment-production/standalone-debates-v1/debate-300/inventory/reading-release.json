@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "2.0-authenticated-subscription-worker-evidence",
+  "status": "authenticated-and-released-for-first-unsaved-candidate",
+  "debateNumber": "300",
+  "debateId": "dennett-sapolsky-free-will-2023",
+  "createdAt": "2026-10-08T05:25:07.541998+00:00",
+  "agentPath": "/root/inventory300",
+  "actualContextModels": [
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low"
+    }
+  ],
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/execution-plan.json",
+    "sha256": "5dcb46b678952b62b36ec353e6bd03468bde7775c7e3c632920e412336fe423a",
+    "bytes": 7302
+  },
+  "sessionSnapshot": {
+    "externalLocalSessionPath": "/Users/philstilwell/.codex/sessions/2026/10/08/rollout-2026-10-08T01-23-14-01a119f7-366b-7b62-88cd-beecf9b9d4b1.jsonl",
+    "sessionId": "01a119f7-366b-7b62-88cd-beecf9b9d4b1",
+    "parentThreadId": "01a0f359-eb70-7da1-8b88-83ebe51a754a",
+    "sha256": "f63f2bfb538b35993c38bc2a077299b9e7d76b7bd88d5cce721ec6b519f92385",
+    "bytes": 871343,
+    "rawSessionCommitted": false
+  },
+  "authentication": "ChatGPT subscription via built-in collaboration; no API inference",
+  "isolation": "Fresh fork-none context, restricted inputs and disjoint output. No operating-system sandbox claimed. Controller inspects tool calls separately.",
+  "attempts": 1,
+  "retries": 0,
+  "attemptNumber": 1,
+  "replacementAuthorization": null,
+  "directIncrementalCostUsd": 0,
+  "inputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/execution-plan.json",
+      "sha256": "5dcb46b678952b62b36ec353e6bd03468bde7775c7e3c632920e412336fe423a",
+      "bytes": 7302,
+      "literalCompleteReadAuthenticated": true,
+      "nonemptyLines": 184,
+      "missingLines": [],
+      "toolOutputEvidence": [
+        {
+          "callId": "call_40cffc2d442b42af976abdf964f6bfd1",
+          "sourceLineCount": 65,
+          "firstSourceLine": 1,
+          "lastSourceLine": 171
+        },
+        {
+          "callId": "call_836740bb0fb048b581a443dd89b71a56",
+          "sourceLineCount": 29,
+          "firstSourceLine": 18,
+          "lastSourceLine": 184
+        },
+        {
+          "callId": "call_6336c7cc358846039dfd438500e86531",
+          "sourceLineCount": 184,
+          "firstSourceLine": 1,
+          "lastSourceLine": 184
+        }
+      ]
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/workflow/inventory/reader.txt",
+      "sha256": "2a04e53a9a66ffcc59f06c1f0bdffa481b997d362e07021bd7ac8e226b131cb8",
+      "bytes": 134733,
+      "literalCompleteReadAuthenticated": true,
+      "nonemptyLines": 1971,
+      "missingLines": [],
+      "toolOutputEvidence": [
+        {
+          "callId": "call_00350e3e0e074248b282c0f60ace58e6",
+          "sourceLineCount": 103,
+          "firstSourceLine": 1,
+          "lastSourceLine": 2027
+        },
+        {
+          "callId": "call_96e114e3098e4981a720c5cfd4f2f09e",
+          "sourceLineCount": 120,
+          "firstSourceLine": 121,
+          "lastSourceLine": 240
+        },
+        {
+          "callId": "call_9dcb8ea387cf48828eee75b905264929",
+          "sourceLineCount": 120,
+          "firstSourceLine": 241,
+          "lastSourceLine": 360
+        },
+        {
+          "callId": "call_31dc25b8be41481dbcfa77c905b555f0",
+          "sourceLineCount": 120,
+          "firstSourceLine": 361,
+          "lastSourceLine": 480
+        },
+        {
+          "callId": "call_b2c325736f0549a0aad974fcd4600dd3",
+          "sourceLineCount": 180,
+          "firstSourceLine": 481,
+          "lastSourceLine": 660
+        },
+        {
+          "callId": "call_2ed52cac4b534ccaad6b2fc92da078f3",
+          "sourceLineCount": 220,
+          "firstSourceLine": 661,
+          "lastSourceLine": 880
+        },
+        {
+          "callId": "call_5a9aa65e20e146799593c2654a60ec07",
+          "sourceLineCount": 220,
+          "firstSourceLine": 881,
+          "lastSourceLine": 1100
+        },
+        {
+          "callId": "call_8282516704334bf79862099a18b718bf",
+          "sourceLineCount": 220,
+          "firstSourceLine": 1101,
+          "lastSourceLine": 1320
+        },
+        {
+          "callId": "call_07d417d8d8564b2892b910599a22cd1a",
+          "sourceLineCount": 220,
+          "firstSourceLine": 1321,
+          "lastSourceLine": 1540
+        },
+        {
+          "callId": "call_006935fb27c048ec80809c9f1795d65a",
+          "sourceLineCount": 221,
+          "firstSourceLine": 15,
+          "lastSourceLine": 2027
+        },
+        {
+          "callId": "call_40cffc2d442b42af976abdf964f6bfd1",
+          "sourceLineCount": 219,
+          "firstSourceLine": 23,
+          "lastSourceLine": 2027
+        },
+        {
+          "callId": "call_836740bb0fb048b581a443dd89b71a56",
+          "sourceLineCount": 63,
+          "firstSourceLine": 73,
+          "lastSourceLine": 2027
+        }
+      ]
+    }
+  ],
+  "toolCallRecords": [
+    {
+      "callId": "call_c9db2e6625194d5282dbec9b6b77bbe6",
+      "tool": "send_message",
+      "argumentsSha256": "1c24c40c80cb7de81e5eb8a3dce8c9b254a88c051423e43fdbd85075d23d0437"
+    },
+    {
+      "callId": "call_87a7aaa216384d99ab38e2c0f5eeec08",
+      "tool": "wait_agent",
+      "argumentsSha256": "3a027d123c8e10187e3f65a177c8255cd42b56d9b1e45cd4cd48d9c43a8cb003"
+    },
+    {
+      "callId": "call_00350e3e0e074248b282c0f60ace58e6",
+      "tool": "exec",
+      "argumentsSha256": "efca4d2be94c4ba5b4c8e40b3b6da2748bab01395a6b21ed2c9506713b0414b6"
+    },
+    {
+      "callId": "call_96e114e3098e4981a720c5cfd4f2f09e",
+      "tool": "exec",
+      "argumentsSha256": "f0622a19678342744b3e68321de21d73332245da4a28dcd9ebccf7ee9921fc3c"
+    },
+    {
+      "callId": "call_9dcb8ea387cf48828eee75b905264929",
+      "tool": "exec",
+      "argumentsSha256": "543918803ed8bd8464509e7e5d23e3f8cc2cd2b8beafe1d62f039d4ea7708bc6"
+    },
+    {
+      "callId": "call_31dc25b8be41481dbcfa77c905b555f0",
+      "tool": "exec",
+      "argumentsSha256": "9694438e92a19c09b3c63620aceb3ded1c60dd7e3250f2d041f4d7e7126cfc33"
+    },
+    {
+      "callId": "call_b2c325736f0549a0aad974fcd4600dd3",
+      "tool": "exec",
+      "argumentsSha256": "e745c12a2c2e61c13be8d9d3f87e0999a70067b444d04885790f4dae617d030e"
+    },
+    {
+      "callId": "call_2ed52cac4b534ccaad6b2fc92da078f3",
+      "tool": "exec",
+      "argumentsSha256": "60afa2251a2abfdad8d25c4dd0f17f380f5c77a3f2a31928f31e6d959eb9390e"
+    },
+    {
+      "callId": "call_5a9aa65e20e146799593c2654a60ec07",
+      "tool": "exec",
+      "argumentsSha256": "bc9c94c159ac7ca67aa09a4d289ebf2bcbe2ce2aad3b3da4c985e50b4ef12790"
+    },
+    {
+      "callId": "call_8282516704334bf79862099a18b718bf",
+      "tool": "exec",
+      "argumentsSha256": "6f282e2f7dd44e008bbba23034a5c15ab2379d3f80ba71cbcbfe1baeeb8da6e1"
+    },
+    {
+      "callId": "call_07d417d8d8564b2892b910599a22cd1a",
+      "tool": "exec",
+      "argumentsSha256": "539eec2d05326d54709ce4babf00401c6619966400089cd052ca5e4d1aa1c70a"
+    },
+    {
+      "callId": "call_006935fb27c048ec80809c9f1795d65a",
+      "tool": "exec",
+      "argumentsSha256": "fbfc6e7f16b38bc29a259f2fba13f816ff271862e288224171d03eb7ae7fc2d3"
+    },
+    {
+      "callId": "call_40cffc2d442b42af976abdf964f6bfd1",
+      "tool": "exec",
+      "argumentsSha256": "4dc9a5c482f60e6323d3841d2b6e2797ac854373492e3523943ab6fe0da642ec"
+    },
+    {
+      "callId": "call_836740bb0fb048b581a443dd89b71a56",
+      "tool": "exec",
+      "argumentsSha256": "5b27e6fb872edc79cd8f9432e122b3ce4314749f7d0541d841dcfa69b9832a7e"
+    },
+    {
+      "callId": "call_6336c7cc358846039dfd438500e86531",
+      "tool": "exec",
+      "argumentsSha256": "43ec048a13761e8dc6fe74bdc368ec4f143b320f8113f021af73ab72275da645"
+    },
+    {
+      "callId": "call_bbf760b675804bbfa6a7a55ac1fe13ec",
+      "tool": "send_message",
+      "argumentsSha256": "be74b35f30743baf82b2f2a14c98b9af0000bbf970041ab383c671b6981f19a2"
+    },
+    {
+      "callId": "call_e584cbff728342538afa2f42fdcba01a",
+      "tool": "wait_agent",
+      "argumentsSha256": "3a027d123c8e10187e3f65a177c8255cd42b56d9b1e45cd4cd48d9c43a8cb003"
+    }
+  ],
+  "outputAbsentAtRelease": true
+}

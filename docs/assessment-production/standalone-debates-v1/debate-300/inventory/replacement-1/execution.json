@@ -1,0 +1,355 @@
+{
+  "schemaVersion": "2.0-authenticated-subscription-worker-evidence",
+  "status": "authenticated-completed-first-submission",
+  "debateNumber": "300",
+  "debateId": "dennett-sapolsky-free-will-2023",
+  "createdAt": "2026-10-08T15:55:41.650528+00:00",
+  "agentPath": "/root/inventory300replacement",
+  "actualContextModels": [
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low"
+    }
+  ],
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/replacement-1/execution-plan.json",
+    "sha256": "4c4d18d99b11c7dcb62412895d30e5ce124cc27ea4d16570f4e1ddbf159ebc4e",
+    "bytes": 7619
+  },
+  "sessionSnapshot": {
+    "externalLocalSessionPath": "/Users/philstilwell/.codex/sessions/2026/10/08/rollout-2026-10-08T11-42-59-01a11c2e-9ccf-7792-b976-551aaf2fdacd.jsonl",
+    "sessionId": "01a11c2e-9ccf-7792-b976-551aaf2fdacd",
+    "parentThreadId": "01a0f359-eb70-7da1-8b88-83ebe51a754a",
+    "sha256": "4f92ba7e6b5f023e777448984e4d065a1d06ff5570d65f5884d1df08805a89ea",
+    "bytes": 1986916,
+    "rawSessionCommitted": false
+  },
+  "authentication": "ChatGPT subscription via built-in collaboration; no API inference",
+  "isolation": "Fresh fork-none context, restricted inputs and disjoint output. No operating-system sandbox claimed. Controller inspects tool calls separately.",
+  "attempts": 1,
+  "retries": 0,
+  "attemptNumber": 2,
+  "replacementAuthorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/replacement-authorization.json",
+    "sha256": "301ab85a9bfc69d4d2cb1da9c677dba7dcd7221d4c0127d41bb0a9a17ab610ad",
+    "bytes": 1309
+  },
+  "directIncrementalCostUsd": 0,
+  "inputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/replacement-1/execution-plan.json",
+      "sha256": "4c4d18d99b11c7dcb62412895d30e5ce124cc27ea4d16570f4e1ddbf159ebc4e",
+      "bytes": 7619,
+      "literalCompleteReadAuthenticated": true,
+      "nonemptyLines": 190,
+      "missingLines": [],
+      "toolOutputEvidence": [
+        {
+          "callId": "call_c2f7e1122fea4f08a5553ade7ee5ff5a",
+          "sourceLineCount": 190,
+          "firstSourceLine": 1,
+          "lastSourceLine": 190
+        },
+        {
+          "callId": "call_602cec5a3a3e46f89ae2a3db17925005",
+          "sourceLineCount": 68,
+          "firstSourceLine": 1,
+          "lastSourceLine": 190
+        },
+        {
+          "callId": "call_76eb5da0e79642bd833f626a1c505a31",
+          "sourceLineCount": 5,
+          "firstSourceLine": 1,
+          "lastSourceLine": 190
+        },
+        {
+          "callId": "call_5db40ab9aca74e3f97532b31a1816583",
+          "sourceLineCount": 5,
+          "firstSourceLine": 1,
+          "lastSourceLine": 190
+        }
+      ]
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/workflow/inventory/reader.txt",
+      "sha256": "2a04e53a9a66ffcc59f06c1f0bdffa481b997d362e07021bd7ac8e226b131cb8",
+      "bytes": 134733,
+      "literalCompleteReadAuthenticated": true,
+      "nonemptyLines": 1971,
+      "missingLines": [],
+      "toolOutputEvidence": [
+        {
+          "callId": "call_ddd4c63a37194adcb0ad7b2a6dda7dc4",
+          "sourceLineCount": 103,
+          "firstSourceLine": 1,
+          "lastSourceLine": 2027
+        },
+        {
+          "callId": "call_a677d353012b4ba2b6b0bae9c61b9f95",
+          "sourceLineCount": 240,
+          "firstSourceLine": 121,
+          "lastSourceLine": 360
+        },
+        {
+          "callId": "call_a9c523c40e154803bd23f581e0548238",
+          "sourceLineCount": 240,
+          "firstSourceLine": 361,
+          "lastSourceLine": 600
+        },
+        {
+          "callId": "call_7bb8257a54de491e86ab63544f12df77",
+          "sourceLineCount": 240,
+          "firstSourceLine": 601,
+          "lastSourceLine": 840
+        },
+        {
+          "callId": "call_2c1bca5cc0124be18cadcdd15737927a",
+          "sourceLineCount": 240,
+          "firstSourceLine": 841,
+          "lastSourceLine": 1080
+        },
+        {
+          "callId": "call_80d2be1ad4b9499f987271f197b6bd06",
+          "sourceLineCount": 240,
+          "firstSourceLine": 1081,
+          "lastSourceLine": 1320
+        },
+        {
+          "callId": "call_235a39ee29454779840630766979fcf8",
+          "sourceLineCount": 240,
+          "firstSourceLine": 1321,
+          "lastSourceLine": 1560
+        },
+        {
+          "callId": "call_9c81299dbccb466e9ce92e5e714e3e9b",
+          "sourceLineCount": 232,
+          "firstSourceLine": 15,
+          "lastSourceLine": 2027
+        },
+        {
+          "callId": "call_602cec5a3a3e46f89ae2a3db17925005",
+          "sourceLineCount": 224,
+          "firstSourceLine": 73,
+          "lastSourceLine": 2027
+        }
+      ]
+    }
+  ],
+  "toolCallRecords": [
+    {
+      "callId": "call_c2f7e1122fea4f08a5553ade7ee5ff5a",
+      "tool": "exec",
+      "argumentsSha256": "647ef78e66879cc125c8e3c43b265c9da20454141c0279f3308e55847baa113a"
+    },
+    {
+      "callId": "call_ddd4c63a37194adcb0ad7b2a6dda7dc4",
+      "tool": "exec",
+      "argumentsSha256": "d3ba77899099dc43e931301e7f0df77528ebed45ace0e65fb8db7178e308ebdb"
+    },
+    {
+      "callId": "call_a677d353012b4ba2b6b0bae9c61b9f95",
+      "tool": "exec",
+      "argumentsSha256": "e8425c4ee60afd70f029ba7ef4e4a2da5415bc8e1fbf4a5e796bfd20d1cb18f1"
+    },
+    {
+      "callId": "call_a9c523c40e154803bd23f581e0548238",
+      "tool": "exec",
+      "argumentsSha256": "190895a7f524a0b7a9f805e0425f85c3fc684fc8b458bedc690157546c5312ae"
+    },
+    {
+      "callId": "call_7bb8257a54de491e86ab63544f12df77",
+      "tool": "exec",
+      "argumentsSha256": "9c9cd92332705d9b6b6ffab4fe96cf23ba6cc2b9ee06857fda378fe0116c6182"
+    },
+    {
+      "callId": "call_2c1bca5cc0124be18cadcdd15737927a",
+      "tool": "exec",
+      "argumentsSha256": "b303d8aad0d613877cf0bbf0c7f5eefb7c0cebb60b490cc27104f7339c88d446"
+    },
+    {
+      "callId": "call_80d2be1ad4b9499f987271f197b6bd06",
+      "tool": "exec",
+      "argumentsSha256": "3b8d42641b058ebfe658d78e00d4c5580ea2208392d045b6f309c5326cde51f4"
+    },
+    {
+      "callId": "call_235a39ee29454779840630766979fcf8",
+      "tool": "exec",
+      "argumentsSha256": "0f03e50bdc3ca33845c2f619a1e2c0b75b26c9548d1541a3a3e8bc4dc1b96049"
+    },
+    {
+      "callId": "call_9c81299dbccb466e9ce92e5e714e3e9b",
+      "tool": "exec",
+      "argumentsSha256": "f8ec76122a212f974822a4a5cecf6b1d6d4376e792011ad916614cb9f3a0d310"
+    },
+    {
+      "callId": "call_602cec5a3a3e46f89ae2a3db17925005",
+      "tool": "exec",
+      "argumentsSha256": "ba972a94b89636f5de31ee9ec91047545a647ad7d1e2050a2c8f5b01f33731f3"
+    },
+    {
+      "callId": "call_b4ebdec1ca584331955f3a002ce1e8af",
+      "tool": "send_message",
+      "argumentsSha256": "5c5bb5e606d148c4bf917010caf08bfb201b236c0ff4a15e2665f1c8ffe02c8d"
+    },
+    {
+      "callId": "call_c46c8045c08843a686f174558233d23f",
+      "tool": "wait_agent",
+      "argumentsSha256": "7d04d57c16360ab72473962796ad05822bc069874d59d5edcc66fd72a377fbfb"
+    },
+    {
+      "callId": "call_5863e05d97e74eadb559909df5f85ca9",
+      "tool": "exec",
+      "argumentsSha256": "c5b743ea844980c42837edb258d1367b306bdae99fd60e25dcfe1d92fa3e4e42"
+    },
+    {
+      "callId": "call_41edbee5196f43ebb41a15c0f279d3a7",
+      "tool": "exec",
+      "argumentsSha256": "f56eb96fe4750625b86fb853323b51ac174dca916180976e5807bc27aea2e700"
+    },
+    {
+      "callId": "call_3daad2d0226c49fd8f08f6a6220c016a",
+      "tool": "exec",
+      "argumentsSha256": "9fabb698ce2cfc70c3dbccd47e288e3ef3049f01d8679618f3b25f7b99a07f5b"
+    },
+    {
+      "callId": "call_ac629aa7b42b4bab8f6773b988f9dc7a",
+      "tool": "exec",
+      "argumentsSha256": "7fd528c7fea635834471f6c64e71d3c8687c15b39641e29c04c2f5604ff636df"
+    },
+    {
+      "callId": "call_4f532a71789245f88212c8515e6152ae",
+      "tool": "exec",
+      "argumentsSha256": "3ea8607d48b2f1c3677463e2bf31477d4c4323128a79680c7b144689783f5252"
+    },
+    {
+      "callId": "call_58918d39c7134a60a7bb9889c4eb752a",
+      "tool": "exec",
+      "argumentsSha256": "173077495f7baaf801613f2133679b7d9ceb675a000287c6d3c499614e34beac"
+    },
+    {
+      "callId": "call_b1154b0068374b6ca1a8b885ac4f1153",
+      "tool": "exec",
+      "argumentsSha256": "cf62d1d1082df8acfa44b027b99f41a6b454046dca9cce73f6a0ac4b2b5cda21"
+    },
+    {
+      "callId": "call_23f6ba0a622345b7b84033082d57b989",
+      "tool": "exec",
+      "argumentsSha256": "655896d3104e604ec5e5c4c2171e9b2e8c127d667e436ab8cb3f485e00c3aec4"
+    },
+    {
+      "callId": "call_7dbfae5acaf64be39ee0ee0e0dd769a0",
+      "tool": "exec",
+      "argumentsSha256": "f7a51495db1baedffe7a51515548daf3d2655fd9e6af2ef706f9ea71f8792836"
+    },
+    {
+      "callId": "call_ffabde4cfdb0460e829dc0475da2f390",
+      "tool": "exec",
+      "argumentsSha256": "cbf9563f537ba3f8bfeaa4d4f1a307a764326139607d0efd3bf9391ac8b41235"
+    },
+    {
+      "callId": "call_960019a7457c4fadb872480fb2f81320",
+      "tool": "exec",
+      "argumentsSha256": "23f2032e9c750c8dd73495e42e4c26f73766964590fa9d36b550895d9f17b968"
+    },
+    {
+      "callId": "call_a59c21e095e645bbad215abbfe4253cc",
+      "tool": "exec",
+      "argumentsSha256": "85de1aa91ab62314d1a439c8ade133fa4da3431f3e00a1636e9eacfd7469379e"
+    },
+    {
+      "callId": "call_c101f9a39a7e49809a9ab76595762e20",
+      "tool": "exec",
+      "argumentsSha256": "f0e789ebecdb7e7adfeec91f53951d42f60dfba8de7860885bcafe0fb82951df"
+    },
+    {
+      "callId": "call_a6839f5b1c994af78193b7748f345b5e",
+      "tool": "exec",
+      "argumentsSha256": "237e7a977e36ab0d004f111d9352a37d1d4dd791e3c319fa8abd5655a971549b"
+    },
+    {
+      "callId": "call_c9fa8cef36e0434a9fa8fe74b28e6dd5",
+      "tool": "exec",
+      "argumentsSha256": "f0e789ebecdb7e7adfeec91f53951d42f60dfba8de7860885bcafe0fb82951df"
+    },
+    {
+      "callId": "call_d5cc608202b84074886b64ade6f28181",
+      "tool": "exec",
+      "argumentsSha256": "7208b4b3caff862e51d14edd43fde68a7c36a1f29677492dbd97edaea3b9cb6e"
+    },
+    {
+      "callId": "call_5e95e68525484056a899a5c2e986a220",
+      "tool": "exec",
+      "argumentsSha256": "06600444b26f636afe052ffad2836e146102f72bc113c1074e4e7da837034313"
+    },
+    {
+      "callId": "call_b7c49637a0234bc1876fdda92e5b0af0",
+      "tool": "send_message",
+      "argumentsSha256": "b18b37a410c59164125db478e53be9265f05aa42521d8f2c7b1427f4fc3642ed"
+    },
+    {
+      "callId": "call_07de5617feb04df6a46313e9e969fda0",
+      "tool": "exec",
+      "argumentsSha256": "364ed77bde8e69db96a72bd5b563aeae7e94557399c2487bbc9f50d2325de1b0"
+    },
+    {
+      "callId": "call_76eb5da0e79642bd833f626a1c505a31",
+      "tool": "exec",
+      "argumentsSha256": "87e16e778eaf1ad1a19224d47aa5c5597bc7391fa2ca98d3da2816877492d5e4"
+    },
+    {
+      "callId": "call_a1dd85f993c041fabcb584efecfe48bd",
+      "tool": "send_message",
+      "argumentsSha256": "436ef71bbf535ecafe0818921ce39ecd7685b9b71f20ed04e762124c3b327cf3"
+    },
+    {
+      "callId": "call_3acd52e0e65e420db7c01ce77937230f",
+      "tool": "wait_agent",
+      "argumentsSha256": "7d04d57c16360ab72473962796ad05822bc069874d59d5edcc66fd72a377fbfb"
+    },
+    {
+      "callId": "call_231c1f7369cd4c1990bb294e5b6efc6e",
+      "tool": "exec",
+      "argumentsSha256": "01a06262742a9ab1c01c9aece3a3fb0d1773c8b28d55e655372736e8d327a7a7"
+    },
+    {
+      "callId": "call_98a3f26e31c6492c8e6d47810e42a5ea",
+      "tool": "exec",
+      "argumentsSha256": "e2b29530ce40a3a97c6cdc6e34d7ca84163ebe65fa6d346a95601ce6bba548af"
+    },
+    {
+      "callId": "call_5db40ab9aca74e3f97532b31a1816583",
+      "tool": "exec",
+      "argumentsSha256": "2bfd4cd2fbc96861c823d054366c7d7be6a2c9660990c81ddf9a1b1f1fd56018"
+    },
+    {
+      "callId": "call_d320ef3b979149909743aa36952025cb",
+      "tool": "send_message",
+      "argumentsSha256": "9cb76118a7f2db29173520430d40ff1e05134e61c997b16daa6190fc9013b10f"
+    },
+    {
+      "callId": "call_37296509418d49e28253243cf453a746",
+      "tool": "wait_agent",
+      "argumentsSha256": "7d04d57c16360ab72473962796ad05822bc069874d59d5edcc66fd72a377fbfb"
+    },
+    {
+      "callId": "call_2859887681c04aa9a6635da55249f6e8",
+      "tool": "exec",
+      "argumentsSha256": "1b440d111bceaa94d258edef6fa2f8f4ba1dda7fd16368e32cb05c8b6b6945b5"
+    },
+    {
+      "callId": "call_9ac0bf1c8e6c4f8db157667bd6ec3a65",
+      "tool": "send_message",
+      "argumentsSha256": "f711eb58382a90684e1f31c51f7f5b915aa36d39b8bef8ce1d0019234ec5a4f1"
+    }
+  ],
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/replacement-1/draft-parts.json",
+    "sha256": "3158065acc7d13a6e61e156068b6b5f9384023bcc747107d345f414b86fefc14",
+    "bytes": 47602
+  },
+  "handoff": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-300/inventory/replacement-1/draft-parts.json.handoff.json",
+    "sha256": "6e7666ed0ee4e59ccb78dfacb13d968bf36aa38127aa028a0374112f91271513",
+    "bytes": 1191
+  }
+}

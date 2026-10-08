@@ -14335,5 +14335,52 @@ export const debateSummaries = [
         "title": "Belief, relationship, and salvation"
       }
     ]
+  },
+  {
+    "id": "dennett-sapolsky-free-will-2023",
+    "number": "300",
+    "title": "Daniel Dennett vs Robert Sapolsky — Do We Have Free Will?",
+    "year": 2023,
+    "label": "Free Will and Biological Responsibility",
+    "date": "2026-10-08",
+    "duration": "40 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=aYzFH8xqhns",
+    "motion": "Do human beings have free will?",
+    "summary": "Sapolsky narrowly prevailed by pressing unchosen causal origins, while Dennett built a strong compatibilist account of evolved, reasons-responsive self-control and humane responsibility.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "Humans can have free will",
+        "speaker": "Daniel Dennett",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Humans do not have free will",
+        "speaker": "Robert Sapolsky",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 82,
+      "con": 84,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Causal origins of agency"
+      },
+      {
+        "title": "Evolved self-control and reasons"
+      },
+      {
+        "title": "Responsibility and humane institutions"
+      },
+      {
+        "title": "Quotation, interpretation, and intuition"
+      },
+      {
+        "title": "Determinism, choice, and unpredictability"
+      }
+    ]
   }
 ];

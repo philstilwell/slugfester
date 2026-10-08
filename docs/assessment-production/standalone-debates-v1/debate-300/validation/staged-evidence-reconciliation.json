@@ -1,0 +1,30 @@
+{
+  "counts": {
+    "ignoredRuntimeSourceReferences": 170,
+    "exactStagedReferences": 643,
+    "durableFilesStagedExactly": 256
+  },
+  "mismatches": [],
+  "historicalReferences": [
+    {
+      "originalReference": {
+        "from": "docs/assessment-production/standalone-debates-v1/debate-300/publication/assembly-evidence.json",
+        "reference": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-300/publication/output.json",
+          "sha256": "d1ab86e15a190f458ff1124e549f0bbab1c7e6beb5b85573ecd6b35517dad7ef",
+          "bytes": 52455
+        },
+        "stagedExists": true,
+        "stagedSha256": "6313a87ae5469007706521a468bfd3782d3ed20eadcc9a80cc55cfc16ce0977a"
+      },
+      "resolvedPreservedBytes": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/publication/rhetorical-tag-review-1/preserved-prior-output.json",
+        "sha256": "d1ab86e15a190f458ff1124e549f0bbab1c7e6beb5b85573ecd6b35517dad7ef",
+        "bytes": 52455
+      },
+      "reason": "Assembly evidence records the approved pre-tag candidate. Exact original bytes were preserved by the audited tag-only application."
+    }
+  ],
+  "status": "passed-staged-evidence-reconciliation",
+  "boundary": "Before immediate-precommit check; stage and recheck the final test record before committing."
+}

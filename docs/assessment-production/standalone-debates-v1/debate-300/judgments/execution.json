@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0-standalone-judgment-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": 300,
+  "debateId": "dennett-sapolsky-free-will-2023",
+  "completedAt": "2026-10-08T16:07:44.826053+00:00",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription via built-in collaboration",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "mutuallyBlind": true,
+    "parallelDispatch": true,
+    "isolationMethod": "Fresh fork-none contexts; identical complete assessment evidence; disjoint outputs; actual model and full reading authenticated; controller-inspected tool access. Procedural isolation, not an operating-system sandbox.",
+    "inventorySha256": "a5595a42500c3dddb4a8c08f1a48ca9d0c3ed58daf3ab384d089477eaa967ff3",
+    "automaticRetries": 0,
+    "directIncrementalCostUsd": 0,
+    "ancillaryProtocolRead": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-a/ancillary-protocol-read.json",
+      "sha256": "c9a493c304f6c247e082504ec393f4c6a2a47e1e5dc33d564a465f58d08bfbeb",
+      "bytes": 966
+    },
+    "transportNotes": "Initial terminal stdin and unprivileged local-socket failures changed no candidate bytes or submission attempts; each stored candidate was checked through a safe pipe and saved once after source-compliance release. Temporary processes closed.",
+    "sourceClarification": "Both reviewers confirmed, without candidate changes, that disputed book context is not externally verified and recognition noise supplied no deduction."
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-a/output.json",
+      "outputSha256": "042ab400c2a6b264af356bebf5d2d8588b8798dafc8e08970c3471e2a52ffc3f",
+      "judgmentCount": 23,
+      "validationStatus": "passed",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "firstSubmissionOnly": true,
+      "directIncrementalCostUsd": 0,
+      "executionEvidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-a/execution.json",
+        "sha256": "d4ac4bc1b0711d2259d38bc39e6be95173a0937d0fcc5147970085e2016f5b91",
+        "bytes": 12237
+      },
+      "readingEvidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-a/reading-release.json",
+        "sha256": "48b02cccf1ee36c5ff5cc9bcb903e93d614b5c8b3367523706aa494823862206",
+        "bytes": 8849
+      },
+      "sourceEligibility": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-a/source-eligibility-review.json",
+        "sha256": "cfcebea25a1a21c605474f4c89fee056023ccf9b24667392640e89fbd5be357a",
+        "bytes": 3990
+      },
+      "plan": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-a/execution-plan.json",
+        "sha256": "f1e5efc2389f8d47dd79d4b173830dd54de70924b17235bc4a7a68b05038d3df",
+        "bytes": 7946
+      },
+      "submissionRelease": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-a/submission-release.json",
+        "sha256": "6890769bd824538c7822835044b1350d5471ac908431e8808cf77f0179db7a19",
+        "bytes": 1309
+      }
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-b/output.json",
+      "outputSha256": "cdcd61fc3072acecda1db9daa4776ab19e64a5765dcdc0858d95a61bd5d91004",
+      "judgmentCount": 23,
+      "validationStatus": "passed",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "firstSubmissionOnly": true,
+      "directIncrementalCostUsd": 0,
+      "executionEvidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-b/execution.json",
+        "sha256": "914886422ad0fe6a860d783f36c4791484a7ec1c087c524cec3c6dd815b2dfce",
+        "bytes": 13136
+      },
+      "readingEvidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-b/reading-release.json",
+        "sha256": "01b924b33dbea9d0f07a037a5fda73bf7c299eaf02ae4217b129065ece707f51",
+        "bytes": 9756
+      },
+      "sourceEligibility": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-b/source-eligibility-review.json",
+        "sha256": "939160f1e7e47fec538ee3c741675c7093cfe8864fc47f9b06b913b05766a6a3",
+        "bytes": 3736
+      },
+      "plan": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-b/execution-plan.json",
+        "sha256": "097f2a32f27d0c6db1ddad76cc632f600dc6220545b1172a20f1d99ff5147fac",
+        "bytes": 7946
+      },
+      "submissionRelease": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-300/judgments/pass-b/submission-release.json",
+        "sha256": "c47b12b3487eade9f6772ab051fcee8dafec75bf77a813f35051ff54971e4e33",
+        "bytes": 1309
+      }
+    }
+  ],
+  "audit": {
+    "identicalAssessmentEvidence": true,
+    "actualModelEffortAuthenticated": true,
+    "allMovesJudgedOncePerPass": true,
+    "allSourceEligibilityReviewsPassed": true,
+    "allOutputsExactApprovedBytes": true,
+    "calculatedTotalsUnavailableToJudges": true,
+    "controllerAuthoredRatings": false,
+    "paidInferenceCalls": 0
+  }
+}
