@@ -1,0 +1,46 @@
+{
+  "status": "authorized-same-context-unsaved-recovery",
+  "createdAt": "2026-10-08T00:07:42.275957+00:00",
+  "worker": "/root/inventory298",
+  "newContext": false,
+  "attemptReset": false,
+  "consumedContexts": 1,
+  "submittedCandidates": 0,
+  "priorHandoffAbsent": true,
+  "candidateLost": false,
+  "recoveryBasis": "Exact worker-authored candidate bytes are retained in tool-call input and mechanically recovered without executing source code; original context remains available. Resume that same context with bounded quote correction, not a new assessment.",
+  "preservedCandidates": [
+    {
+      "callId": "call_00b35a3a03f342c8b2ed2d65340346ef",
+      "path": "docs/assessment-production/standalone-debates-v1/debate-298/inventory/transport-recovery/preserved-unsaved-candidate-1.json",
+      "sha256": "bcee462a0df5eaeda7740069450b9c4cf5ad1057dc0821e72a04d55c986d77d4",
+      "bytes": 68257,
+      "moves": 29
+    },
+    {
+      "callId": "call_c00e7590ad424982a79f07033bcf035f",
+      "path": "docs/assessment-production/standalone-debates-v1/debate-298/inventory/transport-recovery/preserved-unsaved-candidate-2.json",
+      "sha256": "7cf791d7a9d39c8fef9ab2c30f63d2e597f6e42343fa0054d9497c8623179ee6",
+      "bytes": 26505,
+      "moves": 12
+    },
+    {
+      "callId": "call_d21a9d0cd78140d4949449cf882b34ac",
+      "path": "docs/assessment-production/standalone-debates-v1/debate-298/inventory/transport-recovery/preserved-unsaved-candidate-3.json",
+      "sha256": "1e08e07788ae90174aaf557dcdacc07d4def463facea2c9157298ee405bd7213",
+      "bytes": 22013,
+      "moves": 12
+    }
+  ],
+  "authorizedInput": {
+    "callId": "call_00b35a3a03f342c8b2ed2d65340346ef",
+    "path": "docs/assessment-production/standalone-debates-v1/debate-298/inventory/transport-recovery/preserved-unsaved-candidate-1.json",
+    "sha256": "bcee462a0df5eaeda7740069450b9c4cf5ad1057dc0821e72a04d55c986d77d4",
+    "bytes": 68257,
+    "moves": 29
+  },
+  "authorizedWritableFields": [],
+  "permittedCorrection": "First read and mechanically check the exact original 29-move candidate. Report all observed mechanics and source-editorial concerns; do not change any field until specific bounded correction is authorized. The later 12-move drafts are rejected for substantive coverage loss.",
+  "requiredTransport": "Read only the controller-preserved original worker-authored candidate and recovery records in addition to existing allowed evidence. Load original bytes into memory and run pinned checker using subprocess input; no candidate output file, no fresh context or attempt reset.",
+  "supersedes": "authorization.json before any worker executed recovery"
+}

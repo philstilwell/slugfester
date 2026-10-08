@@ -14229,5 +14229,58 @@ export const debateSummaries = [
         "title": "Empty tomb, embarrassment, and Mark"
       }
     ]
+  },
+  {
+    "id": "horn-lataster-god-existence-2016",
+    "number": "298",
+    "title": "Trent Horn vs Raphael Lataster — Does God Exist?",
+    "year": 2016,
+    "label": "Classical Theism and Alternative Gods",
+    "date": "2026-10-07",
+    "duration": "1 hr 44 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=GfV8Sy4YdSA",
+    "motion": "Does God exist?",
+    "summary": "Horn offers four converging routes to classical theism; Lataster narrowly prevails by preserving premise uncertainty, probabilistic counterevidence, and unresolved supernatural rivals.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God exists",
+        "speaker": "Trent Horn",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Classical theism is not established",
+        "speaker": "Raphael Lataster",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 79,
+      "con": 81,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Burdens and inference method"
+      },
+      {
+        "title": "Contingency and necessary being"
+      },
+      {
+        "title": "Finite origin and theories of time"
+      },
+      {
+        "title": "Fine-tuning and design"
+      },
+      {
+        "title": "Morality and perfect goodness"
+      },
+      {
+        "title": "Suffering and divine hiddenness"
+      },
+      {
+        "title": "Rival God concepts and classical theism"
+      }
+    ]
   }
 ];

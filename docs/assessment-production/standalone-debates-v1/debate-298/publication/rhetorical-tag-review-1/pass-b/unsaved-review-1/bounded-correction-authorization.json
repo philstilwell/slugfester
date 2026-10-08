@@ -1,0 +1,43 @@
+{
+  "status": "authorized-unsaved-bounded-correction",
+  "createdAt": "2026-10-08T01:31:16.070Z",
+  "pass": "pass-b",
+  "reason": "Controller has inspected all unsaved explanations and exact source; these are editorial/source-description corrections, with no exposure to the other review.",
+  "shards": [
+    {
+      "paths": [
+        "moveReviews.4.reason"
+      ],
+      "finding": "Reason mistakenly describes contingency. Explain the actual selected inference concerning deductive validity and supported premises, plus disagreement about priors and likelihoods. Preserve decision and all other move reviews."
+    },
+    {
+      "paths": [
+        "candidateReviews.7.context",
+        "acceptedTags.0.context"
+      ],
+      "finding": "Bare quoted fragment does not explain source-specific conduct. Write an 8\u201335 word explanatory context identifying how the argued conduct instantiates the accepted definition. Preserve identity, decision and rationale."
+    },
+    {
+      "paths": [
+        "candidateReviews.10.context",
+        "acceptedTags.1.context"
+      ],
+      "finding": "Bare quoted fragment does not explain source-specific conduct. Write an 8\u201335 word explanatory context identifying how the argued conduct instantiates the accepted definition. Preserve identity, decision and rationale."
+    },
+    {
+      "paths": [
+        "candidateReviews.17.context",
+        "acceptedTags.2.context"
+      ],
+      "finding": "Bare quoted fragment does not explain source-specific conduct. Write an 8\u201335 word explanatory context identifying how the argued conduct instantiates the accepted definition. Preserve identity, decision and rationale."
+    },
+    {
+      "paths": [
+        "candidateReviews.23.rationale"
+      ],
+      "finding": "Do not invent a mandatory broader pattern absent from the catalog definition. Explain source-specific basis for rejecting confirmation bias under its actual definition. Preserve rejection if defensible; otherwise flag the problem without self-changing decisions."
+    }
+  ],
+  "maxFieldsPerShard": 2,
+  "limits": "Same authorized context only; no saved submission yet; preserve every other value and all decisions. Recheck and hold exact corrected bytes once for controller inspection."
+}

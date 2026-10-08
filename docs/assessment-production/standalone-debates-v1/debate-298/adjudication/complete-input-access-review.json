@@ -1,0 +1,24 @@
+{
+  "status": "passed-controller-complete-input-access-review",
+  "agent": "/root/adjudicator298",
+  "phase": "complete",
+  "review": "Operational inputs show only own plan, allowed full reader, pinned checker and handoff plus controller communication. No peer identity/source outputs, score totals, publication, external evidence or unauthorized file access. Complete candidate inspected. Two serialization setup failures occurred before any checker or holder launch; btoa and TextEncoder are unavailable in functions runtime. The same context retained its candidate, converted ASCII JSON to hex and checked successfully, without content revision or saved output.",
+  "prohibitedAccessDetected": false,
+  "proceduralIsolationOnly": true,
+  "preSubmissionTransportDiagnostics": [
+    {
+      "callId": "call_daf8289489c74b4f9dca2e965f51ddf3",
+      "error": "ReferenceError: btoa is not defined",
+      "checkerCalled": false,
+      "fileWritten": false
+    },
+    {
+      "callId": "call_de5369f3a52543c28069ca7c7b416f32",
+      "error": "ReferenceError: TextEncoder is not defined",
+      "checkerCalled": false,
+      "fileWritten": false
+    }
+  ],
+  "savedSubmissionAttempts": 1,
+  "automaticModelRetries": 0
+}

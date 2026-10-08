@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "298",
+  "debateId": "horn-lataster-god-existence-2016",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-298/inventory/inventory.json",
+      "sha256": "9965a78bb0dc90bc5661704cf4ae29cc9ca3f5ed920a54ae0a3f42d0396827b1",
+      "bytes": 150460
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-298/score-pass/output.json",
+      "sha256": "f57fdb9d5e9c110afe4cc84680f92e6cd1aa481cc0f65c3b89b890673d2b764a",
+      "bytes": 18566
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-298/publication/skeleton.json",
+      "sha256": "00a204c93bb1056889ee6a2f8a8de3995977145eb86ea218f485a29d628d92fd",
+      "bytes": 13639
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-298/publication/reference-metrics.json",
+      "sha256": "b955cca2e3f6930c4a64d6a7cfcaf2b45901c34806b0e7df8ecf4bd1c2160903",
+      "bytes": 54235
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}
