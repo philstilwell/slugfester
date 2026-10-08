@@ -19,6 +19,8 @@ const representativeRoutes = [
 async function openRenderedPage(page, route) {
   await page.goto(route, { waitUntil: "domcontentloaded" });
   await page.locator("main h1").first().waitFor();
+  // The first heading can belong to the static fallback; wait for the live shell.
+  await expect(page.locator('nav[aria-label="Primary"]')).toBeVisible();
   await page.waitForLoadState("networkidle");
 }
 

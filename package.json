@@ -5,6 +5,8 @@
   "description": "Argument strength scorecards for YouTube debate transcripts.",
   "type": "module",
   "scripts": {
+    "charts:build": "node scripts/build-chart-snapshot.mjs",
+    "charts:check": "node scripts/validate-chart-snapshot.mjs",
     "dev": "python3 -m http.server 4174 --bind 127.0.0.1",
     "seo": "node scripts/generate-seo-pages.mjs",
     "site:preflight": "node scripts/validate-topic-categories.mjs && npm run seo -- --check && node scripts/validate-public-site.mjs && npx playwright test tests/site-quality/site-quality.spec.mjs --grep \"reviews the browser data baseline|fits a narrow phone viewport|stays within its browser data budget|remains usable with text enlarged\" && npm run site:standalone:check",

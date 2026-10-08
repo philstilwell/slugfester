@@ -1,12 +1,12 @@
-import { pageUpdates } from "./data/page-updates.js?v=3a6177f76fc4a95c";
-import { renderCritiqueText } from "./data/critique-format.js?v=3a6177f76fc4a95c";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=3a6177f76fc4a95c";
-import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=3a6177f76fc4a95c";
-import { topicPreviewText } from "./data/topic-preview.js?v=3a6177f76fc4a95c";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=3a6177f76fc4a95c";
-import { debateSummaries } from "./data/debate-summaries.js?v=3a6177f76fc4a95c";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=3a6177f76fc4a95c";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=3a6177f76fc4a95c";
+import { pageUpdates } from "./data/page-updates.js?v=9ac85af25968d420";
+import { renderCritiqueText } from "./data/critique-format.js?v=9ac85af25968d420";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=9ac85af25968d420";
+import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=9ac85af25968d420";
+import { topicPreviewText } from "./data/topic-preview.js?v=9ac85af25968d420";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=9ac85af25968d420";
+import { debateSummaries } from "./data/debate-summaries.js?v=9ac85af25968d420";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=9ac85af25968d420";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=9ac85af25968d420";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -19,6 +19,8 @@ import {
   absoluteUrl,
   backendPath,
   backendSeo,
+  chartsPath,
+  chartsSeo,
   insightsPath,
   insightsSeo,
   insightsMethodsSeo,
@@ -45,7 +47,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=3a6177f76fc4a95c";
+} from "./seo.js?v=9ac85af25968d420";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -57,6 +59,9 @@ let insightsPromise;
 let insightsContent;
 let insightsMethodsContent;
 let insightsMethodsPromise;
+let chartsPromise;
+let chartsModule;
+let chartSnapshot;
 let debateRecommendationPromise;
 let renderDebateRecommendation;
 let sectionScoreExtremes = { top: [], bottom: [] };
@@ -94,13 +99,14 @@ const rankingsPathRoutePattern = /^\/rankings\/?$/;
 const interlocutorPathRoutePattern = /^\/interlocutor\/([a-z0-9-]+)\/?$/;
 const backendPathRoutePattern = /^\/backend\/?$/;
 const insightsPathRoutePattern = /^\/insights(?:\/data-and-methods)?\/?$/;
+const chartsPathRoutePattern = /^\/charts\/?$/;
 const correctionsPathRoutePattern = /^\/corrections\/?$/;
 const assessmentPathRoutePattern = /^\/assessment\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=3a6177f76fc4a95c")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=9ac85af25968d420")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -119,7 +125,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=3a6177f76fc4a95c")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=9ac85af25968d420")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -135,7 +141,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=3a6177f76fc4a95c`)
+    const promise = import(`./data/debate-details/${id}.js?v=9ac85af25968d420`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -150,7 +156,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=3a6177f76fc4a95c`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=9ac85af25968d420`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -386,6 +392,7 @@ function renderDebateTitle(debate) {
 
 function currentPrimaryNavKey() {
   const { hash, pathname } = window.location;
+  if (chartsPathRoutePattern.test(pathname)) return "charts";
   if (hash.match(searchHashRoutePattern) || pathname.match(searchPathRoutePattern)) return "search";
   if (hash.match(topicsHashRoutePattern) || pathname.match(topicsPathRoutePattern) || pathname.match(topicPathRoutePattern)) return "topics";
   if (
@@ -441,6 +448,7 @@ function renderShell(content) {
         ${renderPrimaryNavLink("search", searchPath(), "Search", activeNavKey)}
         ${renderPrimaryNavLink("topics", topicsPath(), "Topics", activeNavKey)}
         ${renderPrimaryNavLink("rankings", rankingsPath(), "Rankings", activeNavKey)}
+        ${renderPrimaryNavLink("charts", chartsPath(), "Charts", activeNavKey)}
         ${renderPrimaryNavLink("insights", insightsPath(), "Insights", activeNavKey)}
         ${renderPrimaryNavLink("backend", backendPath(), "Backend", activeNavKey)}
         <span class="external-sites">
@@ -470,6 +478,7 @@ function renderShell(content) {
         <a href="${searchPath()}">Search</a>
         <a href="${topicsPath()}">Topics</a>
         <a href="${rankingsPath()}">Rankings</a>
+        <a href="${chartsPath()}">Charts</a>
         <a href="${insightsPath()}">Insights</a>
         <a href="${backendPath()}">Method</a>
         <a href="${correctionsPath()}">Feedback</a>
@@ -3738,6 +3747,7 @@ async function route({ focusMain = false } = {}) {
     window.location.pathname.match(assessmentPathRoutePattern);
   const correctionsMatch = window.location.pathname.match(correctionsPathRoutePattern);
   const insightsMatch = window.location.pathname.match(insightsPathRoutePattern);
+  const chartsMatch = window.location.pathname.match(chartsPathRoutePattern);
   const referenceMatch =
     hash.match(referenceHashRoutePattern) ||
     window.location.pathname.match(referencePathRoutePattern);
@@ -3755,29 +3765,38 @@ async function route({ focusMain = false } = {}) {
   );
   const loaders = [];
 
+  if (chartsMatch && !chartSnapshot) {
+    chartsPromise ||= Promise.all([
+      import("./data/charts.js?v=9ac85af25968d420"),
+      import("./data/chart-snapshot.js?v=9ac85af25968d420")
+    ]).then(([module, data]) => { chartsModule = module; chartSnapshot = data.chartSnapshot; })
+      .catch((error) => { chartsPromise = undefined; throw error; });
+    loaders.push(chartsPromise);
+  }
+
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=3a6177f76fc4a95c")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=9ac85af25968d420")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=3a6177f76fc4a95c")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=9ac85af25968d420")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=3a6177f76fc4a95c")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=9ac85af25968d420")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=3a6177f76fc4a95c")
+    insightsPromise ||= import("./data/insights.js?v=9ac85af25968d420")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);
@@ -3824,7 +3843,16 @@ async function route({ focusMain = false } = {}) {
     if (sequence !== routeSequence) return;
   }
 
-  if (debateMatch) {
+  if (chartsMatch) {
+    setSeo(chartsSeo());
+    app.innerHTML = renderShell(`<main class="charts-page">${chartsModule.renderChartsContent(chartSnapshot, window.location.search)}</main>`);
+    document.getElementById("chart-filters").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const params = new URLSearchParams(new FormData(event.currentTarget));
+      window.history.pushState({}, "", `${chartsPath()}?${params}`);
+      void route({ focusMain: true });
+    });
+  } else if (debateMatch) {
     const loadedDebate = loadedData.find((value) => value?.id === debateId) || null;
     renderDebate(debateId, loadedDebate);
   } else if (searchMatch) {
@@ -3885,6 +3913,7 @@ function shouldHandleInternally(link) {
     !url.pathname.match(interlocutorPathRoutePattern) &&
     !url.pathname.match(backendPathRoutePattern) &&
     !url.pathname.match(insightsPathRoutePattern) &&
+    !url.pathname.match(chartsPathRoutePattern) &&
     !url.pathname.match(correctionsPathRoutePattern) &&
     !url.pathname.match(assessmentPathRoutePattern) &&
     !url.pathname.match(referencePathRoutePattern)
@@ -3902,6 +3931,7 @@ function shouldHandleInternally(link) {
     interlocutorPathRoutePattern.test(url.pathname) ||
     backendPathRoutePattern.test(url.pathname) ||
     insightsPathRoutePattern.test(url.pathname) ||
+    chartsPathRoutePattern.test(url.pathname) ||
     correctionsPathRoutePattern.test(url.pathname) ||
     assessmentPathRoutePattern.test(url.pathname) ||
     referencePathRoutePattern.test(url.pathname)

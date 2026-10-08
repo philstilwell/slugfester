@@ -9,6 +9,7 @@ import "./validate-category-score-averages.mjs";
 import "./validate-topic-scope.mjs";
 import "./validate-neutral-topic-previews.mjs";
 import "./validate-feedback.mjs";
+import "./validate-chart-snapshot.mjs";
 import { dirname, join, normalize, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { publishedDebates as debates } from "../src/data/debates.js";
@@ -19,6 +20,7 @@ import {
   SITE_URL,
   backendPath,
   insightsPath,
+  chartsPath,
   correctionsPath,
   debatePath,
   interlocutorPath,
@@ -81,6 +83,7 @@ const expectedPaths = [
   rankingsPath(),
   backendPath(),
   insightsPath(),
+  chartsPath(),
   "/insights/data-and-methods/",
   correctionsPath(),
   ...debates.map(debatePath),
@@ -181,7 +184,7 @@ sitemapUrls.forEach((urlString) => {
   if (html.includes('<div id="app"></div>')) {
     fail(`${url.pathname} still ships an empty JavaScript-only app shell`);
   }
-  const fallback = html.match(/<main class="(?:seo-fallback|insights-page)"[\s\S]*?<\/main>/)?.[0] || "";
+  const fallback = html.match(/<main class="(?:seo-fallback|insights-page|charts-page)"[\s\S]*?<\/main>/)?.[0] || "";
   if (!fallback) {
     fail(`${url.pathname} is missing pre-rendered fallback content`);
   } else {
