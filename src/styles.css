@@ -90,6 +90,8 @@
 .chart-heatmap tbody th > span { display: block; font-size: 11px; font-weight: 500; margin-top: 4px; }
 .chart-heatmap td { padding: 12px 7px; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; background: color-mix(in srgb, #daa843 calc(var(--heat) * 100%), #f6f3e9); color: #312711; }
 .chart-heatmap tr:nth-child(2n) th { padding-bottom: 17px; }
+/* Keep each family's supporting and challenging rows together. */
+.chart-heatmap tbody tr:nth-child(2n + 3) > * { border-top: 2px solid #8da5a0; padding-top: 16px; }
 .chart-heatmap abbr { text-decoration: none; }
 .chart-heat-key { display: flex; gap: 12px; align-items: center; justify-content: end; font-size: 11px; color: var(--muted); margin-top: 10px; }
 .chart-heat-key i { width: 80px; height: 10px; background: linear-gradient(to right, #f6f3e9, #daa843); }
