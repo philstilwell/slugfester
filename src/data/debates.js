@@ -137092,6 +137092,588 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    "number": "301",
+    "id": "wood-ally-resurrection-2018",
+    "date": "2026-10-08",
+    "title": "David Wood vs Shabir Ally — Did Jesus Rise from the Dead? (2018)",
+    "label": "Resurrection and Ascension",
+    "topicCategory": "resurrection-miracles",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ST4RS0U5kpU",
+    "duration": "1 hr 55 min",
+    "motion": "Did Jesus rise from the dead?",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "sourceNote": "This assessment covers David Wood and Shabir Ally’s formal openings, both rebuttal rounds, cross-examination and both closing statements, approximately 21:14–2:15:57. Introductions, moderator logistics, audience Q&A and the final replies to audience questions are excluded. Neither speaker receives credit, penalties or an inference of failing to reply from excluded material. Automatic captions were supplemented by targeted automated audio checks, not direct human listening. Ally rejects substitution theory and distinguishes possible survival and ascension from resurrection after death. Scores assess the arguments presented within this scope, not the truth of either religion.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance, rather than judgments about worldview truth; the separate AI Contribution does not affect these scores.",
+    "sides": {
+      "pro": {
+        "name": "Jesus rose from the dead",
+        "speaker": "David Wood",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Resurrection from death is not established",
+        "speaker": "Shabir Ally",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 82,
+      "con": 77,
+      "winner": "pro"
+    },
+    "summary": "Wood’s cumulative historical case leads, while Ally’s critical challenges expose narrative tensions without establishing his conditional survival-and-ascension alternative.",
+    "quotes": {
+      "pro": {
+        "text": "We have Christian, Jewish and Roman sources reporting Jesus execution",
+        "context": "Wood presents convergent reporting and ordinary Roman crucifixion practice as the historical foundation for inferring Jesus’s death before considering resurrection appearances."
+      },
+      "con": {
+        "text": "there are good reasons for thinking that Jesus did not actually die on the cross",
+        "context": "Ally opens by challenging whether the reported death is sufficiently established, while later conceding that critical scholars widely accept it."
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "death-by-crucifixion",
+        "title": "Death by crucifixion",
+        "timebox": "25:57–2:15:08",
+        "score": {
+          "pro": 84,
+          "con": 76
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "wood-multiple-sources-and-crucifixion-practice",
+              "time": "25:57",
+              "score": 83,
+              "role": "Constructive",
+              "words": "Wood combines Christian, Jewish, and Roman reporting with routine crucifixion practice to argue that Jesus’s execution and death are exceptionally secure historical starting points.",
+              "critique": "Strongest feature: Wood begins with convergent source categories and a familiar Roman purpose for crucifixion, giving his later resurrection inference a historically intelligible foundation rather than treating death as an unargued doctrinal assumption. Principal limitation: The presentation compresses source dependence, dating, and the difference between reporting execution and independently verifying death, so the impressive list cannot by itself establish equally strong confirmation from every category. Live burden: Wood must show that the relevant reports provide sufficiently independent and case-specific support, while Ally must expose a material gap for withholding and needs comparative survival evidence only for a stronger historical claim. Locked score: 83 reflects a strong cumulative starting point whose historical force is substantial but less decisive than Wood’s broad language suggests.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-short-crucifixion-and-possible-survival",
+              "time": "47:45",
+              "score": 76,
+              "role": "Reply",
+              "words": "Ally cites Jesus’s short crucifixion, Pilate’s surprise at the reported death, and the absence of an identified damaged vital organ to keep survival possible.",
+              "critique": "Strongest feature: Ally identifies case-specific features in the opening record—short duration, Pilate’s reported surprise, and no identified wound to a vital organ—that make independent confirmation of death a legitimate historical question. Principal limitation: None of those observations establishes survival: crucifixion can kill through systemic processes without one named organ injury, and an unusually rapid reported death remains compatible with severe preceding trauma and execution conditions. Live burden: Critical withholding requires Ally to show meaningful uncertainty in the death inference; only a stronger survival claim would require evidence that these circumstances made survival comparatively probable. Locked score: 76 reflects a legitimate challenge to automatic certainty that remains substantially weaker than a demonstrated medical or historical survival account.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "wood-reported-death-consensus",
+              "time": "28:00",
+              "score": 83,
+              "role": "Constructive",
+              "words": "Wood cites critical scholars’ broad agreement that Jesus died by crucifixion, arguing that the conclusion survives methods otherwise skeptical of Christian supernatural claims.",
+              "critique": "Strongest feature: Appealing to agreement among scholars who reject or suspend judgment about resurrection separates the death conclusion from confessional commitment and directly pressures Ally’s attempt to reopen that preliminary question. Principal limitation: Consensus is important higher-order evidence, but Wood sometimes presents it as virtually self-authenticating, without sufficiently distinguishing the scholars’ reasons, confidence levels, or openness to exceptional uncertainty in an individual case. Live burden: Wood must connect the cited agreement to the specific evidence that warrants death, while Ally must do more than identify possible survival or criticize one criterion if he wishes to depart from that agreement. Locked score: 83 rewards the argument’s dialectical relevance and breadth while withholding a higher mark because reported consensus cannot substitute completely for the underlying historical demonstration.",
+              "tags": [
+                {
+                  "type": "fallacy",
+                  "label": "Appeal to authority",
+                  "url": "https://logfall.com/fallacies/appeal-to-authority/",
+                  "context": "Scholars call the death indisputable and historically certain, so denial is dismissed as out of touch with reality."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "ally-psalms-describe-rescue-before-death",
+              "time": "1:17:03",
+              "score": 70,
+              "role": "Reply",
+              "words": "Ally reads Peter’s speeches in Acts against the original rescue settings of Psalms 16 and 118, proposing an older pattern of deliverance before death.",
+              "critique": "Strongest feature: Ally connects Peter’s speeches in Acts with the original rescue settings of Psalms 16 and 118, asking whether later resurrection interpretation transformed texts whose earlier dramatic logic concerned deliverance from death. Principal limitation: Those prior psalmic contexts do not determine how the separate speeches deploy them, and the argument needs closer proof that the cited language excludes death followed by vindication rather than being reread through that sequence. Live burden: For critical pressure, Ally must establish a real interpretive discontinuity; only if he advances historical rescue must he connect the older pattern independently to what happened to Jesus. Locked score: 70 acknowledges a relevant source-context challenge but marks the considerable gap between original psalmic deliverance and a demonstrated predeath rescue of Jesus.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "wood-crucifixion-has-multiple-lethal-mechanisms",
+              "time": "1:27:40",
+              "score": 86,
+              "role": "Reply",
+              "words": "Wood argues that uncertainty over which lethal crucifixion mechanism caused death does not create comparable uncertainty over whether the combined execution process killed Jesus.",
+              "critique": "Strongest feature: Wood isolates the important logical point that uncertainty about the precise physiological mechanism—blood loss, shock, asphyxiation, or another consequence—does not imply equivalent uncertainty that a deliberately lethal execution ended in death. Principal limitation: His general descriptions of non-Christian crucifixion practice are not complete case-specific proof, and the assertion that those practices match the Gospel reports “exactly” is broader than the comparison he actually demonstrates. Live burden: Wood must connect the described execution practices and reported official outcome to this case, while Ally must identify evidence that makes the death conclusion materially uncertain rather than merely noting disputed medical pathways. Locked score: 86 reflects a powerful correction of mechanism-to-outcome confusion while preserving appropriate limits on what general execution evidence establishes about Jesus.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-closing-concedes-consensus-but-questions-warrant",
+              "time": "2:12:51",
+              "score": 81,
+              "role": "Reply",
+              "words": "Ally concedes the death consensus but cites a Josephus survival case and conditionally asks whether credited later physical appearances reopen the question of death.",
+              "critique": "Strongest feature: Ally explicitly concedes that critical scholars widely accept Jesus’s death, then uses Josephus’s report of a crucifixion survivor and the conditional acceptance of later physical appearances to question whether death was independently secured. Principal limitation: One rescued survivor establishes possibility rather than comparable circumstances, while later bodily appearances fit resurrection at least as directly as survival and therefore cannot select Ally’s explanation without further evidence. Live burden: Critical withholding requires showing that the combined evidence leaves a material evidential gap; claiming survival would additionally require case-specific reasons that Jesus followed the exceptional comparison. Locked score: 81 rewards candor, a concrete survival precedent, and a legitimate conditional challenge while recognizing that neither element overturns the cumulative death inference.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "early-appearances-and-sincerity",
+        "title": "Early appearances and sincere belief",
+        "timebox": "31:00–2:15:56",
+        "score": {
+          "pro": 82,
+          "con": 70
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "wood-early-corinthians-creed",
+              "time": "31:00",
+              "score": 87,
+              "role": "Constructive",
+              "words": "Wood treats Paul’s received creed as early testimony that Jesus died, was buried, rose, and appeared, placing resurrection belief near the originating events.",
+              "critique": "Strongest feature: The received tradition in First Corinthians gives Wood an early, compact sequence connecting death, burial, resurrection, and appearances, thereby resisting explanations that require the central proclamation to emerge only after lengthy legendary development. Principal limitation: Early transmission establishes what a community proclaimed more directly than it establishes what occurred, and the formula’s interpretation, provenance, and relation to later physical narratives require arguments beyond its chronological proximity. Live burden: Wood must explain why this early belief is best explained by resurrection rather than visionary experience or inherited conviction, while Ally must accommodate its timing within his developmental account. Locked score: 87 recognizes unusually relevant early evidence and its pressure on late-invention theories, without conflating an early sincere proclamation with independent proof of the proclaimed event.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-assumption-and-vision-chain-compatible-with-quran",
+              "time": "1:26:46",
+              "score": 68,
+              "role": "Reply",
+              "words": "Ally sketches development from assumption directly from the tomb, through one or two heavenly appearances, to spreading communal conviction and later physical narratives.",
+              "critique": "Strongest feature: The proposed sequence distinguishes an early postmortem assumption directly from the tomb, limited heavenly appearances, widening communal conviction, and later physical narration, offering a staged developmental explanation without alleging deliberate fraud. Principal limitation: The transitions remain conjectural, and the chain risks selecting reconstructed stages because they fit the desired trajectory; early death language and the sparse evidence for precisely ordered appearance development still require fuller treatment. Live burden: For critical withholding, Ally must show that this chain is a serious rival explanation of the records; only an affirmative historical reconstruction requires proof that these stages actually occurred. Locked score: 68 recognizes explanatory ambition and possible compatibility while reflecting the considerable speculation involved in moving from proposed assumption to increasingly shared and embodied resurrection belief.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "wood-group-appearances-against-hallucination",
+              "time": "34:15",
+              "score": 70,
+              "role": "Constructive",
+              "words": "Wood argues that reported appearances to groups, especially the five hundred, resist individual hallucination accounts because shared visual experiences are not ordinary hallucinations.",
+              "critique": "Strongest feature: Group reports target a genuine weakness in explanations limited to private bereavement visions, since a public claim involving many witnesses demands some account of how collective conviction acquired that form. Principal limitation: The argument moves quickly from a reported group appearance to a jointly perceived external event, although Paul supplies limited circumstances, no individual testimony from the five hundred, and no developed comparison with social reinforcement or visionary interpretation. Live burden: Wood must establish the report’s evidential access and collective character, while Ally must offer more than the general possibility of imagination to explain the early group claim. Locked score: 70 credits a relevant challenge to simple hallucination accounts but reflects the evidential distance between one early report and a verified simultaneous group experience.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-james-and-paul-do-not-establish-friend-and-foe-pattern",
+              "time": "1:36:07",
+              "score": 70,
+              "role": "Reply",
+              "words": "Ally says James may already have believed, leaving Paul as Wood’s sole foe example while arguing that Paul’s claimed appearance lacks independent verification.",
+              "critique": "Strongest feature: Ally challenges Wood’s friend-and-foe pattern at both points: James may already have believed before the reported appearance, while Paul remains the sole foe example and his claimed experience lacks independent verification. Principal limitation: Ally’s suggestions of a demonic light for Paul or later polishing within Acts are speculative and do not themselves explain the relevant firsthand Pauline claims or establish that the reported transformation was invented. Live burden: Ally must show why Paul’s account lacks sufficient confirmation without replacing uncertainty with an unsupported counterstory, while Wood must establish James’s prior skepticism before counting him as a converted friendly witness. Locked score: 70 credits a legitimate historical verification challenge but reflects the weakness of the proposed demonic-light and editorial-polishing possibilities as positive explanations.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "wood-persecution-shows-sincere-belief",
+              "time": "35:08",
+              "score": 84,
+              "role": "Constructive",
+              "words": "Wood argues that disciples accepting persecution and death would not knowingly maintain a fabricated resurrection story, supporting the sincerity of their proclaimed experiences.",
+              "critique": "Strongest feature: The willingness-to-suffer argument properly addresses deliberate conspiracy by making sustained proclamation personally costly, and Wood generally uses it to support sincere belief rather than treating mere suffering as automatic truth. Principal limitation: The evidence for each disciple’s fate is uneven, and sincerity narrows the explanatory field only to honest conviction; it does not determine whether the experiences were bodily appearances, visions, memories, or later attributions. Live burden: Wood must connect documented persecution to identifiable firsthand witnesses and then bridge sincere conviction to resurrection, while Ally must explain why the earliest adherents sincerely interpreted their experiences as vindication. Locked score: 84 reflects strong force against conscious fabrication, alongside the essential boundary between proof of commitment and proof that the committed belief was true.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-q-assumption-and-sign-of-jonah",
+              "time": "1:41:45",
+              "score": 67,
+              "role": "Reply",
+              "words": "Ally separately invokes reported Q and assumption scholarship, then adds Zeller’s distinct sign-of-Jonah survival inference as a possible rescue-before-death component.",
+              "critique": "Strongest feature: Ally places two distinct proposals into consideration without needing either to originate in later Islam: reported scholarship on Q and assumption traditions, and Zeller’s separate inference from the sign of Jonah toward survival. Principal limitation: Q is reconstructed, assumption need not mean rescue before death, and Jonah supplies an additional contested inference; scholarly discussion of the first proposal therefore cannot authenticate the second or their conjunction. Live burden: Ally may use each strand to challenge claims of conceptual impossibility, but an affirmative rescue history requires independent support for their meanings and connection; Wood must assess them separately. Locked score: 67 recognizes potentially relevant historical parallels but reflects their speculative foundations and the unresolved bridge between postmortem assumption and predeath survival.",
+              "tags": []
+            }
+          },
+          {
+            "con": {
+              "ledgerMoveId": "ally-closing-survival-and-ascension-are-conditional",
+              "time": "2:15:05",
+              "score": 75,
+              "role": "Reply",
+              "words": "Ally separately combines Smith’s postmortem assumption reconstruction with Zeller’s Jonah-based rescue reading, conditionally proposing that the two stages could fit Quranic raising.",
+              "critique": "Strongest feature: Ally clearly makes a conditional synthesis: Smith supplies a proposed postmortem assumption directly from the tomb, while Zeller’s sign-of-Jonah reading supplies the distinct rescue-before-death element needed for Quranic compatibility. Principal limitation: The sources support different propositions, and placing them in sequence does not establish the unresolved bridge from crucifixion survival to tomb assumption; scholarly discussion of either element is not confirmation of their conjunction. Live burden: Ally may use the combination to show conceptual compatibility, but an affirmative historical account requires independent evidence connecting rescue, entombment, and assumption; Wood must keep those stages distinct when criticizing them. Locked score: 75 credits a nuanced conditional proposal while reflecting that its decisive connective step remains reconstructed rather than historically demonstrated.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "reporting-and-authorship-development",
+        "title": "Reporting and authorship development",
+        "timebox": "53:16–1:54:25",
+        "score": {
+          "pro": 77,
+          "con": 79
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "wood-miracle-counts-undercut-linear-embellishment",
+              "time": "1:29:29",
+              "score": 71,
+              "role": "Reply",
+              "words": "Wood compares miracle totals across the Gospels to argue that later texts do not simply accumulate more wonders and therefore resist a linear embellishment model.",
+              "critique": "Strongest feature: The quantitative cross-Gospel comparison constructively tests an overly simplistic expectation that every later Gospel should contain more miracles, forcing development claims to specify which features grow and why. Principal limitation: Ally’s argument concerns changing kinds, narrative functions, and theological intensification rather than a monotonic count, so aggregate totals across differently sized and curated works only weakly address the strongest version of his case. Live burden: Wood must explain the particular directional changes Ally identifies, while Ally must define a principled measure of elaboration that cannot be adjusted after counterexamples appear. Locked score: 71 rewards a legitimate correction to crude accumulation reasoning but reflects that the comparison does not substantially defeat a qualitative, non-linear development thesis.",
+              "tags": [
+                {
+                  "type": "fallacy",
+                  "label": "Red herring",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "Raw miracle totals redirect the dispute away from Ally’s qualified trend in miracle type, narrative function, geography, and physicality."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "ally-gospel-development-as-trend",
+              "time": "53:16",
+              "score": 81,
+              "role": "Constructive",
+              "words": "Ally traces a broad trend from Mark through later Gospels toward more elaborate messengers, appearances, physical details, and theological elevation of Jesus.",
+              "critique": "Strongest feature: Ally offers a literary pattern with specific features rather than a bare accusation of legend, and he correctly frames development as a trend in type and emphasis rather than a mechanical rise in every miracle count. Principal limitation: Relative dating and added detail do not establish invention by themselves, while differences in audience, selection, and purpose can produce expansion without falsity; several examples therefore require closer demonstration of dependence and contradiction. Live burden: Ally must show that the changes systematically serve apologetic needs and cannot reasonably preserve independent or omitted information, while Wood must explain the directional pattern rather than answering only numerical comparisons. Locked score: 81 rewards a substantial cumulative critique of narrative growth while reserving stronger endorsement until the trend is tied more rigorously to unreliability.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "wood-omission-does-not-establish-invention",
+              "time": "1:53:38",
+              "score": 82,
+              "role": "Reply",
+              "words": "Wood argues that one Gospel’s omission of a person, angel, guard, or event does not make another Gospel’s additional detail contradictory or invented.",
+              "critique": "Strongest feature: The move supplies an essential logical restraint: partial reports can differ in selected detail without contradiction, so Ally cannot infer fabrication solely from an earlier writer’s silence. Principal limitation: Wood sometimes extends that valid principle beyond its reach, because cumulative directional additions, apologetic usefulness, or positive constraints may support development even when any single omission remains compatible. Live burden: Wood must address the strongest cases where narratives appear mutually restrictive, while Ally must show why particular silences are unexpected and evidentially meaningful instead of merely noting absence. Locked score: 82 reflects a logically sound rebuttal to simplistic silence arguments, tempered by the fact that omission becomes probative when combined with dependence, purpose, and incompatible detail.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-women-reporting-develops-across-gospels",
+              "time": "55:36",
+              "score": 82,
+              "role": "Constructive",
+              "words": "Ally compares the women’s silence in Mark with increasingly public reports and apostolic encounters, presenting the sequence as developing resurrection proclamation.",
+              "critique": "Strongest feature: The contrast between Mark’s fearful silence and later explicit reporting identifies a focused narrative tension with direct relevance to how empty-tomb testimony could have entered communal proclamation. Principal limitation: Silence at the narrative endpoint need not mean permanent silence, the ending and literary purpose require careful handling, and later reporting could explicate an assumed continuation rather than manufacture a new event. Live burden: Ally must establish that the accounts are genuinely incompatible at the relevant temporal level and that dependence explains the directional change, while Wood must provide more than the abstract claim that authors select differently. Locked score: 82 reflects a strong, textually specific development argument whose force depends on resolving whether Mark depicts lasting nonreporting or a dramatic temporary reaction.",
+              "tags": []
+            }
+          },
+          {
+            "con": {
+              "ledgerMoveId": "ally-guards-spices-and-saints-as-later-additions",
+              "time": "1:50:58",
+              "score": 73,
+              "role": "Reply",
+              "words": "Ally cites Matthew’s guards and risen saints alongside divergent spice preparations as apologetically motivated additions that create tension with earlier or parallel accounts.",
+              "critique": "Strongest feature: The selected examples are concrete and potentially consequential: guards answer theft suspicions, risen saints dramatically expand public signs, and burial preparations expose practical narrative friction rather than mere stylistic variation. Principal limitation: Omission alone does not prove invention, and grouping three cases can obscure their different evidential status; the argument is strongest where accounts positively constrain one another, weakest where one author simply adds material. Live burden: Ally must distinguish contradiction, apologetic expansion, and silence for each example, while Wood must explain the particular implausibilities rather than invoke authorial selection indiscriminately. Locked score: 73 credits a meaningful cluster of developmental evidence but reflects uneven inference and the need for case-by-case demonstration.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "location-and-physical-appearance-narratives",
+        "title": "Location and physical appearance narratives",
+        "timebox": "1:31:34–1:57:00",
+        "score": {
+          "pro": 88,
+          "con": 84
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "wood-earliest-creed-precedes-later-gospel-critique",
+              "time": "1:31:34",
+              "score": 88,
+              "role": "Reply",
+              "words": "Wood argues that the early Corinthian creed already contains death, burial, resurrection, and appearances, so later Gospel variation cannot explain away the core proclamation.",
+              "critique": "Strongest feature: Wood correctly distinguishes the age of detailed Gospel narratives from the age of the central proclamation, showing that criticism of later guards, angels, spices, or geography does not automatically dissolve the earlier core. Principal limitation: The creed’s early existence establishes early content and conviction, but its terse phrases leave the mode of appearances and meaning of resurrection underdescribed, so later narratives may still influence how that core is interpreted. Live burden: Wood must show why the formula’s earliest recoverable sense entails bodily return after confirmed death, while Ally must explain its origin within any assumption-and-vision sequence. Locked score: 88 recognizes the decisive chronological pressure placed on late-development explanations without treating formulaic testimony as a complete verification of every later physical detail.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-location-and-physicality-conflicts",
+              "time": "1:39:09",
+              "score": 84,
+              "role": "Reply",
+              "words": "Ally contrasts Jerusalem and Galilee appearance settings and highlights increasingly tangible encounters, arguing that the narratives preserve conflicting geography and developing physicality.",
+              "critique": "Strongest feature: The move identifies concrete narrative features with direct explanatory stakes: travel instructions and meeting locations can conflict, while touching, eating, and extended encounters can answer doubts left by earlier accounts. Principal limitation: Multiple appearances could occur in both regions, and selective narration can explain some omissions; Ally therefore needs to demonstrate incompatible sequencing rather than treating every geographic difference as contradiction. Live burden: Ally must show where the timelines exclude harmonization and why physical details are apologetic additions, while Wood must present a coherent chronology without inventing unreported transitions. Locked score: 84 rewards a specific and cumulatively serious textual challenge while acknowledging that plurality of locations and later detail do not alone prove fabrication.",
+              "tags": []
+            }
+          },
+          {
+            "con": {
+              "ledgerMoveId": "ally-john-spices-conflict-with-womens-purchase",
+              "time": "1:56:25",
+              "score": 83,
+              "role": "Reply",
+              "words": "Ally argues that John’s completed burial with abundant spices conflicts with Mark’s women later buying spices to anoint Jesus, indicating distinct incompatible narratives.",
+              "critique": "Strongest feature: This is Ally’s most analytically persuasive detailed comparison because it goes beyond silence: women who observed a completed, heavily spiced burial appear to have little reason to purchase spices for the same purpose afterward. Principal limitation: Different participants, supplementary rites, incomplete knowledge, or divergent customary purposes might reduce the contradiction, and the debate does not examine the burial vocabulary closely enough to eliminate those possibilities. Live burden: Ally must show that the same women knew the preparation was complete and intended an incompatible duplicate act, while Wood must offer a historically plausible reconciliation grounded in the texts. Locked score: 83 rewards a specific positive tension with more force than generic development claims, while recognizing that contextual reconstruction could still soften it.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "quranic-interpretation-and-coherence",
+        "title": "Quranic interpretation and coherence",
+        "timebox": "38:11–2:03:58",
+        "score": {
+          "pro": 76,
+          "con": 81
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "wood-substitution-portrays-deception-and-failure",
+              "time": "38:11",
+              "score": 72,
+              "role": "Constructive",
+              "words": "Wood attacks substitution theory as divine deception that produces Christianity and leaves the Quranic Jesus without a durable movement of authentic followers.",
+              "critique": "Strongest feature: Wood exposes serious theological costs for a substitution model: divinely created misidentification would help generate the very crucifixion belief later condemned, while the original mission would appear historically erased. Principal limitation: His language of malicious deception and absolute failure overstates what follows without examining alternative divine purposes, and the move initially targets a theory Ally subsequently disavows rather than Ally’s own survival-and-ascension proposal. Live burden: Wood must redirect the consistency objection toward the account Ally actually defends, while Ally, if advancing divine rescue positively, must explain apparent misidentification and continuity among Jesus’s followers. Locked score: 72 credits a forceful internal critique of a recognizable Islamic theory but discounts rhetorical excess and its reduced relevance once Ally expressly rejects substitution.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-rejects-substitution-and-reads-denial-as-nonkilling",
+              "time": "44:15",
+              "score": 83,
+              "role": "Reply",
+              "words": "Ally expressly rejects historical substitution and reads the Quranic denial as opponents neither killing nor successfully crucifying Jesus before God raised him.",
+              "critique": "Strongest feature: Ally clearly removes a vulnerable position from his burden and anchors his own interpretation in the Quranic sequence of denied killing, denied crucifixion, and divine raising, preventing Wood’s opening critique from defining the entire negative case. Principal limitation: The proposed reading remains underargued linguistically and historically, because rejecting substitution does not itself establish survival, clarify the appearance made to opponents, or reconcile the passage with widespread death testimony. Live burden: Ally must provide positive reasons that the denial concerns a failed killing rather than responsibility, certainty, or ultimate victory, while Wood must engage this reading instead of repeatedly attacking substitution. Locked score: 83 rewards precise burden clarification and textual relevance, while recognizing that interpretive coherence is not yet a historical demonstration of nondeath.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "wood-quran-allows-death-without-opponents-victory",
+              "time": "1:07:06",
+              "score": 82,
+              "role": "Reply",
+              "words": "Wood cites Quranic parallels about the slain being alive with God, death occurring by divine permission, and Allah as ultimate agent to show death remains compatible with vindication.",
+              "critique": "Strongest feature: Wood grounds compatibility in specific Quranic parallels: people slain can remain alive with God, death occurs only by divine permission, and human killing can be redescribed through Allah’s ultimate agency. Principal limitation: These passages concern substantially different contexts and formulations, so their thematically shared theological principles do not automatically govern the paired denial that Jesus was killed or crucified. Live burden: Wood need not prove that his reading is exclusive, but he must show sufficient contextual and linguistic comparability for those parallels to plausibly render death compatible with the disputed passage; Ally must explain why they fail to transfer. Locked score: 82 rewards a textually grounded compatibility argument that undercuts alleged contradiction while recognizing that analogy across Quranic contexts remains contestable.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-divine-rescue-and-varieties-of-raising",
+              "time": "50:00",
+              "score": 78,
+              "role": "Constructive",
+              "words": "Ally argues that God could rescue Jesus alive and raise him, noting that Muslim interpretations of raising vary and need not involve substitution.",
+              "critique": "Strongest feature: The move preserves the actual scope of Ally’s case by separating divine rescue and ascension from substitution, and by acknowledging interpretive diversity rather than presenting one later Muslim account as compulsory history. Principal limitation: Divine possibility provides theological compatibility but little discriminating historical evidence; without an evidential bridge, the same appeal could accommodate numerous outcomes and cannot explain why death and resurrection belief became early and widespread. Live burden: Quranic compatibility needs no independent history, but claiming actual survival and raising requires positive indicators; Wood must show why resurrection better integrates the evidence without excluding miracle alternatives by definition. Locked score: 78 recognizes coherent clarification of the proposed alternative but limits credit because possibility and doctrinal permissibility remain weaker than explanatory confirmation.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "wood-uppermost-followers-and-gospel-as-interpretive-route",
+              "time": "1:12:49",
+              "score": 74,
+              "role": "Reply",
+              "words": "Wood invokes Quranic promises that Jesus’s followers become uppermost and commands involving the Gospel to challenge claims that earliest Christian witness was comprehensively corrupted.",
+              "critique": "Strongest feature: The argument creates an internal consistency problem for a sweeping corruption account: if true followers prevailed and Christians retained divinely revealed guidance, historically dominant crucifixion belief becomes difficult to dismiss wholesale. Principal limitation: “Uppermost,” “followers,” and “Gospel” admit the moral, spiritual, legal, or partial-revelation readings Ally offers, and Wood sometimes assumes institutional and textual continuity without independently establishing those identifications. Live burden: Wood must show that the Quranic passages concern recognizable historical communities and preserved theological content, while Ally must explain how genuine revelation remained action-guiding amid the developments he alleges. Locked score: 74 credits a meaningful internal challenge but reflects considerable semantic flexibility and the distance between broad Quranic affirmation and endorsement of every canonical claim.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-uppermost-can-be-spiritual-victory",
+              "time": "1:20:01",
+              "score": 79,
+              "role": "Reply",
+              "words": "Ally answers the Quranic promise by interpreting Jesus’s followers becoming uppermost as moral or spiritual victory, not continuous institutional or doctrinal dominance.",
+              "critique": "Strongest feature: Ally supplies a coherent alternative sense of victory that fits religious discourse and blocks Wood’s immediate inference from “uppermost” to the historical correctness of dominant Christian institutions. Principal limitation: The moral or spiritual reading has limited linguistic warrant in the debate and establishes semantic possibility more readily than the intended meaning of the particular Quranic promise. Live burden: Ally need only show a contextually live spiritual-victory reading to defeat Wood’s claimed entailment, whereas a stronger historical interpretation would require additional textual support; Wood must show why visible institutional dominance is required. Locked score: 79 credits a responsive semantic distinction that weakens Wood’s institutional inference while recognizing that the available language does not decisively select Ally’s modal reply.",
+              "tags": []
+            }
+          },
+          {
+            "con": {
+              "ledgerMoveId": "ally-gospel-command-has-legal-context",
+              "time": "2:02:57",
+              "score": 82,
+              "role": "Reply",
+              "words": "Ally reads Quranic commands to judge by the Gospel as directing Christians toward divine law within it, not endorsing every narrative or theological statement.",
+              "critique": "Strongest feature: The contextual legal reading directly answers Wood’s all-or-nothing use of the passage and plausibly distinguishes retained revelation from later narrative or theological material within a composite Christian scripture. Principal limitation: Ally does not provide an operationally clear method for identifying exactly what God revealed, and a selective appeal to law may leave the command practically indeterminate if the surrounding text is substantially altered. Live burden: Ally must explain how the intended audience could reliably locate authoritative content, while Wood must show that the command entails confidence in resurrection narratives rather than usable moral instruction. Locked score: 82 reflects a context-sensitive rebuttal that narrows Wood’s inference, balanced against the unresolved epistemic problem of separating revelation from alleged additions.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "comparative-method-and-alternatives",
+        "title": "Comparative method and alternatives",
+        "timebox": "1:32:16–2:10:04",
+        "score": {
+          "pro": 84,
+          "con": 80
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "wood-smith-title-and-acts-affirm-death",
+              "time": "1:32:16",
+              "score": 90,
+              "role": "Reply",
+              "words": "Wood quotes Daniel Smith’s title and Acts to argue that assumption traditions concern postmortem exaltation, not rescue alive from crucifixion as Ally suggests.",
+              "critique": "Strongest feature: This evidential intervention carefully distinguishes two propositions Ally risks merging: vindication or assumption after death and deliverance before death, using the cited scholar’s framing and an early Christian speech to expose the difference. Principal limitation: A title and a strategically selected Acts passage do not settle the full reconstruction of pre-Gospel traditions, and Acts’s date and theological development are themselves disputed within the debate. Live burden: Wood must show that the scholarship Ally invokes consistently presupposes death and that Acts preserves relevant early belief, while Ally must produce evidence for the specifically predeath component. Locked score: 90 reflects an exceptionally direct correction of a central equivocation, supported by evidence internal to Ally’s scholarly route, while leaving subsidiary dating questions open.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-critical-scholars-reject-islam-and-quran-is-instructional",
+              "time": "1:46:56",
+              "score": 80,
+              "role": "Reply",
+              "words": "Ally concedes that critical scholars reject Islamic truth claims too, while describing Quranic narratives as instructional uses of known stories rather than straightforward historical reportage.",
+              "critique": "Strongest feature: Ally candidly accepts that the scholars he cites are not covert allies of Islam and clarifies a hermeneutic in which the Quran draws lessons from received narratives, reducing the charge of selectively outsourcing authority. Principal limitation: The instructional account can protect narratives from historical criticism too easily unless it identifies which assertions remain factual and why; it also does not resolve his simultaneous appeal to Quranic raising as relevant to what happened to Jesus. Live burden: Ally must state consistent criteria separating lesson-bearing reference from historical commitment, while Wood must engage that nuanced claim rather than assume verbatim historical dependence. Locked score: 80 rewards methodological candor and a relevant genre distinction while recognizing unresolved tension between nonchronicle interpretation and historical use of the Quranic account.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "wood-consistent-critical-methods-across-traditions",
+              "time": "1:44:54",
+              "score": 75,
+              "role": "Reply",
+              "words": "Wood argues that methods used to detect Gospel borrowing, embellishment, and late development would also destabilize Quranic narratives derived from earlier religious literature.",
+              "critique": "Strongest feature: The consistency challenge asks whether Ally’s source-critical standards are general historical principles or selectively stringent tools, an important methodological question when both traditions contain retold earlier material. Principal limitation: Parallel literary dependence does not ensure parallel theological or historical claims, and Ally openly denies treating the Quran as a simple chronicle, so Wood must compare like genres, purposes, and evidential assertions rather than merely list antecedents. Live burden: Wood must show that Ally’s specific inferences would undermine claims Ally actually makes for the Quran, while Ally must articulate stable criteria that explain why Gospel development bears the alleged consequences. Locked score: 75 credits the fair demand for symmetrical method but limits its force because the cross-tradition analogy remains broad and partly mismatched.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ally-q-scholarship-and-assumption-distinction",
+              "time": "1:54:57",
+              "score": 79,
+              "role": "Reply",
+              "words": "Ally defends the scholarly pedigree of Q and assumption research, citing later academic uptake while distinguishing serious reconstruction from unsupported radical skepticism.",
+              "critique": "Strongest feature: Ally answers the charge of isolated fringe speculation by identifying a lineage of published scholarship and explaining that later researchers developed rather than simply ignored the proposed assumption reading. Principal limitation: Academic uptake establishes eligibility for discussion, not the truth of the combined historical conclusion, and the cited work may support assumption from the tomb without supporting survival through crucifixion or Quranic correspondence. Live burden: Ally must quote the precise scholarly claims and preserve their qualifications, while Wood must evaluate their reasoning instead of dismissing them through association with extreme positions. Locked score: 79 credits a relevant defense of scholarly seriousness but withholds stronger approval because pedigree cannot bridge the decisive postmortem-versus-predeath distinction.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "wood-zeller-and-q-are-speculative",
+              "time": "1:52:54",
+              "score": 83,
+              "role": "Reply",
+              "words": "Wood characterizes Ally’s reliance on Zeller, Q, and inferred assumption traditions as layered speculation lacking the broad acceptance Ally demands of Christian claims.",
+              "critique": "Strongest feature: Wood correctly notices cumulative uncertainty: a reconstructed document, a contested interpretation, and a further predeath inference cannot gain reliability merely by being stacked together, especially against early explicit death language. Principal limitation: Calling a view fringe or speculative can become an appeal to popularity unless Wood engages the actual textual reasoning, and responsible historical reconstruction routinely relies on hypotheses whose value depends on explanatory performance rather than head counts. Live burden: Wood must identify which inferential link fails and why, while Ally must show independent convergence rather than letting each conjecture support another circularly. Locked score: 83 rewards an effective exposure of compounded uncertainty while preserving the possibility that carefully supported minority reconstructions can still challenge consensus.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "wood-closing-critical-consensus-remains",
+              "time": "2:07:32",
+              "score": 86,
+              "role": "Reply",
+              "words": "Wood closes that even highly critical scholars retain Jesus’s death and the disciples’ appearance conviction, so Ally moves beyond the authorities underwriting his critique.",
+              "critique": "Strongest feature: The closing efficiently reconnects Wood’s case to two claims that survive much critical scholarship—death by crucifixion and sincere appearance belief—showing that objections to later Gospel detail do not automatically remove his evidential core. Principal limitation: Wood overstates “absolute certainty” and sometimes implies that departing from consensus is methodologically disqualifying, while the retained facts still underdetermine whether resurrection best explains the experiences. Live burden: Wood must defend the inference from those minimal facts to bodily resurrection, while Ally must justify withholding death and explain early conviction without selectively invoking critical authorities. Locked score: 86 rewards a disciplined return to resilient premises and a strong comparative challenge, while preserving the distinction between consensus facts and the supernatural conclusion.",
+              "tags": [
+                {
+                  "type": "fallacy",
+                  "label": "Appeal to authority",
+                  "url": "https://logfall.com/fallacies/appeal-to-authority/",
+                  "context": "Departure from mainstream critical consensus becomes a reason to abandon Ally’s conclusion and adopt a new methodology."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "overall": {
+      "pro": {
+        "score": 82,
+        "strengths": [
+          "Wood anchors his case in death by crucifixion and early appearance belief that persist across much critical scholarship.",
+          "The early Corinthian creed sharply limits explanations that require the resurrection proclamation to arise only through late Gospel development.",
+          "Wood repeatedly distinguishes sincere witness conviction from deliberate fabrication and pressures Ally’s alternative to explain that conviction.",
+          "His correction separating postmortem assumption from rescue before death directly addresses the central ambiguity in Ally’s scholarly appeal."
+        ],
+        "blunders": [
+          {
+            "text": "Wood’s opening invests substantial force in substitution theory before Ally later explicitly rejects that historical proposal.",
+            "links": []
+          },
+          {
+            "text": "He sometimes converts scholarly consensus and ordinary crucifixion lethality into language of certainty stronger than his presented evidence warrants.",
+            "links": []
+          },
+          {
+            "text": "His numerical miracle comparison answers a strictly linear embellishment theory that Ally’s qualified trend claim does not require.",
+            "links": []
+          }
+        ]
+      },
+      "con": {
+        "score": 77,
+        "strengths": [
+          "Ally identifies specific narrative tensions involving geography, women’s reporting, burial spices, guards, and increasingly physical appearances.",
+          "He explicitly concedes the critical consensus on Jesus’s death and redirects disagreement toward the evidential warrant supporting it.",
+          "Ally clearly rejects substitution and preserves a conditional survival-and-ascension proposal rather than accepting Wood’s framing of Islamic belief.",
+          "His distinction between Gospel legal guidance and wholesale narrative endorsement gives a context-sensitive response to Wood’s Quranic consistency challenge."
+        ],
+        "blunders": [
+          {
+            "text": "Ally repeatedly moves from possible survival or assumption to Quranic compatibility without supplying independent evidence that selects his proposed history.",
+            "links": []
+          },
+          {
+            "text": "His use of Q, Jonah, and assumption scholarship compounds contested steps and sometimes blurs postmortem vindication with rescue before death.",
+            "links": []
+          },
+          {
+            "text": "Several development arguments infer invention from omission before establishing that the narratives positively exclude one another.",
+            "links": []
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "The cumulative evidence supports Jesus’s death by crucifixion and makes bodily resurrection a stronger explanation of the earliest appearance conviction than the available rival accounts.",
+          "premises": [
+            "Multiple source categories, Roman execution intent, severe preceding trauma, and early death proclamation jointly make survival substantially less probable than death.",
+            "The Corinthian formula places death, burial, resurrection, and appearances within an early received tradition rather than a late Gospel-only construction.",
+            "Reported individual and group appearances, together with costly proclamation, support sincere early conviction even though sincerity alone cannot establish truth.",
+            "Later narrative variation can affect confidence in particular details without erasing the earlier minimal claims of death and perceived appearances.",
+            "Ally’s alternative requires separate uncertain transitions from survival to assumption, visionary conviction, and later physical narration without independent confirmation of the first stage."
+          ],
+          "conclusion": "Therefore the motion is better supported when death, early testimony, and diverse appearance conviction are considered together, although the miraculous conclusion still requires comparative argument beyond consensus and sincerity."
+        },
+        "newArguments": [
+          {
+            "title": "Comparative Explanatory Cost",
+            "text": "A whole-explanation comparison favors the account that handles the most evidence with the fewest unsupported transitions. Survival must accommodate lethal execution intent, early death language, Jesus’s disappearance from ordinary public history, and the conviction that death had been conquered. Visionary, mistaken-identity, and legendary alternatives also deserve comparison rather than being collapsed into Ally’s proposal. Within a theistic framework resurrection unifies death and appearances, though worldview differences properly affect its prior probability."
+          },
+          {
+            "title": "Core and Detail Layers",
+            "text": "The evidence falls into chronological layers: an early death-and-appearance formula, later narrative settings, and subsequent interpretive elaboration. Genuine tensions involving guards, spices, geography, or physical demonstrations can reduce confidence in particular details without automatically erasing the earlier core. This layered approach also limits the affirmative case, because the creed’s compressed language cannot simply inherit every later bodily particular without separate support."
+          },
+          {
+            "title": "Witness-Type Discrimination",
+            "text": "Different witness categories contribute different kinds of support. Paul bears on transformative visionary encounter; named earlier disciples connect proclamation with the pre-crucifixion movement; group reports challenge exclusively private experience; persecution weighs against conscious fabrication. Their convergence strengthens the inference only when those differences remain visible, and the result stays abductive—a judgment about the best explanation—rather than becoming a deductive proof from sincerity."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "Critical withholding remains reasonable because the sources securely establish early resurrection belief more readily than they establish death verification and later narrative details.",
+          "premises": [
+            "Crucifixion was ordinarily lethal, yet ordinary outcome and reported execution do not supply direct case-specific confirmation of Jesus’s physiological death.",
+            "The early Corinthian formula verifies an early proclamation but leaves the mode, location, sequence, and physical character of appearances largely unspecified.",
+            "Later Gospels contain directional apologetic detail and concrete tensions concerning messengers, reporting, geography, guards, spices, and tangible encounters.",
+            "Sincere conviction can arise through visionary experience and communal interpretation, so persecution evidence defeats fraud more directly than it establishes resurrection.",
+            "A survival-and-divine-raising account is conditionally compatible with some evidence, but compatibility must remain distinct from historical proof of that alternative."
+          ],
+          "conclusion": "Therefore Ally can resist Wood’s claim of historical compulsion while conceding death consensus, though he should present survival and ascension as an underdetermined possibility unless further positive evidence emerges."
+        },
+        "newArguments": [
+          {
+            "title": "Two-Level Skepticism",
+            "text": "Historical judgment and theological interpretation can remain distinct. Historically, the record may warrant early belief in appearances while leaving the exact event and some death details uncertain. Theologically, the Quran may permit or motivate rescue and raising without thereby showing that historians independently established them. Keeping these levels separate prevents criticism of Gospel detail from masquerading as proof of the Quranic alternative and makes critical withholding the defensible intermediate conclusion."
+          },
+          {
+            "title": "Expected-Detail Test",
+            "text": "Omissions differ in evidential value according to what an earlier author would probably mention if a later feature were already central and known. Guards designed to prevent theft, completed heavy spicing observed by the women, or commands fixing a meeting location create stronger expectations than incidental angel counts. Ranking omissions by expectedness concentrates the development case on genuine narrative pressure and avoids the invalid rule that every added detail is invented."
+          },
+          {
+            "title": "Conditional Branch Comparison",
+            "text": "The conditional evidence branches in two directions. If physical meetings are historically reliable, their ordinary bodily qualities make premature declaration of death a live question requiring clearer confirmation, though resurrection remains an available explanation. If those meetings are apologetic development, visionary conviction can explain proclamation without a returned corpse, yet does not establish survival. Together the branches support withholding historical compulsion rather than proving one preferred rescue narrative."
+          }
+        ]
+      }
+    }
   }
 ];
 

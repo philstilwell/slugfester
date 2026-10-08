@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "2.0-authenticated-subscription-worker-evidence",
+  "status": "authenticated-and-released-for-first-unsaved-candidate",
+  "debateNumber": "301",
+  "debateId": "wood-ally-resurrection-2018",
+  "createdAt": "2026-10-08T18:13:06.175585+00:00",
+  "agentPath": "/root/inventory301",
+  "actualContextModels": [
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low"
+    }
+  ],
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-301/inventory/execution-plan.json",
+    "sha256": "3e32572f2eea22b3808c0b4539d927cd32abd03445266a244ef51ff1832eaf77",
+    "bytes": 7422
+  },
+  "sessionSnapshot": {
+    "externalLocalSessionPath": "/Users/philstilwell/.codex/sessions/2026/10/08/rollout-2026-10-08T14-11-40-01a11cb6-bb95-73c1-8bb0-c872555a780b.jsonl",
+    "sessionId": "01a11cb6-bb95-73c1-8bb0-c872555a780b",
+    "parentThreadId": "01a0f359-eb70-7da1-8b88-83ebe51a754a",
+    "sha256": "a7be7d6ac8e3ba75eea8b263d896708de952bb1477cb3f562c85baeac1e78abb",
+    "bytes": 1961757,
+    "rawSessionCommitted": false
+  },
+  "authentication": "ChatGPT subscription via built-in collaboration; no API inference",
+  "isolation": "Fresh fork-none context, restricted inputs and disjoint output. No operating-system sandbox claimed. Controller inspects tool calls separately.",
+  "attempts": 1,
+  "retries": 0,
+  "attemptNumber": 1,
+  "replacementAuthorization": null,
+  "directIncrementalCostUsd": 0,
+  "inputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/inventory/execution-plan.json",
+      "sha256": "3e32572f2eea22b3808c0b4539d927cd32abd03445266a244ef51ff1832eaf77",
+      "bytes": 7422,
+      "literalCompleteReadAuthenticated": true,
+      "nonemptyLines": 189,
+      "missingLines": [],
+      "toolOutputEvidence": [
+        {
+          "callId": "call_19892f400dfd4ecf9ef98a684fa71da6",
+          "sourceLineCount": 189,
+          "firstSourceLine": 1,
+          "lastSourceLine": 189
+        },
+        {
+          "callId": "call_e2ae5cd02bee40d28e090def447a28e8",
+          "sourceLineCount": 29,
+          "firstSourceLine": 1,
+          "lastSourceLine": 153
+        },
+        {
+          "callId": "call_071dd4e9017d470083911b8271a9acdb",
+          "sourceLineCount": 69,
+          "firstSourceLine": 1,
+          "lastSourceLine": 189
+        }
+      ]
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/workflow/inventory/reader.txt",
+      "sha256": "e99fc5dc7ce6defb22a787de7b97be0a86ed0afa40bd094786775f73d3e7938f",
+      "bytes": 361680,
+      "literalCompleteReadAuthenticated": true,
+      "nonemptyLines": 5461,
+      "missingLines": [],
+      "toolOutputEvidence": [
+        {
+          "callId": "call_6d603d0a8b6445718cee12ae84bc0f6c",
+          "sourceLineCount": 163,
+          "firstSourceLine": 1,
+          "lastSourceLine": 5511
+        },
+        {
+          "callId": "call_bde2dff6baca46398ba7e6a12c3d006a",
+          "sourceLineCount": 540,
+          "firstSourceLine": 181,
+          "lastSourceLine": 720
+        },
+        {
+          "callId": "call_b0b90b7e3e4e423680a34702263d448f",
+          "sourceLineCount": 540,
+          "firstSourceLine": 721,
+          "lastSourceLine": 1260
+        },
+        {
+          "callId": "call_938473ab12ac4f77a1c79765af950276",
+          "sourceLineCount": 540,
+          "firstSourceLine": 1261,
+          "lastSourceLine": 1800
+        },
+        {
+          "callId": "call_e50fc627b7be4a028835df0f145c328c",
+          "sourceLineCount": 540,
+          "firstSourceLine": 1801,
+          "lastSourceLine": 2340
+        },
+        {
+          "callId": "call_4c1f3388ff8e48d38c2ae4519833e9c1",
+          "sourceLineCount": 540,
+          "firstSourceLine": 2341,
+          "lastSourceLine": 2880
+        },
+        {
+          "callId": "call_73b7d2090437483782dcbe0a30d51143",
+          "sourceLineCount": 540,
+          "firstSourceLine": 2881,
+          "lastSourceLine": 3420
+        },
+        {
+          "callId": "call_9e71bef844834cf7b92abc9b910197dc",
+          "sourceLineCount": 540,
+          "firstSourceLine": 3421,
+          "lastSourceLine": 3960
+        },
+        {
+          "callId": "call_0be5ce4f41c148f4ac40af7bb9097255",
+          "sourceLineCount": 540,
+          "firstSourceLine": 3961,
+          "lastSourceLine": 4500
+        },
+        {
+          "callId": "call_e2ae5cd02bee40d28e090def447a28e8",
+          "sourceLineCount": 537,
+          "firstSourceLine": 15,
+          "lastSourceLine": 5511
+        },
+        {
+          "callId": "call_21a40bc57f074b52ac908a96f6898047",
+          "sourceLineCount": 180,
+          "firstSourceLine": 4681,
+          "lastSourceLine": 4860
+        },
+        {
+          "callId": "call_071dd4e9017d470083911b8271a9acdb",
+          "sourceLineCount": 474,
+          "firstSourceLine": 73,
+          "lastSourceLine": 5511
+        }
+      ]
+    }
+  ],
+  "toolCallRecords": [
+    {
+      "callId": "call_19892f400dfd4ecf9ef98a684fa71da6",
+      "tool": "exec",
+      "argumentsSha256": "b006aa6a48571c673a5f2641d591ca3cf1502c1e50d8baed9d169d76a5e932a8"
+    },
+    {
+      "callId": "call_6d603d0a8b6445718cee12ae84bc0f6c",
+      "tool": "exec",
+      "argumentsSha256": "609c44819e2851b491eb4aa76ef9c8b202772ffc2ec07849c6276eece6346266"
+    },
+    {
+      "callId": "call_bde2dff6baca46398ba7e6a12c3d006a",
+      "tool": "exec",
+      "argumentsSha256": "3da9889b85eae88a87767ce045116b1f46e793183a970c16b47d79276ca0e21a"
+    },
+    {
+      "callId": "call_b0b90b7e3e4e423680a34702263d448f",
+      "tool": "exec",
+      "argumentsSha256": "660579cd19abf724097221648dc1f7a593c799c1f494fae22c2aad575ff2b58a"
+    },
+    {
+      "callId": "call_938473ab12ac4f77a1c79765af950276",
+      "tool": "exec",
+      "argumentsSha256": "e4228dc2a53593fea7484577d4ef89f91d2c62689b1039d9b6bd64d64bd94738"
+    },
+    {
+      "callId": "call_e50fc627b7be4a028835df0f145c328c",
+      "tool": "exec",
+      "argumentsSha256": "e2552448c6b159a51c6cd40bfee75adc4fc38d1e1a9dc0afcc9c45d62efa28d2"
+    },
+    {
+      "callId": "call_4c1f3388ff8e48d38c2ae4519833e9c1",
+      "tool": "exec",
+      "argumentsSha256": "380c1dd4e5bc3f9b83717d8ce5b31e471b4a702da35a8dc85cd9e096dc99a2ed"
+    },
+    {
+      "callId": "call_73b7d2090437483782dcbe0a30d51143",
+      "tool": "exec",
+      "argumentsSha256": "bb30f04558b6fb1464293dae962a17fdc5ed1098226e0949f4c0d226bd78871f"
+    },
+    {
+      "callId": "call_9e71bef844834cf7b92abc9b910197dc",
+      "tool": "exec",
+      "argumentsSha256": "d6e70080f7285a3570464c4f7754c75e4134e125db3c7fc8999ab8dd7cf0bbfe"
+    },
+    {
+      "callId": "call_0be5ce4f41c148f4ac40af7bb9097255",
+      "tool": "exec",
+      "argumentsSha256": "44e5743959b912063e2a9ff1c756c02e9c5ac4640d0a95a8d05bc16da9dacd73"
+    },
+    {
+      "callId": "call_e2ae5cd02bee40d28e090def447a28e8",
+      "tool": "exec",
+      "argumentsSha256": "3c2dffefab5bf36a0335ec6d2da575ef868cc044db55107969855900eae1b2b0"
+    },
+    {
+      "callId": "call_21a40bc57f074b52ac908a96f6898047",
+      "tool": "exec",
+      "argumentsSha256": "b4594f7ecbd9b26d2f40ea580277f0525102831c9db3234eb3fa9efc63403fd5"
+    },
+    {
+      "callId": "call_071dd4e9017d470083911b8271a9acdb",
+      "tool": "exec",
+      "argumentsSha256": "545099a052bf4c56534879239f3ea5b689f11f616871dc6e397e8cb0ca76aea0"
+    },
+    {
+      "callId": "call_0871e63c015742d3bc5919efc628b6be",
+      "tool": "send_message",
+      "argumentsSha256": "a8b2bac27b3c887282057399e82bd649156186eb9659357b735ee97be54339e3"
+    },
+    {
+      "callId": "call_b228411625504e438ee0fdd9b8929630",
+      "tool": "wait_agent",
+      "argumentsSha256": "7d04d57c16360ab72473962796ad05822bc069874d59d5edcc66fd72a377fbfb"
+    }
+  ],
+  "outputAbsentAtRelease": true
+}

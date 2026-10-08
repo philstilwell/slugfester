@@ -1,0 +1,46 @@
+# Isolated primary judgment contract
+
+Read the execution plan and entire lossless reader, including every document and shared block, in bounded untruncated outputs. Only plan-allowed evidence may be read. Follow exact model and effort in the plan. No peer outputs, other debates, historical scores, publication prose, rankings, biographies, browsing, session logs, credentials or environment inspection. No paid calls, external inference or subagents. Isolation is procedural, not a filesystem sandbox. Confirm the absolute output path; tell the controller when reading is complete and wait for authenticated reading release before authoring.
+
+## Evidence and judgment
+
+Motion: Did Jesus rise from the dead? Pro: David Wood. Con: Shabir Ally.
+
+Assess only the formal opening speeches, both rebuttal rounds, crossfire and both five-minute closings, approximately 21:14–2:15:57. Exclude introduction, moderator logistics, applause, all subsequent audience Q&A, final replies to an audience question and outro. Neither speaker receives credit, penalty, inferred concession or failure-to-reply inference from excluded material.
+
+The motion is Did Jesus rise from the dead? David Wood affirms death followed by resurrection. Shabir Ally challenges death and the historical reliability of resurrection narratives, and proposes survival followed by divine ascension as a compatible alternative. Ally does not defend substitution theory; he explicitly sees no historical reason for another person replacing Jesus. Do not score him as defending that rejected view or as rejecting all miracles.
+
+Ally distinguishes historical reconstruction, Quranic interpretation and personal faith. He allows diverse Muslim interpretations of being raised, acknowledges that critical scholars reject Islam too, and explicitly concedes their widespread acceptance of Jesus’s death in his closing. His own disagreement concerns its warrant, including the conditional challenge if later physical appearances are accepted. Do not erase that concession, turn possibilities into demonstrated history, or impose a naturalistic burden he never adopts.
+
+Wood uses the early 1 Corinthians creed, the claimed death consensus, reported appearances to individuals and groups, and sincerity under persecution. Preserve the difference between evidence of sincere belief and evidence that resurrection occurred. His opening attack on substitution precedes Ally’s explicit rejection; Wood subsequently develops different Quranic consistency challenges. Evaluate those actual stages rather than making his entire case depend on a view Ally disavows.
+
+Ally’s development claim is expressly a trend, not a strictly linear increase in miracle counts. He acknowledges that Mark’s young man may be an angel and answers Wood’s numerical-miracle comparison by distinguishing quality and type. Preserve the geographic and narrative examples and their immediate qualifications. Book quotations, scholarly agreements, dating claims, medical claims and scriptural translations are the speakers’ evidence, not independently verified facts.
+
+Distinguish postmortem vindication or assumption from rescue before death. Wood explicitly challenges the title of Daniel Smith’s work and quotes Acts 2 affirming death; Ally invokes older Psalm contexts, Q reconstruction, the sign of Jonah and later physical appearances. Do not assume one reported scholar’s view automatically endorses every step of either speaker’s inference.
+
+Wood challenges consistent application of critical methods to both traditions and appeals to Quranic instructions about judging by the Gospel and true followers becoming uppermost. Ally responds with legal context, what God revealed therein, moral or spiritual victory, and the Quran’s instructional use of existing stories. His Hulk analogy illustrates literary reference, not a claim that Jesus is fictional. Wood’s comparison involving neo-Nazis is a claimed spectrum analogy, explicitly not literal affiliation; no extra penalty for tone or an invented literal allegation.
+
+Automatic captions contain recognizer errors in names and technical terms, omitted Arabic words, rolling timestamp overlap and brief mixed interjections. Do not quote corrupted proper names or Arabic, infer missing arguments from recognition failures, or treat them as clarity defects. Use the clear surrounding source. Event2669 (zero-based) contains the end of Wood’s turn and start of Ally’s turn; never select that mixed event as a single-speaker move or quotation. Other uncertain selected passages must be marked below high confidence and audio-verified under the frozen protocol.
+
+Five targeted automated audio checks supplement the captions: Wood’s opening core, Ally’s survival/ascension distinction, the first long handoff gap, the mixed crossfire handoff, and the closing-to-Q&A boundary. These are automated recognition cross-checks, not direct human listening. They do not replace canonical captions or excuse any new below-high-confidence inventory trigger.
+
+Featured quotations must be exact complete 3–18 word thoughts with clear referents and any material qualification. Do not quote an opponent’s reported position as the speaker’s own conclusion. A source fragment must be replaced by another complete excerpt, never completed with invented words.
+
+Evaluate every locked move exactly once in inventory order under the full rubric. Preserve inventory fields. Never calculate move, section or overall totals or winners. Each rationale must identify its source-specific strength or limitation. No duplicate deduction for the same defect absent distinct consequences. Source uncertainty and transcription corruption cannot become an argument-quality penalty.
+
+## Exact output schema
+
+A single JSON object with schemaVersion "1.0-standalone-primary-judgment", protocolId "assessment-production-standalone-debate-v1", status "complete-and-schema-valid", pass from plan, debateNumber as string from plan, debateId from plan, reviewerRole "isolated-score-blind-primary-judge", assessmentModel "5.6 Sol", reasoningEffort "low", inventorySha256 from judgment packet, isolation, judgments, burdenCompletionAdjustment, audit.
+
+isolation contains booleans legacyAssessmentsUnavailable, calculatedTotalsUnavailable, winnerLabelsUnavailable, otherJudgmentUnavailable, publicationProseUnavailable, otherDebatesUnavailable (all true only if accurate), and contaminationDetected (false only if accurate). Report a breach and stop if any required isolation condition is false.
+
+judgments is an array exactly matching inventory moves. Each entry: {moveId,assessmentConfidence,dimensions}. assessmentConfidence is high, medium or low. dimensions has exactly logicalCoherence, evidenceWarrant, responsiveness, relevanceBurden, precisionClarity, calibrationCharity. Each dimension has exactly {value,rationale}; value is integer 0–100, rationale at least 40 characters. Use rubric anchors; do not give duplicate deductions for one defect unless it has distinct demonstrated consequences in multiple dimensions.
+
+burdenCompletionAdjustment has pro and con. Each is exactly {value,rationale,eligibility}, with integer value −5..5. eligibility has exactly these nine keys: distinctDebateWideConsequence (boolean), affectsBurdenCompletion (boolean), notAlreadyScored (boolean), affectedBurdenIds (array of actual route bridge IDs), completionCriterion (string), relatedMoveIds (array of actual move IDs), distinctConsequence (string), alreadyCapturedBy (array), counterfactual (string). Duplicate capture (nonempty alreadyCapturedBy or false notAlreadyScored) requires zero. Nonzero requires all three booleans true, nonempty affectedBurdenIds and relatedMoveIds, empty alreadyCapturedBy, and completionCriterion, distinctConsequence, counterfactual each at least 30 characters. A value of zero still requires every eligibility key. Explain the actual debate-wide question and why any claimed adjustment does not rescore a move. Never calculate totals to choose an adjustment.
+
+audit has completeLockedInventoryReviewed, allMovesJudgedOnce, ratingsOnlyNoCalculatedScores, publicationBlind, scoreBlind, all true only if accurate.
+
+## One unsaved review and exact submission
+
+After authenticated reading release, create the complete candidate in memory. Run the pinned checker with standard input; do not inspect its implementation or create a disk draft. Review every rationale yourself against source ownership, recognition restrictions, adopted burdens and later qualifications before holding it. Send exact UTF-8 JSON bytes from your existing memory to the pinned `standalone-workflow.mjs handoff hold` command with the explicit debate and your plan. The checker validates and the holder keeps bytes in memory. Keep the holder alive and send its receipt. The controller reads all candidate bytes and issues source-compliance release; it may not negotiate ratings or disclose the peer pass. Release writes the approved bytes exactly once. Stop authoring after submission. One context, one submission, no automatic retries or overwrites. Ordinary corrections before a successful hold are within this context; an existing hold or saved failure is never silently replaced.
+

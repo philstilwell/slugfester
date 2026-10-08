@@ -14382,5 +14382,55 @@ export const debateSummaries = [
         "title": "Determinism, choice, and unpredictability"
       }
     ]
+  },
+  {
+    "id": "wood-ally-resurrection-2018",
+    "number": "301",
+    "title": "David Wood vs Shabir Ally — Did Jesus Rise from the Dead?",
+    "year": 2018,
+    "label": "Resurrection and Ascension",
+    "date": "2026-10-08",
+    "duration": "1 hr 55 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ST4RS0U5kpU",
+    "motion": "Did Jesus rise from the dead?",
+    "summary": "Wood’s cumulative historical case leads, while Ally’s critical challenges expose narrative tensions without establishing his conditional survival-and-ascension alternative.",
+    "topicCategory": "resurrection-miracles",
+    "sides": {
+      "pro": {
+        "name": "Jesus rose from the dead",
+        "speaker": "David Wood",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Resurrection from death is not established",
+        "speaker": "Shabir Ally",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 82,
+      "con": 77,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Death by crucifixion"
+      },
+      {
+        "title": "Early appearances and sincere belief"
+      },
+      {
+        "title": "Reporting and authorship development"
+      },
+      {
+        "title": "Location and physical appearance narratives"
+      },
+      {
+        "title": "Quranic interpretation and coherence"
+      },
+      {
+        "title": "Comparative method and alternatives"
+      }
+    ]
   }
 ];

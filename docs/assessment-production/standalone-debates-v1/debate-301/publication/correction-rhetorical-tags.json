@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-application",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "301",
+  "debateId": "wood-ally-resurrection-2018",
+  "originalPublicationPath": "docs/assessment-production/standalone-debates-v1/debate-301/publication/output.json",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/preserved-prior-output.json",
+    "sha256": "40b27af0595a77dd0b531eb5ed40967e8b5461a2c186e1035200be69f1d25c2d",
+    "bytes": 67358
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/output.json",
+      "sha256": "e52340a7d032efec72cc58990b1f09fa70e7c2568002dadaf28603cb04b3e21f",
+      "bytes": 68464
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/audit.json",
+      "sha256": "b287ea500ecb2b29b166d3523718979d957d270643ceace4e225ea312e749242",
+      "bytes": 31438
+    },
+    "rhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-301/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "5bf7227e1f01003b4179c9b5848162776632ba77ad6502e613cebbdc0d10fe95",
+      "bytes": 5744
+    }
+  },
+  "writableShards": [
+    {
+      "shard": 1,
+      "fields": [
+        {
+          "path": "candidate.sections.0.exchanges.1.pro.tags",
+          "moveId": "wood-reported-death-consensus",
+          "before": [],
+          "after": [
+            {
+              "type": "fallacy",
+              "label": "Appeal to authority",
+              "url": "https://logfall.com/fallacies/appeal-to-authority/",
+              "context": "Scholars call the death indisputable and historically certain, so denial is dismissed as out of touch with reality."
+            }
+          ]
+        },
+        {
+          "path": "candidate.sections.2.exchanges.0.pro.tags",
+          "moveId": "wood-miracle-counts-undercut-linear-embellishment",
+          "before": [],
+          "after": [
+            {
+              "type": "fallacy",
+              "label": "Red herring",
+              "url": "https://logfall.com/fallacies/red-herring/",
+              "context": "Raw miracle totals redirect the dispute away from Ally’s qualified trend in miracle type, narrative function, geography, and physicality."
+            }
+          ]
+        }
+      ],
+      "writableFieldCount": 2,
+      "attempts": 1,
+      "retries": 0,
+      "method": "Deterministic exact metadata application from authenticated adjudication; no model rewrite."
+    },
+    {
+      "shard": 2,
+      "fields": [
+        {
+          "path": "candidate.sections.5.exchanges.3.pro.tags",
+          "moveId": "wood-closing-critical-consensus-remains",
+          "before": [],
+          "after": [
+            {
+              "type": "fallacy",
+              "label": "Appeal to authority",
+              "url": "https://logfall.com/fallacies/appeal-to-authority/",
+              "context": "Departure from mainstream critical consensus becomes a reason to abandon Ally’s conclusion and adopt a new methodology."
+            }
+          ]
+        }
+      ],
+      "writableFieldCount": 1,
+      "attempts": 1,
+      "retries": 0,
+      "method": "Deterministic exact metadata application from authenticated adjudication; no model rewrite."
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "descriptionChanges": 0,
+    "tagChanges": 3,
+    "acceptedTagCount": 3,
+    "maximumWritableFieldsPerShard": 2
+  }
+}
