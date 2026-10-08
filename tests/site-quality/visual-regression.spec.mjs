@@ -15,6 +15,7 @@ const visualRoutes = [
 async function prepareVisualPage(page, path) {
   await page.goto(path, { waitUntil: "domcontentloaded" });
   await page.locator("main h1").first().waitFor();
+  await expect(page.locator('nav[aria-label="Primary"]')).toBeVisible();
   await page.waitForLoadState("networkidle");
   await page.addStyleTag({
     content: `

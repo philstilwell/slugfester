@@ -34,6 +34,8 @@ See the [post-campaign operator guide](docs/assessment-production/post-campaign-
 
 ## Regenerate SEO pages
 
+The Charts page uses a separately published snapshot. New assessments do not update it automatically. See [the Charts refresh guide](docs/charts/README.md) for position review, dated regeneration, and validation.
+
 ```bash
 npm run seo
 ```
