@@ -4,7 +4,8 @@ const internalDebateMetadataPattern =
 // This disclosure explains source quality to readers without exposing workflow data.
 const automatedAudioDisclosures = [
   "Automatic captions were supplemented by targeted automated audio checks; this was not direct human listening.",
-  "Automatic captions were supplemented by targeted automated audio checks, not direct human listening."
+  "Automatic captions were supplemented by targeted automated audio checks, not direct human listening.",
+  "Public automatic captions were supplemented by targeted automated audio checks; these were not direct human listening."
 ];
 
 export function hasInternalDebateMetadata(value, fieldName) {
