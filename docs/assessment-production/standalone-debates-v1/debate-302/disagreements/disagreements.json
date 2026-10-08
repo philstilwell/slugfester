@@ -1,0 +1,263 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "302",
+  "debateId": "rauser-barker-god-worthy-worship-2020",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "rauser-maximal-greatness-ground:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "rauser-maximal-greatness-ground",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 14,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 83,
+          "rationale": "Rauser qualifies that not every Christian uses this terminology and avoids claiming independent proof here."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "The move fairly describes a common Christian conception but risks treating confession as proof."
+        }
+      }
+    },
+    {
+      "disputeId": "rauser-genre-no-default-reading:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "rauser-genre-no-default-reading",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 70,
+          "rationale": "Rauser's description of Barker as tossing everything out if detail is imperfect is an avoidably strong reconstruction."
+        },
+        "option-b": {
+          "value": 80,
+          "rationale": "The move fairly grants limits on immediate understanding, though it slightly exaggerates Barker as saying imperfect grasp means knowing nothing."
+        }
+      }
+    },
+    {
+      "disputeId": "barker-psalm-human-authorship-inclusion:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "barker-psalm-human-authorship-inclusion",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 1,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 63,
+          "rationale": "Barker preserves the human-speaker concession, yet his all-or-nothing framing understates intermediate accounts of inspiration."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "Acknowledging human authorship is charitable, but describing the Israelites as ignorant and cruel broadens beyond the support needed."
+        }
+      }
+    },
+    {
+      "disputeId": "barker-perfection-principle-circularity:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "barker-perfection-principle-circularity",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 74,
+          "rationale": "Barker accurately identifies the framework's conditionality but overstates by saying it cannot register any contrary evidence."
+        },
+        "option-b": {
+          "value": 83,
+          "rationale": "Barker grants the love principle and accurately treats the framework as Christian, though some language about New Testament mistakes overreaches."
+        }
+      }
+    },
+    {
+      "disputeId": "barker-rape-imagery-divine-agency:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "barker-rape-imagery-divine-agency",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 13,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 64,
+          "rationale": "Barker's categorical responsibility label exceeds the qualified agency evidence by compressing punitive agency, authorization, and metaphorical self-attribution."
+        },
+        "option-b": {
+          "value": 77,
+          "rationale": "The phrase God is a rapist is rhetorically stronger than the agency evidence strictly establishes, despite the explicit qualification."
+        }
+      }
+    },
+    {
+      "disputeId": "barker-canaanite-victim-challenge:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "barker-canaanite-victim-challenge",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 68,
+          "rationale": "Barker foregrounds victims effectively but labels alternative Christian accounts twisted before fully separating their distinct claims."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "The thought experiment centers neglected victims, though phrases like peaceful loving people and twisted Christian idea overstate contested details."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains uncaptured after the thirty locked moves; a further adjustment would rescore move-level strengths or omissions.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": true,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Complete the adopted pro burden only through distinct consequences beyond the locked move assessments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate consequence has been identified outside the assessed moves.",
+            "alreadyCapturedBy": [],
+            "counterfactual": "Removing the move-level scoring would remove the alleged basis for any adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "All affirmative debate-wide burden effects are already represented in the locked moves; a further adjustment would rescore those same consequences.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "The affirmative must connect the Christian God’s depicted character and interpretive framework to worship-worthiness across the debate.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No additional debate-wide consequence remains distinct from the locked moves and their dimension ratings.",
+            "alreadyCapturedBy": [
+              "rauser-maximal-greatness-ground",
+              "rauser-four-christian-principles",
+              "rauser-range-of-conquest-readings",
+              "rauser-literary-ambiguity-broad-message"
+            ],
+            "counterfactual": "Removing the already scored move consequences would change burden completion, so adding an adjustment would duplicate those ratings."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains uncaptured after the thirty locked moves; a further adjustment would rescore move-level strengths or omissions.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": true,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Complete the adopted con burden only through distinct consequences beyond the locked move assessments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate consequence has been identified outside the assessed moves.",
+            "alreadyCapturedBy": [],
+            "counterfactual": "Removing the move-level scoring would remove the alleged basis for any adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "All negative debate-wide burden effects are already represented in the locked moves; a further adjustment would rescore those same consequences.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "The negative must connect the depicted harms or failed communication to moral unworthiness across the debate.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No additional debate-wide consequence remains distinct from the locked moves and their dimension ratings.",
+            "alreadyCapturedBy": [
+              "barker-expert-disagreement-communication",
+              "barker-rape-imagery-divine-agency",
+              "barker-canaanite-victim-challenge",
+              "barker-recurring-violence-pattern"
+            ],
+            "counterfactual": "Removing the already scored move consequences would change burden completion, so adding an adjustment would duplicate those ratings."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 30,
+    "disputesExtracted": 8,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/inventory/inventory.json",
+      "sha256": "1f4e91c9a7faf64a63ab54c8076d1997d130ecd80b28b608d7729632973e1e5c"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/judgments/pass-a/output.json",
+      "sha256": "9ddd7edd8a3214bb8d030db4e08b64732b9c4dae5d6aae54c60d34400d887387"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/judgments/pass-b/output.json",
+      "sha256": "ad19f8e94970467c0b57568cad57db8e5f1c03dbab8f08f6993633c8fab6697d"
+    }
+  }
+}

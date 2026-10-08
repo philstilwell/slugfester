@@ -14432,5 +14432,52 @@ export const debateSummaries = [
         "title": "Comparative method and alternatives"
       }
     ]
+  },
+  {
+    "id": "rauser-barker-god-worthy-worship-2020",
+    "number": "302",
+    "title": "Randal Rauser vs Dan Barker — Is the Christian God Worthy of Worship?",
+    "year": 2020,
+    "label": "Biblical Morality and Worship",
+    "date": "2026-10-08",
+    "duration": "1 hr 30 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ziG-K5cJNWg",
+    "motion": "Is the Christian God worthy of worship?",
+    "summary": "Rauser narrowly prevailed by making his Christian framework explicit and conditional, while Barker's victim-centered objections kept the central moral burden unresolved.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "The Christian God is worthy of worship",
+        "speaker": "Randal Rauser",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The Christian God is not worthy of worship",
+        "speaker": "Dan Barker",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 83,
+      "con": 82,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Starting points and reading the Bible"
+      },
+      {
+        "title": "Inspiration, human voices, and the Psalms"
+      },
+      {
+        "title": "Violence, conquest, and divine agency"
+      },
+      {
+        "title": "Clarity, diversity, and conditional frameworks"
+      },
+      {
+        "title": "Worship, religious harm, and fallibility"
+      }
+    ]
   }
 ];

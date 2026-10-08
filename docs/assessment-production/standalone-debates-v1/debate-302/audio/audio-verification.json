@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "302",
+  "debateId": "rauser-barker-god-worthy-worship-2020",
+  "completedAt": "2026-10-08T22:03:36.912698+00:00",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-302/inventory/inventory.json",
+    "sha256": "1f4e91c9a7faf64a63ab54c8076d1997d130ecd80b28b608d7729632973e1e5c",
+    "bytes": 143943
+  },
+  "triggeredMoveIds": [],
+  "checks": [],
+  "cost": {
+    "status": "all-paid-inputs-successful-no-retries",
+    "debateNumber": "302",
+    "model": "gpt-4o-mini-transcribe",
+    "knownSuccessfulCallCostUsd": 0.03708875,
+    "maximumPossibleTotalCostUsd": 0.03708875,
+    "directCostUsd": 0.03708875,
+    "costIsEstimatedFromReturnedUsage": true,
+    "invoiceVerified": false,
+    "paidCalls": 6,
+    "failedPaidCalls": 0,
+    "uncertainCalls": 0,
+    "automaticRetries": 0,
+    "communicatedCumulativeEstimateUsd": [
+      0.05,
+      0.15
+    ],
+    "communicatedMaximumUsd": 1,
+    "authorizedRunCapUsd": 1,
+    "withinCommunicatedCeiling": true,
+    "inputResults": [
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-302/audio/call-result-barker-core.json",
+        "sha256": "25638b5f1cbd9af6f60119e04198ffa674762d341b6984a4804dad94f7d75ed8",
+        "bytes": 1410
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-302/audio/call-result-closings.json",
+        "sha256": "44fecd0d8921787066b698be76aab248d8024223abbebc6b5b0997befde3ce3a",
+        "bytes": 1396
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-302/audio/call-result-host-handoff.json",
+        "sha256": "cdc07a8671a09ec3c90665276afc4b469a155af55cf0fb8bb61b904c32f79ce6",
+        "bytes": 1409
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-302/audio/call-result-host-resurrection.json",
+        "sha256": "42039dc8968d0bc883e900f3f57f8fef3e129c635d935c82ef31f0cdda99d8cf",
+        "bytes": 1433
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-302/audio/call-result-qa-boundary.json",
+        "sha256": "7d38f7d851dc17f896b90d1fc22541cfe1044e306b5fab9fe2eb2d02c05dadaa",
+        "bytes": 1405
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-302/audio/call-result-rauser-core.json",
+        "sha256": "6b1a5d579d39a9be232ca2d93101a22f95404fbfd32d784d27b8b83735d6fe7c",
+        "bytes": 1408
+      }
+    ],
+    "newVerificationCalls": 0,
+    "sourceFreezeEstimatePreserved": "Frozen source review reports the earlier conservative duration-based estimate of $0.05855. This later accounting uses returned token usage and verified current model rates; no source evidence or call is changed."
+  },
+  "supplementarySourceVerification": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-302/source/verification-review.json",
+    "sha256": "948ea4995e855da23de7ad4791bb5a8410a2b18c40f33c32f2ec235026b2ee92",
+    "bytes": 9148
+  },
+  "wordingLimitations": [
+    "Six supplementary checks are automated recognition only, not direct human listening.",
+    "Names and recognition-corrupted terms are not quotation anchors or clarity penalties.",
+    "All assessed windows and exclusions remain unchanged."
+  ],
+  "audit": {
+    "requiredAttributionChecks": 0,
+    "completedAttributionChecks": 0,
+    "unresolvedAttributionChecks": 0,
+    "unresolvedMaterialWordingsExcludedFromJudgment": true,
+    "directAudioListeningClaimed": false,
+    "originalCaptionChainUnchanged": true,
+    "allScopeExclusionsUnchanged": true
+  }
+}

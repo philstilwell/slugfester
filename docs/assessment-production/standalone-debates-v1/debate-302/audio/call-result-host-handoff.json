@@ -1,0 +1,44 @@
+{
+  "id": "host-handoff",
+  "status": "succeeded",
+  "startedAt": "2026-10-08T21:39:51.617377+00:00",
+  "completedAt": "2026-10-08T21:39:53.529053+00:00",
+  "model": "gpt-4o-mini-transcribe",
+  "attempt": 1,
+  "automaticRetries": 0,
+  "clip": {
+    "path": ".assessment-cache/captions/ziG-K5cJNWg/host-handoff.mp3",
+    "sha256": "46aba0d334b08611dafb0765bb39cf8a4371f2b38957449b8bff95b40414efa6",
+    "bytes": 657036
+  },
+  "output": {
+    "path": ".assessment-cache/captions/ziG-K5cJNWg/host-handoff.json",
+    "sha256": "5d9bbd605cc8519a3e3cc9158304529ae799b5326a7e5fb4251ac556c0a75276",
+    "bytes": 1613
+  },
+  "usage": {
+    "input_tokens": 823,
+    "output_tokens": 317,
+    "total_tokens": 1140,
+    "type": "tokens",
+    "input_token_details": {
+      "audio_tokens": 823,
+      "text_tokens": 0
+    }
+  },
+  "estimatedCostUsd": 0.0041,
+  "estimationBasis": "Published approximate rate; not invoice-verified.",
+  "estimatedCostFromReturnedUsageUsd": 0.00261375,
+  "rateUsdPerMillionTokens": {
+    "audioInput": 1.25,
+    "textOutput": 5
+  },
+  "rateSourceUrl": "https://developers.openai.com/api/docs/models/gpt-4o-mini-transcribe",
+  "rateVerifiedOn": "2026-10-08",
+  "invoiceVerified": false,
+  "originalCallRecord": {
+    "path": ".assessment-cache/intake-302/call-result-host-handoff.json",
+    "sha256": "d8e9cdaf72b06dc512d0cb1110cca90f519bd7131e9def9725b9e0a807b2a1af",
+    "bytes": 921
+  }
+}

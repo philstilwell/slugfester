@@ -1,0 +1,42 @@
+{
+  "status": "passed-before-publication-worker",
+  "baseline": "2d770dfe5f2d90c7672eedc9e0dcdb93764612dd",
+  "identitySweepPassed": true,
+  "referenceWindowDerivedFromUnchangedPublishedData": true,
+  "sourceDisclosureVerbatim": true,
+  "durationCorrection": {
+    "purpose": "Exclude approved Q&A gap from displayed assessed duration without altering original timestamps or source/scoring evidence.",
+    "helper": {
+      "path": "scripts/standalone/prepare-publication.mjs",
+      "sha256": "14254535cb4a8bc04d44f8dcbff91f740358cbe2b6f94d38da7a7b984b8aee73",
+      "bytes": 6885
+    },
+    "previousGitSha256": "ab6d17c8e7023c1428ef193b576986b3174ad9c5cc7b4ba1b8ee7f54ebebcfd8",
+    "previousBytes": 6003,
+    "frozenControlFileChanged": false,
+    "fixtures": [
+      "unscoped envelope",
+      "approved clipped union",
+      "existing retained union",
+      "entire window exclusion rejected",
+      "actual302 duration5386001ms rounds to1hr30min"
+    ],
+    "testsPassed": 5
+  },
+  "skeleton": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-302/publication/skeleton.json",
+    "sha256": "8a45e7482d5a208225f73a8008e9be4d09eb59058e975b4b0669bf3da860589e",
+    "bytes": 12082
+  },
+  "contract": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-302/publication/contract.md",
+    "sha256": "283e22f788150124499ec08b3d63cc7b547edcf0f5c7dabaf9aa1d33cb186814",
+    "bytes": 12729
+  },
+  "checker": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-302/publication/check-publication.mjs",
+    "sha256": "7867a090d425580bcffabd47abcdcd7fbfe2a3d8badf3d3d80ee8654b135c5ae",
+    "bytes": 9628
+  },
+  "allScoresUnchanged": true
+}

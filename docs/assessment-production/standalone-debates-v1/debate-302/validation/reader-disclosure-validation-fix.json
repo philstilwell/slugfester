@@ -1,0 +1,29 @@
+{
+  "status": "passed-reader-disclosure-validation-fix",
+  "debateNumber": "302",
+  "trigger": "The pre-integration hasInternalDebateMetadata probe rejected the frozen reader-facing automated audio disclosure solely because this grammatically equivalent sentence was absent from the exact sourceNote whitelist.",
+  "change": "Add the complete exact sentence only; keep internal-metadata detection and denial-of-human-listening safeguards.",
+  "sourceDisclosureUnchanged": true,
+  "tests": {
+    "command": "node --test tests/publication-source-language.test.mjs",
+    "passed": 2,
+    "failed": 0,
+    "exactFrozenSourceNoteProbePassed": true
+  },
+  "files": [
+    {
+      "path": "scripts/lib/publication-source-language.mjs",
+      "sha256": "abcce0f570e4a2f7435a8db2153d9b31ce0c19e7f848b789849b838099ae4403",
+      "bytes": 1083
+    },
+    {
+      "path": "tests/publication-source-language.test.mjs",
+      "sha256": "c2a4ed61734514b7e3713548afd23a196243862a2f65398ff31eaf54be3e4016",
+      "bytes": 3063
+    }
+  ],
+  "scopeGuards": "Sentence remains forbidden outside sourceNote; appended internal metadata remains forbidden; removing not from not direct human listening remains forbidden.",
+  "debateSpecificConditionals": 0,
+  "judgmentChanges": 0,
+  "scoreChanges": 0
+}

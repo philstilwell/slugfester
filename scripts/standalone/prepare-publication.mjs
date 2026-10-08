@@ -21,6 +21,16 @@ let durationMs=window.end-window.start;
 if(Array.isArray(retained)&&retained.length){
  const ordered=[...retained].sort((a,b)=>a.startMs-b.startMs);let lastEnd=-Infinity;durationMs=0;
  for(const interval of ordered){assert(Number.isFinite(interval.startMs)&&Number.isFinite(interval.endMs)&&interval.endMs>interval.startMs);durationMs+=Math.max(0,interval.endMs-Math.max(interval.startMs,lastEnd));lastEnd=Math.max(lastEnd,interval.endMs);}
+} else if(auth.identity.editorApprovedScope && Array.isArray(source.excludedIntervals)) {
+ // Approved main discussion and closings can be separated by excluded audience Q&A.
+ // Subtract the clipped interval union so overlaps and outer introductions are not double-counted.
+ const excluded=source.excludedIntervals.map(interval=>{
+  assert(Number.isFinite(interval.startMs)&&Number.isFinite(interval.endMs)&&interval.endMs>interval.startMs);
+  return {startMs:Math.max(window.start,interval.startMs),endMs:Math.min(window.end,interval.endMs)};
+ }).filter(interval=>interval.endMs>interval.startMs).sort((a,b)=>a.startMs-b.startMs);
+ let lastEnd=window.start;
+ for(const interval of excluded){durationMs-=Math.max(0,interval.endMs-Math.max(interval.startMs,lastEnd));lastEnd=Math.max(lastEnd,interval.endMs);}
+ assert(durationMs>0,'Approved exclusions leave no assessed duration');
 }
 const durationMinutes=Math.round(durationMs/60000),hours=Math.floor(durationMinutes/60),minutes=durationMinutes%60;
 const duration=hours?`${hours} hr ${minutes} min`:`${minutes} min`;

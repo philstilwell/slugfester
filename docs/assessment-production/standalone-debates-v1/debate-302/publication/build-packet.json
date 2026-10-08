@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "302",
+  "debateId": "rauser-barker-god-worthy-worship-2020",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/inventory/inventory.json",
+      "sha256": "1f4e91c9a7faf64a63ab54c8076d1997d130ecd80b28b608d7729632973e1e5c",
+      "bytes": 143943
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/score-pass/output.json",
+      "sha256": "82b11d6f16c24d0bda5403f6798e002c4d9309794a7ff449d69634f6ccf9539d",
+      "bytes": 15666
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/publication/skeleton.json",
+      "sha256": "8a45e7482d5a208225f73a8008e9be4d09eb59058e975b4b0669bf3da860589e",
+      "bytes": 12082
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/publication/reference-metrics.json",
+      "sha256": "dd76ceee911892bf8bf8d77d4ae1a4f99769fa4e2f045e71138888bd07d8c98c",
+      "bytes": 27264
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

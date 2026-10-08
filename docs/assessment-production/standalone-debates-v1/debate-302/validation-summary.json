@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "status": "passed",
+  "debateNumber": "302",
+  "debateId": "rauser-barker-god-worthy-worship-2020",
+  "scope": "Source, assessment, publication, independent corpus comparison and full desktop/mobile rendering passed. Repository replay, immediate precommit, committed-only replay, protected PR checks and live deployment are separate release gates.",
+  "source": {
+    "method": "Complete public English automatic captions supplemented by six targeted automated audio checks. No direct human listening.",
+    "events": 3476,
+    "transcriptWordsIncludingTimestamps": 27094,
+    "assessedDurationMs": 5386001,
+    "mainDiscussion": "1:52\u20131:28:28",
+    "closings": "2:00:08\u20132:03:18",
+    "editorApprovedModeratorContext": true,
+    "moderator": "Cameron Bertuzzi",
+    "audienceQaExcluded": true,
+    "automaticPrimarySpeakerExceptionClaimed": false
+  },
+  "assessment": {
+    "moves": 30,
+    "proMoves": 15,
+    "conMoves": 15,
+    "acceptedPrimaryPasses": 2,
+    "adjudicatedDisputes": 8,
+    "scorePasses": 1,
+    "scores": {
+      "pro": 83,
+      "con": 82
+    },
+    "numericalReruns": 0,
+    "rhetoricalCandidates": 21,
+    "acceptedTags": 1
+  },
+  "directCostUsd": 0.03708875,
+  "costInterpretation": "Estimated from returned API usage; not invoice-verified. No paid retry.",
+  "timing": {
+    "trackedWallMs": 4267074,
+    "summedIntervalMs": 5453197,
+    "summedWorkMs": 5453197,
+    "waitingWallMs": 0,
+    "byStageAndKind": {
+      "adjudication/active": {
+        "wallMs": 183816,
+        "summedMs": 183816
+      },
+      "assemble-ledger/active": {
+        "wallMs": 220,
+        "summedMs": 220
+      },
+      "build-adapter/active": {
+        "wallMs": 166,
+        "summedMs": 166
+      },
+      "disagreements/active": {
+        "wallMs": 306,
+        "summedMs": 306
+      },
+      "inventory/active": {
+        "wallMs": 1307332,
+        "summedMs": 1307332
+      },
+      "inventory/repair": {
+        "wallMs": 423709,
+        "summedMs": 423709
+      },
+      "judgment-packet/active": {
+        "wallMs": 210,
+        "summedMs": 210
+      },
+      "rendering/active": {
+        "wallMs": 150650,
+        "summedMs": 150650
+      },
+      "judgments/active": {
+        "wallMs": 511893,
+        "summedMs": 867503
+      },
+      "publication/repair": {
+        "wallMs": 723012,
+        "summedMs": 723012
+      },
+      "publication/active": {
+        "wallMs": 712464,
+        "summedMs": 712464
+      },
+      "score-once/active": {
+        "wallMs": 199,
+        "summedMs": 199
+      },
+      "rhetorical-adjudication/active": {
+        "wallMs": 223232,
+        "summedMs": 223232
+      },
+      "rhetorical/active": {
+        "wallMs": 453574,
+        "summedMs": 860378
+      }
+    },
+    "openIntervals": [],
+    "untrackedTimeNotAttributed": true
+  },
+  "componentEvidence": {
+    "editorial": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/publication/editorial-source-review.json",
+      "sha256": "e1b09b8b27fbf495c2aaed1105d2b1edbe36ca882bb2793087a4e923d3f8f81f",
+      "bytes": 2977
+    },
+    "rhetorical": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/publication/rhetorical-tag-review-1/audit.json",
+      "sha256": "54d08555e3e0f5782804d83a3e7bbb259909587c3d2cef912665e24021ecf129",
+      "bytes": 24730
+    },
+    "parity": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/publication/content-parity-audit.json",
+      "sha256": "350ab958d61a9dc5b1d4079311a907b957f014b92142e741add3f4eb730f777e",
+      "bytes": 6576
+    },
+    "independentComparison": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/publication/independent-production-comparison.json",
+      "sha256": "db689cb9e9e887ea94b02a964a0405352d9d102ac0c293eb605d3faff5783312",
+      "bytes": 7485
+    },
+    "aiProse": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/publication/ai-prose-and-punctuation-review.json",
+      "sha256": "142a438cfccf18c74898af355dbe37bd7ef6b278f183679077ae95c0d256a99f",
+      "bytes": 48724
+    },
+    "rendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/rendering/rendering-audit.json",
+      "sha256": "0430c9dd067b82f26d12fa3abc66023c97f9e654cd4316c31e0be2565bd95eff",
+      "bytes": 9992
+    },
+    "productionRules": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/validation/production-validator-frozen-route.json",
+      "sha256": "fe377f5dd828f177033fe1505dd4a420dca0db3870a6f580321ee63705a7723a",
+      "bytes": 576
+    },
+    "earlyWebsite": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/validation/early-standalone-site.json",
+      "sha256": "e6be8cbc028bc9130fae9b54504af3844c78c4b932aee637b529223f026b1793",
+      "bytes": 572
+    }
+  },
+  "initialProductionCheck": "Pre-adapter errors concerned the absent ledger and its dependent standalone row rules. Next check required final registry status/hash. The unchanged candidate passed all rules after freezing the reviewed adapter route.",
+  "cleanup": {
+    "temporaryBrowsers": 0,
+    "temporaryServers": 0,
+    "temporaryReplayAdapters": 0
+  }
+}

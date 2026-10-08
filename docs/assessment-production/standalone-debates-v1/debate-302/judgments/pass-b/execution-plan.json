@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "primary",
+  "debateNumber": "302",
+  "debateId": "rauser-barker-god-worthy-worship-2020",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/workflow/primary/reader.txt",
+      "sha256": "2b95bbeb3d9a91e7b0f9fb3c44f1e417acb85fc64f60301342977b3f8ffb04b0",
+      "bytes": 409302
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/judgments/contract.md",
+      "sha256": "5bdc562366a1509e3dbad92bbaf1d418a19fd8df1dda79ff94c91cf039621346",
+      "bytes": 5106
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/judgments/judgment-packet.json",
+      "sha256": "c8800e8546f805706c1e603e258952f71f258df36123d1d484739418fac2861c",
+      "bytes": 4931
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/inventory/inventory.json",
+      "sha256": "1f4e91c9a7faf64a63ab54c8076d1997d130ecd80b28b608d7729632973e1e5c",
+      "bytes": 143943
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": ".assessment-cache/captions/ziG-K5cJNWg/indexed-transcript.txt",
+      "sha256": "9b3dd63e93427adf8b1e92bf1e2328d0e70c8805883de9be44a296eb0b09f989",
+      "bytes": 228060
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/source/assessment-source-notes.md",
+      "sha256": "3cbd59a003adc72a6852611938ecd1b57d48db7a19ee0827ecb0c7ca509f0e50",
+      "bytes": 6380
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/source/source-lock.json",
+      "sha256": "bee69367bbf3ffd16a264ba48eecdcf6eb0d42c47ae011e2b3a8e12920d4bf1f",
+      "bytes": 14905
+    }
+  ],
+  "toolInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-302/judgments/check-judgment.mjs",
+      "sha256": "781e989b59317dfe72dd32bf52d4a69e8e6f248642f7e50bfb2c6155d4e4b4e3",
+      "bytes": 1116
+    },
+    {
+      "path": "scripts/standalone-workflow.mjs",
+      "sha256": "f9bebb3157c0227e20f396240411af838138b4520c7a48bec411725896f841cc",
+      "bytes": 5880
+    },
+    {
+      "path": "scripts/lib/standalone-workflow.mjs",
+      "sha256": "bd13373d22b4a2d74b1d6788c6b25613611be653a212aeaf31ca4bfcadcde333",
+      "bytes": 18686
+    },
+    {
+      "path": "scripts/lib/standalone-handoff.mjs",
+      "sha256": "939461c747837553ff5d65a83d9af0ad51c576c314959d2c59e6773bf236b42f",
+      "bytes": 6020
+    },
+    {
+      "path": "scripts/authenticate-standalone-worker.py",
+      "sha256": "98c8186c703818d1eaf5270d26adbfaaf7f7284180cf3482d3ec7a64e5e9219e",
+      "bytes": 6247
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "f21a097d116dd06a79047f27c7d1c577e7a072279b94178c36a33ae965dd8965",
+      "bytes": 81041
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "aae806466005602401fb9536cbeab97cda43cd898ef78d2c200c012b24a2b8eb",
+      "bytes": 13580
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+      "bytes": 13417
+    },
+    {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "116c3e17197981a5a440a96445ee1d5e121a94296edcd328e46a7ac83e63b57e",
+      "bytes": 91151
+    },
+    {
+      "path": "package.json",
+      "sha256": "c19df951c7b5b5ac2008ce4f3f8db482acd9d46bbe3a6470efbde4056fb756ad",
+      "bytes": 65247
+    },
+    {
+      "path": "scripts/lib/assessment-production-score-stability-policy-active.mjs",
+      "sha256": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+      "bytes": 1331
+    },
+    {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    },
+    {
+      "path": "scripts/standalone/lock-inventory.mjs",
+      "sha256": "dd2fba288eaab30c2af64c097abcde4f93d1f383b24f4c2a833f9f6866ab2a70",
+      "bytes": 5778
+    },
+    {
+      "path": "scripts/lib/standalone-publication-check.mjs",
+      "sha256": "fa5d57e9932db7cd0243b015dd68c9556465b194501fdd830ba73b0e20637809",
+      "bytes": 7222
+    },
+    {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-proposal.md",
+      "sha256": "629c22081fb5ebffc0c39ab247ba3c82ee10f86a43931a2b577eefef2d0ac7d2",
+      "bytes": 3702
+    },
+    {
+      "path": "scripts/lib/assessment-editor-scoped-source.mjs",
+      "sha256": "a97ee74f7afc04da1a943494d53a2aadb958618d0ab6296584603fdc5d4f7395",
+      "bytes": 6789
+    }
+  ],
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-302/workflow/primary/packet.json",
+    "sha256": "89f92dc222d05d90310bb2fb278d0ae38faf4bae79f9306d18fcb244d342e963",
+    "bytes": 425752
+  },
+  "fullReadRequiredForAllAllowedInputs": true,
+  "toolSourceReadRequired": false,
+  "outputPath": "/private/tmp/slugfester-debate-301/docs/assessment-production/standalone-debates-v1/debate-302/judgments/pass-b/output.json",
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-302/judgments/pass-b/output.json",
+  "allowedOutputPaths": [
+    "/private/tmp/slugfester-debate-301/docs/assessment-production/standalone-debates-v1/debate-302/judgments/pass-b/output.json"
+  ],
+  "checker": [
+    "/opt/homebrew/Cellar/node/25.9.0_3/bin/node",
+    "docs/assessment-production/standalone-debates-v1/debate-302/judgments/check-judgment.mjs",
+    "pass-b",
+    "--debate",
+    "302"
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "pass": "pass-b",
+  "instructions": "Read this plan and the entire reader.txt including shared blocks. Never open peer outputs. Run the pinned checker without rereading its implementation. Authenticate reading before authoring. Keep candidates in memory; handoff holds approved candidate bytes in memory until the controller supplies authenticated source/editorial release. Only that release writes the first submission. A saved failure consumes its attempt. No autonomous retry.",
+  "isolation": "Fresh fork-none subscription context; protocol isolation, not an operating-system sandbox.",
+  "packetMetrics": {
+    "originalBytes": 409959,
+    "readerBytes": 409302,
+    "sharedBlocks": 4,
+    "completeDocuments": 7,
+    "losslessRoundTrip": true
+  }
+}
