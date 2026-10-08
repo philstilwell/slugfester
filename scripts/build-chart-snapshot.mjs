@@ -5,12 +5,15 @@ import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { publishedDebates } from "../src/data/debates.js";
 import { chartFamilies, chartDimensions, chartScopes, classifyChartMove } from "../src/data/chart-definitions.js";
+import { chartSnapshotName } from "../src/data/charts.js";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const read = (path) => readFile(new URL(path, `file://${root}`), "utf8");
 const hash = (text) => createHash("sha256").update(text).digest("hex");
 const arg = (name) => process.argv.find((value) => value.startsWith(`--${name}=`))?.split("=").slice(1).join("=");
 const date = arg("date");
+const revision = Number(arg("revision") || 1);
+if (!Number.isSafeInteger(revision) || revision < 1) throw new Error("Snapshot revision must be a positive integer.");
 if (!/^\d{4}-\d{2}-\d{2}$/.test(date || "") || new Date(`${date}T12:00:00Z`).toISOString().slice(0, 10) !== date) {
   throw new Error("Supply an explicit publication date: npm run charts:build -- --date=YYYY-MM-DD");
 }
@@ -43,17 +46,24 @@ const scopeFor = (d) => review.scopeOverrides[d.number] || (
   : ["religion-society-public-reason", "meaning-purpose"].includes(d.topicCategory) ? "society" : "god");
 
 const snapshot = {
-  schemaVersion: 1, date, sourceCommit: execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim(),
+  schemaVersion: 1, date, revision, sourceCommit: execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim(),
   catalogueCount: publishedDebates.length,
   sources: { taxonomy: { path: taxonomyPath, sha256: hash(taxonomyText) }, positions: { path: "docs/charts/position-review.json", sha256: hash(reviewText) }, classifier: { path: "src/data/chart-definitions.js", sha256: hash(await read("src/data/chart-definitions.js")) } },
   families: chartFamilies.map(({ id, label }) => ({ id, label })), dimensions: chartDimensions, scopes: chartScopes,
   debates: [], moves: [], exclusions: [], ledgerHashes: {}
 };
+if (review.caseReview) snapshot.sources.caseReview = { path: review.caseReview, sha256: hash(await read(review.caseReview)) };
 for (const d of publishedDebates) {
   const prior = taxonomy.get(d.id);
   const reviewed = Object.hasOwn(review.additionalPositions, d.number);
   const supporting = prior ? prior.included === "True" ? prior.theist_side : null : reviewed ? review.additionalPositions[d.number] : null;
-  if (!supporting) { snapshot.exclusions.push({ number: d.number, id: d.id, reason: prior?.reason || review.exclusionReasons[d.number] || "Position classification awaits review." }); continue; }
+  if (!supporting) {
+    const status = prior || reviewed ? "reviewed-exclusion" : "pending-review";
+    const reason = prior?.reason || review.exclusionReasons[d.number];
+    if (status === "reviewed-exclusion" && !reason?.trim()) throw new Error(`Reviewed exclusion needs a reason: ${d.id}`);
+    snapshot.exclusions.push({ number: d.number, id: d.id, status, reason: reason || "Position classification awaits review." });
+    continue;
+  }
   if (!["pro", "con"].includes(supporting)) throw new Error(`Invalid supporting side: ${d.id}`);
   const adapterPath = `docs/assessment-ledgers/${d.id}.json`;
   const adapterText = await read(adapterPath);
@@ -83,9 +93,10 @@ for (const d of publishedDebates) {
   }
 }
 const body = JSON.stringify(snapshot);
-const archive = `docs/charts/snapshots/${date}.json`;
+const snapshotName = chartSnapshotName(snapshot);
+const archive = `docs/charts/snapshots/${snapshotName}.json`;
 await mkdir(new URL("docs/charts/snapshots/", `file://${root}`), { recursive: true });
-try { await access(new URL(archive, `file://${root}`)); if (!process.argv.includes("--replace-same-date")) throw new Error(`Snapshot ${date} already exists. Use a new date, or --replace-same-date for an unpublished correction.`); } catch (e) { if (e.code !== "ENOENT") throw e; }
+try { await access(new URL(archive, `file://${root}`)); if (!process.argv.includes("--replace-same-date")) throw new Error(`Snapshot ${snapshotName} already exists. Use a new date or --revision=N; --replace-same-date is only for an unpublished correction.`); } catch (e) { if (e.code !== "ENOENT") throw e; }
 await writeFile(new URL(archive, `file://${root}`), `${body}\n`);
 await writeFile(new URL("src/data/chart-snapshot.js", `file://${root}`), `// Manually published snapshot. Regenerate only with npm run charts:build.\nexport const chartSnapshot = ${body};\n`);
-console.log(`Charts snapshot ${date}: ${snapshot.debates.length}/${snapshot.catalogueCount} debates, ${snapshot.moves.length} unique assessed moves, ${snapshot.exclusions.length} exclusions. ${body.length} bytes.`);
+console.log(`Charts snapshot ${snapshotName}: ${snapshot.debates.length}/${snapshot.catalogueCount} debates, ${snapshot.moves.length} unique assessed moves, ${snapshot.exclusions.length} exclusions. ${body.length} bytes.`);
