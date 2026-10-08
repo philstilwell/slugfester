@@ -1,0 +1,31 @@
+{
+  "status": "authorized-controller-display-metadata-correction-before-publication",
+  "createdAt": "2026-10-08T04:16:47.279093+00:00",
+  "debateNumber": "299",
+  "debateId": "paulogia-jones-divine-hiddenness-2019",
+  "basis": "Publication skeleton helper reads retainedIntervals only from authorization.availableRecordingScope; this explicitly approved editor scope is stored in the registry readerScopeDisclosurePath instead. It therefore displayed the 51-minute outer window despite the source note identifying retained duration. Correct the sole display duration to the rounded sum of the already frozen retained intervals; no source scope, assessment, prose or score change.",
+  "source": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-299/source/reader-scope-disclosure.json",
+    "sha256": "355ea1f045c6725bd24ede8779b1774ceb3e400c0e8d92f0a02e9cc3ca5310de",
+    "bytes": 7998
+  },
+  "skeleton": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-299/publication/skeleton.json",
+    "sha256": "d341117e52762bef67556dfe96866fa431971c5e8702b96d80e23fd062c6d922",
+    "bytes": 12048
+  },
+  "writableFields": [
+    "candidate.duration"
+  ],
+  "before": "51 min",
+  "after": "47 min",
+  "retainedMilliseconds": 2795630,
+  "maximumWritableLeaves": 1,
+  "attempts": 1,
+  "automaticRetries": 0,
+  "requiredPreservation": "Save exact deterministic checker assembly as preserved-before-duration-correction.json before applying the one-field correction. Authenticate before/after bytes and assert every other field unchanged.",
+  "judgmentChanges": 0,
+  "scoreChanges": 0,
+  "scopeChanges": 0,
+  "modelContextReplacement": false
+}

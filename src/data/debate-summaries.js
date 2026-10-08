@@ -14282,5 +14282,58 @@ export const debateSummaries = [
         "title": "Rival God concepts and classical theism"
       }
     ]
+  },
+  {
+    "id": "paulogia-jones-divine-hiddenness-2019",
+    "number": "299",
+    "title": "Paulogia vs Michael Jones — Divine Hiddenness and a Perfectly Loving God",
+    "year": 2019,
+    "label": "Divine Hiddenness and Nonresistant Nonbelief",
+    "date": "2026-10-08",
+    "duration": "47 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=GR-_l7MgLpg",
+    "motion": "Does divine hiddenness count against a perfectly loving God?",
+    "summary": "Paulogia narrowly wins through the one-exception burden and unequal disclosure, while Jones offers calibrated psychological, public-evidence, and postmortem compatibility replies.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Hiddenness challenges perfect divine love",
+        "speaker": "Paulogia",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Hiddenness does not establish that challenge",
+        "speaker": "Michael Jones",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 86,
+      "con": 83,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Scope of the hiddenness challenge"
+      },
+      {
+        "title": "The one-exception claim and its probability"
+      },
+      {
+        "title": "Postmortem reconciliation"
+      },
+      {
+        "title": "Private experience and public evidence"
+      },
+      {
+        "title": "Introspection and personal force"
+      },
+      {
+        "title": "Loving disclosure and unequal evidence"
+      },
+      {
+        "title": "Belief, relationship, and salvation"
+      }
+    ]
   }
 ];

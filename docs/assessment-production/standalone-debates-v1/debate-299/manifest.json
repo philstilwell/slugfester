@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "1.0-standalone-debate-manifest",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "inputs-frozen-before-judgment",
+  "debateNumber": "299",
+  "debateId": "paulogia-jones-divine-hiddenness-2019",
+  "videoId": "GR-_l7MgLpg",
+  "frozenAt": "2026-10-08T03:21:09.273891+00:00",
+  "modelSettings": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "scoringControls": {
+    "dimensionDisagreementThreshold": 8,
+    "moveScoreDisagreementThreshold": 4,
+    "burdenAdjustmentDisagreementThreshold": 2,
+    "oneScorePass": true,
+    "scoreProtocolId": "standalone-v1-single-deterministic-score-pass"
+  },
+  "inventoryControls": {
+    "schemaVersion": "1.2-standalone-score-blind-inventory",
+    "uniqueSemanticSectionIdsRequired": true,
+    "selectionBalanceAuditRequired": true,
+    "publicationCapacityAuditRequired": true,
+    "maximumSelectedMovesPerSidePerSection": 4,
+    "fourthRowPreauthorizationRequired": true,
+    "speakerAttributionReviewRequired": true,
+    "sourceExcerptTargetMaximumCharacters": 2200,
+    "longerCompleteArgumentRequiresRationale": true,
+    "moderatorContextAuditRequired": true
+  },
+  "attemptLimits": {
+    "inventory": 1,
+    "primaryPerPass": 1,
+    "adjudication": 1,
+    "publication": 1,
+    "rhetoricalPerPass": 1,
+    "rhetoricalAdjudication": 1,
+    "automaticRetries": 0,
+    "publicationRepairWritableLeavesMaximum": 2,
+    "attemptsPerAuthorizedRepairShard": 1
+  },
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/GR-_l7MgLpg/captions.srv3.xml",
+      "sha256": "7d30dc85a902a1cc307e0d84e8d94d452287e748d5988fcccfcfbd37db18d0ba",
+      "bytes": 588589
+    },
+    "events": {
+      "path": ".assessment-cache/captions/GR-_l7MgLpg/events.json",
+      "sha256": "1d31a4024c9b907057a46e36aad37c1c6bdbfa551143b3ad3d551a848d442da5",
+      "bytes": 225992
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/GR-_l7MgLpg/transcript.txt",
+      "sha256": "21b4313d81fe7312afa367af5ee439998df696cc76a106c68955a13a5625fbc7",
+      "bytes": 96104
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/GR-_l7MgLpg/manifest.json",
+      "sha256": "74c011cdc9665fbd642273466f15f0395b58490a61d1bcec1c34d4cb08a72003",
+      "bytes": 979
+    },
+    "indexedTranscript": {
+      "path": ".assessment-cache/captions/GR-_l7MgLpg/indexed-transcript.txt",
+      "sha256": "4526da71a84ef91aff8a3ab06d8b8230434f5fd876072352bc4605871ed1398e",
+      "bytes": 132610
+    },
+    "publicMetadata": {
+      "path": ".assessment-cache/captions/GR-_l7MgLpg/public-metadata.json",
+      "sha256": "084f85ca81c67695c879b37ebcb195c1ce28715ee746dbaed0b060d66353643a",
+      "bytes": 1900
+    },
+    "sourceAudio": {
+      "path": ".assessment-cache/captions/GR-_l7MgLpg/source-audio-hls.mp4",
+      "sha256": "0b4208f23f523bbab671d42c4015c9b80aa3e7ae309d1c961c00f74e215673e5",
+      "bytes": 78581427
+    },
+    "audioPlan": {
+      "path": ".assessment-cache/intake-GR-_l7MgLpg/audio-attribution/frozen-plan.json",
+      "sha256": "6db6110f8e83548e8cc39047753ab12b36fc3997b6a034ab83aac7c98f30d5f3",
+      "bytes": 3796
+    },
+    "intakeReview": {
+      "path": ".assessment-cache/intake-GR-_l7MgLpg/audio-source-review.json",
+      "sha256": "84e9cc5db6ccfb54933be1a57a8957b37c69f84f18ca80a6b30bf45e516c4369",
+      "bytes": 8788
+    },
+    "audio-scope-01": {
+      "path": ".assessment-cache/intake-GR-_l7MgLpg/audio-attribution/scope-01.response.json",
+      "sha256": "873cd3a3c42d3c99b3be616c3fc34ecb7eb1904bde0c4dfcb0813109492d9c40",
+      "bytes": 17111
+    },
+    "audio-scope-02": {
+      "path": ".assessment-cache/intake-GR-_l7MgLpg/audio-attribution/scope-02.response.json",
+      "sha256": "11e441a8152bc510efdbed5dc0bef3c429c431060b330307f52e4358832c085e",
+      "bytes": 12967
+    },
+    "audio-scope-03": {
+      "path": ".assessment-cache/intake-GR-_l7MgLpg/audio-attribution/scope-03.response.json",
+      "sha256": "9d2d14eaa1efa603bdb2fde7154c285753023086494c6b1313f324d19431c249",
+      "bytes": 11589
+    },
+    "audio-scope-04": {
+      "path": ".assessment-cache/intake-GR-_l7MgLpg/audio-attribution/scope-04.response.json",
+      "sha256": "3ea1b87bd74d41930c377dd4e37e3b14b8377d9079f66339473609d0431d29e6",
+      "bytes": 27733
+    },
+    "verificationReview": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/source/verification-review.json",
+      "sha256": "f50ae6a6669c039b0c2634f34e525f4f294921ae792d7e784625ed50c700fb78",
+      "bytes": 9288
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/authorization.json",
+      "sha256": "dce6591247c54b1d8fef5f62a52f319a5ad56c6036a59041e388f26c0e8725a2",
+      "bytes": 6575
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/source/source-lock.json",
+      "sha256": "ca52232442c371e8a99766de517a1b993b8d9ec22558ab92edbe8ddbde3e0c8e",
+      "bytes": 14042
+    },
+    "sourceNotes": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/source/assessment-source-notes.md",
+      "sha256": "5cf8a50d215dcd19e62fe9f9238320d9735de3ac9595bb3be401c2efe1ea86d8",
+      "bytes": 6085
+    },
+    "readerScopeDisclosure": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/source/reader-scope-disclosure.json",
+      "sha256": "355ea1f045c6725bd24ede8779b1774ceb3e400c0e8d92f0a02e9cc3ca5310de",
+      "bytes": 7998
+    },
+    "editorScope": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-299/source/editor-scope.json",
+      "sha256": "e1597403f692fdc97771426ea3f2d4456bcd230d3b196fa2a242b88e3de9ba53",
+      "bytes": 2061
+    }
+  },
+  "controlLocks": {
+    "productionWorkflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "publicationReadiness": {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    "scoringWorkflow": {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    "scoreStabilityPolicy": {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    "scoreCalculator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    "scoreDimensions": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    "sourceRenderer": {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    "standaloneProtocolLibrary": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    "standaloneProtocolAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "55bf7b441bef410cd2f8f27a2e5278090aed084771257cf4fff4a9bc29860898",
+      "bytes": 79869
+    },
+    "contentParityAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "aae806466005602401fb9536cbeab97cda43cd898ef78d2c200c012b24a2b8eb",
+      "bytes": 13580
+    },
+    "rhetoricalTagAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+      "bytes": 13417
+    },
+    "productionValidator": {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "45bb5c6ca356eb66c4339507c0bcdb7af0888b2c6b5ae146f4d9a60ff0de89a3",
+      "bytes": 91388
+    },
+    "packageScripts": {
+      "path": "package.json",
+      "sha256": "2248d1660c49a048566a632e83b4895a56bd37a98d8c0359d386d018c4d9d682",
+      "bytes": 65122
+    },
+    "activeScorePolicy": {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    "activeScoreEvaluator": {
+      "path": "scripts/lib/assessment-production-score-stability-policy-active.mjs",
+      "sha256": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+      "bytes": 1331
+    },
+    "activeScoreTest": {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    },
+    "maintainedRunner": {
+      "path": "scripts/standalone-workflow.mjs",
+      "sha256": "f9bebb3157c0227e20f396240411af838138b4520c7a48bec411725896f841cc",
+      "bytes": 5880
+    },
+    "maintainedRunnerLibrary": {
+      "path": "scripts/lib/standalone-workflow.mjs",
+      "sha256": "bd13373d22b4a2d74b1d6788c6b25613611be653a212aeaf31ca4bfcadcde333",
+      "bytes": 18686
+    },
+    "memoryHandoff": {
+      "path": "scripts/lib/standalone-handoff.mjs",
+      "sha256": "939461c747837553ff5d65a83d9af0ad51c576c314959d2c59e6773bf236b42f",
+      "bytes": 6020
+    },
+    "workerAuthenticator": {
+      "path": "scripts/authenticate-standalone-worker.py",
+      "sha256": "98c8186c703818d1eaf5270d26adbfaaf7f7284180cf3482d3ec7a64e5e9219e",
+      "bytes": 6247
+    },
+    "inventoryMechanics": {
+      "path": "scripts/standalone/lock-inventory.mjs",
+      "sha256": "dd2fba288eaab30c2af64c097abcde4f93d1f383b24f4c2a833f9f6866ab2a70",
+      "bytes": 5778
+    },
+    "publicationChecker": {
+      "path": "scripts/lib/standalone-publication-check.mjs",
+      "sha256": "fa5d57e9932db7cd0243b015dd68c9556465b194501fdd830ba73b0e20637809",
+      "bytes": 7222
+    },
+    "editorScopeValidator": {
+      "path": "scripts/lib/assessment-editor-scoped-source.mjs",
+      "sha256": "a97ee74f7afc04da1a943494d53a2aadb958618d0ab6296584603fdc5d4f7395",
+      "bytes": 6789
+    }
+  }
+}
