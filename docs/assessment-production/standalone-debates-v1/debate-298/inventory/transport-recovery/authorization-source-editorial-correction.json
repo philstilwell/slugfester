@@ -1,0 +1,85 @@
+{
+  "status": "authorized-bounded-unsaved-source-editorial-correction",
+  "createdAt": "2026-10-08T00:07:42.275957+00:00",
+  "worker": "/root/inventory298",
+  "newContext": false,
+  "attemptReset": false,
+  "consumedContexts": 1,
+  "submittedCandidates": 0,
+  "priorHandoffAbsent": true,
+  "candidateLost": false,
+  "recoveryBasis": "Exact worker-authored candidate bytes are retained in tool-call input and mechanically recovered without executing source code; original context remains available. Resume that same context with bounded quote correction, not a new assessment.",
+  "preservedCandidates": [
+    {
+      "callId": "call_00b35a3a03f342c8b2ed2d65340346ef",
+      "path": "docs/assessment-production/standalone-debates-v1/debate-298/inventory/transport-recovery/preserved-unsaved-candidate-1.json",
+      "sha256": "bcee462a0df5eaeda7740069450b9c4cf5ad1057dc0821e72a04d55c986d77d4",
+      "bytes": 68257,
+      "moves": 29
+    },
+    {
+      "callId": "call_c00e7590ad424982a79f07033bcf035f",
+      "path": "docs/assessment-production/standalone-debates-v1/debate-298/inventory/transport-recovery/preserved-unsaved-candidate-2.json",
+      "sha256": "7cf791d7a9d39c8fef9ab2c30f63d2e597f6e42343fa0054d9497c8623179ee6",
+      "bytes": 26505,
+      "moves": 12
+    },
+    {
+      "callId": "call_d21a9d0cd78140d4949449cf882b34ac",
+      "path": "docs/assessment-production/standalone-debates-v1/debate-298/inventory/transport-recovery/preserved-unsaved-candidate-3.json",
+      "sha256": "1e08e07788ae90174aaf557dcdacc07d4def463facea2c9157298ee405bd7213",
+      "bytes": 22013,
+      "moves": 12
+    }
+  ],
+  "authorizedInput": {
+    "callId": "call_00b35a3a03f342c8b2ed2d65340346ef",
+    "path": "docs/assessment-production/standalone-debates-v1/debate-298/inventory/transport-recovery/preserved-unsaved-candidate-1.json",
+    "sha256": "bcee462a0df5eaeda7740069450b9c4cf5ad1057dc0821e72a04d55c986d77d4",
+    "bytes": 68257,
+    "moves": 29
+  },
+  "authorizedWritableFields": [
+    "moves",
+    "coverageAudit",
+    "selectionBalanceAudit",
+    "publicationCapacityAudit",
+    "sections"
+  ],
+  "permittedCorrection": "Retain original 29-move coverage as the starting point. Correct complete exact quotes, inaccurate source descriptions and reply targets, recover material omitted later replies and their actual targets, and recompute section/balance/capacity audits. Sections may be split/reweighted only if needed to retain independently assessable source distinctions within the 4-7 section and four-per-side maximum. No scores, ratings, outcome or new context. All changes remain in memory before first submission; controller must inspect every resulting byte. The two 12-move candidates remain rejected.",
+  "requiredTransport": "Read only the controller-preserved original worker-authored candidate and recovery records in addition to existing allowed evidence. Load original bytes into memory and run pinned checker using subprocess input; no candidate output file, no fresh context or attempt reset.",
+  "supersedes": "authorization.json before any worker executed recovery",
+  "updatedAt": "2026-10-08T00:12:21.185916+00:00",
+  "correctionShards": [
+    {
+      "fields": [
+        "moves",
+        "coverageAudit"
+      ],
+      "purpose": "Source-faithful moves, actual targets, omitted material replies, complete quotes and documented omissions; one correction within original unsaved context."
+    },
+    {
+      "fields": [
+        "sections",
+        "publicationCapacityAudit"
+      ],
+      "purpose": "Source-based coherent sections and independently derived maximum counts if resectioning is needed."
+    },
+    {
+      "fields": [
+        "selectionBalanceAudit"
+      ],
+      "purpose": "Recompute actual per-side and per-section counts without selecting for symmetry."
+    }
+  ],
+  "controllerSourceConcerns": [
+    "Nonexact or incomplete optional quote spans; omit unsafe quote candidates and retain at least one complete exact thought per side. Do not repair captions by inventing words.",
+    "Constructive moves with responseComponents/targets must be corrected to actual reply status.",
+    "Include or specifically justify omission of Lataster conditional suffering reply around 40:24; actual infinite-God/infinite-universe question around 1:05:46; Horn simplicity/entity-count response around 1:08:30; moral knowledge exchange around 1:09:28. Retain actual targets of selected replies.",
+    "Preserve Horn hiddenness possible-reason/incompatibility standard, without rewriting as sufficient probabilistic unexpectedness.",
+    "Correct Horn deduction-premise quote/span mismatch around 1:00:36 versus 1:03:36.",
+    "Limb example and nonresistant nonbelief reply links must contact actual selected source targets.",
+    "Lataster closing clarifies a conditional grant; do not describe as withdrawal of an actual concession.",
+    "Rival-god taxonomy and broad morality spans require minimal coherent complete arguments, not broad collections."
+  ]
+}

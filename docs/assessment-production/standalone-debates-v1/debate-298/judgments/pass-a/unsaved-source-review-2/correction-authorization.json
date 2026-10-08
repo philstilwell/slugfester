@@ -1,0 +1,42 @@
+{
+  "status": "rejected-unsaved-source-wording",
+  "reason": "Four rationale leaves ambiguously mix recognition/ownership confidence, later context, or apparent lack of reply with participant assessment. Same-context diagnostic distinguishes each from rating substance. Clarify only these leaves to state the existing eligible basis.",
+  "authorizedFields": [
+    "judgments.6.dimensions.precisionClarity.rationale",
+    "judgments.25.dimensions.precisionClarity.rationale",
+    "judgments.31.dimensions.evidenceWarrant.rationale",
+    "judgments.32.dimensions.calibrationCharity.rationale"
+  ],
+  "shards": [
+    {
+      "id": "source-clarification-1",
+      "allowedFields": [
+        "judgments.6.dimensions.precisionClarity.rationale",
+        "judgments.25.dimensions.precisionClarity.rationale"
+      ],
+      "attempts": 1
+    },
+    {
+      "id": "source-clarification-2",
+      "allowedFields": [
+        "judgments.31.dimensions.evidenceWarrant.rationale",
+        "judgments.32.dimensions.calibrationCharity.rationale"
+      ],
+      "attempts": 1
+    }
+  ],
+  "constraints": [
+    "Continue existing unsaved context only; no fresh model attempt or numerical reassessment.",
+    "Every value, confidence, burden adjustment, move order, identity and other rationale stays byte-equivalent as parsed JSON.",
+    "If clarification cannot accurately express your original judgment, stop instead of rationalizing a fixed value.",
+    "Original and revised source-review candidates remain immutable. Saved submission attempt remains unused."
+  ],
+  "diagnostic": [
+    "Reviewer states precision76 concerns compressed participant sequence of contingency, creation, substance dualism and time; caption errors only lower source confidence.",
+    "Reviewer states precision78 concerns sequence of impressive sign, followership and non-proof; ownership uncertainty did not reduce rating.",
+    "Reviewer states evidence67 used the selected biblical examples and access/usefulness inference, not later cannibalism continuation; cultural conflict was an ambiguous label for selected biblical examples.",
+    "Reviewer states calibration70 evaluates broad quantifier versus one heroism example, not failure to answer after moderator cutoff."
+  ],
+  "candidateSha256": "1ca2e2c674819bc6797753a53eccf90dbfc69585467863781bf051478abfd930",
+  "candidateBytes": 45666
+}

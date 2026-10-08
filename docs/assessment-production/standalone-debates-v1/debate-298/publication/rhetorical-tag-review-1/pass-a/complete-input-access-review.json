@@ -1,0 +1,22 @@
+{
+  "status": "passed-with-reviewed-transport-diagnostics",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-298/publication/rhetorical-tag-review-1/pass-a/execution.json",
+    "sha256": "cc63b95b1b5a1f59f17dea1b1bcdfbde8624d85b6ebcf4e4b22ec21971acf73a",
+    "bytes": 16731
+  },
+  "scope": "Controller inspected all custom tool commands including reading, in-memory construction, checkers, bounded authorizations and exact-byte handoff. No peer contents, scores, winner, external services or credentials accessed.",
+  "exception": "Pass A invoked runner status and a no-op handoff module while troubleshooting syntax; output exposed only phase presence, hashes and timing, not assessment scores, rationale or peer contents. Incorrect transport commands failed before submission. Pass B CLI help and missing-debate invocation likewise disclosed no assessment content.",
+  "actualContextModels": [
+    {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low"
+    }
+  ],
+  "prohibitedContentExposed": false,
+  "workerOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-298/publication/rhetorical-tag-review-1/pass-a/output.json",
+    "sha256": "af8d334ce4cb8459109840cd0d058f4b3ec5f01d18f0cbdf6f6b19089aa0a322",
+    "bytes": 21102
+  }
+}
