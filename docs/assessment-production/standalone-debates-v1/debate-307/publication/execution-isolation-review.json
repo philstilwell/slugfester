@@ -1,0 +1,22 @@
+{
+  "status": "passed-completed-execution-isolation-review",
+  "debateNumber": "307",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/publication/execution.json",
+    "sha256": "92de1ffbc50c63ca14b1e1cfd158e17721d3c6c9d5f4987e6fb6708160f9563b",
+    "bytes": 43414
+  },
+  "priorInputReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/publication/input-access-review.json",
+    "sha256": "4a5342e55a9c2b08f92a775f1175b6bb4ab848972408485451acc4abe2a7ff5f",
+    "bytes": 1393
+  },
+  "reviewedToolCalls": 100,
+  "findings": [
+    "Actual context stayed gpt-5.6-sol/low through all same-context follow-ups.",
+    "Full 13,180-line allowed reader was authenticated before authoring.",
+    "Post-reading calls retained literal candidates in memory, checked through pinned tools and emitted exact bytes. Same-context corrections used root findings without peer or historical draft access.",
+    "No network, paid services, other agents, scoring, or unapproved file writes by writer. Root performed exact-byte transport after source review."
+  ],
+  "violations": []
+}

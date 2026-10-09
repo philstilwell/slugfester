@@ -6,6 +6,22 @@ const disclosure = "Automatic captions were supplemented by targeted automated a
 const equivalentDisclosure = "Automatic captions were supplemented by targeted automated audio checks, not direct human listening.";
 const publicCaptionDisclosure = "Public automatic captions were supplemented by targeted automated audio checks; these were not direct human listening.";
 const supplementaryDisclosure = "The source uses automatic captions and supplementary automated audio checks where available; no direct human listening is claimed.";
+const boundedDisclosures = [
+  "Public automatic captions were supplemented by five targeted automated audio checks; these were not direct human listening.",
+  "One long automated audio check ended before its clip ended; no independent audio verification is claimed beyond the text actually returned."
+];
+
+test("bounded source-quality disclosures preserve field and surrounding-text restrictions", () => {
+  for (const note of boundedDisclosures) {
+    assert.equal(hasInternalDebateMetadata(note, "sourceNote"), false);
+    assert.equal(hasInternalDebateMetadata(`Formal rounds only. ${note}`, "sourceNote"), false);
+    assert.equal(hasInternalDebateMetadata(`${note} SHA-256`, "sourceNote"), true);
+    assert.equal(hasInternalDebateMetadata(`${note} audio check`, "sourceNote"), true);
+    assert.equal(hasInternalDebateMetadata(note, "summary"), true);
+  }
+  assert.equal(hasInternalDebateMetadata(boundedDisclosures[0].replace("not direct human listening", "direct human listening"), "sourceNote"), true);
+  assert.equal(hasInternalDebateMetadata(boundedDisclosures[1].replace("no independent audio verification", "independent audio verification"), "sourceNote"), true);
+});
 
 test("reader source note may accurately disclose automated audio verification", () => {
   assert.equal(hasInternalDebateMetadata(disclosure, "sourceNote"), false);

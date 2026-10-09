@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "307",
+  "debateId": "ehrman-white-bible-misquote-jesus-2009",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "white-early-lines-and-no-central-control:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "white-early-lines-and-no-central-control",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate pro adjustment is warranted: the motion, recovery, significance, and inspiration consequences are already captured in the move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": true,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured debate-wide completion criterion remains beyond the scored pro moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence remains that would avoid rescoring the assessed pro arguments.",
+            "alreadyCapturedBy": [],
+            "counterfactual": "Removing any proposed adjustment would not change an independently established burden result."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The unresolved gap between a recoverable common ancestor and the autograph affects pro-recovery, but its consequences are already evaluated in the bottleneck, tenacity, and early-witness moves rather than as a separate debate-wide adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-recovery"
+            ],
+            "completionCriterion": "Establish that surviving agreement need not reproduce every autograph word without rescoring the selected genealogy moves.",
+            "relatedMoveIds": [
+              "ehrman-bottleneck",
+              "tenacity-versus-conjectural-emendation",
+              "ehrman-challenges-early-witness-count"
+            ],
+            "distinctConsequence": "No distinct unscored consequence remains after the selected recovery and genealogy moves are evaluated.",
+            "alreadyCapturedBy": [
+              "ehrman-bottleneck",
+              "tenacity-versus-conjectural-emendation",
+              "ehrman-challenges-early-witness-count"
+            ],
+            "counterfactual": "Without those scored moves, pro's debate-wide recovery limitation would lack its principal support."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate con adjustment is warranted: distribution, message continuity, standard, and motion consequences are already captured in the move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": true,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured debate-wide completion criterion remains beyond the scored con moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence remains that would avoid rescoring the assessed con arguments.",
+            "alreadyCapturedBy": [],
+            "counterfactual": "Removing any proposed adjustment would not change an independently established burden result."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The distinction between local variant significance and continuity of the overall message affects con-significance, but the selected Hebrews, essential-beliefs, and final-motion moves already score that debate-wide issue.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-significance",
+              "con-motion"
+            ],
+            "completionCriterion": "Show that local wording differences do not defeat recoverability of Jesus' and the apostles' broader teaching.",
+            "relatedMoveIds": [
+              "white-hebrews-consistency-challenge",
+              "white-essential-beliefs-qualification",
+              "white-final-motion-denial"
+            ],
+            "distinctConsequence": "No separate unscored message-continuity consequence remains beyond the selected con replies and closing.",
+            "alreadyCapturedBy": [
+              "white-hebrews-consistency-challenge",
+              "white-essential-beliefs-qualification",
+              "white-final-motion-denial"
+            ],
+            "counterfactual": "Without those scored moves, con's distinction between local variation and overall message continuity would be incomplete."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 32,
+    "disputesExtracted": 3,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/inventory/inventory.json",
+      "sha256": "e796d85464b222422dee5586e299240b7ca32083eba561e8d5a01317e49d65a0"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/judgments/pass-a/output.json",
+      "sha256": "bd9ca4836b5312f2ef44b7ae5f68e4eee2b4ea2546e49a2719ccfbd59ef42f37"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/judgments/pass-b/output.json",
+      "sha256": "44fbe4ead05332bf176d6c4216ae1b284528181e456e8a1a1c017ecfb81fdbe5"
+    }
+  }
+}

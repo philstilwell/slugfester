@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "307",
+  "debateId": "ehrman-white-bible-misquote-jesus-2009",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/inventory/inventory.json",
+    "sha256": "4ea51dbff7cafb95d96f6c4370d54c54b4d2dd252872f724cb94d42ba19c0325",
+    "bytes": 130673
+  },
+  "triggeredMoveIds": [],
+  "checks": [],
+  "supplementarySourceVerification": {
+    "sourceReview": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/source/verification-review.json",
+      "sha256": "18fd59a60dfa8bb502ca45de44efded485911d03231b02487751788d5f49aeff",
+      "bytes": 7380
+    },
+    "results": {
+      "path": ".assessment-cache/intake-307/source-audio-results.json",
+      "sha256": "8c73321299b01235bdf092561c9d92897ddaac41d38d091f7401b40c9c4e6e3d",
+      "bytes": 4884
+    },
+    "method": "Five targeted automated audio-to-text checks completed before inventory freezing, read against full canonical captions. No direct human listening or diarization. No additional inventory attribution triggers. Canonical quotations remain uncorrected exact caption excerpts.",
+    "paidAttempts": 5,
+    "paidRetries": 0,
+    "durationSeconds": 1940,
+    "finalClipResponseLimitation": "The longest clip response ends mid-sentence; review uses only returned text together with complete captions and does not claim a complete independent transcript of that clip."
+  },
+  "cost": {
+    "currency": "USD",
+    "model": "gpt-4o-mini-transcribe",
+    "rateUsdPerMinute": 0.003,
+    "knownSuccessfulCallCostUsd": 0.097,
+    "directCostUsd": 0.097,
+    "maximumPossibleTotalCostUsd": 0.097,
+    "authorizedCumulativeCeilingUsd": 0.35,
+    "invoiceVerified": false,
+    "basis": "Duration-based estimate for five successfully returned calls totaling 1940 seconds; actual usage retained in source results. No failed or transport-uncertain paid calls.",
+    "additionalPaidCostAfterInventoryUsd": 0
+  },
+  "audit": {
+    "requiredAttributionChecks": 0,
+    "completedAttributionChecks": 0,
+    "unresolvedAttributionChecks": 0,
+    "belowHighAttributionMoveIds": [],
+    "canonicalCaptionsUnchanged": true
+  }
+}

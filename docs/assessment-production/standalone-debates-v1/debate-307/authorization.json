@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-09T15:32:43.564393+00:00",
+  "userAuthorization": "User supplied this video under the invoked addition skill. Standing authority covers assessment and publication of formal debate and both closings, a scope note, complete featured quotations, ordinary commit/push/PR/required-check merge without routine approvals, and announced transcription within the standing cap.",
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false,
+    "controllerModelCondition": {
+      "required": "gpt-6-astra",
+      "reasoningEffort": "xhigh",
+      "actualCurrentTurnConfirmed": true,
+      "authenticatedTurnTimestamp": "2026-10-09T15:29:19.645Z"
+    }
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "repositoryBaseline": {
+    "head": "8db56b23fb6e023cafdfc181dcb1eb35f04af234",
+    "localMain": "8db56b23fb6e023cafdfc181dcb1eb35f04af234",
+    "originMain": "8db56b23fb6e023cafdfc181dcb1eb35f04af234",
+    "branch": "codex/debate-307-intake",
+    "cleanBeforeBranch": true,
+    "workingCopyRoot": "/private/tmp/slugfester-debate-301",
+    "preservationNote": "Healthy private clone reused after clean fast-forward. Original user checkout preserved."
+  },
+  "identity": {
+    "debateNumber": "307",
+    "debateId": "ehrman-white-bible-misquote-jesus-2009",
+    "title": "Bart Ehrman vs James White — Does the Bible Misquote Jesus? (2009)",
+    "label": "Does the Bible Misquote Jesus?",
+    "motion": "Does the Bible misquote Jesus?",
+    "pro": {
+      "speaker": "Bart Ehrman",
+      "position": "The Bible misquotes Jesus"
+    },
+    "con": {
+      "speaker": "James White",
+      "position": "The Bible preserves Jesus’s message"
+    },
+    "eventYear": 2009,
+    "videoId": "5K-AOfj1Axg",
+    "canonicalUrl": "https://www.youtube.com/watch?v=5K-AOfj1Axg",
+    "sourceTitle": "Does the Bible Misquote Jesus?",
+    "topicCategory": "christianity-bible-theology",
+    "dyadic": true,
+    "originalRecordingDyadic": true
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "currentPlanEstimateUsd": 0.1,
+    "maximumCumulativeCostUsd": 0.35,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "audioVerificationPolicy": "Five frozen targeted source inputs, one attempt each, no automatic paid retry. Any new inventory-triggered checks must be frozen and remain within the announced cumulative ceiling."
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-307",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/ehrman-white-bible-misquote-jesus-2009.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/ehrman-white-bible-misquote-jesus-2009.js",
+    "generated site output for this addition"
+  ]
+}

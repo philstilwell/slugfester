@@ -1,0 +1,51 @@
+{
+  "status": "failed-post-score-source-span-correspondence",
+  "createdAt": "2026-10-09T17:09:29.017414+00:00",
+  "proposal": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/source-correction-2/proposal.json",
+    "sha256": "46e7ec9a95fe4f8bbdd24541504b4d56de08dd5444463be6749822526331102e",
+    "bytes": 4472
+  },
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/inventory/inventory.json",
+    "sha256": "e796d85464b222422dee5586e299240b7ca32083eba561e8d5a01317e49d65a0",
+    "bytes": 130655
+  },
+  "finalLedger": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/final-ledger/final-ledger.json",
+    "sha256": "245ac172a5bb93214a378ad61f0728325edd72ef8014ecc60d2b365f837540e1",
+    "bytes": 271449
+  },
+  "scoreOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/score-pass/output.json",
+    "sha256": "f368dd5495134f6101c157a52633d7cade5edff4b6aabea49f42ee6eeeb5b582",
+    "bytes": 16739
+  },
+  "scoreAlreadyCalculated": true,
+  "currentUnpublishedScore": {
+    "pro": 88,
+    "con": 86
+  },
+  "noScoreRerun": true,
+  "productionMutation": false,
+  "controllerResponsibility": "The mismatch was missed during the earlier inventory and judgment eligibility reviews. Publication is paused; earlier passed review records are retained and superseded by this failure finding for this move.",
+  "fullSpanReview": {
+    "all32SourceSpansReread": true,
+    "otherSourceSpanClaimMismatchesFound": [],
+    "sourceOnlyReading": true
+  },
+  "violations": [
+    {
+      "moveId": "white-classical-usable-text-followup",
+      "field": "sourceSpan",
+      "retainedWrongEvents": [
+        3006,
+        3013
+      ],
+      "proposedCorrectEvents": [
+        2973,
+        2980
+      ]
+    }
+  ]
+}

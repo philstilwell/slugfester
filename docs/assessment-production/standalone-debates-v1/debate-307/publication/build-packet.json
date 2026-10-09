@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "307",
+  "debateId": "ehrman-white-bible-misquote-jesus-2009",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/inventory/inventory.json",
+      "sha256": "d89f19e1ad8f995f563191e76832034104404c0a623c496004baee95f51434d7",
+      "bytes": 130958
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/score-pass/output.json",
+      "sha256": "9ddad4897512746a24f3cbfdda08626ca64caf27fa1bd081a760f266916b1df2",
+      "bytes": 16741
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/publication/skeleton.json",
+      "sha256": "b2326d648224d711468416e4a60768a5c1942bbec31f4dc73ae8c4cefb1efe7e",
+      "bytes": 12662
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/publication/reference-metrics.json",
+      "sha256": "2aa53d7118225f16a8914e471f3658949aeb984ce16ec7b03da616b32086bc9d",
+      "bytes": 170495
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

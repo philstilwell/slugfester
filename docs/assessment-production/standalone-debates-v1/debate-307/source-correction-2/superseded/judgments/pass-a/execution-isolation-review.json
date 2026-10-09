@@ -1,0 +1,23 @@
+{
+  "status": "passed-complete-isolation-review",
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "low",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/judgments/pass-a/execution-plan.json",
+    "sha256": "84a6a333c4ab0d4b2d29d99615e5b21cfc5913d1b810babe60c667b55724b980",
+    "bytes": 8255
+  },
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/judgments/pass-a/execution.json",
+    "sha256": "d62af355ed30f426b33164789f94c332023ebdcd8579584a5692b3aa3ff23712",
+    "bytes": 14249
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/judgments/pass-a/output.json",
+    "sha256": "bd9ca4836b5312f2ef44b7ae5f68e4eee2b4ea2546e49a2719ccfbd59ef42f37",
+    "bytes": 36587
+  },
+  "review": "Full tool-call access inspected. Assigned plan and maintained reader only for evidence; candidate constructed in memory and checked against pinned tool on stdin. No peer, prior candidate, historical assessment, external source, configuration or credential reads. No score calculation. Controller transported exact emitted bytes, reviewed the entire candidate and released its single save.",
+  "transportDiagnostics": "Pass A abandoned an ineffective interactive stdin check with Ctrl-C and completed a non-TTY check; pass B replaced an unavailable in-isolate base64 helper before executing its successful checker. Both corrections remained unsaved and did not create new assessment contexts or submissions.",
+  "violations": []
+}

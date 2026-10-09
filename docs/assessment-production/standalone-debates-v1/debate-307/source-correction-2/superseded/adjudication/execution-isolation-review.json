@@ -1,0 +1,27 @@
+{
+  "status": "passed-controller-complete-isolation-review",
+  "createdAt": "2026-10-09T16:49:58.003036+00:00",
+  "debateNumber": "307",
+  "agent": "/root/adjudicator307",
+  "readingReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/adjudication/reading-isolation-review.json",
+    "sha256": "7fabbf103bd1146edd8b30e2b64b79eb7c26289e748bb1cf997c6a09a09f0324",
+    "bytes": 1338
+  },
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/adjudication/execution.json",
+    "sha256": "955f252f65d1d5457c52ba2d8f8886dc55f514eaad30bc73469df4f850e9242c",
+    "bytes": 15520
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/adjudication/output.json",
+    "sha256": "144aada8235607bcf704b633321571f853ba0987e1ccf2fce1b07d7ed1f9b894",
+    "bytes": 1532
+  },
+  "notes": [
+    "After authenticated reading, calls were restricted to in-memory candidate composition, the pinned checker and raw transport. No additional evidence or peers were accessed.",
+    "An unavailable in-isolate digest operation did not alter the raw candidate; the maintained checker and root transport independently verified its exact SHA-256.",
+    "All three supplied options were resolved without numerical totals, third options, assessment-source edits or a second saved submission."
+  ],
+  "violations": []
+}

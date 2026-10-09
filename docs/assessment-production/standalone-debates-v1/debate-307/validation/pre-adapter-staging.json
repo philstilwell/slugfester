@@ -1,0 +1,31 @@
+{
+  "status": "staging-diagnostic-preserved-production-restored",
+  "startedAt": "2026-10-09T19:44:22.795386+00:00",
+  "elapsedMs": 2104,
+  "productionRestoredSha256": "c128d2775217482855ce092591e6914833bcad9102f6e7d0cd49f553e4367ec5",
+  "steps": [
+    {
+      "command": [
+        "node",
+        "scripts/standalone-workflow.mjs",
+        "mechanical",
+        "--debate",
+        "307",
+        "--step",
+        "integrate"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"step\": \"integrate\",\n  \"status\": \"passed\",\n  \"checkOnly\": false,\n  \"output\": \"{\\\"status\\\":\\\"integrated-one-candidate\\\",\\\"debateNumber\\\":\\\"307\\\",\\\"debates\\\":307,\\\"priorDebatesUnchanged\\\":true,\\\"beforeSha256\\\":\\\"c128d2775217482855ce092591e6914833bcad9102f6e7d0cd49f553e4367ec5\\\",\\\"afterSha256\\\":\\\"87ff0d9c2c764f6a8315eccc0193d048126d0e95c034dcf545b4fcaec566cdb0\\\"}\\n\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "scripts/validate-debates.mjs"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Debate validation failed with 6 issues:\n- debates.306.sourceNote: must use reader-facing language without internal workflow data\n- debates.306.sections.1.exchanges.2.con: must be an object\n- debates.306.sections.2.exchanges: must contain no more than 3 items\n- debates.306.sections.2.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow\n- debates.306.sections.3.exchanges.2.con: must be an object\n- debates.306.assessmentRubric: requires a matching JSON assessment ledger\n"
+    }
+  ]
+}

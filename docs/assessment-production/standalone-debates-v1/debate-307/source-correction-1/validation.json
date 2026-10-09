@@ -1,0 +1,30 @@
+{
+  "status": "passed-explicitly-approved-single-field-correction",
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/source-correction-1/authorization.json",
+    "sha256": "41e856f27f7b246de806d194b4206c528afda8400d8f2d33e2fe2c5d03621876",
+    "bytes": 1293
+  },
+  "before": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/source-correction-1/superseded/inventory/inventory.json",
+    "sha256": "4ea51dbff7cafb95d96f6c4370d54c54b4d2dd252872f724cb94d42ba19c0325",
+    "bytes": 130673
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/inventory/inventory.json",
+    "sha256": "e796d85464b222422dee5586e299240b7ca32083eba561e8d5a01317e49d65a0",
+    "bytes": 130655
+  },
+  "exactChanges": [
+    {
+      "path": "/moves/1/warrant",
+      "before": "Ehrman says it is absent from the oldest authorities and moves in the tradition despite its popularity.",
+      "after": "Ehrman says the passage is absent from the oldest authorities despite its popularity."
+    }
+  ],
+  "structuralInvariantsUnchanged": true,
+  "sourceVerification": "Retained Ehrman events591\u2013651 support absence from oldest authorities and popularity. The removed movement premise appears in excluded White Q&A3997\u20134022 and supplies no credit, penalty, quotation or reply evidence. All other source restrictions remain unchanged.",
+  "sourceEligibilityViolations": [],
+  "scorePasses": 0,
+  "freshPrimaryContextsRequired": true
+}
