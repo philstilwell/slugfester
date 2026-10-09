@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "303",
+  "debateId": "craig-nugent-god-existence-2017",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "moral-experience-objectivity:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "moral-experience-objectivity",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "Calibration: The move is reasonably calibrated about fallibility, though “logically and inescapably” inherits all uncertainty in the disputed first premise."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "Craig appropriately allows fallibility and defeaters, but saying there is no defeater and that the conclusion follows inescapably exceeds the limited defense presented here."
+        }
+      }
+    },
+    {
+      "disputeId": "natural-reality-fit:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "natural-reality-fit",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 60,
+          "rationale": "Calibration: The move presents a broad expectation as if generic theism had a single prediction and gives insufficient room to Craig’s neutral fine-tuning definition."
+        },
+        "option-b": {
+          "value": 70,
+          "rationale": "Nugent presents the naturalistic fit as suggestive rather than certain, but assumes too readily that theism should be indifferent to physical conditions."
+        }
+      }
+    },
+    {
+      "disputeId": "natural-reality-fit:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "natural-reality-fit",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "cosmic-scale-and-human-marginality:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "cosmic-scale-and-human-marginality",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "religion-corrupts-morality:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "religion-corrupts-morality",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "foreknowledge-modal-reply:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "foreknowledge-modal-reply",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "formal-command-consistency-reply:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "formal-command-consistency-reply",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 70,
+          "rationale": "Coherence: The internal-consistency standard is coherent, but the decisive claim that no inconsistency exists is deferred to an external website rather than argued here."
+        },
+        "option-b": {
+          "value": 58,
+          "rationale": "Craig correctly notes that an internal critique must show tension between perfect goodness and the command, but claiming no inconsistency without presenting the defense leaves the inference unsupported."
+        }
+      }
+    },
+    {
+      "disputeId": "formal-command-consistency-reply:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "formal-command-consistency-reply",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "Responsiveness: He answers the grounding objection and identifies the relevant internal test, but does not answer Nugent’s concrete killing challenge."
+        },
+        "option-b": {
+          "value": 66,
+          "rationale": "It answers Nugent’s command challenge only at the level of burden and grounding, not the substantive question of how killing children is consistent with goodness."
+        }
+      }
+    },
+    {
+      "disputeId": "formal-command-consistency-reply:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "formal-command-consistency-reply",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 77,
+          "rationale": "Burden: The move concerns a central moral-source burden, yet burden-shifting cannot substitute for defending the alleged command’s consistency with goodness."
+        },
+        "option-b": {
+          "value": 70,
+          "rationale": "The reply marginally protects the pro-central moral route by identifying the needed contradiction, but it fails to discharge the specific consistency burden created by the example."
+        }
+      }
+    },
+    {
+      "disputeId": "formal-command-consistency-reply:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "formal-command-consistency-reply",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "Clarity: The formal distinction between external condemnation and internal inconsistency is clear, even though the substantive defense is absent."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "The internal-versus-external moral-standard distinction is understandable, while the actual content of Craig’s claimed demonstration is absent and therefore unauditable."
+        }
+      }
+    },
+    {
+      "disputeId": "formal-command-consistency-reply:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "formal-command-consistency-reply",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "comparative-religious-defeaters-reply:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "comparative-religious-defeaters-reply",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "kalam-uncertainty:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "kalam-uncertainty",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "uniform-beginning-reply:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "uniform-beginning-reply",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "rational-committee-normativity-critique:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "rational-committee-normativity-critique",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 1,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 58,
+          "rationale": "Responsiveness: The move engages the committee device, but attacks a denial of objective morality that Nugent explicitly did not adopt."
+        },
+        "option-b": {
+          "value": 70,
+          "rationale": "The reply targets Nugent’s evolutionary and committee proposals, but it answers a weaker reconstruction by saying Nugent denies the very objective values he affirmed."
+        }
+      }
+    },
+    {
+      "disputeId": "emergent-consciousness-qualified-reply:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "emergent-consciousness-qualified-reply",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "command-killing-and-repentance-challenge:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "command-killing-and-repentance-challenge",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "net-zero-reply:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "net-zero-reply",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No additional pro adjustment is warranted: the debate-wide gaps in causal personhood, design comparison, moral grounding, command consistency, and resurrection warrant are already represented in the scored moves and response links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-central",
+              "pro-christian"
+            ],
+            "completionCriterion": "Complete the cumulative route from creator and designer to a good personal God and the specifically Christian conclusion.",
+            "relatedMoveIds": [
+              "personal-first-cause",
+              "fine-tuning-design",
+              "formal-command-consistency-reply",
+              "resurrection-case"
+            ],
+            "distinctConsequence": "No distinct unscored debate-wide consequence remains beyond the move-level limitations already assessed.",
+            "alreadyCapturedBy": [
+              "personal-first-cause",
+              "fine-tuning-design",
+              "formal-command-consistency-reply",
+              "resurrection-case"
+            ],
+            "counterfactual": "Removing the cited move-level limitations would improve those moves but would not reveal a separate unscored adjustment basis."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate pro adjustment is applied because all debate-wide burden consequences are already captured in the locked move ratings and response links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion remains outside the move-level assessments and locked burden contacts.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct unscored debate-wide consequence was identified for this side.",
+            "alreadyCapturedBy": [
+              "all locked move judgments and response links"
+            ],
+            "counterfactual": "A nonzero adjustment would rescore consequences already represented in the move judgments."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No additional con adjustment is warranted: limitations in the naturalistic comparisons, moral grounding proposal, evil argument, and resurrection reply are already captured at move level without a distinct debate-wide consequence.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion",
+              "con-central",
+              "con-method"
+            ],
+            "completionCriterion": "Sustain fallible disbelief by showing that the full evidence fits better without God while adequately answering the principal theistic routes.",
+            "relatedMoveIds": [
+              "natural-reality-fit",
+              "species-inclusive-impartial-contract",
+              "evil-world",
+              "resurrection-development"
+            ],
+            "distinctConsequence": "No separate completion effect remains after the identified evidential and inferential gaps are scored in their respective moves.",
+            "alreadyCapturedBy": [
+              "natural-reality-fit",
+              "species-inclusive-impartial-contract",
+              "evil-world",
+              "resurrection-development"
+            ],
+            "counterfactual": "Strengthening the cited moves would improve their assessed performance but would not independently create a new debate-wide adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate con adjustment is applied because all debate-wide burden consequences are already captured in the locked move ratings and response links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion remains outside the move-level assessments and locked burden contacts.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct unscored debate-wide consequence was identified for this side.",
+            "alreadyCapturedBy": [
+              "all locked move judgments and response links"
+            ],
+            "counterfactual": "A nonzero adjustment would rescore consequences already represented in the move judgments."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 44,
+    "disputesExtracted": 20,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/inventory/inventory.json",
+      "sha256": "1e2692cacac1f568bcf20269643f4bc3db5bbc533d045f2648683c0562441e3b"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/judgments/pass-a/output.json",
+      "sha256": "6800151616b4ee1b9e543b2896e43d0d2e2a340acaaedf54d46be2fce4d43ddd"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/judgments/pass-b/output.json",
+      "sha256": "0e7fc37afd24ddbd4ff9987278f71d4e13411ae5ece72c4d4485a8027931bbef"
+    }
+  }
+}

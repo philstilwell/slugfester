@@ -1,0 +1,11 @@
+{
+  "status": "same-context-stdin-eof-recovery-before-holder-start",
+  "originalSession": 20163,
+  "recoveredSession": 9438,
+  "candidateSha256": "aca96216dc9d85d513bc370ac00caa1d19d1d9b3ef797d771bb406df8b5a004a",
+  "firstHolderSocketCreated": false,
+  "firstCandidateSaved": false,
+  "description": "Initial bridge left stdin open so maintained holder could not parse bytes. Original process no longer existed; same worker used its unchanged in-memory candidate with stdin.end to deliver EOF. No output file or listening socket existed before successful recovery.",
+  "savedFailures": 0,
+  "newAssessmentContext": false
+}

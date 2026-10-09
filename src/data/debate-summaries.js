@@ -14479,5 +14479,58 @@ export const debateSummaries = [
         "title": "Worship, religious harm, and fallibility"
       }
     ]
+  },
+  {
+    "id": "craig-nugent-god-existence-2017",
+    "number": "303",
+    "title": "William Lane Craig vs Michael Nugent — Does God Exist?",
+    "year": 2017,
+    "label": "God, Cosmology and Morality",
+    "date": "2026-10-08",
+    "duration": "1 hr 31 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=wmlcmVye4hM",
+    "motion": "Does God exist?",
+    "summary": "A close contest in which Nugent’s method and targeted rebuttals narrowly outperformed Craig’s structured cumulative case, while both left central grounding questions unresolved.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God exists",
+        "speaker": "William Lane Craig",
+        "color": "teal"
+      },
+      "con": {
+        "name": "God does not exist",
+        "speaker": "Michael Nugent",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 76,
+      "con": 78,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Cosmic origin and causation"
+      },
+      {
+        "title": "Fine-tuning and design"
+      },
+      {
+        "title": "Divine mind, change and freedom"
+      },
+      {
+        "title": "Evil and comparative probability"
+      },
+      {
+        "title": "Objective moral grounding"
+      },
+      {
+        "title": "Divine commands and moral application"
+      },
+      {
+        "title": "Resurrection, experience and method"
+      }
+    ]
   }
 ];

@@ -1,0 +1,161 @@
+{
+  "status": "passed",
+  "debateNumber": "303",
+  "debateId": "craig-nugent-god-existence-2017",
+  "scope": "All mandatory assessment, source, scores, publication, full repository, corpus, rhetorical, comparison, historical closure, browser and earlier preflight checks passed; immediate precommit and deployment boundaries remain.",
+  "directCostUsd": 0.145558,
+  "costBasis": "Reported successful token usage; invoice not independently verified. Fourteen paid automated transcription calls, zero retries or uncertain calls. All assessment workers subscription-backed at zero direct incremental cost.",
+  "checks": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/production-final.json",
+      "sha256": "ce609bf5dd82363b1b21e52aaca2f5718a95b2dea2169867b4bae624c547eb4a",
+      "bytes": 503
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/corpus-validation.json",
+      "sha256": "afcb8dadeba02b65248582769261ecaf7a6abf07686c3ba8dda3ac7340ad972e",
+      "bytes": 518
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/content-parity-all.json",
+      "sha256": "c80aa904dfa71ba63f1aaaff2b6fef72abcea4ef9deda9a88ecaca7e841f8d9d",
+      "bytes": 533
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/rhetorical-tags-all.json",
+      "sha256": "1b64accfb64f8f6d4557bce2948c4a99e010e1c6012ec699eabc3ad1111eda8e",
+      "bytes": 536
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/campaign-closure.json",
+      "sha256": "1c59d6aeacc3858d25a27d6d25fedd3f87b622f02a76813f15e2064a4313162e",
+      "bytes": 532
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/browser-local.json",
+      "sha256": "2424ac47bf355014fabcaba5aa7f40e58a6fb7ed64eef450a1e38f517d3ace2b",
+      "bytes": 634
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/target-full-audit.json",
+      "sha256": "6abe6992839fd69c7bc505f61c16e03c0055ed7e9b099f1b5e1a4117af25f2da",
+      "bytes": 574
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/target-repository-audit.json",
+      "sha256": "62de3bdc2b8623cf2943daef3a704fbae6a8e3df82aff20f8f7ea601141959dd",
+      "bytes": 605
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/full-check-complete-evidence.json",
+      "sha256": "0857ba074bbbf52a1d53f778d235dc7fe3a1d9d3c5a65fc6f2009719ef182cb8",
+      "bytes": 508
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/performance-review.json",
+      "sha256": "526481a524d207d0a75caeb400c09962b2937e2e5b02979f2049119d81a37820",
+      "bytes": 6241
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/site-preflight-confirmed.json",
+      "sha256": "244292640404639ba0604383995acb6f7a394753b0d4608b40941614da782923",
+      "bytes": 513
+    }
+  ],
+  "publication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-303/publication/output.json",
+    "sha256": "a8ae07a973c7bfb8f87f7f30f7f1dca91195659d5809ffab69af344e86a00a1c",
+    "bytes": 80568
+  },
+  "rendering": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-303/rendering/rendering-audit.json",
+    "sha256": "2525ddbee760a3bc0c01bf1a31131617df508a732c988ac8944e51130bb0f87d",
+    "bytes": 12271
+  },
+  "initialFailuresPreserved": [
+    "Before adapter construction, standalone row/ledger validation failed because the adapter establishing eligibility was absent; after construction the unchanged publication passed.",
+    "Full repository check first reached the new registry entry before this validation summary existed; prior302audits had passed.",
+    "Website preflight reached the deliberate ten-debate performance-review checkpoint; all16other checks passed. Current measured byte ceilings must remain unchanged when rebasing the checkpoint.",
+    "A later standalone browser run flagged an existing Klemens Kappel portrait. The512x512WebP asset is present and intact; the independent target browser replay passed. The required check is rerun without changing the image or weakening validation. Unchanged assets and tests passed on the next complete preflight; no application repair or weaker check was introduced."
+  ],
+  "frozenAssessment": {
+    "primaryReviews": 2,
+    "disputes": 20,
+    "audioChecks": 18,
+    "selectedMoves": 44,
+    "sections": 7,
+    "scorePasses": 1,
+    "scores": {
+      "pro": 76,
+      "con": 78
+    },
+    "rhetoricalBlindReviews": 2,
+    "rhetoricalUnionCandidates": 27,
+    "acceptedTags": 8,
+    "rhetoricalAdjudicators": 1
+  },
+  "cleanup": {
+    "localBrowserSessions": 0,
+    "localPreviewServers": 0,
+    "localRuntimeAdapterRemoved": true,
+    "note": "All manually opened local rendering and performance browsers and servers closed; generated local replay removed."
+  },
+  "timing": {
+    "trackedWallMs": 5576107,
+    "summedIntervalMs": 6764760,
+    "summedWorkMs": 6764760,
+    "waitingWallMs": 0,
+    "byStageAndKind": {
+      "adjudication/active": {
+        "wallMs": 348041,
+        "summedMs": 348041
+      },
+      "assemble-ledger/active": {
+        "wallMs": 213,
+        "summedMs": 213
+      },
+      "build-adapter/active": {
+        "wallMs": 156,
+        "summedMs": 156
+      },
+      "disagreements/active": {
+        "wallMs": 207,
+        "summedMs": 207
+      },
+      "inventory/active": {
+        "wallMs": 1279543,
+        "summedMs": 1279543
+      },
+      "judgment-packet/active": {
+        "wallMs": 210,
+        "summedMs": 210
+      },
+      "rendering/active": {
+        "wallMs": 410552,
+        "summedMs": 410552
+      },
+      "judgments/active": {
+        "wallMs": 1194735,
+        "summedMs": 1932587
+      },
+      "publication/active": {
+        "wallMs": 1059731,
+        "summedMs": 1059731
+      },
+      "rhetorical/active": {
+        "wallMs": 746591,
+        "summedMs": 1197392
+      },
+      "score-once/active": {
+        "wallMs": 188,
+        "summedMs": 188
+      },
+      "rhetorical-adjudication/active": {
+        "wallMs": 535940,
+        "summedMs": 535940
+      }
+    },
+    "openIntervals": [],
+    "untrackedTimeNotAttributed": true
+  }
+}
