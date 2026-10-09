@@ -17,7 +17,7 @@ The accompanying PDF manuscript and layout source preserve the distinction betwe
 ## Document files
 
 - `manuscript.md`: editable explanation with numbered references.
-- `../../../output/pdf/slugfester-evidence-faith-and-ai-bias.pdf`: 14-page PDF with embedded fonts, selectable text, bookmarks, and linked sources.
+- `../../../output/pdf/slugfester-evidence-faith-and-ai-bias.pdf`: 15-page PDF with embedded fonts, selectable text, bookmarks, and linked sources.
 - `../../../scripts/build-charts-evidence-explanation.py`: local ReportLab layout program. It uses Georgia/Arial when available on macOS and DejaVu on Linux; different font metrics can change pagination.
 
 Generate the PDF after the calculation record exists:
@@ -27,3 +27,7 @@ python3 scripts/build-charts-evidence-explanation.py
 ```
 
 The Charts page features this document beside the reasoning-support heading. The published asset is `../../../assets/charts/evidence-faith-and-fair-assessment-2026-10-08.pdf`; copy the reviewed output there after rebuilding the PDF. It adds no model judgments and changes no assessments or snapshot values.
+
+## October 8 clarification
+
+The clarified edition makes the equal public-evidence requirement explicit in sections 3, 6, and 8. Craig's knowing/showing distinction is accurately attributed but grants no exemption from public scrutiny. Testimony remains assessable; private assurance cannot replace support or repair an unsupported public inference. A new section 7 identifies evidence neglect directly through two source-linked examples, distinguishing observed omissions from unestablished motives or causes. The empirical limits on the proposed faith explanation remain. No scores or calculations were changed.
