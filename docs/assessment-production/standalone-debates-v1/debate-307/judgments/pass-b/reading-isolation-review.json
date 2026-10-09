@@ -1,0 +1,27 @@
+{
+  "status": "passed-reading-isolation-review",
+  "agent": "/root/primary307sb",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/judgments/pass-b/execution-plan.json",
+    "sha256": "2ec69ea926e3caab0a126415887b21551a0f9b1cda9d067acfa0b639f6714917",
+    "bytes": 8255
+  },
+  "reading": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/judgments/pass-b/reading-release.json",
+    "sha256": "893599ad098a0f94cd3d9aaf0b1c75695323afe83ccec57a138d98ed25bb6a00",
+    "bytes": 16378
+  },
+  "freshContext": true,
+  "forkTurns": "none",
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "low",
+  "independentConcurrentReview": true,
+  "protocolIsolationNotOperatingSystemSandbox": true,
+  "toolAccessInspected": "Actual calls consist of working-directory and assigned-plan read, 31 separate bounded maintained-reader calls, and communication/wait with controller. No peer judgments, prior assessment, correction histories, scores, outside evidence or publication accessed.",
+  "replacementAuthority": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/source-correction-2/authorization.json",
+    "sha256": "495045226e310b456f72b7cdd2d119d139451351477d7c069de9ebcac9d8dd69",
+    "bytes": 1513
+  },
+  "violations": []
+}

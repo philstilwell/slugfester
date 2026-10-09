@@ -1,0 +1,61 @@
+{
+  "status": "passed-explicitly-approved-source-correction",
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/source-correction-2/authorization.json",
+    "sha256": "495045226e310b456f72b7cdd2d119d139451351477d7c069de9ebcac9d8dd69",
+    "bytes": 1513
+  },
+  "before": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/source-correction-2/superseded/inventory/inventory.json",
+    "sha256": "e796d85464b222422dee5586e299240b7ca32083eba561e8d5a01317e49d65a0",
+    "bytes": 130655
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/inventory/inventory.json",
+    "sha256": "d89f19e1ad8f995f563191e76832034104404c0a623c496004baee95f51434d7",
+    "bytes": 130958
+  },
+  "exactChanges": [
+    {
+      "path": "/moves/21/sourceSpanSelectionRationale",
+      "before": "Events 3006–3013 are White’s compact follow-up asking whether the admitted uncertainty nevertheless leaves a sufficiently clear text for quotation; the span ends when the topic changes.",
+      "after": "Events 2973–2980 contain White’s question whether acknowledged uncertainty nevertheless leaves sufficiently clear knowledge to quote Suetonius and Ehrman’s immediate qualified answer. This interleaved question occurs within the longer classical-uncertainty exchange; the opening carryover word “said” and Ehrman’s answer are context, not White’s authored claim."
+    },
+    {
+      "path": "/moves/21/attributionRationale",
+      "before": "White owns the short follow-up pressing whether Ehrman nevertheless quotes a sufficiently clear classical text; the selected span ends before the next topic.",
+      "after": "White owns the question from “so when” in event 2973 through “quote suetonius don’t you” in event 2977. Ehrman’s “yes of course” and explanation through event 2980 are a response used as context; no words from that answer are attributed to White."
+    },
+    {
+      "path": "/moves/21/sourceSpan/startEvent",
+      "before": 3006,
+      "after": 2973
+    },
+    {
+      "path": "/moves/21/sourceSpan/endEvent",
+      "before": 3013,
+      "after": 2980
+    },
+    {
+      "path": "/moves/21/sourceSpan/startMs",
+      "before": 7147880,
+      "after": 7077119
+    },
+    {
+      "path": "/moves/21/sourceSpan/endMs",
+      "before": 7171800,
+      "after": 7096840
+    },
+    {
+      "path": "/moves/21/sourceSpan/excerpt",
+      "before": "but anyway uh Peter Williams of Cambridge suggested that if you were to edit an edition of the Greek New Testament using all your own decisions regarding textual variance that it would differ less from the Ness and UBS platform than the texus receptus does would you agree yes so you would say if",
+      "after": "said so when they when you say no what these texts originally said but they will believe that we have a sufficiently clear knowledge to quote suetonius you quote suetonius don't you yes of course I quote the manuscript tradition of suetonius I mean it's just understood among Scholars what you're quoting and"
+    }
+  ],
+  "allOtherInventoryContentUnchanged": true,
+  "sourceVerification": "Events2973–2980 state White’s Suetonius-usability question and Ehrman’s immediate qualified answer. White owns the question, not the initial carryover or Ehrman response. The replaced events3006–3013 concern hypothetical Greek New Testament editions and are not used for this claim. Full source and all other restrictions remain unchanged.",
+  "sourceEligibilityViolations": [],
+  "priorScorePassesPreserved": 1,
+  "replacementScorePassesAuthorized": 1,
+  "noTargetScoresOrWinner": true
+}

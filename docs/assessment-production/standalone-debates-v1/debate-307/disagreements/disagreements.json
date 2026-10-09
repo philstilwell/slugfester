@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "307",
+  "debateId": "ehrman-white-bible-misquote-jesus-2009",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "ehrman-historical-bibles:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "ehrman-historical-bibles",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "Ehrman’s referent is explicit, but 'all Bibles misquote Jesus' compresses differences in scale and recoverability."
+        },
+        "option-b": {
+          "value": 71,
+          "rationale": "The universal closing formulation overstates the source-specific case, which established some altered attributions rather than every Bible's exact defect."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence warrants an adjustment beyond the scored pro moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion",
+              "pro-recovery",
+              "pro-significance",
+              "pro-inspiration"
+            ],
+            "completionCriterion": "No separate debate-wide consequence remains outside the move-level judgments and response links.",
+            "relatedMoveIds": [
+              "ehrman-copying-chain",
+              "ehrman-adultery-addition",
+              "ehrman-mark-ending-addition",
+              "ehrman-disputed-jesus-sayings",
+              "ehrman-mark-anger-significance",
+              "ehrman-personal-inspiration",
+              "ehrman-challenges-early-witness-count",
+              "printed-editions-versus-manuscript-denominators",
+              "ehrman-p75-representativeness-challenge",
+              "tenacity-versus-conjectural-emendation",
+              "ehrman-semantic-impact",
+              "ehrman-hebrews-explicit-meaning",
+              "ehrman-classical-limited-uncertainty",
+              "ehrman-mark-internal-evidence-and-nuance",
+              "ehrman-bottleneck",
+              "ehrman-apostolic-standard-concession",
+              "ehrman-historical-bibles"
+            ],
+            "distinctConsequence": "All identified burden consequences are already represented in the locked moves and their dimension ratings.",
+            "alreadyCapturedBy": [
+              "pro move judgments and response links"
+            ],
+            "counterfactual": "Removing any alleged additional adjustment would not change an uncaptured debate-wide completion finding."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate debate-wide adjustment is warranted: the pro side's recovery, significance, inspiration, and historical-Bible completion strengths and limits are already captured in the locked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion",
+              "pro-recovery",
+              "pro-significance",
+              "pro-inspiration"
+            ],
+            "completionCriterion": "Whether the pro case established meaningful altered attribution while preserving its stated qualifications.",
+            "relatedMoveIds": [
+              "ehrman-disputed-jesus-sayings",
+              "ehrman-bottleneck",
+              "ehrman-historical-bibles"
+            ],
+            "distinctConsequence": "The remaining debate-wide consequence is fully represented by the scored motion and recovery moves.",
+            "alreadyCapturedBy": [
+              "ehrman-disputed-jesus-sayings",
+              "ehrman-bottleneck",
+              "ehrman-historical-bibles"
+            ],
+            "counterfactual": "Removing those scored moves would remove the same completion issue rather than reveal a distinct unscored consequence."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence warrants an adjustment beyond the scored con moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion",
+              "con-distribution",
+              "con-significance",
+              "con-standard"
+            ],
+            "completionCriterion": "No separate debate-wide consequence remains outside the move-level judgments and response links.",
+            "relatedMoveIds": [
+              "white-count-context",
+              "white-meaningful-viable-taxonomy",
+              "white-early-lines-and-no-central-control",
+              "white-printed-comparison",
+              "white-tenacity-premise",
+              "white-p75-multiple-line-answer",
+              "white-hebrews-consistency-challenge",
+              "white-classical-consistency-challenge",
+              "white-classical-usable-text-followup",
+              "white-mark-external-and-harmonization-challenge",
+              "apostolic-use-rejects-perfect-copy-standard",
+              "white-one-text-emerges",
+              "white-essential-beliefs-qualification",
+              "white-education-and-uncontrolled-preservation",
+              "white-final-motion-denial"
+            ],
+            "distinctConsequence": "All identified burden consequences are already represented in the locked moves and their dimension ratings.",
+            "alreadyCapturedBy": [
+              "con move judgments and response links"
+            ],
+            "counterfactual": "Removing any alleged additional adjustment would not change an uncaptured debate-wide completion finding."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate debate-wide adjustment is warranted: the con side's distribution, significance, standard, and final recoverability performance is already captured in its locked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion",
+              "con-distribution",
+              "con-significance",
+              "con-standard"
+            ],
+            "completionCriterion": "Whether the con case established collective recovery and message continuity despite acknowledged local variants.",
+            "relatedMoveIds": [
+              "white-tenacity-premise",
+              "white-one-text-emerges",
+              "white-final-motion-denial"
+            ],
+            "distinctConsequence": "The remaining debate-wide consequence is fully represented by the scored preservation and motion moves.",
+            "alreadyCapturedBy": [
+              "white-tenacity-premise",
+              "white-one-text-emerges",
+              "white-final-motion-denial"
+            ],
+            "counterfactual": "Removing those scored moves would remove the same completion issue rather than expose a distinct unscored consequence."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 32,
+    "disputesExtracted": 3,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/inventory/inventory.json",
+      "sha256": "d89f19e1ad8f995f563191e76832034104404c0a623c496004baee95f51434d7"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/judgments/pass-a/output.json",
+      "sha256": "681408fc0ce971aedbac448ea897a0383ce5aa71c91e9a90aba6f5be033e19f1"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/judgments/pass-b/output.json",
+      "sha256": "28de65306dda318c09f6fdecca1a01c5344b53c70b4fec066b378c076f3e71b6"
+    }
+  }
+}

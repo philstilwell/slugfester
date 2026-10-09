@@ -1,0 +1,19 @@
+{
+  "status": "failed-before-production-write",
+  "observedAt": "2026-10-09T19:34:41.523577+00:00",
+  "command": [
+    "node",
+    "scripts/standalone-workflow.mjs",
+    "mechanical",
+    "--debate",
+    "307",
+    "--step",
+    "integrate"
+  ],
+  "exitCode": 1,
+  "diagnostic": "Error: ehrman-white-bible-misquote-jesus-2009: an explicit, recognized primary topic category is required",
+  "cause": "Frozen navigation metadata uses retired category christianity-bible-theology; current taxonomy requires scripture-jesus-resurrection (Bible and historical Jesus).",
+  "productionRestoredSha256": "c128d2775217482855ce092591e6914833bcad9102f6e7d0cd49f553e4367ec5",
+  "temporaryFixtureRemoved": true,
+  "nextAction": "Single-field authenticated metadata supplement after rhetorical metadata is finalized; preserve frozen candidate and all assessment evidence. No score or content change."
+}

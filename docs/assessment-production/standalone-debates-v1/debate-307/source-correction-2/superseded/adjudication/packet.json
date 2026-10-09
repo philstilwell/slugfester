@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "1.0-standalone-dispute-adjudication-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-anonymous-dispute-only-packet",
+  "debateNumber": "307",
+  "debateId": "ehrman-white-bible-misquote-jesus-2009",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "evidenceBoundary": {
+    "passIdentitiesUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  },
+  "disputes": [
+    {
+      "disputeId": "white-early-lines-and-no-central-control:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "white-early-lines-and-no-central-control",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      },
+      "moveEvidence": {
+        "moveId": "white-early-lines-and-no-central-control",
+        "side": "con",
+        "speaker": "James White",
+        "sectionId": "preservation-and-genealogy",
+        "moveKind": "constructive",
+        "claim": "The earliest witnesses display multiple intersecting transmission lines rather than one centrally edited chain.",
+        "warrant": "White says varied lines and the absence of a controlling editor make coordinated wholesale alteration less plausible.",
+        "inference": "Distributed transmission supplies independent comparative evidence for reconstruction.",
+        "sourceSpanSelectionRationale": "Events 1029–1055 contain White’s early-witness count claim, the multiple-line inference, and the no-central-control consequence, ending before the distinct P75 illustration.",
+        "quoteEligibleExactSpans": [],
+        "attributionConfidence": "high",
+        "attributionRationale": "The source notes assign events 1029–1055 to James White’s uninterrupted formal speech; no opponent interjection contributes to the scored claim.",
+        "audioVerificationReason": "No direct audio listening occurred. The count or dating characterization follows the supplied transcript and source notes; no recognition-corrupted numeral or name is used beyond the qualified premise stated here.",
+        "importance": 3,
+        "importanceRationale": "Independent early transmission lines without a central editor are White’s reason that agreement among geographically separated witnesses can preserve an ancient reading.",
+        "burdenContact": {
+          "bridgeId": "con-distribution",
+          "tier": "central",
+          "rationale": "This supports con recovery by offering independent transmission lines as evidence that no central authority could uniformly rewrite the text."
+        },
+        "respondsToIds": [],
+        "responseComponents": [],
+        "sourceSpan": {
+          "startEvent": 1029,
+          "endEvent": 1055,
+          "startMs": 2416560,
+          "endMs": 2484280,
+          "excerpt": "the text of the New Testament was corrupted before our earliest manuscript evidence we have a dozen manuscripts within the first 100 years after the writing of the New Testament all are fragmentary but grand total they represent a majority of the books of the New Testament and about 410 of the text of the New Testament we have more than 120 manuscripts within the first 300 years now a key fact that must be kept in mind regarding the New Testament manuscript tradition is the existence of multiple lines of transmission let's illustrate what we mean the earliest manuscripts in our possession demonstrate the existence not of a single line of corrupt transmission but multiple lines of transmission of varying accuracy many of these lines intersect and cross defying easy identification but the important thing to remember is that multiple lines are a good thing they ensure a healthy manuscript tradition that is not under the control of any Central editing process one of the examples often noted"
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate pro adjustment is warranted: the motion, recovery, significance, and inspiration consequences are already captured in the move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": true,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured debate-wide completion criterion remains beyond the scored pro moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence remains that would avoid rescoring the assessed pro arguments.",
+            "alreadyCapturedBy": [],
+            "counterfactual": "Removing any proposed adjustment would not change an independently established burden result."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The unresolved gap between a recoverable common ancestor and the autograph affects pro-recovery, but its consequences are already evaluated in the bottleneck, tenacity, and early-witness moves rather than as a separate debate-wide adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-recovery"
+            ],
+            "completionCriterion": "Establish that surviving agreement need not reproduce every autograph word without rescoring the selected genealogy moves.",
+            "relatedMoveIds": [
+              "ehrman-bottleneck",
+              "tenacity-versus-conjectural-emendation",
+              "ehrman-challenges-early-witness-count"
+            ],
+            "distinctConsequence": "No distinct unscored consequence remains after the selected recovery and genealogy moves are evaluated.",
+            "alreadyCapturedBy": [
+              "ehrman-bottleneck",
+              "tenacity-versus-conjectural-emendation",
+              "ehrman-challenges-early-witness-count"
+            ],
+            "counterfactual": "Without those scored moves, pro's debate-wide recovery limitation would lack its principal support."
+          }
+        }
+      },
+      "moveEvidence": null
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate con adjustment is warranted: distribution, message continuity, standard, and motion consequences are already captured in the move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": true,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured debate-wide completion criterion remains beyond the scored con moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence remains that would avoid rescoring the assessed con arguments.",
+            "alreadyCapturedBy": [],
+            "counterfactual": "Removing any proposed adjustment would not change an independently established burden result."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The distinction between local variant significance and continuity of the overall message affects con-significance, but the selected Hebrews, essential-beliefs, and final-motion moves already score that debate-wide issue.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-significance",
+              "con-motion"
+            ],
+            "completionCriterion": "Show that local wording differences do not defeat recoverability of Jesus' and the apostles' broader teaching.",
+            "relatedMoveIds": [
+              "white-hebrews-consistency-challenge",
+              "white-essential-beliefs-qualification",
+              "white-final-motion-denial"
+            ],
+            "distinctConsequence": "No separate unscored message-continuity consequence remains beyond the selected con replies and closing.",
+            "alreadyCapturedBy": [
+              "white-hebrews-consistency-challenge",
+              "white-essential-beliefs-qualification",
+              "white-final-motion-denial"
+            ],
+            "counterfactual": "Without those scored moves, con's distinction between local variation and overall message continuity would be incomplete."
+          }
+        }
+      },
+      "moveEvidence": null
+    }
+  ],
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/captions.srv3.xml",
+      "sha256": "a45f73ef1d62244b548b82488de47cd9fdf20cf2b51ec9fde61096db6d76835f",
+      "bytes": 1086297
+    },
+    "events": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/events.json",
+      "sha256": "ec6257aea4d1f8a7cfaef48d4f95d071a5369a2c4e208b2c82fc0c37ba4e2e83",
+      "bytes": 447787
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/transcript.txt",
+      "sha256": "dbe7aeb4be0e2faaa79b3301344669e4068f586899641d27bfa76f2bf2b74d1f",
+      "bytes": 191893
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/manifest.json",
+      "sha256": "32022714a5b0460c338086dea55a88011921646e734ccabc923747df1c33d0bf",
+      "bytes": 968
+    },
+    "indexedTranscript": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/indexed-transcript.txt",
+      "sha256": "ab8830b44ccb513af227f4fcdd6f2b4ee1c3e20445e1046f74a021a6b50a75b4",
+      "bytes": 215695
+    },
+    "publicMetadata": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/public-metadata.json",
+      "sha256": "17ba2efae0be2c40f337e003456e629b89377f7c2dd76efcfb1e577dd02792fa",
+      "bytes": 2611
+    },
+    "sourceAudio": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/source-audio.mp4",
+      "sha256": "99d0397472d9398a896dd4986710897b197a3e97b564690390ff02f06cd38ae7",
+      "bytes": 393813553
+    },
+    "audioPlan": {
+      "path": ".assessment-cache/intake-307/source-audio-plan.json",
+      "sha256": "f15ac04e36a5e72bbb82abd38fbdd74e5669836d7a25c1e79e4080f5bca673c5",
+      "bytes": 2910
+    },
+    "audioResults": {
+      "path": ".assessment-cache/intake-307/source-audio-results.json",
+      "sha256": "8c73321299b01235bdf092561c9d92897ddaac41d38d091f7401b40c9c4e6e3d",
+      "bytes": 4884
+    },
+    "verificationReview": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/source/verification-review.json",
+      "sha256": "18fd59a60dfa8bb502ca45de44efded485911d03231b02487751788d5f49aeff",
+      "bytes": 7380
+    },
+    "audio-opening-manuscript-numbers": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/audio-checks/opening-manuscript-numbers.json",
+      "sha256": "290d0a3b0562886fe52be375f2300d8237b1c37fb81ad659a1c3067df841ff4b",
+      "bytes": 1114
+    },
+    "audio-counts-and-comparison-denominators": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/audio-checks/counts-and-comparison-denominators.json",
+      "sha256": "f44a1a42cabe6f152c80b142665dee24a18eb36f43b9ec1c0f30714c4b36d477",
+      "bytes": 8147
+    },
+    "audio-multiple-lines-and-early-variation": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/audio-checks/multiple-lines-and-early-variation.json",
+      "sha256": "a9b44508632d0d16c23482c2ed11af9360507b0a8ddbab8e000a298becfe756d",
+      "bytes": 5673
+    },
+    "audio-possibility-and-meaning": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/audio-checks/possibility-and-meaning.json",
+      "sha256": "e6ad078a08ee03ea5f4a9e43a20b0b7ab1ea3f30f19a14f7ad702a235ea62637",
+      "bytes": 6131
+    },
+    "audio-nuance-bottleneck-and-inspiration": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/audio-checks/nuance-bottleneck-and-inspiration.json",
+      "sha256": "c0c718a7a8666b29a2ef854c5e97d6454e4de2389ce30f39061383775a7aca90",
+      "bytes": 9524
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/authorization.json",
+      "sha256": "e88176ff10c23bdd47435b1b2b84e34f43ca01bee00620b714bb328735091709",
+      "bytes": 4117
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/source/source-lock.json",
+      "sha256": "aaece12ac583c71959f4c09b256f379f8f5e3af7fc21c62d21aa6f6705d1db72",
+      "bytes": 19536
+    },
+    "sourceNotes": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/source/assessment-source-notes.md",
+      "sha256": "17164630222989d2fd14a876653118690f6ef3a8f8ea1fb44bc54f01b42af02f",
+      "bytes": 12041
+    },
+    "readerScopeDisclosure": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/source/reader-scope-disclosure.json",
+      "sha256": "775397cdf9f2170351238c57752391d7f5ee4d8a3f074e730457b30aa76a45ef",
+      "bytes": 14121
+    }
+  },
+  "instructions": {
+    "selectExistingOptionOnly": true,
+    "permittedSelections": [
+      "option-a",
+      "option-b"
+    ],
+    "resolveEveryDisputeExactlyOnce": true,
+    "modelAuthoredTotalsForbidden": true
+  }
+}

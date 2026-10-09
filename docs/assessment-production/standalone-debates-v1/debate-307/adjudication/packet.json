@@ -1,0 +1,341 @@
+{
+  "schemaVersion": "1.0-standalone-dispute-adjudication-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-anonymous-dispute-only-packet",
+  "debateNumber": "307",
+  "debateId": "ehrman-white-bible-misquote-jesus-2009",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "evidenceBoundary": {
+    "passIdentitiesUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  },
+  "disputes": [
+    {
+      "disputeId": "ehrman-historical-bibles:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "ehrman-historical-bibles",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "Ehrman’s referent is explicit, but 'all Bibles misquote Jesus' compresses differences in scale and recoverability."
+        },
+        "option-b": {
+          "value": 71,
+          "rationale": "The universal closing formulation overstates the source-specific case, which established some altered attributions rather than every Bible's exact defect."
+        }
+      },
+      "moveEvidence": {
+        "moveId": "ehrman-historical-bibles",
+        "side": "pro",
+        "speaker": "Bart Ehrman",
+        "sectionId": "inspiration-and-motion",
+        "moveKind": "constructive",
+        "claim": "Historically available manuscript Bibles contained mistakes in wording attributed to Jesus.",
+        "warrant": "Ehrman distinguishes historical manuscript Bibles from one modern printed edition.",
+        "inference": "On that historical referent, the answer is yes.",
+        "sourceSpanSelectionRationale": "Events 3491–3504 are the smallest complete closing application: they identify the historical referent, manuscript mistakes, and their connection to Jesus.",
+        "quoteEligibleExactSpans": [
+          "all Bibles misquote Jesus"
+        ],
+        "attributionConfidence": "high",
+        "attributionRationale": "The source notes assign this closing interval to Bart Ehrman; the selected boundaries remain inside that uninterrupted closing and exclude the shared-speaker carryover events.",
+        "audioVerificationReason": "No direct audio listening occurred. The claim is paraphrased from the supplied transcript and source notes, and no recognition-corrupted token is load-bearing.",
+        "importance": 3,
+        "importanceRationale": "Ehrman’s closing distinguishes the Bibles used across Christian history from modern critical reconstructions, preserving the practical historical force of later additions.",
+        "burdenContact": {
+          "bridgeId": "pro-motion",
+          "tier": "motion",
+          "rationale": "This supports pro historical-use by arguing that Christians often read passages modern criticism identifies as later additions."
+        },
+        "respondsToIds": [],
+        "responseComponents": [],
+        "sourceSpan": {
+          "startEvent": 3491,
+          "endEvent": 3504,
+          "startMs": 8342160,
+          "endMs": 8378840,
+          "excerpt": "the New Testament our topic of debate was does the bible or did the Bible misquote Jesus and the answer is yes remember that for most of History the Bible was not the printed Edition that you read today for most Christians throughout history the Bible was whatever manuscript happened to be available to them what manuscript was available to the Christians and their churches all of these manuscripts have mistakes in them including mistakes in the words of Jesus all Bibles misquote Jesus thank"
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence warrants an adjustment beyond the scored pro moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion",
+              "pro-recovery",
+              "pro-significance",
+              "pro-inspiration"
+            ],
+            "completionCriterion": "No separate debate-wide consequence remains outside the move-level judgments and response links.",
+            "relatedMoveIds": [
+              "ehrman-copying-chain",
+              "ehrman-adultery-addition",
+              "ehrman-mark-ending-addition",
+              "ehrman-disputed-jesus-sayings",
+              "ehrman-mark-anger-significance",
+              "ehrman-personal-inspiration",
+              "ehrman-challenges-early-witness-count",
+              "printed-editions-versus-manuscript-denominators",
+              "ehrman-p75-representativeness-challenge",
+              "tenacity-versus-conjectural-emendation",
+              "ehrman-semantic-impact",
+              "ehrman-hebrews-explicit-meaning",
+              "ehrman-classical-limited-uncertainty",
+              "ehrman-mark-internal-evidence-and-nuance",
+              "ehrman-bottleneck",
+              "ehrman-apostolic-standard-concession",
+              "ehrman-historical-bibles"
+            ],
+            "distinctConsequence": "All identified burden consequences are already represented in the locked moves and their dimension ratings.",
+            "alreadyCapturedBy": [
+              "pro move judgments and response links"
+            ],
+            "counterfactual": "Removing any alleged additional adjustment would not change an uncaptured debate-wide completion finding."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate debate-wide adjustment is warranted: the pro side's recovery, significance, inspiration, and historical-Bible completion strengths and limits are already captured in the locked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion",
+              "pro-recovery",
+              "pro-significance",
+              "pro-inspiration"
+            ],
+            "completionCriterion": "Whether the pro case established meaningful altered attribution while preserving its stated qualifications.",
+            "relatedMoveIds": [
+              "ehrman-disputed-jesus-sayings",
+              "ehrman-bottleneck",
+              "ehrman-historical-bibles"
+            ],
+            "distinctConsequence": "The remaining debate-wide consequence is fully represented by the scored motion and recovery moves.",
+            "alreadyCapturedBy": [
+              "ehrman-disputed-jesus-sayings",
+              "ehrman-bottleneck",
+              "ehrman-historical-bibles"
+            ],
+            "counterfactual": "Removing those scored moves would remove the same completion issue rather than reveal a distinct unscored consequence."
+          }
+        }
+      },
+      "moveEvidence": null
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence warrants an adjustment beyond the scored con moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion",
+              "con-distribution",
+              "con-significance",
+              "con-standard"
+            ],
+            "completionCriterion": "No separate debate-wide consequence remains outside the move-level judgments and response links.",
+            "relatedMoveIds": [
+              "white-count-context",
+              "white-meaningful-viable-taxonomy",
+              "white-early-lines-and-no-central-control",
+              "white-printed-comparison",
+              "white-tenacity-premise",
+              "white-p75-multiple-line-answer",
+              "white-hebrews-consistency-challenge",
+              "white-classical-consistency-challenge",
+              "white-classical-usable-text-followup",
+              "white-mark-external-and-harmonization-challenge",
+              "apostolic-use-rejects-perfect-copy-standard",
+              "white-one-text-emerges",
+              "white-essential-beliefs-qualification",
+              "white-education-and-uncontrolled-preservation",
+              "white-final-motion-denial"
+            ],
+            "distinctConsequence": "All identified burden consequences are already represented in the locked moves and their dimension ratings.",
+            "alreadyCapturedBy": [
+              "con move judgments and response links"
+            ],
+            "counterfactual": "Removing any alleged additional adjustment would not change an uncaptured debate-wide completion finding."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate debate-wide adjustment is warranted: the con side's distribution, significance, standard, and final recoverability performance is already captured in its locked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion",
+              "con-distribution",
+              "con-significance",
+              "con-standard"
+            ],
+            "completionCriterion": "Whether the con case established collective recovery and message continuity despite acknowledged local variants.",
+            "relatedMoveIds": [
+              "white-tenacity-premise",
+              "white-one-text-emerges",
+              "white-final-motion-denial"
+            ],
+            "distinctConsequence": "The remaining debate-wide consequence is fully represented by the scored preservation and motion moves.",
+            "alreadyCapturedBy": [
+              "white-tenacity-premise",
+              "white-one-text-emerges",
+              "white-final-motion-denial"
+            ],
+            "counterfactual": "Removing those scored moves would remove the same completion issue rather than expose a distinct unscored consequence."
+          }
+        }
+      },
+      "moveEvidence": null
+    }
+  ],
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/captions.srv3.xml",
+      "sha256": "a45f73ef1d62244b548b82488de47cd9fdf20cf2b51ec9fde61096db6d76835f",
+      "bytes": 1086297
+    },
+    "events": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/events.json",
+      "sha256": "ec6257aea4d1f8a7cfaef48d4f95d071a5369a2c4e208b2c82fc0c37ba4e2e83",
+      "bytes": 447787
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/transcript.txt",
+      "sha256": "dbe7aeb4be0e2faaa79b3301344669e4068f586899641d27bfa76f2bf2b74d1f",
+      "bytes": 191893
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/manifest.json",
+      "sha256": "32022714a5b0460c338086dea55a88011921646e734ccabc923747df1c33d0bf",
+      "bytes": 968
+    },
+    "indexedTranscript": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/indexed-transcript.txt",
+      "sha256": "ab8830b44ccb513af227f4fcdd6f2b4ee1c3e20445e1046f74a021a6b50a75b4",
+      "bytes": 215695
+    },
+    "publicMetadata": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/public-metadata.json",
+      "sha256": "17ba2efae0be2c40f337e003456e629b89377f7c2dd76efcfb1e577dd02792fa",
+      "bytes": 2611
+    },
+    "sourceAudio": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/source-audio.mp4",
+      "sha256": "99d0397472d9398a896dd4986710897b197a3e97b564690390ff02f06cd38ae7",
+      "bytes": 393813553
+    },
+    "audioPlan": {
+      "path": ".assessment-cache/intake-307/source-audio-plan.json",
+      "sha256": "f15ac04e36a5e72bbb82abd38fbdd74e5669836d7a25c1e79e4080f5bca673c5",
+      "bytes": 2910
+    },
+    "audioResults": {
+      "path": ".assessment-cache/intake-307/source-audio-results.json",
+      "sha256": "8c73321299b01235bdf092561c9d92897ddaac41d38d091f7401b40c9c4e6e3d",
+      "bytes": 4884
+    },
+    "verificationReview": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/source/verification-review.json",
+      "sha256": "18fd59a60dfa8bb502ca45de44efded485911d03231b02487751788d5f49aeff",
+      "bytes": 7380
+    },
+    "audio-opening-manuscript-numbers": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/audio-checks/opening-manuscript-numbers.json",
+      "sha256": "290d0a3b0562886fe52be375f2300d8237b1c37fb81ad659a1c3067df841ff4b",
+      "bytes": 1114
+    },
+    "audio-counts-and-comparison-denominators": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/audio-checks/counts-and-comparison-denominators.json",
+      "sha256": "f44a1a42cabe6f152c80b142665dee24a18eb36f43b9ec1c0f30714c4b36d477",
+      "bytes": 8147
+    },
+    "audio-multiple-lines-and-early-variation": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/audio-checks/multiple-lines-and-early-variation.json",
+      "sha256": "a9b44508632d0d16c23482c2ed11af9360507b0a8ddbab8e000a298becfe756d",
+      "bytes": 5673
+    },
+    "audio-possibility-and-meaning": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/audio-checks/possibility-and-meaning.json",
+      "sha256": "e6ad078a08ee03ea5f4a9e43a20b0b7ab1ea3f30f19a14f7ad702a235ea62637",
+      "bytes": 6131
+    },
+    "audio-nuance-bottleneck-and-inspiration": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/audio-checks/nuance-bottleneck-and-inspiration.json",
+      "sha256": "c0c718a7a8666b29a2ef854c5e97d6454e4de2389ce30f39061383775a7aca90",
+      "bytes": 9524
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/authorization.json",
+      "sha256": "e88176ff10c23bdd47435b1b2b84e34f43ca01bee00620b714bb328735091709",
+      "bytes": 4117
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/source/source-lock.json",
+      "sha256": "aaece12ac583c71959f4c09b256f379f8f5e3af7fc21c62d21aa6f6705d1db72",
+      "bytes": 19536
+    },
+    "sourceNotes": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/source/assessment-source-notes.md",
+      "sha256": "17164630222989d2fd14a876653118690f6ef3a8f8ea1fb44bc54f01b42af02f",
+      "bytes": 12041
+    },
+    "readerScopeDisclosure": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/source/reader-scope-disclosure.json",
+      "sha256": "775397cdf9f2170351238c57752391d7f5ee4d8a3f074e730457b30aa76a45ef",
+      "bytes": 14121
+    }
+  },
+  "instructions": {
+    "selectExistingOptionOnly": true,
+    "permittedSelections": [
+      "option-a",
+      "option-b"
+    ],
+    "resolveEveryDisputeExactlyOnce": true,
+    "modelAuthoredTotalsForbidden": true
+  }
+}

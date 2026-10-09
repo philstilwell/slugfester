@@ -14673,5 +14673,55 @@ export const debateSummaries = [
         "title": "Inquiry and closings"
       }
     ]
+  },
+  {
+    "id": "ehrman-white-bible-misquote-jesus-2009",
+    "number": "307",
+    "title": "Bart Ehrman vs James White — Does the Bible Misquote Jesus?",
+    "year": 2009,
+    "label": "Does the Bible Misquote Jesus?",
+    "date": "2026-10-09",
+    "duration": "2 hr 29 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=5K-AOfj1Axg",
+    "motion": "Does the Bible misquote Jesus?",
+    "summary": "Ehrman narrowly prevailed by proving consequential local misattributions, while White strongly defended recoverable textual and theological continuity.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "The Bible misquotes Jesus",
+        "speaker": "Bart Ehrman",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The Bible preserves Jesus’s message",
+        "speaker": "James White",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 88,
+      "con": 86,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Copying history and variant scale"
+      },
+      {
+        "title": "Additions, sayings, and message continuity"
+      },
+      {
+        "title": "Preservation, tenacity, and genealogy"
+      },
+      {
+        "title": "Mark and Hebrews variant tests"
+      },
+      {
+        "title": "Comparison denominators and historical certainty"
+      },
+      {
+        "title": "Inspiration, preservation, and the motion"
+      }
+    ]
   }
 ];

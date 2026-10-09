@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-10-09T16:08:18.648Z",
+  "debateNumber": "307",
+  "debateId": "ehrman-white-bible-misquote-jesus-2009",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Does the Bible misquote Jesus?",
+  "sides": {
+    "pro": {
+      "speaker": "Bart Ehrman",
+      "position": "The Bible misquotes Jesus"
+    },
+    "con": {
+      "speaker": "James White",
+      "position": "The Bible preserves Jesus’s message"
+    }
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/inventory/inventory.json",
+      "sha256": "4ea51dbff7cafb95d96f6c4370d54c54b4d2dd252872f724cb94d42ba19c0325",
+      "bytes": 130673
+    },
+    "events": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/events.json",
+      "sha256": "ec6257aea4d1f8a7cfaef48d4f95d071a5369a2c4e208b2c82fc0c37ba4e2e83",
+      "bytes": 447787
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/5K-AOfj1Axg/transcript.txt",
+      "sha256": "dbe7aeb4be0e2faaa79b3301344669e4068f586899641d27bfa76f2bf2b74d1f",
+      "bytes": 191893
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    }
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true
+  },
+  "instructions": {
+    "reviewCompleteLockedInventory": true,
+    "judgeEveryMoveExactlyOnce": true,
+    "preserveInventoryStructure": true,
+    "doNotAddDropMergeOrSplitMoves": true,
+    "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true,
+    "scoreTranscriptPerformanceNotWorldviewTruth": true,
+    "supplyRatingsAndRationalesOnly": true,
+    "calculatedMoveSectionAndOverallScoresForbidden": true,
+    "winnerForbidden": true,
+    "publicationProseForbidden": true
+  },
+  "dimensionKeys": [
+    "logicalCoherence",
+    "evidenceWarrant",
+    "responsiveness",
+    "relevanceBurden",
+    "precisionClarity",
+    "calibrationCharity"
+  ],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "burdenAdjustmentControls": {
+    "minimum": -5,
+    "maximum": 5,
+    "integerOnly": true,
+    "nonzeroRequiresDistinctDebateWideConsequence": true,
+    "nonzeroRequiresBurdenCompletionEffect": true,
+    "nonzeroRequiresNotAlreadyScored": true,
+    "duplicateCaptureForcesZero": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "4ea51dbff7cafb95d96f6c4370d54c54b4d2dd252872f724cb94d42ba19c0325",
+    "judgmentFields": {
+      "moveId": "exact locked move ID in inventory order",
+      "assessmentConfidence": "high, medium, or low",
+      "dimensions": "exactly the six named dimension objects, each with integer value and rationale"
+    },
+    "burdenCompletionAdjustmentFields": {
+      "value": "integer -5 through 5",
+      "rationale": "source-grounded explanation",
+      "eligibility": [
+        "distinctDebateWideConsequence",
+        "affectsBurdenCompletion",
+        "notAlreadyScored",
+        "affectedBurdenIds",
+        "completionCriterion",
+        "relatedMoveIds",
+        "distinctConsequence",
+        "alreadyCapturedBy",
+        "counterfactual"
+      ]
+    },
+    "requiredAuditBooleans": [
+      "completeLockedInventoryReviewed",
+      "allMovesJudgedOnce",
+      "ratingsOnlyNoCalculatedScores",
+      "publicationBlind",
+      "scoreBlind"
+    ]
+  }
+}

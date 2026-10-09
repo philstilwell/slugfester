@@ -1,0 +1,17 @@
+{
+  "status": "diagnosed-test-timing",
+  "issue": "The no-screenshot precommit replay checked six lazy profile portraits immediately after scrolling, while their requests had started but not completed. Trace responses have status -1 before early browser teardown; all six source images exist and earlier full replay passed.",
+  "repair": "Wait for network idle before overflow and broken-image assertions. Assertions and failed-resource checks remain unchanged.",
+  "evidence": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/validation/precommit-browser-timing/trace.zip",
+      "sha256": "c67fe60ba53e13e03b286ee491ec07ead96fd973d10a94cc1ceb6f24d2d4bbf0",
+      "bytes": 15575630
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-307/validation/precommit-browser-timing/error-context.json",
+      "sha256": "487ebc4f7752ebd217012033bd2dc35b678b889685bc44bd46540a344c5303c6",
+      "bytes": 43043
+    }
+  ]
+}

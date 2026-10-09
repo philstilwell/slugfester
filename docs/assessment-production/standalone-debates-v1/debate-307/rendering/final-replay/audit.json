@@ -1,0 +1,29 @@
+{
+  "status": "passed-final-production-rendering",
+  "debateNumber": "307",
+  "results": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/rendering/final-replay/results.json",
+    "sha256": "7843a7c6ba850c7e201e3504823f2278ce9cddbc09d1298563b9c93f46d3bb5b",
+    "bytes": 30249
+  },
+  "screenshots": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/rendering/final-replay/screenshots.json",
+    "sha256": "39f7127e34d95d45949d276b6dde9814fa72c4f249f32295af892a01fe0e88f3",
+    "bytes": 6083
+  },
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-307/rendering/final-replay/execution.json",
+    "sha256": "903a647316463e8681f5370a8bce1bd51d2d88bbe69d5bac56da1ad0b369a0ab",
+    "bytes": 223
+  },
+  "implementation": {
+    "path": "scripts/lib/standalone-browser-replay.mjs",
+    "sha256": "91155f807b8760420898745a87f3ba04ac1686d740dfe07f797313727ca2c8f0",
+    "bytes": 12909
+  },
+  "review": "Final replay passes all exact static scope, card text, quotes, scores, tags, AI text, timestamp links, graph buckets and linked-route checks on both desktop and phone. Directly viewed the final desktop Ehrman biography and chart; layout is intact. Earlier complete quote and phone visual evidence remains unchanged. The only replay change waits for in-flight portrait downloads before existing assertions.",
+  "cleanup": {
+    "browser": "debate307final closed",
+    "localServer": "4177 stopped"
+  }
+}

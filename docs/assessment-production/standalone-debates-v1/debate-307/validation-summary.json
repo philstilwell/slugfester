@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "debateNumber": "307",
+  "debateId": "ehrman-white-bible-misquote-jesus-2009",
+  "directCostUsd": 0.097,
+  "invoiceVerified": false,
+  "scope": "All assessment, publication, source evidence, corpus, repository, graph, desktop/mobile rendering and immediate-precommit website checks passed. Earlier diagnostics and their resolutions are preserved. Committed-package replay and remote release gates follow the publication commit.",
+  "pendingReleaseGates": [
+    "committed-package replay",
+    "required pull-request check and merge",
+    "post-merge Site Quality and Pages deployment",
+    "live verification"
+  ],
+  "renderingAudit": "docs/assessment-production/standalone-debates-v1/debate-307/rendering/rendering-audit.json",
+  "completedLocalChecks": [
+    "evidence-full",
+    "evidence-repository",
+    "content-parity",
+    "rhetorical-tags",
+    "validate-corpus",
+    "seo-check",
+    "graph-reconciliation",
+    "site-standalone-initial",
+    "website-preflight",
+    "reader-source-language",
+    "validate-debates-final",
+    "repository-check-permitted",
+    "repository-check-release",
+    "website-precommit-final",
+    "final-diff-review",
+    "staged-evidence-first"
+  ],
+  "resolvedFailures": {
+    "sourceLanguage": "Added two exact reader-facing automated-source disclosures to the existing narrow allowlist, retaining all general internal-metadata restrictions and adding negative tests. Publication, scope, judgments and scores unchanged.",
+    "sandboxSocket": "The workflow handoff test initially could not create a local socket under restricted execution. The full suite passed with the required local socket permission.",
+    "historicalCache": "Full historical campaign local-cache mode requires source cache absent from this clean clone. The intended repository-only historical campaign and calibration audits both passed within npm run check. The new debate full local-source audit passed separately.",
+    "browserTiming": "Precommit replay exposed in-flight lazy portrait downloads; preserved trace and diagnostics. Maintained replay now waits for network idle before unchanged broken-image and overflow checks; final desktop/phone replay passed."
+  },
+  "finalRenderingAudit": "docs/assessment-production/standalone-debates-v1/debate-307/rendering/final-replay/audit.json"
+}

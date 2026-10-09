@@ -1,0 +1,27 @@
+# Isolated primary judgment contract
+
+Read the execution plan and entire lossless reader, including every document and shared block, in bounded untruncated outputs. Only plan-allowed evidence may be read. Follow exact model and effort in the plan. No peer outputs, other debates, historical scores, publication prose, rankings, biographies, browsing, session logs, credentials or environment inspection. No paid calls, external inference or subagents. Isolation is procedural, not a filesystem sandbox. Confirm the absolute output path; tell the controller when reading is complete and wait for authenticated reading release before authoring.
+
+## Evidence and judgment
+
+Motion: Does the Bible misquote Jesus? Pro: Bart Ehrman. Con: James White.
+
+Read and obey the complete frozen source restrictions, qualifications and verification findings supplied in the reader. Assess only both formal openings, both rebuttals, both cross-examinations and both closings in the retained window. All audience Q&A and logistical remarks are excluded without credit, penalty or absence inference. Ehrman argues meaningful textual changes and uncertainty in exact recovery; White argues reliable collective preservation and continuity of message, not perfect individual copies. Preserve local-meaning versus whole-message distinctions, printed-edition versus actual-manuscript evidence, word versus variant-unit denominators, hypothetical early bottleneck versus documented genealogy, possibility versus probability, and each later qualification. Recognition errors cannot establish concessions, contradictions or argumentative defects.
+
+Evaluate every locked move exactly once in inventory order under the full rubric. Preserve inventory fields. Never calculate move, section or overall totals or winners. Each rationale must identify its source-specific strength or limitation. No duplicate deduction for the same defect absent distinct consequences. Source uncertainty and transcription corruption cannot become an argument-quality penalty.
+
+## Exact output schema
+
+A single JSON object with schemaVersion "1.0-standalone-primary-judgment", protocolId "assessment-production-standalone-debate-v1", status "complete-and-schema-valid", pass from plan, debateNumber as string from plan, debateId from plan, reviewerRole "isolated-score-blind-primary-judge", assessmentModel "5.6 Sol", reasoningEffort "low", inventorySha256 from judgment packet, isolation, judgments, burdenCompletionAdjustment, audit.
+
+isolation contains booleans legacyAssessmentsUnavailable, calculatedTotalsUnavailable, winnerLabelsUnavailable, otherJudgmentUnavailable, publicationProseUnavailable, otherDebatesUnavailable (all true only if accurate), and contaminationDetected (false only if accurate). Report a breach and stop if any required isolation condition is false.
+
+judgments is an array exactly matching inventory moves. Each entry: {moveId,assessmentConfidence,dimensions}. assessmentConfidence is high, medium or low. dimensions has exactly logicalCoherence, evidenceWarrant, responsiveness, relevanceBurden, precisionClarity, calibrationCharity. Each dimension has exactly {value,rationale}; value is integer 0–100, rationale at least 40 characters. Use rubric anchors; do not give duplicate deductions for one defect unless it has distinct demonstrated consequences in multiple dimensions.
+
+burdenCompletionAdjustment has pro and con. Each is exactly {value,rationale,eligibility}, with integer value −5..5. eligibility has exactly these nine keys: distinctDebateWideConsequence (boolean), affectsBurdenCompletion (boolean), notAlreadyScored (boolean), affectedBurdenIds (array of actual route bridge IDs), completionCriterion (string), relatedMoveIds (array of actual move IDs), distinctConsequence (string), alreadyCapturedBy (array), counterfactual (string). Duplicate capture (nonempty alreadyCapturedBy or false notAlreadyScored) requires zero. Nonzero requires all three booleans true, nonempty affectedBurdenIds and relatedMoveIds, empty alreadyCapturedBy, and completionCriterion, distinctConsequence, counterfactual each at least 30 characters. A value of zero still requires every eligibility key. Explain the actual debate-wide question and why any claimed adjustment does not rescore a move. Never calculate totals to choose an adjustment.
+
+audit has completeLockedInventoryReviewed, allMovesJudgedOnce, ratingsOnlyNoCalculatedScores, publicationBlind, scoreBlind, all true only if accurate.
+
+## One unsaved review and exact submission
+
+After authenticated reading release, create the complete candidate in memory. Run the pinned checker with standard input; do not inspect its implementation or create a disk draft. Review every rationale yourself against source ownership, recognition restrictions, adopted burdens and later qualifications before holding it. Send exact UTF-8 JSON bytes from your existing memory to the pinned `standalone-workflow.mjs handoff hold` command with the explicit debate and your plan. The checker validates and the holder keeps bytes in memory. Keep the holder alive and send its receipt. The controller reads all candidate bytes and issues source-compliance release; it may not negotiate ratings or disclose the peer pass. Release writes the approved bytes exactly once. Stop authoring after submission. One context, one submission, no automatic retries or overwrites. Ordinary corrections before a successful hold are within this context; an existing hold or saved failure is never silently replaced.
