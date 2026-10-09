@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-09T12:04:54.257320+00:00",
+  "userAuthorization": "Invoked addition skill and supplied video; explicit follow-up “Score Meyer and Atkins only.” Standing authority includes scoped discussion and closings, public disclosure, complete quotes, commit/push/PR/required-check merge, no routine approvals, and announced transcription below the standing $1 cap.",
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false,
+    "controllerModelCondition": {
+      "required": "gpt-6-astra",
+      "reasoningEffort": "xhigh",
+      "actualCurrentTurnConfirmed": true,
+      "authenticatedTurnTimestamp": "2026-10-09T11:58:55.771Z"
+    }
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "repositoryBaseline": {
+    "head": "b34e63e36eebef07693527b1392868ee38c571f5",
+    "localMain": "b34e63e36eebef07693527b1392868ee38c571f5",
+    "originMain": "b34e63e36eebef07693527b1392868ee38c571f5",
+    "branch": "codex/debate-306-intake",
+    "cleanBeforeBranch": true,
+    "workingCopyRoot": "/private/tmp/slugfester-debate-301",
+    "preservationNote": "Resume same clean private-clone intake branch after explicit scope approval; source cache preserved, no completed assessment attempts exist. Original user checkout untouched."
+  },
+  "identity": {
+    "debateNumber": "306",
+    "debateId": "meyer-atkins-intelligent-design-science-2010",
+    "title": "Stephen Meyer vs Peter Atkins — Intelligent Design and Science (2010)",
+    "label": "Intelligent Design and Science",
+    "motion": "Is intelligent design a legitimate scientific explanation for biological origins?",
+    "pro": {
+      "speaker": "Stephen Meyer",
+      "position": "Intelligent design is a legitimate scientific explanation"
+    },
+    "con": {
+      "speaker": "Peter Atkins",
+      "position": "Intelligent design is not a legitimate scientific explanation"
+    },
+    "eventYear": 2010,
+    "videoId": "TSZlPZvIOC0",
+    "canonicalUrl": "https://www.youtube.com/watch?v=TSZlPZvIOC0",
+    "sourceTitle": "Stephen Meyer Debates Oxford Univ. Chemist Peter Atkins on Justin Brierley's Unbelievable program",
+    "topicCategory": "evolution-origins-life",
+    "dyadic": true,
+    "originalRecordingDyadic": false,
+    "editorApprovedScope": {
+      "protocolId": "editor-approved-moderator-context-v1",
+      "explicitDebateSpecificApproval": true,
+      "videoId": "TSZlPZvIOC0",
+      "userApproval": "The user selected “Score Meyer and Atkins only” after being offered this recording-specific two-speaker assessment with Haville and the host as unscored context, a team assessment, or skipping. This authorizes the disclosed exception for this recording, including eligible primary-speaker replies.",
+      "originalRecordingIsStrictlyDyadic": false,
+      "automaticPrimarySpeakerExceptionClaimed": false,
+      "contextOnlyParticipants": [
+        "Mark Haville",
+        "Justin Brierley"
+      ],
+      "primaryRepliesRemainEligible": true,
+      "moderatorArgumentsAssignableToPrimarySpeakers": false,
+      "moderatorScored": false,
+      "readerDisclosureRequired": true,
+      "assessedWindow": {
+        "startMs": 287280,
+        "endMs": 3697119,
+        "durationMs": 3409839
+      },
+      "requiredReaderDisclosure": "By explicit editorial approval, this assessment scores only Stephen Meyer and Peter Atkins in their substantive discussion and both closing remarks, approximately 04:47–1:01:33, excluding programme breaks. This radio discussion has no timed formal rounds and also includes recurring advocate Mark Haville. Haville and host Justin Brierley remain unscored context: their arguments and quoted material are not credited to either scored participant, but Meyer and Atkins’s own replies remain eligible. Unequal prompting and opportunities to respond are considered. Film excerpts, introductions, promotions, Haville’s final promotional remarks, listener feedback and the outro supply no credit, penalty, inferred concession or failure-to-reply inference. The source uses automatic captions and supplementary automated audio checks where available; no direct human listening is claimed.",
+      "scopeInterpretation": "Assess intelligent design as a legitimate scientific explanation for biological origins, including information, causal inference, explanatory methods, research productivity and freedom of inquiry as actually argued. Meyer defends a positive inference to intelligence, not merely an unsolved mechanism. Atkins challenges that inference and its scientific status; do not require a completed origin-of-life theory just to criticize design. Distinguish chemical origins from biological evolution, information from regular order, and methodological exclusion from evidence against a proposed cause. Neither Haville nor Brierley is a team member of either scored side."
+    }
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "currentPlanEstimateUsd": 0.2,
+    "maximumCumulativeCostUsd": 0.5,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "audioVerificationPolicy": "Six source inputs planned; first call rejected for reference length and preserved without retry. Five never-submitted inputs use shorter references under a preserved amendment. Track successful and maximum possible costs separately in durable audio evidence. Any later move-triggered check needs a frozen new input within the announced cumulative cap; no automatic retry."
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-306",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/meyer-atkins-intelligent-design-science-2010.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/meyer-atkins-intelligent-design-science-2010.js",
+    "generated site output for this addition"
+  ]
+}

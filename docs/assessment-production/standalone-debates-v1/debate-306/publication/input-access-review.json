@@ -1,0 +1,21 @@
+{
+  "status": "passed-controller-input-access-review",
+  "agent": "/root/writer306",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-306/publication/execution.json",
+    "sha256": "e3d1c12e611d0d05f8e5bf346aa018050cb8198ffc60ca7337a3add6d394d6ea",
+    "bytes": 25050
+  },
+  "reading": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-306/publication/reading-release.json",
+    "sha256": "c3cc99e654ce72cd6dc66c62f56bb37a5fe49b6ac1ea09c385552e3dc02e4136",
+    "bytes": 20738
+  },
+  "actualInputFiles": [
+    "publication/execution-plan.json",
+    "workflow/publication/reader.txt"
+  ],
+  "findings": "Session tool calls show plan and bounded reader reads, in-memory literal drafting and copyediting, pinned checker execution, runner help probes and local handoff only. No peer drafts, outside debate evidence, network, credentials or paid calls were accessed. An initially truncated combined read was completed visibly before authenticated release. A socket-permission failure preceded successful memory holding; rejected prose and metadata were preserved before same-context unsaved revision. One exact saved submission only.",
+  "violations": [],
+  "isolation": "Protocol isolation; no operating-system sandbox claim."
+}
