@@ -2,11 +2,11 @@
 
 ## Understanding the evidence gap in SLUGFESTER's Charts
 
-SLUGFESTER · Methods and interpretation · October 8, 2026
+SLUGFESTER · Methods and interpretation · October 8, 2026 · Clarified edition
 
 The Charts page shows a substantial evidence-score gap between arguments supporting religious claims and arguments challenging them. Does it reflect the arguments, the judging system, the selection of debates, or some combination? An accusation of anti-Christian AI bias deserves a substantive answer. So does the possibility that some religious arguments leave more of their evidential burden unmet.
 
-**The defensible conclusion is specific:** in this selected archive, under SLUGFESTER's published criteria, supporting arguments receive lower evidence scores on average. The difference is broad and survives several descriptive checks. It is neither a finding about every Christian nor an independent demonstration that the judging model is impartial.
+**The defensible conclusion is specific:** in this selected archive, under SLUGFESTER's published criteria, supporting arguments receive lower evidence scores on average. The difference is broad and survives several descriptive checks. It is neither a finding about every Christian nor an independent demonstration that the judging model is impartial. Where the recorded reasoning leaves essential evidential checks undone, this document identifies evidence neglect directly.
 
 [DATA:headline]
 
@@ -69,7 +69,7 @@ The evidence scale gives 90 or above to particularly well-defended, sourceable s
 
 **Precision, calibration, and charity.** Terms and qualifications must be clear; confidence must fit the support; opposing arguments must be represented accurately. Fluency, applause, reputation, and polite manners do not substitute for these qualities. A sweeping dismissal of religion can lose credit under exactly the standard that penalizes a sweeping dismissal of unbelievers.
 
-These choices are substantive commitments about responsible public argument. They should be defended openly. A debate assessment need not accept a claim's divine authority in advance, but it must allow that claim to be argued for and must evaluate the actual case with equal care.
+**One public standard for both sides.** Every participant must justify the claims they ask an audience to accept with evidence and reasoning that can be examined and challenged. Private certainty, claimed revelation, or an asserted self-authenticating experience cannot substitute for that support. Reports of personal experience can be assessed as testimony; their reliability and the conclusions drawn from them receive no exemption from scrutiny. Equal scrutiny applies to each side's actual claims, including a critic's positive assertions.
 
 <!-- page -->
 # 4. How an assessment reaches the chart
@@ -120,29 +120,50 @@ SLUGFESTER has grounds to defend traceability, fixed calculations, separate init
 
 Those examples do not establish equal error rates. The initial reviewers and adjudicator can share assumptions. A stability rule may retain a shared initial mistake. The inventory can omit a strong argument or compress an important distinction before either reviewer sees it. A transcript can misattribute speech. A critic can be credited with caution while an equally cautious believer is treated as making a stronger claim. These are concrete possibilities for an audit, not findings that any particular error occurred.
 
-The rubric itself also deserves scrutiny. Requiring support that another participant can examine is appropriate to a public debate about reasons for accepting a claim. It is not the only possible assessment of religious life, personal experience, fidelity, or spiritual understanding. A theological reader can dispute the philosophical adequacy of that public-argument standard. The dispute should be stated as a disagreement about the task and its criteria, then examined alongside possible inconsistent application.
+The rubric itself also deserves scrutiny, but SLUGFESTER's subject is public argument. Neither side may bypass assessment by declaring its knowledge private or immune to criticism. An assertion that a conviction is divinely guaranteed, intuitively certain, or self-authenticating supplies no additional evidence unless the speaker defends an assessable reason to accept it. A belief's possible personal significance cannot repair an unsupported public inference. Readers can challenge the rubric and its application; private assurance is not an exception to its evidential requirements.
 
 **The responsible defense is provisional:** the gap is a documented result under explicit rules; it is not a demonstrated artifact of anti-Christian prejudice, and it is not yet a demonstrated absence of such prejudice. The right next step for a bias allegation is an identifiable scoring error or a controlled test. A critic need not produce an entire alternative scoring system before a specific error deserves attention.
 
 <!-- page -->
-# 7. Could an emphasis on faith weaken evidential habits?
+# 7. Identifying evidence neglect in the record
+
+The saved assessments identify concrete omissions that warrant the description **evidence neglect**: evidential work needed for the stated conclusion is left undone. Uncertainty about why an omission occurred does not erase the omission. A commitment to fair assessment requires identifying these failures in religious arguments as directly as in skeptical arguments.
+
+Here, evidence neglect describes a failure to supply or engage relevant support, check a consequential evidential assumption, or address counterevidence material to the claim actually made. It need not be deliberate. It is a criticism of the presented argument, not a diagnosis of the speaker's motives or every belief they hold. The following examples identify the missing work rather than inferring neglect merely from a low score.
+
+## A probability claim without its probability justification
+
+In Debate 01 at 94:39, Craig argues that life-permitting constants are extraordinarily unlikely by accident and favors intelligent selection. The recorded **evidence score is 61**, while the overall move score is 68. The published critique identifies no articulated probability measure, prior distribution, treatment of observation selection, or systematic comparison with the relevant alternatives. These omissions matter because the inference depends on how likely the observations are under competing explanations. [18]
+
+This is a specific failure to justify the evidential comparison on which the stated conclusion depends. Calling a life-permitting range narrow does not, by itself, establish its probability or make intention the superior explanation. Invoking personal certainty about Christianity would supply none of that missing work. The criticism concerns the version presented, not a claim that every possible fine-tuning argument fails. The Carrier example later applies the same demand to a naturalistic probability claim.
+
+## A broad empirical claim without representative support
+
+In the same debate at 79:24, Craig invokes Michael Murray's book while denying reflective awareness of pain across familiar mammals. The recorded **evidence score is 58**, while the overall move score is 71. The critique acknowledges the relevance of distinguishing pain from reflective self-awareness, but finds that the generalization across species exceeds the supporting reference. It calls for representative empirical support and an explanation of why reduced reflective complexity sufficiently answers the suffering objection. [18]
+
+The point is not that Craig names no source: he does. The failure is that naming that source does not adequately establish the breadth or argumentative consequence of the empirical claim as presented. A potentially relevant distinction receives credit; the omitted evidential work remains a defect.
+
+These are grounds for identifying evidence neglect in particular assessed contributions. They do not establish deliberate evasion, that every Christian neglects evidence, or that faith caused these omissions. Those are additional claims requiring additional support. Nor are the saved critiques beyond correction: a reader who identifies the missing justification in the relevant exchange has grounds to challenge them. That openness does not require withholding criticism until every possible alternative explanation has been ruled out.
+
+<!-- page -->
+# 8. Could an emphasis on faith weaken evidential habits?
 
 One proposed explanation is that some Christian environments praise faith in ways that normalize insufficient attention to evidence. Stated carefully, this is a hypothesis about learned standards of justification, not an assertion that Christians have an inherent defect or that all uses of the word faith mean the same thing.
 
 **The proposed mechanism.** If maintaining a religious conclusion despite unresolved objections is treated as a virtue, while revising it is treated as disloyalty or spiritual failure, a person may face less incentive to identify disconfirming evidence, compare rival explanations, or specify what would change the conclusion. Arguments can become tools for defending an already protected commitment rather than tests that could genuinely revise it. In public debate, that could appear as confidence outrunning support or repeated reliance on premises that the audience has not been given reason to accept.
 
-This would be particularly relevant when certainty derived from personal faith is presented as if it automatically transfers to another person. A speaker may have an experience they regard as a source of knowledge. Listeners still need a reason to identify its cause, judge its reliability, and distinguish it from incompatible experiences reported by others. The additional public burden does not by itself show that the original experience was insincere or worthless.
+**Public claims require public support.** SLUGFESTER's debates ask listeners to evaluate publicly stated claims. Both sides must supply premises, sources, testimony, and reasoning adequate to the claims they make and open to examination. Sincerity or psychological certainty does not discharge that burden. A report of an experience can be considered as testimony, but its reliability, proposed cause, and relevance to the conclusion must be defended rather than insulated from scrutiny.
 
-A primary Christian source helps clarify the distinction. William Lane Craig differentiates personal knowledge grounded in the Holy Spirit from demonstrating Christianity to someone else through arguments and evidence. He explicitly maintains a role for both. His position supplies an example of personal warrant being distinguished from public demonstration; it does not establish that he, or Christians generally, neglect evidence. Whether that distinction produces weaker public arguments is a further empirical question. [10]
+Craig's own discussion is relevant evidence, not an excuse. He distinguishes self-authenticating knowledge through the Holy Spirit from public demonstration, yet treats his own witness as genuinely divine and incompatible witnesses as mistaken. He expects contrary believers' confidence to yield to evidence while defending the rational security of the genuine witness. [10] As a public defense, that presupposes the disputed reliability of his own experience instead of establishing it. This illustrates the concern: a claimed source of certainty is protected before the public comparison is made. **The knowing/showing distinction does not discharge the burden.** Craig's public claims still require assessable support; inaccessible assurance cannot repair a missing premise or answer counterevidence. Endorsing a role for evidence does not establish that adequate evidence was supplied.
 
 Christianity also contains explicit defenses of reason. In *Fides et Ratio*, John Paul II criticizes fideism for neglecting rational knowledge and philosophical discourse. He nevertheless maintains a role for revelation. That is a counterexample to treating the Christian concept of faith as uniformly hostile to inquiry. It is a statement of theological commitments, not evidence that every Christian practice meets those commitments. [11]
 
-The strongest version of the hypothesis therefore concerns **insulation from correction**: whether a community or speaker makes a favored conclusion resistant to adverse evidence. Faith understood as trust supported by reasons need not have that effect. Skeptical, political, or secular commitments can also be insulated from correction. General research on motivated reasoning offers a possible mechanism for selective evaluation across people, not a finding that Christians in these debates were more affected by it. [12]
+The strongest version of the hypothesis therefore concerns **insulation from correction**: whether a community or speaker makes a favored conclusion resistant to adverse evidence. A profession of trust in reasons earns no exemption either: the reasons must actually be supplied and withstand scrutiny. Skeptical, political, or secular commitments can also be insulated from correction. General research on motivated reasoning offers a possible mechanism for selective evaluation across people, not a finding that Christians in these debates were more affected by it. [12]
 
 To test the proposal, independent readers would need to code actual uses of faith, willingness to revise, treatment of counterevidence, and demands for public justification without seeing the existing scores. The comparison would need to account for topic, argumentative role, speaker repetition, and judging errors. The present snapshot contains no such faith variable. It cannot establish that faith caused the evidence gap, let alone determine what share of the gap it caused.
 
 <!-- page -->
-# 8. Other explanations worth investigating
+# 9. Other explanations worth investigating
 
 The faith hypothesis should compete with alternatives rather than inherit the entire gap by default. Several explanations could operate together. Their relative importance has not been established by this analysis.
 
@@ -161,7 +182,7 @@ The faith hypothesis should compete with alternatives rather than inherit the en
 The current evidence supports a difference in recorded argumentative performance. The causes could include genuine differences in the support offered, task asymmetry, the selected sample, judging error, and cultural habits of argument. Assigning a precise contribution to any one of them would go beyond the data.
 
 <!-- page -->
-# 9. Examples that keep the standard symmetrical
+# 10. Examples that keep the standard symmetrical
 
 These four cases illustrate high evidence ratings for Christian-side contributions and low ratings for skeptical overreach. They were selected for that explanatory purpose, not as a random sample or proof that the system is unbiased. The descriptions below paraphrase the published assessment. The displayed evidence score is one dimension, not the move's overall score. [13-16]
 
@@ -184,7 +205,7 @@ In Debate 14, Richard Carrier proposes a minimally described, lawless origin tha
 These cases show that religious contributions can receive high evidence scores and skeptical contributions can receive low ones. They do not show how the same arguments would fare without their religious or skeptical associations, or establish equal treatment on average. That requires matched comparisons and review of disputed cases, including cases less favorable to the site's existing conclusion.
 
 <!-- page -->
-# 10. How to challenge and improve an assessment
+# 11. How to challenge and improve an assessment
 
 The most useful objection identifies the debate, source passage, selected move, dimension, and reason the recorded judgment is wrong. A Christian reader might show that the critique overlooked an explicit qualification, treated a compatibility defense as a probability claim, ignored a source supplied in the debate, or imposed a burden the speaker never accepted. A skeptical reader can identify precisely the same kinds of errors.
 
@@ -205,7 +226,7 @@ A prospective audit should select cases before examining the desired outcome and
 The fair conclusion remains open to revision: the saved assessments contain a substantial and inspectable evidence gap, with plausible argumentative and cultural explanations. Their best defense is the ability to show what earned each judgment and to correct demonstrated errors. Neither religious identity nor an AI-generated verdict should be exempt from that standard.
 
 <!-- page -->
-# 11. Calculation notes and sensitivity checks
+# 12. Calculation notes and sensitivity checks
 
 This document uses the **October 8, 2026 revision 2** frozen archive, containing 226 debates, 2,686 supporting moves, and 2,719 challenging moves. The catalogue contained 300 debates at capture. Later catalogue growth does not change those denominators. The snapshot's exact file fingerprint and the per-debate inputs accompany the reproducible analysis. [1, 2]
 
@@ -249,7 +270,7 @@ Reproduction requires the archived snapshot and matching assessment adapters. Th
 
 [REF:9] Zheng, L., et al. (2023). Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena. NeurIPS Datasets and Benchmarks. Documents limitations in model judging; it does not test SLUGFESTER, 5.6 Sol, or anti-Christian bias. [Paper and bibliographic record](https://arxiv.org/abs/2306.05685).
 
-[REF:10] Craig, W. L. (2022). Evidence, Arguments, and the Witness of the Holy Spirit. Reasonable Faith podcast transcript. Primary statement of the distinction between personal religious knowledge and showing a case through argument and evidence. [Read the transcript](https://www.reasonablefaith.org/media/reasonable-faith-podcast/evidence-arguments-and-the-witness-of-the-holy-spirit).
+[REF:10] Craig, W. L. (2022). Evidence, Arguments, and the Witness of the Holy Spirit. Reasonable Faith podcast transcript. Primary statement of Craig's knowing/showing distinction and treatment of incompatible spiritual witnesses. The discussion examines its public evidential deficiency. [Read the transcript](https://www.reasonablefaith.org/media/reasonable-faith-podcast/evidence-arguments-and-the-witness-of-the-holy-spirit).
 
 [REF:11] John Paul II (1998). Fides et Ratio, especially sections 52-55. Primary Catholic statement supporting reason's role in faith and criticizing fideism. [Official Vatican text](https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_14091998_fides-et-ratio.html).
 
@@ -266,5 +287,7 @@ Reproduction requires the archived snapshot and matching assessment adapters. Th
 [REF:16] Debate 14. Michael Jones and Richard Carrier, Does God Exist? Move at 65:58, identifier `con-minimal-lawless-field-origin`. Evidence 44; move 65. [Published assessment](https://slugfester.com/debate/jones-carrier-god-existence-2025/).
 
 [REF:17] SLUGFESTER. Feedback and corrections. Include the debate, timestamp, move, disputed judgment, relevant source context, and proposed correction. [Open the correction channel](https://slugfester.com/corrections/).
+
+[REF:18] Debate 01. William Lane Craig and Alex O'Connor, Does God Exist? Fine-tuning move at 94:39, evidence 61; animal-awareness move at 79:24, evidence 58. [Published critiques](https://slugfester.com/debate/craig-oconnor-god-debate-2026/). [Saved assessment and source excerpts](https://github.com/philstilwell/slugfester/blob/4c3b04cd3b3235b566d61af5c147e58094cccc03/docs/assessment-ledgers/craig-oconnor-god-debate-2026.json).
 
 External sources checked October 8, 2026. The example descriptions are paraphrases of the saved assessments, not newly verified transcript quotations. The snapshot and pinned repository records preserve this edition's values if live pages later change.
