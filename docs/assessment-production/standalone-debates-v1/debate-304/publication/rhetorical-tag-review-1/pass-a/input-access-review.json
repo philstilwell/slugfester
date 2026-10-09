@@ -1,0 +1,23 @@
+{
+  "status": "passed-controller-input-access-review",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-304/publication/rhetorical-tag-review-1/pass-a/execution.json",
+    "sha256": "20f90b9ade88b80bb2fa4f1fe0697c3cc864f887baaf8b22cb3695c151163493",
+    "bytes": 20609
+  },
+  "agentPath": "/root/rhetoric304a",
+  "sessionId": "01a11ed4-d1c0-7c21-8b73-a92d76a050ef",
+  "toolCallCount": 45,
+  "findings": [
+    "Actual tool calls inspected: frozen plan and complete allowed reader; own thread identity; maintained runner help; in-memory authoring; pinned checker; local handoff; cleanup only.",
+    "No peer outputs, external research, scores or credentials accessed. Fresh contexts and actual gpt-5.6-sol low settings authenticated.",
+    "RAM encoding/transport issues were corrected without writing a candidate file or consuming a saved submission. Exactly one first submission followed controller release."
+  ],
+  "resolvedProceduralDeviations": [
+    "First checker transport mistakenly used a PTY; it only echoed in-memory candidate bytes and wrote no file. The same bytes were checked again using a non-PTY pipe, and both holder processes used non-PTY transport.",
+    "Literal reader lines 1401–1600 were reread before authoring; one source-qualification correction was completed in the same context before any save."
+  ],
+  "protocolIsolationVerified": true,
+  "operatingSystemSandboxClaimed": false,
+  "violations": []
+}

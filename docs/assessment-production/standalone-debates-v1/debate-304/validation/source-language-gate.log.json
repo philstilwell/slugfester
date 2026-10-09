@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "--input-type=module",
+    "-e",
+    "import assert from \"node:assert/strict\";import{hasInternalDebateMetadata as check}from\"./scripts/lib/publication-source-language.mjs\";const disclosure=\"Public automatic captions were supplemented by five targeted automated audio checks, not direct human listening.\";assert.equal(check(disclosure,\"sourceNote\"),false);assert.equal(check(disclosure,\"summary\"),true);assert.equal(check(disclosure+\" Internal SHA256 hash.\",\"sourceNote\"),true);assert.equal(check(\"Unreviewed audio checks from locally cached transcript.txt\",\"sourceNote\"),true);console.log(\"Exact approved source disclosure allowed; unrelated workflow metadata remains rejected.\");"
+  ],
+  "stdout": "Exact approved source disclosure allowed; unrelated workflow metadata remains rejected.\n",
+  "stderr": ""
+}

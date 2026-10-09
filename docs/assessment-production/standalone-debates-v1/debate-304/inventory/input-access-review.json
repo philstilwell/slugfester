@@ -1,0 +1,23 @@
+{
+  "status": "passed-controller-input-access-review",
+  "checkedAt": "2026-10-09T03:38:46.118662+00:00",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-304/inventory/execution.json",
+    "sha256": "92b5df8c3f0bfc64f39eb471818728304c32d5bf586a6387acc338bad34d92f0",
+    "bytes": 17825
+  },
+  "agentPath": "/root/inventory304",
+  "sessionId": "01a11ea9-0a3b-7bf3-8fc0-363a9d8bc551",
+  "toolCallCount": 67,
+  "findings": [
+    "Complete plan and 2707-line allowed reader authenticated.",
+    "Governing reassess skill read; no historic assessments, peer judgments or public scores accessed.",
+    "Own thread identifier only; no credentials or unrelated environment inspected.",
+    "Authoring and checker execution used live memory; one first submission retained.",
+    "Two controller-directed unsaved revisions preserved; final four wording changes do not alter substantive move selection.",
+    "Local handoff/FIFO transport only; temporary pipe and idle authoring process closed."
+  ],
+  "protocolIsolationVerified": true,
+  "operatingSystemSandboxClaimed": false,
+  "violations": []
+}

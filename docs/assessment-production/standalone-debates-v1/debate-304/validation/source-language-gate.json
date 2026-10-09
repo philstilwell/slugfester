@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "command": [
+    "node",
+    "--input-type=module",
+    "-e",
+    "import assert from \"node:assert/strict\";import{hasInternalDebateMetadata as check}from\"./scripts/lib/publication-source-language.mjs\";const disclosure=\"Public automatic captions were supplemented by five targeted automated audio checks, not direct human listening.\";assert.equal(check(disclosure,\"sourceNote\"),false);assert.equal(check(disclosure,\"summary\"),true);assert.equal(check(disclosure+\" Internal SHA256 hash.\",\"sourceNote\"),true);assert.equal(check(\"Unreviewed audio checks from locally cached transcript.txt\",\"sourceNote\"),true);console.log(\"Exact approved source disclosure allowed; unrelated workflow metadata remains rejected.\");"
+  ],
+  "debateNumber": "304",
+  "debateId": "swinburne-ehrman-god-suffering-2009",
+  "inputRevision": "b1a1a128310e6e4c99aa4c006e1617ae9792b63c",
+  "trackedDiffSha256": "34778442cea7ed562d119fa775dae417b181c41e6e82665d9e375b78abcd6f9e",
+  "startedAt": "2026-10-09T04:14:52.193821+00:00",
+  "elapsedSeconds": 0.051,
+  "exitCode": 0,
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-304/validation/source-language-gate.log.json",
+    "sha256": "1121a8159d7ca752bd2b1c592b022e8329483fcc883a8d9c102daac274a7f95e",
+    "bytes": 862
+  },
+  "publication/output.json": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-304/publication/output.json",
+    "sha256": "387116a984e7e992fb4830e53f9fdaf45d77cf8939b1b2921b6e989c2274ce1d",
+    "bytes": 50374
+  },
+  "score-pass/output.json": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-304/score-pass/output.json",
+    "sha256": "5716066f0890c01fe77445d783e8714c1d3fe64af18e8943663eba3462846111",
+    "bytes": 12337
+  }
+}
