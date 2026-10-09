@@ -1,12 +1,12 @@
-import { pageUpdates } from "./data/page-updates.js?v=7acc27bcf0d5c8cb";
-import { renderCritiqueText } from "./data/critique-format.js?v=7acc27bcf0d5c8cb";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=7acc27bcf0d5c8cb";
-import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=7acc27bcf0d5c8cb";
-import { topicPreviewText } from "./data/topic-preview.js?v=7acc27bcf0d5c8cb";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=7acc27bcf0d5c8cb";
-import { debateSummaries } from "./data/debate-summaries.js?v=7acc27bcf0d5c8cb";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=7acc27bcf0d5c8cb";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=7acc27bcf0d5c8cb";
+import { pageUpdates } from "./data/page-updates.js?v=11e306f268fcbc4d";
+import { renderCritiqueText } from "./data/critique-format.js?v=11e306f268fcbc4d";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=11e306f268fcbc4d";
+import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=11e306f268fcbc4d";
+import { topicPreviewText } from "./data/topic-preview.js?v=11e306f268fcbc4d";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=11e306f268fcbc4d";
+import { debateSummaries } from "./data/debate-summaries.js?v=11e306f268fcbc4d";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=11e306f268fcbc4d";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=11e306f268fcbc4d";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -47,7 +47,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=7acc27bcf0d5c8cb";
+} from "./seo.js?v=11e306f268fcbc4d";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -106,7 +106,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=7acc27bcf0d5c8cb")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=11e306f268fcbc4d")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -125,7 +125,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=7acc27bcf0d5c8cb")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=11e306f268fcbc4d")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -141,7 +141,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=7acc27bcf0d5c8cb`)
+    const promise = import(`./data/debate-details/${id}.js?v=11e306f268fcbc4d`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -156,7 +156,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=7acc27bcf0d5c8cb`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=11e306f268fcbc4d`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -3767,36 +3767,36 @@ async function route({ focusMain = false } = {}) {
 
   if (chartsMatch && !chartSnapshot) {
     chartsPromise ||= Promise.all([
-      import("./data/charts.js?v=7acc27bcf0d5c8cb"),
-      import("./data/chart-snapshot.js?v=7acc27bcf0d5c8cb")
+      import("./data/charts.js?v=11e306f268fcbc4d"),
+      import("./data/chart-snapshot.js?v=11e306f268fcbc4d")
     ]).then(([module, data]) => { chartsModule = module; chartSnapshot = data.chartSnapshot; })
       .catch((error) => { chartsPromise = undefined; throw error; });
     loaders.push(chartsPromise);
   }
 
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=7acc27bcf0d5c8cb")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=11e306f268fcbc4d")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=7acc27bcf0d5c8cb")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=11e306f268fcbc4d")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=7acc27bcf0d5c8cb")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=11e306f268fcbc4d")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=7acc27bcf0d5c8cb")
+    insightsPromise ||= import("./data/insights.js?v=11e306f268fcbc4d")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

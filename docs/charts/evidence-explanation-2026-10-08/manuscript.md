@@ -16,7 +16,7 @@ These figures give each debate equal weight and count each selected move once. T
 
 **Why retain uncertainty?** The selected debates are not a representative sample, repeated speakers influence the archive, and all 226 included assessment records identify the same model, 5.6 Sol. Separate reviews by one model can reproduce shared mistakes. Mathematical reproducibility establishes what was calculated; it does not establish that every judgment was correct.
 
-This explanation defends an inspectable method and examines whether some understandings of faith reduce the pressure to supply public evidence. That proposal merits investigation, but these charts do not measure its causal effect.
+**Our position:** treating faith as immune to correction can weaken evidential standards. We give moderate, provisional credence to a contribution to the documented shortcomings. Section 9 explains this judgment; the charts do not measure that contribution.
 
 Prepared with AI assistance. This document adds descriptive calculations and interpretation of existing records; it supplies neither new debate judgments nor independent human validation.
 
@@ -163,7 +163,26 @@ The strongest version of the hypothesis therefore concerns **insulation from cor
 To test the proposal, independent readers would need to code actual uses of faith, willingness to revise, treatment of counterevidence, and demands for public justification without seeing the existing scores. The comparison would need to account for topic, argumentative role, speaker repetition, and judging errors. The present snapshot contains no such faith variable. It cannot establish that faith caused the evidence gap, let alone determine what share of the gap it caused.
 
 <!-- page -->
-# 9. Other explanations worth investigating
+# 9. Our present judgment and confidence
+
+The explanations are not equally supported merely because none has been established as the main cause. We can form a provisional judgment while distinguishing the strength of a proposed mechanism from how much of this particular gap it explains. The confidence levels below are qualitative assessments of the available reasons, not probabilities calculated from the chart.
+
+**High confidence that the proposed mechanism can diminish evidential standards.** If faith licenses retaining a public factual claim regardless of relevant counterevidence, it weakens the requirement that confidence respond to evidence. When contrary findings cannot count against the conclusion, an important means of detecting error has been disabled. This assessment concerns that particular use of faith. It does not require assuming that every religious commitment operates that way.
+
+**Moderate, provisional credence that it contributes to some shortcomings discussed here.** We tentatively favor some contribution over none. Craig's account provides an explicit example of religious certainty being protected through a privileged spiritual warrant. [10] Research on motivated reasoning makes selective scrutiny in service of a desired conclusion psychologically credible. [12] The documented omissions in section 7 show the kinds of public evidential failure that such a habit could sustain. Together these provide a reason to take the explanation seriously beyond its mere logical possibility.
+
+The causal link remains inferential: the omissions do not themselves reveal why they occurred, and Craig's stated epistemology does not show that it caused either particular omission. His case also cannot establish how widespread the mechanism is. These limits keep our confidence moderate and revisable; they do not require treating the hypothesis as unsupported or withholding all judgment.
+
+**Insufficient grounds to call it the principal explanation of the aggregate gap.** The archive includes non-Christian positions, does not measure reliance on faith, and has not isolated faith's contribution from claim difficulty, selection, or judging errors. A precise percentage of confidence or share of the gap would suggest a level of calibration we do not have. Moderate credence in some contribution does not establish that faith explains most of the difference.
+
+**How the alternatives compare.** Differences in what the claims require and whether their sources can distinguish rival explanations are independently credible contributors. Selection and possible judging errors also limit our interpretation. The unequal scores alone give little reason to identify specifically anti-Christian bias as the cause. We favor an explanation involving several factors over a confident single-cause account, while leaving their relative weights open.
+
+**What would change this judgment?** Confidence would rise if independent readers repeatedly found explicit appeals to faith accompanying rejected counterevidence or missing support, especially in comparisons matched for topic and argumentative burden. It would fall if closer reading recovered the allegedly missing support, showed robust willingness to revise the relevant commitments, or found no association between appeals to faith and evidential shortcomings. A substantial reduction of the gap under independent reassessment would also weaken its use as evidence for this explanation.
+
+The position defended here is therefore affirmative but limited: a diminished evidential standard associated with some uses of faith is a credible contributing explanation that merits provisional belief and direct testing. It earns neither immunity from criticism nor an automatic entitlement to explain every low score.
+
+<!-- page -->
+# 10. Other explanations worth investigating
 
 The faith hypothesis should compete with alternatives rather than inherit the entire gap by default. Several explanations could operate together. Their relative importance has not been established by this analysis.
 
@@ -182,7 +201,7 @@ The faith hypothesis should compete with alternatives rather than inherit the en
 The current evidence supports a difference in recorded argumentative performance. The causes could include genuine differences in the support offered, task asymmetry, the selected sample, judging error, and cultural habits of argument. Assigning a precise contribution to any one of them would go beyond the data.
 
 <!-- page -->
-# 10. Examples that keep the standard symmetrical
+# 11. Examples that keep the standard symmetrical
 
 These four cases illustrate high evidence ratings for Christian-side contributions and low ratings for skeptical overreach. They were selected for that explanatory purpose, not as a random sample or proof that the system is unbiased. The descriptions below paraphrase the published assessment. The displayed evidence score is one dimension, not the move's overall score. [13-16]
 
@@ -205,7 +224,7 @@ In Debate 14, Richard Carrier proposes a minimally described, lawless origin tha
 These cases show that religious contributions can receive high evidence scores and skeptical contributions can receive low ones. They do not show how the same arguments would fare without their religious or skeptical associations, or establish equal treatment on average. That requires matched comparisons and review of disputed cases, including cases less favorable to the site's existing conclusion.
 
 <!-- page -->
-# 11. How to challenge and improve an assessment
+# 12. How to challenge and improve an assessment
 
 The most useful objection identifies the debate, source passage, selected move, dimension, and reason the recorded judgment is wrong. A Christian reader might show that the critique overlooked an explicit qualification, treated a compatibility defense as a probability claim, ignored a source supplied in the debate, or imposed a burden the speaker never accepted. A skeptical reader can identify precisely the same kinds of errors.
 
@@ -226,7 +245,7 @@ A prospective audit should select cases before examining the desired outcome and
 The fair conclusion remains open to revision: the saved assessments contain a substantial and inspectable evidence gap, with plausible argumentative and cultural explanations. Their best defense is the ability to show what earned each judgment and to correct demonstrated errors. Neither religious identity nor an AI-generated verdict should be exempt from that standard.
 
 <!-- page -->
-# 12. Calculation notes and sensitivity checks
+# 13. Calculation notes and sensitivity checks
 
 This document uses the **October 8, 2026 revision 2** frozen archive, containing 226 debates, 2,686 supporting moves, and 2,719 challenging moves. The catalogue contained 300 debates at capture. Later catalogue growth does not change those denominators. The snapshot's exact file fingerprint and the per-debate inputs accompany the reproducible analysis. [1, 2]
 
