@@ -1,0 +1,26 @@
+{
+  "status": "passed-controller-input-access-review",
+  "checkedAt": "2026-10-09T05:32:53.015102+00:00",
+  "readingEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-305/publication/reading-evidence.json",
+    "sha256": "160029a2c39860ac0821e12ebac4344e3946e6e5462481c8594a4e4b54c9c64e",
+    "bytes": 31548
+  },
+  "agentPath": "/root/writer305",
+  "sessionId": "01a11f22-9652-7f00-bef3-0f09c80491f4",
+  "toolCallCount": 122,
+  "findings": [
+    "Authenticated full execution plan and all 11193 reader lines, 10 documents and 59 shared blocks.",
+    "Inspected all reader-stage tool calls: only plan, maintained reader and own CODEX_THREAD_ID accessed.",
+    "No unauthorized assessment sources, peer sessions, outside sources, credentials or production data accessed.",
+    "Complete execution inspected: additional operations used only RAM candidate authoring, own pinned checker, local memory holder, own output receipt and controller-directed unsaved revisions. Two rejected drafts preserved; third exact candidate saved once. No external files, peers or services accessed."
+  ],
+  "protocolIsolationVerified": true,
+  "operatingSystemSandboxClaimed": false,
+  "violations": [],
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-305/publication/execution.json",
+    "sha256": "29e978223622a559535498edc36dfa4d157dd99977267b441830413e6bacbb73",
+    "bytes": 43632
+  }
+}

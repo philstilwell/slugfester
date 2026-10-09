@@ -14579,5 +14579,52 @@ export const debateSummaries = [
         "title": "Practical response, heaven, and final choice"
       }
     ]
+  },
+  {
+    "id": "mclatchie-paulogia-christianity-resurrection-2023",
+    "number": "305",
+    "title": "Jonathan McLatchie vs Paulogia — Christianity’s Origins and the Resurrection",
+    "year": 2023,
+    "label": "Christianity’s Origins and the Resurrection",
+    "date": "2026-10-09",
+    "duration": "1 hr 34 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Z4y40nZit6g",
+    "motion": "Is the physical resurrection of Jesus the best explanation for Christianity's origins?",
+    "summary": "McLatchie wins narrowly by offering the more developed comparative explanation, while Paulogia exposes serious unresolved dependence on Gospel proximity, transmission, and source-specific reliability.",
+    "topicCategory": "resurrection-miracles",
+    "sides": {
+      "pro": {
+        "name": "Physical resurrection is the best explanation",
+        "speaker": "Jonathan McLatchie",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Natural explanations remain preferable",
+        "speaker": "Paulogia",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 83,
+      "con": 80,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Burdens and competing explanations"
+      },
+      {
+        "title": "Sources and eyewitness proximity"
+      },
+      {
+        "title": "Encounter detail and honest mistake"
+      },
+      {
+        "title": "Persecution and sincerity"
+      },
+      {
+        "title": "Miracle priors and testimony"
+      }
+    ]
   }
 ];

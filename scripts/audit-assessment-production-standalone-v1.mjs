@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { reviewedTopicCategoryCandidate } from './lib/topic-category-correction.mjs';
 
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
@@ -132,6 +133,8 @@ const absolute = (relative) => path.join(ROOT, relative);
 const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
 const VERSIONED_CONTROL_SNAPSHOTS = new Map([
+  ["scripts/lib/standalone-publication-check.mjs\u0000fa5d57e9932db7cd0243b015dd68c9556465b194501fdd830ba73b0e20637809", "docs/assessment-production/standalone-debates-v1/control-snapshots/fa5d57e9932db7cd0243b015dd68c9556465b194501fdd830ba73b0e20637809/standalone-publication-check.mjs"],
+  ["scripts/audit-assessment-production-standalone-v1.mjs\u0000f21a097d116dd06a79047f27c7d1c577e7a072279b94178c36a33ae965dd8965", "docs/assessment-production/standalone-debates-v1/control-snapshots/f21a097d116dd06a79047f27c7d1c577e7a072279b94178c36a33ae965dd8965/audit-assessment-production-standalone-v1.mjs"],
   [
     "package.json\u00002248d1660c49a048566a632e83b4895a56bd37a98d8c0359d386d018c4d9d682",
     "docs/assessment-production/standalone-debates-v1/control-snapshots/2248d1660c49a048566a632e83b4895a56bd37a98d8c0359d386d018c4d9d682/package.json"
@@ -1711,7 +1714,7 @@ function audit({ repositoryOnly = false } = {}) {
   assert.ok(production, `Debate ${DEBATE_NUMBER}: production record missing`);
   assert.equal(production.id, selectedRegistryRecord.debateId);
   assert.equal(production.motion, authorization.identity.motion);
-  const reviewedCandidate = reviewedSourceNoteCandidate(ROOT, selectedRegistryRecord, reviewedFeaturedQuoteCandidate(ROOT, selectedRegistryRecord, publication.candidate));
+  const reviewedCandidate = reviewedTopicCategoryCandidate(ROOT, selectedRegistryRecord, reviewedSourceNoteCandidate(ROOT, selectedRegistryRecord, reviewedFeaturedQuoteCandidate(ROOT, selectedRegistryRecord, publication.candidate)));
   if (selectedRegistryRecord.sourceNoteCorrection) assert.equal(production.sourceNote, reviewedCandidate.sourceNote, "Production source note differs from its authenticated correction");
   assert.deepEqual(
     publicationComparable(production),

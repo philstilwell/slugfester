@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "305",
+  "debateId": "mclatchie-paulogia-christianity-resurrection-2023",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-305/inventory/inventory.json",
+      "sha256": "f4760ee7d62e20b192143f204673717da87b0cf2ed647f182d5cb53a693ade2f",
+      "bytes": 88067
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-305/score-pass/output.json",
+      "sha256": "2d82df48dbc56940419c1617749a66a28b55a4c293d8a8ec6679f141bb812442",
+      "bytes": 13337
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-305/publication/skeleton.json",
+      "sha256": "0595327a81ade0a12a9b274365ccbabffeb22f565497c55947de88e293ccd2da",
+      "bytes": 10294
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-305/publication/reference-metrics.json",
+      "sha256": "2aa53d7118225f16a8914e471f3658949aeb984ce16ec7b03da616b32086bc9d",
+      "bytes": 170495
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

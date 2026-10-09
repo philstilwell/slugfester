@@ -1,3 +1,4 @@
+import { reviewedTopicCategoryCandidate } from './topic-category-correction.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -47,7 +48,7 @@ export async function browserConfig(run,{origin,prefix=`debate-${run.entry.debat
   assert(/^https?:\/\//.test(origin));assert(/^[a-z0-9-]+$/.test(prefix));
   assert.notEqual(run.entry.validationProfile,'team-approximation-v1','Use the team-specific interaction replay');
   const frozenCandidate=readJson(inside(run.root,`${run.base}/publication/output.json`)).candidate;
-  const candidate=reviewedSourceNoteCandidate(run.root,run.entry,reviewedFeaturedQuoteCandidate(run.root,run.entry,frozenCandidate));
+  const candidate=reviewedTopicCategoryCandidate(run.root,run.entry,reviewedSourceNoteCandidate(run.root,run.entry,reviewedFeaturedQuoteCandidate(run.root,run.entry,frozenCandidate)));
   assert.equal(candidate.id,run.entry.debateId);assert.equal(candidate.number,run.entry.debateNumber);
   assert.equal(new URL(candidate.youtubeUrl).searchParams.get('v'),run.entry.videoId);
   const raw=(await import(pathToFileURL(inside(run.root,'src/data/debates.js')).href)).debates;
