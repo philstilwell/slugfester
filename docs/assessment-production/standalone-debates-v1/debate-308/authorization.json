@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-09T20:53:40.088365+00:00",
+  "userAuthorization": "The user answered “yes.” to the recording-specific proposal to assess only Schieber and Rauser’s discussion and closing replies, treating the host’s arguments as unscored context and disclosing that scope. The proposal specified approximately 12:41–1:00:59 and excluded programme breaks. Standing addition-skill authority covers routine isolated assessment, bounded publication repairs, complete featured quotations, commit/push/PR/green merge and verified live publication without common approvals.",
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false,
+    "controllerModelCondition": {
+      "required": "gpt-6-astra",
+      "reasoningEffort": "xhigh",
+      "actualCurrentTurnConfirmed": true,
+      "authenticatedTurnTimestamp": "2026-10-09T20:50:40.160Z"
+    }
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "repositoryBaseline": {
+    "head": "b597edbf9b50eb5a1005f59f76651b0f2df2f5f5",
+    "localMain": "b597edbf9b50eb5a1005f59f76651b0f2df2f5f5",
+    "originMain": "b597edbf9b50eb5a1005f59f76651b0f2df2f5f5",
+    "branch": "codex/debate-308-intake",
+    "cleanBeforeBranch": true,
+    "workingCopyRoot": "/private/tmp/slugfester-debate-301",
+    "preservationNote": "Healthy private clone reused; original user checkout and separate skipped-video intake preserved."
+  },
+  "identity": {
+    "debateNumber": "308",
+    "debateId": "schieber-rauser-religious-disagreement-2017",
+    "title": "Justin Schieber vs Randal Rauser — Religious Disagreement and God (2017)",
+    "label": "Religious Disagreement and God",
+    "motion": "Is religious disagreement evidence against God’s existence?",
+    "pro": {
+      "speaker": "Justin Schieber",
+      "position": "Disagreement is evidence against God"
+    },
+    "con": {
+      "speaker": "Randal Rauser",
+      "position": "Disagreement does not count against God"
+    },
+    "eventYear": 2017,
+    "videoId": "G_jSS5Z4oFU",
+    "canonicalUrl": "https://www.youtube.com/watch?v=G_jSS5Z4oFU",
+    "sourceTitle": "Debate: God & Religious Disagreement (Schieber & Rauser on 'Unbelievable?')",
+    "topicCategory": "god-theism-atheism",
+    "dyadic": true,
+    "originalRecordingDyadic": false,
+    "editorApprovedScope": {
+      "protocolId": "editor-approved-moderator-context-v1",
+      "explicitDebateSpecificApproval": true,
+      "videoId": "G_jSS5Z4oFU",
+      "userApproval": "The user answered “yes.” to the recording-specific proposal to assess only Schieber and Rauser’s discussion and closing replies, treating the host’s arguments as unscored context and disclosing that scope. The proposal specified approximately 12:41–1:00:59 and excluded programme breaks.",
+      "originalRecordingIsStrictlyDyadic": false,
+      "automaticPrimarySpeakerExceptionClaimed": false,
+      "contextOnlyParticipants": [
+        "Justin Brierley"
+      ],
+      "primaryRepliesRemainEligible": true,
+      "moderatorArgumentsAssignableToPrimarySpeakers": false,
+      "moderatorScored": false,
+      "readerDisclosureRequired": true,
+      "assessedWindow": {
+        "startMs": 759760,
+        "endMs": 3662049,
+        "durationMs": 2902289
+      },
+      "requiredReaderDisclosure": "By explicit editorial approval, this assessment scores only Justin Schieber and Randal Rauser’s discussion and concluding replies, approximately 12:41–1:00:59, excluding programme breaks. Host Justin Brierley contributes arguments and questions as unscored context; each guest’s own replies remain eligible, but no host argument is credited to either guest. Unequal prompting is considered when evaluating opportunities to respond. This is a moderated discussion without timed formal rounds or paired formal closing speeches. Introductions, book promotion and the outro are excluded and supply no credit, penalty or inference of a failure to reply. The source is the complete public automatic-caption track; no direct human listening or auxiliary audio transcription is claimed.",
+      "scopeInterpretation": "Schieber argues that fundamental religious disagreement is defeasible evidence against God. Rauser disputes that evidential inference; neither is assigned a stronger deductive burden or a separate obligation to prove theism."
+    }
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "currentPlanEstimateUsd": 0,
+    "maximumCumulativeCostUsd": 1,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-308",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/schieber-rauser-religious-disagreement-2017.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/schieber-rauser-religious-disagreement-2017.js",
+    "generated site output for this addition"
+  ]
+}
