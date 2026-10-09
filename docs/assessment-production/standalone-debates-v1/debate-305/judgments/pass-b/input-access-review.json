@@ -1,0 +1,22 @@
+{
+  "status": "passed-controller-input-access-review",
+  "checkedAt": "2026-10-09T05:22:59.622216+00:00",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-305/judgments/pass-b/execution.json",
+    "sha256": "a0e32ea20a884ad1f6e36d6cbf87b40f0e20a3aa52c01d06fc69dc44fbb9ed78",
+    "bytes": 17034
+  },
+  "agentPath": "/root/judge305b",
+  "sessionId": "01a11f15-1b5c-7a00-bda5-21becdbcae91",
+  "toolCallCount": 47,
+  "findings": [
+    "Full 5431-line reader and plan authenticated.",
+    "Only pinned evidence, own thread ID and own in-memory authoring/checker/handoff operations accessed.",
+    "No peers, other debates, outside sources, credentials or totals accessed.",
+    "Unsaved rationale review and final one-leaf source correction preserved; every original numeric rating unchanged.",
+    "First exact submission saved once; holder exit confirmed."
+  ],
+  "protocolIsolationVerified": true,
+  "operatingSystemSandboxClaimed": false,
+  "violations": []
+}

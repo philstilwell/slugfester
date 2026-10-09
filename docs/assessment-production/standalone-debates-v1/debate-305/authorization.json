@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-09T04:58:20.023997+00:00",
+  "userAuthorization": "User supplied this video under the invoked addition skill. Standing authority covers assessment and publication of formal debate and closings, an explicit scope note, complete featured quotes, avoiding routine approval prompts, commit/push/PR/required-check merge and announced transcription within the standing cap.",
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false,
+    "controllerModelCondition": {
+      "required": "gpt-6-astra",
+      "reasoningEffort": "xhigh",
+      "actualCurrentTurnConfirmed": true,
+      "authenticatedTurnTimestamp": "2026-10-09T04:50:21.444Z"
+    }
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "repositoryBaseline": {
+    "head": "da357bbea76f16437e6b56872f4b62f2adb8c4ad",
+    "localMain": "da357bbea76f16437e6b56872f4b62f2adb8c4ad",
+    "originMain": "da357bbea76f16437e6b56872f4b62f2adb8c4ad",
+    "branch": "codex/debate-305-intake",
+    "cleanBeforeBranch": true,
+    "workingCopyRoot": "/private/tmp/slugfester-debate-301",
+    "preservationNote": "Healthy private clone reused after clean fast-forward; original user checkout and damaged managed worktree preserved."
+  },
+  "identity": {
+    "debateNumber": "305",
+    "debateId": "mclatchie-paulogia-christianity-resurrection-2023",
+    "title": "Jonathan McLatchie vs Paulogia — Christianity’s Origins and the Resurrection (2023)",
+    "label": "Christianity’s Origins and the Resurrection",
+    "motion": "Is the physical resurrection of Jesus the best explanation for Christianity's origins?",
+    "pro": {
+      "speaker": "Jonathan McLatchie",
+      "position": "Physical resurrection is the best explanation"
+    },
+    "con": {
+      "speaker": "Paulogia",
+      "position": "Natural explanations remain preferable"
+    },
+    "eventYear": 2023,
+    "videoId": "Z4y40nZit6g",
+    "canonicalUrl": "https://www.youtube.com/watch?v=Z4y40nZit6g",
+    "sourceTitle": "Paulogia vs Jonathan McLatchie - Was Physical Resurrection Required for Development of Christianity?",
+    "topicCategory": "christianity-bible-theology",
+    "dyadic": true,
+    "originalRecordingDyadic": true
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "knownSuccessfulCallEstimatedCostUsd": 0.161,
+    "maximumPossiblePriorCostUsd": 0.161,
+    "currentPlanEstimateUsd": 0.161,
+    "maximumCumulativeCostUsd": 0.5,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "audioVerificationPolicy": "Seven announced source checks completed once per frozen input. Additional inventory-triggered checks require frozen inputs within the cumulative cap. No automatic paid retry."
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-305",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/mclatchie-paulogia-christianity-resurrection-2023.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/mclatchie-paulogia-christianity-resurrection-2023.js",
+    "generated site output for this addition"
+  ]
+}

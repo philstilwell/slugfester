@@ -1,0 +1,22 @@
+{
+  "status": "passed-controller-input-access-review",
+  "checkedAt": "2026-10-09T05:24:02.905522+00:00",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-305/judgments/pass-a/execution.json",
+    "sha256": "e2372a9e408dcb640cd5e2eea0fc44af8156b6f6d1a15c4a1d7a8482e59f08db",
+    "bytes": 18154
+  },
+  "agentPath": "/root/judge305a",
+  "sessionId": "01a11f14-f7e1-72b2-9729-730af7048e32",
+  "toolCallCount": 49,
+  "findings": [
+    "Full plan and 5431-line reader authenticated after missing plan display and truncated ranges were recovered before authoring.",
+    "Only pinned evidence, own thread ID and own in-memory authoring/checker/handoff operations accessed.",
+    "No peers, other debates, outside sources, credentials or totals accessed.",
+    "Unsaved rationale review and final two-leaf source correction preserved; original numeric ratings unchanged.",
+    "First exact submission saved once; parent verified holder release."
+  ],
+  "protocolIsolationVerified": true,
+  "operatingSystemSandboxClaimed": false,
+  "violations": []
+}

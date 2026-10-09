@@ -1,3 +1,4 @@
+import { reviewedTopicCategoryCandidate } from '../lib/topic-category-correction.mjs';
 import {openRun} from '../lib/standalone-workflow.mjs';
 const runArg=process.argv.indexOf('--debate');
 openRun(process.cwd(),process.argv[runArg+1],{writable:!process.argv.includes('--check-only')});
@@ -13,7 +14,7 @@ assert(idx>=0&&args[idx+1]);
 const root=process.cwd(),read=p=>JSON.parse(fs.readFileSync(p));
 const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(e=>e.debateNumber===args[idx+1]);assert(entry);
 const publication=read(`${entry.root}/publication/output.json`);
-const candidate=reviewedSourceNoteCandidate(root,entry,reviewedFeaturedQuoteCandidate(root,entry,publication.candidate));
+const candidate=reviewedTopicCategoryCandidate(root,entry,reviewedSourceNoteCandidate(root,entry,reviewedFeaturedQuoteCandidate(root,entry,publication.candidate)));
 assert.equal(candidate.number,entry.debateNumber);assert.equal(candidate.id,entry.debateId);
 const auth=read(`${entry.root}/authorization.json`);
 if(auth.availableRecordingScope)assert(candidate.sourceNote.includes(auth.availableRecordingScope.requiredReaderDisclosure),'Approved source-scope disclosure absent');
