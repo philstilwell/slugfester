@@ -114,7 +114,7 @@ Call log:
   1   | import AxeBuilder from "@axe-core/playwright";
   2   | import { expect, test } from "@playwright/test";
   3   | import { debateSummaries } from "../../src/data/debate-summaries.js";
-  4   | 
+  4   |
   5   | const representativeRoutes = [
   6   |   "/",
   7   |   "/search/?q=god",
@@ -128,7 +128,7 @@ Call log:
   15  |   "/corrections/",
   16  |   "/reference/fallacy/equivocation/"
   17  | ];
-  18  | 
+  18  |
   19  | async function openRenderedPage(page, route) {
   20  |   await page.goto(route, { waitUntil: "domcontentloaded" });
   21  |   await page.locator("main h1").first().waitFor();
@@ -137,7 +137,7 @@ Call log:
       |                                                           ^ Error: expect(locator).toBeVisible() failed
   24  |   await page.waitForLoadState("networkidle");
   25  | }
-  26  | 
+  26  |
   27  | for (const route of representativeRoutes) {
   28  |   test(`has no automatically detectable accessibility violations: ${route}`, async ({ page }) => {
   29  |     await openRenderedPage(page, route);
@@ -145,7 +145,7 @@ Call log:
   31  |     expect(results.violations).toEqual([]);
   32  |   });
   33  | }
-  34  | 
+  34  |
   35  | for (const route of [
   36  |   "/",
   37  |   "/rankings/?compare-a=Alex+O%27Connor&compare-b=William+Lane+Craig",
@@ -167,7 +167,7 @@ Call log:
   53  |     expect(widths.scroll).toBeLessThanOrEqual(widths.client + 1);
   54  |   });
   55  | }
-  56  | 
+  56  |
   57  | // Shared catalogue files grow with each published debate. Rebase the count and route bases
   58  | // together after a deliberate review instead of reacting to every expected small increase.
   59  | // Debate 303 measured review: docs/assessment-production/standalone-debates-v1/
@@ -179,11 +179,11 @@ Call log:
   65  | };
   66  | const addedDebates = Math.max(0, debateSummaries.length - catalogueBudget.baselineDebates);
   67  | const catalogueGrowthAllowance = addedDebates * catalogueBudget.bytesPerAddedDebate;
-  68  | 
+  68  |
   69  | test("reviews the browser data baseline after ten added debates", () => {
   70  |   expect(addedDebates).toBeLessThanOrEqual(catalogueBudget.reviewAfterAddedDebates);
   71  | });
-  72  | 
+  72  |
   73  | const routeBudgets = [
   74  |   { route: "/", baseDataBytes: 725_000, required: "debate-summaries.js" },
   75  |   { route: "/rankings/", baseDataBytes: 775_000, required: "debate-analytics.js" },
@@ -198,7 +198,7 @@ Call log:
   84  |     required: "reference-appearances/fallacy-equivocation.js"
   85  |   }
   86  | ];
-  87  | 
+  87  |
   88  | for (const { route, baseDataBytes, required } of routeBudgets) {
   89  |   test(`stays within its browser data budget: ${route}`, async ({ page }) => {
   90  |     await openRenderedPage(page, route);
@@ -213,13 +213,13 @@ Call log:
   99  |     );
   100 |     const loadedNames = resources.map(({ name }) => name);
   101 |     const loadedBytes = resources.reduce((total, resource) => total + resource.bytes, 0);
-  102 | 
+  102 |
   103 |     expect(loadedNames.some((name) => name.endsWith(required))).toBe(true);
   104 |     expect(loadedNames.some((name) => name.endsWith("/src/data/debates.js"))).toBe(false);
   105 |     expect(loadedBytes).toBeLessThanOrEqual(baseDataBytes + catalogueGrowthAllowance);
   106 |   });
   107 | }
-  108 | 
+  108 |
   109 | test("applies the generated content security policy without blocking site code", async ({ page }) => {
   110 |   const securityErrors = [];
   111 |   page.on("console", (message) => {
@@ -227,12 +227,12 @@ Call log:
   113 |       securityErrors.push(message.text());
   114 |     }
   115 |   });
-  116 | 
+  116 |
   117 |   await openRenderedPage(page, "/debate/craig-oconnor-god-debate-2026/");
   118 |   await expect(page.locator("meta[http-equiv='Content-Security-Policy']")).toHaveCount(1);
   119 |   expect(securityErrors).toEqual([]);
   120 | });
-  121 | 
+  121 |
   122 | test("links the Backend selection disclosure to the working Feedback recommendation form", async ({ page }) => {
   123 |   await openRenderedPage(page, "/");
 ```
