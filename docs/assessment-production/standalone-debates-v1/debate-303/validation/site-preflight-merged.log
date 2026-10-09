@@ -1,0 +1,56 @@
+
+> slugfester@0.1.0 site:preflight
+> node scripts/validate-topic-categories.mjs && npm run seo -- --check && node scripts/validate-public-site.mjs && npx playwright test tests/site-quality/site-quality.spec.mjs --grep "reviews the browser data baseline|fits a narrow phone viewport|stays within its browser data budget|remains usable with text enlarged" && npm run site:standalone:check
+
+Validated explicit primary categories for 303 debates across 18 categories.
+
+> slugfester@0.1.0 seo
+> node scripts/generate-seo-pages.mjs --check
+
+Validated 870 SEO files.
+Validated source-grounded introductions and three related suggestions for 303 debates, plus all seven research introductions and figures.
+Validated source-backed biographies for all 198 published interlocutors.
+Validated substantive initial text for 303 debates and 198 profiles, plus catalogue, topics, rankings and method pages.
+Validated SEO contracts for 541 indexed pages, 18 topic pages, reference evidence and stable update dates.
+Validated 57 ranking mini charts against eligible overall scores, plus eligibility and bucket boundaries.
+Validated 18 category averages against 303 published scorecards, plus weighting and missing-score safeguards.
+Validated creator-only/theism boundaries, stable links, and initial topic content.
+Validated neutral hover/focus and initial topic previews for 303 debates.
+Validated Feedback navigation, screening guidance, required fields, approved delivery, confirmation, and no-JavaScript recommendation form.
+Validated frozen snapshot: 226 debates, 5405 moves, 80 independent comparison groups across all 11 thresholds, overlap/weighting/missing-data fixtures.
+Validated 30 explicitly registered reader-facing source and scope disclosures.
+Validated 541 public routes, 303 debate detail files, 198 generated profiles, and 198 avatar assets.
+[WebServer] Traceback (most recent call last):
+
+[WebServer]   File "<frozen runpy>", line 198, in _run_module_as_main
+[WebServer]   File "<frozen runpy>", line 88, in _run_code
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 1320, in <module>
+[WebServer]     test(
+[WebServer]     ~~~~^
+[WebServer]         HandlerClass=handler_class,
+[WebServer]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]     ...<3 lines>...
+[WebServer]         protocol=args.protocol,
+[WebServer]         ^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]     )
+[WebServer]     ^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 1267, in test
+[WebServer]     with ServerClass(addr, HandlerClass) as httpd:
+[WebServer]          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 457, in __init__
+[WebServer]     self.server_bind()
+[WebServer]     ~~~~~~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 1314, in server_bind
+[WebServer]     return super().server_bind()
+[WebServer]            ~~~~~~~~~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 136, in server_bind
+[WebServer]     socketserver.TCPServer.server_bind(self)
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 478, in server_bind
+[WebServer]     self.socket.bind(self.server_address)
+[WebServer]     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+[WebServer] PermissionError: [Errno 1] Operation not permitted
+
+Error: Process from config.webServer was not able to start. Exit code: 1
+
