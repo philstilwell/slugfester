@@ -1,0 +1,28 @@
+{
+  "status": "passed-completed-isolation-review",
+  "agent": "/root/primary308a",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-308/judgments/pass-a/execution-plan.json",
+    "sha256": "e652692455439be59bd17156d88d3f26f0ebda3ddf6365cd488d7bfcdebc79ac",
+    "bytes": 8443
+  },
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-308/judgments/pass-a/execution.json",
+    "sha256": "3391035fc17b02edc5e2acd5a5fc7a1659e6f9a3a7c5d644ab39b9f716a853c2",
+    "bytes": 12678
+  },
+  "readingEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-308/judgments/pass-a/reading-release.json",
+    "sha256": "b028bc1b504ef4e7910c49f1df9e14c97ec66be888df1be21e8214e063642392",
+    "bytes": 10672
+  },
+  "additionalProceduralRead": {
+    "path": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/SKILL.md",
+    "sha256": "38c2cccaa78f6afe284f3dafed19ae29650ad6336b710be48e18a8aa14139733",
+    "bytes": 5145,
+    "disposition": "Both workers read this generic procedural skill before the plan. It contains normative workflow only, no source-specific scores, peer judgments or production prose; disclosed rather than claiming plan-only access."
+  },
+  "actualToolAccess": "Inspected all tool calls: generic procedural skill, plan, full authorized reader, literal candidate authoring in memory, pinned stdin checker, local maintained handoff and controller communication only. Shell quoting/runtime preparation and sandbox socket failures were corrected without saving a judgment. Pass B had one controller-authorized same-context unsaved source-attribution correction; all rating values unchanged. No peer, other debate, external source, score calculation or paid call.",
+  "protocolIsolationNotOperatingSystemSandbox": true,
+  "violations": []
+}

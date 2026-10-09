@@ -14723,5 +14723,52 @@ export const debateSummaries = [
         "title": "Inspiration, preservation, and the motion"
       }
     ]
+  },
+  {
+    "id": "schieber-rauser-religious-disagreement-2017",
+    "number": "308",
+    "title": "Justin Schieber vs Randal Rauser — Religious Disagreement and God",
+    "year": 2017,
+    "label": "Religious Disagreement and God",
+    "date": "2026-10-09",
+    "duration": "45 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=G_jSS5Z4oFU",
+    "motion": "Is religious disagreement evidence against God’s existence?",
+    "summary": "Schieber’s calibrated comparative case outscored Rauser’s thoughtful but insufficiently evidenced appeals to permissive divine reasons and underdetermination.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Disagreement is evidence against God",
+        "speaker": "Justin Schieber",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Disagreement does not count against God",
+        "speaker": "Randal Rauser",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 85,
+      "con": 78,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "From fundamental disagreement to evidence"
+      },
+      {
+        "title": "Possible reasons to permit disagreement"
+      },
+      {
+        "title": "Truth, salvation and kinds of relationship"
+      },
+      {
+        "title": "Independent doctrinal convergence"
+      },
+      {
+        "title": "Closing scope and cumulative force"
+      }
+    ]
   }
 ];

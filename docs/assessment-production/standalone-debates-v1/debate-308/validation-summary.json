@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "debateNumber": "308",
+  "debateId": "schieber-rauser-religious-disagreement-2017",
+  "directCostUsd": 0,
+  "scope": "All local source, assessment, publication, rendering, graph, repository, historical-evidence, content-parity, rhetorical, staged-evidence and immediate-precommit website checks passed. Committed-package replay and remote release gates follow the publication commit.",
+  "completedLocalChecks": [
+    "source and model authentication",
+    "isolated inventory/judgment/adjudication/publication/rhetorical source reviews",
+    "deterministic single score pass",
+    "content-parity editorial and staging validation",
+    "full local browser replay",
+    "all graph buckets",
+    "seo-check",
+    "transcript-check",
+    "validate-debates-final",
+    "evidence-full",
+    "evidence-repository",
+    "npm run check including all historical and registry audits",
+    "website-preflight-2 including site:standalone:check",
+    "final-diff-review and preserved prior transcript entries",
+    "staged-evidence-reviewed",
+    "website-immediate-precommit"
+  ],
+  "pendingReleaseGates": [
+    "committed-package replay",
+    "required pull-request check and merge",
+    "post-merge Site Quality and Pages deployment",
+    "live verification"
+  ],
+  "resolvedFailures": {
+    "preview": "Initial localhost request timeout cleared after redirecting server logs from an unconsumed output pipe to a file. Unchanged replay passed; no site or replay checks changed.",
+    "ledgerRegistration": "Pre-registration validator required published-and-frozen status and the new adapter hash. These are now registered after freezing publication.",
+    "preflight": "A local test-server load stall left four module requests pending before the page shell appeared. Trace and context retained. With server logs sent directly to a file, all unchanged preflight and standalone checks passed."
+  },
+  "renderingAudit": "docs/assessment-production/standalone-debates-v1/debate-308/rendering/rendering-audit.json",
+  "temporaryBrowsersRemaining": 0,
+  "temporaryServersRemaining": 0
+}

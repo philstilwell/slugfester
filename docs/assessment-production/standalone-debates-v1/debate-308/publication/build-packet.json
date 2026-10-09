@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "308",
+  "debateId": "schieber-rauser-religious-disagreement-2017",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-308/inventory/inventory.json",
+      "sha256": "b29f735339b2aa4e3b1307e561e8b9a7fc217c89b4c3f20b1e7ad29ccf538fd7",
+      "bytes": 97547
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-308/score-pass/output.json",
+      "sha256": "620978b24a5af73539e46245acb1f49bd0d9916812e5d409c626aad763b02cf3",
+      "bytes": 10951
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-308/publication/skeleton.json",
+      "sha256": "6612fb602e420d939ad41996303e195c3e73ab72127b7971e8e4242593eac759",
+      "bytes": 8930
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-308/publication/reference-metrics.json",
+      "sha256": "2aa53d7118225f16a8914e471f3658949aeb984ce16ec7b03da616b32086bc9d",
+      "bytes": 170495
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}
