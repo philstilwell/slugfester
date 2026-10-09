@@ -16,7 +16,7 @@ const timestamp=ms=>{const sec=Math.floor(ms/1000),s=String(sec%60).padStart(2,'
 const window=inventory.assessedDebateWindowMs;assert(Number.isFinite(window.start)&&Number.isFinite(window.end)&&window.end>window.start);
 // A scoped conversation can contain excluded gaps between retained exchanges.
 // Display the retained duration, while keeping original timestamps on every card.
-const retained=auth.availableRecordingScope?.retainedIntervals;
+const retained=auth.availableRecordingScope?.retainedIntervals ?? source.retainedIntervals;
 let durationMs=window.end-window.start;
 if(Array.isArray(retained)&&retained.length){
  const ordered=[...retained].sort((a,b)=>a.startMs-b.startMs);let lastEnd=-Infinity;durationMs=0;

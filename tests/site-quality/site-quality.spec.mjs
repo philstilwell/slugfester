@@ -56,10 +56,10 @@ for (const route of [
 
 // Shared catalogue files grow with each published debate. Rebase the count and route bases
 // together after a deliberate review instead of reacting to every expected small increase.
-// Debate 292 measured review: docs/assessment-production/standalone-debates-v1/
-// debate-292/validation/performance-review.json. All effective byte ceilings are unchanged.
+// Debate 303 measured review: docs/assessment-production/standalone-debates-v1/
+// debate-303/validation/performance-review.json. All effective byte ceilings are unchanged.
 const catalogueBudget = {
-  baselineDebates: 292,
+  baselineDebates: 303,
   bytesPerAddedDebate: 5_000,
   reviewAfterAddedDebates: 10
 };
@@ -71,16 +71,16 @@ test("reviews the browser data baseline after ten added debates", () => {
 });
 
 const routeBudgets = [
-  { route: "/", baseDataBytes: 670_000, required: "debate-summaries.js" },
-  { route: "/rankings/", baseDataBytes: 720_000, required: "debate-analytics.js" },
+  { route: "/", baseDataBytes: 725_000, required: "debate-summaries.js" },
+  { route: "/rankings/", baseDataBytes: 775_000, required: "debate-analytics.js" },
   {
     route: "/debate/craig-oconnor-god-debate-2026/",
-    baseDataBytes: 755_000,
+    baseDataBytes: 810_000,
     required: "debate-details/craig-oconnor-god-debate-2026.js"
   },
   {
     route: "/reference/fallacy/equivocation/",
-    baseDataBytes: 760_000,
+    baseDataBytes: 815_000,
     required: "reference-appearances/fallacy-equivocation.js"
   }
 ];

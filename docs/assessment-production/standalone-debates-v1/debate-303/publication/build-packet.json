@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "303",
+  "debateId": "craig-nugent-god-existence-2017",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/inventory/inventory.json",
+      "sha256": "1e2692cacac1f568bcf20269643f4bc3db5bbc533d045f2648683c0562441e3b",
+      "bytes": 185444
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/score-pass/output.json",
+      "sha256": "2e28a2649562b05d887483bdfcd1959a1f4be70914176eb50fb58988ae3b1a66",
+      "bytes": 21807
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/publication/skeleton.json",
+      "sha256": "ca11177e70ccc966d46b1f5548f15db5e681690c67d08149dcf6917b4cff6dca",
+      "bytes": 15322
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/publication/reference-metrics.json",
+      "sha256": "2aa53d7118225f16a8914e471f3658949aeb984ce16ec7b03da616b32086bc9d",
+      "bytes": 170495
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

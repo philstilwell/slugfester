@@ -1,0 +1,22 @@
+{
+  "status": "passed-with-exact-raw-log-exception",
+  "reason": "Four trailing spaces originate in preserved Playwright diagnostic output. Raw authenticated failure logs remain byte-for-byte intact. All other files pass the unchanged whitespace check. The preserved restricted-server failure log also contains an emitted blank line at EOF; its original bytes are retained.",
+  "fullCheckExit": 2,
+  "fullCheckOutput": "docs/assessment-production/standalone-debates-v1/debate-303/validation/site-preflight-early.log:344: trailing whitespace.\n+  1) tests/site-quality/site-quality.spec.mjs:69:1 \u203a reviews the browser data baseline after ten added debates \ndocs/assessment-production/standalone-debates-v1/debate-303/validation/site-preflight-early.log:839: trailing whitespace.\n+    tests/site-quality/site-quality.spec.mjs:69:1 \u203a reviews the browser data baseline after ten added debates \ndocs/assessment-production/standalone-debates-v1/debate-303/validation/site-preflight-reviewed.log:1070: trailing whitespace.\n+  1) tests/site-quality/standalone-publication.spec.mjs:7:1 \u203a checks standalone publication before deployment, including static scope and every graph bucket \ndocs/assessment-production/standalone-debates-v1/debate-303/validation/site-preflight-reviewed.log:1101: trailing whitespace.\n+    tests/site-quality/standalone-publication.spec.mjs:7:1 \u203a checks standalone publication before deployment, including static scope and every graph bucket \n",
+  "scopedCheckExit": 0,
+  "exclusions": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/site-preflight-early.log",
+      "sha256": "624c5c71d799625ce8101475a8a32d8aef9f8641b53f2324831b495dd77ce5a5"
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/site-preflight-reviewed.log",
+      "sha256": "e51e4f2fe9d4fab3ce35706c78c3c1aa204cc89e9e9191b0a1adba0ad0efa06c"
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-303/validation/site-preflight-merged.log",
+      "sha256": "637f70af0bde939bc1760e1e9dd72e8180e25de3197462fcd4fb965506f35e70"
+    }
+  ],
+  "mergedCheckOutput": "docs/assessment-production/standalone-debates-v1/debate-303/validation/site-preflight-merged.log:56: new blank line at EOF.\n"
+}

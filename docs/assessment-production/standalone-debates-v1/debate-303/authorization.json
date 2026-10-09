@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-10-08T23:28:44.925967+00:00",
+  "userAuthorization": "User supplied this video under the invoked addition skill. Standing instructions authorize assessment and publication, formal debate rounds and closings only, clear scope disclosure, complete featured quotations, avoiding routine approvals, and ordinary commit/push/PR/merge. This formal dyadic recording requires no new scope exception.",
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "repositoryBaseline": {
+    "head": "a0032d3f68ed1badcbf26c386e3f99f68fa0de9d",
+    "localMain": "a0032d3f68ed1badcbf26c386e3f99f68fa0de9d",
+    "originMain": "a0032d3f68ed1badcbf26c386e3f99f68fa0de9d",
+    "branch": "codex/debate-303-intake",
+    "cleanBeforeBranch": true,
+    "workingCopyRoot": "/private/tmp/slugfester-debate-301",
+    "preservationNote": "Reused clean private clone after completing the preceding publication; the original user checkout remains untouched."
+  },
+  "identity": {
+    "debateNumber": "303",
+    "debateId": "craig-nugent-god-existence-2017",
+    "title": "William Lane Craig vs Michael Nugent — Does God Exist? (2017)",
+    "label": "God, Cosmology and Morality",
+    "motion": "Does God exist?",
+    "pro": {
+      "speaker": "William Lane Craig",
+      "position": "God exists"
+    },
+    "con": {
+      "speaker": "Michael Nugent",
+      "position": "God does not exist"
+    },
+    "eventYear": 2017,
+    "videoId": "wmlcmVye4hM",
+    "canonicalUrl": "https://www.youtube.com/watch?v=wmlcmVye4hM",
+    "sourceTitle": "Does God Exist? Michael Nugent v William Lane Craig Debate",
+    "topicCategory": "god-theism-atheism",
+    "dyadic": true,
+    "originalRecordingDyadic": true
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "knownSuccessfulCallEstimatedCostUsd": 0.09457,
+    "maximumPossiblePriorCostUsd": 0.09457,
+    "currentPlanEstimateUsd": 0.15,
+    "maximumCumulativeCostUsd": 0.5,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "audioVerificationPolicy": "Six announced source checks completed once per frozen clip; any inventory-triggered verification requires a new frozen input plan within the cumulative ceiling. No automatic paid retries."
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-303",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/craig-nugent-god-existence-2017.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/craig-nugent-god-existence-2017.js",
+    "scripts/standalone/prepare-publication.mjs",
+    "generated site output for this addition"
+  ]
+}
