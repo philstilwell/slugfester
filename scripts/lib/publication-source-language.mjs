@@ -6,7 +6,8 @@ const automatedAudioDisclosures = [
   "Automatic captions were supplemented by targeted automated audio checks; this was not direct human listening.",
   "Automatic captions were supplemented by targeted automated audio checks, not direct human listening.",
   "Public automatic captions were supplemented by five targeted automated audio checks, not direct human listening.",
-  "Public automatic captions were supplemented by targeted automated audio checks; these were not direct human listening."
+  "Public automatic captions were supplemented by targeted automated audio checks; these were not direct human listening.",
+  "The source uses automatic captions and supplementary automated audio checks where available; no direct human listening is claimed."
 ];
 
 export function hasInternalDebateMetadata(value, fieldName) {

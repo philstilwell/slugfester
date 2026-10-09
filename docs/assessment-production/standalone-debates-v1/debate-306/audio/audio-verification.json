@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "306",
+  "debateId": "meyer-atkins-intelligent-design-science-2010",
+  "completedAt": "2026-10-09T12:40:33.183Z",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-306/inventory/inventory.json",
+    "sha256": "d72f400530fedbdfb608f15c37ac88d7b2c414d35e2a1e29b87a05b03024856d",
+    "bytes": 81172
+  },
+  "triggeredMoveIds": [],
+  "checks": [],
+  "supplementaryPreinventoryVerification": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-306/source/verification-review.json",
+    "sha256": "f4e7e5843e8a792c8fe7d133e9cec2f5c2a1b42b99abdce81c1ad38ad44c9f86",
+    "bytes": 12052
+  },
+  "paidRequestAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-306/source/paid-request-audit.json",
+    "sha256": "e49e71d7bbadc2e52cc54a21f6b4bf40c263c4ea61157535ed1b31f531304e87",
+    "bytes": 14067
+  },
+  "supplementaryCheckCount": 5,
+  "method": "Five targeted automated audio-to-text checks completed before inventory freeze; canonical captions and named handoffs provide the full source. The rejected evolution-definitions input supplied no transcript and was not retried. An invalid host voice reference and uncertain short interjections are explicitly disregarded. Valid primary voice references only supplement independent turn-context attribution. All selected moves have high attribution confidence after these restrictions, so no additional below-high check is triggered. No direct human listening is claimed.",
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0.473745,
+    "maximumPossibleTotalCostUsd": 0.492045,
+    "costBasis": "Service-reported input and output token usage multiplied by frozen official rates; includes conservative rejected-call estimate in maximum possible total. Final invoice not verified.",
+    "newRequiredChecksEstimatedUsageCostUsd": 0,
+    "successfulPaidCalls": 5,
+    "failedOrUncertainPaidCalls": 1,
+    "automaticRetries": 0,
+    "maximumCumulativeCostUsd": 0.5,
+    "invoiceVerified": false
+  },
+  "audit": {
+    "requiredAttributionChecks": 0,
+    "completedAttributionChecks": 0,
+    "unresolvedAttributionChecks": 0,
+    "fullSelectedSpanCoverageByClipUnion": false,
+    "coverageQualification": "Targeted clips are not claimed to cover every selected span. Complete canonical transcript and all scope restrictions were reviewed.",
+    "canonicalSourceEdits": 0,
+    "selectedMoveEdits": 0
+  }
+}

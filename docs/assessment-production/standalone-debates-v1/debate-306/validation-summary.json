@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "debateNumber": "306",
+  "debateId": "meyer-atkins-intelligent-design-science-2010",
+  "directCostUsd": 0.473745,
+  "invoiceVerified": false,
+  "maximumPossibleCostUsd": 0.492045,
+  "scope": "All local source, assessment, publication, rendering, repository and evidence checks passed, including the initial and immediate-precommit website checks. Remote release gates remain explicitly pending.",
+  "checks": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/content-parity.json",
+      "sha256": "5c72d44f335263579b09892699e65232a37919462cc0141fe0174e6ba9d49a3d",
+      "bytes": 1260
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/evidence-full.json",
+      "sha256": "8eb926035f0082c11e9f0650c7676492c2392d5f7bc9b8d39633ab8efc7fced1",
+      "bytes": 1262
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/evidence-repository.json",
+      "sha256": "ed1cf20fb1fe3228218cc846db4f0137d05bd652688f3471cf2a89db4f19db52",
+      "bytes": 1293
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/final-diff-review.json",
+      "sha256": "7c335ba22d65e641229b9c8f96b8ef6c8bcae405354673a3751e09ac368ce58f",
+      "bytes": 1375
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/generate-seo.json",
+      "sha256": "82533e78c06ef83766c6b7c95c2ffaa41ca24995aa0935f595a429ae620225a0",
+      "bytes": 1179
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/graph-reconciliation.json",
+      "sha256": "e5c701869d932dd4e209619cc50a34020bd9ff2aac4b623f6ff6afaa7fc80063",
+      "bytes": 1246
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/registry-repository.json",
+      "sha256": "50a684e7b5fc0ab385bb11b1d73bb081405ea67317325fcbfa67a08978ea06d1",
+      "bytes": 1269
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/repository-check-with-local-sockets.json",
+      "sha256": "b05402b78a0caea777740612c68ed9cea058f4e658f706968ad9739c55c46416",
+      "bytes": 1207
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/rhetorical-tags.json",
+      "sha256": "80faa37fb3c64514e4872f66041a8eb674a376778832bb5fa568ec6f9d8edf7b",
+      "bytes": 1264
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/seo-check.json",
+      "sha256": "c2d3241f358497aaedef7ac39e38602dcab383b80a07104a0216a98840ed78eb",
+      "bytes": 1208
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/source-language-fixtures.json",
+      "sha256": "c1180f6f2c0d671cef821354cc3ae2c4be428309585ef1493caf50bca6248e80",
+      "bytes": 1469
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/staged-evidence-initial.json",
+      "sha256": "fed38547d77d965762183f6f38303903f294d0daa74d00f019c8130f32f978a2",
+      "bytes": 64469
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/validate-corpus.json",
+      "sha256": "23e16e75ac665007d0b9e07e5f8f33532427c5946e084c2e9e34e2f74990e7b8",
+      "bytes": 1208
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/validate-debates.json",
+      "sha256": "0a8b2e11094de943bc7a835cfd6148cde3ac67b07735649f0eda5560cb90347d",
+      "bytes": 1198
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/website-immediate-precommit.json",
+      "sha256": "52545fcf8c4394ae405df30fcdfc990bb5bc7f2385551ae2e897d0e47738ca49",
+      "bytes": 1208
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-306/validation/website-preflight.json",
+      "sha256": "c2744941e93989de8e886316a542d3bedce9548030ba3bae8e868af65b9f9d59",
+      "bytes": 1198
+    }
+  ],
+  "rendering": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-306/rendering/rendering-audit.json",
+    "sha256": "7d006ba7387c73858129a20ed34fa423b497315ceba470bcf64d18def3e0b1ca",
+    "bytes": 1696
+  },
+  "pendingReleaseGates": [
+    "committed-package replay",
+    "required pull-request check and merge",
+    "post-merge Site Quality and Pages deployment",
+    "live verification"
+  ],
+  "resolvedDiagnostics": [
+    "Initial preview URL used plural debates; canonical singular route passed.",
+    "Temporary local socket test required unsandboxed socket permission; identical full repository checks passed with that access."
+  ]
+}

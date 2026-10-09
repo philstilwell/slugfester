@@ -14626,5 +14626,52 @@ export const debateSummaries = [
         "title": "Miracle priors and testimony"
       }
     ]
+  },
+  {
+    "id": "meyer-atkins-intelligent-design-science-2010",
+    "number": "306",
+    "title": "Stephen Meyer vs Peter Atkins — Intelligent Design and Science",
+    "year": 2010,
+    "label": "Intelligent Design and Science",
+    "date": "2026-10-09",
+    "duration": "47 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=TSZlPZvIOC0",
+    "motion": "Is intelligent design a legitimate scientific explanation for biological origins?",
+    "summary": "Meyer’s qualified causal and methodological case outperformed Atkins’s naturalistic objections, chiefly by sharply separating functional sequence from spontaneous order and origins from later evolution.",
+    "topicCategory": "evolution-origins-life",
+    "sides": {
+      "pro": {
+        "name": "Intelligent design is a legitimate scientific explanation",
+        "speaker": "Stephen Meyer",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Intelligent design is not a legitimate scientific explanation",
+        "speaker": "Peter Atkins",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 80,
+      "con": 73,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Information and origins"
+      },
+      {
+        "title": "Scientific method"
+      },
+      {
+        "title": "Evolutionary scope"
+      },
+      {
+        "title": "Research productivity"
+      },
+      {
+        "title": "Inquiry and closings"
+      }
+    ]
   }
 ];
