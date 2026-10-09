@@ -1,4 +1,4 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=38fcf5e3cad3293d";
+import { topicCategoryDefinitions } from "./data/topics.js?v=744424f2459b8cd8";
 
 export const SITE_URL = "https://slugfester.com";
 export const SITE_NAME = "Slugfester";
@@ -264,10 +264,10 @@ export function insightsSeo() {
   const description = "Seven research findings from Slugfester’s debate archive: evidence, score gaps, slogans, fallacy counts and ranking reliability, with figures and limitations.";
   return {
     title: pageTitle("Insights from the debates"), heading: "Insights from the debates",
-    description, canonicalPath: insightsPath(), lastmod: "2026-09-05",
+    description, canonicalPath: insightsPath(), lastmod: "2026-10-09",
     jsonLd: [
       organizationJsonLd(), websiteJsonLd(),
-      { "@context": "https://schema.org", "@type": "CollectionPage", name: "Insights from the debates", description, url: absoluteUrl(insightsPath()), dateModified: "2026-09-05", isPartOf: { "@id": WEBSITE_ID } },
+      { "@context": "https://schema.org", "@type": "CollectionPage", name: "Insights from the debates", description, url: absoluteUrl(insightsPath()), dateModified: "2026-10-09", isPartOf: { "@id": WEBSITE_ID } },
       breadcrumbJsonLd([{ name: SITE_NAME, path: "/" }, { name: "Insights", path: insightsPath() }])
     ]
   };
@@ -277,13 +277,13 @@ export function insightsMethodsSeo() {
   const description = "The evidence, calculations, limitations and downloadable research data behind Slugfester’s seven Insights studies.";
   return {
     title: pageTitle("Insights: data and methods"), heading: "Data and methods",
-    description, canonicalPath: "/insights/data-and-methods/", lastmod: "2026-09-05",
+    description, canonicalPath: "/insights/data-and-methods/", lastmod: "2026-10-09",
     jsonLd: [organizationJsonLd(), websiteJsonLd(),
       {
         "@context": "https://schema.org", "@type": "WebPage",
         "@id": absoluteUrl("/insights/data-and-methods/#webpage"),
         name: "Insights: data and methods", description,
-        url: absoluteUrl("/insights/data-and-methods/"), inLanguage: "en",
+        url: absoluteUrl("/insights/data-and-methods/"), inLanguage: "en", dateModified: "2026-10-09",
         isPartOf: { "@id": WEBSITE_ID }
       },
       breadcrumbJsonLd([{ name: SITE_NAME, path: "/" }, { name: "Insights", path: insightsPath() }, { name: "Data and methods", path: "/insights/data-and-methods/" }])]
@@ -757,7 +757,7 @@ export function interlocutorSeo(
 export function backendSeo({ legacy = false } = {}) {
   const description =
     "Follow Slugfester’s illustrated assessment process: source checks, independent AI reviews, scoring rules, fallacy checks and worked examples.";
-  const updatedDate = "2026-09-26";
+  const updatedDate = "2026-10-09";
 
   return {
     title: pageTitle("How Slugfester scores debates"),

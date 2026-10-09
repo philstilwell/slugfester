@@ -95,6 +95,7 @@ const normalizedApp = appSource.replace(browserImportVersions, "$1CONTENT_VERSIO
 const normalizedSeo = seoSource.replace(browserImportVersions, "$1CONTENT_VERSION");
 const browserSources = await Promise.all([
   "src/data/charts.js", "src/data/chart-snapshot.js",
+  "src/data/research-edition.js", "src/data/research-library.js",
   "src/styles.css", "src/data/topics.js", "src/data/topic-preview.js", "src/data/assessment-process-guide.js", "src/data/debate-recommendation.js", "src/data/critique-format.js",
   "src/data/interlocutors.js", "src/data/references.js", "src/data/reader-guides.js", "src/data/insights.js", "src/data/insights-methods.js", "src/data/interlocutor-bios.js"
 ].map((path) => readFile(join(root, path), "utf8")));

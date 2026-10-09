@@ -1,12 +1,12 @@
-import { pageUpdates } from "./data/page-updates.js?v=38fcf5e3cad3293d";
-import { renderCritiqueText } from "./data/critique-format.js?v=38fcf5e3cad3293d";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=38fcf5e3cad3293d";
-import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=38fcf5e3cad3293d";
-import { topicPreviewText } from "./data/topic-preview.js?v=38fcf5e3cad3293d";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=38fcf5e3cad3293d";
-import { debateSummaries } from "./data/debate-summaries.js?v=38fcf5e3cad3293d";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=38fcf5e3cad3293d";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=38fcf5e3cad3293d";
+import { pageUpdates } from "./data/page-updates.js?v=744424f2459b8cd8";
+import { renderCritiqueText } from "./data/critique-format.js?v=744424f2459b8cd8";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=744424f2459b8cd8";
+import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=744424f2459b8cd8";
+import { topicPreviewText } from "./data/topic-preview.js?v=744424f2459b8cd8";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=744424f2459b8cd8";
+import { debateSummaries } from "./data/debate-summaries.js?v=744424f2459b8cd8";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=744424f2459b8cd8";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=744424f2459b8cd8";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -47,7 +47,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=38fcf5e3cad3293d";
+} from "./seo.js?v=744424f2459b8cd8";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -57,6 +57,8 @@ let biographiesPromise;
 let biographies;
 let insightsPromise;
 let insightsContent;
+let researchLibraryPromise;
+let renderResearchLibrary;
 let insightsMethodsContent;
 let insightsMethodsPromise;
 let chartsPromise;
@@ -106,7 +108,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=38fcf5e3cad3293d")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=744424f2459b8cd8")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -125,7 +127,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=38fcf5e3cad3293d")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=744424f2459b8cd8")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -141,7 +143,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=38fcf5e3cad3293d`)
+    const promise = import(`./data/debate-details/${id}.js?v=744424f2459b8cd8`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -156,7 +158,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=38fcf5e3cad3293d`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=744424f2459b8cd8`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -2478,215 +2480,7 @@ function renderBackend() {
       ${renderSectionScoreDistribution(sectionScores)}
 
 
-      <section class="backend-report" aria-labelledby="backend-report-heading">
-        <div class="backend-report-panel">
-          <header class="backend-report-header">
-            <span class="backend-objectivity-kicker">Research library</span>
-            <h2 id="backend-report-heading">Corpus-level analysis papers</h2>
-            <p>Seven expanded research papers, with a shared September 4, 2026 snapshot of 253 assessments</p>
-            <p><a class="button primary" href="${insightsPath()}">Explore the findings on Insights</a></p>
-          </header>
-          <div class="backend-objectivity-content backend-report-content">
-            <div class="backend-report-copy">
-              <p class="eyebrow">Astra-era research edition · September 4, 2026 · Plain-language revision</p>
-              <h3>Clearer explanations, fully explained graphs, and conclusions you can check</h3>
-              <p>All seven papers now use plainer language, numbered arguments leading to clear conclusions, and a reading key for every graph. Worked examples explain the statistics without assuming prior knowledge. The papers share a frozen archive of <strong>253 assessments</strong>: 237 comparable one-on-one scoring records, including 187 religious-versus-skeptical comparisons. Each paper states which records it uses and what its findings cannot establish.</p>
-              <p>The first group explains the 6.34-point mean non-theist advantage, maps its topic differences, and examines slogan-like reasoning. The second asks how much the formal CON role explains and why a fallacy count is not a complete measure of debate quality. The final group examines whether scores from different assessment processes are comparable and how much confidence to place in exact speaker ranks.</p>
-              <p><strong>New analysis is not new scoring.</strong> The original debate scores remain unchanged. Six papers reanalyze existing assessments; the slogan paper was replaced on September 5 with a fresh, direct reading of all 187 relevant transcripts. These papers are intended as a stable baseline until the next major GPT-model review, with genuine corrections remaining possible in the meantime. A newer model's accuracy and fairness should be tested, not assumed.</p>
-              <p>The papers distinguish observed findings from proposed explanations, show counterexamples, and identify what could change their conclusions. The position studies classify the side actually argued, rather than equating <em>PRO</em> with theism. <a href="/insights/data-and-methods/">Inspect the methods, classifications, calculations, and source records.</a></p>
-            </div>
-            <div class="backend-report-library" aria-label="Corpus-level analysis papers">
-              <section class="backend-report-group" aria-labelledby="backend-report-theist-heading">
-                <div class="backend-report-group-heading">
-                  <span>Part one</span>
-                  <h3 id="backend-report-theist-heading">Theist and non-theist performance</h3>
-                  <p>The central score gap, where it is largest, and one proposed rhetorical mechanism.</p>
-                </div>
-                <div class="backend-report-grid">
-              <article class="backend-report-card">
-                <span>Paper one · Score-gap diagnosis</span>
-                <h4>Why Do the Theist Sides Score Lower?</h4>
-                <p>Across 187 relevant debates, the non-theist side averages 6.34 points higher and leads in 160 assessments. Support for claims shows the largest gap among the six scoring areas. Support, consistent reasoning, and answers to objections together make up about three-quarters of the overall score difference.</p>
-                <p>The paper tests the <strong>faith-to-debate hypothesis</strong>: standards that sustain personal faith may carry into public debate without supplying enough reason for an unconvinced listener. It asks what connects possibility to probability, religious benefit to truth, or a gap in one explanation to support for another. The conclusion separates the observed weaknesses from their still-unproved cause. Theist counterexamples and checks using different selections keep the claim open to criticism.</p>
-                <dl>
-                  <div>
-                    <dt>Coverage</dt>
-                    <dd>187 debates · 4,086 moves</dd>
-                  </div>
-                  <div>
-                    <dt>Mean score advantage</dt>
-                    <dd>6.34 points out of 100</dd>
-                  </div>
-                  <div>
-                    <dt>Length and figures</dt>
-                    <dd>14 pages · 5 figures</dd>
-                  </div>
-                </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/why-do-the-theist-sides-score-lower.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Why Do the Theist Sides Score Lower?”</a>
-                <small>September 4 edition. Includes score reconstruction, evidence thresholds, new-debate comparisons, worked explanations of uncertainty, source-linked cases, rival explanations, and conditions that would weaken the hypothesis.</small>
-              </article>
-
-              <article class="backend-report-card">
-                <span>Paper two · Topic, burden, and rubric map</span>
-                <h4>Where Is the Theist Disadvantage Largest?</h4>
-                <p>Religion, culture, and meaning has the largest observed mean gap: 8.27 points across 22 debates, with the non-theist side higher in 21 and one tie. Resurrection debates are closer, averaging 3.53 points across 17 comparisons. The paper explains both the topic differences and why overlapping uncertainty makes an exact topic ranking fragile.</p>
-                <p>Its most useful question is what supports the next step: from religious usefulness to truth, from a necessary foundation to a personal God, or from possible divine reasons to an explanation of the suffering we see. Fully explained graphs show the topic differences, how often each side scores higher, and why the exact order of topics is uncertain.</p>
-                <dl>
-                  <div>
-                    <dt>Coverage</dt>
-                    <dd>187 debates · 8 topic groups</dd>
-                  </div>
-                  <div>
-                    <dt>Largest topic mean</dt>
-                    <dd>8.27 points · 21 of 22 higher</dd>
-                  </div>
-                  <div>
-                    <dt>Length and figures</dt>
-                    <dd>15 pages · 5 figures</dd>
-                  </div>
-                </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/where-is-the-theist-disadvantage-largest.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Where Is the Theist Disadvantage Largest?”</a>
-                <small>September 4 edition. Includes all eight topic denominators, direction counts, uncertainty, topic-order resampling, a scoring-dimension map, close resurrection cases, and practical guidance for evaluating the inference that carries a conclusion.</small>
-              </article>
-
-              <article class="backend-report-card">
-                <span>Paper three · Direct slogan study</span>
-                <h4>Are Theist Arguments More Often Slogan-Like?</h4>
-                <p>A fresh review of all 187 relevant transcripts replaces the earlier score-based warning test. It finds 77 theist and 19 non-theist uses of slogans that both replace a needed reason and shut out criticism. Allowing for speech length and giving each debate equal weight, the rates are 0.56 and 0.16 uses per 10,000 words. The broader unsupported-slogan difference is less secure, and 144 debates have no protected slogan detected on either side.</p>
-                <p>Four fully explained graphs show rates, how widely the uses occur, checks across different selections, and emotional wording. Close readings include Sye Ten Bruggencate, Christopher Hitchens, and John Lennox, distinguishing missing support from claims that block correction. Lennox supplies four unsupported slogans but only one confirmed protected slogan across eight debates. The paper explains the limits of one AI reader and why emotional language does not establish that emotion caused religious belief.</p>
-                <dl>
-                  <div>
-                    <dt>Direct review coverage</dt>
-                    <dd>187 complete retained transcripts</dd>
-                  </div>
-                  <div>
-                    <dt>Protected-slogan rate difference</dt>
-                    <dd>+0.40 theist uses per 10,000 words</dd>
-                  </div>
-                  <div>
-                    <dt>Length and figures</dt>
-                    <dd>17 pages · 4 figures</dd>
-                  </div>
-                </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/are-theist-arguments-more-often-slogan-like.pdf?v=20260905-direct187-r1" type="application/pdf" target="_blank" rel="noopener">Read “Are Theist Arguments More Often Slogan-Like?”</a>
-                <small>September 5 direct-review edition, using the September 4 archive of 253 assessments. Includes plain-language definitions, word denominators, uncertainty, concentration and borderline checks, timestamped examples, and a numbered conclusion. The original debate scores and the other six papers are unchanged. <a href="https://github.com/philstilwell/slugfester/tree/main/docs/analysis/direct-slogan-study-2026-09-04" target="_blank" rel="noopener">Inspect the direct-study data and methods.</a></small>
-              </article>
-                </div>
-              </section>
-
-              <section class="backend-report-group" aria-labelledby="backend-report-patterns-heading">
-                <div class="backend-report-group-heading">
-                  <span>Part two</span>
-                  <h3 id="backend-report-patterns-heading">Broader corpus findings and alternative explanations</h3>
-                  <p>A formal-side countercheck and the cumulative pattern behind most lower scores.</p>
-                </div>
-                <div class="backend-report-grid">
-              <article class="backend-report-card">
-                <span>Paper four · Nominal-side alternative test</span>
-                <h4>Does the CON Side Have an Inherent Advantage?</h4>
-                <p>CON averages 4.70 points above PRO across 237 comparable debates, but the raw contrast mixes role, position, and speaker differences. The theist occupies PRO in 164 of 187 classified comparisons; when the theist occupies CON, the nominal role contrast reverses to −3.26 points.</p>
-                <p>The expanded data retain evidence for a modest residual: outside the religious comparison, CON leads by 1.54 points and its simple resampling interval is just above zero. Among 31 speakers observed in both roles, however, the weighted estimate is only 0.80 points and its interval includes zero. Worked examples explain why neither an inherent large CON bonus nor the complete absence of role effects has been established.</p>
-                <dl>
-                  <div>
-                    <dt>Coverage</dt>
-                    <dd>237 debates · 31 crossover speakers</dd>
-                  </div>
-                  <div>
-                    <dt>Raw CON advantage</dt>
-                    <dd>4.70 points · 176 of 237 higher</dd>
-                  </div>
-                  <div>
-                    <dt>Length and figures</dt>
-                    <dd>13 pages · 4 figures</dd>
-                  </div>
-                </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/does-the-con-side-have-an-inherent-advantage.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Does the CON Side Have an Inherent Advantage?”</a>
-                <small>September 4 edition. Includes position reversals, balanced orientation groups, same-person comparisons, uncertainty, a worked composition example, and separate proposed tests of label bias and argumentative burden.</small>
-              </article>
-
-              <article class="backend-report-card">
-                <span>Paper five · Fallacy and cumulative-loss analysis</span>
-                <h4>Beyond the Fallacy Count</h4>
-                <p>The expanded evidence changes the old paper's framing. Overall, 150 of 243 lower-scoring sides—61.7%—have no named-fallacy tag. But that rate is 80.8% in the earlier assessment process and only 14.5% in the later one. The archive-wide majority is real, yet it is not a stable rule of debate or of the current process.</p>
-                <p>The deeper conclusion survives: a missing label is not a clean bill of health. Among 147 comparable untagged losses, 74.8% trail on five or six scoring dimensions. Conversely, a higher-scoring side carries a named-fallacy tag in 51 decisive assessments. The paper explains cumulative weaknesses, the changing use of labels, and why inspecting an unmet burden is more informative than merely counting familiar errors.</p>
-                <dl>
-                  <div>
-                    <dt>Coverage</dt>
-                    <dd>253 assessments · 5,492 moves</dd>
-                  </div>
-                  <div>
-                    <dt>Losses without a fallacy tag</dt>
-                    <dd>150 of 243 · 61.7%</dd>
-                  </div>
-                  <div>
-                    <dt>Length and figures</dt>
-                    <dd>13 pages · 4 figures</dd>
-                  </div>
-                </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/debates-are-usually-lost-without-a-named-fallacy.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Beyond the Fallacy Count”</a>
-                <small>September 4 edition of “Debates Are Usually Lost Without a Named Fallacy.” Includes the process-level reversal, all four winner/loser tag patterns, cumulative dimension deficits, source-linked cases, and a worked example of a changing archive majority.</small>
-              </article>
-                </div>
-              </section>
-
-              <section class="backend-report-group" aria-labelledby="backend-report-measurement-heading">
-                <div class="backend-report-group-heading">
-                  <span>Part three</span>
-                  <h3 id="backend-report-measurement-heading">Measurement reliability</h3>
-                  <p>Whether assessment generations and public speaker rankings support direct comparison.</p>
-                </div>
-                <div class="backend-report-grid">
-              <article class="backend-report-card">
-                <span>Paper six · Measurement audit</span>
-                <h4>Are All Slugfester Assessments on the Same Scale?</h4>
-                <p>The earlier 179 assessments average 81.32 points per side; the later 58 average 78.51, a 2.82-point difference. Among 51 people assessed in both groups, 45 score lower later. The six scoring areas also move together more closely later. A new graph shows an important clue: earlier clarity marks use just four different values, while later marks use 41.</p>
-                <p>The paper explains several possible reasons for these changes without claiming to have proved their cause. It proposes a practical next-assessment plan: shared test debates, clearer examples for each scoring area, mixed review batches, hidden old scores, repeated checks, and independent review of the source passages. It also explains why adding 2.82 points to every later score would not be a justified fix.</p>
-                <dl>
-                  <div>
-                    <dt>Coverage</dt>
-                    <dd>253 published · 237 comparable records</dd>
-                  </div>
-                  <div>
-                    <dt>Locked move analysis</dt>
-                    <dd>5,282 verified scored moves</dd>
-                  </div>
-                  <div>
-                    <dt>Length and figures</dt>
-                    <dd>17 pages · 6 figures</dd>
-                  </div>
-                </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Are All Slugfester Assessments on the Same Scale?”</a>
-                <small>Plain-language September 4 edition. Includes six graphs, possible reasons why the marks move together, a check of which exact marks were used, and a detailed plan to reduce unfair early-versus-later differences in the next full assessment.</small>
-              </article>
-
-              <article class="backend-report-card">
-                <span>Paper seven · Ranking reliability and uncertainty</span>
-                <h4>Do Slugfester Rankings Measure Stable Performance?</h4>
-                <p>The broad speaker order holds up better than the exact places. Among people with at least six appearances, dividing their records into two random halves produces fairly similar rankings: their typical order-agreement score is 0.86 on a scale where +1 means the same order. A simple five-name illustration explains this measure, called Spearman rank correlation. The typical score gap between neighboring averages is only 0.17 points.</p>
-                <p><strong>Resampled ranks</strong> reuse each person's recorded scores. <strong>Model ranks</strong> also allow for the score variation seen across the wider group. Their typical range widths are 12 and 19 places. The paper explains each method, shows why neither guarantees a future rank, and walks through real rows for Joseph Schmid, Sean Carroll, and Matt Dillahunty before presenting all 50 eligible speakers. It also explains why the other speakers are not in that table.</p>
-                <dl>
-                  <div>
-                    <dt>Coverage</dt>
-                    <dd>237 debates · 474 appearances</dd>
-                  </div>
-                  <div>
-                    <dt>Default ranked field</dt>
-                    <dd>50 speakers · minimum 3</dd>
-                  </div>
-                  <div>
-                    <dt>Length and figures</dt>
-                    <dd>20 pages · 6 figures</dd>
-                  </div>
-                </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/do-slugfester-rankings-measure-stable-performance.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Do Slugfester Rankings Measure Stable Performance?”</a>
-                <small>Plain-language September 4 edition. Includes six figures, an illustrated guide to rank correlation, clear definitions of every table column, three worked rows, and the complete 50-speaker table. Rank ranges describe calculations within this fixed group—not personal worth or guaranteed future performance.</small>
-              </article>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-      </section>
+      ${renderResearchLibrary()}
     </main>
   `);
 }
@@ -3767,36 +3561,43 @@ async function route({ focusMain = false } = {}) {
 
   if (chartsMatch && !chartSnapshot) {
     chartsPromise ||= Promise.all([
-      import("./data/charts.js?v=38fcf5e3cad3293d"),
-      import("./data/chart-snapshot.js?v=38fcf5e3cad3293d")
+      import("./data/charts.js?v=744424f2459b8cd8"),
+      import("./data/chart-snapshot.js?v=744424f2459b8cd8")
     ]).then(([module, data]) => { chartsModule = module; chartSnapshot = data.chartSnapshot; })
       .catch((error) => { chartsPromise = undefined; throw error; });
     loaders.push(chartsPromise);
   }
 
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=38fcf5e3cad3293d")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=744424f2459b8cd8")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=38fcf5e3cad3293d")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=744424f2459b8cd8")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=38fcf5e3cad3293d")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=744424f2459b8cd8")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
+  if (backendMatch && !renderResearchLibrary) {
+    researchLibraryPromise ||= import("./data/research-library.js?v=744424f2459b8cd8")
+      .then((module) => { renderResearchLibrary = module.renderResearchLibrary; })
+      .catch((error) => { researchLibraryPromise = undefined; throw error; });
+    loaders.push(researchLibraryPromise);
+  }
+
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=38fcf5e3cad3293d")
+    insightsPromise ||= import("./data/insights.js?v=744424f2459b8cd8")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

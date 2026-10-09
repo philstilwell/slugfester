@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { publishedDebates as debates } from "../src/data/debates.js";
 import { avatarsForSpeakerText } from "../src/data/interlocutors.js";
 import { assessmentGuide, debateSectionAnchor, relatedDebates } from "../src/data/reader-guides.js";
-import { researchInsights, insightLink, renderInsightsContent } from "../src/data/insights.js";
+import { researchEdition, researchInsights, insightLink, renderInsightsContent } from "../src/data/insights.js";
 import { debateDisplayTitle, debateTitleWithYear } from "../src/seo.js";
 
 const scopedTitle = Object.freeze({ title: "A vs B — Question? (2004, formal rounds)", year: 2004 });
@@ -60,8 +60,7 @@ for (const item of researchInsights) {
   assert(item.explanation && item.limitation && item.reading && item.alt);
   assert(existsSync(`${root}output/pdf/${item.pdf}.pdf`));
   const image = readFileSync(`${root}assets/insights/${item.figure}.png`);
-  const source = item.figure.startsWith("p3-") ? "direct-slogan-study-2026-09-04" : "astra-corpus-papers-2026-09-04";
-  assert(image.equals(readFileSync(`${root}docs/analysis/${source}/figures/${item.figure}.png`)));
+  assert(image.equals(readFileSync(`${root}${researchEdition.directory.slice(1)}figures/${item.figure}.png`)));
   assert.equal(image.readUInt32BE(16), item.width, `${item.figure}: width`);
   assert.equal(image.readUInt32BE(20), item.height, `${item.figure}: height`);
   for (const link of item.links) {
@@ -72,5 +71,16 @@ for (const item of researchInsights) {
 }
 const html = renderInsightsContent();
 assert.equal((html.match(/<h1>/g) || []).length, 1);
-assert(html.includes("September 4, 2026") && html.includes("not representative"));
+assert(html.includes(researchEdition.date) && html.includes("not representative"));
+assert(html.includes("no newer transcripts were coded"), "Historical slogan scope must remain explicit");
+const results = JSON.parse(readFileSync(`${root}${researchEdition.directory.slice(1)}results.json`));
+const papers = JSON.parse(readFileSync(`${root}${researchEdition.directory.slice(1)}publication-manifest.json`));
+assert.equal(results.counts.published, researchEdition.counts.published);
+assert.equal(results.p7.ranked_speakers, researchEdition.ranked);
+assert.equal(researchInsights[0].statistic, `${results.p1.gap.mean.toFixed(2)} points`);
+for (const [i, item] of researchInsights.entries()) {
+  assert.equal(item.pages, papers[i].pages);
+  assert.equal(item.figures, papers[i].figures);
+  assert(item.version.startsWith("20261009"));
+}
 console.log(`Validated source-grounded introductions and three related suggestions for ${debates.length} debates, plus all seven research introductions and figures.`);
