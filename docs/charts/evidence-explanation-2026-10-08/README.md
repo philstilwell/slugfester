@@ -26,4 +26,4 @@ Generate the PDF after the calculation record exists:
 python3 scripts/build-charts-evidence-explanation.py
 ```
 
-This document is prepared for editorial review and is not yet linked on the public Charts page. It adds no model judgments and changes no assessments or snapshot values.
+The Charts page features this document beside the reasoning-support heading. The published asset is `../../../assets/charts/evidence-faith-and-fair-assessment-2026-10-08.pdf`; copy the reviewed output there after rebuilding the PDF. It adds no model judgments and changes no assessments or snapshot values.
