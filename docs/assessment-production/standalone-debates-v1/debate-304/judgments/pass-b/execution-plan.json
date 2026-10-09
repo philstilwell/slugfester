@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "2.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "primary",
+  "debateNumber": "304",
+  "debateId": "swinburne-ehrman-god-suffering-2009",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-304/workflow/primary/reader.txt",
+      "sha256": "aa15dccc1ff464b0e4274b4dd658fcdc2e2575697a08480256840a5924b8f5cf",
+      "bytes": 315555
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-304/judgments/contract.md",
+      "sha256": "1d1e23a84553875a1882d2850996c9cb6d1bd6d83ec0f2c3116c7a83f3b14473",
+      "bytes": 5494
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-304/judgments/judgment-packet.json",
+      "sha256": "a76d08da29979157ced18e1278987c12ea7f0ab3511fa612d583f80a34a996ae",
+      "bytes": 4953
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-304/inventory/inventory.json",
+      "sha256": "455ee8c8cb7b4e9e06543f90d4691b1c2ee5bf56fd2db656543a31f53f415756",
+      "bytes": 108136
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": ".assessment-cache/captions/hrrcb1WcfzM/indexed-transcript.txt",
+      "sha256": "84cf553eb89a5edaadcfdefcfb174b45f9bcbbfdbff76e8472f21b5cc31de258",
+      "bytes": 166639
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-304/source/assessment-source-notes.md",
+      "sha256": "20514dda55ab2c5836404946325ace6fa5cbee161a9e99e88dec59c85f2aff19",
+      "bytes": 8747
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-304/source/source-lock.json",
+      "sha256": "568f15a309ac5915dd982669d6f0c2b8b8a8746692fa7f5282613af90995b9ec",
+      "bytes": 15726
+    }
+  ],
+  "toolInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-304/judgments/check-judgment.mjs",
+      "sha256": "781e989b59317dfe72dd32bf52d4a69e8e6f248642f7e50bfb2c6155d4e4b4e3",
+      "bytes": 1116
+    },
+    {
+      "path": "scripts/standalone-workflow.mjs",
+      "sha256": "f9bebb3157c0227e20f396240411af838138b4520c7a48bec411725896f841cc",
+      "bytes": 5880
+    },
+    {
+      "path": "scripts/lib/standalone-workflow.mjs",
+      "sha256": "bd13373d22b4a2d74b1d6788c6b25613611be653a212aeaf31ca4bfcadcde333",
+      "bytes": 18686
+    },
+    {
+      "path": "scripts/lib/standalone-handoff.mjs",
+      "sha256": "939461c747837553ff5d65a83d9af0ad51c576c314959d2c59e6773bf236b42f",
+      "bytes": 6020
+    },
+    {
+      "path": "scripts/authenticate-standalone-worker.py",
+      "sha256": "98c8186c703818d1eaf5270d26adbfaaf7f7284180cf3482d3ec7a64e5e9219e",
+      "bytes": 6247
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "f21a097d116dd06a79047f27c7d1c577e7a072279b94178c36a33ae965dd8965",
+      "bytes": 81041
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "aae806466005602401fb9536cbeab97cda43cd898ef78d2c200c012b24a2b8eb",
+      "bytes": 13580
+    },
+    {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+      "bytes": 13417
+    },
+    {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "116c3e17197981a5a440a96445ee1d5e121a94296edcd328e46a7ac83e63b57e",
+      "bytes": 91151
+    },
+    {
+      "path": "package.json",
+      "sha256": "c19df951c7b5b5ac2008ce4f3f8db482acd9d46bbe3a6470efbde4056fb756ad",
+      "bytes": 65247
+    },
+    {
+      "path": "scripts/lib/assessment-production-score-stability-policy-active.mjs",
+      "sha256": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+      "bytes": 1331
+    },
+    {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    },
+    {
+      "path": "scripts/standalone/lock-inventory.mjs",
+      "sha256": "dd2fba288eaab30c2af64c097abcde4f93d1f383b24f4c2a833f9f6866ab2a70",
+      "bytes": 5778
+    },
+    {
+      "path": "scripts/lib/standalone-publication-check.mjs",
+      "sha256": "fa5d57e9932db7cd0243b015dd68c9556465b194501fdd830ba73b0e20637809",
+      "bytes": 7222
+    },
+    {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-proposal.md",
+      "sha256": "629c22081fb5ebffc0c39ab247ba3c82ee10f86a43931a2b577eefef2d0ac7d2",
+      "bytes": 3702
+    },
+    {
+      "path": "scripts/standalone/prepare-publication.mjs",
+      "sha256": "5871b0dd15298c6c9331ba8d03f26ab0c444b6050492ee8365d463cf054318aa",
+      "bytes": 6913
+    },
+    {
+      "path": "scripts/lib/assessment-editor-scoped-source.mjs",
+      "sha256": "a97ee74f7afc04da1a943494d53a2aadb958618d0ab6296584603fdc5d4f7395",
+      "bytes": 6789
+    }
+  ],
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-304/workflow/primary/packet.json",
+    "sha256": "4526730bbbee213ddf05042cbb073b3d025a5ff566cbe7734e1147a5850ce470",
+    "bytes": 328912
+  },
+  "fullReadRequiredForAllAllowedInputs": true,
+  "toolSourceReadRequired": false,
+  "outputPath": "/private/tmp/slugfester-debate-301/docs/assessment-production/standalone-debates-v1/debate-304/judgments/pass-b/output.json",
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-304/judgments/pass-b/output.json",
+  "allowedOutputPaths": [
+    "/private/tmp/slugfester-debate-301/docs/assessment-production/standalone-debates-v1/debate-304/judgments/pass-b/output.json"
+  ],
+  "checker": [
+    "/opt/homebrew/Cellar/node/25.9.0_3/bin/node",
+    "docs/assessment-production/standalone-debates-v1/debate-304/judgments/check-judgment.mjs",
+    "pass-b",
+    "--debate",
+    "304"
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "pass": "pass-b",
+  "instructions": "Read this plan and the entire reader.txt including shared blocks. Never open peer outputs. Run the pinned checker without rereading its implementation. Authenticate reading before authoring. Keep candidates in memory; handoff holds approved candidate bytes in memory until the controller supplies authenticated source/editorial release. Only that release writes the first submission. A saved failure consumes its attempt. No autonomous retry.",
+  "isolation": "Fresh fork-none subscription context; protocol isolation, not an operating-system sandbox.",
+  "packetMetrics": {
+    "originalBytes": 316329,
+    "readerBytes": 315555,
+    "sharedBlocks": 4,
+    "completeDocuments": 7,
+    "losslessRoundTrip": true
+  }
+}

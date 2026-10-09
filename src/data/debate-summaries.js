@@ -14532,5 +14532,52 @@ export const debateSummaries = [
         "title": "Resurrection, experience and method"
       }
     ]
+  },
+  {
+    "id": "swinburne-ehrman-god-suffering-2009",
+    "number": "304",
+    "title": "Richard Swinburne vs Bart Ehrman — God and Suffering",
+    "year": 2009,
+    "label": "God and Suffering",
+    "date": "2026-10-08",
+    "duration": "49 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=hrrcb1WcfzM",
+    "motion": "Does Christianity adequately explain suffering?",
+    "summary": "Ehrman’s victim-centered, natural-evil, and scriptural challenges outweighed Swinburne’s coherent but incompletely warranted account of responsible freedom, sanctity, redemption, and heaven.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christianity adequately explains suffering",
+        "speaker": "Richard Swinburne",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christian explanations of suffering are inadequate",
+        "speaker": "Bart Ehrman",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 78,
+      "con": 85,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Coherence and responsible agency"
+      },
+      {
+        "title": "Natural evil and victim benefit"
+      },
+      {
+        "title": "Biblical diversity and conflict"
+      },
+      {
+        "title": "Incarnation, intervention, and kingdom"
+      },
+      {
+        "title": "Practical response, heaven, and final choice"
+      }
+    ]
   }
 ];

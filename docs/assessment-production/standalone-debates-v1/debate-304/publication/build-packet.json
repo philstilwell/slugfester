@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "304",
+  "debateId": "swinburne-ehrman-god-suffering-2009",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-304/inventory/inventory.json",
+      "sha256": "455ee8c8cb7b4e9e06543f90d4691b1c2ee5bf56fd2db656543a31f53f415756",
+      "bytes": 108136
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-304/score-pass/output.json",
+      "sha256": "5716066f0890c01fe77445d783e8714c1d3fe64af18e8943663eba3462846111",
+      "bytes": 12337
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-304/publication/skeleton.json",
+      "sha256": "b0eeba3fd147f4dd25a32b7c9f71fbc3a9b55a554e417e47a31b42b5a2246a4e",
+      "bytes": 9922
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-304/publication/reference-metrics.json",
+      "sha256": "2aa53d7118225f16a8914e471f3658949aeb984ce16ec7b03da616b32086bc9d",
+      "bytes": 170495
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

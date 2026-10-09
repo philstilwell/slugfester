@@ -1,0 +1,20 @@
+{
+  "status": "passed-controller-input-access-review",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-304/publication/rhetorical-tag-review-1/adjudication/execution.json",
+    "sha256": "d58791c87299e2fefda8b1741e8fda95a9a8cb4fc8e48356a624547b40c859aa",
+    "bytes": 13518
+  },
+  "agentPath": "/root/rhetoric_adjudicator304",
+  "sessionId": "01a11eda-a426-7af1-a34b-553cca62dad3",
+  "toolCallCount": 33,
+  "findings": [
+    "Actual tool calls exposed only the plan, complete allowed anonymous reader, own thread identifier, maintained runner help, pinned checker, in-memory authoring, handoff transport and cleanup.",
+    "Literal display gap at lines 701–720 was reread and authenticated before authoring.",
+    "Socket transport required normal sandbox escalation; the candidate remained in RAM until the one controller-authorized save.",
+    "No reviewer identities, scores, outside research, credentials or other assessments accessed."
+  ],
+  "protocolIsolationVerified": true,
+  "operatingSystemSandboxClaimed": false,
+  "violations": []
+}

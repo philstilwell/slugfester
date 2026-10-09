@@ -1,0 +1,22 @@
+{
+  "status": "passed-controller-input-access-review",
+  "checkedAt": "2026-10-09T03:44:07.737896+00:00",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-304/judgments/pass-b/execution.json",
+    "sha256": "1dc2b137e7c2edb17b76ec28e65a9f43dcd8ba73f3459aaf54595f1c88362574",
+    "bytes": 14418
+  },
+  "agentPath": "/root/judge304b",
+  "sessionId": "01a11ebd-42d7-7eb3-87ba-bb0a183b4a81",
+  "toolCallCount": 34,
+  "findings": [
+    "Entire 4364-line allowed reader and plan authenticated.",
+    "Tool-access inspection shows plan/reader, own thread ID, memory authoring and pinned checker/handoff only.",
+    "No peer judgments, prior public assessments, rankings, external evidence or credentials read.",
+    "Unsuccessful stdin transport experiments did not create saved candidate outputs; only one exact-byte handoff saved.",
+    "No rating change requested or made; source clarification, where present, did not add evidence or change bytes."
+  ],
+  "protocolIsolationVerified": true,
+  "operatingSystemSandboxClaimed": false,
+  "violations": []
+}

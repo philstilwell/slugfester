@@ -5,6 +5,7 @@ const internalDebateMetadataPattern =
 const automatedAudioDisclosures = [
   "Automatic captions were supplemented by targeted automated audio checks; this was not direct human listening.",
   "Automatic captions were supplemented by targeted automated audio checks, not direct human listening.",
+  "Public automatic captions were supplemented by five targeted automated audio checks, not direct human listening.",
   "Public automatic captions were supplemented by targeted automated audio checks; these were not direct human listening."
 ];
 
