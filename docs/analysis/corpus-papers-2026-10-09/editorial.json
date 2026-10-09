@@ -1,0 +1,472 @@
+[
+  {
+    "id": "score-gap",
+    "topic": "Evidence and inference",
+    "title": "Why Do the Theist Sides Score Lower?",
+    "short": "Where the score gap comes from",
+    "subtitle": "A smaller gap in a larger archive—and the limits of explaining it.",
+    "stats": [
+      [
+        "{{p1.gap.mean:2}}",
+        "average skeptical-side advantage\nin score points / 100"
+      ],
+      [
+        "{{counts.religious}}",
+        "classified comparisons\nfrom {{counts.published}} assessments"
+      ],
+      [
+        "{{derived.new_comparisons}}",
+        "new eligible comparisons\nsince September"
+      ]
+    ],
+    "finding": "The score gap persists, but newer additions are closer.",
+    "statistic": "{{p1.gap.mean:2}} points",
+    "statisticLabel": "Average non-theist advantage · {{counts.religious}} comparisons",
+    "explanation": "The September gap was 6.34 points; the {{derived.new_comparisons}} new comparisons average {{p1.sensitivity.new_since_september.mean:2}}, bringing the combined gap down to {{p1.gap.mean:2}}. Skeptical sides lead in {{p1.gap.positive}} assessments, religious sides in {{p1.gap.negative}}, with {{p1.gap.zero}} ties. Support remains the largest raw scoring-area difference. Support, logic and replies contribute {{derived.top_three_share:1}}% of the overall gap.",
+    "detail": "The new cases include meaningful counterexamples, including Meyer–Atkins on design. A creator argument is not automatically a defense of a personal religious God; those narrower burdens and explicit inclusion decisions remain visible. The narrower truth-claim set retains a {{p1.sensitivity.narrow.mean:2}}-point gap.",
+    "limitation": "This curated archive measures assessed performances, not worldview truth. The faith-to-debate hypothesis remains a proposed explanation, not an established psychological cause. Repeated speakers and judging preferences are not eliminated by resampling.",
+    "pdf": "why-do-the-theist-sides-score-lower",
+    "figure": "p1-dimensions",
+    "links": [
+      {
+        "id": "jones-schmid-contingency-god-2022",
+        "label": "Jones–Schmid: from a foundation to God"
+      },
+      {
+        "id": "meyer-atkins-intelligent-design-science-2010",
+        "label": "Meyer–Atkins: a counterexample to the average"
+      }
+    ],
+    "method": "Reconstruct scores with official move importance, section weights and rounding. Subtract the religious-side score from the skeptical-side score within each debate, then average with one vote per debate. Draw whole debates with replacement 20,000 times to examine stability. Classify the position argued, not the person's identity or PRO/CON label.",
+    "rows": [
+      [
+        "Comparable religious-versus-skeptical cases",
+        "{{counts.religious}}"
+      ],
+      [
+        "Skeptical higher / religious higher / ties",
+        "{{p1.gap.positive}} / {{p1.gap.negative}} / {{p1.gap.zero}}"
+      ],
+      [
+        "New comparisons / mean gap",
+        "{{derived.new_comparisons}} / {{p1.sensitivity.new_since_september.mean:2}} points"
+      ],
+      [
+        "Mean gap / middle-95% resampling range",
+        "{{p1.gap.mean:2}} / {{p1.gap.ci.0:2}}–{{p1.gap.ci.1:2}}"
+      ]
+    ],
+    "files": [
+      "classification.csv",
+      "debates.json",
+      "results.json",
+      "analyze.py"
+    ]
+  },
+  {
+    "id": "topic-differences",
+    "topic": "Questions and burdens",
+    "title": "Where Is the Theist Disadvantage Largest?",
+    "short": "Topics and inferential burdens",
+    "subtitle": "Stable research categories, more cases, and an uncertain topic order.",
+    "stats": [
+      [
+        "7.28",
+        "largest observed topic gap:\nreligion, culture and meaning"
+      ],
+      [
+        "3.04",
+        "smallest observed topic gap:\nresurrection and history"
+      ],
+      [
+        "8",
+        "stable research groups\nnot the browsing categories"
+      ]
+    ],
+    "finding": "The topic differences remain useful; exact topic rankings remain uncertain.",
+    "statistic": "7.28 vs 3.04",
+    "statisticLabel": "Mean score gaps: religion, culture and meaning vs resurrection and history",
+    "explanation": "Religion, culture and meaning has the largest observed gap across 25 comparisons; resurrection and historical evidence is closer across 24. The former leads only about 32% of repeated-draw calculations, so the apparent ordering should not be treated as settled. All eight observed mean gaps favor the skeptical side.",
+    "detail": "The paper keeps eight research groups to make editions comparable, while the website's browsing categories are more detailed. It examines the step from religious usefulness to truth, from an origin cause to a fuller theology, and from sincere testimony to a miracle. Support-score gaps persist in both constructive cases and replies.",
+    "limitation": "Topics are exploratory, and the categories mix different speakers, questions and opponents. Overlapping uncertainty makes precise ordering fragile. The eight groups are not the current browsing categories.",
+    "pdf": "where-is-the-theist-disadvantage-largest",
+    "figure": "p2-moves",
+    "links": [
+      {
+        "id": "loke-linford-physical-reality-cause-beginning-2023",
+        "label": "Loke–Linford: origins, causes and agency"
+      },
+      {
+        "id": "horn-paulogia-apostolic-sincerity-2023",
+        "label": "Horn–Paulogia: sincerity versus stronger historical claims"
+      }
+    ],
+    "method": "Assign each of the {{counts.religious}} included comparisons once to one of eight research groups. Calculate paired score gaps and within-topic resampling ranges. Move-kind comparisons average qualifying moves within each side before subtracting; both sides must have that kind of move. These are not official weighted overall scores.",
+    "rows": [
+      [
+        "Research comparisons / groups",
+        "{{counts.religious}} / 8"
+      ],
+      [
+        "Largest observed gap",
+        "Religion, culture and meaning: 25 cases · 7.28 points"
+      ],
+      [
+        "Smallest observed gap",
+        "Resurrection and history: 24 cases · 3.04 points"
+      ],
+      [
+        "All / high-importance / constructive / reply pairs",
+        "{{p2.move_subsets.all.dimensions.evidenceWarrant.n}} / {{p2.move_subsets.major.dimensions.evidenceWarrant.n}} / {{p2.move_subsets.constructive.dimensions.evidenceWarrant.n}} / {{p2.move_subsets.reply.dimensions.evidenceWarrant.n}}"
+      ]
+    ],
+    "files": [
+      "classification.csv",
+      "moves.json",
+      "results.json",
+      "analyze.py"
+    ]
+  },
+  {
+    "id": "slogans",
+    "topic": "Claims and criticism",
+    "title": "Are Theist Arguments More Often Slogan-Like?",
+    "short": "Direct evidence and its limits",
+    "subtitle": "A dated transcript study, with a separate updated score-based comparison.",
+    "stats": [
+      [
+        "77 / 19",
+        "protected uses: religious\nversus skeptical side"
+      ],
+      [
+        "187",
+        "historically reviewed transcripts\nSeptember 5 direct study"
+      ],
+      [
+        "{{counts.religious}}",
+        "current score comparisons\nnot new slogan reviews"
+      ]
+    ],
+    "finding": "The direct finding concerns criticism-blocking slogans—and remains a dated study.",
+    "statistic": "0.56 vs 0.16",
+    "statisticLabel": "Protected uses per 10,000 words · historical 187-transcript review",
+    "explanation": "Recalculating the saved direct-review records reproduces 77 religious-side protected uses versus 19 skeptical-side uses. Most reviewed debates—144 of 187—have none detected on either side. The broader unsupported-slogan difference is less secure: its repeated-draw range crosses zero.",
+    "detail": "The revised paper separately checks {{counts.religious}} current scorecards: {{p3.proxy.all.equal_debate_pct.theist:2}}% versus {{p3.proxy.all.equal_debate_pct.non:2}}% of moves meet a combined low-support, low-clarity and low-care rule, averaging within debates. That warning pattern is not direct slogan detection. No new transcripts were coded for this edition.",
+    "limitation": "The direct study used one AI reading per transcript, not independent double coding. Caption errors, missed uses and systematic reader bias remain possible. The newer score-based percentages cannot extend or replace the historical direct counts.",
+    "pdf": "are-theist-arguments-more-often-slogan-like",
+    "figure": "p3-direct-rates",
+    "links": [
+      {
+        "href": "/insights/data-and-methods/#slogans",
+        "label": "Inspect the historical direct review and current score check"
+      },
+      {
+        "search": "Lennox",
+        "label": "Explore the Lennox assessments"
+      }
+    ],
+    "method": "For the September direct study, divide detected uses by each side's attributed substantive caption words, multiply by 10,000, then average with equal debate weight. Protected slogans require both substituting for a reason and positively blocking criticism. Recalculate published counts without commissioning new judgments. The separate current warning rule requires Support <70, Clarity <80 and Care <80 on the same scored move.",
+    "rows": [
+      [
+        "Direct review date / transcripts",
+        "September 5, 2026 / 187"
+      ],
+      [
+        "Protected counts: religious / skeptical",
+        "77 / 19"
+      ],
+      [
+        "Protected rates per 10,000 words",
+        "0.56 / 0.16"
+      ],
+      [
+        "Debates with neither side detected",
+        "144"
+      ],
+      [
+        "New direct transcript reviews",
+        "0"
+      ],
+      [
+        "Current score-warning comparison",
+        "{{counts.religious}} cases · {{p3.proxy.all.paired_pp.mean:2}} percentage-point difference"
+      ]
+    ],
+    "files": [
+      "results.json",
+      "analyze.py"
+    ],
+    "historicalFiles": [
+      "light-debates.csv",
+      "light-results.json",
+      "light-incidents.json",
+      "supplementary-results.json",
+      "protocol-light.md",
+      "editorial-corrections.json"
+    ]
+  },
+  {
+    "id": "con-role",
+    "topic": "Role and responsibility",
+    "title": "Does the CON Side Have an Inherent Advantage?",
+    "short": "Association is not a built-in bonus",
+    "subtitle": "The residual role association is now clearer under one weighting—but still not causal.",
+    "stats": [
+      [
+        "{{p4.raw.mean:2}}",
+        "raw CON-minus-PRO gap\nin comparable debates"
+      ],
+      [
+        "{{p4.same_speaker_weighted.estimate:2}}",
+        "weighted same-person gap\npositive resampling range"
+      ],
+      [
+        "{{p4.same_speaker_equal.n}}",
+        "people observed\nin both roles"
+      ]
+    ],
+    "finding": "The weighted same-speaker CON gap is now positive across its displayed range.",
+    "statistic": "{{p4.raw.mean:2}} → {{p4.same_speaker_weighted.estimate:2}}",
+    "statisticLabel": "Raw role gap versus weighted same-speaker comparison · score points",
+    "explanation": "CON averages {{p4.raw.mean:2}} points higher across {{counts.locked}} comparable debates. Comparing {{p4.same_speaker_equal.n}} people who appear in both roles gives a smaller weighted gap of {{p4.same_speaker_weighted.estimate:2}}, with a middle-95% range of {{p4.same_speaker_weighted.ci.0:2}}–{{p4.same_speaker_weighted.ci.1:2}}. Unlike September, this weighted range no longer includes zero.",
+    "detail": "The equal-person estimate is {{p4.same_speaker_equal.mean:2}} and its range still narrowly crosses zero. Balancing religious orientations gives {{p4.orientation_balanced.mean:2}}. These calculations answer different questions; their reduction from the raw gap is not a measured percentage of causation.",
+    "limitation": "Roles are not randomly assigned. Even the same people face different topics and opponents. A positive weighted range supports investigating a modest residual association, not awarding an automatic bonus or penalty to either role.",
+    "pdf": "does-the-con-side-have-an-inherent-advantage",
+    "figure": "p4-estimates",
+    "links": [
+      {
+        "id": "rauser-malpass-evidential-problem-evil-2021",
+        "label": "Rauser–Malpass: the skeptic's positive evidential burden"
+      },
+      {
+        "href": "/rankings/",
+        "label": "Explore individual records"
+      }
+    ],
+    "method": "Calculate CON minus PRO within debates. Compare religious orientations at equal 50/50 weight. For people observed in both roles, compare their role-specific means, first equally and then with weight n(PRO) × n(CON) / total appearances. Resample debates for debate estimates and speakers for same-person estimates.",
+    "rows": [
+      [
+        "Comparable debates",
+        "{{counts.locked}}"
+      ],
+      [
+        "Raw CON gap",
+        "{{p4.raw.mean:2}}"
+      ],
+      [
+        "Same-person equal / weighted",
+        "{{p4.same_speaker_equal.mean:2}} / {{p4.same_speaker_weighted.estimate:2}}"
+      ],
+      [
+        "Weighted middle-95% range",
+        "{{p4.same_speaker_weighted.ci.0:2}}–{{p4.same_speaker_weighted.ci.1:2}}"
+      ],
+      [
+        "People observed in both roles",
+        "{{p4.same_speaker_equal.n}}"
+      ]
+    ],
+    "files": [
+      "debates.json",
+      "classification.csv",
+      "results.json",
+      "analyze.py"
+    ]
+  },
+  {
+    "id": "fallacy-count",
+    "topic": "Beyond labels",
+    "title": "Beyond the Fallacy Count",
+    "short": "No label is not an acquittal",
+    "subtitle": "The overall majority shrinks, while the difference between assessment processes persists.",
+    "stats": [
+      [
+        "{{derived.loss_no_fallacy_pct:1}}%",
+        "lower-scoring sides with\nno named-fallacy tag"
+      ],
+      [
+        "{{derived.later_no_fallacy_pct:1}}%",
+        "same rate in the\nlater process"
+      ],
+      [
+        "{{p5.winner_with_fallacy}}",
+        "higher-scoring sides\nwith a fallacy tag"
+      ]
+    ],
+    "finding": "Named fallacies neither exhaust argument quality nor determine the result.",
+    "statistic": "{{derived.loss_no_fallacy_pct:1}}%",
+    "statisticLabel": "Lower-scoring sides without a named-fallacy tag · {{p5.losses_without_fallacy}} / {{p5.decisive}}",
+    "explanation": "The combined untagged-loss rate is down from 61.7% in September. It is {{derived.earlier_no_fallacy_pct:1}}% in the earlier process and {{derived.later_no_fallacy_pct:1}}% later. The overall percentage depends heavily on the mixture of assessment procedures, so it should not become a universal claim about debate.",
+    "detail": "Among {{p5.untagged_locked.n}} comparable untagged losses, {{p5.untagged_locked.five_or_six}} trail in five or six scoring areas. Conversely, {{p5.winner_with_fallacy}} higher-scoring sides carry a fallacy tag. Read the particular inference and its importance, not just the label count.",
+    "limitation": "Tags are accepted annotations, not an exhaustive or independent census of errors. Counts cover assessments rather than independent videos; the shared source for assessments 13 and 125 is disclosed.",
+    "pdf": "debates-are-usually-lost-without-a-named-fallacy",
+    "figure": "p5-cohorts",
+    "links": [
+      {
+        "href": "/rankings/",
+        "label": "Explore category fallacies and biases"
+      },
+      {
+        "href": "/backend/",
+        "label": "Read the assessment process"
+      }
+    ],
+    "method": "Exclude {{p5.ties}} ties, identify each lower-scoring side, and count whether it has any public named-fallacy tag. Divide by decisive assessments overall and within each process. Separately compare weighted scoring areas for comparable untagged losses. Count label instances separately from tagged moves.",
+    "rows": [
+      [
+        "Archive: untagged losses",
+        "{{p5.losses_without_fallacy}} / {{p5.decisive}} · {{derived.loss_no_fallacy_pct:1}}%"
+      ],
+      [
+        "Earlier process",
+        "{{p5.cohorts.earlier.no_fallacy}} / {{p5.cohorts.earlier.n}}"
+      ],
+      [
+        "Later process",
+        "{{p5.cohorts.later.no_fallacy}} / {{p5.cohorts.later.n}}"
+      ],
+      [
+        "Labels / tagged moves",
+        "{{derived.public_label_instances}} / {{p5.tagged_moves}}"
+      ]
+    ],
+    "files": [
+      "losses.json",
+      "casebook.json",
+      "results.json",
+      "analyze.py"
+    ]
+  },
+  {
+    "id": "same-scale",
+    "topic": "Checking the measuring standard",
+    "title": "Are All Slugfester Assessments on the Same Scale?",
+    "short": "Reconstruction is not calibration",
+    "subtitle": "A narrower level difference, persistent process warnings, and a better test for the next review.",
+    "stats": [
+      [
+        "{{derived.absolute_process_difference:2}}",
+        "points lower on average\nin the later process"
+      ],
+      [
+        "{{p6.bridge_summary.negative}} / {{p6.bridge_summary.n}}",
+        "returning people with\nlower later means"
+      ],
+      [
+        "{{counts.locked_moves:0}}",
+        "verified comparable\nmove scores"
+      ]
+    ],
+    "finding": "The process-level difference has narrowed, but comparability still needs testing.",
+    "statistic": "{{p6.cohorts.earlier.midpoints.mean:2}} vs {{p6.cohorts.later.midpoints.mean:2}}",
+    "statisticLabel": "Earlier versus later average side scores · {{p6.cohorts.earlier.debates}} / {{p6.cohorts.later.debates}} debates",
+    "explanation": "The later group's mean is {{derived.absolute_process_difference:2}} points lower, rather than September's 2.82. Of {{p6.bridge_summary.n}} returning people, {{p6.bridge_summary.negative}} have lower later averages, {{p6.bridge_summary.positive}} higher and {{p6.bridge_summary.zero}} unchanged. Annotation rates and the set of exact marks used also differ.",
+    "detail": "All {{counts.locked_moves:0}} comparable move scores and {{checks.overall_scores}} overall side scores reconstruct correctly. That verifies the arithmetic, not whether both procedures applied the same judging standard. The next reassessment should test shared source material and publish substantive disagreements.",
+    "limitation": "The same people are appearing in different debates, not having the same performance judged twice. Different topics and opponents can contribute. A newer model is not automatically more accurate, and subtracting process means is not a justified public-score correction.",
+    "pdf": "are-all-slugfester-assessments-on-the-same-scale",
+    "figure": "p6-bridge",
+    "links": [
+      {
+        "href": "/backend/#backend-summary-heading",
+        "label": "Read the tentative reassessment plan"
+      },
+      {
+        "href": "/insights/data-and-methods/#same-scale",
+        "label": "Inspect the reconstruction and process checks"
+      }
+    ],
+    "method": "Reconstruct all comparable scores from locked records. Compare equal-debate score midpoints, dimension patterns, exact mark frequencies and tag rates by scoring-record format. Follow people appearing in both groups while explicitly retaining topic and opponent limitations.",
+    "rows": [
+      [
+        "Earlier / later debates",
+        "{{p6.cohorts.earlier.debates}} / {{p6.cohorts.later.debates}}"
+      ],
+      [
+        "Earlier / later moves",
+        "{{p6.cohorts.earlier.moves}} / {{p6.cohorts.later.moves}}"
+      ],
+      [
+        "Earlier / later mean side score",
+        "{{p6.cohorts.earlier.midpoints.mean:2}} / {{p6.cohorts.later.midpoints.mean:2}}"
+      ],
+      [
+        "Returning: lower / higher / unchanged",
+        "{{p6.bridge_summary.negative}} / {{p6.bridge_summary.positive}} / {{p6.bridge_summary.zero}}"
+      ]
+    ],
+    "files": [
+      "debates.json",
+      "results.json",
+      "revision-checks.json",
+      "source-manifest.json",
+      "analyze.py"
+    ]
+  },
+  {
+    "id": "ranking-confidence",
+    "topic": "Reading rankings",
+    "title": "Do Slugfester Rankings Measure Stable Performance?",
+    "short": "A leaderboard with honest uncertainty",
+    "subtitle": "A larger fixed field, repeatable broad patterns, and overlapping exact places.",
+    "stats": [
+      [
+        "{{p7.split_half.median:2}}",
+        "median order agreement\nbetween random halves"
+      ],
+      [
+        "{{p7.median_adjacent_gap:2}}",
+        "typical score gap between\nneighboring means"
+      ],
+      [
+        "{{p7.ranked_speakers}}",
+        "people with at least\nthree eligible appearances"
+      ]
+    ],
+    "finding": "The broad order repeats better than exact places.",
+    "statistic": "{{p7.median_adjacent_gap:2}} points",
+    "statisticLabel": "Typical gap between neighboring means in the fixed research field",
+    "explanation": "The field now contains {{p7.ranked_speakers}} people and {{p7.eligible_appearances}} appearances, up from 50 and 334. Typical rank-range widths are {{p7.median_empirical_rank_width:0}} places when drawing again from recorded scores and {{p7.median_model_rank_width:0}} under a model allowing wider score variation. More evidence does not guarantee narrower ranks when the field grows too.",
+    "detail": "Randomly splitting records for the {{p7.split_half.n}} people with at least six appearances gives median order agreement of {{p7.split_half.median:2}}. The paper explains the two rank methods, a shared-debate-weight check, and real rows for Schmid, Dillahunty and Blackmore before presenting the complete field.",
+    "limitation": "These are calculations within a fixed {{p7.ranked_speakers}}-person field, not live rankings or future-win probabilities. Unequal topics, opponents and assessment processes remain important. Repeatability is not proof that the judging is correct.",
+    "pdf": "do-slugfester-rankings-measure-stable-performance",
+    "figure": "p7-ranges",
+    "links": [
+      {
+        "href": "/interlocutor/joseph-schmid/",
+        "label": "Joseph Schmid's current record"
+      },
+      {
+        "href": "/interlocutor/susan-blackmore/",
+        "label": "Susan Blackmore's current record"
+      },
+      {
+        "href": "/rankings/",
+        "label": "Open current rankings"
+      }
+    ],
+    "method": "Retain people with at least three comparable one-on-one appearances. Draw from each person's recorded scores 20,000 times, and separately fit a normal model with pooled within-person variation. Compare the middle 95% of rank positions. A shared-debate-weight sensitivity keeps opponents paired; 3,000 split-half calculations examine broad order agreement.",
+    "rows": [
+      [
+        "Ranked people / appearances",
+        "{{p7.ranked_speakers}} / {{p7.eligible_appearances}}"
+      ],
+      [
+        "All eligible people / appearances",
+        "{{p7.all_speakers}} / {{p7.appearances}}"
+      ],
+      [
+        "Typical neighboring gap",
+        "{{p7.median_adjacent_gap:2}} points"
+      ],
+      [
+        "Typical resampled / model rank width",
+        "{{p7.median_empirical_rank_width:0}} / {{p7.median_model_rank_width:0}} places"
+      ]
+    ],
+    "files": [
+      "ranking.csv",
+      "results.json",
+      "analyze.py"
+    ]
+  }
+]
