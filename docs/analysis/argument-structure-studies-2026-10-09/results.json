@@ -1,0 +1,163 @@
+{
+  "source_commit": "e65bc3c0b6",
+  "snapshot": "2026-10-09",
+  "reply_graph": {
+    "debates": 112,
+    "moves": 3609,
+    "replies": 2444,
+    "with_target": 2444,
+    "multiple_targets": 472,
+    "edges": 2978,
+    "opposite_side_edges": 2968,
+    "reply_to_reply_edges": 1733,
+    "timed_edges": 2978,
+    "target_starts_no_later": 2978
+  },
+  "opponents": {
+    "debates": 291,
+    "appearances": 582,
+    "speakers": 183,
+    "three_opponents": 55,
+    "unique_pairs": 269,
+    "repeated_pairs": 21,
+    "repeated_pair_debates": 43,
+    "strict_reversal_pairs": 2,
+    "median_margin_range": 3.0,
+    "same_process_pair_groups": 12,
+    "same_process_reversals": 0,
+    "same_process_median_range": 2.0
+  },
+  "models": {
+    "speaker_only": {
+      "appearances": 295,
+      "speakers": 80,
+      "debates": 188,
+      "threshold": 3,
+      "controls": [],
+      "equal_person": false,
+      "own_score_change_per_5_opponent_points": -0.42227502967294017,
+      "within_correlation": -0.08846360956124773,
+      "residual_opponent_sd": 2.863012215390133,
+      "slope": -0.08445500593458803
+    },
+    "speaker_process_role": {
+      "appearances": 295,
+      "speakers": 80,
+      "debates": 188,
+      "threshold": 3,
+      "controls": [
+        "cohort",
+        "side"
+      ],
+      "equal_person": false,
+      "own_score_change_per_5_opponent_points": -0.49346278111014447,
+      "within_correlation": -0.10820639560275462,
+      "residual_opponent_sd": 2.8460800247792193,
+      "slope": -0.0986925562220289
+    },
+    "plus_broad_topic": {
+      "appearances": 295,
+      "speakers": 80,
+      "debates": 188,
+      "threshold": 3,
+      "controls": [
+        "cohort",
+        "side",
+        "topic"
+      ],
+      "equal_person": false,
+      "own_score_change_per_5_opponent_points": -0.81856080835278,
+      "within_correlation": -0.18187924658691124,
+      "residual_opponent_sd": 2.7260925411314507,
+      "slope": -0.163712161670556
+    },
+    "equal_person": {
+      "appearances": 295,
+      "speakers": 80,
+      "debates": 188,
+      "threshold": 3,
+      "controls": [
+        "cohort",
+        "side"
+      ],
+      "equal_person": true,
+      "own_score_change_per_5_opponent_points": -0.384683072043976,
+      "within_correlation": -0.10819465820586877,
+      "residual_opponent_sd": 2.847706850332752,
+      "slope": -0.0769366144087952
+    },
+    "opponent_min5": {
+      "appearances": 203,
+      "speakers": 60,
+      "debates": 145,
+      "threshold": 5,
+      "controls": [
+        "cohort",
+        "side"
+      ],
+      "equal_person": false,
+      "own_score_change_per_5_opponent_points": -0.32624015423271424,
+      "within_correlation": -0.06736715267964757,
+      "residual_opponent_sd": 2.644792003792712,
+      "slope": -0.06524803084654285
+    },
+    "earlier": {
+      "appearances": 151,
+      "speakers": 42,
+      "debates": 93,
+      "threshold": 3,
+      "controls": [
+        "side"
+      ],
+      "equal_person": false,
+      "own_score_change_per_5_opponent_points": -0.5005203170492867,
+      "within_correlation": -0.10454815519147738,
+      "residual_opponent_sd": 2.656948233080779,
+      "slope": -0.10010406340985734
+    },
+    "later": {
+      "appearances": 82,
+      "speakers": 31,
+      "debates": 48,
+      "threshold": 3,
+      "controls": [
+        "side"
+      ],
+      "equal_person": false,
+      "own_score_change_per_5_opponent_points": -0.3618415468703145,
+      "within_correlation": -0.08295009549845314,
+      "residual_opponent_sd": 2.8867294137509245,
+      "slope": -0.0723683093740629
+    },
+    "same_process_opponent_proxy": {
+      "appearances": 180,
+      "speakers": 54,
+      "debates": 132,
+      "threshold": 3,
+      "controls": [
+        "cohort",
+        "side"
+      ],
+      "equal_person": false,
+      "own_score_change_per_5_opponent_points": 0.06465930638350828,
+      "within_correlation": 0.01164852031481044,
+      "residual_opponent_sd": 2.4595845653097115,
+      "slope": 0.012931861276701656
+    }
+  },
+  "matched_sample_pooled_proxy": {
+    "appearances": 180,
+    "speakers": 54,
+    "debates": 132,
+    "threshold": 3,
+    "controls": [
+      "cohort",
+      "side"
+    ],
+    "equal_person": false,
+    "own_score_change_per_5_opponent_points": -0.023005885928690097,
+    "within_correlation": -0.004228371047517558,
+    "residual_opponent_sd": 2.5093206902154286,
+    "slope": -0.004601177185738019
+  }
+}

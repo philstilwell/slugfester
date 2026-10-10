@@ -1,4 +1,4 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=e4fcdd675af065ab";
+import { topicCategoryDefinitions } from "./data/topics.js?v=7635f361bd9f3112";
 
 export const SITE_URL = "https://slugfester.com";
 export const SITE_NAME = "Slugfester";
@@ -254,7 +254,7 @@ export function chartsSeo() {
 }
 
 export function insightsSeo() {
-  const description = "Seven research findings from Slugfester’s debate archive: evidence, score gaps, slogans, fallacy counts and ranking reliability, with figures and limitations.";
+  const description = "Ten studies of Slugfester’s debates: evidence, replies, creator arguments, opponent context and ranking reliability, with readable figures and full papers.";
   return {
     title: pageTitle("Insights from the debates"), heading: "Insights from the debates",
     description, canonicalPath: insightsPath(), lastmod: "2026-10-09",
@@ -267,7 +267,7 @@ export function insightsSeo() {
 }
 
 export function insightsMethodsSeo() {
-  const description = "The evidence, calculations, limitations and downloadable research data behind Slugfester’s seven Insights studies.";
+  const description = "Explore the evidence, calculations, source-linked argument examples and downloadable research data behind Slugfester’s ten Insights studies.";
   return {
     title: pageTitle("Insights: data and methods"), heading: "Data and methods",
     description, canonicalPath: "/insights/data-and-methods/", lastmod: "2026-10-09",
