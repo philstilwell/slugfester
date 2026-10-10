@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { weightExplorerSnapshot as snapshot } from "../src/data/weight-explorer-snapshot.js";
-import { defaultWeights, weightDimensions, redistributeWeights, evaluateWeights, scoreScenarioSide } from "../src/data/weight-explorer-model.js";
+import { defaultWeights, weightDimensions, weightPresets, findWeightPreset, validateWeights, redistributeWeights, evaluateWeights, scoreScenarioSide } from "../src/data/weight-explorer-model.js";
 
 const root = new URL("../", import.meta.url);
 const load = path => JSON.parse(readFileSync(new URL(path, root), "utf8"));
@@ -24,7 +24,7 @@ test("default weights reproduce every published score and the existing study", (
 
 test("reweighting agrees with an independent calculation from original research moves and section records", () => {
   // Deliberately do not call the browser's scoring helper to get expected scores.
-  for (const weights of [[0,100,0,0,0,0], [0,0,100,0,0,0], [10,35,15,10,15,15]]) {
+  for (const weights of [[0,100,0,0,0,0], [0,0,100,0,0,0], [10,35,15,10,15,15], ...weightPresets.map(p => p.weights)]) {
     const actual = evaluateWeights(snapshot.debates, weights);
     for (const row of actual.rows) {
       const original = originalDebates.find(d => d.number === row.number);
@@ -48,6 +48,25 @@ test("reweighting agrees with an independent calculation from original research 
     }
     assert.equal(actual.proGodAhead + actual.conGodAhead + actual.ties, actual.count);
   }
+});
+
+test("presets are distinct, valid, immutable examples with exact active-state matching", () => {
+  assert.deepEqual(weightPresets[0].weights, defaultWeights);
+  assert.equal(new Set(weightPresets.map(p => p.id)).size, weightPresets.length);
+  assert.equal(new Set(weightPresets.map(p => p.weights.join(","))).size, weightPresets.length);
+  for (const preset of weightPresets) {
+    validateWeights(preset.weights);
+    assert(preset.weights.every(Number.isInteger));
+    assert(Object.isFrozen(preset) && Object.isFrozen(preset.weights));
+    assert.equal(findWeightPreset([...preset.weights])?.id, preset.id);
+    const result = evaluateWeights(snapshot.debates, preset.weights);
+    assert.equal(result.count, 234);
+    assert.equal(result.proGodAhead + result.conGodAhead + result.ties, result.count);
+  }
+  assert.equal(weightPresets.find(p => p.id === "evidence").weights[1], 40);
+  assert.equal(weightPresets.find(p => p.id === "logic").weights[0], 40);
+  assert.equal(weightPresets.find(p => p.id === "replies").weights[2], 40);
+  assert.equal(findWeightPreset(redistributeWeights(defaultWeights, 0, 26)), undefined);
 });
 
 test("sliders keep whole-number percentages totaling 100 at every boundary", () => {
