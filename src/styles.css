@@ -527,6 +527,14 @@ a {
 .weight-controls, .weight-results { min-width: 0; }
 .weight-controls fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
 .weight-controls legend { font-size: 1.35rem; font-weight: 800; padding: 0; }
+.weight-presets { margin-top: 18px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.weight-presets > p:first-child { margin: 0 0 10px; font-weight: 750; }
+.weight-preset-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.weight-preset-buttons button { min-height: 44px; padding: 9px 12px; border: 1px solid #a8b6b2; border-radius: 7px; background: white; color: var(--ink); font: inherit; font-size: .9rem; font-weight: 750; cursor: pointer; }
+.weight-preset-buttons button[aria-pressed="true"] { background: var(--glove-red); border-color: #132321; color: white; }
+.weight-preset-buttons button:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.weight-presets #weight-preset-help { margin: 10px 0; color: #40524f; font-size: .85rem; line-height: 1.4; }
+.weight-presets .weight-preset-state { margin: 0; font-size: .85rem; font-weight: 750; color: var(--blue); }
 .weight-controls #weight-slider-help { font-size: .9rem; color: #40524f; margin: 10px 0 20px; }
 .weight-slider { margin-bottom: 18px; }
 .weight-slider > div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }

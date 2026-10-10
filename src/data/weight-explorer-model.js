@@ -8,6 +8,16 @@ export const weightDimensions = Object.freeze([
   { key: "calibrationCharity", label: "Confidence and fairness", description: "Does confidence fit the support, and is the opposing position represented fairly?", weight: 10 }
 ]);
 export const defaultWeights = Object.freeze(weightDimensions.map(d => d.weight));
+export const weightPresets = Object.freeze([
+  { id: "current", label: "Current rubric", weights: defaultWeights, description: "Slugfester’s published scoring weights." },
+  { id: "evidence", label: "Evidence-focused", weights: [15, 40, 15, 10, 10, 10], description: "Evidence and support count for 40%." },
+  { id: "logic", label: "Logic-focused", weights: [40, 15, 15, 10, 10, 10], description: "Logic counts for 40%." },
+  { id: "replies", label: "Reply-focused", weights: [15, 15, 40, 10, 10, 10], description: "Replies count for 40%." }
+].map(preset => Object.freeze({ ...preset, weights: Object.freeze(preset.weights) })));
+
+export function findWeightPreset(weights) {
+  return weightPresets.find(preset => preset.weights.length === weights.length && preset.weights.every((w, i) => w === weights[i]));
+}
 
 export function validateWeights(weights) {
   if (!Array.isArray(weights) || weights.length !== 6 ||

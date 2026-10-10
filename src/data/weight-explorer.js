@@ -1,5 +1,5 @@
-import { weightExplorerSnapshot as snapshot } from "./weight-explorer-snapshot.js?v=18e08f782804fb80";
-import { weightDimensions, defaultWeights, redistributeWeights, evaluateWeights } from "./weight-explorer-model.js?v=18e08f782804fb80";
+import { weightExplorerSnapshot as snapshot } from "./weight-explorer-snapshot.js?v=c742718d4ab2ae9f";
+import { weightDimensions, defaultWeights, weightPresets, findWeightPreset, redistributeWeights, evaluateWeights } from "./weight-explorer-model.js?v=c742718d4ab2ae9f";
 
 const escape = (text = "") => String(text).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 const number = n => n.toFixed(2);
@@ -36,7 +36,9 @@ export function renderWeightExplorer() {
     <p class="weight-scope"><strong>${snapshot.counts.debates} reviewed debates · ${snapshot.date} research snapshot.</strong> “Pro-God” means the side defending God, a creator or a religious claim; “con-God” means the side challenging it. This includes debates about religion, not only God’s existence. The labels follow the position argued, not the speaker’s personal beliefs or the scorecard’s PRO/CON order.</p>
     <div class="weight-explorer-layout">
       <div class="weight-controls">
-        <fieldset disabled data-weight-controls><legend>Choose what counts</legend><p id="weight-slider-help">Changing one slider redistributes the remaining weight across the others. The total always stays at 100%.</p>
+        <fieldset disabled data-weight-controls><legend>Choose what counts</legend>
+          <div class="weight-presets"><p id="weight-preset-label">Start with a preset</p><div class="weight-preset-buttons" role="group" aria-labelledby="weight-preset-label" aria-describedby="weight-preset-help">${weightPresets.map(preset => `<button type="button" data-weight-preset="${preset.id}" aria-pressed="${preset.id === "current"}">${preset.label}</button>`).join("")}</div><p id="weight-preset-help">The focused presets are examples, not recommended rubrics. You can adjust any slider afterward.</p><p class="weight-preset-state" data-weight-preset-state>${weightPresets[0].description}</p></div>
+          <p id="weight-slider-help">Changing one slider redistributes the remaining weight across the others. The total always stays at 100%.</p>
           ${weightDimensions.map((d, i) => `<div class="weight-slider"><div><label for="weight-${d.key}">${d.label}</label><output for="weight-${d.key}" data-weight-output="${i}">${d.weight}%</output></div><input id="weight-${d.key}" type="range" min="0" max="100" step="1" value="${d.weight}" data-weight-index="${i}" aria-describedby="weight-${d.key}-description weight-slider-help"><p id="weight-${d.key}-description">${d.description}</p></div>`).join("")}
           <div class="weight-actions"><button type="button" class="button primary" data-weight-reset>Reset to current weights</button><span data-weight-total>Total: 100%</span></div>
           <label class="weight-cohort-label" for="weight-cohort">Compare assessment procedures</label><select id="weight-cohort" data-weight-cohort>${Object.entries(cohortLabels).map(([key, label]) => `<option value="${key}">${label}${key === "all" ? "" : ` (${snapshot.debates.filter(d => d.cohort === key).length} debates)`}</option>`).join("")}</select>
@@ -63,15 +65,19 @@ export function initializeWeightExplorer(root) {
   details.hidden = false;
   const sliders = [...root.querySelectorAll("[data-weight-index]")];
   const selector = root.querySelector("[data-weight-cohort]");
+  const presetButtons = [...root.querySelectorAll("[data-weight-preset]")];
   let weights = [...defaultWeights];
   let result = evaluateWeights(snapshot.debates);
   // Hold the other proportions fixed for an entire drag/key sequence so repeated
   // one-point rounding does not drain a dimension accidentally.
   let dragStart;
   function announce() {
-    root.querySelector("[data-weight-announcement]").textContent = `${cohortLabels[selector.value]}. ${result.count} debates. Pro-God average ${number(result.proGod)}. Con-God average ${number(result.conGod)}. ${lead(result.gap)}${result.gap ? ` by ${number(Math.abs(result.gap))} points` : ""}. ${result.changed} debate results changed.`;
+    root.querySelector("[data-weight-announcement]").textContent = `${findWeightPreset(weights)?.label || "Custom weights"}. ${cohortLabels[selector.value]}. ${result.count} debates. Pro-God average ${number(result.proGod)}. Con-God average ${number(result.conGod)}. ${lead(result.gap)}${result.gap ? ` by ${number(Math.abs(result.gap))} points` : ""}. ${result.changed} debate results changed.`;
   }
   function update() {
+    const preset = findWeightPreset(weights);
+    presetButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.weightPreset === preset?.id)));
+    root.querySelector("[data-weight-preset-state]").textContent = preset ? `${preset.label}: ${preset.description}` : "Custom weights: your sliders no longer match a preset.";
     sliders.forEach((slider, i) => {
       slider.value = weights[i];
       slider.setAttribute("aria-valuetext", `${weights[i]} percent`);
@@ -90,6 +96,10 @@ export function initializeWeightExplorer(root) {
     slider.addEventListener("blur", () => { dragStart = undefined; });
   }
   selector.addEventListener("change", () => { update(); announce(); });
+  for (const button of presetButtons) button.addEventListener("click", () => {
+    weights = [...weightPresets.find(preset => preset.id === button.dataset.weightPreset).weights];
+    dragStart = undefined; update(); announce();
+  });
   root.querySelector("[data-weight-reset]").addEventListener("click", () => {
     weights = [...defaultWeights]; dragStart = undefined; update(); announce();
   });

@@ -1,12 +1,12 @@
-import { pageUpdates } from "./data/page-updates.js?v=18e08f782804fb80";
-import { renderCritiqueText } from "./data/critique-format.js?v=18e08f782804fb80";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=18e08f782804fb80";
-import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=18e08f782804fb80";
-import { topicPreviewText } from "./data/topic-preview.js?v=18e08f782804fb80";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=18e08f782804fb80";
-import { debateSummaries } from "./data/debate-summaries.js?v=18e08f782804fb80";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=18e08f782804fb80";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=18e08f782804fb80";
+import { pageUpdates } from "./data/page-updates.js?v=c742718d4ab2ae9f";
+import { renderCritiqueText } from "./data/critique-format.js?v=c742718d4ab2ae9f";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=c742718d4ab2ae9f";
+import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=c742718d4ab2ae9f";
+import { topicPreviewText } from "./data/topic-preview.js?v=c742718d4ab2ae9f";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=c742718d4ab2ae9f";
+import { debateSummaries } from "./data/debate-summaries.js?v=c742718d4ab2ae9f";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=c742718d4ab2ae9f";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=c742718d4ab2ae9f";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -47,7 +47,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=18e08f782804fb80";
+} from "./seo.js?v=c742718d4ab2ae9f";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -109,7 +109,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=18e08f782804fb80")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=c742718d4ab2ae9f")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -128,7 +128,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=18e08f782804fb80")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=c742718d4ab2ae9f")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -144,7 +144,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=18e08f782804fb80`)
+    const promise = import(`./data/debate-details/${id}.js?v=c742718d4ab2ae9f`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -159,7 +159,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=18e08f782804fb80`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=c742718d4ab2ae9f`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -3563,43 +3563,43 @@ async function route({ focusMain = false } = {}) {
 
   if (chartsMatch && !chartSnapshot) {
     chartsPromise ||= Promise.all([
-      import("./data/charts.js?v=18e08f782804fb80"),
-      import("./data/chart-snapshot.js?v=18e08f782804fb80")
+      import("./data/charts.js?v=c742718d4ab2ae9f"),
+      import("./data/chart-snapshot.js?v=c742718d4ab2ae9f")
     ]).then(([module, data]) => { chartsModule = module; chartSnapshot = data.chartSnapshot; })
       .catch((error) => { chartsPromise = undefined; throw error; });
     loaders.push(chartsPromise);
   }
 
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=18e08f782804fb80")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=c742718d4ab2ae9f")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=18e08f782804fb80")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=c742718d4ab2ae9f")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=18e08f782804fb80")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=c742718d4ab2ae9f")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (backendMatch && !renderResearchLibrary) {
-    researchLibraryPromise ||= import("./data/research-library.js?v=18e08f782804fb80")
+    researchLibraryPromise ||= import("./data/research-library.js?v=c742718d4ab2ae9f")
       .then((module) => { renderResearchLibrary = module.renderResearchLibrary; })
       .catch((error) => { researchLibraryPromise = undefined; throw error; });
     loaders.push(researchLibraryPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=18e08f782804fb80")
+    insightsPromise ||= import("./data/insights.js?v=c742718d4ab2ae9f")
       .then((module) => { insightsContent = module.renderInsightsContent; initializeWeightExplorer = module.initializeWeightExplorer; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

@@ -1,4 +1,4 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=18e08f782804fb80";
+import { topicCategoryDefinitions } from "./data/topics.js?v=c742718d4ab2ae9f";
 
 export const SITE_URL = "https://slugfester.com";
 export const SITE_NAME = "Slugfester";
