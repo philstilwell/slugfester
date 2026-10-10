@@ -26,6 +26,8 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - name: Verify standalone workflow and interrupted-work recovery
         run: npm run assessment:standalone:workflow:test
+      - name: Verify interactive scoring weights and frozen research inputs
+        run: node scripts/build-weight-explorer.mjs --check && node --test tests/weight-explorer.test.mjs
       - run: npm run site:check
       - name: Preserve browser failure evidence for review
         if: failure()

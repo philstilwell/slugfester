@@ -1,4 +1,6 @@
 import { researchEdition, researchInsights } from "./research-edition.js?v=20261009-corpus308-plain-language";
+import { renderWeightExplorer } from "./weight-explorer.js?v=18e08f782804fb80";
+export { initializeWeightExplorer } from "./weight-explorer.js?v=18e08f782804fb80";
 export { researchEdition, researchInsights };
 export const researchSnapshot = researchEdition.date;
 export const escapeResearch = (value = "") => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
@@ -28,11 +30,13 @@ export function renderInsightsContent() {
     <p class="eyebrow">Research made readable</p>
     <h1>Insights from the debates</h1>
     <p class="large">What the scores tell us about arguments, debate roles and recurring speakers.</p>
-    <p>These seven studies examine why scores differ, what fallacy and slogan labels can tell us, and whether speakers tend to rank similarly across different debates. Each section explains the finding, how to read its chart, and what remains uncertain. The linked papers and methods page provide the details.</p>
+    <p>Try changing the scoring weights below, then explore seven studies of why scores differ, what fallacy and slogan labels can tell us, and whether speakers tend to rank similarly across different debates. Each study explains its finding, how to read its chart, and what remains uncertain. The linked papers and methods page provide the details.</p>
     <p class="insights-snapshot">${researchSnapshotNote()}</p>
     <p><strong>What changed since September:</strong> the average skeptical-side lead is smaller. People who have taken both debate roles show a small average advantage when opposing the stated claim, although its strength depends on how their records are counted. The ranking study now includes ${researchEdition.ranked} people with at least three assessed debates each. The research update did not change any earlier debate scores.</p>
+    <p><a class="button primary" href="#scoring-weights">Try different scoring weights</a></p>
     <nav class="insights-index" aria-label="Research questions">${researchInsights.map((item, i) => `<a href="#${item.id}"><span>${i + 1}.</span> ${escape(item.title)}</a>`).join("")}</nav>
   </section>
+  ${renderWeightExplorer()}
   <div class="insights-stories">${researchInsights.map((item, i) => `<article class="insight-story" id="${item.id}" aria-labelledby="${item.id}-heading">
     <div class="insight-copy">
       <p class="eyebrow">${i + 1} / 7 · ${escape(item.topic)}</p>
