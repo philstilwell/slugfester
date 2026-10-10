@@ -1,4 +1,4 @@
-import { researchEdition, researchInsights } from "./research-edition.js?v=20261009-corpus308-charts-reference";
+import { researchEdition, researchInsights } from "./research-edition.js?v=20261009-corpus308-plain-language";
 export { researchEdition, researchInsights };
 export const researchSnapshot = researchEdition.date;
 export const escapeResearch = (value = "") => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
@@ -21,16 +21,16 @@ export function renderResearchCompanion(item) {
 }
 export function researchSnapshotNote() {
   const r = researchEdition;
-  return `<strong>Research snapshot: ${r.date} · ${r.counts.published} assessments.</strong> This edition adds ${r.newAssessments} assessments and recalculates the score studies. The direct slogan evidence remains the September 5 review of 187 transcripts; no newer transcripts were coded for that study. This curated sample is not representative of all public debate, and performance scores do not establish worldview truth.`;
+  return `<strong>Research snapshot: ${r.date} · ${r.counts.published} assessments.</strong> The October edition adds ${r.newAssessments} assessments to the September research and recalculates the score comparisons. The slogan counts still come from the September 5 review of 187 transcripts; no newer transcripts were reviewed for slogans. The debates were selected for the site, not sampled at random, so they are not representative of all public debate. Scores assess the arguments presented; they do not establish whether a worldview is true.`;
 }
 export function renderInsightsContent() {
   return `<section class="insights-intro">
     <p class="eyebrow">Research made readable</p>
     <h1>Insights from the debates</h1>
-    <p class="large">A larger archive changes the numbers—and sharpens the questions.</p>
-    <p>Seven rewritten research papers explain where score differences arise, what labels leave out, and how much confidence to place in rankings. Read the findings here, inspect the evidence, or download the complete papers.</p>
+    <p class="large">What the scores tell us about arguments, debate roles and recurring speakers.</p>
+    <p>These seven studies examine why scores differ, what fallacy and slogan labels can tell us, and whether speakers tend to rank similarly across different debates. Each section explains the finding, how to read its chart, and what remains uncertain. The linked papers and methods page provide the details.</p>
     <p class="insights-snapshot">${researchSnapshotNote()}</p>
-    <p><strong>What changed:</strong> the average position gap is smaller, the weighted same-speaker CON association is now clearer, and the ranked research field has grown to ${researchEdition.ranked} people. Earlier scores were not changed by this research refresh.</p>
+    <p><strong>What changed since September:</strong> the average skeptical-side lead is smaller. People who have taken both debate roles show a small average advantage when opposing the stated claim, although its strength depends on how their records are counted. The ranking study now includes ${researchEdition.ranked} people with at least three assessed debates each. The research update did not change any earlier debate scores.</p>
     <nav class="insights-index" aria-label="Research questions">${researchInsights.map((item, i) => `<a href="#${item.id}"><span>${i + 1}.</span> ${escape(item.title)}</a>`).join("")}</nav>
   </section>
   <div class="insights-stories">${researchInsights.map((item, i) => `<article class="insight-story" id="${item.id}" aria-labelledby="${item.id}-heading">

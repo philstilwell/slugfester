@@ -2,7 +2,7 @@
 export const researchEdition = {
   "date": "October 9, 2026",
   "isoDate": "2026-10-09",
-  "version": "20261009-corpus308-charts-reference",
+  "version": "20261009-corpus308-plain-language",
   "sourceCommit": "e65bc3c0b6",
   "counts": {
     "published": 308,
@@ -51,22 +51,22 @@ export const researchInsights = [
         "new eligible comparisons\nsince September"
       ]
     ],
-    "finding": "The score gap persists, but newer additions are closer.",
+    "finding": "Skeptical sides still score higher on average, but the recently added debates have a smaller gap.",
     "statistic": "5.74 points",
-    "statisticLabel": "Average non-theist advantage · 234 comparisons",
-    "explanation": "The September gap was 6.34 points; the 47 new comparisons average 3.34, bringing the combined gap down to 5.74. Skeptical sides lead in 193 assessments, religious sides in 33, with 8 ties. Support remains the largest raw scoring-area difference. Support, logic and replies contribute 74.6% of the overall gap.",
-    "detail": "The new cases include meaningful counterexamples, including Meyer–Atkins on design. A creator argument is not automatically a defense of a personal religious God; those narrower burdens and explicit inclusion decisions remain visible. The narrower truth-claim set retains a 5.77-point gap.",
+    "statisticLabel": "Average skeptical-side lead on the 100-point overall score · 234 debates",
+    "explanation": "Across 234 debates comparing a religious claim with a skeptical challenge, skeptical sides average 5.74 points higher. They score higher in 193 debates, religious sides in 33, and 8 are tied. The September average gap was 6.34 points. The 47 debates added since then have a smaller average gap of 3.34 points, lowering the combined average.",
+    "detail": "The largest difference among the six scoring areas is in Support: how well evidence and reasons justify a claim. Support, logical reasoning and replies to objections together account for 74.6% of the overall point gap. This identifies where the points differ, not why the speakers performed differently. Religious sides do sometimes score higher, as in Meyer–Atkins on design. The study also distinguishes an argument for a creator from an argument for a particular religious God. A separate check excluding debates about religion’s cultural benefits and selected historical or doctrinal questions still finds a 5.77-point gap.",
     "companion": {
       "title": "Evidence, faith, and fair assessment",
       "href": "/assets/charts/evidence-faith-and-fair-assessment-2026-10-08.pdf?v=faith-credence-3",
       "label": "From the Charts page · 16-page PDF",
       "paragraphs": [
-        "The Charts paper locates evidence neglect in specific missing work: an unjustified probability estimate, a source too narrow for a broad claim, or an unsupported step from a creator to a particular religion. An objection can expose such a gap without establishing an entire alternative worldview; a critic who makes a positive claim must support it too.",
-        "It argues that protecting faith commitments from correction can weaken evidential standards, and tentatively favors some contribution to the documented shortcomings over none. That is a reasoned, provisional interpretation—not a measured cause or a claim that faith explains most of the gap. Unequal scores alone neither demonstrate anti-religious AI bias nor establish the judging model’s impartiality. See pages 6–10 for the argument and its safeguards."
+        "The Charts paper gives concrete examples of missing support: quoting a probability without justifying it, using a narrow source to defend a much broader claim, or arguing for a creator and then treating that as proof of a particular religion. A critic can identify such a gap without proving a complete alternative worldview. If the critic makes a positive claim, that claim needs support too.",
+        "The paper argues that treating faith commitments as exempt from correction can encourage speakers to overlook missing evidence. It tentatively judges this more likely to contribute to the observed weaknesses than to have no effect. It does not measure that contribution or show that faith explains most of the score gap. A gap between religious and skeptical scores, by itself, neither proves anti-religious AI bias nor shows that the AI is impartial. Pages 6–10 explain this argument and its limits."
       ],
-      "scope": "A complementary measure, not a second estimate of 5.74: the paper’s October 8 snapshot covers 226 debates and 5,405 moves. Supporting and challenging moves average 66.5 and 74.2 on evidence alone—a 7.7-point gap, using equal debate weights and no move-importance weights. The gap also remains when comparing constructive moves or replies separately. These overlapping records are not an independent replication of this section’s 234 overall-score comparisons; see page 14 for the calculation details."
+      "scope": "These are different scores: the PDF’s 7.7-point gap measures evidence alone, while this section’s 5.74-point gap uses the overall score. The PDF’s October 8 records cover 226 debates and 5,405 moves—individual arguments or replies. Moves supporting the classified religious claim average 66.5 for evidence; moves challenging it average 74.2. Each debate counts equally, and each move counts equally within its side. The evidence gap remains when arguments presenting a case and replies to objections are compared separately. The PDF and this section’s 234 overall-score comparisons use many of the same debates, so they are not an independent replication. See page 14 for the calculations."
     },
-    "limitation": "This curated archive measures assessed performances, not worldview truth. The faith-to-debate hypothesis remains a proposed explanation, not an established psychological cause. Repeated speakers and judging preferences are not eliminated by resampling.",
+    "limitation": "These scores judge the arguments presented in selected debates; they do not establish whether a religion or worldview is true. The proposed link between faith and weaker evidence is an explanation to investigate, not a demonstrated psychological cause. Repeating calculations with the same records cannot remove the AI’s judging preferences or the influence of speakers who appear many times.",
     "pdf": "why-do-the-theist-sides-score-lower",
     "figure": "p1-dimensions",
     "links": [
@@ -79,7 +79,8 @@ export const researchInsights = [
         "label": "Meyer–Atkins: a counterexample to the average"
       }
     ],
-    "method": "Reconstruct scores with official move importance, section weights and rounding. Subtract the religious-side score from the skeptical-side score within each debate, then average with one vote per debate. Draw whole debates with replacement 20,000 times to examine stability. Classify the position argued, not the person's identity or PRO/CON label.",
+    "reading": "Each dot is the average skeptical-side score minus the religious-side score in one scoring area. A dot to the right of zero means the skeptical side scores higher; zero means equal averages. Each line covers the middle 95% of results from 20,000 samples drawn from the saved debates, allowing the same debate to be selected more than once. Longer lines mean the estimate changes more with the mix of debates. The six area differences have not yet been multiplied by their weights in the overall score, so do not add them together. These lines do not account for every possible judging error.",
+    "method": "First reproduce each overall score using the site’s rules for argument importance, section weights and rounding. Within each debate, subtract the religious-side score from the skeptical-side score. Average those differences, counting each debate equally. To check how much the answer depends on the selected debates, draw 20,000 new samples from the saved debates, allowing repeats. Classify each side by the claim it argues, not by the speaker’s personal religion or its PRO/CON label.",
     "rows": [
       [
         "Comparable religious-versus-skeptical cases",
@@ -108,8 +109,7 @@ export const researchInsights = [
     "height": 918,
     "figureTitle": "Differences across six scoring areas",
     "figureScope": "234 paired, officially weighted comparisons",
-    "reading": "Dots show averages; lines contain the middle 95% from 20,000 repeated draws of the stated records. Zero means no average difference. These ranges describe sensitivity to the saved observations, not all sources of judging error or a representative population. Right of zero favors the skeptical side. These are area scores before weighting, not additive contributions.",
-    "alt": "Differences across six scoring areas. The September gap was 6.34 points; the 47 new comparisons average 3.34, bringing the combined gap down to 5.74. Skeptical sides lead in 193 assessments, religious sides in 33, with 8 ties. Support remains the largest raw scoring-area difference. Support, logic and replies contribute 74.6% of the overall gap.",
+    "alt": "Differences across six scoring areas. Across 234 debates comparing a religious claim with a skeptical challenge, skeptical sides average 5.74 points higher. They score higher in 193 debates, religious sides in 33, and 8 are tied. The September average gap was 6.34 points. The 47 debates added since then have a smaller average gap of 3.34 points, lowering the combined average.",
     "pages": 8,
     "figures": 3,
     "version": "20261009-corpus308"
@@ -134,12 +134,12 @@ export const researchInsights = [
         "stable research groups\nnot the browsing categories"
       ]
     ],
-    "finding": "The topic differences remain useful; exact topic rankings remain uncertain.",
+    "finding": "Skeptical sides average higher scores in all eight research topic groups, but the size of the gap varies.",
     "statistic": "7.28 vs 3.04",
-    "statisticLabel": "Mean score gaps: religion, culture and meaning vs resurrection and history",
-    "explanation": "Religion, culture and meaning has the largest observed gap across 25 comparisons; resurrection and historical evidence is closer across 24. The former leads only about 32% of repeated-draw calculations, so the apparent ordering should not be treated as settled. All eight observed mean gaps favor the skeptical side.",
-    "detail": "The paper keeps eight research groups to make editions comparable, while the website's browsing categories are more detailed. It examines the step from religious usefulness to truth, from an origin cause to a fuller theology, and from sincere testimony to a miracle. Support-score gaps persist in both constructive cases and replies.",
-    "limitation": "Topics are exploratory, and the categories mix different speakers, questions and opponents. Overlapping uncertainty makes precise ordering fragile. The eight groups are not the current browsing categories.",
+    "statisticLabel": "Average skeptical-side leads, in points: religion, culture and meaning vs resurrection and history",
+    "explanation": "The largest average gap is 7.28 points in the 25 debates about religion, culture and meaning. The smallest is 3.04 points in the 24 debates about resurrection and historical evidence. However, when the analysis repeatedly draws new samples from the recorded debates, religion, culture and meaning has the largest gap only about 32% of the time. It leads in the current records, but another topic often leads when the mix of debates changes.",
+    "detail": "The paper examines the extra reasoning needed to get from a religion being useful to its being true, from a cause of the universe to a religious God, or from sincere testimony to a miracle actually occurring. The skeptical-side advantage in evidence and support appears both in arguments presenting a case and in replies to objections. The study retains September’s eight topic groups so the two editions can be compared; the website’s browsing categories are more detailed.",
+    "limitation": "These results do not show that the topic itself causes a larger or smaller gap. Different topics include different speakers, opponents and questions. The estimates are not precise enough to establish a reliable ordering of all eight topics from largest to smallest gap.",
     "pdf": "where-is-the-theist-disadvantage-largest",
     "figure": "p2-moves",
     "links": [
@@ -152,7 +152,8 @@ export const researchInsights = [
         "label": "Horn–Paulogia: sincerity versus stronger historical claims"
       }
     ],
-    "method": "Assign each of the 234 included comparisons once to one of eight research groups. Calculate paired score gaps and within-topic resampling ranges. Move-kind comparisons average qualifying moves within each side before subtracting; both sides must have that kind of move. These are not official weighted overall scores.",
+    "reading": "This figure compares evidence-and-support scores for individual arguments and replies, not overall debate scores. Each dot shows how far the skeptical side leads on average for the stated kind of move. Both sides must contain that kind to enter the comparison. Each line covers the middle 95% of results when the recorded debates are sampled 20,000 times, allowing repeats. A line entirely right of zero keeps the skeptical advantage throughout that range. The rows overlap, so their counts must not be added.",
+    "method": "Assign each of the 234 included debates to one of eight research topic groups. Within each topic, calculate the average skeptical-minus-religious overall score and repeat the calculation on samples drawn from that topic’s debates. For the separate argument-and-reply comparisons, average the relevant move scores for each side, subtract the religious-side average, then average the differences across debates. Include a debate only if both sides contain that kind of move. These move averages do not use the importance weights of the overall debate score.",
     "rows": [
       [
         "Research comparisons / groups",
@@ -181,8 +182,7 @@ export const researchInsights = [
     "height": 746,
     "figureTitle": "Support gap by kind of assessed move",
     "figureScope": "Both sides must contain the stated move kind; equal debate weights",
-    "reading": "Dots show averages; lines contain the middle 95% from 20,000 repeated draws of the stated records. Zero means no average difference. These ranges describe sensitivity to the saved observations, not all sources of judging error or a representative population. Each side’s qualifying moves are averaged before comparing sides. Rows overlap; these are not official weighted overall scores.",
-    "alt": "Support gap by kind of assessed move. Religion, culture and meaning has the largest observed gap across 25 comparisons; resurrection and historical evidence is closer across 24. The former leads only about 32% of repeated-draw calculations, so the apparent ordering should not be treated as settled. All eight observed mean gaps favor the skeptical side.",
+    "alt": "Support gap by kind of assessed move. The largest average gap is 7.28 points in the 25 debates about religion, culture and meaning. The smallest is 3.04 points in the 24 debates about resurrection and historical evidence. However, when the analysis repeatedly draws new samples from the recorded debates, religion, culture and meaning has the largest gap only about 32% of the time. It leads in the current records, but another topic often leads when the mix of debates changes.",
     "pages": 9,
     "figures": 3,
     "version": "20261009-corpus308"
@@ -207,12 +207,12 @@ export const researchInsights = [
         "current score comparisons\nnot new slogan reviews"
       ]
     ],
-    "finding": "The direct finding concerns criticism-blocking slogans—and remains a dated study.",
+    "finding": "Slogans used to block criticism were detected more often on religious sides in the September transcript review.",
     "statistic": "0.56 vs 0.16",
-    "statisticLabel": "Protected uses per 10,000 words · historical 187-transcript review",
-    "explanation": "Recalculating the saved direct-review records reproduces 77 religious-side protected uses versus 19 skeptical-side uses. Most reviewed debates—144 of 187—have none detected on either side. The broader unsupported-slogan difference is less secure: its repeated-draw range crosses zero.",
-    "detail": "The revised paper separately checks 234 current scorecards: 33.87% versus 13.40% of moves meet a combined low-support, low-clarity and low-care rule, averaging within debates. That warning pattern is not direct slogan detection. No new transcripts were coded for this edition.",
-    "limitation": "The direct study used one AI reading per transcript, not independent double coding. Caption errors, missed uses and systematic reader bias remain possible. The newer score-based percentages cannot extend or replace the historical direct counts.",
+    "statisticLabel": "Criticism-blocking slogan uses per 10,000 words · religious vs skeptical sides · 187 transcripts",
+    "explanation": "A ‘protected slogan’ means a phrase used instead of a supporting reason and also used to shut down criticism. The September 5 review detected 77 such uses on religious sides and 19 on skeptical sides. After allowing for how much each side spoke and giving each debate equal weight, the rates are 0.56 and 0.16 per 10,000 words. Most debates—144 of 187—had none detected on either side. For the broader category of slogans lacking support, without necessarily blocking criticism, the evidence does not clearly establish a difference between the sides.",
+    "detail": "A separate check of 234 current scorecards finds that 33.87% of religious-side moves and 13.40% of skeptical-side moves score below all three thresholds: 70 for Support, 80 for Clarity and 80 for Care. Each debate contributes equally to those percentages. A move is an individual argument or reply; Care measures whether confidence fits the evidence and the opponent is represented fairly. Low scores in these areas can flag weak argumentation, but they do not identify a slogan. No additional transcripts were reviewed for slogans in the October update.",
+    "limitation": "Each transcript received one AI review, not two independent reviews. Transcription errors, missed examples and consistent AI misreadings could affect the counts. The slogan finding applies to the 187 September transcripts; the newer scorecard check cannot establish how often slogans occur in the added debates.",
     "pdf": "are-theist-arguments-more-often-slogan-like",
     "figure": "p3-direct-rates",
     "links": [
@@ -225,7 +225,8 @@ export const researchInsights = [
         "label": "Explore the Lennox assessments"
       }
     ],
-    "method": "For the September direct study, divide detected uses by each side's attributed substantive caption words, multiply by 10,000, then average with equal debate weight. Protected slogans require both substituting for a reason and positively blocking criticism. Recalculate published counts without commissioning new judgments. The separate current warning rule requires Support <70, Clarity <80 and Care <80 on the same scored move.",
+    "reading": "Rust bars represent religious sides; teal bars represent skeptical sides. The heights show slogan uses per 10,000 words, first calculated within each debate and then averaged with each debate counting equally. Both panels use the same scale and start at zero. ‘Protected’ slogans are the criticism-blocking subset of unsupported slogans: do not add the two panels’ counts. All direct slogan counts come from the September review, not the expanded October archive.",
+    "method": "Use the saved September transcript reviews. For each side in each debate, divide the detected slogan count by the number of caption words attributed to that side’s substantive speech and multiply by 10,000. Then average those rates, counting each debate equally. A protected slogan must replace a supporting reason and actively block criticism. The separate October scorecard check counts moves that simultaneously score below 70 for Support, 80 for Clarity and 80 for Care. It does not classify those moves as slogans.",
     "rows": [
       [
         "Direct review date / transcripts",
@@ -268,8 +269,7 @@ export const researchInsights = [
     "height": 770,
     "figureTitle": "Historical direct review: September 5, 2026",
     "figureScope": "187 previously reviewed transcripts, not the expanded archive",
-    "reading": "Rust is theist; teal is non-theist. Each debate receives equal weight after allowing for speech length. Both panels start at zero on the same scale. Protected slogans are a subset of unsupported slogans; do not add them. These dated counts have not been extended to new transcripts.",
-    "alt": "Historical direct review: September 5, 2026. Recalculating the saved direct-review records reproduces 77 religious-side protected uses versus 19 skeptical-side uses. Most reviewed debates—144 of 187—have none detected on either side. The broader unsupported-slogan difference is less secure: its repeated-draw range crosses zero.",
+    "alt": "Historical direct review: September 5, 2026. A ‘protected slogan’ means a phrase used instead of a supporting reason and also used to shut down criticism. The September 5 review detected 77 such uses on religious sides and 19 on skeptical sides. After allowing for how much each side spoke and giving each debate equal weight, the rates are 0.56 and 0.16 per 10,000 words. Most debates—144 of 187—had none detected on either side. For the broader category of slogans lacking support, without necessarily blocking criticism, the evidence does not clearly establish a difference between the sides.",
     "pages": 8,
     "figures": 3,
     "version": "20261009-corpus308"
@@ -294,12 +294,12 @@ export const researchInsights = [
         "people observed\nin both roles"
       ]
     ],
-    "finding": "The weighted same-speaker CON gap is now positive across its displayed range.",
+    "finding": "The side opposing the debate’s stated claim scores higher on average, but this does not prove that opposing is inherently easier.",
     "statistic": "4.44 → 1.33",
-    "statisticLabel": "Raw role gap versus weighted same-speaker comparison · score points",
-    "explanation": "CON averages 4.44 points higher across 291 comparable debates. Comparing 37 people who appear in both roles gives a smaller weighted gap of 1.33, with a middle-95% range of 0.32–2.30. Unlike September, this weighted range no longer includes zero.",
-    "detail": "The equal-person estimate is 1.09 and its range still narrowly crosses zero. Balancing religious orientations gives 1.73. These calculations answer different questions; their reduction from the raw gap is not a measured percentage of causation.",
-    "limitation": "Roles are not randomly assigned. Even the same people face different topics and opponents. A positive weighted range supports investigating a modest residual association, not awarding an automatic bonus or penalty to either role.",
+    "statisticLabel": "CON’s average lead in points: all comparable debates → comparing the same people in both roles",
+    "explanation": "PRO supports the debate’s stated claim; CON opposes it. Neither label necessarily means religious or skeptical. Across 291 comparable debates, CON averages 4.44 points higher. Among the 37 people who have taken both roles, their CON scores average 1.33 points higher when people with more appearances in both roles count more heavily. Repeatedly sampling these speakers gives a middle-95% range of 0.32–2.30 points: the advantage stays above zero throughout that range.",
+    "detail": "If each of those 37 people counts equally instead, the average CON lead is 1.09 points, and its range narrowly includes no advantage. Another check gives equal weight to debates where the religious side is PRO and debates where it is CON; that gap is 1.73 points. These checks show that the apparent advantage depends partly on who fills each role and how the records are counted. They do not measure how much of the gap is caused by the role itself.",
+    "limitation": "Speakers were not randomly assigned to roles, and their topics and opponents change between debates. The smaller gap among people who took both roles is evidence of an association, not proof that taking CON raises a person’s score. These results do not justify automatically adding or subtracting points for either role.",
     "pdf": "does-the-con-side-have-an-inherent-advantage",
     "figure": "p4-estimates",
     "links": [
@@ -312,7 +312,8 @@ export const researchInsights = [
         "label": "Explore individual records"
       }
     ],
-    "method": "Calculate CON minus PRO within debates. Compare religious orientations at equal 50/50 weight. For people observed in both roles, compare their role-specific means, first equally and then with weight n(PRO) × n(CON) / total appearances. Resample debates for debate estimates and speakers for same-person estimates.",
+    "reading": "Each dot is an average CON-minus-PRO score. Right of zero favors CON; left favors PRO. The rows use different comparisons: all debates, equal weighting of the two religious-side role assignments, and the same speakers compared across roles with equal or unequal speaker weights. Lines show the middle 95% of 20,000 repeated samples. The first two rows sample debates; the last two sample speakers. The weighted same-speaker line stays above zero, but none of these checks randomly assigned people to roles.",
+    "method": "For the overall comparison, subtract PRO’s score from CON’s in each debate and average. For the religious-role check, give equal total weight to debates with religious PRO sides and those with religious CON sides. For people who took both roles, compare each person’s average CON and PRO scores. Average those differences first with each person counting equally, then with a weight equal to their PRO appearances times CON appearances divided by total appearances. This gives greater influence to people with more evidence in both roles. Repeated samples draw debates for the first two checks and speakers for the last two.",
     "rows": [
       [
         "Comparable debates",
@@ -345,8 +346,7 @@ export const researchInsights = [
     "height": 746,
     "figureTitle": "Role estimates answer different questions",
     "figureScope": "Debate draws for first two rows; speaker draws for last two",
-    "reading": "Dots show averages; lines contain the middle 95% from 20,000 repeated draws of the stated records. Zero means no average difference. These ranges describe sensitivity to the saved observations, not all sources of judging error or a representative population. Right of zero favors CON. The weighted same-speaker range is now above zero, but no comparison randomly assigns roles, opponents or topics.",
-    "alt": "Role estimates answer different questions. CON averages 4.44 points higher across 291 comparable debates. Comparing 37 people who appear in both roles gives a smaller weighted gap of 1.33, with a middle-95% range of 0.32–2.30. Unlike September, this weighted range no longer includes zero.",
+    "alt": "Role estimates answer different questions. PRO supports the debate’s stated claim; CON opposes it. Neither label necessarily means religious or skeptical. Across 291 comparable debates, CON averages 4.44 points higher. Among the 37 people who have taken both roles, their CON scores average 1.33 points higher when people with more appearances in both roles count more heavily. Repeatedly sampling these speakers gives a middle-95% range of 0.32–2.30 points: the advantage stays above zero throughout that range.",
     "pages": 7,
     "figures": 2,
     "version": "20261009-corpus308"
@@ -371,12 +371,12 @@ export const researchInsights = [
         "higher-scoring sides\nwith a fallacy tag"
       ]
     ],
-    "finding": "Named fallacies neither exhaust argument quality nor determine the result.",
+    "finding": "A side can score lower without a named fallacy—and score higher despite having one.",
     "statistic": "54.4%",
     "statisticLabel": "Lower-scoring sides without a named-fallacy tag · 161 / 296",
-    "explanation": "The combined untagged-loss rate is down from 61.7% in September. It is 80.8% in the earlier process and 17.8% later. The overall percentage depends heavily on the mixture of assessment procedures, so it should not become a universal claim about debate.",
-    "detail": "Among 158 comparable untagged losses, 118 trail in five or six scoring areas. Conversely, 75 higher-scoring sides carry a fallacy tag. Read the particular inference and its importance, not just the label count.",
-    "limitation": "Tags are accepted annotations, not an exhaustive or independent census of errors. Counts cover assessments rather than independent videos; the shared source for assessments 13 and 125 is disclosed.",
+    "explanation": "In 161 of the 296 assessments with unequal scores, the lower-scoring side has no named logical-fallacy label. That is 54.4%, down from 61.7% in September. The rate differs sharply between assessments made with earlier procedures (80.8%) and later procedures (17.8%). This percentage therefore depends on which assessment procedures are represented, not just on the arguments in the debates.",
+    "detail": "Of 158 lower-scoring sides with no fallacy label and fully comparable scoring records, 118 score lower in five or all six scoring areas. Their weaknesses extend beyond a missing fallacy label. Conversely, 75 higher-scoring sides do have a fallacy label. To understand a score, examine the argument, the criticism and their importance to the debate; counting labels alone is not enough.",
+    "limitation": "A missing label does not prove an argument contains no fallacy. The labels are part of the AI assessments, not a separate check for every possible error. The counts refer to assessments: assessments 13 and 125 cover the same source video in different formats.",
     "pdf": "debates-are-usually-lost-without-a-named-fallacy",
     "figure": "p5-cohorts",
     "links": [
@@ -389,7 +389,8 @@ export const researchInsights = [
         "label": "Read the assessment process"
       }
     ],
-    "method": "Exclude 12 ties, identify each lower-scoring side, and count whether it has any public named-fallacy tag. Divide by decisive assessments overall and within each process. Separately compare weighted scoring areas for comparable untagged losses. Count label instances separately from tagged moves.",
+    "reading": "Each fraction counts lower-scoring sides with no named-fallacy label, divided by all assessments with unequal scores in that group. The bars show the corresponding percentages. The dark overall bar includes the other groups; it is not an additional set of debates. A missing label does not mean an argument is error-free. These are assessment counts, including two assessments of one shared video.",
+    "method": "Set aside the 12 tied assessments. For every remaining assessment, identify the lower-scoring side and check whether any of its moves has a public logical-fallacy label. Calculate the share with no label, both overall and by assessment procedure. Where complete scoring records are available, also compare the sides in each scoring area using the official weights. Count labels and labeled moves separately, since one move can have more than one label.",
     "rows": [
       [
         "Archive: untagged losses",
@@ -418,8 +419,7 @@ export const researchInsights = [
     "height": 724,
     "figureTitle": "Lower-scoring sides with no named-fallacy tag",
     "figureScope": "296 decisive assessments; 12 ties excluded",
-    "reading": "Fractions count lower-scoring sides without a fallacy label over all decisive results in each group. The dark total includes the other groups. No tag does not mean no error. Counts are assessments, including the disclosed shared-video pair.",
-    "alt": "Lower-scoring sides with no named-fallacy tag. The combined untagged-loss rate is down from 61.7% in September. It is 80.8% in the earlier process and 17.8% later. The overall percentage depends heavily on the mixture of assessment procedures, so it should not become a universal claim about debate.",
+    "alt": "Lower-scoring sides with no named-fallacy tag. In 161 of the 296 assessments with unequal scores, the lower-scoring side has no named logical-fallacy label. That is 54.4%, down from 61.7% in September. The rate differs sharply between assessments made with earlier procedures (80.8%) and later procedures (17.8%). This percentage therefore depends on which assessment procedures are represented, not just on the arguments in the debates.",
     "pages": 8,
     "figures": 3,
     "version": "20261009-corpus308"
@@ -444,12 +444,12 @@ export const researchInsights = [
         "verified comparable\nmove scores"
       ]
     ],
-    "finding": "The process-level difference has narrowed, but comparability still needs testing.",
+    "finding": "Later assessment procedures produce lower average scores; we have not established whether they judge the same performance more strictly.",
     "statistic": "81.32 vs 78.98",
     "statisticLabel": "Earlier versus later average side scores · 179 / 112 debates",
-    "explanation": "The later group's mean is 2.35 points lower, rather than September's 2.82. Of 71 returning people, 56 have lower later averages, 13 higher and 2 unchanged. Annotation rates and the set of exact marks used also differ.",
-    "detail": "All 7,032 comparable move scores and 582 overall side scores reconstruct correctly. That verifies the arithmetic, not whether both procedures applied the same judging standard. The next reassessment should test shared source material and publish substantive disagreements.",
-    "limitation": "The same people are appearing in different debates, not having the same performance judged twice. Different topics and opponents can contribute. A newer model is not automatically more accurate, and subtracting process means is not a justified public-score correction.",
+    "explanation": "The 179 debates assessed with earlier procedures have an average side score of 81.32; the 112 assessed with later procedures average 78.98. The difference is 2.35 points, smaller than the 2.82-point difference in September. Of 71 people appearing in both groups, 56 average lower scores in their later-procedure debates, 13 average higher scores, and 2 are unchanged. How often fallacies and biases are labeled, and which individual score values are used, also differs.",
+    "detail": "Recalculating from the saved assessment records reproduces all 7,032 comparable argument-and-reply scores and all 582 overall side scores. The arithmetic is correct. That does not establish that an 80 under one procedure represents the same quality as an 80 under another. A stronger test would have both procedures assess the same debates and then publish where their judgments differ.",
+    "limitation": "People appearing in both groups gave different performances on different topics against different opponents. Their lower later averages could reflect those differences, stricter judging, or both. A newer AI model is not automatically more accurate. The current evidence does not justify raising later scores simply to match the earlier average.",
     "pdf": "are-all-slugfester-assessments-on-the-same-scale",
     "figure": "p6-bridge",
     "links": [
@@ -462,7 +462,8 @@ export const researchInsights = [
         "label": "Inspect the reconstruction and process checks"
       }
     ],
-    "method": "Reconstruct all comparable scores from locked records. Compare equal-debate score midpoints, dimension patterns, exact mark frequencies and tag rates by scoring-record format. Follow people appearing in both groups while explicitly retaining topic and opponent limitations.",
+    "reading": "Each dot represents one person who appears in debates assessed by both procedures. Read their earlier-procedure average along the bottom axis and their later-procedure average along the left axis. A dot below the diagonal means that person’s later-procedure average is lower. The axes show only the range occupied by these scores, not the full 0–100 scale. These are different debates by the same person—not two judgments of the same performance.",
+    "method": "Recalculate the comparable scores from the saved final assessment records. For each debate, average the two sides’ scores; then average those values within each procedure group, counting each debate equally. Also compare scoring-area results, the frequency of individual score values, and fallacy and bias labels. Separately compare earlier- and later-procedure averages for people represented in both groups. These comparisons do not hold their topics, opponents or performances constant.",
     "rows": [
       [
         "Earlier / later debates",
@@ -492,8 +493,7 @@ export const researchInsights = [
     "height": 1055,
     "figureTitle": "Returning speakers across assessment processes",
     "figureScope": "One dot per person appearing in both groups",
-    "reading": "The horizontal coordinate is the earlier average and the vertical coordinate the later average. Below the diagonal means lower later. Both axes enlarge the observed score range. These are different performances, not the same debate judged twice.",
-    "alt": "Returning speakers across assessment processes. The later group's mean is 2.35 points lower, rather than September's 2.82. Of 71 returning people, 56 have lower later averages, 13 higher and 2 unchanged. Annotation rates and the set of exact marks used also differ.",
+    "alt": "Returning speakers across assessment processes. The 179 debates assessed with earlier procedures have an average side score of 81.32; the 112 assessed with later procedures average 78.98. The difference is 2.35 points, smaller than the 2.82-point difference in September. Of 71 people appearing in both groups, 56 average lower scores in their later-procedure debates, 13 average higher scores, and 2 are unchanged. How often fallacies and biases are labeled, and which individual score values are used, also differs.",
     "pages": 8,
     "figures": 4,
     "version": "20261009-corpus308"
@@ -518,12 +518,12 @@ export const researchInsights = [
         "people with at least\nthree eligible appearances"
       ]
     ],
-    "finding": "Yes—the rankings capture a strong, repeatable pattern of assessed performance.",
+    "finding": "Yes—speakers who rank higher using one half of their assessed debates generally also rank higher using the other half.",
     "statistic": "0.87",
-    "statisticLabel": "Median ranking agreement between random halves of the record · 1.00 means identical order",
-    "explanation": "Among the 31 people with at least six appearances, 3,000 random splits of their debate records produce strongly similar rankings: median correlation 0.87, with the middle 95% of results between 0.81 and 0.92. The broad ordering is therefore not dependent on one particular half of the assessed record. This is strong evidence of stability within the catalogue, not merely a useful way to browse it.",
-    "detail": "Two further checks support that conclusion. Dividing records by assessment-number order gives agreement of 0.84; adjusting for average score differences between assessment processes leaves the 57-person ordering almost unchanged (0.99 agreement). The evidence supports broad comparisons of recorded performance, especially for well-represented speakers. Uncertain neighboring places do not negate this stable overall pattern.",
-    "limitation": "Stability concerns broad ordering, not every exact place: neighboring means are typically only 0.20 points apart. These correlations are not accuracy percentages or future-win probabilities. The fixed 57-person field contains 416 appearances; topics and opponents are unequal, and repeatability alone cannot establish that the judging is correct.",
+    "statisticLabel": "Typical agreement between two rankings built from separate halves of each person’s debates · 1.00 means identical order",
+    "explanation": "For the 31 people with at least six assessed debates, the study randomly divides each person’s debates into two halves, averages their scores in each half, and builds two rankings. It repeats this 3,000 times. The typical agreement between the two rankings is 0.87 on a scale where 1.00 means identical order and 0 means no agreement in rank order. The middle 95% of the results run from 0.81 to 0.92. This is strong evidence that the differences between higher- and lower-scoring speakers recur across their recorded debates.",
+    "detail": "The result also holds when each person’s debates are split by assessment number instead of at random: ranking agreement is 0.84. In a separate check, subtracting the average score for each assessment procedure from scores produced by that procedure leaves the full 57-person ranking almost unchanged (0.99 agreement). Readers can therefore take repeated differences between higher- and lower-scoring speakers seriously. The strongest direct split-half evidence comes from the 31 people with six or more assessed debates. It does not establish that someone in fifth place reliably outperforms someone in sixth: neighboring averages are typically just 0.20 points apart.",
+    "limitation": "An agreement of 0.87 does not mean the rankings are 87% accurate or predict an 87% chance of winning. These tests concern the saved scores, not future debates. The full research ranking contains 57 people with at least three assessed debates each (416 appearances in total). They face different topics and opponents, and a judging system can repeat its preferences consistently without judging correctly.",
     "pdf": "do-slugfester-rankings-measure-stable-performance",
     "figure": "p7-ranges",
     "links": [
@@ -540,7 +540,8 @@ export const researchInsights = [
         "label": "Open current rankings"
       }
     ],
-    "method": "Measure Spearman rank correlation between two halves of each person's record in 3,000 random splits, restricted to the 31 people with at least six appearances. The 0.81–0.92 interval covers the middle 95% of split results, not a population confidence interval. Check assessment-number splits (not necessarily recording chronology) and process-mean adjustment separately. For the full 57-person field with at least three appearances, compare 20,000 resampled ranks with a normal model using pooled within-person variation. Shared debate weights preserve opponent pairing. These complementary checks reuse the same archive; they are not independent replications.",
+    "reading": "The figure shows the 15 people with the highest averages, but calculates ranks among all 57 eligible people. Dark dots mark their places using all their recorded scores. Solid teal lines cover the middle 95% of places obtained when each person’s recorded scores are sampled repeatedly. Dashed rust lines use a model that allows score variation estimated from the whole group, including for speakers whose few recorded scores are identical. Numbers in parentheses count assessed debates. Overlapping lines mean exact places are uncertain; they do not overturn the separate finding that higher- and lower-scoring speakers usually remain ordered similarly when their records are split in half.",
+    "method": "For the 31 people with six or more assessed debates, randomly split each person’s scores into two halves and rank the people by their average in each half. Repeat 3,000 times. Compare the two orders using Spearman rank correlation: 1 means identical ordering, 0 means no rank-order agreement, and −1 means reversed ordering. The 0.81–0.92 range contains the middle 95% of these split results, not a confidence range for all debaters. Separately split by assessment number, which need not match recording date, and check rankings after subtracting each procedure’s average score. For all 57 people with at least three debates, calculate possible rank ranges by repeatedly sampling their recorded scores and by using a model that estimates score variation across people. A further check keeps opponents from the same debate linked by giving their records the same sampling weight. All these checks reuse the same archive, not independently collected evidence.",
     "rows": [
       [
         "Ranked people / appearances",
@@ -584,8 +585,7 @@ export const researchInsights = [
     "height": 1384,
     "figureTitle": "Leading averages have overlapping rank ranges",
     "figureScope": "Highest 15 means shown; all 57 eligible people included in calculation",
-    "reading": "Dark dots are displayed places. Teal lines contain the middle 95% of ranks obtained by drawing again from recorded scores. Dashed rust lines use a model allowing variation estimated across the group. Parentheses count appearances. Neither line is a future-win probability.",
-    "alt": "Leading averages have overlapping rank ranges. Among the 31 people with at least six appearances, 3,000 random splits of their debate records produce strongly similar rankings: median correlation 0.87, with the middle 95% of results between 0.81 and 0.92. The broad ordering is therefore not dependent on one particular half of the assessed record. This is strong evidence of stability within the catalogue, not merely a useful way to browse it.",
+    "alt": "Leading averages have overlapping rank ranges. For the 31 people with at least six assessed debates, the study randomly divides each person’s debates into two halves, averages their scores in each half, and builds two rankings. It repeats this 3,000 times. The typical agreement between the two rankings is 0.87 on a scale where 1.00 means identical order and 0 means no agreement in rank order. The middle 95% of the results run from 0.81 to 0.92. This is strong evidence that the differences between higher- and lower-scoring speakers recur across their recorded debates.",
     "pages": 12,
     "figures": 3,
     "version": "20261009-corpus308-stability"
