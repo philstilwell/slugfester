@@ -2,6 +2,7 @@
 """Typeset the seven authored manuscripts. All declared PDF fonts are embedded."""
 from __future__ import annotations
 import hashlib
+import argparse
 import html
 import json
 import re
@@ -181,14 +182,25 @@ The [data and methods page](https://slugfester.com/insights/data-and-methods/) l
 """
 
 def main():
-    OUTPUT.mkdir(parents=True,exist_ok=True);manifest=[]
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--paper',type=int,choices=range(1,8),help='Rebuild just one paper, preserving other PDF bytes and manifest entries')
+    args=parser.parse_args()
+    OUTPUT.mkdir(parents=True,exist_ok=True)
+    manifest_path=HERE/'publication-manifest.json'
+    manifest=json.loads(manifest_path.read_text()) if args.paper else []
+    if args.paper:
+        for entry in manifest:
+            if entry['id']!=args.paper:
+                assert hashlib.sha256((ROOT/entry['path']).read_bytes()).hexdigest()==entry['sha256'],entry['path']
+        manifest=[entry for entry in manifest if entry['id']!=args.paper]
     for raw_meta in META:
+        if args.paper and raw_meta['id']!=args.paper:continue
         meta=json.loads(expand_metrics(json.dumps(raw_meta)))
         src=HERE/'manuscripts'/f"{meta['id']:02d}.md";text=src.read_text()+COMMON_METHODS;path=OUTPUT/(meta['file']+'.pdf')
         story,nfig=parse(meta,text);doc=Document(path,meta);doc.multiBuild(story)
         pdf=PdfReader(path);words=len(re.findall(r'\b\w+\b',expand_metrics(text)))
         manifest.append(dict(**meta,pages=len(pdf.pages),figures=nfig,manuscript_words=words,path=str(path.relative_to(ROOT)),sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
         print(f"Paper {meta['id']}: {len(pdf.pages)} pages, {nfig} figures, {words:,} manuscript words")
-    (HERE/'publication-manifest.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
+    manifest_path.write_text(json.dumps(sorted(manifest,key=lambda entry:entry['id']),indent=2,ensure_ascii=False)+'\n')
 
 if __name__=='__main__':main()

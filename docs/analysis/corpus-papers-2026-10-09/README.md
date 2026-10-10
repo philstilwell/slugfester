@@ -99,3 +99,20 @@ those tags when publishing a later edition.
 
 The September analysis package remains intact. Earlier PDFs are preserved in
 repository history. No paid AI service was used for this refresh.
+
+## Stability interpretation revision
+
+Paper seven and its shared site summaries now lead with the strong observed
+repeatability: 0.87 median split-half agreement (31 people; middle 95% of split
+results 0.81–0.92), 0.84 under assessment-number splits, and 0.99 agreement
+after process-mean centering in the 57-person field. Exact-rank precision is
+distinguished from broad stability; judging validity and future performance
+remain separate questions. These complementary checks reuse the same archive.
+No source records, results, scores, figures, or other six PDFs were changed.
+
+`python3 docs/analysis/corpus-papers-2026-10-09/verify_stability.py` independently
+reproduces the split-half, ordered-split, process-centering and repeatability
+calculations using a separate tied-rank implementation. To rebuild only this
+paper without changing the other PDFs, run `build_papers.py --paper 7`, then
+`sync_site.py` and the normal checks. The stability revision uses a new cache
+version while preserving the October 9 data snapshot and public filenames.

@@ -2,7 +2,7 @@
 export const researchEdition = {
   "date": "October 9, 2026",
   "isoDate": "2026-10-09",
-  "version": "20261009-corpus308",
+  "version": "20261009-corpus308-stability",
   "sourceCommit": "e65bc3c0b6",
   "counts": {
     "published": 308,
@@ -492,28 +492,28 @@ export const researchInsights = [
     "id": "ranking-confidence",
     "topic": "Reading rankings",
     "title": "Do Slugfester Rankings Measure Stable Performance?",
-    "short": "A leaderboard with honest uncertainty",
-    "subtitle": "A larger fixed field, repeatable broad patterns, and overlapping exact places.",
+    "short": "Strong evidence of repeatable performance",
+    "subtitle": "Strong repeatability in assessed performance, with less certainty about neighboring places.",
     "stats": [
       [
         "0.87",
         "median order agreement\nbetween random halves"
       ],
       [
-        "0.20",
-        "typical score gap between\nneighboring means"
+        "0.99",
+        "order agreement after\nprocess-mean adjustment"
       ],
       [
         "57",
         "people with at least\nthree eligible appearances"
       ]
     ],
-    "finding": "The broad order repeats better than exact places.",
-    "statistic": "0.20 points",
-    "statisticLabel": "Typical gap between neighboring means in the fixed research field",
-    "explanation": "The field now contains 57 people and 416 appearances, up from 50 and 334. Typical rank-range widths are 14 places when drawing again from recorded scores and 21 under a model allowing wider score variation. More evidence does not guarantee narrower ranks when the field grows too.",
-    "detail": "Randomly splitting records for the 31 people with at least six appearances gives median order agreement of 0.87. The paper explains the two rank methods, a shared-debate-weight check, and real rows for Schmid, Dillahunty and Blackmore before presenting the complete field.",
-    "limitation": "These are calculations within a fixed 57-person field, not live rankings or future-win probabilities. Unequal topics, opponents and assessment processes remain important. Repeatability is not proof that the judging is correct.",
+    "finding": "Yes—the rankings capture a strong, repeatable pattern of assessed performance.",
+    "statistic": "0.87",
+    "statisticLabel": "Median ranking agreement between random halves of the record · 1.00 means identical order",
+    "explanation": "Among the 31 people with at least six appearances, 3,000 random splits of their debate records produce strongly similar rankings: median correlation 0.87, with the middle 95% of results between 0.81 and 0.92. The broad ordering is therefore not dependent on one particular half of the assessed record. This is strong evidence of stability within the catalogue, not merely a useful way to browse it.",
+    "detail": "Two further checks support that conclusion. Dividing records by assessment-number order gives agreement of 0.84; adjusting for average score differences between assessment processes leaves the 57-person ordering almost unchanged (0.99 agreement). The evidence supports broad comparisons of recorded performance, especially for well-represented speakers. Uncertain neighboring places do not negate this stable overall pattern.",
+    "limitation": "Stability concerns broad ordering, not every exact place: neighboring means are typically only 0.20 points apart. These correlations are not accuracy percentages or future-win probabilities. The fixed 57-person field contains 416 appearances; topics and opponents are unequal, and repeatability alone cannot establish that the judging is correct.",
     "pdf": "do-slugfester-rankings-measure-stable-performance",
     "figure": "p7-ranges",
     "links": [
@@ -530,7 +530,7 @@ export const researchInsights = [
         "label": "Open current rankings"
       }
     ],
-    "method": "Retain people with at least three comparable one-on-one appearances. Draw from each person's recorded scores 20,000 times, and separately fit a normal model with pooled within-person variation. Compare the middle 95% of rank positions. A shared-debate-weight sensitivity keeps opponents paired; 3,000 split-half calculations examine broad order agreement.",
+    "method": "Measure Spearman rank correlation between two halves of each person's record in 3,000 random splits, restricted to the 31 people with at least six appearances. The 0.81–0.92 interval covers the middle 95% of split results, not a population confidence interval. Check assessment-number splits (not necessarily recording chronology) and process-mean adjustment separately. For the full 57-person field with at least three appearances, compare 20,000 resampled ranks with a normal model using pooled within-person variation. Shared debate weights preserve opponent pairing. These complementary checks reuse the same archive; they are not independent replications.",
     "rows": [
       [
         "Ranked people / appearances",
@@ -539,6 +539,22 @@ export const researchInsights = [
       [
         "All eligible people / appearances",
         "183 / 582"
+      ],
+      [
+        "Random-half agreement / middle 95% of splits (31 people)",
+        "0.87 / 0.81–0.92"
+      ],
+      [
+        "Assessment-number split agreement (31 people)",
+        "0.84"
+      ],
+      [
+        "Process-adjusted order agreement (57 people)",
+        "0.99"
+      ],
+      [
+        "Modeled repeatability: single / three / ten appearances",
+        "0.61 / 0.83 / 0.94"
       ],
       [
         "Typical neighboring gap",
@@ -559,9 +575,9 @@ export const researchInsights = [
     "figureTitle": "Leading averages have overlapping rank ranges",
     "figureScope": "Highest 15 means shown; all 57 eligible people included in calculation",
     "reading": "Dark dots are displayed places. Teal lines contain the middle 95% of ranks obtained by drawing again from recorded scores. Dashed rust lines use a model allowing variation estimated across the group. Parentheses count appearances. Neither line is a future-win probability.",
-    "alt": "Leading averages have overlapping rank ranges. The field now contains 57 people and 416 appearances, up from 50 and 334. Typical rank-range widths are 14 places when drawing again from recorded scores and 21 under a model allowing wider score variation. More evidence does not guarantee narrower ranks when the field grows too.",
-    "pages": 11,
+    "alt": "Leading averages have overlapping rank ranges. Among the 31 people with at least six appearances, 3,000 random splits of their debate records produce strongly similar rankings: median correlation 0.87, with the middle 95% of results between 0.81 and 0.92. The broad ordering is therefore not dependent on one particular half of the assessed record. This is strong evidence of stability within the catalogue, not merely a useful way to browse it.",
+    "pages": 12,
     "figures": 3,
-    "version": "20261009-corpus308"
+    "version": "20261009-corpus308-stability"
   }
 ];

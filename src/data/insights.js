@@ -1,4 +1,4 @@
-import { researchEdition, researchInsights } from "./research-edition.js?v=20261009-corpus308";
+import { researchEdition, researchInsights } from "./research-edition.js?v=20261009-corpus308-stability";
 export { researchEdition, researchInsights };
 export const researchSnapshot = researchEdition.date;
 export const escapeResearch = (value = "") => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
