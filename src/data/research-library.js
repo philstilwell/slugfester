@@ -1,4 +1,4 @@
-import { researchEdition, researchInsights, researchPdfLink, researchSnapshotNote, escapeResearch as escape } from "./insights.js?v=20261009-corpus308-stability";
+import { researchEdition, researchInsights, researchPdfLink, researchSnapshotNote, escapeResearch as escape } from "./insights.js?v=20261009-corpus308-charts-reference";
 
 export function renderResearchLibrary() {
   const groups = [

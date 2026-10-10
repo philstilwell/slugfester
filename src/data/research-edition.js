@@ -2,7 +2,7 @@
 export const researchEdition = {
   "date": "October 9, 2026",
   "isoDate": "2026-10-09",
-  "version": "20261009-corpus308-stability",
+  "version": "20261009-corpus308-charts-reference",
   "sourceCommit": "e65bc3c0b6",
   "counts": {
     "published": 308,
@@ -56,6 +56,16 @@ export const researchInsights = [
     "statisticLabel": "Average non-theist advantage · 234 comparisons",
     "explanation": "The September gap was 6.34 points; the 47 new comparisons average 3.34, bringing the combined gap down to 5.74. Skeptical sides lead in 193 assessments, religious sides in 33, with 8 ties. Support remains the largest raw scoring-area difference. Support, logic and replies contribute 74.6% of the overall gap.",
     "detail": "The new cases include meaningful counterexamples, including Meyer–Atkins on design. A creator argument is not automatically a defense of a personal religious God; those narrower burdens and explicit inclusion decisions remain visible. The narrower truth-claim set retains a 5.77-point gap.",
+    "companion": {
+      "title": "Evidence, faith, and fair assessment",
+      "href": "/assets/charts/evidence-faith-and-fair-assessment-2026-10-08.pdf?v=faith-credence-3",
+      "label": "From the Charts page · 16-page PDF",
+      "paragraphs": [
+        "The Charts paper locates evidence neglect in specific missing work: an unjustified probability estimate, a source too narrow for a broad claim, or an unsupported step from a creator to a particular religion. An objection can expose such a gap without establishing an entire alternative worldview; a critic who makes a positive claim must support it too.",
+        "It argues that protecting faith commitments from correction can weaken evidential standards, and tentatively favors some contribution to the documented shortcomings over none. That is a reasoned, provisional interpretation—not a measured cause or a claim that faith explains most of the gap. Unequal scores alone neither demonstrate anti-religious AI bias nor establish the judging model’s impartiality. See pages 6–10 for the argument and its safeguards."
+      ],
+      "scope": "A complementary measure, not a second estimate of 5.74: the paper’s October 8 snapshot covers 226 debates and 5,405 moves. Supporting and challenging moves average 66.5 and 74.2 on evidence alone—a 7.7-point gap, using equal debate weights and no move-importance weights. The gap also remains when comparing constructive moves or replies separately. These overlapping records are not an independent replication of this section’s 234 overall-score comparisons; see page 14 for the calculation details."
+    },
     "limitation": "This curated archive measures assessed performances, not worldview truth. The faith-to-debate hypothesis remains a proposed explanation, not an established psychological cause. Repeated speakers and judging preferences are not eliminated by resampling.",
     "pdf": "why-do-the-theist-sides-score-lower",
     "figure": "p1-dimensions",

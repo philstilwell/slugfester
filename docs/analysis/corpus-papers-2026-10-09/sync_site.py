@@ -21,7 +21,7 @@ for item,pub in zip(items,PUB):
         alt=figure['title']+'. '+item['explanation'],pages=pub['pages'],figures=pub['figures'],
         version='20261009-corpus308-stability' if item['id']=='ranking-confidence' else '20261009-corpus308')
     shutil.copyfile(image,ROOT/'assets/insights'/image.name)
-snapshot=dict(date=R['edition'],isoDate='2026-10-09',version='20261009-corpus308-stability',
+snapshot=dict(date=R['edition'],isoDate='2026-10-09',version='20261009-corpus308-charts-reference',
     sourceCommit=R['source_commit'],counts=R['counts'],newAssessments=R['derived']['new_assessments'],
     decisive=R['p5']['decisive'],ties=R['p5']['ties'],ranked=R['p7']['ranked_speakers'],appearances=R['p7']['eligible_appearances'],
     directory='/docs/analysis/corpus-papers-2026-10-09/')

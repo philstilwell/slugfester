@@ -70,6 +70,21 @@ for (const item of researchInsights) {
   }
 }
 const html = renderInsightsContent();
+const companion = researchInsights[0].companion;
+assert.equal(companion.title, "Evidence, faith, and fair assessment");
+const companionUrl = new URL(companion.href, "https://slugfester.com");
+assert(existsSync(`${root}${companionUrl.pathname.slice(1)}`), "Missing Charts companion PDF");
+assert(readFileSync(`${root}src/data/charts.js`, "utf8").includes(companion.href), "Insights must link to the current Charts PDF edition");
+assert(companion.scope.includes("226 debates and 5,405 moves") && companion.scope.includes("234 overall-score comparisons"));
+assert(companion.scope.includes("evidence alone") && companion.scope.includes("not an independent replication"));
+const chartsExplanation = JSON.parse(readFileSync(`${root}docs/charts/evidence-explanation-2026-10-08/analysis.json`));
+const evidenceMeans = chartsExplanation.all.dimensionMeans.find(d => d.key === "evidenceWarrant").values;
+assert(companion.scope.includes(`${chartsExplanation.included} debates and ${chartsExplanation.uniqueMoves.toLocaleString("en-US")} moves`));
+for (const mean of evidenceMeans) assert(companion.scope.includes(mean.toFixed(1)));
+assert(companion.scope.includes(`${(evidenceMeans[1] - evidenceMeans[0]).toFixed(1)}-point gap`));
+assert(html.includes(companion.href) && html.includes("Related reading from Charts"));
+const methodsHtml = readFileSync(`${root}insights/data-and-methods/index.html`, "utf8");
+assert(methodsHtml.includes(companion.href) && methodsHtml.includes("tentatively favors some contribution"));
 assert.equal((html.match(/<h1>/g) || []).length, 1);
 assert(html.includes(researchEdition.date) && html.includes("not representative"));
 assert(html.includes("no newer transcripts were coded"), "Historical slogan scope must remain explicit");
