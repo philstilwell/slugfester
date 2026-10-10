@@ -132,6 +132,6 @@ assert(extensions[0].limitation.includes("not to measure how often"));
 assert(extensions[1].limitation.includes("not a census"));
 assert(extensions[2].detail.includes("12 same-procedure repeat groups"));
 assert(extensions[2].limitation.includes("not causal effects"));
-const backendHtml = readFileSync(`${root}backend/index.html`, "utf8");
-for (const item of extensions) assert(backendHtml.includes(`/output/pdf/${item.pdf}.pdf`));
+const insightsHtml = readFileSync(`${root}insights/index.html`, "utf8");
+for (const item of extensions) assert(insightsHtml.includes(`/output/pdf/${item.pdf}.pdf`));
 console.log(`Validated source-grounded introductions and three related suggestions for ${debates.length} debates, plus all ${researchInsights.length} research introductions and figures.`);

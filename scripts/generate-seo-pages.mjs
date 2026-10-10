@@ -166,7 +166,6 @@ function fallbackMarkup(seo, summary) {
     { href: rankingsPath(), label: "Compare interlocutors" },
     { href: backendPath(), label: "Read the assessment method" },
     { href: insightsPath(), label: "Explore research insights" },
-    { href: chartsPath(), label: "Explore argument charts" },
     ...(seo.relatedLinks || [])
   ];
   const uniqueLinks = [
@@ -221,9 +220,7 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   const updatedMeta = updatedTime
     ? `<meta property="og:updated_time" content="${escapeHtml(updatedTime)}">\n    `
     : "";
-  const fallback = seo.canonicalPath === chartsPath()
-    ? `<main class="charts-page" id="main-content" data-initial-path="/charts/">${initialPageContent(chartsPath())}<p><a href="/">Back to debates</a></p></main>`
-    : seo.canonicalPath === "/insights/data-and-methods/"
+  const fallback = seo.canonicalPath === "/insights/data-and-methods/"
     ? `<main class="insights-page" id="main-content" data-initial-path="/insights/data-and-methods/">${renderInsightsMethodsContent()}</main>`
     : seo.canonicalPath === insightsPath()
     ? `<main class="insights-page" id="main-content" data-initial-path="/insights/">${renderInsightsContent()}<p><a href="/">Back to debates</a> · <a href="/backend/">Assessment method</a></p></main>`
@@ -737,7 +734,7 @@ for (const topic of topicCategoryDefinitions) {
 addPage(
   backendPath(),
   backendSeo(),
-  "Backend explains Slugfester's full-transcript review, independent judgments, deterministic scoring, validation controls, update plans, and campaign compute estimate."
+  "Backend explains Slugfester's assessment process and scoring rules, with interactive charts of argument families, evidence and reasoning dimensions."
 );
 
 addPage("/insights/data-and-methods/", insightsMethodsSeo(), "Read the evidence, methods and limitations behind the research studies.");
