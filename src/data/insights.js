@@ -1,4 +1,4 @@
-import { researchEdition, researchInsights } from "./research-edition.js?v=20261009-corpus308-stability";
+import { researchEdition, researchInsights } from "./research-edition.js?v=20261009-corpus308-charts-reference";
 export { researchEdition, researchInsights };
 export const researchSnapshot = researchEdition.date;
 export const escapeResearch = (value = "") => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
@@ -8,6 +8,16 @@ export function insightLink(link) {
 }
 export function researchPdfLink(item) {
   return `/output/pdf/${item.pdf}.pdf?v=${item.version}`;
+}
+export function renderResearchCompanion(item) {
+  const source = item.companion;
+  if (!source) return "";
+  return `<aside class="insight-companion" aria-label="Related reading from Charts">
+    <p class="insight-companion-label">${escape(source.label)}</p>
+    <p class="insight-companion-title"><strong><a href="${escape(source.href)}" type="application/pdf">${escape(source.title)}</a></strong></p>
+    ${source.paragraphs.map(text => `<p>${escape(text)}</p>`).join("")}
+    <p class="insight-companion-scope">${escape(source.scope)}</p>
+  </aside>`;
 }
 export function researchSnapshotNote() {
   const r = researchEdition;
@@ -29,7 +39,7 @@ export function renderInsightsContent() {
       <h2 id="${item.id}-heading">${escape(item.title)}</h2>
       <p class="insight-finding">${escape(item.finding)}</p>
       <p class="insight-stat"><strong>${escape(item.statistic)}</strong><span>${escape(item.statisticLabel)}</span></p>
-      <p>${escape(item.explanation)}</p><p>${escape(item.detail)}</p>
+      <p>${escape(item.explanation)}</p><p>${escape(item.detail)}</p>${renderResearchCompanion(item)}
       <p class="insight-limitation"><strong>What this cannot establish.</strong> ${escape(item.limitation)}</p>
       <a class="button primary" href="${researchPdfLink(item)}" type="application/pdf" target="_blank" rel="noopener" aria-label="Read the full paper: ${escape(item.title)} (PDF, new tab)">Read the full paper</a>
       <p>${item.pages} pages · ${item.figures} figures · October 2026 edition</p>

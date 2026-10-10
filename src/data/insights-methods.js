@@ -1,4 +1,4 @@
-import { researchEdition as r, researchInsights, insightLink, researchPdfLink, researchSnapshotNote, escapeResearch as escape } from "./insights.js?v=20261009-corpus308-stability";
+import { researchEdition as r, researchInsights, insightLink, researchPdfLink, researchSnapshotNote, renderResearchCompanion, escapeResearch as escape } from "./insights.js?v=20261009-corpus308-charts-reference";
 const historical = "/docs/analysis/direct-slogan-study-2026-09-04/";
 const labels = {
   "classification.csv": "Inclusion decisions and research topics (CSV)",
@@ -43,6 +43,7 @@ export function renderInsightsMethodsContent() {
   ${researchInsights.map((item,i)=>`<article class="methods-study" id="${item.id}" aria-labelledby="${item.id}-heading">
     <p class="eyebrow">Study ${i+1} / 7 · ${escape(item.topic)}</p><h2 id="${item.id}-heading">${escape(item.title)}</h2>
     <h3>What the evidence says</h3><p>${escape(item.explanation)}</p><p>${escape(item.detail)}</p>
+    ${renderResearchCompanion(item)}
     <h3>How the result was calculated</h3><p>${escape(item.method)}</p>
     <div class="methods-table-wrap"><table><caption>Key counts and comparisons for study ${i+1}</caption><thead><tr><th scope="col">Measure</th><th scope="col">Research snapshot</th></tr></thead><tbody>${item.rows.map(([label,value])=>`<tr><th scope="row">${escape(label)}</th><td>${escape(value)}</td></tr>`).join("")}</tbody></table></div>
     <h3>Limitations</h3><p class="insight-limitation">${escape(item.limitation)}</p>

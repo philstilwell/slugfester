@@ -116,3 +116,20 @@ calculations using a separate tied-rank implementation. To rebuild only this
 paper without changing the other PDFs, run `build_papers.py --paper 7`, then
 `sync_site.py` and the normal checks. The stability revision uses a new cache
 version while preserving the October 9 data snapshot and public filenames.
+
+## Charts companion reference
+
+The score-gap website section and methods page include a linked summary of
+*Evidence, faith, and fair assessment*, the clarified 16-page October 8 PDF
+linked from Charts. Its discussion of evidential omissions, burdens, faith
+insulated from correction and possible model bias informs the interpretation.
+The summary preserves the paper's tentative support for a contributing faith
+mechanism without presenting that mechanism as a measured cause.
+
+The companion's 226 debates / 5,405 moves and 7.7-point evidence-dimension gap
+remain distinct from the October research edition's 234 comparisons and
+5.74-point overall-score gap. The studies reuse overlapping records and are
+not independent replications. Reader-feature checks verify the Charts link,
+local PDF, source counts and evidence means, and initial methods-page text.
+This is a website cross-reference; neither the companion nor the seven existing
+PDFs are changed by this addition.
