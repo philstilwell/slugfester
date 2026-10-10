@@ -406,28 +406,28 @@
     "id": "ranking-confidence",
     "topic": "Reading rankings",
     "title": "Do Slugfester Rankings Measure Stable Performance?",
-    "short": "A leaderboard with honest uncertainty",
-    "subtitle": "A larger fixed field, repeatable broad patterns, and overlapping exact places.",
+    "short": "Strong evidence of repeatable performance",
+    "subtitle": "Strong repeatability in assessed performance, with less certainty about neighboring places.",
     "stats": [
       [
         "{{p7.split_half.median:2}}",
         "median order agreement\nbetween random halves"
       ],
       [
-        "{{p7.median_adjacent_gap:2}}",
-        "typical score gap between\nneighboring means"
+        "{{p7.centered_rank_spearman:2}}",
+        "order agreement after\nprocess-mean adjustment"
       ],
       [
         "{{p7.ranked_speakers}}",
         "people with at least\nthree eligible appearances"
       ]
     ],
-    "finding": "The broad order repeats better than exact places.",
-    "statistic": "{{p7.median_adjacent_gap:2}} points",
-    "statisticLabel": "Typical gap between neighboring means in the fixed research field",
-    "explanation": "The field now contains {{p7.ranked_speakers}} people and {{p7.eligible_appearances}} appearances, up from 50 and 334. Typical rank-range widths are {{p7.median_empirical_rank_width:0}} places when drawing again from recorded scores and {{p7.median_model_rank_width:0}} under a model allowing wider score variation. More evidence does not guarantee narrower ranks when the field grows too.",
-    "detail": "Randomly splitting records for the {{p7.split_half.n}} people with at least six appearances gives median order agreement of {{p7.split_half.median:2}}. The paper explains the two rank methods, a shared-debate-weight check, and real rows for Schmid, Dillahunty and Blackmore before presenting the complete field.",
-    "limitation": "These are calculations within a fixed {{p7.ranked_speakers}}-person field, not live rankings or future-win probabilities. Unequal topics, opponents and assessment processes remain important. Repeatability is not proof that the judging is correct.",
+    "finding": "Yes—the rankings capture a strong, repeatable pattern of assessed performance.",
+    "statistic": "{{p7.split_half.median:2}}",
+    "statisticLabel": "Median ranking agreement between random halves of the record · 1.00 means identical order",
+    "explanation": "Among the {{p7.split_half.n}} people with at least six appearances, 3,000 random splits of their debate records produce strongly similar rankings: median correlation {{p7.split_half.median:2}}, with the middle 95% of results between {{p7.split_half.interval.0:2}} and {{p7.split_half.interval.1:2}}. The broad ordering is therefore not dependent on one particular half of the assessed record. This is strong evidence of stability within the catalogue, not merely a useful way to browse it.",
+    "detail": "Two further checks support that conclusion. Dividing records by assessment-number order gives agreement of {{p7.split_half.sequence_split_spearman:2}}; adjusting for average score differences between assessment processes leaves the {{p7.ranked_speakers}}-person ordering almost unchanged ({{p7.centered_rank_spearman:2}} agreement). The evidence supports broad comparisons of recorded performance, especially for well-represented speakers. Uncertain neighboring places do not negate this stable overall pattern.",
+    "limitation": "Stability concerns broad ordering, not every exact place: neighboring means are typically only {{p7.median_adjacent_gap:2}} points apart. These correlations are not accuracy percentages or future-win probabilities. The fixed {{p7.ranked_speakers}}-person field contains {{p7.eligible_appearances}} appearances; topics and opponents are unequal, and repeatability alone cannot establish that the judging is correct.",
     "pdf": "do-slugfester-rankings-measure-stable-performance",
     "figure": "p7-ranges",
     "links": [
@@ -444,7 +444,7 @@
         "label": "Open current rankings"
       }
     ],
-    "method": "Retain people with at least three comparable one-on-one appearances. Draw from each person's recorded scores 20,000 times, and separately fit a normal model with pooled within-person variation. Compare the middle 95% of rank positions. A shared-debate-weight sensitivity keeps opponents paired; 3,000 split-half calculations examine broad order agreement.",
+    "method": "Measure Spearman rank correlation between two halves of each person's record in 3,000 random splits, restricted to the 31 people with at least six appearances. The 0.81–0.92 interval covers the middle 95% of split results, not a population confidence interval. Check assessment-number splits (not necessarily recording chronology) and process-mean adjustment separately. For the full 57-person field with at least three appearances, compare 20,000 resampled ranks with a normal model using pooled within-person variation. Shared debate weights preserve opponent pairing. These complementary checks reuse the same archive; they are not independent replications.",
     "rows": [
       [
         "Ranked people / appearances",
@@ -453,6 +453,22 @@
       [
         "All eligible people / appearances",
         "{{p7.all_speakers}} / {{p7.appearances}}"
+      ],
+      [
+        "Random-half agreement / middle 95% of splits (31 people)",
+        "{{p7.split_half.median:2}} / {{p7.split_half.interval.0:2}}–{{p7.split_half.interval.1:2}}"
+      ],
+      [
+        "Assessment-number split agreement (31 people)",
+        "{{p7.split_half.sequence_split_spearman:2}}"
+      ],
+      [
+        "Process-adjusted order agreement (57 people)",
+        "{{p7.centered_rank_spearman:2}}"
+      ],
+      [
+        "Modeled repeatability: single / three / ten appearances",
+        "{{p7.repeatability.single:2}} / {{p7.repeatability.means.3:2}} / {{p7.repeatability.means.10:2}}"
       ],
       [
         "Typical neighboring gap",

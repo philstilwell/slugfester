@@ -1,4 +1,4 @@
-import { researchEdition as r, researchInsights, insightLink, researchPdfLink, researchSnapshotNote, escapeResearch as escape } from "./insights.js?v=20261009-corpus308";
+import { researchEdition as r, researchInsights, insightLink, researchPdfLink, researchSnapshotNote, escapeResearch as escape } from "./insights.js?v=20261009-corpus308-stability";
 const historical = "/docs/analysis/direct-slogan-study-2026-09-04/";
 const labels = {
   "classification.csv": "Inclusion decisions and research topics (CSV)",

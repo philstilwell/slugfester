@@ -16,7 +16,7 @@
 
 ## PDF and chart checks
 
-- Seven PDFs, 59 pages and 21 figures; all declared PDF and vector-chart fonts
+- Seven PDFs, 60 pages and 21 figures; all declared PDF and vector-chart fonts
   embedded. Automated page-boundary, internal-link and source-link checks pass.
 - Visually reviewed contact sheets covering every PDF page and a full-size cover.
   Rebalanced the endings of papers two, four and five, then rerendered and checked
@@ -50,3 +50,22 @@ error. The selection and research categories remain exploratory.
   a larger connection queue; no assertions were relaxed.
 
 Live publication is verified after deployment; these are pre-publication checks.
+
+## Stability conclusion revision
+
+- Independently reproduced all 3,000 split-half correlations, the ordered-split
+  correlation, process-centered rank agreement and modeled repeatability from
+  the frozen records. `verify_stability.py` uses a separate tied-rank calculation.
+- The 0.87 median and 0.81–0.92 split range support strong within-catalogue
+  repeatability. The 0.84 ordered split and 0.99 process sensitivity support
+  that interpretation without constituting independent replications.
+- Kept scope explicit: the random/ordered splits cover 31 people; the full
+  ranking and process sensitivity cover 57 people. The split range is not a
+  population confidence interval, and correlations are not accuracy percentages.
+- Rebuilt only paper seven (12 pages, three unchanged figures). The other six
+  PDF hashes, all source records, result values, charts and biographies remain
+  unchanged. Reviewed all 12 rendered pages plus full-size summary/conclusion.
+- Re-ran the 62 browser tests, public-data reconciliation, 880-page generation
+  checks, 719 source fingerprints and all PDF font/link/boundary checks; all pass.
+- Revised shared copy appears in Insights, the methods page and Backend, and in
+  initial HTML for readers without JavaScript. Desktop and phone layouts checked.
