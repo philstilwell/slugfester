@@ -54,13 +54,13 @@ for (const debate of debates) {
   }
 }
 
-assert.equal(researchInsights.length, 7);
-assert.equal(new Set(researchInsights.map((item) => item.id)).size, 7);
+assert.equal(researchInsights.length, 10);
+assert.equal(new Set(researchInsights.map((item) => item.id)).size, 10);
 for (const item of researchInsights) {
   assert(item.explanation && item.limitation && item.reading && item.alt);
   assert(existsSync(`${root}output/pdf/${item.pdf}.pdf`));
   const image = readFileSync(`${root}assets/insights/${item.figure}.png`);
-  assert(image.equals(readFileSync(`${root}${researchEdition.directory.slice(1)}figures/${item.figure}.png`)));
+  assert(image.equals(readFileSync(`${root}${(item.directory || researchEdition.directory).slice(1)}figures/${item.figure}.png`)));
   assert.equal(image.readUInt32BE(16), item.width, `${item.figure}: width`);
   assert.equal(image.readUInt32BE(20), item.height, `${item.figure}: height`);
   for (const link of item.links) {
@@ -105,7 +105,10 @@ for (const [id, ...patterns] of plainLanguageChecks) {
 }
 assert(!html.includes("well-represented speakers") && !html.includes("broad comparisons of recorded performance"));
 const results = JSON.parse(readFileSync(`${root}${researchEdition.directory.slice(1)}results.json`));
-const papers = JSON.parse(readFileSync(`${root}${researchEdition.directory.slice(1)}publication-manifest.json`));
+const papers = [
+  ...JSON.parse(readFileSync(`${root}${researchEdition.directory.slice(1)}publication-manifest.json`)),
+  ...JSON.parse(readFileSync(`${root}docs/analysis/argument-structure-studies-2026-10-09/publication-manifest.json`))
+];
 assert.equal(results.counts.published, researchEdition.counts.published);
 assert.equal(results.p7.ranked_speakers, researchEdition.ranked);
 assert.equal(researchInsights[0].statistic, `${results.p1.gap.mean.toFixed(2)} points`);
@@ -114,4 +117,21 @@ for (const [i, item] of researchInsights.entries()) {
   assert.equal(item.figures, papers[i].figures);
   assert(item.version.startsWith("20261009"));
 }
-console.log(`Validated source-grounded introductions and three related suggestions for ${debates.length} debates, plus all seven research introductions and figures.`);
+const extensions = researchInsights.slice(7);
+assert.deepEqual(extensions.map(item => item.id), ["answering-arguments", "creator-to-god", "opponent-context"]);
+for (const item of extensions) {
+  assert(html.includes(`id="${item.id}"`) && methodsHtml.includes(`id="${item.id}"`));
+  for (const file of item.files) {
+    assert(existsSync(`${root}${item.directory.slice(1)}${file}`), `Missing source file: ${file}`);
+    assert(methodsHtml.includes(`${item.directory}${file}`), `Missing study-specific download: ${file}`);
+  }
+}
+const extensionResults = JSON.parse(readFileSync(`${root}${extensions[0].directory.slice(1)}results.json`));
+assert.equal(extensions[0].statistic, `${(100 * extensionResults.reply_graph.reply_to_reply_edges / extensionResults.reply_graph.edges).toFixed(1)}%`);
+assert(extensions[0].limitation.includes("not to measure how often"));
+assert(extensions[1].limitation.includes("not a census"));
+assert(extensions[2].detail.includes("12 same-procedure repeat groups"));
+assert(extensions[2].limitation.includes("not causal effects"));
+const backendHtml = readFileSync(`${root}backend/index.html`, "utf8");
+for (const item of extensions) assert(backendHtml.includes(`/output/pdf/${item.pdf}.pdf`));
+console.log(`Validated source-grounded introductions and three related suggestions for ${debates.length} debates, plus all ${researchInsights.length} research introductions and figures.`);

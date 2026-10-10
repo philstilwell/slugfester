@@ -1,4 +1,4 @@
-import { researchEdition as r, researchInsights, insightLink, researchPdfLink, researchSnapshotNote, renderResearchCompanion, escapeResearch as escape } from "./insights.js?v=20261009-corpus308-plain-language";
+import { researchEdition as r, researchInsights, insightLink, researchPdfLink, researchSnapshotNote, renderResearchCompanion, escapeResearch as escape } from "./insights.js?v=20261009-three-new-studies";
 const historical = "/docs/analysis/direct-slogan-study-2026-09-04/";
 const labels = {
   "classification.csv": "Inclusion decisions and research topics (CSV)",
@@ -16,7 +16,14 @@ const labels = {
   "light-incidents.json": "Source-linked direct-review incidents (JSON)",
   "supplementary-results.json": "Historical alternative-selection checks (JSON)",
   "protocol-light.md": "Direct-review definitions and counting rules (text)",
-  "editorial-corrections.json": "Recorded direct-review corrections (JSON)"
+  "editorial-corrections.json": "Recorded direct-review corrections (JSON)",
+  "reply-links.json": "All recorded replies and their targets (JSON)",
+  "reply-edges.json": "Complete reply-to-target link audit (JSON)",
+  "selected-evidence.json": "Selected source excerpts, timestamps and original assessments (JSON)",
+  "case-analysis.json": "Case interpretations and remaining questions (JSON)",
+  "opponent-appearances.json": "All comparable appearances and outside-pair opponent averages (JSON)",
+  "repeated-pairs.json": "Every repeated pair and its scores (JSON)",
+  "same-process-repeats.json": "Repeated matchups within one assessment procedure (JSON)"
 };
 const fileLinks = (files, base) => files.map(file => `<li><a href="${base}${file}" download>${escape(labels[file] || file)}</a></li>`).join("");
 export function renderInsightsMethodsContent() {
@@ -40,18 +47,22 @@ export function renderInsightsMethodsContent() {
     <p><strong>One video, two assessments:</strong> assessments 13 and 125 use the same video under different formats. Both count in the full archive, but only one enters the comparable one-on-one studies. No video link repeats within those studies. Some speakers appear many times, so the records do not represent entirely separate groups of people.</p>
     <p><strong>How the uncertainty ranges work:</strong> most score comparisons are repeated on 20,000 samples drawn from the saved records, allowing the same record to appear more than once. This is called resampling. The lines on the charts cover the middle 95% of the resulting estimates. They show how much the answer changes with the selected records; they do not include every transcription error, AI judging bias or effect of repeated speakers. The ranking study also uses 3,000 split-half comparisons, explained below. The calculations keep the same starting number for random draws as September (20260904) so they can be reproduced.</p>
   </section>
+  <section class="methods-shared"><h2>The three new argument and opponent studies</h2>
+    <p>Studies 8 and 9 use deliberately selected source passages to explain differences in reasoning; they do not estimate how often each kind occurs throughout the catalogue. Study 8 also checks every stored response link in the 112 later-process comparable debates. The interpretations are AI-assisted editorial readings of saved caption excerpts, not a new independent judging panel or a fresh full-video review.</p>
+    <p>Study 10 compares recorded scores and repeated opponents. Its eight model checks are descriptive associations, not causal effects. It does not use resampling or report confidence intervals, and the spread between those checks is not an uncertainty interval. Its full calculations and evidence are in a <a href="/docs/analysis/argument-structure-studies-2026-10-09/README.md">separate reproducible source package</a>. All three use the same October 9 snapshot without changing any scores.</p>
+  </section>
   ${researchInsights.map((item,i)=>`<article class="methods-study" id="${item.id}" aria-labelledby="${item.id}-heading">
-    <p class="eyebrow">Study ${i+1} / 7 · ${escape(item.topic)}</p><h2 id="${item.id}-heading">${escape(item.title)}</h2>
+    <p class="eyebrow">Study ${i+1} / ${researchInsights.length} · ${escape(item.topic)}</p><h2 id="${item.id}-heading">${escape(item.title)}</h2>
     <h3>What the evidence says</h3><p>${escape(item.explanation)}</p><p>${escape(item.detail)}</p>
     ${renderResearchCompanion(item)}
     <h3>How the result was calculated</h3><p>${escape(item.method)}</p>
     <div class="methods-table-wrap"><table><caption>Key counts and comparisons for study ${i+1}</caption><thead><tr><th scope="col">Measure</th><th scope="col">Research snapshot</th></tr></thead><tbody>${item.rows.map(([label,value])=>`<tr><th scope="row">${escape(label)}</th><td>${escape(value)}</td></tr>`).join("")}</tbody></table></div>
     <h3>Limitations</h3><p class="insight-limitation">${escape(item.limitation)}</p>
     <h3>Supporting files</h3><p>CSV tables open in spreadsheet software. JSON files contain saved records; Python files contain the calculation instructions. These are dated research downloads, not live results.</p>
-    <ul class="insight-links">${fileLinks(item.files,r.directory)}</ul>
+    <ul class="insight-links">${fileLinks(item.files,item.directory || r.directory)}</ul>
     ${item.historicalFiles ? `<h3>Historical direct-study records</h3><ul class="insight-links">${fileLinks(item.historicalFiles,historical)}</ul>` : ""}
     <h3>Follow the evidence</h3><ul class="insight-links">${item.links.map(link=>`<li><a href="${escape(insightLink(link))}">${escape(link.label)}</a></li>`).join("")}</ul>
-    <p><a class="button primary" href="${researchPdfLink(item)}">Read the full paper (PDF)</a> · ${item.pages} pages · ${item.figures} figures</p>
+    <p><a class="button primary" href="${researchPdfLink(item)}">Read the full paper (PDF)</a> · ${item.pages} pages · ${item.figures} ${item.figures === 1 ? "figure" : "figures"}</p>
     <p><a href="/insights/#${item.id}">Back to this finding and its figure</a> · <a href="#shared-heading">Shared evidence and uncertainty</a></p>
   </article>`).join("")}
   <section class="methods-shared"><h2>Trace and reproduce this edition</h2>
