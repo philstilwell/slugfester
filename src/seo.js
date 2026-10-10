@@ -1,4 +1,4 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=dc85a6f685f473ce";
+import { topicCategoryDefinitions } from "./data/topics.js?v=e4fcdd675af065ab";
 
 export const SITE_URL = "https://slugfester.com";
 export const SITE_NAME = "Slugfester";
@@ -250,14 +250,7 @@ export function insightsPath() {
 export function chartsPath() { return "/charts/"; }
 
 export function chartsSeo() {
-  const description = "Explore arguments supporting and challenging religious claims: frequency, scores, replies and reasoning dimensions, with dated data and linked debate evidence.";
-  return {
-    title: pageTitle("Charts of arguments for and against theism"), heading: "Charts of the assessed arguments",
-    description, canonicalPath: chartsPath(),
-    jsonLd: [organizationJsonLd(), websiteJsonLd(),
-      { "@context": "https://schema.org", "@type": "CollectionPage", name: "Charts of the assessed arguments", description, url: absoluteUrl(chartsPath()), isPartOf: { "@id": WEBSITE_ID } },
-      breadcrumbJsonLd([{ name: SITE_NAME, path: "/" }, { name: "Charts", path: chartsPath() }])]
-  };
+  return backendSeo({ legacy: true });
 }
 
 export function insightsSeo() {
@@ -756,7 +749,7 @@ export function interlocutorSeo(
 
 export function backendSeo({ legacy = false } = {}) {
   const description =
-    "Follow Slugfester’s illustrated assessment process: source checks, independent AI reviews, scoring rules, fallacy checks and worked examples.";
+    "Explore Slugfester’s assessment process, scoring rules and interactive charts of argument families, evidence, replies and reasoning dimensions.";
   const updatedDate = "2026-10-09";
 
   return {
@@ -772,34 +765,8 @@ export function backendSeo({ legacy = false } = {}) {
     articleSection: "Methodology",
     modifiedTime: seoDateTime(updatedDate),
     relatedLinks: [
-      {
-        href: "/output/pdf/why-do-the-theist-sides-score-lower.pdf",
-        label: "PDF report: Why Do the Theist Sides Score Lower?"
-      },
-      {
-        href: "/output/pdf/where-is-the-theist-disadvantage-largest.pdf",
-        label: "PDF report: Where Is the Theist Disadvantage Largest?"
-      },
-      {
-        href: "/output/pdf/are-theist-arguments-more-often-slogan-like.pdf",
-        label: "PDF report: Are Theist Arguments More Often Slogan-Like?"
-      },
-      {
-        href: "/output/pdf/does-the-con-side-have-an-inherent-advantage.pdf",
-        label: "PDF report: Does the CON Side Have an Inherent Advantage?"
-      },
-      {
-        href: "/output/pdf/debates-are-usually-lost-without-a-named-fallacy.pdf",
-        label: "PDF report: Beyond the Fallacy Count"
-      },
-      {
-        href: "/output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf",
-        label: "PDF report: Are All Slugfester Assessments on the Same Scale?"
-      },
-      {
-        href: "/output/pdf/do-slugfester-rankings-measure-stable-performance.pdf",
-        label: "PDF report: Do Slugfester Rankings Measure Stable Performance?"
-      }
+      { href: "/backend/#charts", label: "Explore argument charts" },
+      { href: insightsPath(), label: "Research papers and insights" }
     ],
     jsonLd: [
       organizationJsonLd(),

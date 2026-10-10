@@ -2,7 +2,6 @@
 import { publishedDebates as debates } from "../../src/data/debates.js";
 import { renderChartsContent } from "../../src/data/charts.js";
 import { chartSnapshot } from "../../src/data/chart-snapshot.js";
-import { renderResearchLibrary } from "../../src/data/research-library.js";
 import { renderAssessmentProcessGuide } from "../../src/data/assessment-process-guide.js";
 import { renderDebateRecommendation } from "../../src/data/debate-recommendation.js";
 import { renderCritiqueText } from "../../src/data/critique-format.js";
@@ -50,13 +49,12 @@ function debateContent(debate) {
 }
 
 export function initialPageContent(path) {
-  if (path === "/charts/") return renderChartsContent(chartSnapshot, "", false);
   if (path === "/corrections/") return `<section id="report-scorecard-issue"><h2>Report a possible scorecard issue</h2><p>Enable JavaScript to use the Corrections form. Include the exact page, the issue, and supporting evidence. Submitting a report does not guarantee a review, an individual reply, or a change. You can recommend a debate using the form below without JavaScript.</p></section>${renderDebateRecommendation()}`;
   const topic = topicCategoryDefinitions.find((item) => topicPath(item) === path);
   if (topic) return `<section><h2>About this topic</h2>${paragraph(topic.description)}<p>Debates are grouped by their main question. Scores assess the reasoning presented, not the truth of a position. <a href="/backend/">Read the assessment method</a>.</p></section><section><h2>Explore the assessments</h2>${cards(catalogue.filter((debate) => debate.topicCategory === topic.id))}</section><nav aria-label="Explore other topics"><h2>Explore other topics</h2>${topicCategoryDefinitions.filter((item) => item.id !== topic.id).map((item) => `<p><a href="${topicPath(item)}">${escape(item.title)}</a></p>`).join("")}</nav>`;
   const referenceMatch = path?.match(/^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/$/);
   if (referenceMatch) return referenceContent(referenceMatch[1], referenceMatch[2]);
-  if (path === "/backend/") return `${renderAssessmentProcessGuide()}<section id="rubric-quality-check"><h2>Explore the assessments</h2><p>The live distribution graph is available with JavaScript enabled. <a href="/insights/data-and-methods/">Read the research methods and limitations</a>, <a href="/search/">browse all debate summaries</a>, or <a href="/corrections/">report a possible scorecard issue</a>.</p><p>Have a debate in mind? <a href="/corrections/#recommend-a-debate">See which debates qualify and suggest a debate on the Feedback page</a>.</p></section>${renderResearchLibrary()}`;
+  if (path === "/backend/") return `${renderAssessmentProcessGuide()}<section id="rubric-quality-check"><h2>Explore the assessments</h2><p>The live distribution graph is available with JavaScript enabled. <a href="/insights/data-and-methods/">Read the research methods and limitations</a>, <a href="/search/">browse all debate summaries</a>, or <a href="/corrections/">report a possible scorecard issue</a>.</p><p>Have a debate in mind? <a href="/corrections/#recommend-a-debate">See which debates qualify and suggest a debate on the Feedback page</a>.</p></section>${renderChartsContent(chartSnapshot, "", false)}`;
   const debate = debates.find((item) => debatePath(item) === path);
   if (debate) return debateContent(debate);
   const profile = [...people.values()].find(({ person }) => interlocutorPath(person) === path);

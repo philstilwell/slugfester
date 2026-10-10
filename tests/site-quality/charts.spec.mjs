@@ -3,14 +3,17 @@ import AxeBuilder from "@axe-core/playwright";
 import { chartSnapshot } from "../../src/data/chart-snapshot.js";
 import { chartSnapshotName } from "../../src/data/charts.js";
 
-async function openCharts(page, path = "/charts/") {
+async function openCharts(page, path = "/backend/#charts") {
   await page.goto(path);
-  await expect(page.locator('nav[aria-label="Primary"] a[aria-current="page"]')).toHaveText("Charts");
+  await expect(page.locator('nav[aria-label="Primary"] a[aria-current="page"]')).toHaveText("Backend");
+  await expect(page.locator('nav[aria-label="Primary"]').getByRole("link", { name: "Charts", exact: true })).toHaveCount(0);
 }
 test("charts expose all four views, frozen coverage, filters and evidence", async ({ page }) => {
   const errors = []; page.on("pageerror", (e) => errors.push(e.message));
   await openCharts(page);
   await expect(page.locator(".chart-panel")).toHaveCount(4);
+  await expect(page.locator("h1")).toHaveCount(1);
+  await expect(page.locator(".backend-report")).toHaveCount(0);
   await page.getByText("Classifications and exclusions", { exact: true }).click();
   await expect(page.locator(".chart-review-status")).toBeVisible();
   await expect(page.getByRole("link", { name: "Download the complete dated snapshot (JSON)", exact: true })).toHaveAttribute("href", `/docs/charts/snapshots/${chartSnapshotName(chartSnapshot)}.json`);
@@ -19,11 +22,11 @@ test("charts expose all four views, frozen coverage, filters and evidence", asyn
   await page.getByRole("button", { name: "Apply filters" }).click();
   await expect(page.locator(".chart-selection-summary")).toContainText(`${chartSnapshot.debates.length} debates in scope`);
   await expect(page.locator(".chart-selection-summary")).toContainText(`${chartSnapshot.moves.length.toLocaleString("en-US")} assessed moves`);
-  await page.locator('#chart-frequency h3 a').filter({ hasText: "Divine hiddenness" }).click();
+  await page.locator('#chart-frequency h4 a').filter({ hasText: "Divine hiddenness" }).click();
   await expect(page).toHaveURL(/family=hiddenness/);
   await expect(page.locator('#chart-frequency .chart-family-row')).toHaveCount(1);
   await expect(page.locator(".chart-evidence-list article")).toHaveCount(20);
-  const first = page.locator(".chart-evidence-list article h3 a").first();
+  const first = page.locator(".chart-evidence-list article h4 a").first();
   const href = await first.getAttribute("href");
   await first.click();
   await expect(page).toHaveURL(new RegExp(href.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
@@ -33,7 +36,9 @@ test("charts expose all four views, frozen coverage, filters and evidence", asyn
   expect(errors).toEqual([]);
 });
 test("charts filters and pagination survive direct links and history", async ({ page }) => {
-  await openCharts(page, "/charts/?scope=religion&generation=standalone&family=history");
+  await openCharts(page, "/charts/?scope=religion&generation=standalone&family=history&threshold=80#chart-dimensions");
+  await expect(page).toHaveURL(/\/backend\/\?scope=religion&family=history&threshold=80#chart-dimensions$/);
+  await expect(page.getByRole("slider", { name: "Score threshold", exact: true })).toHaveValue("80");
   await expect(page.getByRole("combobox", { name: "Assessment generation", exact: true })).toHaveCount(0);
   await expect(page).not.toHaveURL(/generation=/);
   const first = await page.locator(".chart-evidence-list article p").first().textContent();
@@ -80,7 +85,7 @@ test("dimension threshold updates every five points, preserves focus and filters
   await page.getByRole("combobox", { name: "Question in the debate", exact: true }).selectOption("all");
   await page.getByRole("button", { name: "Apply filters" }).click();
   await expect(slider).toHaveValue("100");
-  await page.locator('#chart-frequency h3 a').filter({ hasText: "Divine hiddenness" }).click();
+  await page.locator('#chart-frequency h4 a').filter({ hasText: "Divine hiddenness" }).click();
   await expect(slider).toHaveValue("100");
   await page.reload();
   await expect(slider).toHaveValue("100");
@@ -90,12 +95,12 @@ test("dimension threshold updates every five points, preserves focus and filters
 test("charts remain readable without JavaScript and preserve the manual snapshot", async ({ browser, baseURL }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
-  await page.goto(`${baseURL}/charts/`);
-  await expect(page.locator("h1")).toHaveText("Charts");
+  await page.goto(`${baseURL}/backend/`);
+  await expect(page.locator("h1")).toHaveText("Backend");
   await expect(page.locator(".chart-panel")).toHaveCount(4);
   await expect(page.getByRole("slider")).toHaveCount(0);
   await expect(page.locator(".chart-heatmap caption")).toContainText("below 70,");
   await expect(page.locator(".chart-evidence-list article")).toHaveCount(20);
-  await expect(page.getByText("This page changes only when a new snapshot is deliberately published.", { exact: false })).toBeVisible();
+  await expect(page.getByText("These charts change only when a new snapshot is deliberately published.", { exact: false })).toBeVisible();
   await context.close();
 });

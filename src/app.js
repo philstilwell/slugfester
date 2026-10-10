@@ -1,12 +1,12 @@
-import { pageUpdates } from "./data/page-updates.js?v=dc85a6f685f473ce";
-import { renderCritiqueText } from "./data/critique-format.js?v=dc85a6f685f473ce";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=dc85a6f685f473ce";
-import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=dc85a6f685f473ce";
-import { topicPreviewText } from "./data/topic-preview.js?v=dc85a6f685f473ce";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=dc85a6f685f473ce";
-import { debateSummaries } from "./data/debate-summaries.js?v=dc85a6f685f473ce";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=dc85a6f685f473ce";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=dc85a6f685f473ce";
+import { pageUpdates } from "./data/page-updates.js?v=e4fcdd675af065ab";
+import { renderCritiqueText } from "./data/critique-format.js?v=e4fcdd675af065ab";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=e4fcdd675af065ab";
+import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=e4fcdd675af065ab";
+import { topicPreviewText } from "./data/topic-preview.js?v=e4fcdd675af065ab";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=e4fcdd675af065ab";
+import { debateSummaries } from "./data/debate-summaries.js?v=e4fcdd675af065ab";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=e4fcdd675af065ab";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=e4fcdd675af065ab";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -19,8 +19,6 @@ import {
   absoluteUrl,
   backendPath,
   backendSeo,
-  chartsPath,
-  chartsSeo,
   insightsPath,
   insightsSeo,
   insightsMethodsSeo,
@@ -47,7 +45,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=dc85a6f685f473ce";
+} from "./seo.js?v=e4fcdd675af065ab";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -58,8 +56,6 @@ let biographies;
 let insightsPromise;
 let insightsContent;
 let initializeWeightExplorer;
-let researchLibraryPromise;
-let renderResearchLibrary;
 let insightsMethodsContent;
 let insightsMethodsPromise;
 let chartsPromise;
@@ -109,7 +105,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=dc85a6f685f473ce")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=e4fcdd675af065ab")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -128,7 +124,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=dc85a6f685f473ce")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=e4fcdd675af065ab")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -144,7 +140,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=dc85a6f685f473ce`)
+    const promise = import(`./data/debate-details/${id}.js?v=e4fcdd675af065ab`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -159,7 +155,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=dc85a6f685f473ce`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=e4fcdd675af065ab`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -395,7 +391,6 @@ function renderDebateTitle(debate) {
 
 function currentPrimaryNavKey() {
   const { hash, pathname } = window.location;
-  if (chartsPathRoutePattern.test(pathname)) return "charts";
   if (hash.match(searchHashRoutePattern) || pathname.match(searchPathRoutePattern)) return "search";
   if (hash.match(topicsHashRoutePattern) || pathname.match(topicsPathRoutePattern) || pathname.match(topicPathRoutePattern)) return "topics";
   if (
@@ -451,7 +446,6 @@ function renderShell(content) {
         ${renderPrimaryNavLink("search", searchPath(), "Search", activeNavKey)}
         ${renderPrimaryNavLink("topics", topicsPath(), "Topics", activeNavKey)}
         ${renderPrimaryNavLink("rankings", rankingsPath(), "Rankings", activeNavKey)}
-        ${renderPrimaryNavLink("charts", chartsPath(), "Charts", activeNavKey)}
         ${renderPrimaryNavLink("insights", insightsPath(), "Insights", activeNavKey)}
         ${renderPrimaryNavLink("backend", backendPath(), "Backend", activeNavKey)}
         <span class="external-sites">
@@ -481,7 +475,6 @@ function renderShell(content) {
         <a href="${searchPath()}">Search</a>
         <a href="${topicsPath()}">Topics</a>
         <a href="${rankingsPath()}">Rankings</a>
-        <a href="${chartsPath()}">Charts</a>
         <a href="${insightsPath()}">Insights</a>
         <a href="${backendPath()}">Method</a>
         <a href="${correctionsPath()}">Feedback</a>
@@ -1112,7 +1105,7 @@ function renderSectionScoreDistribution(distribution) {
         <div>
           <p class="eyebrow">Rubric quality check</p>
           <h2 id="section-score-distribution-heading">How section scores are distributed</h2>
-          <p>This chart shows how often each section-side score occurs across the published catalogue. The range shows that assessments use different score bands, but spread alone cannot establish that the rubric is accurate or consistent across reviewers and assessment periods. Open the examples below to examine the reasoning behind high and low marks; the measurement and ranking studies further down this page examine consistency and uncertainty.</p>
+          <p>This chart shows how often each section-side score occurs across the published catalogue. The range shows that assessments use different score bands, but spread alone cannot establish that the rubric is accurate or consistent across reviewers and assessment periods. Open the examples below to examine the reasoning behind high and low marks; the measurement and ranking studies on the <a href="/insights/">Insights page</a> examine consistency and uncertainty.</p>
         </div>
         <dl class="section-score-distribution-summary">
           <div><dt>Section-side scores</dt><dd>${distribution.total.toLocaleString("en-US")}</dd></div>
@@ -2482,9 +2475,16 @@ function renderBackend() {
       ${renderSectionScoreDistribution(sectionScores)}
 
 
-      ${renderResearchLibrary()}
+      ${chartsModule.renderChartsContent(chartSnapshot, window.location.search)}
     </main>
   `);
+  chartsModule.bindChartThreshold(chartSnapshot, app);
+  document.getElementById("chart-filters").addEventListener("submit", (event) => {
+    event.preventDefault();
+    const params = new URLSearchParams(new FormData(event.currentTarget));
+    window.history.pushState({}, "", `${backendPath()}?${params}#charts`);
+    void route({ focusMain: true });
+  });
 }
 
 function correctionReportUrl(debate = null) {
@@ -3524,6 +3524,10 @@ function renderRouteLoading() {
 
 async function route({ focusMain = false } = {}) {
   const sequence = ++routeSequence;
+  // Preserve bookmarked filters and chart anchors after moving Charts into Backend.
+  if (chartsPathRoutePattern.test(window.location.pathname)) {
+    window.history.replaceState({}, "", `${backendPath()}${window.location.search}${window.location.hash || "#charts"}`);
+  }
   const hash = window.location.hash;
   const debateMatch =
     hash.match(debateHashRoutePattern) || window.location.pathname.match(debatePathRoutePattern);
@@ -3543,7 +3547,6 @@ async function route({ focusMain = false } = {}) {
     window.location.pathname.match(assessmentPathRoutePattern);
   const correctionsMatch = window.location.pathname.match(correctionsPathRoutePattern);
   const insightsMatch = window.location.pathname.match(insightsPathRoutePattern);
-  const chartsMatch = window.location.pathname.match(chartsPathRoutePattern);
   const referenceMatch =
     hash.match(referenceHashRoutePattern) ||
     window.location.pathname.match(referencePathRoutePattern);
@@ -3561,45 +3564,39 @@ async function route({ focusMain = false } = {}) {
   );
   const loaders = [];
 
-  if (chartsMatch && !chartSnapshot) {
+  if (backendMatch && !chartSnapshot) {
     chartsPromise ||= Promise.all([
-      import("./data/charts.js?v=dc85a6f685f473ce"),
-      import("./data/chart-snapshot.js?v=dc85a6f685f473ce")
+      import("./data/charts.js?v=e4fcdd675af065ab"),
+      import("./data/chart-snapshot.js?v=e4fcdd675af065ab")
     ]).then(([module, data]) => { chartsModule = module; chartSnapshot = data.chartSnapshot; })
       .catch((error) => { chartsPromise = undefined; throw error; });
     loaders.push(chartsPromise);
   }
 
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=dc85a6f685f473ce")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=e4fcdd675af065ab")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=dc85a6f685f473ce")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=e4fcdd675af065ab")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=dc85a6f685f473ce")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=e4fcdd675af065ab")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
-  if (backendMatch && !renderResearchLibrary) {
-    researchLibraryPromise ||= import("./data/research-library.js?v=dc85a6f685f473ce")
-      .then((module) => { renderResearchLibrary = module.renderResearchLibrary; })
-      .catch((error) => { researchLibraryPromise = undefined; throw error; });
-    loaders.push(researchLibraryPromise);
-  }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=dc85a6f685f473ce")
+    insightsPromise ||= import("./data/insights.js?v=e4fcdd675af065ab")
       .then((module) => { insightsContent = module.renderInsightsContent; initializeWeightExplorer = module.initializeWeightExplorer; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);
@@ -3646,22 +3643,7 @@ async function route({ focusMain = false } = {}) {
     if (sequence !== routeSequence) return;
   }
 
-  if (chartsMatch) {
-    const legacyParams = new URLSearchParams(window.location.search);
-    if (legacyParams.has("generation")) {
-      legacyParams.delete("generation");
-      window.history.replaceState({}, "", `${chartsPath()}${legacyParams.size ? `?${legacyParams}` : ""}${window.location.hash}`);
-    }
-    setSeo(chartsSeo());
-    app.innerHTML = renderShell(`<main class="charts-page">${chartsModule.renderChartsContent(chartSnapshot, window.location.search)}</main>`);
-    chartsModule.bindChartThreshold(chartSnapshot, app);
-    document.getElementById("chart-filters").addEventListener("submit", (event) => {
-      event.preventDefault();
-      const params = new URLSearchParams(new FormData(event.currentTarget));
-      window.history.pushState({}, "", `${chartsPath()}?${params}`);
-      void route({ focusMain: true });
-    });
-  } else if (debateMatch) {
+  if (debateMatch) {
     const loadedDebate = loadedData.find((value) => value?.id === debateId) || null;
     renderDebate(debateId, loadedDebate);
   } else if (searchMatch) {
@@ -3677,6 +3659,11 @@ async function route({ focusMain = false } = {}) {
   } else if (insightsMatch) {
     renderInsights();
   } else if (backendMatch) {
+    const params = new URLSearchParams(window.location.search);
+    if (params.has("generation")) {
+      params.delete("generation");
+      window.history.replaceState({}, "", `${backendPath()}${params.size ? `?${params}` : ""}${window.location.hash}`);
+    }
     renderBackend();
   } else if (correctionsMatch) {
     renderCorrections();

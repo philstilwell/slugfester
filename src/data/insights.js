@@ -1,6 +1,6 @@
 import { researchEdition, researchInsights } from "./research-edition.js?v=20261009-corpus308-plain-language";
-import { renderWeightExplorer } from "./weight-explorer.js?v=dc85a6f685f473ce";
-export { initializeWeightExplorer } from "./weight-explorer.js?v=dc85a6f685f473ce";
+import { renderWeightExplorer } from "./weight-explorer.js?v=e4fcdd675af065ab";
+export { initializeWeightExplorer } from "./weight-explorer.js?v=e4fcdd675af065ab";
 export { researchEdition, researchInsights };
 export const researchSnapshot = researchEdition.date;
 export const escapeResearch = (value = "") => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
