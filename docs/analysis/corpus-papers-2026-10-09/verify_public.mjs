@@ -49,8 +49,8 @@ assert.equal(researchInsights[0].statistic,`${result.p1.gap.mean.toFixed(2)} poi
 assert.equal(researchInsights[3].statistic,`${result.p4.raw.mean.toFixed(2)} → ${result.p4.same_speaker_weighted.estimate.toFixed(2)}`);
 assert.equal(researchInsights[4].statistic,`${(100*untagged/decisive).toFixed(1)}%`);
 assert.equal(researchInsights[6].statistic,result.p7.split_half.median.toFixed(2));
-assert.match(researchInsights[6].statisticLabel,/ranking agreement.*1.00 means identical order/);
-assert.match(researchInsights[6].explanation,/31 people.*3,000 random splits/);
-assert.match(researchInsights[6].limitation,/not accuracy percentages or future-win probabilities/);
+assert.match(researchInsights[6].statisticLabel,/agreement between two rankings.*1.00 means identical order/);
+assert.match(researchInsights[6].explanation,/31 people with at least six assessed debates.*randomly divides.*3,000 times/);
+assert.match(researchInsights[6].limitation,/does not mean the rankings are 87% accurate or predict an 87% chance of winning/);
 assert.equal(result.historical_direct.new_transcripts_reviewed,0);
 console.log("Independent JavaScript checks passed: public score gaps, eight topic means, annotation inventory, complete ranking field, model labels and shared website headlines.");

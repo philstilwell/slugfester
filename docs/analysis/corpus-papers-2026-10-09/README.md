@@ -133,3 +133,21 @@ not independent replications. Reader-feature checks verify the Charts link,
 local PDF, source counts and evidence means, and initial methods-page text.
 This is a website cross-reference; neither the companion nor the seven existing
 PDFs are changed by this addition.
+
+## Plain-language website revision
+
+All seven Insights sections now state the comparison and conclusion in concrete
+terms. The ranking section replaces “broad comparisons” and “well-represented”
+with the actual split-half finding and its 31-person, six-debate eligibility
+rule, while separating that evidence from the 57-person full ranking. Other
+sections define criticism-blocking slogans, PRO/CON roles, speaker weighting,
+missing fallacy labels, assessment-procedure differences, and evidence scores.
+Shared summaries also update the methods page and Backend research library.
+
+Website chart-reading guides are authored in `editorial.json` and preferred by
+`sync_site.py` over the original chart-contract prose. The plotted inputs,
+figures, calculations, classifications, scores, biographies, and all PDFs remain
+unchanged. This is a clarity edit, not a new research edition or reassessment.
+Reader-feature checks preserve the concrete explanations and their limits;
+`verify_public.mjs` and `verify_stability.py` check the underlying public-score
+and ranking claims independently of the rewritten prose.

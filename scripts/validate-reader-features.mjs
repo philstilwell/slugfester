@@ -84,10 +84,26 @@ for (const mean of evidenceMeans) assert(companion.scope.includes(mean.toFixed(1
 assert(companion.scope.includes(`${(evidenceMeans[1] - evidenceMeans[0]).toFixed(1)}-point gap`));
 assert(html.includes(companion.href) && html.includes("Related reading from Charts"));
 const methodsHtml = readFileSync(`${root}insights/data-and-methods/index.html`, "utf8");
-assert(methodsHtml.includes(companion.href) && methodsHtml.includes("tentatively favors some contribution"));
+assert(methodsHtml.includes(companion.href) && methodsHtml.includes("tentatively judges this more likely to contribute"));
 assert.equal((html.match(/<h1>/g) || []).length, 1);
 assert(html.includes(researchEdition.date) && html.includes("not representative"));
-assert(html.includes("no newer transcripts were coded"), "Historical slogan scope must remain explicit");
+assert(html.includes("no newer transcripts were reviewed for slogans"), "Historical slogan scope must remain explicit");
+const plainLanguageChecks = [
+  ["score-gap", /Support: how well evidence and reasons justify a claim/, /where the points differ, not why/],
+  ["topic-differences", /another topic often leads when the mix of debates changes/, /do not show that the topic itself causes/],
+  ["slogans", /‘protected slogan’ means/, /do not identify a slogan/],
+  ["con-role", /PRO supports the debate’s stated claim; CON opposes it/, /not proof that taking CON raises a person’s score/],
+  ["fallacy-count", /the lower-scoring side has no named logical-fallacy label/, /A missing label does not prove/],
+  ["same-scale", /an 80 under one procedure represents the same quality as an 80 under another/, /different performances on different topics/],
+  ["ranking-confidence", /31 people with at least six assessed debates/, /someone in fifth place reliably outperforms someone in sixth/]
+];
+for (const [id, ...patterns] of plainLanguageChecks) {
+  const item = researchInsights.find(insight => insight.id === id);
+  const text = [item.finding, item.explanation, item.detail, item.limitation].join(" ");
+  for (const pattern of patterns) assert.match(text, pattern, `${id}: preserve a concrete explanation and its scope`);
+  assert(item.reading.length > 150, `${id}: retain the plain-language chart guide`);
+}
+assert(!html.includes("well-represented speakers") && !html.includes("broad comparisons of recorded performance"));
 const results = JSON.parse(readFileSync(`${root}${researchEdition.directory.slice(1)}results.json`));
 const papers = JSON.parse(readFileSync(`${root}${researchEdition.directory.slice(1)}publication-manifest.json`));
 assert.equal(results.counts.published, researchEdition.counts.published);

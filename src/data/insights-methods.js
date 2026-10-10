@@ -1,4 +1,4 @@
-import { researchEdition as r, researchInsights, insightLink, researchPdfLink, researchSnapshotNote, renderResearchCompanion, escapeResearch as escape } from "./insights.js?v=20261009-corpus308-charts-reference";
+import { researchEdition as r, researchInsights, insightLink, researchPdfLink, researchSnapshotNote, renderResearchCompanion, escapeResearch as escape } from "./insights.js?v=20261009-corpus308-plain-language";
 const historical = "/docs/analysis/direct-slogan-study-2026-09-04/";
 const labels = {
   "classification.csv": "Inclusion decisions and research topics (CSV)",
@@ -23,22 +23,22 @@ export function renderInsightsMethodsContent() {
   return `<section class="insights-intro">
     <p class="eyebrow"><a href="/insights/">Insights</a> / Research evidence</p><h1>Data and methods</h1>
     <p class="large">Follow each finding back to its evidence.</p>
-    <p>Inspect the population, calculations, limitations and downloadable records behind the October research edition. Tables and summaries remain available without JavaScript.</p>
+    <p>See which debates each study includes, how its numbers were calculated, and what its results do and do not show. The records are available to download. Tables and summaries remain readable without JavaScript.</p>
     <p class="insights-snapshot">${researchSnapshotNote()}</p>
     <nav class="insights-index" aria-label="Study methods">${researchInsights.map((item,i)=>`<a href="#${item.id}"><span>${i+1}.</span> ${escape(item.title)}</a>`).join("")}</nav>
   </section>
   <section class="methods-shared" aria-labelledby="shared-heading"><h2 id="shared-heading">What the studies share</h2>
-    <p>This is a curated archive, not a random sample. Different questions require different subsets. Positions follow the claim argued, not a speaker’s religious identity. The eight research topic groups remain stable for comparison with September; they differ from the site’s current browsing categories.</p>
+    <p>The site selects its debates; it does not sample them at random. Each study includes only the records suitable for its question, as listed below. Religious and skeptical positions are assigned from the claim argued in that debate, not from a speaker’s personal religion. The topic study keeps the same eight groups used in September so the editions can be compared; these are not the site’s current browsing categories.</p>
     <div class="methods-table-wrap"><table><caption>Evidence sets in the October 9 edition</caption><thead><tr><th scope="col">Evidence set</th><th scope="col">Size and use</th></tr></thead><tbody>
       <tr><th scope="row">Public archive</th><td>${r.counts.published} assessments · ${r.counts.public_moves.toLocaleString("en-US")} moves · ${r.counts.unique_video_urls} unique video links</td></tr>
       <tr><th scope="row">Comparable scoring records</th><td>${r.counts.locked} one-on-one debates · ${r.counts.locked*2} sides · ${r.counts.locked_moves.toLocaleString("en-US")} verified move scores</td></tr>
       <tr><th scope="row">Religious-versus-skeptical set</th><td>${r.counts.religious} comparisons · ${r.counts.religious_moves.toLocaleString("en-US")} moves</td></tr>
-      <tr><th scope="row">Direct slogan evidence</th><td>187 historically reviewed transcripts; September 5 review. No new direct coding.</td></tr>
-      <tr><th scope="row">Decisive public results</th><td>${r.decisive} assessments · ${r.ties} ties excluded</td></tr>
-      <tr><th scope="row">Fixed ranked field</th><td>${r.ranked} people · ${r.appearances} appearances · minimum three per person</td></tr>
+      <tr><th scope="row">Direct slogan evidence</th><td>187 transcripts reviewed on September 5. No newer transcripts reviewed for slogans.</td></tr>
+      <tr><th scope="row">Assessments with unequal scores</th><td>${r.decisive} assessments · ${r.ties} ties excluded</td></tr>
+      <tr><th scope="row">People in the research ranking</th><td>${r.ranked} people · ${r.appearances} assessed debate appearances · at least three per person</td></tr>
     </tbody></table></div>
-    <p><strong>Shared source:</strong> assessments 13 and 125 use the same video under different formats. Both count in the full assessment-level inventory, but only one enters the comparable one-on-one set. No video link repeats within that comparable set. Recurring speakers remain a separate dependence issue.</p>
-    <p><strong>Reading uncertainty:</strong> resampling draws existing observations again, allowing repeats. The score studies use 20,000 draws with baseline seed 20260904 for edition comparability. Ranges show sensitivity to recorded observations—not every caption error, judging bias, repeated-speaker effect or selection decision. The earlier debate scores are unchanged.</p>
+    <p><strong>One video, two assessments:</strong> assessments 13 and 125 use the same video under different formats. Both count in the full archive, but only one enters the comparable one-on-one studies. No video link repeats within those studies. Some speakers appear many times, so the records do not represent entirely separate groups of people.</p>
+    <p><strong>How the uncertainty ranges work:</strong> most score comparisons are repeated on 20,000 samples drawn from the saved records, allowing the same record to appear more than once. This is called resampling. The lines on the charts cover the middle 95% of the resulting estimates. They show how much the answer changes with the selected records; they do not include every transcription error, AI judging bias or effect of repeated speakers. The ranking study also uses 3,000 split-half comparisons, explained below. The calculations keep the same starting number for random draws as September (20260904) so they can be reproduced.</p>
   </section>
   ${researchInsights.map((item,i)=>`<article class="methods-study" id="${item.id}" aria-labelledby="${item.id}-heading">
     <p class="eyebrow">Study ${i+1} / 7 · ${escape(item.topic)}</p><h2 id="${item.id}-heading">${escape(item.title)}</h2>
@@ -55,7 +55,7 @@ export function renderInsightsMethodsContent() {
     <p><a href="/insights/#${item.id}">Back to this finding and its figure</a> · <a href="#shared-heading">Shared evidence and uncertainty</a></p>
   </article>`).join("")}
   <section class="methods-shared"><h2>Trace and reproduce this edition</h2>
-    <p>The frozen input revision is <code>${r.sourceCommit}</code>. Reproduction requires that revision or matching source-file fingerprints; running the analysis against a changed catalogue is not an update to this edition. No new debate scores or direct slogan annotations were commissioned.</p>
+    <p>The calculations use a saved version of the catalogue, identified by <code>${r.sourceCommit}</code>. To reproduce them, use that version or files with matching digital fingerprints. Running the analysis on a newer catalogue would be a different study and would also require reviewing the conclusions. This edition neither reassessed debates nor added new transcript reviews for slogans.</p>
     <ul class="insight-links">${fileLinks(["README.md","source-manifest.json","publication-manifest.json","chart-contracts.json","figure-reading-keys.json","validation.md"],r.directory)}</ul>
     <p>Earlier analyses are preserved under their September dates. The current source package records reviewed exclusions, chart inputs, checks and PDF fingerprints.</p><p><a href="/insights/">Back to Insights</a> · <a href="/backend/">Assessment method and research library</a></p>
   </section>`.replace(/^ +$/gm, "");
