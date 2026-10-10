@@ -19,6 +19,63 @@ export function findWeightPreset(weights) {
   return weightPresets.find(preset => preset.weights.length === weights.length && preset.weights.every((w, i) => w === weights[i]));
 }
 
+// These are the reviewed research groups, not the site's finer browsing categories.
+export const weightTopics = Object.freeze([
+  { id: "cosmology-science-design", label: "Cosmology, science & design" },
+  { id: "evil-suffering-hiddenness", label: "Evil, suffering & hiddenness" },
+  { id: "general-theism-naturalism", label: "General theism & naturalism" },
+  { id: "mind-reason-logic", label: "Mind, reason & logic" },
+  { id: "morality-foundations", label: "Morality & moral foundations" },
+  { id: "religion-culture-meaning", label: "Religion, culture & meaning" },
+  { id: "resurrection-history", label: "Resurrection & historical evidence" },
+  { id: "scripture-revelation-doctrine", label: "Scripture, revelation & doctrine" }
+].map(Object.freeze));
+
+export function countWeightTopics(debates, cohort = "all") {
+  validateWeightFilters(cohort, "all");
+  const rows = debates.filter(d => cohort === "all" || d.cohort === cohort);
+  return [{ id: "all", label: "All research topics", count: rows.length },
+    ...weightTopics.map(t => ({ ...t, count: rows.filter(d => d.topic === t.id).length }))];
+}
+
+const shareKeys = ["sw", "edition", "weights", "procedure", "topic"];
+export function parseWeightSettings(search, edition) {
+  const defaults = { weights: [...defaultWeights], cohort: "all", topic: "all", warning: "" };
+  const params = new URLSearchParams(search);
+  if (!shareKeys.some(key => params.has(key))) return defaults;
+  if (params.get("edition") !== edition) return { ...defaults, warning: "This link does not match the available research edition. The current weights and all debates are shown instead." };
+  try {
+    if (shareKeys.some(key => params.getAll(key).length !== 1) || params.get("sw") !== "1") throw new Error("Unsupported link");
+    const raw = params.get("weights");
+    if (!/^\d{1,3}(,\d{1,3}){5}$/.test(raw)) throw new Error("Invalid weights");
+    const weights = raw.split(",").map(Number);
+    validateWeights(weights);
+    const cohort = params.get("procedure"), topic = params.get("topic");
+    validateWeightFilters(cohort, topic);
+    return { weights, cohort, topic, warning: "" };
+  } catch {
+    return { ...defaults, warning: "This link contains unsupported or invalid settings. The current weights and all debates are shown instead." };
+  }
+}
+
+export function buildWeightShareUrl(origin, { weights, cohort, topic }, edition) {
+  validateWeights(weights);
+  if (!weights.every(Number.isInteger)) throw new Error("Shared slider weights must be whole percentages.");
+  validateWeightFilters(cohort, topic);
+  const base = new URL(origin);
+  if (!["http:", "https:"].includes(base.protocol)) throw new Error("Unsupported share origin.");
+  const url = new URL("/insights/", base.origin);
+  const values = { sw: "1", edition, weights: weights.join(","), procedure: cohort, topic };
+  for (const key of shareKeys) url.searchParams.set(key, values[key]);
+  url.hash = "scoring-weights";
+  return url.href;
+}
+
+function validateWeightFilters(cohort, topic) {
+  if (!["all", "earlier", "later"].includes(cohort)) throw new Error("Unknown assessment group.");
+  if (topic !== "all" && !weightTopics.some(t => t.id === topic)) throw new Error("Unknown research topic.");
+}
+
 export function validateWeights(weights) {
   if (!Array.isArray(weights) || weights.length !== 6 ||
       weights.some(w => !Number.isFinite(w) || w < 0 || w > 100) ||
@@ -60,10 +117,10 @@ export function scoreScenarioSide(side, sections, weights, adjustment) {
   return Math.max(0, Math.min(100, Math.round(total + adjustment)));
 }
 
-export function evaluateWeights(debates, weights = defaultWeights, cohort = "all") {
+export function evaluateWeights(debates, weights = defaultWeights, cohort = "all", topic = "all") {
   validateWeights(weights);
-  if (!["all", "earlier", "later"].includes(cohort)) throw new Error("Unknown assessment group.");
-  const rows = debates.filter(d => cohort === "all" || d.cohort === cohort).map(d => {
+  validateWeightFilters(cohort, topic);
+  const rows = debates.filter(d => (cohort === "all" || d.cohort === cohort) && (topic === "all" || d.topic === topic)).map(d => {
     const proGod = scoreScenarioSide("proGod", d.sections, weights, d.adjustments[0]);
     const conGod = scoreScenarioSide("conGod", d.sections, weights, d.adjustments[1]);
     const gap = conGod - proGod;
