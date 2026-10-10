@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { weightExplorerSnapshot as snapshot } from "../src/data/weight-explorer-snapshot.js";
-import { defaultWeights, weightDimensions, weightPresets, findWeightPreset, validateWeights, redistributeWeights, evaluateWeights, scoreScenarioSide } from "../src/data/weight-explorer-model.js";
+import { defaultWeights, weightDimensions, weightPresets, findWeightPreset, weightTopics, countWeightTopics, parseWeightSettings, buildWeightShareUrl, validateWeights, redistributeWeights, evaluateWeights, scoreScenarioSide } from "../src/data/weight-explorer-model.js";
 
 const root = new URL("../", import.meta.url);
 const load = path => JSON.parse(readFileSync(new URL(path, root), "utf8"));
@@ -99,4 +99,58 @@ test("extreme scores stay bounded after the retained adjustment", () => {
   const section = n => [{weight:100, proGod:[[1,n,n,n,n,n,n]]}];
   assert.equal(scoreScenarioSide("proGod", section(100), defaultWeights, 5), 100);
   assert.equal(scoreScenarioSide("proGod", section(0), defaultWeights, -5), 0);
+});
+
+test("topic and procedure intersections match original reviewed membership and reconcile to all", () => {
+  for (const cohort of ["all", "earlier", "later"]) {
+    const counts = countWeightTopics(snapshot.debates, cohort);
+    const all = evaluateWeights(snapshot.debates, defaultWeights, cohort);
+    assert.equal(counts[0].count, all.count);
+    assert.equal(counts.slice(1).reduce((n,t) => n+t.count, 0), all.count);
+    let weightedGap = 0;
+    for (const topic of weightTopics) {
+      const expected = originalDebates.filter(d => d.cohort !== "unlocked" && d.theist_side && d.topic === topic.label && (cohort === "all" || d.cohort === cohort));
+      const actual = evaluateWeights(snapshot.debates, defaultWeights, cohort, topic.id);
+      assert.deepEqual(actual.rows.map(d => d.id).sort(), expected.map(d => d.id).sort());
+      assert.equal(counts.find(t => t.id === topic.id).count, actual.count);
+      assert.equal(actual.changed, 0);
+      weightedGap += actual.gap * actual.count;
+    }
+    assert(Math.abs(weightedGap / all.count - all.gap) < 1e-12);
+  }
+  assert.equal(evaluateWeights(snapshot.debates, defaultWeights, "later", "mind-reason-logic").count, 4);
+  assert.equal(evaluateWeights([], defaultWeights, "later", "mind-reason-logic").gap, null);
+  assert.throws(() => evaluateWeights(snapshot.debates, defaultWeights, "all", "unknown"));
+});
+
+test("shared settings round-trip exact weights, intersecting filters and edition without unrelated URL data", () => {
+  for (const weights of [...weightPresets.map(p => p.weights), [26,20,20,14,10,10], [100,0,0,0,0,0]]) {
+    for (const cohort of ["all", "earlier", "later"]) for (const topic of ["all", ...weightTopics.map(t => t.id)]) {
+      const state = { weights: [...weights], cohort, topic };
+      const url = new URL(buildWeightShareUrl("https://slugfester.com/other/?private=discard#old", state, snapshot.edition));
+      const restored = parseWeightSettings(url.search, snapshot.edition);
+      assert.deepEqual(restored, { ...state, warning: "" });
+      assert.equal(url.pathname, "/insights/");
+      assert.equal(url.hash, "#scoring-weights");
+      assert(!url.href.includes("private"));
+      assert.deepEqual(evaluateWeights(snapshot.debates, restored.weights, restored.cohort, restored.topic), evaluateWeights(snapshot.debates, weights, cohort, topic));
+    }
+  }
+});
+
+test("unsupported, malformed and different-edition links visibly fall back to defaults", () => {
+  const valid = new URL(buildWeightShareUrl("https://slugfester.com", { weights: defaultWeights, cohort: "all", topic: "all" }, snapshot.edition));
+  for (const [key,value] of [["sw","2"],["weights","25,20,20,15,10,9"],["weights","25,20,20,15,10,10.0"],["weights","100,-1,1,0,0,0"],["weights","25,20,20,15,10,NaN"],["topic","<script>"],["procedure","future"],["edition","2027-01-01"]]) {
+    const url = new URL(valid); url.searchParams.set(key,value);
+    const state = parseWeightSettings(url.search, snapshot.edition);
+    assert(state.warning.length > 0);
+    assert.deepEqual(state.weights, defaultWeights);
+    assert.equal(state.cohort, "all"); assert.equal(state.topic, "all");
+  }
+  const duplicate = new URL(valid); duplicate.searchParams.append("weights", "100,0,0,0,0,0");
+  assert(parseWeightSettings(duplicate.search, snapshot.edition).warning);
+  const missing = new URL(valid); missing.searchParams.delete("topic");
+  assert(parseWeightSettings(missing.search, snapshot.edition).warning);
+  assert.equal(parseWeightSettings("?deployment-check=anything", snapshot.edition).warning, "");
+  assert.throws(() => buildWeightShareUrl("javascript:alert(1)", { weights: defaultWeights, cohort: "all", topic: "all" }, snapshot.edition));
 });
