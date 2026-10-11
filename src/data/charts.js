@@ -5,6 +5,14 @@ const count = (values) => new Set(values).size;
 const fmt = (value) => value === null ? "—" : Number(value.toFixed(1)).toLocaleString("en-US");
 const positions = ["Supporting", "Challenging"];
 const shortDimensions = ["Coherence", "Evidence", "Response", "Relevance", "Precision", "Calibration"];
+const dimensionDescriptions = {
+  logicalCoherence: "Do the conclusions follow from the reasons given? This checks for contradictions, missing logical steps, and changes in meaning—not whether the conclusion agrees with the reader’s beliefs.",
+  evidenceWarrant: "Are claims backed by relevant facts, reliable sources, or good reasons for accepting the starting assumptions? Repeating a claim or naming an authority does not, by itself, supply that support.",
+  responsiveness: "Does the speaker address the other side’s actual argument or objection? A reply should engage the key point, rather than change the subject or attack an easier version of the argument.",
+  relevanceBurden: "Does this argument help establish the claim the speaker needs to defend? Even a true statement may not advance that task. Asking the opponent to disprove a claim does not establish it.",
+  precisionClarity: "Are important terms, claims, and qualifications clear and used consistently? Readers should be able to tell exactly what is being claimed, including its scope and limits.",
+  calibrationCharity: "Does the speaker’s confidence match the available support, and is the opposing view represented fairly? This combines avoiding overstatement, acknowledging uncertainty, and describing the other side’s arguments accurately."
+};
 export function chartSnapshotName(snapshot) {
   return `${snapshot.date}${snapshot.revision > 1 ? `-r${snapshot.revision}` : ""}`;
 }
@@ -75,6 +83,7 @@ function thresholdControl(state) {
   return `<div class="chart-threshold-control"><div class="chart-threshold-heading"><label for="chart-threshold">Score threshold</label><output id="chart-threshold-value" for="chart-threshold">${state.threshold}</output></div><input id="chart-threshold" type="range" min="50" max="100" step="5" value="${state.threshold}" aria-describedby="chart-threshold-help"><div class="chart-threshold-ticks" aria-hidden="true">${Array.from({ length: 11 }, (_, i) => `<span>${50 + i * 5}</span>`).join("")}</div><p id="chart-threshold-help">Count scores strictly below this value. Default: 70.</p></div>`;
 }
 export function bindChartThreshold(snapshot, root) {
+  bindDimensionHelp(root);
   const slider = root.querySelector("#chart-threshold");
   if (!slider) return;
   slider.addEventListener("input", () => {
@@ -83,6 +92,7 @@ export function bindChartThreshold(snapshot, root) {
     const results = root.querySelector("#chart-dimension-results");
     const scrollLeft = results.querySelector(".chart-table-scroll")?.scrollLeft || 0;
     results.innerHTML = dimensionGrid(analyzeCharts(snapshot, state), snapshot, state);
+    bindDimensionHelp(results);
     results.querySelector(".chart-table-scroll").scrollLeft = scrollLeft;
     root.querySelector("#chart-threshold-value").value = state.threshold;
     root.querySelectorAll("[data-chart-threshold]").forEach((label) => { label.textContent = state.threshold; });
@@ -97,9 +107,65 @@ export function bindChartThreshold(snapshot, root) {
     });
   });
 }
+function bindDimensionHelp(root) {
+  root.querySelectorAll(".chart-dimension-help").forEach((button) => {
+    const tooltip = root.querySelector(`#${button.getAttribute("popovertarget")}`);
+    if (typeof tooltip.showPopover !== "function") {
+      button.title = tooltip.textContent;
+      tooltip.hidden = true;
+      return;
+    }
+    let closeTimer, viewportListeners;
+    const isOpen = () => tooltip.matches(":popover-open");
+    const hide = () => { if (isOpen()) tooltip.hidePopover(); };
+    const position = () => {
+      const rect = button.getBoundingClientRect();
+      const width = Math.min(340, window.innerWidth - 24);
+      const height = tooltip.getBoundingClientRect().height;
+      tooltip.style.left = `${Math.max(12, Math.min(rect.left + rect.width / 2 - width / 2, window.innerWidth - width - 12))}px`;
+      tooltip.style.top = `${Math.max(12, rect.bottom + height + 8 > window.innerHeight - 12 ? rect.top - height - 8 : rect.bottom + 8)}px`;
+    };
+    const show = () => {
+      clearTimeout(closeTimer);
+      if (!isOpen()) tooltip.showPopover();
+      position();
+    };
+    const closeAfterLeaving = () => {
+      clearTimeout(closeTimer);
+      closeTimer = setTimeout(() => {
+        if (!button.matches(":hover, :focus-visible") && !tooltip.matches(":hover")) hide();
+      }, 180);
+    };
+    button.addEventListener("pointerenter", (event) => { if (event.pointerType !== "touch") show(); });
+    button.addEventListener("pointerleave", closeAfterLeaving);
+    button.addEventListener("focus", () => { if (button.matches(":focus-visible")) show(); });
+    button.addEventListener("blur", closeAfterLeaving);
+    tooltip.addEventListener("pointerenter", () => clearTimeout(closeTimer));
+    tooltip.addEventListener("pointerleave", closeAfterLeaving);
+    tooltip.addEventListener("beforetoggle", (event) => {
+      viewportListeners?.abort();
+      if (event.newState !== "open") return;
+      position();
+      viewportListeners = new AbortController();
+      const dismiss = (event) => {
+        if (event.target instanceof Node && tooltip.contains(event.target)) return;
+        hide();
+        viewportListeners.abort();
+      };
+      // Close when the anchor moves; the top-layer card cannot be clipped by the table.
+      window.addEventListener("scroll", dismiss, { capture: true, signal: viewportListeners.signal });
+      window.addEventListener("resize", dismiss, { signal: viewportListeners.signal });
+    });
+    tooltip.addEventListener("toggle", () => { if (isOpen()) position(); });
+  });
+}
+function dimensionHeading(key, label, index) {
+  const id = `chart-dimension-${key}`;
+  return `<th scope="col"><button type="button" class="chart-dimension-help" popovertarget="${id}" aria-describedby="${id}">${shortDimensions[index]}</button><span class="chart-dimension-tooltip" id="${id}" popover="auto" role="tooltip"><strong>${escape(label)}</strong>${escape(dimensionDescriptions[key])}</span></th>`;
+}
 function dimensionGrid(analysis, snapshot, state) {
   const legend = `<div class="chart-heat-key"><span>Lighter: fewer below ${chartThreshold(state.threshold)}</span><i aria-hidden="true"></i><span>Darker: more below ${chartThreshold(state.threshold)}</span></div>`;
-  return `${legend}<div class="chart-table-scroll" role="region" aria-label="Reasoning dimensions; scroll horizontally on small screens" tabindex="0"><table class="chart-heatmap"><caption>Average share of assessed moves with a dimension score below ${chartThreshold(state.threshold)}, giving each debate equal weight</caption><thead><tr><th scope="col">Family / position</th>${snapshot.dimensions.map(([_, label], i) => `<th scope="col"><abbr title="${escape(label)}">${shortDimensions[i]}</abbr></th>`).join("")}</tr></thead><tbody>${analysis.families.map((f) => f.sides.map((s, p) => `<tr><th scope="row">${familyLink(f, state)}<span class="chart-text-${p}">${positions[p]} · ${s.debates} debates ${small(s.debates)}</span></th>${s.dimensions.map((d, i) => `<td style="--heat:${d.rate === null ? 0 : d.rate / 100}" aria-label="${escape(f.label)}, ${positions[p]}, ${escape(snapshot.dimensions[i][1])}: ${d.rate === null ? "no observations" : `${fmt(d.rate)} percent; ${d.flagged} of ${s.moves} moves below ${chartThreshold(state.threshold)} before debate balancing`}">${d.rate === null ? "—" : `${fmt(d.rate)}%`}</td>`).join("")}</tr>`).join("")).join("")}</tbody></table></div>${legend}`;
+  return `${legend}<div class="chart-table-scroll" role="region" aria-label="Reasoning dimensions; scroll horizontally on small screens" tabindex="0"><table class="chart-heatmap"><caption>Average share of assessed moves with a dimension score below ${chartThreshold(state.threshold)}, giving each debate equal weight</caption><thead><tr><th scope="col">Family / position</th>${snapshot.dimensions.map(([key, label], i) => dimensionHeading(key, label, i)).join("")}</tr></thead><tbody>${analysis.families.map((f) => f.sides.map((s, p) => `<tr><th scope="row">${familyLink(f, state)}<span class="chart-text-${p}">${positions[p]} · ${s.debates} debates ${small(s.debates)}</span></th>${s.dimensions.map((d, i) => `<td style="--heat:${d.rate === null ? 0 : d.rate / 100}" aria-label="${escape(f.label)}, ${positions[p]}, ${escape(snapshot.dimensions[i][1])}: ${d.rate === null ? "no observations" : `${fmt(d.rate)} percent; ${d.flagged} of ${s.moves} moves below ${chartThreshold(state.threshold)} before debate balancing`}">${d.rate === null ? "—" : `${fmt(d.rate)}%`}</td>`).join("")}</tr>`).join("")).join("")}</tbody></table></div>${legend}`;
 }
 function evidence(analysis, snapshot, state) {
   const pages = Math.max(1, Math.ceil(analysis.moves.length / 20)), page = Math.min(state.page, pages);

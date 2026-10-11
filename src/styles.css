@@ -103,7 +103,12 @@
 .chart-heatmap tr:nth-child(2n) th { padding-bottom: 17px; }
 /* Keep each family's supporting and challenging rows together. */
 .chart-heatmap tbody tr:nth-child(2n + 3) > * { border-top: 2px solid var(--chart-divider); padding-top: 16px; }
-.chart-heatmap abbr { text-decoration: none; }
+.chart-dimension-help { appearance: none; border: 0; border-radius: 3px; padding: 6px 2px; background: transparent; color: inherit; font: inherit; font-weight: inherit; text-decoration: underline dotted; text-decoration-color: var(--muted); text-underline-offset: 5px; cursor: help; }
+.chart-dimension-help:hover { color: var(--teal-text); }
+.chart-dimension-help:focus-visible { outline: 2px solid var(--teal-text); outline-offset: 3px; }
+.chart-dimension-tooltip { position: fixed; inset: 0; width: min(340px, calc(100vw - 24px)); height: fit-content; max-height: calc(100dvh - 24px); margin: auto; padding: 16px 18px; overflow: auto; border: 1px solid #5e7771; border-radius: 10px; background: var(--ink); color: #fff; box-shadow: var(--shadow); font-size: 14px; font-weight: 450; line-height: 1.6; text-align: left; text-wrap: pretty; }
+.chart-dimension-tooltip[style] { right: auto; bottom: auto; margin: 0; }
+.chart-dimension-tooltip strong { display: block; margin-bottom: 7px; font-size: 15px; font-weight: 750; }
 .chart-heat-key { display: flex; gap: 12px; align-items: center; justify-content: end; font-size: 11px; color: var(--muted); margin-top: 10px; }
 .chart-heat-key:first-child { margin: 0 0 18px; }
 .chart-heat-key i { width: 80px; height: 10px; background: linear-gradient(to right, #f6f3e9, #daa843); }

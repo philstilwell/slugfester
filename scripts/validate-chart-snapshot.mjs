@@ -101,6 +101,16 @@ for (const [scope] of snapshot.scopes) {
   }
 }
 const html = renderChartsContent(snapshot);
+for (const markup of [html, renderChartsContent(snapshot, "", false)]) {
+  assert.equal((markup.match(/class="chart-dimension-help"/g) || []).length, 6);
+  for (const [key] of snapshot.dimensions) {
+    assert.ok(markup.includes(`popovertarget="chart-dimension-${key}" aria-describedby="chart-dimension-${key}"`));
+    assert.ok(markup.includes(`id="chart-dimension-${key}" popover="auto" role="tooltip"`));
+  }
+  for (const phrase of ["Do the conclusions follow", "reliable sources", "actual argument or objection", "claim the speaker needs to defend", "scope and limits", "opposing view represented fairly"]) {
+    assert.ok(markup.includes(phrase), `Missing plain-language dimension explanation: ${phrase}`);
+  }
+}
 assert.ok(!/>NaN<|>undefined<|NaN%|undefined%|width:Infinity/.test(html));
 assert.ok(html.includes(`/docs/charts/snapshots/${chartSnapshotName(snapshot)}.json`), "Downloads must identify the published revision");
 const pendingFixture = { ...snapshot, exclusions: [{ id: "pending", number: "new", status: "pending-review", reason: "Position classification awaits review." }] };
