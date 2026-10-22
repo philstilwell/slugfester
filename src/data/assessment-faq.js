@@ -50,7 +50,7 @@ export function renderAssessmentFaq() {
         <div>
           <dt>Can I challenge the scoring method itself?</dt>
           <dd><p>Yes. The choice of arguments, scoring criteria, weights and assumptions can all be questioned. Explain which choice you dispute and how it affects the assessment. A methodological objection can matter across many debates, even when no quotation is wrong. You can also <a href="/insights/#scoring-weights">explore alternative scoring weights</a> using the saved assessments.</p>
-          <p>Errors identified may not be corrected immediately. All feedback will be incorporated into the prompts used for future reevaluations of the entire debate corpus. Specific complaints will be generalized into review instructions and safeguards that apply to every assessment and score. Reviewers will be asked to check for the underlying problem across all debates, so feedback about one case can improve the process throughout the collection.</p></dd>
+          <p>Errors identified may not be corrected immediately. All feedback will be considered, but only complaints judged valid will be incorporated into the prompts used for future reevaluations of the entire debate corpus. Valid complaints will be generalized into review instructions and safeguards that apply to every assessment and score. The reviewers are independent AI agents called by the administrative AI. They will be asked to check for the underlying problem across all debates, so a valid complaint about one case can improve the process throughout the collection.</p></dd>
         </div>
         <div>
           <dt>Will the debates be reassessed as AI improves?</dt>
