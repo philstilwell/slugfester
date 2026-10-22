@@ -10,3 +10,8 @@ Published on the Backend page from the approved September 26, 2026 guide.
 The guide documents the standard new one-on-one workflow as of September 26, 2026. It is an explanatory snapshot, not a replacement for the operational add-debate skill. It does not claim that historical assessments used identical controls.
 
 Source material: the installed `add-slugfester-youtube-debate` skill and its single-debate/team-debate runbooks; `docs/assessment-production-workflow.md`; `docs/reassessment-rubric-v2.1.md`; `docs/assessment-workflow-v4.2.21.17.41.md`; the Debate 238 manifest; and the standalone-debate and reassessment scoring modules. The original editable layout and full source record remain in the user's `Downloads/Slugfester-assessment-guide-2026-09-26` folder.
+
+## Q&A illustration
+
+- `qa-characters.webp`: 480 × 439 transparent WebP (quality 88), generated with OpenAI imagegen on October 22, 2026 using `panel-1.webp` as the character and style reference. It pairs the same two characters with “Q&A”, “?” and “!” for the Backend accordion heading.
+- Reviewers and adjudicators in the guide and its diagrams are independent AI agents called by the administrative AI. The page states this above the illustrated panels as well as in the accessible text.
