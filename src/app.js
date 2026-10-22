@@ -1,12 +1,13 @@
-import { pageUpdates } from "./data/page-updates.js?v=93026ae71e5e5572";
-import { renderCritiqueText } from "./data/critique-format.js?v=93026ae71e5e5572";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=93026ae71e5e5572";
-import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=93026ae71e5e5572";
-import { topicPreviewText } from "./data/topic-preview.js?v=93026ae71e5e5572";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=93026ae71e5e5572";
-import { debateSummaries } from "./data/debate-summaries.js?v=93026ae71e5e5572";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=93026ae71e5e5572";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=93026ae71e5e5572";
+import { pageUpdates } from "./data/page-updates.js?v=bc2207638d4c25b6";
+import { renderCritiqueText } from "./data/critique-format.js?v=bc2207638d4c25b6";
+import { renderAssessmentFaq } from "./data/assessment-faq.js?v=bc2207638d4c25b6";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=bc2207638d4c25b6";
+import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=bc2207638d4c25b6";
+import { topicPreviewText } from "./data/topic-preview.js?v=bc2207638d4c25b6";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=bc2207638d4c25b6";
+import { debateSummaries } from "./data/debate-summaries.js?v=bc2207638d4c25b6";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=bc2207638d4c25b6";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=bc2207638d4c25b6";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -45,7 +46,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=93026ae71e5e5572";
+} from "./seo.js?v=bc2207638d4c25b6";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -105,7 +106,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=93026ae71e5e5572")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=bc2207638d4c25b6")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -124,7 +125,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=93026ae71e5e5572")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=bc2207638d4c25b6")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -140,7 +141,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=93026ae71e5e5572`)
+    const promise = import(`./data/debate-details/${id}.js?v=bc2207638d4c25b6`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -155,7 +156,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=93026ae71e5e5572`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=bc2207638d4c25b6`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -1616,6 +1617,7 @@ function renderRankings() {
           <p class="eyebrow">Published score averages</p>
           <h1>Rankings & Flags</h1>
           <p class="rankings-lede">Rank speakers by their published overall scores, with the context to compare topics, sample size, and opponents faced.</p>
+          <p class="assessment-faq-reference"><a href="/backend/#assessment-questions">About these scores · Q&amp;A</a></p>
         </div>
         <aside class="rankings-summary" aria-label="Rankings summary">
           <span>Qualified interlocutors</span>
@@ -2423,6 +2425,7 @@ function renderBackend() {
         </div>
       </section>
 
+      ${renderAssessmentFaq()}
       ${renderAssessmentProcessGuide()}
 
       <section class="backend-summary" aria-labelledby="backend-summary-heading">
@@ -2789,6 +2792,7 @@ function renderDebateObject(
           ${renderMiniScore(debate.sides.con.name, debate.score.con, "coral")}
           <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noopener noreferrer">Open YouTube source</a>
           ${(debate.additionalSources || []).map((source) => `<a class="button secondary" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join("")}
+          <a class="assessment-faq-link" href="/backend/#assessment-questions">About these scores · Q&amp;A</a>
           ${preview ? "" : `<a class="scorecard-correction-link" href="${escapeHtml(correctionReportUrl(debate))}" data-document-navigation>Report a possible scorecard issue</a>`}
         </aside>
       </section>
@@ -3497,6 +3501,13 @@ function scrollToHashTarget(hash = window.location.hash) {
   const target = document.getElementById(id);
   if (!target) return false;
 
+  // Reveal a directly linked accordion (or an anchor within it) before scrolling.
+  for (let details = target.closest("details"); details; details = details.parentElement?.closest("details")) {
+    details.open = true;
+  }
+  if (target.id === "assessment-questions") {
+    target.querySelector("summary")?.focus({ preventScroll: true });
+  }
   target.scrollIntoView({ block: "start" });
   return true;
 }
@@ -3566,29 +3577,29 @@ async function route({ focusMain = false } = {}) {
 
   if (backendMatch && !chartSnapshot) {
     chartsPromise ||= Promise.all([
-      import("./data/charts.js?v=93026ae71e5e5572"),
-      import("./data/chart-snapshot.js?v=93026ae71e5e5572")
+      import("./data/charts.js?v=bc2207638d4c25b6"),
+      import("./data/chart-snapshot.js?v=bc2207638d4c25b6")
     ]).then(([module, data]) => { chartsModule = module; chartSnapshot = data.chartSnapshot; })
       .catch((error) => { chartsPromise = undefined; throw error; });
     loaders.push(chartsPromise);
   }
 
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=93026ae71e5e5572")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=bc2207638d4c25b6")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=93026ae71e5e5572")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=bc2207638d4c25b6")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=93026ae71e5e5572")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=bc2207638d4c25b6")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
@@ -3596,7 +3607,7 @@ async function route({ focusMain = false } = {}) {
 
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=93026ae71e5e5572")
+    insightsPromise ||= import("./data/insights.js?v=bc2207638d4c25b6")
       .then((module) => { insightsContent = module.renderInsightsContent; initializeWeightExplorer = module.initializeWeightExplorer; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);
