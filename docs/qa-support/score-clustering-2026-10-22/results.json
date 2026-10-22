@@ -1,0 +1,160 @@
+{
+  "sourcePath": "docs/analysis/corpus-papers-2026-10-09/debates.json",
+  "sourceSha256": "8ff40e0b8978ab9ad1034f5c9a106d553b5ca30f5484d78d67d5fb210f4feab9",
+  "analysisDate": "2026-10-22",
+  "snapshotDate": "2026-10-09",
+  "question": "Are a speaker's scores more tightly clustered than random within-debate score assignments would produce?",
+  "nullModel": "Independently swap or retain each debate's pair of scores with probability one half, keeping participants, matchups, both awarded scores and assessment procedure attached to that debate.",
+  "eligibility": "Same locked, ranking-eligible one-on-one sample as the October ranking study; include every speaker with at least six appearances, selected by count alone.",
+  "statistic": "Pooled within-speaker standard deviation: sqrt(sum of squared deviations from each speaker's own mean / (appearances - speakers)); lower means tighter clustering.",
+  "debates": 291,
+  "speakers": 31,
+  "appearances": 314,
+  "observedPooledSd": 3.0689432086584336,
+  "repetitions": 100000,
+  "seed": 20261022,
+  "randomPooledSd": {
+    "minimum": 4.247140261851078,
+    "median": 4.871198583018462,
+    "middle95": [
+      4.599254338273505,
+      5.112608626394113
+    ]
+  },
+  "asOrMoreClustered": 0,
+  "plusOnePermutationP": 0.00000999990000099999,
+  "zeroHit95UpperBound": 0.000029956874019427958,
+  "participants": [
+    {
+      "speaker": "Alex Malpass",
+      "appearances": 7
+    },
+    {
+      "speaker": "Alex O'Connor",
+      "appearances": 28
+    },
+    {
+      "speaker": "Aron Ra",
+      "appearances": 6
+    },
+    {
+      "speaker": "Bart Ehrman",
+      "appearances": 14
+    },
+    {
+      "speaker": "Bernardo Kastrup",
+      "appearances": 6
+    },
+    {
+      "speaker": "Christopher Hitchens",
+      "appearances": 15
+    },
+    {
+      "speaker": "Dan Barker",
+      "appearances": 7
+    },
+    {
+      "speaker": "Daniel Dennett",
+      "appearances": 7
+    },
+    {
+      "speaker": "Dinesh D'Souza",
+      "appearances": 7
+    },
+    {
+      "speaker": "Frank Turek",
+      "appearances": 8
+    },
+    {
+      "speaker": "Glen Scrivener",
+      "appearances": 6
+    },
+    {
+      "speaker": "Graham Oppy",
+      "appearances": 12
+    },
+    {
+      "speaker": "Joe Folley",
+      "appearances": 6
+    },
+    {
+      "speaker": "John Lennox",
+      "appearances": 10
+    },
+    {
+      "speaker": "Jonathan McLatchie",
+      "appearances": 6
+    },
+    {
+      "speaker": "Jordan Peterson",
+      "appearances": 6
+    },
+    {
+      "speaker": "Joseph Schmid",
+      "appearances": 6
+    },
+    {
+      "speaker": "Matt Dillahunty",
+      "appearances": 32
+    },
+    {
+      "speaker": "Michael Huemer",
+      "appearances": 7
+    },
+    {
+      "speaker": "Michael Jones",
+      "appearances": 14
+    },
+    {
+      "speaker": "Michael Licona",
+      "appearances": 7
+    },
+    {
+      "speaker": "Michael Shermer",
+      "appearances": 8
+    },
+    {
+      "speaker": "Peter Atkins",
+      "appearances": 6
+    },
+    {
+      "speaker": "Randal Rauser",
+      "appearances": 7
+    },
+    {
+      "speaker": "Richard Carrier",
+      "appearances": 8
+    },
+    {
+      "speaker": "Richard Dawkins",
+      "appearances": 9
+    },
+    {
+      "speaker": "Sam Harris",
+      "appearances": 8
+    },
+    {
+      "speaker": "Stephen Woodford",
+      "appearances": 6
+    },
+    {
+      "speaker": "Tom Jump",
+      "appearances": 6
+    },
+    {
+      "speaker": "Trent Horn",
+      "appearances": 9
+    },
+    {
+      "speaker": "William Lane Craig",
+      "appearances": 30
+    }
+  ],
+  "limitations": [
+    "Conditional on this explicit random-assignment model, not all possible meanings of arbitrary scoring.",
+    "The randomization preserves debate-level paired scores and opponent schedules, but assumes either participant is equally likely to receive either score under the null; stable position or identity bias can violate that assumption without accurate judging.",
+    "This retrospective comparison tests the combined sample, not each participant separately, and is not an independent replication of the ranking study.",
+    "Selection is curated and historical methods differ; this does not verify historical blindness, current accuracy, future performance, or the truth of a worldview.",
+    "Zero extreme simulations is not zero probability. The 95% upper bound quantifies simulation uncertainty under the null, not uncertainty about the null's assumptions or the likelihood the site is correct."
+  ]
+}
