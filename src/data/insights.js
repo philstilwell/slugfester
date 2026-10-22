@@ -1,7 +1,7 @@
 import { researchEdition, researchInsights as coreResearchInsights } from "./research-edition.js?v=20261009-corpus308-plain-language";
 import { researchExtensions } from "./research-extensions.js?v=20261009-three-new-studies";
-import { renderWeightExplorer } from "./weight-explorer.js?v=bc2207638d4c25b6";
-export { initializeWeightExplorer } from "./weight-explorer.js?v=bc2207638d4c25b6";
+import { renderWeightExplorer } from "./weight-explorer.js?v=8fcc8d970c1d3410";
+export { initializeWeightExplorer } from "./weight-explorer.js?v=8fcc8d970c1d3410";
 const researchInsights = [...coreResearchInsights, ...researchExtensions];
 export { researchEdition, researchInsights };
 export const researchSnapshot = researchEdition.date;

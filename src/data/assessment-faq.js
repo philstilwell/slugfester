@@ -45,11 +45,12 @@ export function renderAssessmentFaq() {
         </div>
         <div>
           <dt>What if an assessment misrepresents me or contains another error?</dt>
-          <dd><p>Use the scorecard’s “Report a possible scorecard issue” link, or the <a href="/corrections/#report-scorecard-issue">Feedback form</a>. Identify the page and disputed wording, explain the problem, and include the relevant source passage or timestamp where possible. You do not need to diagnose the AI or propose a replacement score. A specific objection can be valid regardless of whether its author likes the result. Reports inform corrections and future improvements; submission does not guarantee a review, reply or change.</p></dd>
+          <dd><p>Use the scorecard’s “Report a possible scorecard issue” link, or the <a href="/corrections/#report-scorecard-issue">Feedback form</a>. Identify the page and disputed wording, explain the problem, and include the relevant source passage or timestamp where possible. You do not need to diagnose the AI or propose a replacement score. A specific objection can be valid regardless of whether its author likes the result. Errors may not be corrected immediately, and submission does not guarantee a reply or a change to the current scorecard.</p></dd>
         </div>
         <div>
           <dt>Can I challenge the scoring method itself?</dt>
-          <dd><p>Yes. The choice of arguments, scoring criteria, weights and assumptions can all be questioned. Explain which choice you dispute and how it affects the assessment. A methodological objection can matter across many debates, even when no quotation is wrong. You can also <a href="/insights/#scoring-weights">explore alternative scoring weights</a> using the saved assessments.</p></dd>
+          <dd><p>Yes. The choice of arguments, scoring criteria, weights and assumptions can all be questioned. Explain which choice you dispute and how it affects the assessment. A methodological objection can matter across many debates, even when no quotation is wrong. You can also <a href="/insights/#scoring-weights">explore alternative scoring weights</a> using the saved assessments.</p>
+          <p>Errors identified may not be corrected immediately. All feedback will be incorporated into the prompts used for future reevaluations of the entire debate corpus. Specific complaints will be generalized into review instructions and safeguards that apply to every assessment and score. Reviewers will be asked to check for the underlying problem across all debates, so feedback about one case can improve the process throughout the collection.</p></dd>
         </div>
         <div>
           <dt>Will the debates be reassessed as AI improves?</dt>
