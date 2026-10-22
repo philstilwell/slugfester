@@ -28,8 +28,8 @@ for (const phrase of ["Two clear opposing positions", "complete exchange", "Usab
 }
 assert.ok(app.includes('<a href="${correctionsPath()}">Feedback</a>'));
 const page = app.slice(app.indexOf("function renderCorrections()"), app.indexOf("function renderAssessmentPrinciple("));
-assert.ok(page.includes("Submitting a report does not guarantee a review, an individual reply, or a change."));
-assert.ok(page.includes("This confirms submission only, not a commitment to review or respond."));
+assert.ok(page.includes("Submitting a report does not guarantee an individual reply or an immediate correction."));
+assert.ok(page.includes("This confirms submission; it does not promise an individual reply or an immediate correction."));
 assert.ok(page.includes("If a report is taken up"));
 assert.ok(!page.includes("delivered for review"));
 assert.ok(page.indexOf("renderDebateRecommendation(") > page.indexOf("</form>"), "Suggestion form belongs below Corrections form");
