@@ -48,8 +48,8 @@ export function renderAssessmentFaq() {
           <dd><p>Use the scorecard’s “Report a possible scorecard issue” link, or the <a href="/corrections/#report-scorecard-issue">Feedback form</a>. Identify the page and disputed wording, explain the problem, and include the relevant source passage or timestamp where possible. You do not need to diagnose the AI or propose a replacement score. A specific objection can be valid regardless of whether its author likes the result. Errors may not be corrected immediately, and submission does not guarantee a reply or a change to the current scorecard.</p></dd>
         </div>
         <div>
-          <dt>Can I challenge the scoring method itself?</dt>
-          <dd><p>Yes. The choice of arguments, scoring criteria, weights and assumptions can all be questioned. Explain which choice you dispute and how it affects the assessment. A methodological objection can matter across many debates, even when no quotation is wrong. You can also <a href="/insights/#scoring-weights">explore alternative scoring weights</a> using the saved assessments.</p>
+          <dt>How can I contribute to the improvement of the scoring method?</dt>
+          <dd><p>Suggest an improvement to the choice of arguments, scoring criteria, weights or assumptions, and explain how it would improve the assessment. A methodological objection can matter across many debates, even when no quotation is wrong. You can also <a href="/insights/#scoring-weights">explore alternative scoring weights</a> using the saved assessments.</p>
           <p>Errors identified may not be corrected immediately. All feedback will be considered, but only complaints judged valid will be incorporated into the prompts used for future reevaluations of the entire debate corpus. Valid complaints will be generalized into review instructions and safeguards that apply to every assessment and score. The reviewers are independent AI agents called by the administrative AI. They will be asked to check for the underlying problem across all debates, so a valid complaint about one case can improve the process throughout the collection.</p></dd>
         </div>
         <div>
