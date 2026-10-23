@@ -36,7 +36,7 @@ For each person, subtract that person's mean from each recorded score and square
 - Middle 95% of simulated spreads: **4.599–5.113 points**. This is a range of random-assignment outcomes, not an accuracy interval.
 - Simulations with spread at or below the observed value: **0 of 100,000**.
 - Conventional plus-one permutation p-value: **1/100,001**, approximately 0.00001. Adding one to both numerator and denominator avoids reporting zero from a finite simulation; see the [SciPy permutation-test documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.permutation_test.html).
-- With zero qualifying simulations, the one-sided 95% binomial upper bound for the underlying tail probability is `1 − 0.05^(1/100000) = 0.000029956874`, approximately **0.003%**, or **1 in 33,381**. The Q&A rounds conservatively to about **1 in 33,000**.
+- With zero qualifying simulations, the one-sided 95% binomial upper bound for the underlying tail probability is `1 − 0.05^(1/100000) = 0.000029956874`, approximately **0.003%**, or **1 in 33,381**. This calculation is retained as a research record. The Q&A now explains the visible clustering of individual scores without this probability estimate.
 
 The upper bound quantifies simulation uncertainty under the stated model. It is not the probability that the model is true, the probability that the site is wrong, or a confidence interval for assessment accuracy. Zero observed successes does not imply an impossible event. No stronger tail precision is claimed.
 
