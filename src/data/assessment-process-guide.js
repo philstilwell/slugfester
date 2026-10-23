@@ -13,7 +13,7 @@ export function renderAssessmentProcessGuide() {
     <p class="backend-process-intro">The standard one-on-one workflow · September 2026. Earlier scorecards may use different controls. Select a panel to enlarge it.</p>
     <p class="backend-process-intro">The administrative AI coordinates the process and calls independent AI agents to review the evidence and resolve disagreements. Throughout this guide and its diagrams, <strong>reviewers and adjudicators are those AI agents</strong>.</p>
     <div class="backend-process-actions">
-      <a href="/assets/assessment-process/slugfester-assessment-process.pdf" download>Download PDF (3.6 MB)</a>
+      <a href="/assets/assessment-process/slugfester-assessment-process.pdf?v=20261022-ai-reviewers" download>Download PDF (3.6 MB)</a>
       <a href="#rubric-quality-check">Skip to the rubric quality check</a>
     </div>
     <details class="backend-objectivity-accordion backend-process-text" id="backend-objectivity-heading">
@@ -50,7 +50,7 @@ export function renderAssessmentProcessGuide() {
       </div>
     </details>
     <div class="backend-process-panels">${panels.map(([id, title, description], index) => `<figure id="process-${id}">
-      <a href="/assets/assessment-process/panel-${index + 1}.webp" aria-label="View part ${index + 1} at full size: ${title}"><img src="/assets/assessment-process/panel-${index + 1}.webp" alt="Part ${index + 1}: ${title}. ${description} Full text is available in the reading option above." width="1600" height="2240" loading="${index ? "lazy" : "eager"}" decoding="async"></a>
+      <a href="/assets/assessment-process/panel-${index + 1}.webp?v=20261022-ai-reviewers" aria-label="View part ${index + 1} at full size: ${title}"><img src="/assets/assessment-process/panel-${index + 1}.webp?v=20261022-ai-reviewers" alt="Part ${index + 1}: ${title}. ${description} Full text is available in the reading option above." width="1600" height="2240" loading="${index ? "lazy" : "eager"}" decoding="async"></a>
       <figcaption>Part ${index + 1} of 3 · ${title} <a href="#assessment-process">Back to guide options</a></figcaption>
     </figure>`).join("")}</div>
   </section>`;
