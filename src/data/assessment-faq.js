@@ -1,5 +1,5 @@
 // Shared by the interactive Backend page and its initial, no-JavaScript HTML.
-export function renderAssessmentFaq() {
+export function renderAssessmentFaq(tomJumpScores = []) {
   return `<details class="backend-objectivity-accordion assessment-faq" id="assessment-questions">
     <summary><img class="assessment-faq-art" src="/assets/assessment-process/qa-characters.webp" alt="" width="480" height="439" decoding="async"><span><strong>Questions &amp; answers</strong><small>Purpose, scores, evidence and corrections</small></span><i aria-hidden="true"></i></summary>
     <div class="assessment-faq-content">
@@ -18,18 +18,15 @@ export function renderAssessmentFaq() {
         </div>
         <div>
           <dt>What evidence is there that the assessments are accurate?</dt>
-          <dd><p>The linked recordings let readers check whether quotations, summaries and critiques fit the actual exchange. A further encouraging sign is the tendency for an interlocutor’s scores to cluster across different debates. Under the standard blind-review workflow, the reviewers are independent AI agents called by the administrative AI. They do not receive earlier scorecards or published results, so those scores are not supplied as targets. Earlier assessments may use different controls.</p>
-          <p>The <a href="/insights/#ranking-confidence">October 9, 2026 ranking study</a> tested this consistency by splitting each of 31 interlocutors’ records, all with at least six assessed debates, into two halves. Across 3,000 random splits, the typical agreement between the two rankings was <strong>0.87</strong>, where 1.00 means identical order. This is strong evidence of repeatable differences in assessed performance. It does not mean “87% accurate”: a judging system can repeat a bias or misunderstanding. Consistency supports confidence in the pattern; accuracy also requires checking the reasoning against the source. A separate external validation study, beyond the AI review process described here, would provide an additional check.</p></dd>
+          <dd><p>The linked recordings let readers check whether quotations, summaries and critiques fit the actual exchange. Another encouraging sign is visible in an interlocutor’s score graph: when their scores cluster within a narrow range across several debates, the assessments repeatedly place their debating competence at a similar level.</p>
+          <p>Under the standard blind-review workflow, the reviewers are independent AI agents called by the administrative AI. They do not receive earlier scorecards or published results, so those scores are not supplied as targets. Earlier assessments may use different controls.</p>
+          <p>This consistency supports confidence that the assessments are identifying a recurring pattern in the person’s performance. Accuracy still depends on how well the assessments represent and evaluate the actual arguments; a consistent bias or misunderstanding can also recur.</p></dd>
         </div>
         <div>
-          <dt>Could the scores cluster this tightly if they were assigned arbitrarily?</dt>
-          <dd><p>A random-assignment check examined the same 31 interlocutors, covering 314 appearances. For each debate, the computer made a separate 50–50 choice: leave the two scores with their original recipients, or exchange the scores between the two participants.</p>
-          <p>For example, consider these two hypothetical debates:</p>
-          <ul><li><strong>Debate 1, using an earlier scoring method:</strong> Maya scored 80 and Leo scored 70. If the computer chose “keep,” Maya retained 80 and Leo retained 70.</li><li><strong>Debate 2, using a later scoring method:</strong> Maya scored 82 and Nora scored 68. If the computer chose “exchange,” Maya received 68 and Nora received 82.</li></ul>
-          <p>In this simulated version, Maya’s scores would be 80 and 68, instead of 80 and 82—a much looser cluster. She would still have the same two opponents, two debate appearances, and one debate assessed under each scoring method. The scores stayed within their original debates; only who received them could change.</p>
-          <p>The computer repeated these independent choices across the full set of included debates to create 100,000 simulated versions, then compared their overall score clustering with the published pattern. The published scorecards were not changed.</p>
-          <p><strong>None of 100,000 random assignments produced clustering as tight as the published scores.</strong> Under this specific model, the chance of clustering at least this strong has a 95% simulation upper bound of about <strong>1 in 33,000</strong>. That supports a systematic pattern beyond this form of arbitrary assignment. It is a result for the group, not a separate probability for each person.</p>
-          <p>The figure is conditional on that model; it is not the probability that an assessment is wrong. Stable bias or shared assumptions can also produce consistent scores. <a href="/docs/qa-support/score-clustering-2026-10-22/">Read the methods, results and limits</a>.</p></dd>
+          <dt>What does a tight cluster of one person’s scores show?</dt>
+          <dd><p>It shows that the person was assessed as demonstrating <strong>a similar level of debating competence across those debates</strong>. On an interlocutor’s profile, the score graph groups their debate scores into five-point ranges. Taller bars mean more debates received scores in that range. When most scores sit in a few neighboring ranges, you can see the consistency at a glance.</p>
+          ${renderTomJumpExample(tomJumpScores)}
+          <p>To examine another person, select their name on the <a href="/rankings/">rankings page</a> and look at their score distribution and debate list. Read the cluster alongside the number of debates, topics and opponents. It describes their assessed performance in those debates; it does not establish identical ability in every setting or guarantee that each judgment is correct.</p></dd>
         </div>
         <div>
           <dt>How much weight should I give rankings and small score differences?</dt>
@@ -63,4 +60,27 @@ export function renderAssessmentFaq() {
       </dl>
     </div>
   </details>`;
+}
+
+// Both page versions supply the same eligible individual scores used by profiles.
+function renderTomJumpExample(scores) {
+  if (scores.length < 2) return "";
+  const ordered = [...scores].sort((a, b) => a - b);
+  const scoreList = `${ordered.slice(0, -1).join(", ")} and ${ordered.at(-1)}`;
+  const spread = ordered.at(-1) - ordered[0];
+  const bands = Array.from({ length: 10 }, (_, index) => {
+    const minimum = 50 + index * 5;
+    const maximum = index === 9 ? 100 : minimum + 4;
+    return { label: `${minimum}–${maximum}`, count: scores.filter(score => score >= minimum && score <= maximum).length };
+  });
+  const maximumCount = Math.max(1, ...bands.map(band => band.count));
+  return `<p>For example, <a href="/interlocutor/tom-jump/#profile-distribution-heading">Tom Jump’s ${scores.length} published one-on-one scores</a> are ${scoreList} out of 100. They span ${spread} points. ${spread <= 7 ? "That cluster indicates broadly similar assessed performance across these debates." : "The graph below shows how closely these scores cluster."}</p>
+    <figure class="profile-score-histogram assessment-faq-score-graph">
+      <figcaption><strong>Tom Jump · ${scores.length} debates</strong><span>Overall score / 100 · bar height counts debates</span></figcaption>
+      <div class="profile-score-chart">
+        <ol class="profile-score-bars" aria-label="Tom Jump’s overall scores, grouped in five-point ranges from 50 to 100">
+          ${bands.map(band => `<li class="${band.count ? "has-score" : "is-empty"}" data-score-bucket="${band.label}" data-score-count="${band.count}" aria-label="${band.label}: ${band.count} ${band.count === 1 ? "debate" : "debates"}"><strong class="profile-score-bar-count" aria-hidden="true">${band.count || ""}</strong><span class="profile-score-bar" aria-hidden="true"><i style="--bar-height: ${(band.count / maximumCount * 100).toFixed(2)}%"></i></span><span class="profile-score-bucket-label" aria-hidden="true">${band.label}</span></li>`).join("")}
+        </ol>
+      </div>
+    </figure>`;
 }
