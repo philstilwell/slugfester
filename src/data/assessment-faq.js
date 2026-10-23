@@ -23,7 +23,11 @@ export function renderAssessmentFaq() {
         </div>
         <div>
           <dt>Could the scores cluster this tightly if they were assigned arbitrarily?</dt>
-          <dd><p>A random-assignment check used the same 31 interlocutors, covering 314 appearances. It kept every debate’s two participants and two awarded scores, then randomly swapped who received which score. This preserves the actual matchups and each participant’s debate count and mix of assessment procedures.</p>
+          <dd><p>A random-assignment check examined the same 31 interlocutors, covering 314 appearances. For each debate, the computer made a separate 50–50 choice: leave the two scores with their original recipients, or exchange the scores between the two participants.</p>
+          <p>For example, consider these two hypothetical debates:</p>
+          <ul><li><strong>Debate 1, using an earlier scoring method:</strong> Maya scored 80 and Leo scored 70. If the computer chose “keep,” Maya retained 80 and Leo retained 70.</li><li><strong>Debate 2, using a later scoring method:</strong> Maya scored 82 and Nora scored 68. If the computer chose “exchange,” Maya received 68 and Nora received 82.</li></ul>
+          <p>In this simulated version, Maya’s scores would be 80 and 68, instead of 80 and 82—a much looser cluster. She would still have the same two opponents, two debate appearances, and one debate assessed under each scoring method. The scores stayed within their original debates; only who received them could change.</p>
+          <p>The computer repeated these independent choices across the full set of included debates to create 100,000 simulated versions, then compared their overall score clustering with the published pattern. The published scorecards were not changed.</p>
           <p><strong>None of 100,000 random assignments produced clustering as tight as the published scores.</strong> Under this specific model, the chance of clustering at least this strong has a 95% simulation upper bound of about <strong>1 in 33,000</strong>. That supports a systematic pattern beyond this form of arbitrary assignment. It is a result for the group, not a separate probability for each person.</p>
           <p>The figure is conditional on that model; it is not the probability that an assessment is wrong. Stable bias or shared assumptions can also produce consistent scores. <a href="/docs/qa-support/score-clustering-2026-10-22/">Read the methods, results and limits</a>.</p></dd>
         </div>

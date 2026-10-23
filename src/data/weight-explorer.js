@@ -1,5 +1,5 @@
-import { weightExplorerSnapshot as snapshot } from "./weight-explorer-snapshot.js?v=a06cf4b5964f2034";
-import { weightDimensions, defaultWeights, weightPresets, findWeightPreset, weightTopics, countWeightTopics, parseWeightSettings, buildWeightShareUrl, redistributeWeights, evaluateWeights } from "./weight-explorer-model.js?v=a06cf4b5964f2034";
+import { weightExplorerSnapshot as snapshot } from "./weight-explorer-snapshot.js?v=279759cc7f53c246";
+import { weightDimensions, defaultWeights, weightPresets, findWeightPreset, weightTopics, countWeightTopics, parseWeightSettings, buildWeightShareUrl, redistributeWeights, evaluateWeights } from "./weight-explorer-model.js?v=279759cc7f53c246";
 
 const escape = (text = "") => String(text).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 const number = n => n.toFixed(2);
