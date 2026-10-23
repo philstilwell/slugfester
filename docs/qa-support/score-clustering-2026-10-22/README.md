@@ -10,7 +10,18 @@ Use the ranking study's 291 eligible, locked one-on-one debates (291 distinct re
 
 ## Random-assignment model
 
-For each debate independently, use a fair coin to retain or swap its two scores. Repeat this across the archive 100,000 times. The actual participants, matchups, recording, topic, assessment procedure, two awarded scores and their sum stay attached to each debate. Each person's number of appearances and mix of procedures remain fixed. Debates with no included participant cannot affect the statistic; they remain in the randomization for reproducibility.
+For each debate, the computer made a separate 50–50 choice: leave the two scores with their original recipients, or exchange the scores between the two participants.
+
+For example, consider these two hypothetical debates:
+
+- **Debate 1, using an earlier scoring method:** Maya scored 80 and Leo scored 70. If the computer chose “keep,” Maya retained 80 and Leo retained 70.
+- **Debate 2, using a later scoring method:** Maya scored 82 and Nora scored 68. If the computer chose “exchange,” Maya received 68 and Nora received 82.
+
+In this simulated version, Maya’s scores would be 80 and 68, instead of 80 and 82—a much looser cluster. She would still have the same two opponents, two debate appearances, and one debate assessed under each scoring method. The scores stayed within their original debates; only who received them could change.
+
+The computer repeated these independent choices across the full set of included debates to create 100,000 simulated versions, then compared their overall score clustering with the published pattern. The published scorecards were not changed.
+
+Each debate also kept its recording and topic. Debates with no included participant cannot affect the clustering measure; they remain in the randomization for reproducibility.
 
 This keeps the dependence between opponents' scores within a debate. It tests the specific assumption that, conditional on those two awarded scores and that matchup, either participant is equally likely to receive either score. It does not test every conceivable form of arbitrary scoring. For example, systematic preferences for a position or a speaker can violate this assumption without accurate assessment.
 
