@@ -115,7 +115,7 @@ def chrome(c,doc):
     c.setFont('UIBold',8);c.setFillColor(INK);c.drawString(M+32,H-34,'SLUGFESTER')
     c.setFont('UI',7.6);c.setFillColor(MUTED);c.drawRightString(W-M,H-34,'EVIDENCE, FAITH, AND FAIR ASSESSMENT')
     c.setStrokeColor(LINE);c.setLineWidth(.5);c.line(M,40,W-M,40)
-    c.setFont('UI',7.5);c.drawString(M,27,'October 8, 2026 · Snapshot revision 2');c.drawRightString(W-M,27,str(doc.page))
+    c.setFont('UI',7.5);c.drawString(M,27,'Snapshot: October 8, 2026 · AI roles clarified: October 22, 2026');c.drawRightString(W-M,27,str(doc.page))
     c.restoreState()
 
 story=[]

@@ -41,7 +41,8 @@ S={
  'box':ParagraphStyle('box',fontName='Sans',fontSize=10,leading=14.5,textColor=NAVY,spaceAfter=4),
  'bullet':ParagraphStyle('bullet',fontName='Body',fontSize=10.6,leading=15.7,textColor=NAVY,leftIndent=13,firstLineIndent=-10,spaceAfter=5,allowWidows=0,allowOrphans=0),
 }
-META=[dict(item,id=i+1,file=item['pdf']) for i,item in enumerate(json.loads((HERE/'editorial.json').read_text()))]
+# Keep published paper metadata separate from later edits to website summaries.
+META=json.loads((HERE/'publication-manifest.json').read_text())
 AREA_KEY='Area key: Logic = consistent reasoning; Support = evidence and reasons; Replies = answering the other side; Task = staying on the question and doing what the claim requires; Clarity = clear, exact wording; Care = fitting confidence to support and treating the other side fairly.'
 AREA_FIGURES={'p1-decomposition','p1-dimensions','p2-map','p5-gaps','p6-dimensions','p6-correlation'}
 
@@ -121,7 +122,7 @@ def parse(meta,text):
         if line=='[[contents]]':
             story+=[PageBreak(),Paragraph('Reader’s guide',S['h1'])]
             toc=TableOfContents();toc.levelStyles=[ParagraphStyle('toc0',fontName='Sans',fontSize=10,leading=13.8,textColor=NAVY,spaceBefore=1.4,leftIndent=0,firstLineIndent=0,rightIndent=20)]
-            story+=[toc,Spacer(1,23),Paragraph('Reading the evidence',S['h2']),Paragraph('Start with the summary and graphs. Each graph has a reading key for its colors, marks, units, and limits. The conclusion gives numbered reasons leading to a stated finding. Score results refer to the October 9 snapshot. Direct slogan counts retain their September source coverage; they have not been extended to new transcripts.',S['body']),Paragraph('An <b>average</b>, also called a mean, adds the values and divides by their number. A <b>middle value</b>, or median, is halfway through the sorted list. A <b>range from repeated draws</b> shows how the result changes when we draw again from existing records; it does not cover every possible judging mistake. The examples in the paper explain these ideas where they matter.',S['body']),PageBreak()];i+=1;continue
+            story+=[toc,Spacer(1,23),Paragraph('Reading the evidence',S['h2']),Paragraph('Start with the summary and graphs. Each graph has a reading key for its colors, marks, units, and limits. The conclusion gives numbered reasons leading to a stated finding. Score results refer to the October 9 snapshot. Direct slogan counts retain their September source coverage; they have not been extended to new transcripts.',S['body']),Paragraph('An <b>average</b>, also called a mean, adds the values and divides by their number. A <b>middle value</b>, or median, is halfway through the sorted list. A <b>range from repeated draws</b> shows how the result changes when we draw again from existing records; it does not cover every possible judging mistake. The examples in the paper explain these ideas where they matter.',S['body']),Paragraph('<b>AI review roles.</b> '+AI_ROLE_NOTE,S['body']),Paragraph('AI-role wording clarified October 22, 2026; research snapshot and results unchanged.',S['small']),PageBreak()];i+=1;continue
         if line=='[[pagebreak]]':story.append(PageBreak());i+=1;continue
         if line=='[[topic_table]]':
             rows=[['Research topic','Cases','Mean gap','95% resampling range']]
@@ -170,6 +171,8 @@ def parse(meta,text):
     return story,fig_count
 
 
+AI_ROLE_NOTE = 'Slugfester’s assessment reviewers, judges and adjudicators are independent AI agents called by the administrative AI. Independence means separate review contexts with controlled inputs; the agents may use the same model and share biases. Review arrangements vary across assessment periods. The direct slogan study used one AI review per transcript.'
+
 COMMON_METHODS="""
 
 ## Methods and sources
@@ -199,7 +202,7 @@ def main():
         src=HERE/'manuscripts'/f"{meta['id']:02d}.md";text=src.read_text()+COMMON_METHODS;path=OUTPUT/(meta['file']+'.pdf')
         story,nfig=parse(meta,text);doc=Document(path,meta);doc.multiBuild(story)
         pdf=PdfReader(path);words=len(re.findall(r'\b\w+\b',expand_metrics(text)))
-        manifest.append(dict(**meta,pages=len(pdf.pages),figures=nfig,manuscript_words=words,path=str(path.relative_to(ROOT)),sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
+        manifest.append(dict(meta,pages=len(pdf.pages),figures=nfig,manuscript_words=words,path=str(path.relative_to(ROOT)),sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
         print(f"Paper {meta['id']}: {len(pdf.pages)} pages, {nfig} figures, {words:,} manuscript words")
     manifest_path.write_text(json.dumps(sorted(manifest,key=lambda entry:entry['id']),indent=2,ensure_ascii=False)+'\n')
 
