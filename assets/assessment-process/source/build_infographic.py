@@ -202,7 +202,7 @@ def panel_three(c):
          77,406,846,16,23,maxh=72)
 
     stage(c,8,"Check fallacies and cognitive biases",54,509,892,373,TEAL)
-    para(c,"After scores <b>and critiques</b> are locked, the administrative AI calls two independent AI agents to review every move using <b>LogFall</b> and <b>CogBias</b> definitions. Neither sees existing tags or the other's review. It calls a fresh independent AI adjudicator to decide <b>every candidate</b> raised by either agent.",
+    para(c,"After scores <b>and critiques</b> are locked, the administrative AI calls two independent AI agents to review every move using <b>LogFall</b> and <b>CogBias</b> definitions. Neither sees existing tags or the other's review. The administrative AI then calls a fresh independent AI adjudicator to decide <b>every candidate</b> raised by either agent.",
          77,575,846,16,23,maxh=92)
     for x,w,title,sub in [
         (77,177,"EVERY MOVE","Complete coverage"),
