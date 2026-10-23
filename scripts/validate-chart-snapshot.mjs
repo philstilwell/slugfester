@@ -114,9 +114,9 @@ for (const markup of [html, renderChartsContent(snapshot, "", false)]) {
 assert.ok(!/>NaN<|>undefined<|NaN%|undefined%|width:Infinity/.test(html));
 assert.ok(html.includes(`/docs/charts/snapshots/${chartSnapshotName(snapshot)}.json`), "Downloads must identify the published revision");
 const pendingFixture = { ...snapshot, exclusions: [{ id: "pending", number: "new", status: "pending-review", reason: "Position classification awaits review." }] };
-assert.ok(renderChartsContent(pendingFixture).includes("1 case awaits classification review"), "Unreviewed future cases must remain visibly pending");
+assert.ok(renderChartsContent(pendingFixture).includes("1 case awaits AI classification review"), "Unreviewed future cases must remain visibly pending");
 const resolvedFixture = { ...snapshot, exclusions: [{ id: "resolved", number: "old", status: "reviewed-exclusion", reason: "Grouped legacy assessment." }] };
-assert.ok(renderChartsContent(resolvedFixture).includes("No cases awaiting review."));
+assert.ok(renderChartsContent(resolvedFixture).includes("No cases awaiting AI classification review."));
 for (const id of ["chart-frequency", "chart-scores", "chart-roles", "chart-dimensions", "chart-evidence", "chart-methods"]) assert.ok(html.includes(`id="${id}"`));
 const generator = readFileSync(new URL("./generate-seo-pages.mjs", import.meta.url), "utf8");
 assert.ok(!generator.includes("build-chart-snapshot"), "Routine site builds must not refresh the snapshot");
