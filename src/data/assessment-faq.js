@@ -1,7 +1,7 @@
 // Shared by the interactive Backend page and its initial, no-JavaScript HTML.
 export function renderAssessmentFaq() {
   return `<details class="backend-objectivity-accordion assessment-faq" id="assessment-questions">
-    <summary><span><strong>Questions &amp; answers</strong><small>Purpose, scores, evidence and corrections</small></span><i aria-hidden="true"></i></summary>
+    <summary><img class="assessment-faq-art" src="/assets/assessment-process/qa-characters.webp" alt="" width="480" height="439" decoding="async"><span><strong>Questions &amp; answers</strong><small>Purpose, scores, evidence and corrections</small></span><i aria-hidden="true"></i></summary>
     <div class="assessment-faq-content">
       <dl class="assessment-faq-list">
         <div>
@@ -18,8 +18,8 @@ export function renderAssessmentFaq() {
         </div>
         <div>
           <dt>What evidence is there that the assessments are accurate?</dt>
-          <dd><p>The linked recordings let readers check whether quotations, summaries and critiques fit the actual exchange. A further encouraging sign is the tendency for an interlocutor’s scores to cluster across different debates. Under the standard blind-review workflow, reviewers do not receive earlier scorecards or published results, so those scores are not supplied as targets. Earlier assessments may use different controls.</p>
-          <p>The <a href="/insights/#ranking-confidence">October 9, 2026 ranking study</a> tested this consistency by splitting each of 31 interlocutors’ records, all with at least six assessed debates, into two halves. Across 3,000 random splits, the typical agreement between the two rankings was <strong>0.87</strong>, where 1.00 means identical order. This is strong evidence of repeatable differences in assessed performance. It does not mean “87% accurate”: a judging system can repeat a bias or misunderstanding. Consistency supports confidence in the pattern; accuracy also requires checking the reasoning against the source. Independent expert assessment would provide an additional check.</p></dd>
+          <dd><p>The linked recordings let readers check whether quotations, summaries and critiques fit the actual exchange. A further encouraging sign is the tendency for an interlocutor’s scores to cluster across different debates. Under the standard blind-review workflow, the reviewers are independent AI agents called by the administrative AI. They do not receive earlier scorecards or published results, so those scores are not supplied as targets. Earlier assessments may use different controls.</p>
+          <p>The <a href="/insights/#ranking-confidence">October 9, 2026 ranking study</a> tested this consistency by splitting each of 31 interlocutors’ records, all with at least six assessed debates, into two halves. Across 3,000 random splits, the typical agreement between the two rankings was <strong>0.87</strong>, where 1.00 means identical order. This is strong evidence of repeatable differences in assessed performance. It does not mean “87% accurate”: a judging system can repeat a bias or misunderstanding. Consistency supports confidence in the pattern; accuracy also requires checking the reasoning against the source. A separate external validation study, beyond the AI review process described here, would provide an additional check.</p></dd>
         </div>
         <div>
           <dt>Could the scores cluster this tightly if they were assigned arbitrarily?</dt>
@@ -33,7 +33,7 @@ export function renderAssessmentFaq() {
         </div>
         <div>
           <dt>Can an assessment misunderstand an argument or reproduce bias?</dt>
-          <dd><p>Yes. A transcript can omit a qualification, a speaker can be misidentified, or an assessment can miss a reply or misread a disputed term. Separate reviews and fixed criteria help check these problems, but reviewers using the same model can share a mistake. A detailed explanation makes a judgment easier to examine; it does not guarantee that judgment is correct.</p></dd>
+          <dd><p>Yes. A transcript can omit a qualification, a speaker can be misidentified, or an assessment can miss a reply or misread a disputed term. Separate AI reviews and fixed criteria help check these problems, but review agents using the same model can share a mistake. A detailed explanation makes a judgment easier to examine; it does not guarantee that judgment is correct.</p></dd>
         </div>
         <div>
           <dt>Did the participants say everything shown on their scorecards?</dt>

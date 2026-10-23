@@ -4354,7 +4354,20 @@ a {
 }
 
 .assessment-faq > summary {
-  padding: 18px 22px;
+  display: grid;
+  grid-template-columns: clamp(64px, 9vw, 88px) minmax(0, 1fr) 34px;
+  gap: clamp(10px, 2vw, 20px);
+  padding: 12px clamp(12px, 2vw, 22px);
+}
+
+.assessment-faq-art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.assessment-faq > summary > span {
+  min-width: 0;
 }
 
 .assessment-faq > summary strong {
