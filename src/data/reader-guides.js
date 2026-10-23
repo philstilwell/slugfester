@@ -1,4 +1,6 @@
 // Reader aids derived only from the published record. No new scoring or model calls.
+export const assessmentAiRoles = "Slugfester’s assessment reviewers and adjudicators are independent AI agents called by the administrative AI.";
+export const assessmentAiIndependence = "Independence means separate review contexts with controlled inputs; the agents may use the same model and share biases. Review arrangements vary across assessment periods.";
 export function debateSectionAnchor(index) {
   return `assessed-section-${index + 1}`;
 }

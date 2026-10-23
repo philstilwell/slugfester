@@ -1,4 +1,5 @@
 // Build-time only. Reuse published prose and scores; never generate new assessments.
+import { assessmentAiRoles } from "../../src/data/reader-guides.js";
 import { publishedDebates as debates } from "../../src/data/debates.js";
 import { renderChartsContent } from "../../src/data/charts.js";
 import { chartSnapshot } from "../../src/data/chart-snapshot.js";
@@ -36,7 +37,7 @@ function cards(records, { neutral = false } = {}) {
 }
 
 function debateContent(debate) {
-  return `<section><h2>Question and assessment context</h2>${paragraph(debate.motion)}${paragraph(debate.sourceNote)}${paragraph(debate.scoringNote)}
+  return `<section><h2>Question and assessment context</h2>${paragraph(debate.motion)}${paragraph(debate.sourceNote)}${paragraph(debate.scoringNote)}${paragraph(assessmentAiRoles)}
     <p><a href="${escape(debate.youtubeUrl)}">Watch the original debate</a></p>${(debate.additionalSources || []).map((source) => `<p><a href="${escape(source.url)}">${escape(source.label)}</a></p>`).join("")}</section>
     <section><h2>Overall assessment</h2><p class="assessment-faq-reference"><a href="/backend/#assessment-questions">About these scores · Q&amp;A</a></p>${["pro", "con"].map((key) => `<section><h3>${escape(debate.sides[key].speaker)} — ${escape(debate.sides[key].name)}: ${escape(debate.score[key])}/100</h3>
       <h4>Published strengths</h4>${list(debate.overall?.[key]?.strengths)}

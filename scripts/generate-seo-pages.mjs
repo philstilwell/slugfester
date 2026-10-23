@@ -9,6 +9,7 @@ import { referenceDefinitions, referenceFromUrl } from "../src/data/references.j
 import { renderInsightsContent } from "../src/data/insights.js";
 import { biographyFor, renderBiography } from "../src/data/interlocutor-bios.js";
 import { renderInsightsMethodsContent } from "../src/data/insights-methods.js";
+import { assessmentAiRoles } from "../src/data/reader-guides.js";
 import { initialPageContent } from "./lib/initial-page-content.mjs";
 import { pageHistoryEntry, compactPageDates } from "./lib/seo-page-history.mjs";
 import {
@@ -187,7 +188,7 @@ function fallbackMarkup(seo, summary) {
           .join("\n        ")}
       </nav>
       <div class="initial-page-content">${initialPageContent(seo.canonicalPath)}</div>
-    </main>`;
+    </main><footer class="site-footer"><div><p>${assessmentAiRoles}</p></div></footer>`;
 }
 
 function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {

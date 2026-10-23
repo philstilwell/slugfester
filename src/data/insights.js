@@ -1,9 +1,10 @@
-import { researchEdition, researchInsights as coreResearchInsights } from "./research-edition.js?v=20261009-corpus308-plain-language";
-import { researchExtensions } from "./research-extensions.js?v=20261009-three-new-studies";
-import { renderWeightExplorer } from "./weight-explorer.js?v=2408b784ea24f8e4";
-export { initializeWeightExplorer } from "./weight-explorer.js?v=2408b784ea24f8e4";
+import { researchEdition, researchInsights as coreResearchInsights } from "./research-edition.js?v=20261022-ai-reviewer-clarity";
+import { researchExtensions } from "./research-extensions.js?v=20261022-ai-reviewer-clarity";
+import { renderWeightExplorer } from "./weight-explorer.js?v=a06cf4b5964f2034";
+export { initializeWeightExplorer } from "./weight-explorer.js?v=a06cf4b5964f2034";
 const researchInsights = [...coreResearchInsights, ...researchExtensions];
 export { researchEdition, researchInsights };
+import { assessmentAiRoles, assessmentAiIndependence } from "./reader-guides.js?v=20261022-ai-reviewer-clarity";
 export const researchSnapshot = researchEdition.date;
 export const escapeResearch = (value = "") => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 const escape = escapeResearch;
@@ -25,7 +26,7 @@ export function renderResearchCompanion(item) {
 }
 export function researchSnapshotNote() {
   const r = researchEdition;
-  return `<strong>Research snapshot: ${r.date} · ${r.counts.published} assessments.</strong> The October edition adds ${r.newAssessments} assessments to the September research and recalculates the score comparisons. The slogan counts still come from the September 5 review of 187 transcripts; no newer transcripts were reviewed for slogans. The debates were selected for the site, not sampled at random, so they are not representative of all public debate. Scores assess the arguments presented; they do not establish whether a worldview is true.`;
+  return `<strong>Research snapshot: ${r.date} · ${r.counts.published} assessments.</strong> The October edition adds ${r.newAssessments} assessments to the September research and recalculates the score comparisons. The slogan counts still come from the September 5 AI review of 187 transcripts; no newer transcripts were reviewed for slogans. The debates were selected for the site, not sampled at random, so they are not representative of all public debate. Scores assess the arguments presented; they do not establish whether a worldview is true. ${assessmentAiRoles} ${assessmentAiIndependence}`;
 }
 export function renderInsightsContent() {
   return `<section class="insights-intro">

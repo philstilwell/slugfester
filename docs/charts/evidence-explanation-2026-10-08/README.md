@@ -35,3 +35,7 @@ The clarified edition makes the equal public-evidence requirement explicit in se
 ## Explicit confidence assessment
 
 Section 9 (page 10) states high confidence in the conditional mechanism and moderate, provisional credence in some contribution to the documented shortcomings. It distinguishes these qualitative judgments from a measured causal effect or a claim that faith explains most of the gap, compares other explanations, and gives conditions for revising the position. The opening page summarizes this stance. Scores, sources, and descriptive calculations are unchanged.
+
+## October 22 AI-role clarification
+
+The assessment reviewers and adjudicators are explicitly identified as independent AI agents called by the administrative AI. The proposal for a separate external validation study is distinguished from the site’s current AI workflow. The source snapshot, scores, figures and calculations are unchanged.

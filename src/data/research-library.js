@@ -1,4 +1,4 @@
-import { researchEdition, researchInsights, researchPdfLink, researchSnapshotNote, escapeResearch as escape } from "./insights.js?v=20261009-three-new-studies";
+import { researchEdition, researchInsights, researchPdfLink, researchSnapshotNote, escapeResearch as escape } from "./insights.js?v=20261022-ai-reviewer-clarity";
 
 export function renderResearchLibrary() {
   const groups = [

@@ -3,6 +3,8 @@
 Papers 8–10 extend the seven-paper research edition without changing its
 statistics, PDFs, any debate score, or any interlocutor biography.
 
+**Wording clarification — October 22, 2026:** The current PDFs identify assessment reviewers, judges and adjudicators as independent AI agents called by the administrative AI. Independence concerns separate review contexts and controlled inputs; shared model biases remain possible. The research snapshot, numerical results, figures and published cover wording are unchanged. PDF fingerprints and download versions were refreshed.
+
 ## Design and scope
 
 This is an exploratory analysis, not a preregistered confirmatory experiment.

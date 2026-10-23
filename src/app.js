@@ -1,13 +1,13 @@
-import { pageUpdates } from "./data/page-updates.js?v=2408b784ea24f8e4";
-import { renderCritiqueText } from "./data/critique-format.js?v=2408b784ea24f8e4";
-import { renderAssessmentFaq } from "./data/assessment-faq.js?v=2408b784ea24f8e4";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=2408b784ea24f8e4";
-import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=2408b784ea24f8e4";
-import { topicPreviewText } from "./data/topic-preview.js?v=2408b784ea24f8e4";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=2408b784ea24f8e4";
-import { debateSummaries } from "./data/debate-summaries.js?v=2408b784ea24f8e4";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=2408b784ea24f8e4";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=2408b784ea24f8e4";
+import { pageUpdates } from "./data/page-updates.js?v=a06cf4b5964f2034";
+import { renderCritiqueText } from "./data/critique-format.js?v=a06cf4b5964f2034";
+import { renderAssessmentFaq } from "./data/assessment-faq.js?v=a06cf4b5964f2034";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=a06cf4b5964f2034";
+import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=a06cf4b5964f2034";
+import { topicPreviewText } from "./data/topic-preview.js?v=a06cf4b5964f2034";
+import { assessmentAiRoles, assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=a06cf4b5964f2034";
+import { debateSummaries } from "./data/debate-summaries.js?v=a06cf4b5964f2034";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=a06cf4b5964f2034";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=a06cf4b5964f2034";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -46,7 +46,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=2408b784ea24f8e4";
+} from "./seo.js?v=a06cf4b5964f2034";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -106,7 +106,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=2408b784ea24f8e4")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=a06cf4b5964f2034")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -125,7 +125,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=2408b784ea24f8e4")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=a06cf4b5964f2034")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -141,7 +141,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=2408b784ea24f8e4`)
+    const promise = import(`./data/debate-details/${id}.js?v=a06cf4b5964f2034`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -156,7 +156,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=2408b784ea24f8e4`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=a06cf4b5964f2034`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -471,6 +471,7 @@ function renderShell(content) {
       <div>
         <a class="footer-brand" href="/">Slugfester</a>
         <p>Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.</p>
+        <p>${assessmentAiRoles}</p>
       </div>
       <nav aria-label="Footer">
         <a href="${searchPath()}">Search</a>
@@ -1106,7 +1107,7 @@ function renderSectionScoreDistribution(distribution) {
         <div>
           <p class="eyebrow">Rubric quality check</p>
           <h2 id="section-score-distribution-heading">How section scores are distributed</h2>
-          <p>This chart shows how often each section-side score occurs across the published catalogue. The range shows that assessments use different score bands, but spread alone cannot establish that the rubric is accurate or consistent across reviewers and assessment periods. Open the examples below to examine the reasoning behind high and low marks; the measurement and ranking studies on the <a href="/insights/">Insights page</a> examine consistency and uncertainty.</p>
+          <p>This chart shows how often each section-side score occurs across the published catalogue. The range shows that assessments use different score bands, but spread alone cannot establish that the rubric is accurate or consistent across AI reviewers and assessment periods. Open the examples below to examine the reasoning behind high and low marks; the measurement and ranking studies on the <a href="/insights/">Insights page</a> examine consistency and uncertainty.</p>
         </div>
         <dl class="section-score-distribution-summary">
           <div><dt>Section-side scores</dt><dd>${distribution.total.toLocaleString("en-US")}</dd></div>
@@ -2917,7 +2918,7 @@ function renderScoringNote(debate) {
   return `
     <section class="scoring-note" aria-label="Scoring note">
       <strong>AI-generated scorecard</strong>
-      <span>Scores are AI-generated estimates of argumentative performance.</span>
+      <span>Scores are AI-generated estimates of argumentative performance. ${assessmentAiRoles}</span>
       <span class="assessment-model">Assessments made by ${escapeHtml(model)}.${rubric}</span>
     </section>
   `;
@@ -2939,7 +2940,7 @@ function renderTeamScoreNote(debate) {
   return `
     <section class="scoring-note" aria-label="Team assessment and uncertainty">
       <strong>Collective team scores — multi-speaker approximation</strong>
-      <span>Each total assesses the team's combined case, not an individual member. These scores do not enter individual rankings or averages. The independent-review ranges below show assessment variation, not statistical confidence intervals.</span>
+      <span>Each total assesses the team's combined case, not an individual member. These scores do not enter individual rankings or averages. The independent AI review ranges below show assessment variation, not statistical confidence intervals.</span>
       ${["pro", "con"].map(side => `<span>${escapeHtml(debate.sides[side].name)}: ${escapeHtml(diagnostics.sides[side].display)}</span>`).join("")}
       ${diagnostics.formatSensitive ? `<span>${escapeHtml(diagnostics.formatSensitivityNotice)}</span>` : ""}
     </section>
@@ -3577,29 +3578,29 @@ async function route({ focusMain = false } = {}) {
 
   if (backendMatch && !chartSnapshot) {
     chartsPromise ||= Promise.all([
-      import("./data/charts.js?v=2408b784ea24f8e4"),
-      import("./data/chart-snapshot.js?v=2408b784ea24f8e4")
+      import("./data/charts.js?v=a06cf4b5964f2034"),
+      import("./data/chart-snapshot.js?v=a06cf4b5964f2034")
     ]).then(([module, data]) => { chartsModule = module; chartSnapshot = data.chartSnapshot; })
       .catch((error) => { chartsPromise = undefined; throw error; });
     loaders.push(chartsPromise);
   }
 
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=2408b784ea24f8e4")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=a06cf4b5964f2034")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=2408b784ea24f8e4")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=a06cf4b5964f2034")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=2408b784ea24f8e4")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=a06cf4b5964f2034")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
@@ -3607,7 +3608,7 @@ async function route({ focusMain = false } = {}) {
 
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=2408b784ea24f8e4")
+    insightsPromise ||= import("./data/insights.js?v=a06cf4b5964f2034")
       .then((module) => { insightsContent = module.renderInsightsContent; initializeWeightExplorer = module.initializeWeightExplorer; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

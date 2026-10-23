@@ -58,7 +58,7 @@ export const researchInsights = [
     "detail": "The largest difference among the six scoring areas is in Support: how well evidence and reasons justify a claim. Support, logical reasoning and replies to objections together account for 74.6% of the overall point gap. This identifies where the points differ, not why the speakers performed differently. Religious sides do sometimes score higher, as in Meyer–Atkins on design. The study also distinguishes an argument for a creator from an argument for a particular religious God. A separate check excluding debates about religion’s cultural benefits and selected historical or doctrinal questions still finds a 5.77-point gap.",
     "companion": {
       "title": "Evidence, faith, and fair assessment",
-      "href": "/assets/charts/evidence-faith-and-fair-assessment-2026-10-08.pdf?v=faith-credence-3",
+      "href": "/assets/charts/evidence-faith-and-fair-assessment-2026-10-08.pdf?v=faith-credence-3-ai-roles-20261022",
       "label": "From the Charts page · 16-page PDF",
       "paragraphs": [
         "The Charts paper gives concrete examples of missing support: quoting a probability without justifying it, using a narrow source to defend a much broader claim, or arguing for a creator and then treating that as proof of a particular religion. A critic can identify such a gap without proving a complete alternative worldview. If the critic makes a positive claim, that claim needs support too.",
@@ -112,7 +112,7 @@ export const researchInsights = [
     "alt": "Differences across six scoring areas. Across 234 debates comparing a religious claim with a skeptical challenge, skeptical sides average 5.74 points higher. They score higher in 193 debates, religious sides in 33, and 8 are tied. The September average gap was 6.34 points. The 47 debates added since then have a smaller average gap of 3.34 points, lowering the combined average.",
     "pages": 8,
     "figures": 3,
-    "version": "20261009-corpus308"
+    "version": "20261009-ai-reviewers-20261022"
   },
   {
     "id": "topic-differences",
@@ -185,7 +185,7 @@ export const researchInsights = [
     "alt": "Support gap by kind of assessed move. The largest average gap is 7.28 points in the 25 debates about religion, culture and meaning. The smallest is 3.04 points in the 24 debates about resurrection and historical evidence. However, when the analysis repeatedly draws new samples from the recorded debates, religion, culture and meaning has the largest gap only about 32% of the time. It leads in the current records, but another topic often leads when the mix of debates changes.",
     "pages": 9,
     "figures": 3,
-    "version": "20261009-corpus308"
+    "version": "20261009-ai-reviewers-20261022"
   },
   {
     "id": "slogans",
@@ -212,7 +212,7 @@ export const researchInsights = [
     "statisticLabel": "Criticism-blocking slogan uses per 10,000 words · religious vs skeptical sides · 187 transcripts",
     "explanation": "A ‘protected slogan’ means a phrase used instead of a supporting reason and also used to shut down criticism. The September 5 review detected 77 such uses on religious sides and 19 on skeptical sides. After allowing for how much each side spoke and giving each debate equal weight, the rates are 0.56 and 0.16 per 10,000 words. Most debates—144 of 187—had none detected on either side. For the broader category of slogans lacking support, without necessarily blocking criticism, the evidence does not clearly establish a difference between the sides.",
     "detail": "A separate check of 234 current scorecards finds that 33.87% of religious-side moves and 13.40% of skeptical-side moves score below all three thresholds: 70 for Support, 80 for Clarity and 80 for Care. Each debate contributes equally to those percentages. A move is an individual argument or reply; Care measures whether confidence fits the evidence and the opponent is represented fairly. Low scores in these areas can flag weak argumentation, but they do not identify a slogan. No additional transcripts were reviewed for slogans in the October update.",
-    "limitation": "Each transcript received one AI review, not two independent reviews. Transcription errors, missed examples and consistent AI misreadings could affect the counts. The slogan finding applies to the 187 September transcripts; the newer scorecard check cannot establish how often slogans occur in the added debates.",
+    "limitation": "Each transcript received one AI review, not two independent AI reviews. Transcription errors, missed examples and consistent AI misreadings could affect the counts. The slogan finding applies to the 187 September transcripts; the newer scorecard check cannot establish how often slogans occur in the added debates.",
     "pdf": "are-theist-arguments-more-often-slogan-like",
     "figure": "p3-direct-rates",
     "links": [
@@ -272,7 +272,7 @@ export const researchInsights = [
     "alt": "Historical direct review: September 5, 2026. A ‘protected slogan’ means a phrase used instead of a supporting reason and also used to shut down criticism. The September 5 review detected 77 such uses on religious sides and 19 on skeptical sides. After allowing for how much each side spoke and giving each debate equal weight, the rates are 0.56 and 0.16 per 10,000 words. Most debates—144 of 187—had none detected on either side. For the broader category of slogans lacking support, without necessarily blocking criticism, the evidence does not clearly establish a difference between the sides.",
     "pages": 8,
     "figures": 3,
-    "version": "20261009-corpus308"
+    "version": "20261009-ai-reviewers-20261022"
   },
   {
     "id": "con-role",
@@ -349,7 +349,7 @@ export const researchInsights = [
     "alt": "Role estimates answer different questions. PRO supports the debate’s stated claim; CON opposes it. Neither label necessarily means religious or skeptical. Across 291 comparable debates, CON averages 4.44 points higher. Among the 37 people who have taken both roles, their CON scores average 1.33 points higher when people with more appearances in both roles count more heavily. Repeatedly sampling these speakers gives a middle-95% range of 0.32–2.30 points: the advantage stays above zero throughout that range.",
     "pages": 7,
     "figures": 2,
-    "version": "20261009-corpus308"
+    "version": "20261009-ai-reviewers-20261022"
   },
   {
     "id": "fallacy-count",
@@ -422,7 +422,7 @@ export const researchInsights = [
     "alt": "Lower-scoring sides with no named-fallacy tag. In 161 of the 296 assessments with unequal scores, the lower-scoring side has no named logical-fallacy label. That is 54.4%, down from 61.7% in September. The rate differs sharply between assessments made with earlier procedures (80.8%) and later procedures (17.8%). This percentage therefore depends on which assessment procedures are represented, not just on the arguments in the debates.",
     "pages": 8,
     "figures": 3,
-    "version": "20261009-corpus308"
+    "version": "20261009-ai-reviewers-20261022"
   },
   {
     "id": "same-scale",
@@ -496,7 +496,7 @@ export const researchInsights = [
     "alt": "Returning speakers across assessment processes. The 179 debates assessed with earlier procedures have an average side score of 81.32; the 112 assessed with later procedures average 78.98. The difference is 2.35 points, smaller than the 2.82-point difference in September. Of 71 people appearing in both groups, 56 average lower scores in their later-procedure debates, 13 average higher scores, and 2 are unchanged. How often fallacies and biases are labeled, and which individual score values are used, also differs.",
     "pages": 8,
     "figures": 4,
-    "version": "20261009-corpus308"
+    "version": "20261009-ai-reviewers-20261022"
   },
   {
     "id": "ranking-confidence",
@@ -588,6 +588,6 @@ export const researchInsights = [
     "alt": "Leading averages have overlapping rank ranges. For the 31 people with at least six assessed debates, the study randomly divides each person’s debates into two halves, averages their scores in each half, and builds two rankings. It repeats this 3,000 times. The typical agreement between the two rankings is 0.87 on a scale where 1.00 means identical order and 0 means no agreement in rank order. The middle 95% of the results run from 0.81 to 0.92. This is strong evidence that the differences between higher- and lower-scoring speakers recur across their recorded debates.",
     "pages": 12,
     "figures": 3,
-    "version": "20261009-corpus308-stability"
+    "version": "20261009-ai-reviewers-20261022"
   }
 ];

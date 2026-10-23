@@ -1,4 +1,4 @@
-import { researchEdition as r, researchInsights, insightLink, researchPdfLink, researchSnapshotNote, renderResearchCompanion, escapeResearch as escape } from "./insights.js?v=20261009-three-new-studies";
+import { researchEdition as r, researchInsights, insightLink, researchPdfLink, researchSnapshotNote, renderResearchCompanion, escapeResearch as escape } from "./insights.js?v=20261022-ai-reviewer-clarity";
 const historical = "/docs/analysis/direct-slogan-study-2026-09-04/";
 const labels = {
   "classification.csv": "Inclusion decisions and research topics (CSV)",
@@ -48,7 +48,7 @@ export function renderInsightsMethodsContent() {
     <p><strong>How the uncertainty ranges work:</strong> most score comparisons are repeated on 20,000 samples drawn from the saved records, allowing the same record to appear more than once. This is called resampling. The lines on the charts cover the middle 95% of the resulting estimates. They show how much the answer changes with the selected records; they do not include every transcription error, AI judging bias or effect of repeated speakers. The ranking study also uses 3,000 split-half comparisons, explained below. The calculations keep the same starting number for random draws as September (20260904) so they can be reproduced.</p>
   </section>
   <section class="methods-shared"><h2>The three new argument and opponent studies</h2>
-    <p>Studies 8 and 9 use deliberately selected source passages to explain differences in reasoning; they do not estimate how often each kind occurs throughout the catalogue. Study 8 also checks every stored response link in the 112 later-process comparable debates. The interpretations are AI-assisted editorial readings of saved caption excerpts, not a new independent judging panel or a fresh full-video review.</p>
+    <p>Studies 8 and 9 use deliberately selected source passages to explain differences in reasoning; they do not estimate how often each kind occurs throughout the catalogue. Study 8 also checks every stored response link in the 112 later-process comparable debates. The interpretations are AI-assisted editorial readings of saved caption excerpts, without commissioning a fresh panel of independent AI agents or a fresh full-video review.</p>
     <p>Study 10 compares recorded scores and repeated opponents. Its eight model checks are descriptive associations, not causal effects. It does not use resampling or report confidence intervals, and the spread between those checks is not an uncertainty interval. Its full calculations and evidence are in a <a href="/docs/analysis/argument-structure-studies-2026-10-09/README.md">separate reproducible source package</a>. All three use the same October 9 snapshot without changing any scores.</p>
   </section>
   ${researchInsights.map((item,i)=>`<article class="methods-study" id="${item.id}" aria-labelledby="${item.id}-heading">

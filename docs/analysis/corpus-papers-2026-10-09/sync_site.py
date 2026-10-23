@@ -19,7 +19,7 @@ for item,pub in zip(items,PUB):
     item.update(width=Image.open(image).width,height=Image.open(image).height,
         figureTitle=figure['title'],figureScope=figure['scope'],reading=item.get('reading',figure['reading_key']),
         alt=figure['title']+'. '+item['explanation'],pages=pub['pages'],figures=pub['figures'],
-        version='20261009-corpus308-stability' if item['id']=='ranking-confidence' else '20261009-corpus308')
+        version='20261009-ai-reviewers-20261022')
     shutil.copyfile(image,ROOT/'assets/insights'/image.name)
 snapshot=dict(date=R['edition'],isoDate='2026-10-09',version='20261009-corpus308-plain-language',
     sourceCommit=R['source_commit'],counts=R['counts'],newAssessments=R['derived']['new_assessments'],

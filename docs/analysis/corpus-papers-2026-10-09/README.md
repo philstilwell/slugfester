@@ -5,6 +5,8 @@ Insights papers, their website summaries, the methods page, and the Backend
 library. It does not reassess debates, edit scores, modify biographies, or alter
 the separate *Evidence, Faith and AI Bias* paper.
 
+**Wording clarification — October 22, 2026:** The current PDFs identify assessment reviewers, judges and adjudicators as independent AI agents called by the administrative AI. Independence concerns separate review contexts and controlled inputs; shared model biases remain possible. The research snapshot, numerical results, figures and published cover wording are unchanged. PDF fingerprints and download versions were refreshed.
+
 ## Coverage and principal changes
 
 - 308 published assessments, 7,264 assessed moves, and 307 unique video links.
