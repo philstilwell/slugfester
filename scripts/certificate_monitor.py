@@ -88,18 +88,43 @@ def site_probe(host):
         return {"ok": False, "error": "website: " + type(error).__name__}
 
 
+def cloudflare_deployment(host):
+    """The Pages build emits this marker; a proxy certificate alone cannot pass."""
+    try:
+        request = urllib.request.Request("https://" + host + "/_slugfester-deployment.json", headers={
+            "User-Agent": "Slugfester-Certificate-Monitor/1.0", "Cache-Control": "no-cache",
+        })
+        with opener_for(HOSTS).open(request, timeout=TIMEOUT) as response:
+            if response.status != 200 or "application/json" not in response.headers.get("Content-Type", ""):
+                return None
+            data = json.loads(response.read(16_384))
+        if (data.get("site") == "slugfester.com" and data.get("host") == "cloudflare-pages"
+                and re.fullmatch(r"[0-9a-f]{40}", data.get("sourceCommit") or "")
+                and isinstance(data.get("publicFiles"), int) and 0 < data["publicFiles"] < 20_000):
+            return data["sourceCommit"]
+    except (OSError, ValueError, TypeError, AttributeError):
+        pass
+    return None
+
+
 def https_status():
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
         public = dict(zip(HOSTS, pool.map(site_probe, HOSTS)))
         if not all(item["ok"] for item in public.values()):
             return {"public": public, "origins": {}, "resolved": False}
-        # A second fresh request must pass. Then check the actual GitHub origins,
-        # so a Cloudflare edge certificate cannot conceal an expired origin.
+        # A second fresh request must pass. After a hosting migration, require
+        # the Pages-only build marker on both public names at the same commit.
         repeat = dict(zip(HOSTS, pool.map(site_probe, HOSTS)))
+        stable = all(item["ok"] for item in repeat.values())
+        deployments = list(pool.map(cloudflare_deployment, HOSTS)) if stable else []
+        if deployments and all(deployments) and len(set(deployments)) == 1:
+            return {"public": repeat, "origins": {}, "hosting": "cloudflare-pages",
+                    "deployment": deployments[0], "resolved": True}
+        # Without positive migration evidence, retain the original strict origin
+        # checks: putting Cloudflare back in front of GitHub cannot hide expiry.
         targets = [(host, ip) for host in HOSTS for ip in ORIGIN_IPS]
         values = list(pool.map(lambda pair: tls_probe(*pair), targets))
         origins = {host + "@" + ip: value for (host, ip), value in zip(targets, values)}
-        stable = all(item["ok"] for item in repeat.values())
         return {
             "public": repeat,
             "origins": origins,
@@ -201,7 +226,11 @@ def snapshot(api):
     errors = []
     pages = None
     replies = None
-    for label, action in (("Pages status", api.pages), ("Discussion replies", api.discussion)):
+    https = https_status()
+    actions = [("Discussion replies", api.discussion)]
+    if https.get("hosting") != "cloudflare-pages":
+        actions.insert(0, ("Pages status", api.pages))
+    for label, action in actions:
         try:
             value = action()
             if label == "Pages status":
@@ -211,7 +240,7 @@ def snapshot(api):
         except (OSError, RuntimeError, ValueError, KeyError, TypeError) as error:
             # HTTP error descriptions contain no token or request headers.
             errors.append(label + ": " + str(error)[:240])
-    return {"version": 1, "checked_at": utc_now(), "https": https_status(), "pages": pages, "replies": replies, "errors": errors}
+    return {"version": 1, "checked_at": utc_now(), "https": https, "pages": pages, "replies": replies, "errors": errors}
 
 
 def changes(old, current):
@@ -238,6 +267,8 @@ def issue_body(state):
         text.append(f"- **{host}:** " + ("verified HTTPS; certificate expires " + result["expires"] if result["ok"] else result["error"]))
     if state["pages"]:
         text.append("- **GitHub Pages:** " + str(state["pages"]))
+    if state["https"].get("hosting") == "cloudflare-pages":
+        text.append("- **Active hosting:** Cloudflare Pages; both public names returned the same verified deployment: " + state["https"]["deployment"])
     if state["errors"]:
         text.extend(["", "### Monitoring needs attention", *["- " + error for error in state["errors"]]])
     text.extend(["", "[Public support report](" + DISCUSSION + ")", "",
@@ -270,7 +301,9 @@ def run(api, dry_run=False):
     elif notes:
         api.update_issue(issue["number"], issue_body(current))
         api.comment(issue["number"], "### Certificate monitor update\n\n" + "\n".join("- " + note for note in notes) + "\n\n" +
-                    ("Recovery has been confirmed with repeated verified HTTPS checks and all GitHub IPv4 origins. The schedule will now stop." if current["https"]["resolved"] else "See the tracking issue for the current checks. No configuration changes were made."))
+                    (("Recovery has been confirmed with repeated verified HTTPS checks and " +
+                      ("matching Cloudflare Pages deployments on both public names" if current["https"].get("hosting") == "cloudflare-pages" else "all GitHub IPv4 origins") +
+                      ". The schedule will now stop.") if current["https"]["resolved"] else "See the tracking issue for the current checks. No configuration changes were made."))
     summary["issue"] = issue["html_url"]
     if current["https"]["resolved"]:
         api.finish(issue["number"])

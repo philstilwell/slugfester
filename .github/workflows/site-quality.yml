@@ -28,6 +28,8 @@ jobs:
         run: npm run assessment:standalone:workflow:test
       - name: Verify interactive scoring weights and frozen research inputs
         run: node scripts/build-weight-explorer.mjs --check && node --test tests/weight-explorer.test.mjs
+      - name: Verify the public-only Cloudflare Pages package
+        run: node --test tests/build-cloudflare-pages.test.mjs && node scripts/build-cloudflare-pages.mjs
       - run: npm run site:check
       - name: Preserve browser failure evidence for review
         if: failure()
