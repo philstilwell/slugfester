@@ -2,6 +2,8 @@
 
 Read when the candidate is ready for local integration. Use the same maintained browser replay locally and live.
 
+For every public release, also read the target repository's `docs/hosting/cloudflare-pages-publication.md`. It defines the Cloudflare production build, committed-revision check, public deployment marker, and configuration boundaries. GitHub Pages is no longer the production host.
+
 ## 6. Historical-audit compatibility
 
 Frozen campaign manifests, reports, hashes, scores, totals, and the five promoted calibration records are immutable. A standalone debate is neither a campaign item nor a calibration promotion.
@@ -44,6 +46,8 @@ npm run seo
 node scripts/generate-seo-pages.mjs --check
 npm run check
 npm run site:preflight
+node --test tests/build-cloudflare-pages.test.mjs
+node scripts/build-cloudflare-pages.mjs
 ```
 
 If the corpus replay reports a stale count, update only the living transcript-corpus inventory with the new source path, retrieval metadata, word/event counts, and exact hashes. Do not modify frozen scoring, calibration, or campaign evidence to silence the check.
@@ -71,6 +75,6 @@ Before committing, reconcile the required durable-evidence paths and hashes from
 
 Commit the complete validated result on its topic branch. Run `npm run site:preflight` again immediately before the commit, fetch before pushing, never force-push, and push only the topic branch. Open a pull request into `main`, wait for the required `accessibility-and-performance` check on the current head, and merge only when it passes. Fetch afterward and verify that `origin/main` contains the merged publication changes; verify the actual merge commit rather than assuming a particular merge strategy.
 
-Wait for both post-merge Site Quality and GitHub Pages deployment to succeed for that commit, retaining their run identities and outcomes. Then verify the live canonical debate page, its assessment data, and sitemap against the committed publication, and check the live Backend distribution against the catalogue totals and buckets established above. Account for ordinary deployment/cache propagation without rerunning assessment work. If either workflow fails, diagnose and fix only the authorized publication or deployment problem through the protected-branch process; do not weaken tests, bypass required checks, or report publication complete while deployment remains unverified. Require a clean workspace, report direct cost, any primary-speaker exception with its excluded-duration share, and all validation outcomes, and stop without starting another debate.
+Wait for post-merge Site Quality and the native Cloudflare Pages production deployment to succeed for the actual merged publication commit, retaining check/run identities and the deployment link. Verify `https://slugfester.com/_slugfester-deployment.json` identifies the expected production revision, following the shared hosting procedure if a newer authenticated descendant has already deployed. Do not substitute a pull-request preview, the legacy GitHub Pages run, or an origin-certificate check for this proof. Then verify the live canonical debate page, its assessment data, and sitemap against the committed publication, and check the live Backend distribution against the catalogue totals and buckets established above. Account for ordinary deployment/cache propagation without rerunning assessment work. If Site Quality or Cloudflare deployment fails, diagnose and fix only the authorized publication or deployment problem through the protected-branch process; do not weaken tests, bypass required checks, alter DNS/email/`CNAME` settings as a routine release step, or report publication complete while deployment remains unverified. Require a clean workspace, report direct cost, any primary-speaker exception with its excluded-duration share, and all validation outcomes, and stop without starting another debate.
 
 When this installed skill or runbook is edited during an active task, run the skill validator and then reread the complete `SKILL.md` and every changed reference in the same task before resuming. Treat that reread as the refresh boundary; do not require the user to start a new thread.
