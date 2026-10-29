@@ -161,6 +161,13 @@ class VerificationTests(unittest.TestCase):
 
 
 class DiscussionTests(unittest.TestCase):
+    def test_finish_disables_only_this_workflow_then_closes_issue(self):
+        api = monitor.GitHub("test-token")
+        with patch.object(api, "request") as request:
+            api.finish(123)
+        self.assertEqual(request.call_args_list[0].args, ("PUT", "/repos/philstilwell/slugfester/actions/workflows/certificate-monitor.yml/disable"))
+        self.assertEqual(request.call_args_list[1].args, ("PATCH", "/repos/philstilwell/slugfester/issues/123", {"state": "closed", "state_reason": "completed"}))
+
     def response(self, authors, more=False):
         return {"data": {"repository": {"discussion": {"comments": {
             "nodes": [{"id": author, "author": {"login": author}, "url": "https://github.com/orgs/community/discussions/211588#discussioncomment-55"} for author in authors],
