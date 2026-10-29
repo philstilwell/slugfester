@@ -71,6 +71,11 @@ test('extracts only explicit public research and PDF paths, rejecting traversal 
 test('keeps the alternate host out of search indexes and canonicalizes www', async () => {
   const headers = await readFile(new URL('../config/cloudflare/_headers', import.meta.url), 'utf8');
   const redirects = await readFile(new URL('../config/cloudflare/_redirects', import.meta.url), 'utf8');
+  const domain = JSON.parse(await readFile(new URL('../config/cloudflare/domain-redirect.json', import.meta.url), 'utf8'));
   assert.match(headers, /https:\/\/slugfester\.pages\.dev\/\*\n  X-Robots-Tag: noindex/);
-  assert.match(redirects, /https:\/\/www\.slugfester\.com\/\* https:\/\/slugfester\.com\/:splat 301/);
+  assert.equal(redirects.split('\n').filter(line => line.trim() && !line.startsWith('#')).length, 0, 'Domain sources are not supported by Pages _redirects');
+  assert.equal(domain.rules[0].expression, '(http.host eq "www.slugfester.com")');
+  assert.equal(domain.rules[0].action_parameters.from_value.status_code, 301);
+  assert.equal(domain.rules[0].action_parameters.from_value.preserve_query_string, true);
+  assert.equal(domain.rules[0].action_parameters.from_value.target_url.expression, 'concat("https://slugfester.com", http.request.uri.path)');
 });
