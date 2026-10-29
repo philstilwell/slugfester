@@ -185,6 +185,13 @@ class DiscussionTests(unittest.TestCase):
         with patch.object(api, "request", return_value={"errors": [{"message": "Resource not accessible by integration"}]}), self.assertRaisesRegex(RuntimeError, "Discussion access failed"):
             api.discussion()
 
+    def test_bot_account_without_bot_suffix_is_ignored(self):
+        api = monitor.GitHub("test-token")
+        response = self.response(["automation-agent"])
+        response["data"]["repository"]["discussion"]["comments"]["nodes"][0]["author"]["__typename"] = "Bot"
+        with patch.object(api, "request", return_value=response):
+            self.assertEqual(api.discussion(), [])
+
     def test_refuse_unexpected_reply_link(self):
         api = monitor.GitHub("test-token")
         response = self.response(["helper"])

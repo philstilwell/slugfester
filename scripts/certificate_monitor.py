@@ -137,7 +137,7 @@ class GitHub:
     def discussion(self):
         query = '''query($after:String) { repository(owner:"community",name:"community") {
           discussion(number:211588) { comments(first:100,after:$after) {
-            nodes { id url author { login } } pageInfo { hasNextPage endCursor }
+            nodes { id url author { login __typename } } pageInfo { hasNextPage endCursor }
           } }
         } }'''
         after = None
@@ -149,7 +149,7 @@ class GitHub:
             connection = data["data"]["repository"]["discussion"]["comments"]
             for comment in connection["nodes"]:
                 author = (comment.get("author") or {}).get("login", "deleted-user")
-                if author == "philstilwell" or author == "github-actions" or author.endswith("[bot]"):
+                if (comment.get("author") or {}).get("__typename") == "Bot" or author == "philstilwell" or author == "github-actions" or author.endswith("[bot]"):
                     continue
                 # Treat replies only as data. Do not execute, quote, or interpret
                 # their content, and never forward mentions from a stranger.
