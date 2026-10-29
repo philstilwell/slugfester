@@ -7,6 +7,8 @@ description: Assess and publish one new YouTube debate to SLUGFESTER using locke
 
 Complete one audited addition through verified live publication. Use the repository's current controls and the run's frozen settings. Use the maintained `scripts/standalone-workflow.mjs` runner; do not reconstruct temporary controllers from a previous debate.
 
+The website is hosted by Cloudflare Pages; GitHub remains the source and review system. When entering release, read the target repository's `docs/hosting/cloudflare-pages-publication.md`. Keep these hosting instructions out of the blind assessment packets.
+
 ## Start or resume
 
 Read applicable `AGENTS.md`, the installed `reassess-slugfester-debates` skill, and [the runner guide](references/single-debate-runbook.md). Read phase references only when entering that phase; do not load the entire workflow into every reviewer.
@@ -42,6 +44,6 @@ Use lossless role packets: each shared evidence block is present once and fully 
 
 Record active work, waiting, and repairs with stage timers. Overlapping worker time is reported separately from elapsed time. Use focused checks during edits and the required full checks at release boundaries. Preserve an interrupted attempt and resume valid artifacts; status reporting is not permission to rerun.
 
-Completion requires all assessment, publication, corpus comparison, prose, rendering, graph, repository, and committed-evidence checks; green required pull-request checks and merge; successful post-merge Site Quality and Pages runs; and live verification against committed data. Close temporary browsers/servers and remove runtime adapters while retaining hashed evidence. Report result, source limitations, cost, validation, publication revision, timing, and cleanup.
+Completion requires all assessment, publication, corpus comparison, prose, rendering, graph, repository, and committed-evidence checks; green required pull-request checks and merge; successful post-merge Site Quality and Cloudflare Pages production deployment; and the matching live deployment marker plus verification against committed data. The legacy GitHub Pages run is not the hosting gate. Close temporary browsers/servers and remove runtime adapters while retaining hashed evidence. Report result, source limitations, cost, validation, publication revision, timing, and cleanup.
 
 After updating this installed skill, validate it and reread this file plus every changed reference in the current chat. That is the in-place refresh; a new chat is unnecessary.

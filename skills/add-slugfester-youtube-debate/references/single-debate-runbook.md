@@ -106,7 +106,7 @@ node scripts/standalone-workflow.mjs browser --debate NNN --origin http://127.0.
 
 Use the Playwright skill to run that generated adapter through its CLI. The adapter contains the maintained replay with registry-derived configuration, not copied debate constants. It checks every applicable scope notice with JavaScript off before checking the interactive assessment, exact scores/cards/quotes/timestamps/tags/AI text, pointer and keyboard controls, mobile distant-control behavior, profiles, discovery routes, sitemap, and every graph bucket. Graph inputs are published section-side values, retaining duplicates; no score calculation is invoked. Screenshots are saved under `output/playwright` for direct review and hashed preservation.
 
-After the required deployment gates pass, generate the same adapter with the live origin and a distinct output/prefix. Close owned browsers/servers and retire generated adapters. Keep reusable repository tools and required evidence. All remaining release gates are in [validation-release.md](validation-release.md).
+After post-merge Site Quality, Cloudflare Pages production deployment, and the live deployment-marker check pass under `docs/hosting/cloudflare-pages-publication.md`, generate the same adapter with `--origin https://slugfester.com` and a distinct output/prefix. A Pages preview or legacy GitHub Pages run does not prove production publication. Close owned browsers/servers and retire generated adapters. Keep reusable repository tools and required evidence. All remaining release gates are in [validation-release.md](validation-release.md).
 
 ## 5. Measure work and waiting
 
