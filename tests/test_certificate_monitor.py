@@ -147,17 +147,55 @@ class VerificationTests(unittest.TestCase):
 
     def test_edge_only_recovery_is_not_enough(self):
         good = {"ok": True, "expires": "2030-01-01", "sha256": "new"}
-        with patch.object(monitor, "site_probe", return_value=good), patch.object(monitor, "tls_probe", return_value={"ok": False, "error": "origin expired"}) as origin:
+        with patch.object(monitor, "site_probe", return_value=good), patch.object(monitor, "cloudflare_deployment", return_value=None), patch.object(monitor, "tls_probe", return_value={"ok": False, "error": "origin expired"}) as origin:
             result = monitor.https_status()
         self.assertFalse(result["resolved"])
         self.assertEqual(origin.call_count, 8)
 
     def test_both_names_are_checked_twice_on_recovery(self):
         good = {"ok": True, "expires": "2030-01-01", "sha256": "new"}
-        with patch.object(monitor, "site_probe", return_value=good) as site, patch.object(monitor, "tls_probe", return_value=good):
+        with patch.object(monitor, "site_probe", return_value=good) as site, patch.object(monitor, "cloudflare_deployment", return_value=None), patch.object(monitor, "tls_probe", return_value=good):
             result = monitor.https_status()
         self.assertTrue(result["resolved"])
         self.assertEqual(site.call_count, 4)
+
+    def test_confirmed_pages_migration_does_not_require_retired_github_origin(self):
+        good = {"ok": True, "expires": "2030-01-01", "sha256": "new"}
+        with patch.object(monitor, "site_probe", return_value=good) as site, patch.object(monitor, "cloudflare_deployment", return_value="a" * 40), patch.object(monitor, "tls_probe") as origin:
+            result = monitor.https_status()
+        self.assertTrue(result["resolved"])
+        self.assertEqual(result["hosting"], "cloudflare-pages")
+        self.assertEqual(site.call_count, 4)
+        origin.assert_not_called()
+
+    def test_one_migrated_hostname_is_not_enough(self):
+        good = {"ok": True, "expires": "2030-01-01", "sha256": "new"}
+        with patch.object(monitor, "site_probe", return_value=good), patch.object(monitor, "cloudflare_deployment", side_effect=["a" * 40, None]), patch.object(monitor, "tls_probe", return_value={"ok": False, "error": "origin expired"}):
+            self.assertFalse(monitor.https_status()["resolved"])
+
+    def test_marker_requires_correct_site_host_commit_and_file_count(self):
+        valid = {"site": "slugfester.com", "host": "cloudflare-pages", "sourceCommit": "a" * 40, "publicFiles": 1179}
+        for changed in ({}, {"site": "other.example"}, {"sourceCommit": "unknown"}, {"host": "github-pages"}, {"publicFiles": 0}):
+            data = {**valid, **changed}
+            response = MagicMock()
+            response.status = 200
+            response.headers = {"Content-Type": "application/json"}
+            response.read.return_value = json.dumps(data).encode()
+            response.__enter__.return_value = response
+            opener = MagicMock()
+            opener.open.return_value = response
+            with patch.object(monitor, "opener_for", return_value=opener):
+                self.assertEqual(monitor.cloudflare_deployment("slugfester.com"), "a" * 40 if not changed else None)
+
+    def test_cloudflare_hosting_does_not_depend_on_unused_pages_api(self):
+        current = state(True)["https"]
+        current.update(hosting="cloudflare-pages", deployment="a" * 40)
+        api = MagicMock()
+        api.discussion.return_value = []
+        with patch.object(monitor, "https_status", return_value=current):
+            result = monitor.snapshot(api)
+        api.pages.assert_not_called()
+        self.assertEqual(result["errors"], [])
 
 
 class DiscussionTests(unittest.TestCase):

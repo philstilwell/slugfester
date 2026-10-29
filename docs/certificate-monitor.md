@@ -14,6 +14,10 @@ repository schedules can also be disabled after 60 days without activity.
 - On apparent recovery, a second fresh public check and strict certificate checks
   for both names on all four GitHub Pages IPv4 origin addresses. A working
   Cloudflare edge certificate alone is not enough.
+- After migration to Cloudflare Pages hosting, both public names must instead
+  return the same valid Pages-only deployment marker, in addition to passing the
+  repeated website and certificate checks. An unused GitHub origin certificate
+  no longer determines recovery. The GitHub Pages status API is then skipped.
 
 No certificate verification is disabled. The monitor never changes DNS, website
 content, Pages settings, or the public support discussion.
