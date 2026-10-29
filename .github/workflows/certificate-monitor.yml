@@ -1,0 +1,67 @@
+name: Slugfester certificate monitor
+
+on:
+  schedule:
+    - cron: '37 */3 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Check access and HTTPS without writing an issue or stopping the schedule'
+        type: boolean
+        default: false
+  pull_request:
+    paths:
+      - '.github/workflows/certificate-monitor.yml'
+      - 'scripts/certificate_monitor.py'
+      - 'tests/test_certificate_monitor.py'
+
+permissions: {}
+
+concurrency:
+  group: certificate-monitor-${{ github.event_name == 'pull_request' && github.ref || 'live' }}
+  cancel-in-progress: false
+
+jobs:
+  test-monitor:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SOURCE_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+      SOURCE_REF: ${{ github.event.pull_request.head.sha }}
+    steps:
+      - name: Download only the monitor and its tests from the reviewed commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/certificate-monitor/scripts" "$RUNNER_TEMP/certificate-monitor/tests"
+          for path in scripts/certificate_monitor.py tests/test_certificate_monitor.py; do
+            gh api "repos/$SOURCE_REPO/contents/$path?ref=$SOURCE_REF" --jq .content | base64 --decode > "$RUNNER_TEMP/certificate-monitor/$path"
+          done
+      - name: Run dependency-free monitor tests
+        run: python3 -m unittest discover -s "$RUNNER_TEMP/certificate-monitor/tests" -p test_certificate_monitor.py -v
+
+  check-certificate:
+    if: github.event_name != 'pull_request' && github.repository == 'philstilwell/slugfester'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pages: read
+      discussions: read
+      issues: write
+      actions: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      MONITOR_DRY_RUN: ${{ inputs.dry_run || 'false' }}
+    steps:
+      - name: Download the monitor from this exact repository commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api "repos/$GITHUB_REPOSITORY/contents/scripts/certificate_monitor.py?ref=$GITHUB_SHA" --jq .content | base64 --decode > "$RUNNER_TEMP/certificate_monitor.py"
+      - name: Verify HTTPS and report only changes
+        run: python3 "$RUNNER_TEMP/certificate_monitor.py"
