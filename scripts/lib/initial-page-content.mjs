@@ -1,5 +1,5 @@
 // Build-time only. Reuse published prose and scores; never generate new assessments.
-import { assessmentAiRoles } from "../../src/data/reader-guides.js";
+import { assessmentAiRoles, renderSiteIntroduction } from "../../src/data/reader-guides.js";
 import { publishedDebates as debates } from "../../src/data/debates.js";
 import { renderChartsContent } from "../../src/data/charts.js";
 import { chartSnapshot } from "../../src/data/chart-snapshot.js";
@@ -51,6 +51,7 @@ function debateContent(debate) {
 }
 
 export function initialPageContent(path) {
+  if (path === "/") return `${renderSiteIntroduction()}<section><h2>Newest debate additions</h2>${cards(catalogue.slice(0, 12))}<p><a href="/search/">Read all debate summaries</a></p></section>`;
   if (path === "/corrections/") return `<section id="report-scorecard-issue"><h2>Report a possible scorecard issue</h2><p>Enable JavaScript to use the Corrections form. Include the exact page, the issue, and supporting evidence. Submitting a report does not guarantee an individual reply or an immediate correction. All feedback will be considered, but only complaints judged valid will be incorporated into prompts for future reevaluations of the full debate collection. Valid complaints will become general review instructions and safeguards for every assessment and score. The reviewers are independent AI agents called by the administrative AI. <a href="/backend/#assessment-questions">Read the Q&amp;A</a>. You can recommend a debate using the form below without JavaScript.</p></section>${renderDebateRecommendation()}`;
   const topic = topicCategoryDefinitions.find((item) => topicPath(item) === path);
   if (topic) return `<section><h2>About this topic</h2>${paragraph(topic.description)}<p>Debates are grouped by their main question. Scores assess the reasoning presented, not the truth of a position. <a href="/backend/">Read the assessment method</a>.</p></section><section><h2>Explore the assessments</h2>${cards(catalogue.filter((debate) => debate.topicCategory === topic.id))}</section><nav aria-label="Explore other topics"><h2>Explore other topics</h2>${topicCategoryDefinitions.filter((item) => item.id !== topic.id).map((item) => `<p><a href="${topicPath(item)}">${escape(item.title)}</a></p>`).join("")}</nav>`;

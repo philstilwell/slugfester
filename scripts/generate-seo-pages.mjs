@@ -57,6 +57,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
+// This is a public ownership-verification token, not an API key. Retain it after verification.
+const searchConsole = JSON.parse(await readFile(join(root, "config/search-console.json"), "utf8"));
+if (searchConsole.property !== absoluteUrl("/") || !/^[A-Za-z0-9_-]+$/.test(searchConsole.googleSiteVerification || "")) {
+  throw new Error("Search Console verification must identify the canonical Slugfester homepage");
+}
 // Publish only explicitly authorized reader-facing scope, not internal source/scoring provenance.
 const standaloneRegistry = JSON.parse(await readFile(join(root, "docs/assessment-production/standalone-debates-v1/registry.json"), "utf8"));
 const assessmentScopeDisclosures = new Map();
@@ -232,7 +237,7 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="${escapeHtml(securityPolicy)}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">${seo.canonicalPath === "/" ? `\n    <meta name="google-site-verification" content="${escapeHtml(searchConsole.googleSiteVerification)}">` : ""}
     <meta name="description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
     <meta name="robots" content="${escapeHtml(robots)}">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -695,7 +700,7 @@ function addPage(pathname, seo, noscriptText, fallbackLastmod = latest) {
 addPage(
   "/",
   landingSeo(debates),
-  "Slugfester lists YouTube debate transcript scorecards with argument scores, critique popovers, and fallacy or bias references."
+  DEFAULT_DESCRIPTION
 );
 
 addPage(

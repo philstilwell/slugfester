@@ -1,4 +1,4 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=9e8b76d6ac5252b9";
+import { topicCategoryDefinitions } from "./data/topics.js?v=acce5a054f82cb2c";
 
 export const SITE_URL = "https://slugfester.com";
 export const SITE_NAME = "Slugfester";
@@ -8,9 +8,9 @@ export const SITE_THEME_COLOR = "#13201f";
 export const SITE_UPDATED_DATE = "2026-08-30";
 export const SITE_TIME_ZONE_OFFSET = "-04:00";
 export const SITE_UPDATED_DATETIME = `${SITE_UPDATED_DATE}T12:00:00${SITE_TIME_ZONE_OFFSET}`;
-export const DEFAULT_TITLE = "Slugfester | YouTube Debate Argument Scorecards";
+export const DEFAULT_TITLE = "Slugfester | AI Debate Analysis & Argument Scorecards";
 export const DEFAULT_DESCRIPTION =
-  "Compare debates on God, science, ethics and philosophy through transcript-based argument scores, detailed critiques, speaker records and source links.";
+  "Slugfester analyzes public debates with AI-assisted argument scorecards. Explore evidence, rebuttals, speaker rankings and links to the original sources.";
 export const DEFAULT_IMAGE = "/assets/social-card.png";
 export const DEFAULT_IMAGE_ALT =
   "Slugfester debate scorecards with boxing gloves and argument analysis.";
@@ -350,8 +350,8 @@ export function websiteJsonLd(topics = []) {
     "@type": "WebSite",
     "@id": WEBSITE_ID,
     name: SITE_NAME,
-    alternateName: "Slugfester debate scorecards",
-    url: SITE_URL,
+    alternateName: ["Slugfester debate scorecards", "slugfester.com"],
+    url: absoluteUrl("/"),
     description: DEFAULT_DESCRIPTION,
     inLanguage: SITE_LANGUAGE,
     publisher: organizationIdentityJsonLd(),
@@ -396,7 +396,7 @@ export function landingSeo(debates = []) {
 
   return {
     title: DEFAULT_TITLE,
-    heading: "Slugfester debate scorecards",
+    heading: "Slugfester",
     description: DEFAULT_DESCRIPTION,
     canonicalPath: "/",
     lastmod: latestDebateDate(debates),
@@ -414,7 +414,7 @@ export function landingSeo(debates = []) {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "@id": absoluteUrl("/#webpage"),
-        name: "Slugfester debate scorecards",
+        name: "Slugfester: AI debate analysis and argument scorecards",
         description: DEFAULT_DESCRIPTION,
         url: absoluteUrl("/"),
         inLanguage: SITE_LANGUAGE,
