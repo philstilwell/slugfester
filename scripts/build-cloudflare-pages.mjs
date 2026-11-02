@@ -3,7 +3,7 @@ import { dirname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const publicDirectories = ['assets', 'backend', 'charts', 'corrections', 'debate', 'insights', 'interlocutor', 'rankings', 'reference', 'search', 'src', 'topics'];
-export const publicRootFiles = ['index.html', '404.html', 'robots.txt', 'sitemap.xml', 'feed.xml', 'site.webmanifest'];
+export const publicRootFiles = ['index.html', '404.html', 'robots.txt', 'sitemap.xml', 'feed.xml', 'site.webmanifest', 'indexnow-key.txt'];
 const marker = '_slugfester-deployment.json';
 const maxFileBytes = 25 * 1024 * 1024;
 const maxFileCount = 20_000;

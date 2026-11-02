@@ -16,6 +16,7 @@ const home = read("index.html");
 const verification = JSON.parse(read("config/search-console.json"));
 assert.equal(verification.property, "https://slugfester.com/");
 assert(home.includes(`<meta name="google-site-verification" content="${verification.googleSiteVerification}">`), "Preserve Search Console ownership verification in the initial homepage");
+assert(home.includes(`<meta name="msvalidate.01" content="${verification.bingSiteVerification}">`), "Preserve Bing ownership verification");
 const homeSchema = JSON.parse(home.match(/id="seo-structured-data">([\s\S]*?)<\/script>/)[1]);
 const website = homeSchema.find((item) => item["@type"] === "WebSite");
 assert.equal(website.name, "Slugfester");

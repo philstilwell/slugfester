@@ -1,4 +1,5 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=acce5a054f82cb2c";
+import { evidenceArticlePath, evidenceArticleTitle, evidenceArticleDescription } from "./data/evidence-article.js?v=1343f817e6e76af8";
+import { topicCategoryDefinitions } from "./data/topics.js?v=1343f817e6e76af8";
 
 export const SITE_URL = "https://slugfester.com";
 export const SITE_NAME = "Slugfester";
@@ -263,6 +264,25 @@ export function insightsSeo() {
       { "@context": "https://schema.org", "@type": "CollectionPage", name: "Insights from the debates", description, url: absoluteUrl(insightsPath()), dateModified: "2026-10-09", isPartOf: { "@id": WEBSITE_ID } },
       breadcrumbJsonLd([{ name: SITE_NAME, path: "/" }, { name: "Insights", path: insightsPath() }])
     ]
+  };
+}
+
+export function evidenceArticleSeo() {
+  return {
+    title: pageTitle(evidenceArticleTitle), heading: evidenceArticleTitle,
+    description: evidenceArticleDescription, canonicalPath: evidenceArticlePath,
+    type: "article", publishedTime: "2026-11-02T12:00:00-05:00", lastmod: "2026-11-02",
+    jsonLd: [organizationJsonLd(), websiteJsonLd(), {
+      "@context": "https://schema.org", "@type": "Article",
+      "@id": absoluteUrl(`${evidenceArticlePath}#article`),
+      headline: evidenceArticleTitle, name: evidenceArticleTitle,
+      description: evidenceArticleDescription, url: absoluteUrl(evidenceArticlePath),
+      mainEntityOfPage: absoluteUrl(evidenceArticlePath), inLanguage: "en",
+      datePublished: "2026-11-02T12:00:00-05:00", dateModified: "2026-11-02",
+      author: { "@type": "Organization", "@id": ORGANIZATION_ID, name: SITE_NAME, url: absoluteUrl("/") },
+      publisher: { "@id": ORGANIZATION_ID }, isPartOf: { "@id": WEBSITE_ID },
+      image: absoluteUrl(DEFAULT_IMAGE)
+    }, breadcrumbJsonLd([{ name: SITE_NAME, path: "/" }, { name: "Insights", path: insightsPath() }, { name: "Debate evidence", path: evidenceArticlePath }])]
   };
 }
 

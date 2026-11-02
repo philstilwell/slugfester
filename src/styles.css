@@ -7301,3 +7301,26 @@ a {
 .methods-table-wrap thead { background: var(--surface); }
 .methods-table-wrap th:first-child { width: 52%; }
 #shared-heading { scroll-margin-top: 100px; }
+
+/* A readable, source-linked introduction to the frozen evidence snapshot. */
+.evidence-article { max-width: 850px; margin: 0 auto; padding-bottom: 48px; }
+.evidence-article h1 { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.12; max-width: 20ch; }
+.evidence-article h2 { margin-top: 2.2rem; font-size: clamp(1.5rem, 3vw, 2rem); }
+.evidence-article p, .evidence-article li { line-height: 1.75; }
+.evidence-byline { font-size: .9rem; color: #526260; }
+.evidence-source-note, .evidence-article-feature { border-left: 4px solid #347c72; padding: 16px 20px; background: #f0f6f4; line-height: 1.65; }
+.evidence-comparison { margin: 32px 0; padding: clamp(18px, 4vw, 30px); border: 1px solid #bacbc6; border-radius: 12px; background: #f8faf9; }
+.evidence-comparison h3 { margin-top: 0; }
+.evidence-bar-row { margin: 22px 0; }
+.evidence-bar-label, .evidence-bar-axis { display: flex; justify-content: space-between; gap: 12px; }
+.evidence-bar-label { margin-bottom: 8px; }
+.evidence-bar-label strong { white-space: nowrap; }
+.evidence-bar-track { background: #e0e8e4; height: 24px; border-radius: 3px; overflow: hidden; }
+.evidence-bar-fill { display: block; height: 100%; }
+.evidence-bar-0 { width: 60.56034306994129%; background: #337c72; }
+.evidence-bar-1 { width: 25.785374467050683%; background: #b24f3c; }
+.evidence-bar-axis { font-size: .85rem; color: #526260; }
+.evidence-comparison figcaption { margin-top: 18px; font-size: .9rem; line-height: 1.6; }
+.evidence-calculation { margin-top: 32px; padding: 18px; border: 1px solid #bacbc6; border-radius: 8px; }
+.evidence-calculation summary { cursor: pointer; font-weight: 700; }
+.evidence-sources { margin-top: 28px; padding-top: 4px; border-top: 2px solid #54716a; }

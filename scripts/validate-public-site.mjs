@@ -1,3 +1,4 @@
+import { evidenceArticlePath } from "../src/data/evidence-article.js";
 import { existsSync, readFileSync } from "node:fs";
 import "./validate-reader-features.mjs";
 import "./validate-interlocutor-bios.mjs";
@@ -83,6 +84,7 @@ const expectedPaths = [
   backendPath(),
   insightsPath(),
   "/insights/data-and-methods/",
+  evidenceArticlePath,
   correctionsPath(),
   ...debates.map(debatePath),
   ...[...appearingPeople.values()].map(interlocutorPath),
@@ -186,7 +188,7 @@ sitemapUrls.forEach((urlString) => {
   if (!fallback) {
     fail(`${url.pathname} is missing pre-rendered fallback content`);
   } else {
-    const heading = decodeAttribute(fallback.match(/<h1>([^<]+)<\/h1>/)?.[1] || "");
+    const heading = decodeAttribute(fallback.match(/<h1(?:\s[^>]*)?>([^<]+)<\/h1>/)?.[1] || "");
     const summary = decodeAttribute(fallback.match(/<p>([^<]+)<\/p>/)?.[1] || "");
     const links = [...fallback.matchAll(/<a href="([^"]+)">/g)];
     if (heading.length < 2) fail(`${url.pathname} fallback is missing a useful H1`);

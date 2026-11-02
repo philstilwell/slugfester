@@ -1,3 +1,4 @@
+import { evidenceArticlePath, renderEvidenceArticle } from "../src/data/evidence-article.js";
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
@@ -31,6 +32,7 @@ import {
   insightsPath,
   insightsSeo,
   insightsMethodsSeo,
+  evidenceArticleSeo,
   correctionsPath,
   correctionsSeo,
   assessmentPath,
@@ -62,6 +64,7 @@ const searchConsole = JSON.parse(await readFile(join(root, "config/search-consol
 if (searchConsole.property !== absoluteUrl("/") || !/^[A-Za-z0-9_-]+$/.test(searchConsole.googleSiteVerification || "")) {
   throw new Error("Search Console verification must identify the canonical Slugfester homepage");
 }
+if (!/^[A-F0-9]{32}$/.test(searchConsole.bingSiteVerification || "")) throw new Error("Invalid Bing verification token");
 // Publish only explicitly authorized reader-facing scope, not internal source/scoring provenance.
 const standaloneRegistry = JSON.parse(await readFile(join(root, "docs/assessment-production/standalone-debates-v1/registry.json"), "utf8"));
 const assessmentScopeDisclosures = new Map();
@@ -105,7 +108,7 @@ const explorerImportVersions = /(\.\/weight-explorer(?:-model|-snapshot)?\.js\?v
 const explorerModulePaths = ["src/data/insights.js", "src/data/weight-explorer.js", "src/data/weight-explorer-model.js", "src/data/weight-explorer-snapshot.js"];
 const explorerModules = await Promise.all(explorerModulePaths.map(async (path) => [join(root, path), (await readFile(join(root, path), "utf8")).replace(explorerImportVersions, "$1CONTENT_VERSION")]));
 const browserSources = await Promise.all([
-  "src/data/charts.js", "src/data/chart-snapshot.js",
+  "src/data/evidence-article.js", "src/data/charts.js", "src/data/chart-snapshot.js",
   "src/data/research-edition.js", "src/data/research-extensions.js", "src/data/research-library.js",
   "src/styles.css", "src/data/topics.js", "src/data/topic-preview.js", "src/data/assessment-process-guide.js", "src/data/assessment-faq.js", "src/data/debate-recommendation.js", "src/data/critique-format.js",
   "src/data/interlocutors.js", "src/data/references.js", "src/data/reader-guides.js", "src/data/insights-methods.js", "src/data/interlocutor-bios.js"
@@ -226,7 +229,9 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   const updatedMeta = updatedTime
     ? `<meta property="og:updated_time" content="${escapeHtml(updatedTime)}">\n    `
     : "";
-  const fallback = seo.canonicalPath === "/insights/data-and-methods/"
+  const fallback = seo.canonicalPath === evidenceArticlePath
+    ? `<main class="insights-page" id="main-content" data-initial-path="${evidenceArticlePath}">${renderEvidenceArticle()}</main>`
+    : seo.canonicalPath === "/insights/data-and-methods/"
     ? `<main class="insights-page" id="main-content" data-initial-path="/insights/data-and-methods/">${renderInsightsMethodsContent()}</main>`
     : seo.canonicalPath === insightsPath()
     ? `<main class="insights-page" id="main-content" data-initial-path="/insights/">${renderInsightsContent()}<p><a href="/">Back to debates</a> · <a href="/backend/">Assessment method</a></p></main>`
@@ -237,7 +242,7 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="${escapeHtml(securityPolicy)}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">${seo.canonicalPath === "/" ? `\n    <meta name="google-site-verification" content="${escapeHtml(searchConsole.googleSiteVerification)}">` : ""}
+    <meta name="viewport" content="width=device-width, initial-scale=1">${seo.canonicalPath === "/" ? `\n    <meta name="google-site-verification" content="${escapeHtml(searchConsole.googleSiteVerification)}">\n    <meta name="msvalidate.01" content="${escapeHtml(searchConsole.bingSiteVerification)}">` : ""}
     <meta name="description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
     <meta name="robots" content="${escapeHtml(robots)}">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -670,7 +675,8 @@ debates.forEach((debate) => {
 function addPage(pathname, seo, noscriptText, fallbackLastmod = latest) {
   if (seo.robots !== "noindex,follow") {
     const debate = debates.find((item) => debatePath(item) === pathname);
-    const content = pathname === insightsPath() ? renderInsightsContent()
+    const content = pathname === evidenceArticlePath ? renderEvidenceArticle()
+      : pathname === insightsPath() ? renderInsightsContent()
       : pathname === "/insights/data-and-methods/" ? renderInsightsMethodsContent()
       : initialPageContent(pathname);
     const data = debate || (["/", rankingsPath(), backendPath()].includes(pathname) ? debates : null);
@@ -743,6 +749,7 @@ addPage(
   "Backend explains Slugfester's assessment process and scoring rules, with interactive charts of argument families, evidence and reasoning dimensions."
 );
 
+addPage(evidenceArticlePath, evidenceArticleSeo(), "Read how Slugfester assesses evidence in public debates.");
 addPage("/insights/data-and-methods/", insightsMethodsSeo(), "Read the evidence, methods and limitations behind the research studies.");
 addPage(insightsPath(), insightsSeo(), "Explore ten research studies, figures, limitations and links to the debates.");
 addPage(chartsPath(), chartsSeo(), "Explore a manually published snapshot of argument families, scores, replies, and reasoning dimensions.");
