@@ -1,5 +1,7 @@
 # Slugfester
 
+Live site: [Slugfester — AI debate analysis and argument scorecards](https://slugfester.com/).
+
 Slugfester is a static site for turning YouTube debate transcripts into compact argument scorecards. Each debate page presents both sides in parallel columns, marks critique popovers with `◉`, scores the strength of claims and rebuttals, and routes logical fallacy and cognitive bias pills to local reference pages with contextual explanations and in-depth LogFall/CogBias links. The `/search/` page filters scorecards by text and interlocutor portrait, while `/backend/` explains the assessment process behind the scores.
 
 ## Run locally
