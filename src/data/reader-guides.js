@@ -1,6 +1,17 @@
 // Reader aids derived only from the published record. No new scoring or model calls.
 export const assessmentAiRoles = "Slugfester’s assessment reviewers and adjudicators are independent AI agents called by the administrative AI.";
 export const assessmentAiIndependence = "Independence means separate review contexts with controlled inputs; the agents may use the same model and share biases. Review arrangements vary across assessment periods.";
+
+// Share the same introduction with readers and crawlers before and after JavaScript loads.
+export function renderSiteIntroduction() {
+  return `<section class="site-introduction" id="about-slugfester" aria-labelledby="about-slugfester-heading">
+    <h2 id="about-slugfester-heading">About Slugfester</h2>
+    <p>Slugfester is an independent debate-analysis website at <a href="/">slugfester.com</a>. It uses AI to examine the arguments presented in public debates about God, religion, science, ethics and philosophy.</p>
+    <p>Each debate scorecard brings together claims, rebuttals, reasoning scores, detailed critiques and links to the original sources. You can <a href="/topics/">explore debates by topic</a>, <a href="/search/">find a speaker or debate</a>, and <a href="/rankings/">compare speakers’ published records</a>.</p>
+    <p>The scores assess the reasoning presented in these debates. They are revisable judgments, not proof that a worldview is true or that an AI reviewer is free from bias. <a href="/backend/">Read how Slugfester’s assessments work</a>, <a href="/insights/">explore the research findings</a>, or <a href="/corrections/">send feedback</a>.</p>
+  </section>`;
+}
+
 export function debateSectionAnchor(index) {
   return `assessed-section-${index + 1}`;
 }
