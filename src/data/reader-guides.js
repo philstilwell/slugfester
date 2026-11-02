@@ -6,6 +6,7 @@ export const assessmentAiIndependence = "Independence means separate review cont
 export function renderSiteIntroduction() {
   return `<section class="site-introduction" id="about-slugfester" aria-labelledby="about-slugfester-heading">
     <h2 id="about-slugfester-heading">About Slugfester</h2>
+<p><a href="/insights/debate-evidence/">Read what Slugfester’s debate assessments reveal about evidence</a>.</p>
     <p>Slugfester is an independent debate-analysis website at <a href="/">slugfester.com</a>. It uses AI to examine the arguments presented in public debates about God, religion, science, ethics and philosophy.</p>
     <p>Each debate scorecard brings together claims, rebuttals, reasoning scores, detailed critiques and links to the original sources. You can <a href="/topics/">explore debates by topic</a>, <a href="/search/">find a speaker or debate</a>, and <a href="/rankings/">compare speakers’ published records</a>.</p>
     <p>The scores assess the reasoning presented in these debates. They are revisable judgments, not proof that a worldview is true or that an AI reviewer is free from bias. <a href="/backend/">Read how Slugfester’s assessments work</a>, <a href="/insights/">explore the research findings</a>, or <a href="/corrections/">send feedback</a>.</p>

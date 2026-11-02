@@ -1,7 +1,7 @@
 import { researchEdition, researchInsights as coreResearchInsights } from "./research-edition.js?v=20261022-ai-reviewer-clarity";
 import { researchExtensions } from "./research-extensions.js?v=20261022-ai-reviewer-clarity";
-import { renderWeightExplorer } from "./weight-explorer.js?v=acce5a054f82cb2c";
-export { initializeWeightExplorer } from "./weight-explorer.js?v=acce5a054f82cb2c";
+import { renderWeightExplorer } from "./weight-explorer.js?v=1343f817e6e76af8";
+export { initializeWeightExplorer } from "./weight-explorer.js?v=1343f817e6e76af8";
 const researchInsights = [...coreResearchInsights, ...researchExtensions];
 export { researchEdition, researchInsights };
 import { assessmentAiRoles, assessmentAiIndependence } from "./reader-guides.js?v=20261022-ai-reviewer-clarity";
@@ -35,6 +35,7 @@ export function renderInsightsContent() {
     <p class="large">What the scores tell us about arguments, debate roles and recurring speakers.</p>
     <p>Try changing the scoring weights below, then explore ${researchInsights.length} studies of why scores differ, how arguments and replies work, and whether speakers tend to perform similarly across different debates. Each study explains its finding, how to read its figure, and what remains uncertain. The linked papers and methods page provide the details.</p>
     <p class="insights-snapshot">${researchSnapshotNote()}</p>
+    <p class="evidence-article-feature"><strong>Start here:</strong> <a href="/insights/debate-evidence/">What Slugfester’s debate assessments reveal about evidence</a> — a readable introduction to the evidence gap, public standards of proof, and the limits of AI assessment.</p>
     <p><strong>What changed since September:</strong> the average skeptical-side lead is smaller. People who have taken both debate roles show a small average advantage when opposing the stated claim, although its strength depends on how their records are counted. The ranking study now includes ${researchEdition.ranked} people with at least three assessed debates each. The research update did not change any earlier debate scores.</p>
     <p><strong>Three new studies:</strong> <a href="#answering-arguments">what makes a reply answer an argument</a>, <a href="#creator-to-god">the steps from a creator to a personal God</a>, and <a href="#opponent-context">how opponents relate to recorded scores</a>. The first two combine source-linked examples with explicit reasoning distinctions; the third tests repeated matchups and several ways to compare opponents.</p>
     <p><a class="button primary" href="#scoring-weights">Try different scoring weights</a></p>

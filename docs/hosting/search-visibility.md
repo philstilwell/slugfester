@@ -17,3 +17,39 @@ HTTP, `www`, and `/index.html` homepage variants redirect to the canonical HTTPS
 Google controls spelling substitutions, indexing and rankings. Consistent branding, useful original content and genuine references from other websites can help recognition; page metadata alone cannot guarantee first place. Links from other sites should accurately describe Slugfester and be added only with authorization for those sites.
 
 References: [Google site names](https://developers.google.com/search/docs/appearance/site-names), [title links](https://developers.google.com/search/docs/appearance/title-link), [requesting a recrawl](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl).
+
+## Evidence article and Bing discovery (November 2026)
+
+The article at `/insights/debate-evidence/` is rendered from
+`src/data/evidence-article.js`, both in initial HTML and the interactive site.
+Its figures describe the fixed October 8 revision 2 chart snapshot, not the
+current catalogue. `tests/evidence-article.test.mjs` independently reconciles
+its displayed numbers. Keep its scope and date explicit when revising it.
+
+Bing ownership uses `bingSiteVerification` in `config/search-console.json` and
+the homepage `msvalidate.01` tag. Retain both Google and Bing verification tags.
+
+IndexNow uses `config/indexnow.json` and the deliberately public ownership file
+`/indexnow-key.txt`. This file is included explicitly in the Cloudflare package;
+it does not grant account or hosting access. No paid API is required.
+The `Notify search engines` workflow runs after successful main-branch Site
+quality checks, confirms the published revision (or an authenticated descendant)
+and ownership file, then submits public routes whose saved content fingerprints
+changed. Date-only and cache-only rebuilds do not cause submissions. A new,
+updated or removed route can be included; no private repository files are sent.
+
+Manual dry run after a commit:
+
+```sh
+node scripts/notify-indexnow.mjs
+```
+
+Add `--submit` to send the notification after the production checks pass.
+A `--commit` or `--base` must use the full commit identity. Explicit public pages
+can be supplied with repeated `--url https://slugfester.com/path/` arguments.
+HTTP 200 means received; HTTP 202 means received with ownership validation
+pending. Neither guarantees crawling, indexing or ranking. A failed notification
+does not roll back a published site; inspect the job before retrying.
+
+Protocol: https://www.indexnow.org/documentation
+Search engines: https://www.indexnow.org/faq

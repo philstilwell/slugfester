@@ -12,6 +12,7 @@ const representativeRoutes = [
   "/backend/",
   "/insights/",
   "/insights/data-and-methods/",
+  "/insights/debate-evidence/",
   "/corrections/",
   "/reference/fallacy/equivocation/"
 ];
@@ -40,6 +41,7 @@ for (const route of [
   "/backend/",
   "/insights/",
   "/insights/data-and-methods/",
+  "/insights/debate-evidence/",
   "/corrections/"
 ]) {
   test(`fits a narrow phone viewport: ${route}`, async ({ page }) => {
