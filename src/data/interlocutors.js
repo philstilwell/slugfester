@@ -118,7 +118,7 @@ export const interlocutorAvatars = [
   },
   {
     name: "Derek Lambert",
-    src: `${avatarBasePath}/derek-lambert.webp`,
+    src: `${avatarBasePath}/derek-lambert-v2.webp`,
     aliases: ["Derek Lambert"]
   },
   {
