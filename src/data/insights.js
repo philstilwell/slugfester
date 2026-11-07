@@ -1,7 +1,7 @@
 import { researchEdition, researchInsights as coreResearchInsights } from "./research-edition.js?v=20261022-ai-reviewer-clarity";
 import { researchExtensions } from "./research-extensions.js?v=20261022-ai-reviewer-clarity";
-import { renderWeightExplorer } from "./weight-explorer.js?v=1343f817e6e76af8";
-export { initializeWeightExplorer } from "./weight-explorer.js?v=1343f817e6e76af8";
+import { renderWeightExplorer } from "./weight-explorer.js?v=081d1b98cc862d66";
+export { initializeWeightExplorer } from "./weight-explorer.js?v=081d1b98cc862d66";
 const researchInsights = [...coreResearchInsights, ...researchExtensions];
 export { researchEdition, researchInsights };
 import { assessmentAiRoles, assessmentAiIndependence } from "./reader-guides.js?v=20261022-ai-reviewer-clarity";
