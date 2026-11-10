@@ -29,6 +29,7 @@ test('preserves public pages and linked downloads without exposing internal fold
   assert.equal(await readFile(join(root, 'dist/cloudflare/index.html'), 'utf8'), index);
   assert.equal(await readFile(join(root, 'dist/cloudflare/docs/charts/snapshots/current.json'), 'utf8'), '{}');
   assert.equal(await readFile(join(root, 'dist/cloudflare/output/pdf/paper.pdf'), 'utf8'), '{}');
+  assert.equal(await readFile(join(root, 'dist/cloudflare/_redirects'), 'utf8'), await readFile(join(root, 'config/cloudflare/_redirects'), 'utf8'), 'The public package must retain legacy route redirects');
   for (const path of ['assessment/private.json', 'docs/unlinked.md', 'assets/.env', 'config', '.git']) await assert.rejects(lstat(join(root, 'dist/cloudflare', path)), { code: 'ENOENT' });
   const marker = JSON.parse(await readFile(join(root, 'dist/cloudflare/_slugfester-deployment.json'), 'utf8'));
   assert.equal(marker.sourceCommit, 'a'.repeat(40));
@@ -73,9 +74,32 @@ test('keeps the alternate host out of search indexes and canonicalizes www', asy
   const redirects = await readFile(new URL('../config/cloudflare/_redirects', import.meta.url), 'utf8');
   const domain = JSON.parse(await readFile(new URL('../config/cloudflare/domain-redirect.json', import.meta.url), 'utf8'));
   assert.match(headers, /https:\/\/slugfester\.pages\.dev\/\*\n  X-Robots-Tag: noindex/);
-  assert.equal(redirects.split('\n').filter(line => line.trim() && !line.startsWith('#')).length, 0, 'Domain sources are not supported by Pages _redirects');
+  const rules = redirects.split('\n').filter(line => line.trim() && !line.startsWith('#')).map(line => line.trim().split(/\s+/));
+  assert.ok(rules.every(([source]) => source.startsWith('/')), 'Domain sources are not supported by Pages _redirects');
   assert.equal(domain.rules[0].expression, '(http.host eq "www.slugfester.com")');
   assert.equal(domain.rules[0].action_parameters.from_value.status_code, 301);
   assert.equal(domain.rules[0].action_parameters.from_value.preserve_query_string, true);
   assert.equal(domain.rules[0].action_parameters.from_value.target_url.expression, 'concat("https://slugfester.com", http.request.uri.path)');
+});
+
+test('retired assessment and chart URLs permanently redirect to the published Backend', async () => {
+  const redirects = await readFile(new URL('../config/cloudflare/_redirects', import.meta.url), 'utf8');
+  const rules = redirects.split('\n').filter(line => line.trim() && !line.startsWith('#')).map(line => line.trim().split(/\s+/));
+  for (const route of ['assessment', 'charts']) {
+    for (const suffix of ['', '/', '/index.html']) {
+      const source = `/${route}${suffix}`;
+      const matches = rules.filter(([from]) => from === source);
+      assert.equal(matches.length, 1, `${source} needs one unambiguous redirect`);
+      const [, target, status] = matches[0];
+      assert.equal(status, '301');
+      assert.equal(target, route === 'charts' ? '/backend/#charts' : '/backend/');
+      const targetUrl = new URL(target, 'https://slugfester.com');
+      assert.ok(publicDirectories.includes(targetUrl.pathname.split('/')[1]));
+      const html = await readFile(new URL(`..${targetUrl.pathname}index.html`, import.meta.url), 'utf8');
+      assert.match(html, /<link rel="canonical" href="https:\/\/slugfester\.com\/backend\/">/);
+      assert.match(html, /<meta name="robots" content="index,follow/);
+      if (targetUrl.hash) assert.ok(html.includes(`id="${targetUrl.hash.slice(1)}"`));
+    }
+  }
+  assert.ok(!rules.some(([source]) => source.includes('*')), 'Keep genuinely unknown URLs as 404s instead of hiding broken links with a catch-all');
 });
