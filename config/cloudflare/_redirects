@@ -1,2 +1,10 @@
 # Domain redirects are managed in the Cloudflare zone's Redirect Rules.
 # See domain-redirect.json beside this file. Pages _redirects accepts paths only.
+
+# Retired public routes must redirect even when their old HTML is not deployed.
+/assessment /backend/ 301
+/assessment/ /backend/ 301
+/assessment/index.html /backend/ 301
+/charts /backend/#charts 301
+/charts/ /backend/#charts 301
+/charts/index.html /backend/#charts 301
