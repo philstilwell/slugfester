@@ -47,11 +47,32 @@ test('paired primary plans are identical in evidence, disjoint in outputs and ex
   const [a,b]=result.plans.map(r=>loadPlan(f.run,r.path));
   assert.deepEqual(a.allowedInputs,b.allowedInputs);assert.deepEqual(a.packet,b.packet);assert.notEqual(a.outputPath,b.outputPath);
   assert(!a.sourceInputs.some(r=>/pass-[ab]\/output|score-pass|publication\//.test(r.path)));
+  assert(!a.sourceInputs.some(r=>r.path==='docs/assessment-writing-guide.md'));
   assert(a.sourceInputs.some(r=>r.path.endsWith('indexed-transcript.txt')));
   assert(a.sourceInputs.some(r=>r.path.endsWith('assessment-source-notes.md')));
   assert.throws(()=>prepare(f.run,'primary'),/Existing frozen plan/);
   f.put(`${f.base}/source/assessment-source-notes.md`,'Changed exclusion');
   assert.throws(()=>loadPlan(f.run,result.plans[0].path),/Changed input/);
+});
+
+test('new publication packets carry hash-pinned writing guidance without rewriting frozen plans',t=>{
+  const f=fixture(t);
+  const guide='docs/assessment-writing-guide.md';
+  f.put(guide,fs.readFileSync(path.join(repository,guide),'utf8'));
+  f.put('src/data/critique-format.js',fs.readFileSync(path.join(repository,'src/data/critique-format.js'),'utf8'));
+  f.put(`${f.base}/publication/contract.md`,'Fixture publication contract.');
+  for(const file of ['publication/build-packet.json','publication/skeleton.json','final-ledger/final-ledger.json','score-pass/output.json','publication/reference-metrics.json'])f.put(`${f.base}/${file}`,{});
+  f.put(`${f.base}/publication/check-publication.mjs`,'// Fixture checker.');
+  const result=prepare(f.run,'publication'),planPath=result.plans[0].path,plan=loadPlan(f.run,planPath);
+  assert.deepEqual(plan.sourceInputs.find(r=>r.path===guide),record(f.root,guide));
+  assert.deepEqual(plan.toolInputs.find(r=>r.path==='src/data/critique-format.js'),record(f.root,'src/data/critique-format.js'));
+  const packet=JSON.parse(fs.readFileSync(path.join(f.root,plan.packet.path),'utf8'));
+  assert.equal(unpackDocuments(packet).find(d=>d.path===guide).value,fs.readFileSync(path.join(repository,guide),'utf8'));
+  const before=fs.readFileSync(path.join(f.root,planPath),'utf8');
+  assert.throws(()=>prepare(f.run,'publication'),/Existing frozen plan/);
+  assert.equal(fs.readFileSync(path.join(f.root,planPath),'utf8'),before);
+  f.put(guide,'Changed writing requirements.');
+  assert.throws(()=>loadPlan(f.run,planPath),/Changed input/);
 });
 
 test('frozen runs reject preparation and score execution; duplicate submissions remain exact',t=>{

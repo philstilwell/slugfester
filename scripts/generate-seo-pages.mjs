@@ -505,8 +505,8 @@ function critiqueScoreFeatures(value = "") {
   const critique = String(value).replace(/\s+/g, " ").trim();
   if (!critique) return { strength: "", limitation: "" };
 
-  const structuredStrength = critique.match(/Strongest feature:\s*(.*?)\s*Principal limitation:/i)?.[1];
-  const structuredLimitation = critique.match(/Principal limitation:\s*(.*?)\s*Live burden:/i)?.[1];
+  const structuredStrength = critique.match(/(?:Strongest feature|Main strength):\s*(.*?)\s*(?:Principal limitation|Main limitation):/i)?.[1];
+  const structuredLimitation = critique.match(/(?:Principal limitation|Main limitation):\s*(.*?)\s*(?:Live burden|What remains to be shown):/i)?.[1];
   if (structuredStrength && structuredLimitation) {
     return {
       strength: structuredStrength.trim(),

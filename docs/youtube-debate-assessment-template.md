@@ -2,6 +2,8 @@
 
 This is the canonical Slugfester template for future YouTube debate assessments. Keep this structure unless the site design is intentionally changed.
 
+Before preparing a new publication contract or skeleton, read [the assessment-writing guide](assessment-writing-guide.md). Use its clear labels and prose rules alongside the current production workflow; historical workflow references below do not override the active scoring controls or a resumed run’s frozen contract.
+
 ## Locked Debate Page Design
 
 The debate page should keep this order and visual hierarchy:
@@ -108,7 +110,7 @@ Use this shape when adding an object to `src/data/debates.js`.
   sourceNote:
     "Built from [transcript source]. Analytical summaries are condensed; direct quotes are kept short.",
   scoringNote:
-    "Scores are AI-generated estimates under Slugfester Reassessment Rubric v2.1. Move, section, and overall totals are reproduced from a versioned two-pass ledger with documented adjudication.",
+    "Scores are AI-generated estimates under Slugfester Reassessment Rubric v2.1. Software calculates the argument, section, and overall scores from two separate AI reviews and a further review that resolves disagreements.",
   quotes: {
     pro: {
       text: "Short representative quote",
@@ -148,11 +150,11 @@ Use this shape when adding an object to `src/data/debates.js`.
           pro: {
             ledgerMoveId: "stable-pro-move-id", // Required for a v2.1 reassessment.
             time: "00:00",
-            role: "Argument role",
+            role: "Argument for this side",
             words: "Transcript-grounded claim or rebuttal.",
             score: 0,
             critique:
-              "About 120 words following the critique pattern: strength, weakness, and score justification.",
+              "Main strength: [Specific contribution]. Main limitation: [Unresolved weakness]. What remains to be shown: [Remaining reasoning or evidence and who must supply it]. Why this score: [Reason for the calculated score; meet the full prose contract].",
             tags: [
               {
                 label: "Fallacy or bias name",
@@ -165,11 +167,11 @@ Use this shape when adding an object to `src/data/debates.js`.
           con: {
             ledgerMoveId: "stable-con-move-id", // Required for a v2.1 reassessment.
             time: "00:00",
-            role: "Argument role",
+            role: "Argument for this side",
             words: "Transcript-grounded claim or rebuttal.",
             score: 0,
             critique:
-              "About 120 words following the critique pattern: strength, weakness, and score justification.",
+              "Main strength: [Specific contribution]. Main limitation: [Unresolved weakness]. What remains to be shown: [Remaining reasoning or evidence and who must supply it]. Why this score: [Reason for the calculated score; meet the full prose contract].",
             tags: []
           }
         }

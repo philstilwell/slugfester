@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { hasStructuredCritique } from '../../src/data/critique-format.js';
 export const wordCount=value=>String(value??'').trim().split(/\s+/).filter(Boolean).length;
 export const publicationCards=c=>c.sections.flatMap(s=>s.exchanges.flatMap(r=>['pro','con'].flatMap(side=>r[side]?[r[side]]:[])));
 export function critiqueBoilerplate(candidate){
@@ -16,8 +17,7 @@ export function validateTeamProse(candidate){
     const c=row[side];if(!c)continue;const p=`sections.${si}.exchanges.${ri}.${side}`;
     range(c.words,8,55,`${p}.words`);range(c.critique,105,130,`${p}.critique`);
     if(c.critique.length<880)errors.push({field:`${p}.critique`,message:`Expected at least 880 characters; found ${c.critique.length}`});
-    const parts=c.critique.split(/(?=Principal limitation:|Live burden:|Locked score:)/).map(x=>x.trim()),labels=['Strongest feature:','Principal limitation:','Live burden:','Locked score:'];
-    if(parts.length!==4||!parts.every((p,i)=>p.startsWith(labels[i])&&/[.!?]$/.test(p))||(c.critique.match(/[.!?](?=\s|$)/g)??[]).length!==4)errors.push({field:`${p}.critique`,message:'Exactly four ordered labeled sentences required'});
+    if(!hasStructuredCritique(c.critique))errors.push({field:`${p}.critique`,message:'Exactly four ordered labeled sentences required'});
     if(/[\u3400-\u9fff\uac00-\ud7af\ufffd]/u.test(c.critique))errors.push({field:`${p}.critique`,message:'Unexpected characters'});
   }
   const cards=publicationCards(candidate),mean=cards.reduce((n,c)=>n+wordCount(c.words),0)/cards.length,shortShare=cards.filter(c=>wordCount(c.words)<20).length/cards.length;

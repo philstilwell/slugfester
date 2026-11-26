@@ -2,7 +2,8 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { hasInternalDebateMetadata } from "../scripts/lib/publication-source-language.mjs";
 import { readerScopeLanguage } from "../scripts/lib/reader-scope-language.mjs";
-import { readerCritiqueText, readerArgumentRole, renderCritiqueText } from "../src/data/critique-format.js";
+import { readerCritiqueText, readerArgumentRole, renderCritiqueText, critiqueLabels, hasStructuredCritique } from "../src/data/critique-format.js";
+import { assessmentGuide } from "../src/data/reader-guides.js";
 import { publishedDebates } from "../src/data/debates.js";
 
 test("reader scope states coverage directly and preserves every qualification", () => {
@@ -24,6 +25,33 @@ test("reader formatting distinguishes process jargon from the substance of an ar
   assert(html.includes("<strong>What remains to be shown:</strong>"));
   assert(html.includes("<strong>Why this score:</strong>"));
   assert(html.includes("The objection still needs evidence."));
+});
+
+test("new critique headings validate and render like legacy headings without changing assessment content", () => {
+  const original = publishedDebates.flatMap(d => d.sections.flatMap(s => s.exchanges.flatMap(e => [e.pro, e.con].filter(Boolean))))
+    .find(a => hasStructuredCritique(a.critique));
+  assert(original, "Need an authentic four-sentence critique");
+  const clearer = Object.entries(critiqueLabels).reduce((text, [old, next]) => text.replace(old, next), original.critique);
+  assert(hasStructuredCritique(original.critique));
+  assert(hasStructuredCritique(clearer));
+  assert(hasStructuredCritique(clearer, { labels: Object.values(critiqueLabels) }));
+  assert(!hasStructuredCritique(original.critique, { labels: Object.values(critiqueLabels) }), "New contracts must reject old headings");
+  assert.equal(renderCritiqueText(clearer), renderCritiqueText(original.critique));
+  for (const invalid of [
+    clearer.replace("Main limitation:", "Principal limitation:"),
+    clearer.replace("Main strength:", "Main limitation:"),
+    clearer.replace("Why this score:", ""),
+    clearer.replace("Why this score:", "Main strength: Duplicate. Why this score:"),
+    clearer + " An extra sentence.",
+    clearer.slice(0, -1)
+  ]) assert(!hasStructuredCritique(invalid), "Malformed, mixed or incomplete headings must fail");
+  const debate = publishedDebates.find(d => d.sections.some(s => s.exchanges.some(e => [e.pro, e.con].filter(Boolean).some(a => hasStructuredCritique(a.critique)))));
+  const updated = structuredClone(debate);
+  for (const section of updated.sections) for (const exchange of section.exchanges) for (const card of [exchange.pro, exchange.con].filter(Boolean)) {
+    card.critique = Object.entries(critiqueLabels).reduce((text, [old, next]) => text.replace(old, next), card.critique);
+  }
+  const extract = d => assessmentGuide(d).sides.map(({ strength, strengthIsMove, score }) => ({ strength, strengthIsMove, score }));
+  assert.deepEqual(extract(updated), extract(debate), "Brief assessment strengths and scores must survive the new headings");
 });
 
 test("reader copy preserves every numeric fact and all quoted critique passages across the catalogue", () => {

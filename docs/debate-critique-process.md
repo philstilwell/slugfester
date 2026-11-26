@@ -4,6 +4,8 @@ Use this process for every debate assessment so each page feels like the same pr
 
 For the locked page design and fill-in data skeleton, use [`youtube-debate-assessment-template.md`](youtube-debate-assessment-template.md). That template is canonical for future YouTube debate assessments.
 
+For all new reader-facing prose, follow [the assessment-writing guide](assessment-writing-guide.md). Its wording requirements supplement the active production contract without changing scoring rules or frozen historical records.
+
 ## Goal
 
 Create a condensed debate scorecard, not a full transcript replacement. Each page should help a reader see what each side actually said, how strong the argument or rebuttal was, and where fallacies, bias, weak evidence, or burden-shifting affected the score.
@@ -103,10 +105,12 @@ Each `◉` critique should target about 120 words. The validator allows 105-130 
 
 Use this pattern:
 
-1. Name the argumentative move.
-2. State what is strongest or fairest about it.
-3. Identify the main weakness, missing warrant, fallacy, bias, or unanswered burden.
-4. Explain why the numerical score follows from that balance.
+1. `Main strength:` Explain the specific contribution.
+2. `Main limitation:` Identify the main unresolved weakness.
+3. `What remains to be shown:` State the reasoning or evidence still needed and who must supply it.
+4. `Why this score:` Explain the already calculated score from that balance.
+
+For new publication contracts, use one sentence per heading and retain the full word, character, quotation, and source-fidelity requirements in the active production workflow. A resumed run keeps its frozen contract.
 
 Tone rules:
 

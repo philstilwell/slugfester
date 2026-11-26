@@ -124,7 +124,7 @@ export function prepare(run, phase, { dryRun = false } = {}) {
     inventory: { folder:'inventory', files:['inventory/contract.md'], targets:['inventory'], checker:'inventory/check-inventory.mjs' },
     primary: { folder:'judgments', files:['judgments/contract.md','judgments/judgment-packet.json','inventory/inventory.json'], extra:[rubric], targets:['judgments/pass-a','judgments/pass-b'], checker:'judgments/check-judgment.mjs' },
     adjudication: { folder:'adjudication', files:['adjudication/contract.md','adjudication/packet.json','inventory/inventory.json','audio/audio-verification.json'], extra:[rubric], targets:['adjudication'], checker:'adjudication/check-adjudication.mjs' },
-    publication: { folder:'publication', files:['publication/contract.md','publication/build-packet.json','publication/skeleton.json','inventory/inventory.json','final-ledger/final-ledger.json','score-pass/output.json','publication/reference-metrics.json'], targets:['publication'], checker:'publication/check-publication.mjs' },
+    publication: { folder:'publication', files:['publication/contract.md','publication/build-packet.json','publication/skeleton.json','inventory/inventory.json','final-ledger/final-ledger.json','score-pass/output.json','publication/reference-metrics.json'], extra:['docs/assessment-writing-guide.md'], targets:['publication'], checker:'publication/check-publication.mjs' },
     rhetorical: { folder:'publication/rhetorical-tag-review-1', files:['publication/rhetorical-tag-review-1/contract.md','publication/rhetorical-tag-review-1/source-packet.json','publication/rhetorical-tag-review-1/catalog.json'], targets:['publication/rhetorical-tag-review-1/pass-a','publication/rhetorical-tag-review-1/pass-b'], checker:'publication/rhetorical-tag-review-1/check-review.mjs' },
     'rhetorical-adjudication': { folder:'publication/rhetorical-tag-review-1/adjudication', files:['publication/rhetorical-tag-review-1/contract.md','publication/rhetorical-tag-review-1/adjudication/packet.json','publication/rhetorical-tag-review-1/source-packet.json','publication/rhetorical-tag-review-1/catalog.json'], targets:['publication/rhetorical-tag-review-1/adjudication'], checker:'publication/rhetorical-tag-review-1/check-review.mjs' }
   };
@@ -150,7 +150,8 @@ export function prepare(run, phase, { dryRun = false } = {}) {
   });
   const controls=Object.values(manifest.controlLocks||{}).filter(r=>r?.path&&r.sha256);
   for(const rec of controls)verify(root,rec);
-  const toolInputs = [...new Map([record(root, `${base}/${p.checker}`), record(root,'scripts/standalone-workflow.mjs'), record(root,'scripts/lib/standalone-workflow.mjs'), record(root,'scripts/lib/standalone-handoff.mjs'),record(root,'scripts/authenticate-standalone-worker.py'),...controls].map(r=>[r.path,r])).values()];
+  const writingTools = phase === 'publication' ? [record(root, 'src/data/critique-format.js')] : [];
+  const toolInputs = [...new Map([record(root, `${base}/${p.checker}`), record(root,'scripts/standalone-workflow.mjs'), record(root,'scripts/lib/standalone-workflow.mjs'), record(root,'scripts/lib/standalone-handoff.mjs'),record(root,'scripts/authenticate-standalone-worker.py'),...writingTools,...controls].map(r=>[r.path,r])).values()];
   for(const item of plans) if(phase.startsWith('rhetorical')) {
     item.checkerPacket=record(root,`${base}/${item.target}/packet.json`);
     item.validationParameters=readJson(inside(root,item.checkerPacket.path));

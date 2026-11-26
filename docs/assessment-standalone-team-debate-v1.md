@@ -22,6 +22,8 @@ Every selected move requires audio confirmation of speaker, beginning/end handof
 
 ## Publication and routing
 
+For a new team publication contract, read and freeze [the assessment-writing guide](assessment-writing-guide.md) in the writer’s allowed inputs. Use its clearer critique headings and reader-facing roles while retaining speaker ownership, team-only scoring, all source limitations, and the active prose checks. Already frozen contracts remain unchanged.
+
 Reserve the next available number in the standalone registry, using a separately validated `team-approximation-v1` profile. Never set `dyadicGatePassed` to true for a team recording. A team entry may not be marked published until a dedicated audit authenticates every stage and the ordinary production validator accepts its actual speaker ownership, team membership, quotations, prose, tags, and collective totals.
 
 Use the exact rubric label `Slugfester Reassessment Rubric v2 — Multi-Speaker Approximation`. Show team totals, primary-pass ranges, and any format-sensitivity notice. Argument cards and fallacy/bias contexts name the responsible speaker. Include team appearances on all members' profiles but exclude the record from individual averages, rankings, opponent records, and score distributions. Do not publish diagnostic speaker contribution scores as individual ratings.

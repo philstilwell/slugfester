@@ -8,6 +8,18 @@ export const critiqueLabels = {
   "Locked score:": "Why this score:"
 };
 
+const critiqueLabelPattern = Object.keys(critiqueLabels).concat(Object.values(critiqueLabels)).join("|");
+
+// Existing frozen records keep their headings; new writing contracts require the reader labels.
+export function hasStructuredCritique(critique = "", { labels } = {}) {
+  const text = String(critique).trim();
+  const orderedLabels = labels || (text.startsWith("Main strength:") ? Object.values(critiqueLabels) : Object.keys(critiqueLabels));
+  const parts = text.split(new RegExp(`(?=${critiqueLabelPattern})`)).map((part) => part.trim());
+  return parts.length === 4 && orderedLabels.length === 4 &&
+    parts.every((part, index) => part.startsWith(orderedLabels[index]) && /[.!?]$/.test(part)) &&
+    (text.match(/[.!?](?=\s|$)/g) || []).length === 4;
+}
+
 export function readerCritiqueText(text = "") {
   return String(text)
     .replace(/\b(?:locked|frozen|fixed) score\b/g, "published score")
@@ -51,13 +63,13 @@ export function readerArgumentRole(role = "") {
 
 export function renderCritiqueText(critique = "") {
   return readerCritiqueText(critique)
-    .split(/(?:^|\s+)(?=(?:Strongest feature|Principal limitation|Live burden|Locked score):)/g)
+    .split(new RegExp(`(?:^|\\s+)(?=(?:${critiqueLabelPattern}))`, "g"))
     .map((section) => section.trim())
     .filter(Boolean)
     .map((section) => {
-      const label = section.match(/^(?:Strongest feature|Principal limitation|Live burden|Locked score):/)?.[0];
+      const label = section.match(new RegExp(`^(?:${critiqueLabelPattern})`))?.[0];
       const content = label
-        ? `<strong>${escape(critiqueLabels[label])}</strong>${escape(section.slice(label.length))}`
+        ? `<strong>${escape(critiqueLabels[label] || label)}</strong>${escape(section.slice(label.length))}`
         : escape(section);
       return `<span class="critique-section">${content}</span>`;
     })

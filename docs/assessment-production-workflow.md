@@ -38,15 +38,17 @@ Promotion does not reclassify the failed v1 canary or any failed validation coho
 
 ## Publication reconstruction
 
+For new publication contracts, read and freeze [the assessment-writing guide](assessment-writing-guide.md). Use its reader-facing headings and plain-language rules; preserve the schemas and labels of already frozen runs. Keep this publication guidance out of blind judgment contexts.
+
 After scores lock, run one isolated publication context per debate. It receives the locked source packet, final judgments, calculated score bands, reference catalog, and display contract; it cannot change identity, structure, move selection, or scores.
 
 - Summary target: 18–28 words; accept 8–35.
 - Representative quotation target: 6–14 words; accept only a 3–18 word exact substring from a quote-eligible source span.
-- Critique target: 112–118 words. Accept 105–130 words, at least 880 characters, exactly four sentences in this order: `Strongest feature:`, `Principal limitation:`, `Live burden:`, `Locked score:`. Require terminal punctuation and reject unexpected CJK/Hangul or replacement characters. Do not impose a maximum-character transport constraint.
+- Critique target: 112–118 words. Accept 105–130 words, at least 880 characters, exactly four sentences in this order: `Main strength:`, `Main limitation:`, `What remains to be shown:`, `Why this score:`. Require terminal punctuation and reject unexpected CJK/Hangul or replacement characters. Do not impose a maximum-character transport constraint.
 - Preserve tags only when the named defect materially applies; prefer no tag to a forced tag.
 - Include Overall Commentary for both sides from the locked record.
 - Immediately after it, include a visibly distinct native `details` accordion titled `AI Extension`, collapsed by default. State clearly that it is an AI contribution and does not affect scores. Give each side a strengthened final argument plus genuinely new reinforcing arguments. Do not use the word `unassailable`.
-- Display exactly: `Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.`
+- Display exactly: `Assessments made by 5.6 Sol. — Scoring criteria: Slugfester Reassessment Rubric v2.`
 
 Partition invalid publication fields into isolated repair packets with at most two writable fields. Permit one attempt per packet and no recursive automatic retry. Revalidate the complete debate after merging; a failed repair stops that debate.
 
