@@ -2,13 +2,61 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { hasInternalDebateMetadata } from "../scripts/lib/publication-source-language.mjs";
 import { readerScopeLanguage } from "../scripts/lib/reader-scope-language.mjs";
+import { readerCritiqueText, readerArgumentRole, renderCritiqueText } from "../src/data/critique-format.js";
+import { publishedDebates } from "../src/data/debates.js";
 
 test("reader scope states coverage directly and preserves every qualification", () => {
   const scope = "this assessment covers only the main conversation, approximately 05:29–1:16:07. Audience questions are excluded; neither debater receives credit or penalty for them.";
   assert.equal(readerScopeLanguage(`By explicit editorial approval, ${scope}`), `This assessment${scope.slice("this assessment".length)}`);
   const exclusion = "Andrés Roemer’s substantive interventions and their directly dependent replies are excluded.";
-  assert.equal(readerScopeLanguage(`Independent exchanges are assessed. By explicit editorial approval, ${exclusion}`), `Independent exchanges are assessed. ${exclusion}`);
-  assert.equal(readerScopeLanguage(exclusion), exclusion);
+  const readable = "Andrés Roemer’s contributions to the argument and their directly dependent replies are excluded.";
+  assert.equal(readerScopeLanguage(`Independent exchanges are assessed. By explicit editorial approval, ${exclusion}`), `Independent exchanges are assessed. ${readable}`);
+  assert.equal(readerScopeLanguage(readable), readable);
+});
+
+test("reader formatting distinguishes process jargon from the substance of an argument", () => {
+  assert.equal(readerCritiqueText("Locked score: The fixed 84 rewards a relevant reply."), "Locked score: The score of 84 rewards a relevant reply.");
+  const substance = "The locked-room account, canonical texts, provenance and the fixed 42 parameters remain disputed.";
+  assert.equal(readerCritiqueText(substance), substance);
+  assert.equal(readerArgumentRole("Load-bearing constructive"), "Central argument for this side");
+  assert.equal(readerArgumentRole("Historical reply"), "Historical reply");
+  const html = renderCritiqueText("Live burden: The objection still needs evidence. Locked score: The fixed 84 rewards relevance.");
+  assert(html.includes("<strong>What remains to be shown:</strong>"));
+  assert(html.includes("<strong>Why this score:</strong>"));
+  assert(html.includes("The objection still needs evidence."));
+});
+
+test("reader copy preserves every numeric fact and all quoted critique passages across the catalogue", () => {
+  const numbers = text => (String(text).match(/\d+(?:[.:]\d+)*/g) || []).sort();
+  const quotations = text => String(text).match(/“[^”]*”|"[^"]*"/g) || [];
+  const before = JSON.stringify(publishedDebates);
+  for (const debate of publishedDebates) {
+    for (const field of ["sourceNote", "scoringNote"]) {
+      assert.deepEqual(numbers(readerScopeLanguage(debate[field])), numbers(debate[field]), `${debate.id}: ${field} numbers`);
+    }
+    for (const section of debate.sections) for (const exchange of section.exchanges) {
+      for (const argument of [exchange.pro, exchange.con].filter(Boolean)) {
+        const text = readerCritiqueText(argument.critique);
+        assert.deepEqual(numbers(text), numbers(argument.critique), `${debate.id}: critique numbers`);
+        assert.deepEqual(quotations(text), quotations(argument.critique), `${debate.id}: quoted critique text`);
+      }
+    }
+  }
+  assert.equal(JSON.stringify(publishedDebates), before, "Presentation must not mutate the assessment records");
+});
+
+test("browser data retains every assessment field apart from the reader-facing notes", async () => {
+  for (const original of publishedDebates) {
+    const { debate } = await import(`../src/data/debate-details/${original.id}.js`);
+    const { assessmentScopeDisclosure, ...record } = debate;
+    const { assessmentScopeDisclosure: originalDisclosure, ...originalRecord } = original;
+    if (originalDisclosure) assert.equal(assessmentScopeDisclosure, readerScopeLanguage(originalDisclosure));
+    assert.deepEqual(record, {
+      ...originalRecord,
+      sourceNote: readerScopeLanguage(original.sourceNote),
+      scoringNote: readerScopeLanguage(original.scoringNote)
+    }, original.id);
+  }
 });
 
 const disclosure = "Automatic captions were supplemented by targeted automated audio checks; this was not direct human listening.";

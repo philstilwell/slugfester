@@ -1,5 +1,5 @@
-import { evidenceArticlePath, evidenceArticleTitle, evidenceArticleDescription } from "./data/evidence-article.js?v=0b25772b5de8894f";
-import { topicCategoryDefinitions } from "./data/topics.js?v=0b25772b5de8894f";
+import { evidenceArticlePath, evidenceArticleTitle, evidenceArticleDescription } from "./data/evidence-article.js?v=1ff215b99029e925";
+import { topicCategoryDefinitions } from "./data/topics.js?v=1ff215b99029e925";
 
 export const SITE_URL = "https://slugfester.com";
 export const SITE_NAME = "Slugfester";
