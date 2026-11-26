@@ -7,9 +7,9 @@ export function renderDebateRecommendation({ sent = false } = {}) {
       <h2 id="feedback-recommendation-heading">Recommend a debate</h2>
       <p>Know an online debate worth a close look? Send the full recording and tell us what makes it worth assessing. We screen recommendations using these criteria:</p>
       <ul class="feedback-screening-list">
-        <li><strong>Two clear opposing positions.</strong> Normally, one identifiable advocate on each side, with a moderator who facilitates the exchange. Panels, roundtables, and genuinely three-sided discussions do not fit the standard workflow.</li>
+        <li><strong>Two clear opposing positions.</strong> Normally, one identifiable advocate on each side, with a moderator who facilitates the exchange. Panels, roundtables, and genuinely three-sided discussions do not fit the standard process.</li>
         <li><strong>A complete exchange.</strong> Link the full recording, or a complete, clearly bounded debate within a longer recording—not highlights, reaction clips, or excerpts that omit relevant arguments or replies.</li>
-        <li><strong>Usable source material.</strong> A publicly accessible recording with clear enough audio and speaker identification to recover a reliable, complete transcript. YouTube is preferred by the current workflow. Captions help, but are not essential if the audio can be transcribed.</li>
+        <li><strong>Usable source material.</strong> A publicly accessible recording with clear enough audio and speaker identification to recover a reliable, complete transcript. YouTube is preferred by the current process. Captions help, but are not essential if the audio can be transcribed.</li>
         <li><strong>A clear topic fit.</strong> The central question should belong to one of our <a href="/topics/">listed topic categories</a>.</li>
         <li><strong>Substantive disagreement.</strong> Both sides should present reasons and respond to challenges. A solo lecture, promotional video, or interview without a real opposing case is not a suitable substitute.</li>
         <li><strong>Not already assessed.</strong> Please <a href="/search/">check the catalogue</a> first. To challenge an existing assessment, use the Corrections form above.</li>

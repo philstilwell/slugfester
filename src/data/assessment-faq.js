@@ -30,6 +30,12 @@ export function renderAssessmentFaq(tomJumpScores = []) {
           <p>Compare the critique with the timestamped source and the other participant’s reply. A plausible explanation is still an AI judgment, and one strong or weak exchange does not by itself explain the overall score. If the assessment misquotes someone, overlooks a reply or misreads an argument, use <a href="/corrections/#report-scorecard-issue">Feedback</a> to identify the disputed wording and relevant source passage.</p></dd>
         </div>
         <div>
+          <dt>What do terms such as “burden,” “move” and “locked score” mean?</dt>
+          <dd><p>A <strong>burden</strong> is what a speaker needs to establish to support the claim they are making. A <strong>move</strong> is one selected contribution to the argument, such as a claim, reply, objection or concession. A <strong>constructive</strong> contribution builds the speaker’s own case; a <strong>load-bearing</strong> argument is central to that case.</p>
+          <p>In critiques, <strong>“What remains to be shown”</strong> describes the reasoning or evidence still needed, and <strong>“Why this score”</strong> explains the assigned score. Older records call these “Live burden” and “Locked score.” A locked or frozen score was finalized before the explanation and fallacy-label review, so those later steps could not change it. It does not mean the assessment is beyond criticism or can never be revised.</p>
+          <p>A <strong>rubric</strong> is the set of scoring criteria. An <strong>adjudicator</strong> is an additional AI reviewer that resolves disagreements between the initial AI reviews. <strong>Eligible</strong> means included under the relevant rule: a passage may qualify for assessment, while a scorecard may qualify for individual rankings. The source notes and ranking method explain those limits.</p></dd>
+        </div>
+        <div>
           <dt>Why use AI?</dt>
           <dd><p>AI makes detailed, structured analysis across many debates practical. It can help identify overlooked replies, compare reasoning and suggest stronger arguments for either side. Readers can assess those contributions on their merits without endorsing AI in general. AI authorship alone neither establishes nor refutes a conclusion; Slugfester remains responsible for what it publishes.</p></dd>
         </div>
@@ -39,13 +45,13 @@ export function renderAssessmentFaq(tomJumpScores = []) {
         </div>
         <div>
           <dt>What evidence is there that the assessments are accurate?</dt>
-          <dd><p>The linked recordings let readers check whether quotations, summaries and critiques fit the actual exchange. Another encouraging sign is visible in an interlocutor’s score graph: when their scores cluster within a narrow range across several debates, the assessments repeatedly place their debating competence at a similar level.</p>
-          <p>Under the standard blind-review workflow, the reviewers are independent AI agents called by the administrative AI. They do not receive earlier scorecards or published results, so those scores are not supplied as targets. Earlier assessments may use different controls.</p>
+          <dd><p>The linked recordings let readers check whether quotations, summaries and critiques fit the actual exchange. Another encouraging sign is visible in a speaker’s score graph: when their scores cluster within a narrow range across several debates, the assessments repeatedly place their debating competence at a similar level.</p>
+          <p>In the standard process, an AI coordinator starts separate AI reviewers. They do not receive earlier scorecards or published results, so those scores are not supplied as targets. Earlier assessments may use different controls.</p>
           <p>This consistency supports confidence that the assessments are identifying a recurring pattern in the person’s performance. Accuracy still depends on how well the assessments represent and evaluate the actual arguments; a consistent bias or misunderstanding can also recur.</p></dd>
         </div>
         <div>
           <dt>What does a tight cluster of one person’s scores show?</dt>
-          <dd><p>It shows that the person was assessed as demonstrating <strong>a similar level of debating competence across those debates</strong>. On an interlocutor’s profile, the score graph groups their debate scores into five-point ranges. Taller bars mean more debates received scores in that range. When most scores sit in a few neighboring ranges, you can see the consistency at a glance.</p>
+          <dd><p>It shows that the person was assessed as demonstrating <strong>a similar level of debating competence across those debates</strong>. On a speaker’s profile, the score graph groups their debate scores into five-point ranges. Taller bars mean more debates received scores in that range. When most scores sit in a few neighboring ranges, you can see the consistency at a glance.</p>
           ${renderTomJumpExample(tomJumpScores)}
           <p>To examine another person, select their name on the <a href="/rankings/">rankings page</a> and look at their score distribution and debate list. Read the cluster alongside the number of debates, topics and opponents. It describes their assessed performance in those debates; it does not establish identical ability in every setting or guarantee that each judgment is correct.</p></dd>
         </div>
@@ -63,7 +69,7 @@ export function renderAssessmentFaq(tomJumpScores = []) {
         </div>
         <div>
           <dt>Can I inspect the prompts and instructions behind an assessment?</dt>
-          <dd><p>The guide below explains the standard workflow, and scorecards provide source links and assessment notes. A model’s name alone does not specify the instructions or evidence it received. Exact prompts and complete run records are not currently presented as a download for each debate. Use <a href="/corrections/#report-scorecard-issue">Feedback</a> to identify the assessment and the materials you want to inspect. The current guide should not be assumed to describe every historical assessment.</p></dd>
+          <dd><p>The guide below explains the standard process, and scorecards provide source links and assessment notes. A model’s name alone does not specify the instructions or evidence it received. Exact prompts and complete run records are not currently presented as a download for each debate. Use <a href="/corrections/#report-scorecard-issue">Feedback</a> to identify the assessment and the materials you want to inspect. The current guide should not be assumed to describe every historical assessment.</p></dd>
         </div>
         <div>
           <dt>What if an assessment misrepresents me or contains another error?</dt>
@@ -72,7 +78,7 @@ export function renderAssessmentFaq(tomJumpScores = []) {
         <div>
           <dt>How can I contribute to the improvement of the scoring method?</dt>
           <dd><p>Suggest an improvement to the choice of arguments, scoring criteria, weights or assumptions, and explain how it would improve the assessment. A methodological objection can matter across many debates, even when no quotation is wrong. You can also <a href="/insights/#scoring-weights">explore alternative scoring weights</a> using the saved assessments.</p>
-          <p>Errors identified may not be corrected immediately. All feedback will be considered, but only complaints judged valid will be incorporated into the prompts used for future reevaluations of the entire debate corpus. Valid complaints will be generalized into review instructions and safeguards that apply to every assessment and score. The reviewers are independent AI agents called by the administrative AI. They will be asked to check for the underlying problem across all debates, so a valid complaint about one case can improve the process throughout the collection.</p></dd>
+          <p>Errors identified may not be corrected immediately. All feedback will be considered, but only complaints judged valid will be incorporated into the prompts used for future reevaluations of the entire debate collection. Valid complaints will be generalized into review instructions and safeguards that apply to every assessment and score. The AI coordinator starts separate AI reviewers. They will be asked to check for the underlying problem across all debates, so a valid complaint about one case can improve the process throughout the collection.</p></dd>
         </div>
         <div>
           <dt>Will the debates be reassessed as AI improves?</dt>

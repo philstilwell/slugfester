@@ -2,7 +2,7 @@ import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import { publishedDebates as debates } from "../src/data/debates.js";
 import { avatarsForSpeakerText, interlocutorAvatars } from "../src/data/interlocutors.js";
-import { renderCritiqueText } from "../src/data/critique-format.js";
+import { renderCritiqueText, readerCritiqueText, critiqueLabels } from "../src/data/critique-format.js";
 
 const [app, styles, topics, processGuide] = await Promise.all([
   readFile(new URL("../src/app.js", import.meta.url), "utf8"),
@@ -14,7 +14,6 @@ const [app, styles, topics, processGuide] = await Promise.all([
 const errors = [];
 
 const escapeCritique = (value) => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#39;");
-const critiqueLabels = ["Strongest feature:", "Principal limitation:", "Live burden:", "Locked score:"];
 const normalizeWhitespace = (value) => value.replace(/\s+/g, " ").trim();
 for (const debate of debates) for (const section of debate.sections) for (const exchange of section.exchanges) {
   for (const side of ["pro", "con"]) {
@@ -22,11 +21,13 @@ for (const debate of debates) for (const section of debate.sections) for (const 
     if (!critique) continue;
     const rendered = renderCritiqueText(critique);
     const plain = rendered.replace(/<span class="critique-section">|<\/span>|<strong>|<\/strong>/g, "");
-    if (normalizeWhitespace(plain) !== normalizeWhitespace(escapeCritique(critique))) {
+    let expected = readerCritiqueText(critique);
+    for (const [original, readable] of Object.entries(critiqueLabels)) expected = expected.replaceAll(original, readable);
+    if (normalizeWhitespace(plain) !== normalizeWhitespace(escapeCritique(expected))) {
       errors.push(`${debate.id}: critique formatting must preserve published wording`);
     }
-    for (const label of critiqueLabels) if (critique.includes(label)) {
-      requireIncludes(`${debate.id}: separate bold critique label`, rendered, `<span class="critique-section"><strong>${label}</strong>`);
+    for (const [label, readable] of Object.entries(critiqueLabels)) if (critique.includes(label)) {
+      requireIncludes(`${debate.id}: separate bold critique label`, rendered, `<span class="critique-section"><strong>${readable}</strong>`);
     }
   }
 }
@@ -164,7 +165,7 @@ requireIncludes("app profile opponent score distinction", app, "not opponents’
 requireIncludes("app profile opponent matchup label", app, "meeting · matchup score");
 requireIncludes("app profile opponent spacing hook", app, 'class="profile-breakdown profile-opponents"');
 requireIncludes("app profile team score exclusion", app, "Shared side score excluded from the individual record.");
-requireIncludes("app profile group-only state", app, "No eligible one-on-one scorecards yet.");
+requireIncludes("app profile group-only state", app, "No one-on-one scorecards that qualify for individual rankings yet.");
 requireIncludes("app backend rubric evidence", app, "sectionScoreDistribution");
 requireIncludes("app backend rubric data loading", app, "rankingsMatch || interlocutorMatch || backendMatch");
 requireIncludes("app backend rubric evidence", app, "How section scores are distributed");
@@ -177,7 +178,7 @@ requireIncludes("app debate score histograms", app, 'className: "debate-score-hi
 requireIncludes("app debate score histogram placement", app, 'class="debate-score-profile-grid"');
 requireIncludes("app debate score histogram single-interlocutor rule", app, "proHistories.length === 1");
 requireIncludes("app debate multi-interlocutor note", app, "Click a specific avatar above");
-requireIncludes("app debate score histogram eligibility", app, "eligible 1-on-1");
+requireIncludes("app debate score histogram eligibility", app, "one-on-one");
 requireIncludes("app interlocutor score range", app, "const PROFILE_SCORE_MINIMUM = 50;");
 requireIncludes("app interlocutor score range", app, "const PROFILE_SCORE_MAXIMUM = 100;");
 requireIncludes("app interlocutor score bucket", app, "const PROFILE_SCORE_BUCKET_SIZE = 5;");
@@ -235,20 +236,20 @@ requireExcludes("app backend duplicate process", app, 'class="assessment-flow"')
 requireIncludes("app backend objectivity accordion", processGuide, '<details class="backend-objectivity-accordion backend-process-text"');
 requireIncludes("app backend rubric examples accordion", app, '<details class="rubric-extremes-accordion">');
 requireIncludes("app backend rubric examples columns", app, 'class="rubric-extremes-grid"');
-requireIncludes("app backend rubric examples top", app, "Highest section-side scores");
-requireIncludes("app backend rubric examples bottom", app, "Lowest section-side scores");
+requireIncludes("app backend rubric examples top", app, "Highest scores for a side in a section");
+requireIncludes("app backend rubric examples bottom", app, "Lowest scores for a side in a section");
 requireIncludes("app backend rubric move-score explanation", app, "Why this move received");
 requireIncludes("app backend rubric high-score features", app, "Score-raising features");
 requireIncludes("app backend rubric low-score features", app, "Score-lowering features");
 requireExcludes("app backend rubric examples accordion default", app, '<details class="rubric-extremes-accordion" open>');
-requireIncludes("app backend section score explanation", processGuide, "multiply each move score by its previously locked importance");
+requireIncludes("app backend section score explanation", processGuide, "multiply each move score by its importance fixed before scoring");
 requireIncludes("app backend comprehensive score explanation", processGuide, "The default final adjustment is zero");
 requireIncludes("app backend multi-speaker score disclosure", processGuide, "no individual score is inferred");
 requireIncludes("app backend multi-speaker ranking policy", processGuide, "excluded from individual rankings, profile averages, score distributions, and opponent records");
 requireIncludes("app backend fallacy and bias explanation", processGuide, "Review fallacies and cognitive biases separately");
 requireExcludes("app backend objectivity accordion default", processGuide, 'backend-process-text" open');
 requireIncludes("app backend current section scoring", processGuide, "divide by the total importance, and round");
-requireIncludes("app backend current overall scoring", processGuide, "add the burden-completion adjustment, then round");
+requireIncludes("app backend current overall scoring", processGuide, "add the final adjustment for how fully the side established its case, then round");
 requireExcludes("app backend retired section scoring", app, ".70 move mean + .10 coverage");
 requireExcludes("app backend retired overall scoring", app, ".70 centrality-weighted sections");
 requireIncludes("app search filters", app, 'class="person-filter');

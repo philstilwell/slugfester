@@ -1,6 +1,6 @@
 // Reader aids derived only from the published record. No new scoring or model calls.
-export const assessmentAiRoles = "Slugfester’s assessment reviewers and adjudicators are independent AI agents called by the administrative AI.";
-export const assessmentAiIndependence = "Independence means separate review contexts with controlled inputs; the agents may use the same model and share biases. Review arrangements vary across assessment periods.";
+export const assessmentAiRoles = "An AI coordinator starts separate AI reviewers to assess the arguments and resolve disagreements.";
+export const assessmentAiIndependence = "Separate reviews use separate AI sessions and specified evidence. The reviewers may use the same model and share biases. Review arrangements vary across assessment periods.";
 
 // Share the same introduction with readers and crawlers before and after JavaScript loads.
 export function renderSiteIntroduction() {
@@ -83,7 +83,7 @@ export function relatedDebates(current, catalogue, peopleForDebate) {
   };
   take((item) => item.sameTopic, "Explore the same topic", () => "Shares this debate’s primary topic; selected for overlap in its question and section headings.");
   take((item) => item.shared.length && !item.sameCast, "A different matchup", (item) => `Another debate featuring ${item.shared.join(" and ")}, with a different participant lineup.`);
-  take((item) => item.sameTopic && !item.shared.length, "Hear other speakers", () => "A different set of interlocutors discussing the same primary topic.");
+  take((item) => item.sameTopic && !item.shared.length, "Hear other speakers", () => "Different speakers discussing the same main topic.");
   while (selected.length < 3) {
     const before = selected.length;
     take((item) => item.sameTopic, "More on this topic", () => "Another assessment in the same primary topic, with overlapping questions or section headings.");

@@ -1,14 +1,14 @@
-import { evidenceArticlePath, renderEvidenceArticle } from "./data/evidence-article.js?v=0b25772b5de8894f";
-import { pageUpdates } from "./data/page-updates.js?v=0b25772b5de8894f";
-import { renderCritiqueText } from "./data/critique-format.js?v=0b25772b5de8894f";
-import { renderAssessmentFaq } from "./data/assessment-faq.js?v=0b25772b5de8894f";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=0b25772b5de8894f";
-import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=0b25772b5de8894f";
-import { topicPreviewText } from "./data/topic-preview.js?v=0b25772b5de8894f";
-import { assessmentAiRoles, assessmentGuide, debateSectionAnchor, relatedDebates, renderSiteIntroduction } from "./data/reader-guides.js?v=0b25772b5de8894f";
-import { debateSummaries } from "./data/debate-summaries.js?v=0b25772b5de8894f";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=0b25772b5de8894f";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=0b25772b5de8894f";
+import { evidenceArticlePath, renderEvidenceArticle } from "./data/evidence-article.js?v=1ff215b99029e925";
+import { pageUpdates } from "./data/page-updates.js?v=1ff215b99029e925";
+import { renderCritiqueText, readerArgumentRole, readerCritiqueText } from "./data/critique-format.js?v=1ff215b99029e925";
+import { renderAssessmentFaq } from "./data/assessment-faq.js?v=1ff215b99029e925";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=1ff215b99029e925";
+import { topicCategoryDefinitions, creatorTheismScopeNote } from "./data/topics.js?v=1ff215b99029e925";
+import { topicPreviewText } from "./data/topic-preview.js?v=1ff215b99029e925";
+import { assessmentAiRoles, assessmentGuide, debateSectionAnchor, relatedDebates, renderSiteIntroduction } from "./data/reader-guides.js?v=1ff215b99029e925";
+import { debateSummaries } from "./data/debate-summaries.js?v=1ff215b99029e925";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=1ff215b99029e925";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=1ff215b99029e925";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -48,7 +48,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=0b25772b5de8894f";
+} from "./seo.js?v=1ff215b99029e925";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -108,7 +108,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=0b25772b5de8894f")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=1ff215b99029e925")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -127,7 +127,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=0b25772b5de8894f")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=1ff215b99029e925")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -143,7 +143,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=0b25772b5de8894f`)
+    const promise = import(`./data/debate-details/${id}.js?v=1ff215b99029e925`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -158,7 +158,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=0b25772b5de8894f`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=1ff215b99029e925`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -1036,11 +1036,11 @@ function renderRubricExtremesAccordion(extremes) {
         <i aria-hidden="true"></i>
       </summary>
       <div class="rubric-extremes-content">
-        <p class="rubric-extremes-intro">These are section-side scores, not overall debate results. Each representative move is one part of its section; the section score combines all selected moves after weighting more important arguments more heavily. High scores reward clear, well-supported reasoning that meets the other side’s strongest point. Low scores reflect serious gaps in support, logic, relevance, responsiveness, precision, or fairness—not whether Slugfester agrees with the conclusion.</p>
+        <p class="rubric-extremes-intro">These scores describe one side’s performance in a section, not the whole debate. Each example is one contribution within its section; the section score combines all selected moves after weighting more important arguments more heavily. High scores reward clear, well-supported reasoning that meets the other side’s strongest point. Low scores reflect serious gaps in support, logic, relevance, responsiveness, precision, or fairness—not whether Slugfester agrees with the conclusion.</p>
         <div class="rubric-extremes-grid">
           <section class="rubric-extremes-column rubric-extremes-column--top" aria-labelledby="rubric-extremes-top-heading">
             <div>
-              <p class="eyebrow">Highest section-side scores</p>
+              <p class="eyebrow">Highest scores for a side in a section</p>
               <h3 id="rubric-extremes-top-heading">Top three</h3>
               <p>These sections combine strong evidence or warrant with direct engagement, disciplined scope, and fair treatment of alternatives.</p>
             </div>
@@ -1050,7 +1050,7 @@ function renderRubricExtremesAccordion(extremes) {
           </section>
           <section class="rubric-extremes-column rubric-extremes-column--bottom" aria-labelledby="rubric-extremes-bottom-heading">
             <div>
-              <p class="eyebrow">Lowest section-side scores</p>
+              <p class="eyebrow">Lowest scores for a side in a section</p>
               <h3 id="rubric-extremes-bottom-heading">Bottom three</h3>
               <p>These sections retain some argumentative value but contain major unsupported steps, missed objections, overstatement, or weak evidential control.</p>
             </div>
@@ -1111,7 +1111,7 @@ function renderSectionScoreDistribution(distribution) {
         <div>
           <p class="eyebrow">Rubric quality check</p>
           <h2 id="section-score-distribution-heading">How section scores are distributed</h2>
-          <p>This chart shows how often each section-side score occurs across the published catalogue. The range shows that assessments use different score bands, but spread alone cannot establish that the rubric is accurate or consistent across AI reviewers and assessment periods. Open the examples below to examine the reasoning behind high and low marks; the measurement and ranking studies on the <a href="/insights/">Insights page</a> examine consistency and uncertainty.</p>
+          <p>This chart shows how often a score for one side in a section occurs across the published catalogue. The range shows that assessments use different score bands, but spread alone cannot establish that the scoring criteria are accurate or consistent across AI reviewers and assessment periods. Open the examples below to examine the reasoning behind high and low marks; the measurement and ranking studies on the <a href="/insights/">Insights page</a> examine consistency and uncertainty.</p>
         </div>
         <dl class="section-score-distribution-summary">
           <div><dt>Section-side scores</dt><dd>${distribution.total.toLocaleString("en-US")}</dd></div>
@@ -1923,7 +1923,7 @@ function renderRankingMethod() {
     <details class="ranking-method">
       <summary>Ranking method</summary>
       <div>
-        <p>Each average uses the published overall score for that speaker's side of every matching ranking-eligible debate. Multi-speaker approximations and any other scorecard explicitly marked ineligible are omitted rather than assigning a shared team score to each participant.</p>
+        <p>Each average uses the speaker’s published overall scores from debates that match the filters and qualify for individual rankings. Team scores and any other scorecards excluded from individual rankings are left out; a shared team score is never assigned to each participant.</p>
         <p>Topic filters include any debate assigned to the selected category. The Opponents' Avg. sort uses the published overall scores of the opponents each person faced.</p>
         <p>These figures assess the reasoning performance recorded in Slugfester scorecards. They do not establish the truth of a speaker's conclusions, expertise, or personal worth.</p>
       </div>
@@ -2134,7 +2134,7 @@ ${renderPersonPortrait(person, {named: true, eager: true, })}
             <div>
               <p class="eyebrow">Interlocutor profile</p>
               <h1>${escapeHtml(person.name)}</h1>
-              <p>No eligible one-on-one scorecards yet. Team and panel appearances are listed separately below.</p>
+              <p>No one-on-one scorecards that qualify for individual rankings yet. Team and panel appearances are listed separately below.</p>
               <span class="sample-confidence limited"><i aria-hidden="true"></i>No 1-on-1 sample</span>
             </div>
           </div>
@@ -2456,7 +2456,7 @@ function renderBackend() {
         <div class="backend-selection-copy">
           <p class="eyebrow">Catalogue scope</p>
           <h2 id="backend-selection-heading">How debates enter Slugfester</h2>
-          <p><strong>The selection process is somewhat arbitrary.</strong> Slugfester is a curated catalogue, not a random or representative sample of all public debates. We favor videos that clearly fit within one of the ${topicCategoryDefinitions.length} topic categories listed on the site. Choices also reflect available complete sources, topics likely to interest readers, recognizable or recurring interlocutors, and whether a debate can be processed reliably with the current workflow.</p>
+          <p><strong>The selection process is somewhat arbitrary.</strong> Slugfester is a curated catalogue, not a random or representative sample of all public debates. We favor videos that clearly fit within one of the ${topicCategoryDefinitions.length} topic categories listed on the site. Choices also reflect available complete sources, topics likely to interest readers, recognizable or recurring speakers, and whether a debate can be assessed reliably with the current process.</p>
           <p>That means catalogue-wide patterns describe the debates published here; they should not be treated as a neutral sample of every topic, viewpoint, speaker, or debate format. Reader recommendations help broaden the pool considered for future additions, but a recommendation does not guarantee assessment.</p>
         </div>
         <div class="backend-recommendation-card">
@@ -2847,10 +2847,10 @@ function renderAssessmentGuide(debate) {
       ${side.strongest ? `<p class="eyebrow">A highest-scoring contribution · ${side.strongest.argument.score}/100</p>
       <p>${escapeHtml(side.strongest.argument.words)}</p>
       <a href="#${debateSectionAnchor(side.strongest.sectionIndex)}">Read the exchange and critique</a> · ${renderTimestampLink(side.strongest.argument.time, debate.youtubeUrl, `Watch ${side.speaker}'s contribution at ${side.strongest.argument.time}`)}` : ""}
-      ${side.strength ? `<p><strong>${side.strengthIsMove ? "Why this contribution scored well." : "A strength in the overall assessment."}</strong> ${escapeHtml(side.strength)}</p>` : ""}
-      ${side.limitation ? `<p><strong>A key limitation in the overall assessment.</strong> ${escapeHtml(side.limitation)}</p>` : ""}
+      ${side.strength ? `<p><strong>${side.strengthIsMove ? "Why this contribution scored well." : "A strength in the overall assessment."}</strong> ${escapeHtml(readerCritiqueText(side.strength))}</p>` : ""}
+      ${side.limitation ? `<p><strong>A key limitation in the overall assessment.</strong> ${escapeHtml(readerCritiqueText(side.limitation))}</p>` : ""}
     </article>`).join("")}</div>
-    <p class="source-note">Drawn from this scorecard’s existing summary, critiques and overall commentary—not a new judgment. The highlighted contributions illustrate strengths; they do not alone determine the overall scores. Ties between moves use the first displayed example. Shared-side assessments describe the side, not each participant individually.</p>
+    <p class="source-note">Based on this scorecard’s existing summary, critiques and overall commentary, without making a new assessment. The highlighted contributions illustrate strengths; they do not alone determine the overall scores. When contributions share the highest score, the first displayed example is shown. Team assessments describe the team, not each participant individually.</p>
   </section>`;
 }
 
@@ -2921,7 +2921,7 @@ function renderInteractionGuide() {
 function renderScoringNote(debate) {
   const model = assessmentModelFor(debate);
   const rubric = debate.assessmentRubric
-    ? ` — Rubric: ${escapeHtml(debate.assessmentRubric)}.`
+    ? ` — Scoring criteria: ${escapeHtml(debate.assessmentRubric)}.`
     : "";
 
   return `
@@ -3046,7 +3046,7 @@ function renderDebateScoreHistories(histories, maximumBandCount, tone) {
             <section class="debate-score-profile">
               <div class="debate-score-profile-heading">
                 <h3><a href="${escapeHtml(interlocutorPath(person))}">${escapeHtml(person.name)}</a></h3>
-                <span>${appearances} eligible 1-on-1 ${appearances === 1 ? "scorecard" : "scorecards"}</span>
+                <span>${appearances} one-on-one ${appearances === 1 ? "scorecard" : "scorecards"} in individual rankings</span>
               </div>
               ${
                 distribution
@@ -3058,7 +3058,7 @@ function renderDebateScoreHistories(histories, maximumBandCount, tone) {
                         caption: "Published 1-on-1 overall scores in five-point ranges. Every graph on this page uses the same vertical scale."
                       }
                     )
-                  : '<p class="debate-score-empty">No eligible 1-on-1 scorecards yet.</p>'
+                  : '<p class="debate-score-empty">No one-on-one scorecards in individual rankings yet.</p>'
               }
             </section>
           `
@@ -3124,7 +3124,7 @@ function renderArgument(argument, tone, debate, section, sideKey) {
     <article class="argument ${tone} side-${sideKey}">
       <div class="argument-meta">
         <span>${renderTimestampLink(argument.time, debate.youtubeUrl, `Open YouTube source at ${argument.time}`)}</span>
-        <span>${escapeHtml(argument.role)}</span>
+        <span>${escapeHtml(readerArgumentRole(argument.role))}</span>
         <strong class="${scoreTone(argument.score)}">${argument.score}</strong>
       </div>
       ${debate.assessmentFormat === "team" ? `<p class="eyebrow">${escapeHtml(argument.speaker)}</p>` : ""}
@@ -3159,9 +3159,9 @@ function renderCritique(argument, debate, section, sideKey) {
 
   return `
     <span class="critique">
-      <button type="button" aria-label="Critique for ${escapeHtml(argument.role)}" aria-describedby="${escapeHtml(tooltipId)}">◉</button>
+      <button type="button" aria-label="Critique for ${escapeHtml(readerArgumentRole(argument.role))}" aria-describedby="${escapeHtml(tooltipId)}">◉</button>
       <span class="critique-popover" id="${escapeHtml(tooltipId)}" role="tooltip">
-        <strong>${argument.score}/100 · ${escapeHtml(argument.role)}</strong>
+        <strong>${argument.score}/100 · ${escapeHtml(readerArgumentRole(argument.role))}</strong>
         <span class="critique-text">${renderCritiqueText(argument.critique)}</span>
       </span>
     </span>
@@ -3488,7 +3488,7 @@ function renderReferenceAppearance(appearance) {
         <span>${renderTimestampLink(appearance.argument.time, appearance.debate.youtubeUrl, `Open YouTube source at ${appearance.argument.time}`)}</span>
       </div>
       <h3>${escapeHtml(appearance.section.title)}</h3>
-      <p class="reference-speaker">${escapeHtml(appearance.side.name)} · <span class="reference-interlocutor">${escapeHtml(appearance.argument.speaker || appearance.side.speaker)}</span> · ${escapeHtml(appearance.argument.role)}</p>
+      <p class="reference-speaker">${escapeHtml(appearance.side.name)} · <span class="reference-interlocutor">${escapeHtml(appearance.argument.speaker || appearance.side.speaker)}</span> · ${escapeHtml(readerArgumentRole(appearance.argument.role))}</p>
       <blockquote>${escapeHtml(appearance.argument.words)}</blockquote>
       <p>${escapeHtml(appearance.tag.context)}</p>
       <p class="reference-debate-return">
@@ -3587,29 +3587,29 @@ async function route({ focusMain = false } = {}) {
 
   if (backendMatch && !chartSnapshot) {
     chartsPromise ||= Promise.all([
-      import("./data/charts.js?v=0b25772b5de8894f"),
-      import("./data/chart-snapshot.js?v=0b25772b5de8894f")
+      import("./data/charts.js?v=1ff215b99029e925"),
+      import("./data/chart-snapshot.js?v=1ff215b99029e925")
     ]).then(([module, data]) => { chartsModule = module; chartSnapshot = data.chartSnapshot; })
       .catch((error) => { chartsPromise = undefined; throw error; });
     loaders.push(chartsPromise);
   }
 
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=0b25772b5de8894f")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=1ff215b99029e925")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=0b25772b5de8894f")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=1ff215b99029e925")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=0b25772b5de8894f")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=1ff215b99029e925")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
@@ -3617,7 +3617,7 @@ async function route({ focusMain = false } = {}) {
 
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=0b25772b5de8894f")
+    insightsPromise ||= import("./data/insights.js?v=1ff215b99029e925")
       .then((module) => { insightsContent = module.renderInsightsContent; initializeWeightExplorer = module.initializeWeightExplorer; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);
