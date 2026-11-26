@@ -8,6 +8,7 @@ import { replayPublication } from './standalone-browser-replay.mjs';
 import { reviewedFeaturedQuoteCandidate } from './featured-quote-correction.mjs';
 import { reviewedSourceNoteCandidate } from './source-note-correction.mjs';
 import { readerScopeLanguage } from './reader-scope-language.mjs';
+import { readerCritiqueText, readerArgumentRole, critiqueLabels } from '../../src/data/critique-format.js';
 
 export function distribution(values) {
   assert(values.length && values.every(v=>Number.isFinite(v)&&v>=0&&v<=100));
@@ -62,7 +63,17 @@ export async function browserConfig(run,{origin,prefix=`debate-${run.entry.debat
     assert.equal(matches.length,1,'Standalone profile must resolve to one registered speaker');
     return {name:matches[0].name,slug:interlocutorSlug(matches[0].name)};
   });
-  return {candidate,origin:origin.replace(/\/$/,''),prefix,screenshots,screenshotDirectory,requiredReaderDisclosure:scope?.notice||null,scopeCases:cases,
+  const readerSections = candidate.sections.map(section => ({
+    title: section.title, scores: [section.score.pro, section.score.con],
+    cards: section.exchanges.flatMap(exchange => ['pro', 'con'].filter(side => exchange[side]).map(side => {
+      const argument = exchange[side];
+      let critique = readerCritiqueText(argument.critique);
+      for (const [original, readable] of Object.entries(critiqueLabels)) critique = critique.replaceAll(original, readable);
+      return {side, words: argument.words, critique: critique.trim().replace(/\s+/g, ' '), time: argument.time,
+        score: argument.score, role: readerArgumentRole(argument.role), tags: argument.tags.map(tag => ({label: tag.label, context: tag.context}))};
+    }))
+  }));
+  return {candidate,readerSections,critiqueLabels:Object.values(critiqueLabels),origin:origin.replace(/\/$/,''),prefix,screenshots,screenshotDirectory,requiredReaderDisclosure:scope?.notice||null,scopeCases:cases,
     year:candidate.title.match(/\((\d{4})\)\s*$/)?.[1]||'',videoId:run.entry.videoId,modelLabel:run.manifest.modelSettings.displayLabel,
     tagCount:candidate.sections.flatMap(s=>s.exchanges.flatMap(e=>[e.pro,e.con].filter(Boolean))).reduce((n,c)=>n+c.tags.length,0),
     people,graph:await reconcileGraph(run)};
