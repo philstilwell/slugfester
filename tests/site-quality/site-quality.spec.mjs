@@ -216,7 +216,7 @@ test("the rubric quality check offers six closed-by-default section examples", a
   await expect(accordion.locator(".rubric-extremes-column--top")).toContainText("Score-raising features");
   await expect(accordion.locator(".rubric-extremes-column--bottom")).toContainText("Score-lowering features");
   await expect(accordion).toContainText(/Why this move received \d+\/100/);
-  await expect(accordion).toContainText("section-side scores, not overall debate results");
+  await expect(accordion).toContainText("These scores describe one side’s performance in a section, not the whole debate.");
 });
 
 test("the comparison selectors include the boxing-gloves divider", async ({ page }) => {
