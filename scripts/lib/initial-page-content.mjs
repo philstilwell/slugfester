@@ -12,6 +12,7 @@ import { topicCategoryDefinitions, creatorTheismScopeNote } from "../../src/data
 import { topicPreviewText } from "../../src/data/topic-preview.js";
 import { referenceDefinitions, referenceFromUrl } from "../../src/data/references.js";
 import { debatePath, debateTitleWithYear, interlocutorPath, topicPath } from "../../src/seo.js";
+import { readerScopeLanguage } from "./reader-scope-language.mjs";
 
 const escape = (value = "") => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 const paragraph = (text) => text ? `<p>${escape(text)}</p>` : "";
@@ -37,7 +38,7 @@ function cards(records, { neutral = false } = {}) {
 }
 
 function debateContent(debate) {
-  return `<section><h2>Question and assessment context</h2>${paragraph(debate.motion)}${paragraph(debate.sourceNote)}${paragraph(debate.scoringNote)}${paragraph(assessmentAiRoles)}
+  return `<section><h2>Question and assessment context</h2>${paragraph(debate.motion)}${paragraph(readerScopeLanguage(debate.sourceNote))}${paragraph(debate.scoringNote)}${paragraph(assessmentAiRoles)}
     <p><a href="${escape(debate.youtubeUrl)}">Watch the original debate</a></p>${(debate.additionalSources || []).map((source) => `<p><a href="${escape(source.url)}">${escape(source.label)}</a></p>`).join("")}</section>
     <section><h2>Overall assessment</h2><p class="assessment-faq-reference"><a href="/backend/#assessment-questions">About these scores · Q&amp;A</a></p>${["pro", "con"].map((key) => `<section><h3>${escape(debate.sides[key].speaker)} — ${escape(debate.sides[key].name)}: ${escape(debate.score[key])}/100</h3>
       <h4>Published strengths</h4>${list(debate.overall?.[key]?.strengths)}

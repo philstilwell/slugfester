@@ -1,6 +1,15 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { hasInternalDebateMetadata } from "../scripts/lib/publication-source-language.mjs";
+import { readerScopeLanguage } from "../scripts/lib/reader-scope-language.mjs";
+
+test("reader scope states coverage directly and preserves every qualification", () => {
+  const scope = "this assessment covers only the main conversation, approximately 05:29–1:16:07. Audience questions are excluded; neither debater receives credit or penalty for them.";
+  assert.equal(readerScopeLanguage(`By explicit editorial approval, ${scope}`), `This assessment${scope.slice("this assessment".length)}`);
+  const exclusion = "Andrés Roemer’s substantive interventions and their directly dependent replies are excluded.";
+  assert.equal(readerScopeLanguage(`Independent exchanges are assessed. By explicit editorial approval, ${exclusion}`), `Independent exchanges are assessed. ${exclusion}`);
+  assert.equal(readerScopeLanguage(exclusion), exclusion);
+});
 
 const disclosure = "Automatic captions were supplemented by targeted automated audio checks; this was not direct human listening.";
 const equivalentDisclosure = "Automatic captions were supplemented by targeted automated audio checks, not direct human listening.";
