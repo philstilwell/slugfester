@@ -27,7 +27,7 @@ export function assessmentGuide(debate) {
     const strongest = moves.filter(({ argument }) => Number.isFinite(argument.score))
       .sort((a, b) => b.argument.score - a.argument.score)[0];
     const critique = strongest?.argument.critique || "";
-    const explicitStrength = critique.match(/Strongest feature:\s*([\s\S]*?)(?=\s*Principal limitation:|\s*Live burden:|\s*Locked score:|$)/i)?.[1]?.trim();
+    const explicitStrength = critique.match(/(?:Strongest feature|Main strength):\s*([\s\S]*?)(?=\s*(?:Principal limitation|Main limitation|Live burden|What remains to be shown|Locked score|Why this score):|$)/i)?.[1]?.trim();
     const limitation = debate.overall?.[key]?.blunders?.[0];
     return {
       key,

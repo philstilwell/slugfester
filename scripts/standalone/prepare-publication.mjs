@@ -36,7 +36,7 @@ const durationMinutes=Math.round(durationMs/60000),hours=Math.floor(durationMinu
 const duration=hours?`${hours} hr ${minutes} min`:`${minutes} min`;
 const byId=new Map(inventory.moves.map(m=>[m.moveId,m]));
 const sections=scores.sections.map(s=>{
- const sides=Object.fromEntries(['pro','con'].map(side=>[side,s.sides[side].moves.map(sm=>{const m=byId.get(sm.moveId);assert(m&&m.sectionId===s.sectionId&&m.side===side);return {ledgerMoveId:m.moveId,time:timestamp(m.sourceSpan.startMs),score:sm.score,role:m.moveKind==='reply'?'Reply':'Constructive',words:null,critique:null,tags:[]};})]));
+ const sides=Object.fromEntries(['pro','con'].map(side=>[side,s.sides[side].moves.map(sm=>{const m=byId.get(sm.moveId);assert(m&&m.sectionId===s.sectionId&&m.side===side);return {ledgerMoveId:m.moveId,time:timestamp(m.sourceSpan.startMs),score:sm.score,role:m.moveKind==='reply'?'Reply':'Argument for this side',words:null,critique:null,tags:[]};})]));
  const moves=inventory.moves.filter(m=>m.sectionId===s.sectionId),exchanges=Array.from({length:Math.max(sides.pro.length,sides.con.length)},(_,i)=>Object.fromEntries(['pro','con'].filter(side=>sides[side][i]).map(side=>[side,sides[side][i]])));
  return {sectionId:s.sectionId,title:s.title,timebox:`${timestamp(Math.min(...moves.map(m=>m.sourceSpan.startMs)))}–${timestamp(Math.max(...moves.map(m=>m.sourceSpan.endMs)))}`,score:{pro:s.sides.pro.score,con:s.sides.con.score},exchanges};
 });

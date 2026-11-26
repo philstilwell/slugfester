@@ -1,3 +1,4 @@
+import { hasStructuredCritique } from "../src/data/critique-format.js";
 import { hasInternalDebateMetadata } from "./lib/publication-source-language.mjs";
 import { topicCategoryIds } from "../src/data/topics.js";
 import { TEAM_ADAPTER_VERSION, validateTeamSiteLedgerAdapter, validateTeamStagingCandidate } from "./lib/assessment-standalone-team-pipeline-v1.mjs";
@@ -2314,24 +2315,7 @@ function validateArgument(
         `should contain at least 880 characters; found ${critique.length}`
       );
     }
-    const critiqueLabels = [
-      "Strongest feature:",
-      "Principal limitation:",
-      "Live burden:",
-      "Locked score:"
-    ];
-    const critiqueParts = critique
-      .split(/(?=Principal limitation:|Live burden:|Locked score:)/)
-      .map((part) => part.trim());
-    const sentenceEnds = critique.match(/[.!?](?=\s|$)/g) || [];
-    if (
-      critiqueParts.length !== critiqueLabels.length ||
-      !critiqueParts.every(
-        (part, index) =>
-          part.startsWith(critiqueLabels[index]) && /[.!?]$/.test(part)
-      ) ||
-      sentenceEnds.length !== critiqueLabels.length
-    ) {
+    if (!hasStructuredCritique(critique)) {
       addError(
         [...path, "critique"],
         "must contain exactly four terminally punctuated sentences with the ordered publication labels"
