@@ -7,6 +7,7 @@ import { REGISTRY, inside, json, readJson, writeOnce } from './standalone-workfl
 import { replayPublication } from './standalone-browser-replay.mjs';
 import { reviewedFeaturedQuoteCandidate } from './featured-quote-correction.mjs';
 import { reviewedSourceNoteCandidate } from './source-note-correction.mjs';
+import { readerScopeLanguage } from './reader-scope-language.mjs';
 
 export function distribution(values) {
   assert(values.length && values.every(v=>Number.isFinite(v)&&v>=0&&v<=100));
@@ -39,7 +40,7 @@ export async function scopeCases(run) {
     const scope=readJson(inside(run.root,file));
     assert(scope.debateId===debate.id || (scope.debateId===undefined&&scope.debateNumber===debate.number&&scope.videoId===entry.videoId),'Scope identity mismatch');
     assert(typeof scope.requiredReaderDisclosure==='string'&&scope.requiredReaderDisclosure.trim()&&debate.sourceNote.includes(scope.requiredReaderDisclosure),'Scope text mismatch');
-    result.push({id:debate.id,number:debate.number,notice:scope.requiredReaderDisclosure});
+    result.push({id:debate.id,number:debate.number,notice:readerScopeLanguage(scope.requiredReaderDisclosure)});
   }
   return result;
 }
